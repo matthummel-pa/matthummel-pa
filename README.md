@@ -85,21 +85,6 @@ I run **[matthummel.com](https://matthummel.com)** — a blog for Power Platform
 
 ➡️ **[Read all posts on matthummel.com →](https://matthummel.com/blog/)**
 
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-![Matt's GitHub Stats](https://github-readme-stats.vercel.app/api?username=matthummel&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=matthummel&layout=compact&theme=tokyonight&hide_border=true)
-
-</div>
-
-> ⚠️ **Note:** Replace `matthummel` in the stats URLs above with your actual GitHub username if it differs.
-
----
 
 ## 🌍 Outside the Code
 
