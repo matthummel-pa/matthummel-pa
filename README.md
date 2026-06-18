@@ -1,107 +1,75 @@
-<div align="center">
+<h1 align="center">Hi, I'm Matt Hummel 👋</h1>
 
-# Hi, I'm Matt Hummel 👋
+<p align="center">
+  <strong>Full-Stack Developer · Power Platform Consultant · WordPress Specialist</strong>
+</p>
+<p align="center">
+  15+ years building accessible websites, web apps, and Microsoft business solutions.<br/>
+  Front-end &amp; back-end · Power Apps / Power Automate · SharePoint &amp; M365 · Gettysburg, PA
+</p>
 
-### Senior Power Platform Consultant · Building practical solutions with Power Apps, Power Automate & SharePoint
+<p align="center">
+  <a href="https://matthummel.com">🌐 matthummel.com</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/matt-hummel-pa">💼 LinkedIn</a> &nbsp;·&nbsp;
+  <a href="https://dev.to/mattbuildsapps">✍️ Dev.to</a>
+</p>
 
-<br/>
-
-[![Website](https://img.shields.io/badge/Blog-matthummel.com-21759B?style=for-the-badge&logo=wordpress&logoColor=white)](https://matthummel.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-matt--hummel--pa-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matt-hummel-pa/)
-[![Dev.to](https://img.shields.io/badge/Dev.to-mattbuildsapps-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/mattbuildsapps)
-[![Microsoft Learn](https://img.shields.io/badge/Microsoft%20Learn-Profile-258FFA?style=for-the-badge&logo=microsoft&logoColor=white)](https://learn.microsoft.com/en-us/users/matthummel/)
-[![Bluesky](https://img.shields.io/badge/Bluesky-matthummel-0285FF?style=for-the-badge&logo=bluesky&logoColor=white)](https://bsky.app/profile/matthummel.bsky.social)
-[![Reddit](https://img.shields.io/badge/Reddit-matt--hummel-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/user/matt-hummel/)
-
-<br/>
-
-![Gettysburg, PA](https://img.shields.io/badge/📍_Gettysburg,_Pennsylvania-grey?style=flat-square)
-![He/Him](https://img.shields.io/badge/He%2FHim-grey?style=flat-square)
-
-</div>
-
----
-
-## 🙋‍♂️ About Me
-
-I'm a **Senior Power Platform Consultant** at **[Saliense Consulting](https://saliense.com)**, based in Gettysburg, Pennsylvania.
-
-By day I build real business solutions for organizations using Power Apps, Power Automate, SharePoint, and Microsoft 365. By night I document what actually goes wrong — and how to fix it.
-
-Before Power Platform, I spent years in **web development** (primarily WordPress), supporting marketing teams and internal departments in higher education. Over time that work shifted toward automation and internal business apps, which is how I landed deep in the Microsoft 365 ecosystem.
-
-I run **[matthummel.com](https://matthummel.com)** — a blog for Power Platform beginners (and developers still learning) where I share practical tutorials, real-world lessons, and fixes for the problems that tutorials usually skip over.
-
-> *"Most tutorials explain what to do, but not why things break."* — That's the gap I try to fill.
+<p align="center">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" alt="React"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
+  <img src="https://img.shields.io/badge/WordPress-21759B?style=flat&logo=wordpress&logoColor=white" alt="WordPress"/>
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" alt="PHP"/>
+  <img src="https://img.shields.io/badge/Power_Apps-742774?style=flat&logo=powerapps&logoColor=white" alt="Power Apps"/>
+  <img src="https://img.shields.io/badge/Power_Automate-0066FF?style=flat&logo=powerautomate&logoColor=white" alt="Power Automate"/>
+  <img src="https://img.shields.io/badge/SharePoint-0078D4?style=flat&logo=microsoftsharepoint&logoColor=white" alt="SharePoint"/>
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+## 📌 Featured repositories
 
-### Microsoft Power Platform
-![Power Apps](https://img.shields.io/badge/Power%20Apps-742774?style=for-the-badge&logo=powerapps&logoColor=white)
-![Power Automate](https://img.shields.io/badge/Power%20Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white)
-![SharePoint](https://img.shields.io/badge/SharePoint-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white)
-![Microsoft 365](https://img.shields.io/badge/Microsoft%20365-D83B01?style=for-the-badge&logo=microsoft365&logoColor=white)
-![Dataverse](https://img.shields.io/badge/Dataverse-742774?style=for-the-badge&logo=microsoft&logoColor=white)
+| Repository | What it is | Tech |
+| --- | --- | --- |
+| **[matthummel-portfolio](https://github.com/matthummel-pa/matthummel-portfolio)** | My personal site ([matthummel.com](https://matthummel.com)) — a fast, accessible **headless** front end that uses WordPress as a CMS. | Next.js · TypeScript · Tailwind |
+| **[keepary](https://github.com/matthummel-pa/keepary)** | A full-stack web app I built end to end — practicing how to design and ship a real, working product. | JavaScript · Full-stack |
+| **[resume](https://github.com/matthummel-pa/resume)** | My résumé / CV site. | JavaScript |
+| **[tech-book-club-landing-page](https://github.com/matthummel-pa/tech-book-club-landing-page)** | A responsive landing page built to spec. | CSS |
+| **[news-home-page-project](https://github.com/matthummel-pa/news-home-page-project)** | A responsive news homepage with a modern grid layout. | SCSS |
+| **[blog-preview-card](https://github.com/matthummel-pa/blog-preview-card)** | A pixel-accurate, accessible component build. | CSS |
+| **[qr-code-challenge](https://github.com/matthummel-pa/qr-code-challenge)** | A clean, centered QR-code component. | CSS |
+| **[html-css-cheat-sheet-project](https://github.com/matthummel-pa/html-css-cheat-sheet-project)** | An HTML &amp; CSS reference build. | CSS |
 
-### Web Development
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
----
-
-## 🎯 What I Build
-
-| | Area | What I Do |
-|--|------|-----------|
-| 🎟️ | **Power Apps** | Canvas apps and model-driven solutions for internal teams — from simple data entry to multi-step workflows used every day |
-| ⚡ | **Power Automate** | Cloud flows that eliminate manual work — approvals, notifications, data sync, and scheduled tasks across Microsoft 365 |
-| 📦 | **SharePoint** | Lists, libraries, and content types designed to scale — solid architecture that works as a reliable data layer for Power Platform |
-| 📝 | **Blog** | Real fixes from real projects — when something breaks, I document the cause and solution so you don't have to spend hours figuring it out |
+> The smaller front-end builds are deliberate practice — real specs, pixel accuracy, and responsive, accessible markup.
 
 ---
 
-## 📚 Currently Learning
+## 🛠️ What I do
 
-- 🔷 Advancing Power Platform development skills
-- 📜 Preparing for Microsoft certifications
-- 🏗️ Improving Power Apps architecture and performance
-- 🗂️ Deeper work with SharePoint and Dataverse
-- 📖 Documenting solutions and lessons learned from real-world implementations
+- **Full-stack web development** — HTML, CSS, JavaScript/TypeScript, React, Next.js, and PHP. Accessibility-first (WCAG / Section 508), with an eye for performance and SEO.
+- **WordPress** — custom themes, **headless WordPress** (REST API + Next.js), and site performance, accessibility, and SEO improvements.
+- **Microsoft Power Platform** — Power Apps (canvas &amp; model-driven), Power Automate, Dataverse, and SharePoint Online solutions that replace manual, paper-based processes with reliable automation.
 
----
+## ⚡ Power Platform &amp; Microsoft 365 ecosystem
 
-## ✍️ Latest Blog Posts
+I work across the Microsoft 365 / Power Platform open-source community — the PnP toolkits, SPFx, and Power Automate samples:
 
-<!-- Update these manually, or set up a GitHub Action to pull from your RSS feed -->
-- 📋 [Power Apps Project Planning: 7 Simple Steps to Build Better Apps](https://matthummel.com/power-apps/power-apps-project-planning-7-steps/)
-- 🖼️ [Powerful Fixes for Power Apps Gallery Not Showing Items: 7 Easy Solutions](https://matthummel.com/power-apps/power-apps-gallery-not-showing-items/)
-- 🔍 [7 Power Apps Filter, LookUp & Collection Examples That Actually Work](https://matthummel.com/power-apps/power-apps-filter-lookup-collection/)
-- 🚀 [7 Power Apps Performance Tips for Beginners (Fix Slow Apps Fast)](https://matthummel.com/power-apps/power-apps-performance-tips/)
-- 📝 [Power Apps Form Submit Not Working? 6 Fixes That Actually Work](https://matthummel.com/power-apps/power-apps-form-submit-not-working/)
-- 🩹 [5 Power Apps Patch Function Mistakes (Fix Them Fast)](https://matthummel.com/power-apps/power-apps-patch-function-fixes/)
-
-➡️ **[Read all posts on matthummel.com →](https://matthummel.com/blog/)**
-
-
-## 🌍 Outside the Code
-
-When I'm not building Power Platform solutions or writing blog posts, you'll find me:
-
-- 📷 Doing **landscape photography** around Gettysburg
-- 🏛️ Exploring **historic sites** — living in Gettysburg makes that pretty easy
-- 🃏 Collecting **trading cards**
-- 🥾 **Hiking** and spending time outdoors
-- 👨‍👧‍👦 Chasing around **twin toddlers** (the most demanding users I've ever had)
+[`pnpjs`](https://github.com/pnp/pnpjs) · [`PnP PowerShell`](https://github.com/pnp/powershell) · [`cli-microsoft365`](https://github.com/pnp/cli-microsoft365) · [`sp-dev-fx-webparts`](https://github.com/pnp/sp-dev-fx-webparts) · [`powerautomate-samples`](https://github.com/pnp/powerautomate-samples)
 
 ---
 
-<div align="center">
+## 📊 GitHub
 
-**Have a question, want to collaborate, or just want to talk Power Platform?**
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=matthummel-pa&show_icons=true&hide_border=true&title_color=2C5A95&icon_color=2C5A95" alt="Matt Hummel's GitHub stats" height="160"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matthummel-pa&layout=compact&hide_border=true&title_color=2C5A95" alt="Top languages" height="160"/>
+</p>
 
-[![Contact Me](https://img.shields.io/badge/Get%20In%20Touch-matthummel.com%2Fcontact-blue?style=for-the-badge)](https://matthummel.com/contact/)
+## 📫 Connect
 
-</div>
+- 🌐 **Website / blog:** [matthummel.com](https://matthummel.com)
+- 💼 **LinkedIn:** [linkedin.com/in/matt-hummel-pa](https://www.linkedin.com/in/matt-hummel-pa)
+- ✍️ **Dev.to:** [dev.to/mattbuildsapps](https://dev.to/mattbuildsapps)
+
+<sub>Full-stack developer who likes clean, accessible code — and documenting what actually works.</sub>
