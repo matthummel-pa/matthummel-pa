@@ -58,6 +58,8 @@
 | **[tech-book-club-landing-page](https://github.com/matthummel-pa/tech-book-club-landing-page)** | A responsive landing page built to spec. | CSS |
 | **[news-home-page-project](https://github.com/matthummel-pa/news-home-page-project)** | A responsive news homepage with a modern grid layout. | SCSS |
 | **[blog-preview-card](https://github.com/matthummel-pa/blog-preview-card)** | A pixel-accurate, accessible component build. | CSS |
+| **[qr-code-challenge](https://github.com/matthummel-pa/qr-code-challenge)** | A clean, centered QR-code component. | CSS |
+| **[html-css-cheat-sheet-project](https://github.com/matthummel-pa/html-css-cheat-sheet-project)** | An HTML &amp; CSS reference build. | CSS |
 
 > The smaller front-end builds are deliberate practice — real specs, pixel accuracy, and responsive, accessible markup.
 
