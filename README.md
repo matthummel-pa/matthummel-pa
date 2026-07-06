@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Matt Hummel 👋</h1>
 
 <p align="center">
-  <strong>Full-Stack Developer · WordPress &amp; Sage Specialist · Power Platform Consultant</strong>
+  <strong>Full-Stack Developer · WordPress &amp; Sage Specialist · Power Platform Consultant · AI-First Development with Claude</strong>
 </p>
 <p align="center">
   15+ years building accessible websites, web apps, and Microsoft business solutions.<br/>
@@ -36,6 +36,13 @@
   <img src="https://img.shields.io/badge/WP--CLI-555555?style=flat&logo=wordpress&logoColor=white" alt="WP-CLI"/>
 </p>
 
+<!-- AI-first workflow -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Claude-AI--First_Development-D97757?style=flat&logo=claude&logoColor=white" alt="Claude AI-First Development"/>
+  <img src="https://img.shields.io/badge/Claude_Code-555555?style=flat&logo=claude&logoColor=white" alt="Claude Code"/>
+  <img src="https://img.shields.io/badge/Claude_Cowork-555555?style=flat&logo=claude&logoColor=white" alt="Claude Cowork"/>
+</p>
+
 <!-- Microsoft / Power Platform -->
 <p align="center">
   <img src="https://img.shields.io/badge/Power_Apps-742774?style=flat&logo=powerapps&logoColor=white" alt="Power Apps"/>
@@ -46,13 +53,22 @@
 
 ---
 
-## 📌 Featured repositories
+## 📌 Featured projects
+
+Three projects I designed, built, and shipped solo — alongside a full-time job — using an **AI-first workflow with Claude**:
+
+| Repository | What it is | Tech |
+| --- | --- | --- |
+| **[keepary](https://github.com/matthummel-pa/keepary)** | A private, invite-only social platform for family &amp; close friends — real auth with Postgres row-level security, TOTP 2FA, realtime chat, private feed, and a document vault. Designed and shipped end to end in collaboration with Claude. | React · Supabase · Netlify |
+| **[repofolio](https://github.com/matthummel-pa/repofolio)** | A WordPress plugin that turns your GitHub repos into a living portfolio — GitHub OAuth login, server-rendered Gutenberg repo grid, encrypted token storage. Experimental &amp; open to contributors. | WordPress · PHP · GitHub API |
+| **[pressroot](https://github.com/matthummel-pa/pressroot)** | A premium Sage 11 (Roots) WordPress theme framework — hero builder, style kits, custom blocks + patterns, live GitHub project pages, and a deep options system. | Sage · Blade · Tailwind v4 · Vite |
+
+### More repositories
 
 | Repository | What it is | Tech |
 | --- | --- | --- |
 | **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** | A premium **Sage 11 (Roots)** WordPress theme — Blade templates, a deep Customizer options framework, live GitHub project pages, self-hosted fonts, and a Gutenberg **block + pattern library**. | Sage · Blade · Acorn · PHP · Tailwind · Vite |
 | **[matthummel-portfolio](https://github.com/matthummel-pa/matthummel-portfolio)** | My personal site ([matthummel.com](https://matthummel.com)) — a fast, accessible **headless** front end that uses WordPress as a CMS. | Next.js · TypeScript · Tailwind |
-| **[keepary](https://github.com/matthummel-pa/keepary)** | A full-stack web app I built end to end — practicing how to design and ship a real, working product. | JavaScript · Full-stack |
 | **[tocflow](https://github.com/matthummel-pa/tocflow)** | A focused WordPress **block plugin** — auto-generates a linked table of contents from a post's headings. Server-rendered, accessible. | WordPress · PHP · JS |
 | **[resume](https://github.com/matthummel-pa/resume)** | My résumé / CV site. | JavaScript |
 | **[tech-book-club-landing-page](https://github.com/matthummel-pa/tech-book-club-landing-page)** | A responsive landing page built to spec. | CSS |
@@ -67,6 +83,7 @@
 
 ## 🛠️ What I do
 
+- **AI-first development** — I work with **Claude** (Claude Code, Claude Cowork, and Claude in Chrome) as a daily engineering collaborator for architecture, implementation, code review, and documentation. Keepary, Repofolio, Pressroot, and the redesign of [matthummel.com](https://matthummel.com) were all shipped this way — every change still reviewed, tested, and held to the same accessibility and performance standards as any hand-built project.
 - **Full-stack web development** — HTML, CSS, JavaScript/TypeScript, React, Next.js, and PHP. Accessibility-first (WCAG / Section 508), with an eye for performance and SEO.
 - **WordPress &amp; Sage** — custom themes with modern **Sage 11 (Roots)** development: **Blade** templating, **Acorn** (Laravel-in-WordPress), **Tailwind + Vite** builds, and **Gutenberg** block &amp; pattern development. Also **headless WordPress** (REST API + Next.js).
 - **Theme &amp; block engineering** — design-token systems, Customizer/theme-options frameworks, custom dynamic blocks (`block.json`, `theme.json`), web-performance work (per-block CSS, critical CSS, self-hosted fonts), and structured data (JSON-LD).
@@ -77,6 +94,7 @@
 **Languages:** JavaScript · TypeScript · PHP · HTML · CSS/Sass
 **Front-end:** React · Next.js · Tailwind CSS · accessible, responsive UI
 **WordPress:** Sage 11 (Roots) · Blade · Acorn · Gutenberg blocks &amp; patterns · headless (REST API) · theme &amp; plugin development
+**AI tooling:** Claude Code · Claude Cowork · Claude in Chrome · AI-assisted architecture, code review &amp; documentation
 **Tooling:** Composer · Vite · WP-CLI · Git/GitHub · npm
 **Quality:** WCAG / Section 508 accessibility · Core Web Vitals performance · technical SEO &amp; JSON-LD schema
 **Microsoft 365:** Power Apps · Power Automate · Dataverse · SharePoint Online · SPFx
@@ -102,4 +120,4 @@ I work across the Microsoft 365 / Power Platform open-source community — the P
 - 💼 **LinkedIn:** [linkedin.com/in/matt-hummel-pa](https://www.linkedin.com/in/matt-hummel-pa)
 - ✍️ **Dev.to:** [dev.to/mattbuildsapps](https://dev.to/mattbuildsapps)
 
-<sub>Full-stack developer who likes clean, accessible code — and documenting what actually works.</sub>
+<sub>Full-stack developer who likes clean, accessible code — documenting what actually works, and shipping it AI-first with Claude.</sub>
