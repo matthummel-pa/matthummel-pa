@@ -61,7 +61,7 @@ Three projects I designed, built, and shipped solo — alongside a full-time job
 | --- | --- | --- |
 | **[keepary](https://github.com/matthummel-pa/keepary)** | A private, invite-only social platform for family &amp; close friends — real auth with Postgres row-level security, TOTP 2FA, realtime chat, private feed, and a document vault. Designed and shipped end to end in collaboration with Claude. | React · Supabase · Netlify |
 | **[repofolio](https://github.com/matthummel-pa/repofolio)** | A WordPress plugin that turns your GitHub repos into a living portfolio — GitHub OAuth login, server-rendered Gutenberg repo grid, encrypted token storage. Experimental &amp; open to contributors. | WordPress · PHP · GitHub API |
-| **[pressroot](https://github.com/matthummel-pa/pressroot)** | A premium Sage 11 (Roots) WordPress theme framework — hero builder, style kits, custom blocks + patterns, live GitHub project pages, and a deep options system. | Sage · Blade · Tailwind v4 · Vite |
+| **[pressroot](https://github.com/matthummel-pa/pressroot)** | A premium Sage 11 (Roots) WordPress theme framework — hero builder, style kits, custom blocks + patterns, live GitHub project pages, and a deep options system. Every AI prompt in the build is tracked in [BUILD-NOTES.md](https://github.com/matthummel-pa/pressroot/blob/main/docs/BUILD-NOTES.md) — prompt → root cause → fix → takeaway. | Sage · Blade · Tailwind v4 · Vite |
 
 ### More repositories
 
