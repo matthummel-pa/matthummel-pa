@@ -55,13 +55,15 @@
 
 ## 📌 Featured projects
 
-Three projects I designed, built, and shipped solo — alongside a full-time job — using an **AI-first workflow with Claude**:
+Five projects I designed, built, and shipped solo — alongside a full-time job — using an **AI-first workflow with Claude**:
 
 | Repository | What it is | Tech |
 | --- | --- | --- |
 | **[keepary](https://github.com/matthummel-pa/keepary)** | A private, invite-only social platform for family &amp; close friends — real auth with Postgres row-level security, TOTP 2FA, realtime chat, private feed, and a document vault. Designed and shipped end to end in collaboration with Claude. | React · Supabase · Netlify |
 | **[repofolio](https://github.com/matthummel-pa/repofolio)** | A WordPress plugin that turns your GitHub repos into a living portfolio — GitHub OAuth login, server-rendered Gutenberg repo grid, encrypted token storage. Experimental &amp; open to contributors. | WordPress · PHP · GitHub API |
 | **[pressroot](https://github.com/matthummel-pa/pressroot)** | A premium Sage 11 (Roots) WordPress theme framework — hero builder, style kits, custom blocks + patterns, live GitHub project pages, and a deep options system. Every AI prompt in the build is tracked in [BUILD-NOTES.md](https://github.com/matthummel-pa/pressroot/blob/main/docs/BUILD-NOTES.md) — prompt → root cause → fix → takeaway. | Sage · Blade · Tailwind v4 · Vite |
+| **[pressroots-reserve](https://github.com/matthummel-pa/pressroots-reserve)** | Appointments &amp; reservations for WordPress — bookable services, a timezone-aware availability engine, a front-end booking form (block + shortcode), confirmation emails with `.ics`, and a Month/Week/Day/List admin calendar. Standalone edition of the Pressroot bookings addon. | WordPress · PHP · Gutenberg |
+| **[pressroot-blockifier](https://github.com/matthummel-pa/pressroot-blockifier)** | Design in HTML, ship in blocks — write Custom HTML blocks freely, then convert them to native Gutenberg blocks with one click, per-block from the toolbar or whole-document Blockify. | WordPress · PHP · Gutenberg |
 
 ### More repositories
 
