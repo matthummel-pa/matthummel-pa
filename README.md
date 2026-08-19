@@ -1,125 +1,95 @@
 <h1 align="center">Hi, I'm Matt Hummel 👋</h1>
 
 <p align="center">
-  <strong>Full-Stack Developer · WordPress &amp; Sage Specialist · Power Platform Consultant · AI-First Development with Claude</strong>
+  <strong>Full-Stack Developer · Web Developer · WordPress &amp; Sage</strong>
 </p>
 <p align="center">
-  15+ years building accessible websites, web apps, and Microsoft business solutions.<br/>
-  Front-end &amp; back-end · WordPress / Sage (Roots) · Power Apps / Power Automate · SharePoint &amp; M365 · Gettysburg, PA
+  Gettysburg, PA · 15+ years building fast, accessible websites from front-end to back-end.<br/>
+  WordPress is the work I enjoy most — custom themes, clean markup, and sites people can actually run.<br/>
+  I also have professional Power Platform experience from a full-time consulting role.
+</p>
+
+<p align="center">
+  <a href="https://matthummel.com">matthummel.com</a> &nbsp;·&nbsp;
+  <a href="https://ridgesandvalleys.com">Ridges &amp; Valleys</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/matt-hummel-pa">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="https://dev.to/mattbuildsapps">Dev.to</a>
 </p>
 
 <p align="center">
-  <a href="https://matthummel.com">🌐 matthummel.com</a> &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/matt-hummel-pa">💼 LinkedIn</a> &nbsp;·&nbsp;
-  <a href="https://dev.to/mattbuildsapps">✍️ Dev.to</a>
-</p>
-
-<!-- Front-end -->
-<p align="center">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" alt="React"/>
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white" alt="Next.js"/>
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
-  <img src="https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white" alt="Sass"/>
-</p>
-
-<!-- WordPress & build tooling -->
-<p align="center">
-  <img src="https://img.shields.io/badge/WordPress-21759B?style=flat&logo=wordpress&logoColor=white" alt="WordPress"/>
-  <img src="https://img.shields.io/badge/Sage_(Roots)-525DDC?style=flat&logoColor=white" alt="Sage (Roots)"/>
-  <img src="https://img.shields.io/badge/Blade-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Blade"/>
-  <img src="https://img.shields.io/badge/Acorn-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Acorn (Laravel)"/>
-  <img src="https://img.shields.io/badge/Block_Editor-3858E9?style=flat&logo=wordpress&logoColor=white" alt="Gutenberg / Block Editor"/>
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" alt="PHP"/>
-  <img src="https://img.shields.io/badge/Composer-885630?style=flat&logo=composer&logoColor=white" alt="Composer"/>
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white" alt="Vite"/>
-  <img src="https://img.shields.io/badge/WP--CLI-555555?style=flat&logo=wordpress&logoColor=white" alt="WP-CLI"/>
-</p>
-
-<!-- AI-first workflow -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Claude-AI--First_Development-D97757?style=flat&logo=claude&logoColor=white" alt="Claude AI-First Development"/>
-  <img src="https://img.shields.io/badge/Claude_Code-555555?style=flat&logo=claude&logoColor=white" alt="Claude Code"/>
-  <img src="https://img.shields.io/badge/Claude_Cowork-555555?style=flat&logo=claude&logoColor=white" alt="Claude Cowork"/>
-</p>
-
-<!-- Microsoft / Power Platform -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Power_Apps-742774?style=flat&logo=powerapps&logoColor=white" alt="Power Apps"/>
-  <img src="https://img.shields.io/badge/Power_Automate-0066FF?style=flat&logo=powerautomate&logoColor=white" alt="Power Automate"/>
-  <img src="https://img.shields.io/badge/SharePoint-0078D4?style=flat&logo=microsoftsharepoint&logoColor=white" alt="SharePoint"/>
-  <img src="https://img.shields.io/badge/Microsoft_365-D83B01?style=flat&logo=microsoftoffice&logoColor=white" alt="Microsoft 365"/>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js,ts,php,wordpress,react,nextjs,nodejs,tailwind,sass,vite,laravel,git,github,vscode&perline=8" alt="HTML, CSS, JavaScript, TypeScript, PHP, WordPress, React, Next.js, Node.js, Tailwind, Sass, Vite, Laravel, Git, GitHub, VS Code" />
+  </a>
 </p>
 
 ---
 
-## 📌 Featured projects
+## Featured work
 
-Five projects I designed, built, and shipped solo — alongside a full-time job — using an **AI-first workflow with Claude**:
+Live **concept sites** I designed and built for [Ridges &amp; Valleys Studio](https://ridgesandvalleys.com/work/) — one working demo per industry for restaurants, inns, shops, tours, and real estate around Gettysburg and Adams County. These are self-initiated builds (not client case studies), so you can click the real site.
 
-| Repository | What it is | Tech |
+| Concept | What it is | Demo |
 | --- | --- | --- |
-| **[keepary](https://github.com/matthummel-pa/keepary)** | A private, invite-only social platform for family &amp; close friends — real auth with Postgres row-level security, TOTP 2FA, realtime chat, private feed, and a document vault. Designed and shipped end to end in collaboration with Claude. | React · Supabase · Netlify |
-| **[repofolio](https://github.com/matthummel-pa/repofolio)** | A WordPress plugin that turns your GitHub repos into a living portfolio — GitHub OAuth login, server-rendered Gutenberg repo grid, encrypted token storage. Experimental &amp; open to contributors. | WordPress · PHP · GitHub API |
-| **[pressroot](https://github.com/matthummel-pa/pressroot)** | A premium Sage 11 (Roots) WordPress theme framework — hero builder, style kits, custom blocks + patterns, live GitHub project pages, and a deep options system. Every AI prompt in the build is tracked in [BUILD-NOTES.md](https://github.com/matthummel-pa/pressroot/blob/main/docs/BUILD-NOTES.md) — prompt → root cause → fix → takeaway. | Sage · Blade · Tailwind v4 · Vite |
-| **[pressroots-reserve](https://github.com/matthummel-pa/pressroots-reserve)** | Appointments &amp; reservations for WordPress — bookable services, a timezone-aware availability engine, a front-end booking form (block + shortcode), confirmation emails with `.ics`, and a Month/Week/Day/List admin calendar. Standalone edition of the Pressroot bookings addon. | WordPress · PHP · Gutenberg |
-| **[pressroot-blockifier](https://github.com/matthummel-pa/pressroot-blockifier)** | Design in HTML, ship in blocks — write Custom HTML blocks freely, then convert them to native Gutenberg blocks with one click, per-block from the toolbar or whole-document Blockify. | WordPress · PHP · Gutenberg |
+| **[Hallowed Ground Battlefield Tours](https://ridgesandvalleys.com/work/concept-tour-hallowed-ground-tours/)** | Licensed-guide tours — historical vs after-dark pathways, five tours, an OpenLayers battlefield map, Sage + WooCommerce handoff | [Live demo](https://matthummel-pa.github.io/tour-hallowed-ground-tours-theme/) |
+| **[Keystone Homes &amp; Land](https://ridgesandvalleys.com/work/concept-realtor-keystone-homes-and-land/)** | Land &amp; farms agency — grid/map listings, acreage filters, financing tools | [Live demo](https://matthummel-pa.github.io/realtor-keystone-homes-and-land-theme/) |
+| **[Ridgeline Realty](https://ridgesandvalleys.com/work/concept-realtor-ridgeline-realty/)** | Realty site — filterable listings, live mortgage calculator, support tools | [Live demo](https://matthummel-pa.github.io/realtor-ridgeline-realty-theme/) |
+| **[First Shot Food &amp; History Tours](https://ridgesandvalleys.com/work/concept-tour-first-shot-food-tours/)** | Walking tours — calendar booking, add-ons, demo payment | [Live demo](https://matthummel-pa.github.io/tour-first-shot-food-tours-theme/) |
+| **[Ridgeline Outfitters](https://ridgesandvalleys.com/work/concept-retail-ridgeline-outfitters/)** | Outdoor gear shop — filters, quick-view, wishlist, cart with a free-shipping bar | [Live demo](https://matthummel-pa.github.io/retail-ridgeline-outfitters-theme/) |
+| **[Diamond &amp; Ridge Mercantile](https://ridgesandvalleys.com/work/concept-gettysburg-retail/)** | Downtown mercantile — full product shop, slide-in cart, checkout | [Live demo](https://matthummel-pa.github.io/gettysburg-retail-theme/) |
+| **[Cannon &amp; Crumb](https://ridgesandvalleys.com/work/concept-restaurant-cannon-and-crumb/)** | All-day cafe — tabbed, filterable menu and a real online-ordering cart | [Live demo](https://matthummel-pa.github.io/restaurant-cannon-and-crumb-theme/) |
+| **[Field &amp; Musket Tavern](https://ridgesandvalleys.com/work/concept-gettysburg-restaurant/)** | Farm-to-table tavern — editorial seasonal menu and a clear reservation path | [Live demo](https://matthummel-pa.github.io/gettysburg-restaurant-theme/) |
+| **[The Cupola &amp; Field Hotel](https://ridgesandvalleys.com/work/concept-hotel-cupola-field/)** | Modern boutique hotel — live reservation engine, concierge + guest-request tools | [Live demo](https://matthummel-pa.github.io/hotel-cupola-field-theme/) |
+| **[The Lantern &amp; Laurel Inn](https://ridgesandvalleys.com/work/concept-gettysburg-hotel/)** | Nine-room heritage inn — direct booking bar, forest-and-brass identity | [Live demo](https://matthummel-pa.github.io/gettysburg-hotel-theme/) |
+| **[Pintfield Creamery](https://ridgesandvalleys.com/work/gettysburg-creamery-website-design/)** | Gettysburg creamery — live 32-flavor Scoop Board, online ordering, three locations | [Live demo](https://pintfield-creamery.netlify.app/) |
+| **[Diamonds &amp; Threads](https://ridgesandvalleys.com/work/gettysburg-boutique-website/)** | Vintage-inspired boutique — distinctive branding and a clear customer journey | [Live demo](https://diamondsandthreads.ridgesandvalleys.com/) |
+| **[Willoughby Run Inn](https://ridgesandvalleys.com/work/gettysburg-inn-website/)** | Boutique inn — eight rooms with rates, booking flow, area guide, gallery | [Live demo](https://willoughbyruninn.ridgesandvalleys.com/) |
+| **[Reveille Kitchen &amp; Bar](https://ridgesandvalleys.com/work/gettysburg-restaurant-website/)** | Farm-to-table restaurant — menu, reservations, private events, online ordering | [Live demo](https://reveille.ridgesandvalleys.com/) |
+| **[Herr Ridge Cottage B&amp;B](https://ridgesandvalleys.com/work/gettysburg-bed-and-breakfast-website/)** | Three-room B&amp;B — full multi-page site built to turn searches into booked stays | [Live demo](https://herrridgecottage.ridgesandvalleys.com/) |
+| **[Field of Valor History Co.](https://ridgesandvalleys.com/work/gettysburg-tour-website-concept/)** | Battlefield tours — small groups, licensed guides, seven tours each with their own page | [Live demo](https://fieldofvalor.ridgesandvalleys.com/) |
 
-### More repositories
-
-| Repository | What it is | Tech |
-| --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** | A premium **Sage 11 (Roots)** WordPress theme — Blade templates, a deep Customizer options framework, live GitHub project pages, self-hosted fonts, and a Gutenberg **block + pattern library**. | Sage · Blade · Acorn · PHP · Tailwind · Vite |
-| **[matthummel-portfolio](https://github.com/matthummel-pa/matthummel-portfolio)** | My personal site ([matthummel.com](https://matthummel.com)) — a fast, accessible **headless** front end that uses WordPress as a CMS. | Next.js · TypeScript · Tailwind |
-| **[tocflow](https://github.com/matthummel-pa/tocflow)** | A focused WordPress **block plugin** — auto-generates a linked table of contents from a post's headings. Server-rendered, accessible. | WordPress · PHP · JS |
-| **[resume](https://github.com/matthummel-pa/resume)** | My résumé / CV site. | JavaScript |
-| **[tech-book-club-landing-page](https://github.com/matthummel-pa/tech-book-club-landing-page)** | A responsive landing page built to spec. | CSS |
-| **[news-home-page-project](https://github.com/matthummel-pa/news-home-page-project)** | A responsive news homepage with a modern grid layout. | SCSS |
-| **[blog-preview-card](https://github.com/matthummel-pa/blog-preview-card)** | A pixel-accurate, accessible component build. | CSS |
-| **[qr-code-challenge](https://github.com/matthummel-pa/qr-code-challenge)** | A clean, centered QR-code component. | CSS |
-| **[html-css-cheat-sheet-project](https://github.com/matthummel-pa/html-css-cheat-sheet-project)** | An HTML &amp; CSS reference build. | CSS |
-
-> The smaller front-end builds are deliberate practice — real specs, pixel accuracy, and responsive, accessible markup.
+Browse the full set (filters + write-ups) on the **[Ridges &amp; Valleys work page](https://ridgesandvalleys.com/work/)**.
 
 ---
 
-## 🛠️ What I do
+## What I do
 
-- **AI-first development** — I work with **Claude** (Claude Code, Claude Cowork, and Claude in Chrome) as a daily engineering collaborator for architecture, implementation, code review, and documentation. Keepary, Repofolio, Pressroot, and the redesign of [matthummel.com](https://matthummel.com) were all shipped this way — every change still reviewed, tested, and held to the same accessibility and performance standards as any hand-built project.
-- **Full-stack web development** — HTML, CSS, JavaScript/TypeScript, React, Next.js, and PHP. Accessibility-first (WCAG / Section 508), with an eye for performance and SEO.
-- **WordPress &amp; Sage** — custom themes with modern **Sage 11 (Roots)** development: **Blade** templating, **Acorn** (Laravel-in-WordPress), **Tailwind + Vite** builds, and **Gutenberg** block &amp; pattern development. Also **headless WordPress** (REST API + Next.js).
-- **Theme &amp; block engineering** — design-token systems, Customizer/theme-options frameworks, custom dynamic blocks (`block.json`, `theme.json`), web-performance work (per-block CSS, critical CSS, self-hosted fonts), and structured data (JSON-LD).
-- **Microsoft Power Platform** — Power Apps (canvas &amp; model-driven), Power Automate, Dataverse, and SharePoint Online solutions that replace manual, paper-based processes with reliable automation.
+Drawn from how I actually work on [matthummel.com](https://matthummel.com/about/).
 
-## 🧰 Skills
+- **Full-stack web development** — HTML, CSS, JavaScript/TypeScript, React, Next.js, PHP, and Node. I care about clean code, solid performance, and interfaces that work for everyone, on every device.
+- **WordPress (the work I enjoy most)** — custom themes and plugins, **Sage 11 (Roots)** with **Blade**, **Acorn**, **Bedrock**, **Tailwind + Vite**, and Gutenberg blocks &amp; patterns. Also headless WordPress (REST API). Accessibility (WCAG), Core Web Vitals, and local SEO are part of the build, not a bolt-on.
+- **Front-end** — accessible, fast interfaces. Responsive layouts, readable type, and one clear next step — especially on phones.
+- **Back-end** — PHP, Node, and APIs: the logic, data, and integrations behind the site.
+- **Local business sites** — Gettysburg / Adams County restaurants, inns, shops, tours, and realtors. First draft in about a week; you own the domain, hosting, and site.
+- **Power Platform (experience, not the focus)** — Power Apps, Power Automate, Dataverse, and SharePoint / Microsoft 365 from my full-time consulting work. Useful when a team needs automation; WordPress is still where I’d rather spend the day.
 
-**Languages:** JavaScript · TypeScript · PHP · HTML · CSS/Sass
-**Front-end:** React · Next.js · Tailwind CSS · accessible, responsive UI
-**WordPress:** Sage 11 (Roots) · Blade · Acorn · Gutenberg blocks &amp; patterns · headless (REST API) · theme &amp; plugin development
-**AI tooling:** Claude Code · Claude Cowork · Claude in Chrome · AI-assisted architecture, code review &amp; documentation
-**Tooling:** Composer · Vite · WP-CLI · Git/GitHub · npm
-**Quality:** WCAG / Section 508 accessibility · Core Web Vitals performance · technical SEO &amp; JSON-LD schema
-**Microsoft 365:** Power Apps · Power Automate · Dataverse · SharePoint Online · SPFx
+I ship AI-first with **Claude** and **Cursor** as collaborators for architecture, implementation, and review. Every change still gets held to the same accessibility and performance bar as a hand-built project — I wrote about that workflow in [AI Website Redesign: 5 Lessons From a Solo Developer](https://matthummel.com/web-development/ai-website-redesign-solo-developer/).
 
-## ⚡ Power Platform &amp; Microsoft 365 ecosystem
+## Writing
 
-I work across the Microsoft 365 / Power Platform open-source community — the PnP toolkits, SPFx, and Power Automate samples:
+Latest posts from [matthummel.com](https://matthummel.com/blog/):
 
-[`pnpjs`](https://github.com/pnp/pnpjs) · [`PnP PowerShell`](https://github.com/pnp/powershell) · [`cli-microsoft365`](https://github.com/pnp/cli-microsoft365) · [`sp-dev-fx-webparts`](https://github.com/pnp/sp-dev-fx-webparts) · [`powerautomate-samples`](https://github.com/pnp/powerautomate-samples)
+- [AI Website Redesign: 5 Lessons From a Solo Developer](https://matthummel.com/web-development/ai-website-redesign-solo-developer/)
+- [Git and Deployment for Beginners: Ship Your Portfolio with Confidence](https://matthummel.com/web-development/git-and-deployment-for-beginners/)
+- [Getting Started with React and Next.js: A Beginner’s Roadmap](https://matthummel.com/tutorials/getting-started-react-nextjs/)
+- [Core Web Vitals in plain English](https://matthummel.com/tutorials/core-web-vitals-explained/)
+
+## Open to select side projects
+
+I’m in a full-time Power Platform role and take a small number of freelance / side projects — websites, landing pages, WordPress builds &amp; fixes, SEO &amp; performance. If you’ve got something interesting, [get in touch](https://matthummel.com/contact/).
 
 ---
-
-## 📊 GitHub
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=matthummel-pa&show_icons=true&hide_border=true&title_color=2C5A95&icon_color=2C5A95" alt="Matt Hummel's GitHub stats" height="160"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matthummel-pa&layout=compact&hide_border=true&title_color=2C5A95" alt="Top languages" height="160"/>
 </p>
 
-## 📫 Connect
+## Connect
 
 - 🌐 **Website / blog:** [matthummel.com](https://matthummel.com)
+- 🌿 **Studio:** [ridgesandvalleys.com](https://ridgesandvalleys.com)
 - 💼 **LinkedIn:** [linkedin.com/in/matt-hummel-pa](https://www.linkedin.com/in/matt-hummel-pa)
 - ✍️ **Dev.to:** [dev.to/mattbuildsapps](https://dev.to/mattbuildsapps)
+- 🦋 **Bluesky:** [@matthummel](https://bsky.app/profile/matthummel.bsky.social)
 
-<sub>Full-stack developer who likes clean, accessible code — documenting what actually works, and shipping it AI-first with Claude.</sub>
+<sub>Full-stack web developer who likes clean, accessible code — WordPress first, shipped with care.</sub>
