@@ -4,7 +4,7 @@
   <strong>Full-Stack Developer · Web Developer · WordPress &amp; Sage</strong>
 </p>
 <p align="center">
-  Fifteen years of building a wide range of fast, accessible websites from front-end to back-end in higher-ed, government, and freelance work helping web design agencies.<br/>
+  Fifteen years of building a wide range of fast, accessible websites and applications. Working from front-end to back-end in higher-ed, government, and web design agencies.<br/>
   WordPress is the work I enjoy most — custom themes, clean markup, and sites people can actually run.<br/>
   I also have professional Power Platform experience from a full-time consulting role.  
 </p>
