@@ -43,7 +43,7 @@
 <a id="work"></a>
 ## Featured work
 
-Live **concept sites** I designed and built for [Ridges &amp; Valleys Studio](https://ridgesandvalleys.com/work/) — one working demo per industry for Gettysburg and Adams County. Self-initiated builds (not client case studies), so you can click the real site.
+Live **concept sites** I designed and built for [Ridges &amp; Valleys Studio](https://ridgesandvalleys.com/work/) — working demos Gettysburg and Adams County. Self-initiated builds (not client case studies), so you can click the real site.
 
 <a id="tours"></a>
 ### Tours
