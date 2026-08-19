@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Matt Hummel 👋</h1>
 
 <p align="center">
-  <strong>Full-Stack Developer · WordPress &amp; Sage Specialist · Power Platform Consultant · AI-First Development with Claude</strong>
+  <strong>Full-Stack Developer · WordPress &amp; Sage Specialist · Power Platform Consultant · AI-First Development</strong>
 </p>
 <p align="center">
   15+ years building accessible websites, web apps, and Microsoft business solutions.<br/>
@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="https://matthummel.com">🌐 matthummel.com</a> &nbsp;·&nbsp;
+  <a href="https://ridgesandvalleys.com">🌿 Ridges &amp; Valleys</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/matt-hummel-pa">💼 LinkedIn</a> &nbsp;·&nbsp;
   <a href="https://dev.to/mattbuildsapps">✍️ Dev.to</a>
 </p>
@@ -27,6 +28,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/WordPress-21759B?style=flat&logo=wordpress&logoColor=white" alt="WordPress"/>
   <img src="https://img.shields.io/badge/Sage_(Roots)-525DDC?style=flat&logoColor=white" alt="Sage (Roots)"/>
+  <img src="https://img.shields.io/badge/Bedrock-525DDC?style=flat&logoColor=white" alt="Bedrock"/>
   <img src="https://img.shields.io/badge/Blade-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Blade"/>
   <img src="https://img.shields.io/badge/Acorn-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Acorn (Laravel)"/>
   <img src="https://img.shields.io/badge/Block_Editor-3858E9?style=flat&logo=wordpress&logoColor=white" alt="Gutenberg / Block Editor"/>
@@ -39,6 +41,7 @@
 <!-- AI-first workflow -->
 <p align="center">
   <img src="https://img.shields.io/badge/Claude-AI--First_Development-D97757?style=flat&logo=claude&logoColor=white" alt="Claude AI-First Development"/>
+  <img src="https://img.shields.io/badge/Cursor-555555?style=flat&logo=cursor&logoColor=white" alt="Cursor"/>
   <img src="https://img.shields.io/badge/Claude_Code-555555?style=flat&logo=claude&logoColor=white" alt="Claude Code"/>
   <img src="https://img.shields.io/badge/Claude_Cowork-555555?style=flat&logo=claude&logoColor=white" alt="Claude Cowork"/>
 </p>
@@ -53,12 +56,13 @@
 
 ---
 
-## 📌 Featured projects
+## 📌 Featured work
 
-Five projects I designed, built, and shipped solo — alongside a full-time job — using an **AI-first workflow with Claude**:
+Production client work plus projects I designed, built, and shipped solo — using an **AI-first workflow** with Claude and Cursor.
 
 | Repository | What it is | Tech |
 | --- | --- | --- |
+| **[ridgesandvalleys](https://github.com/matthummel-pa/ridgesandvalleys)** | Live site for **[Ridges &amp; Valleys Studio](https://ridgesandvalleys.com)** — a Bedrock + Sage 11 WordPress build (Blade, Tailwind v4, TypeScript, Vite, Acorn). Theme is the source of truth; GitHub Actions builds and deploys to SiteGround over SSH (code only — never the live database or uploads). Earthy Gettysburg / South Central PA brand, accessibility, SEO, and performance baked in. | Bedrock · Sage 11 · Blade · Tailwind v4 · Vite |
 | **[keepary](https://github.com/matthummel-pa/keepary)** | A private, invite-only social platform for family &amp; close friends — real auth with Postgres row-level security, TOTP 2FA, realtime chat, private feed, and a document vault. Designed and shipped end to end in collaboration with Claude. | React · Supabase · Netlify |
 | **[repofolio](https://github.com/matthummel-pa/repofolio)** | A WordPress plugin that turns your GitHub repos into a living portfolio — GitHub OAuth login, server-rendered Gutenberg repo grid, encrypted token storage. Experimental &amp; open to contributors. | WordPress · PHP · GitHub API |
 | **[pressroot](https://github.com/matthummel-pa/pressroot)** | A premium Sage 11 (Roots) WordPress theme framework — hero builder, style kits, custom blocks + patterns, live GitHub project pages, and a deep options system. Every AI prompt in the build is tracked in [BUILD-NOTES.md](https://github.com/matthummel-pa/pressroot/blob/main/docs/BUILD-NOTES.md) — prompt → root cause → fix → takeaway. | Sage · Blade · Tailwind v4 · Vite |
@@ -69,6 +73,7 @@ Five projects I designed, built, and shipped solo — alongside a full-time job 
 
 | Repository | What it is | Tech |
 | --- | --- | --- |
+| **[rv-concepts](https://github.com/matthummel-pa/rv-concepts)** | Design concepts for local Gettysburg and Adams County businesses — restaurants, inns, tours, and shops. Live demos on GitHub Pages. | Sage · HTML · CSS |
 | **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** | A premium **Sage 11 (Roots)** WordPress theme — Blade templates, a deep Customizer options framework, live GitHub project pages, self-hosted fonts, and a Gutenberg **block + pattern library**. | Sage · Blade · Acorn · PHP · Tailwind · Vite |
 | **[matthummel-portfolio](https://github.com/matthummel-pa/matthummel-portfolio)** | My personal site ([matthummel.com](https://matthummel.com)) — a fast, accessible **headless** front end that uses WordPress as a CMS. | Next.js · TypeScript · Tailwind |
 | **[tocflow](https://github.com/matthummel-pa/tocflow)** | A focused WordPress **block plugin** — auto-generates a linked table of contents from a post's headings. Server-rendered, accessible. | WordPress · PHP · JS |
@@ -85,19 +90,20 @@ Five projects I designed, built, and shipped solo — alongside a full-time job 
 
 ## 🛠️ What I do
 
-- **AI-first development** — I work with **Claude** (Claude Code, Claude Cowork, and Claude in Chrome) as a daily engineering collaborator for architecture, implementation, code review, and documentation. Keepary, Repofolio, Pressroot, and the redesign of [matthummel.com](https://matthummel.com) were all shipped this way — every change still reviewed, tested, and held to the same accessibility and performance standards as any hand-built project.
+- **AI-first development** — I work with **Claude** (Claude Code, Claude Cowork, Claude in Chrome) and **Cursor** as daily engineering collaborators for architecture, implementation, code review, and documentation. Keepary, Repofolio, Pressroot, Ridges &amp; Valleys, and the redesign of [matthummel.com](https://matthummel.com) were all shipped this way — every change still reviewed, tested, and held to the same accessibility and performance standards as any hand-built project.
 - **Full-stack web development** — HTML, CSS, JavaScript/TypeScript, React, Next.js, and PHP. Accessibility-first (WCAG / Section 508), with an eye for performance and SEO.
-- **WordPress &amp; Sage** — custom themes with modern **Sage 11 (Roots)** development: **Blade** templating, **Acorn** (Laravel-in-WordPress), **Tailwind + Vite** builds, and **Gutenberg** block &amp; pattern development. Also **headless WordPress** (REST API + Next.js).
+- **WordPress &amp; Sage** — custom themes with modern **Sage 11 (Roots)** development: **Bedrock**, **Blade** templating, **Acorn** (Laravel-in-WordPress), **Tailwind + Vite** builds, and **Gutenberg** block &amp; pattern development. Also **headless WordPress** (REST API + Next.js). Production deploys via GitHub Actions (theme build → SSH), with a hard split between code (up) and content (down).
 - **Theme &amp; block engineering** — design-token systems, Customizer/theme-options frameworks, custom dynamic blocks (`block.json`, `theme.json`), web-performance work (per-block CSS, critical CSS, self-hosted fonts), and structured data (JSON-LD).
+- **Local business sites** — Gettysburg / Adams County brands: studios, tours, restaurants, inns, and shops — from concept demos to a live Sage site on managed hosting.
 - **Microsoft Power Platform** — Power Apps (canvas &amp; model-driven), Power Automate, Dataverse, and SharePoint Online solutions that replace manual, paper-based processes with reliable automation.
 
 ## 🧰 Skills
 
 **Languages:** JavaScript · TypeScript · PHP · HTML · CSS/Sass
 **Front-end:** React · Next.js · Tailwind CSS · accessible, responsive UI
-**WordPress:** Sage 11 (Roots) · Blade · Acorn · Gutenberg blocks &amp; patterns · headless (REST API) · theme &amp; plugin development
-**AI tooling:** Claude Code · Claude Cowork · Claude in Chrome · AI-assisted architecture, code review &amp; documentation
-**Tooling:** Composer · Vite · WP-CLI · Git/GitHub · npm
+**WordPress:** Sage 11 (Roots) · Bedrock · Blade · Acorn · Gutenberg blocks &amp; patterns · headless (REST API) · theme &amp; plugin development
+**AI tooling:** Claude Code · Claude Cowork · Claude in Chrome · Cursor · AI-assisted architecture, code review &amp; documentation
+**Tooling:** Composer · Vite · WP-CLI · Git/GitHub · GitHub Actions · npm
 **Quality:** WCAG / Section 508 accessibility · Core Web Vitals performance · technical SEO &amp; JSON-LD schema
 **Microsoft 365:** Power Apps · Power Automate · Dataverse · SharePoint Online · SPFx
 
@@ -119,7 +125,8 @@ I work across the Microsoft 365 / Power Platform open-source community — the P
 ## 📫 Connect
 
 - 🌐 **Website / blog:** [matthummel.com](https://matthummel.com)
+- 🌿 **Ridges &amp; Valleys Studio:** [ridgesandvalleys.com](https://ridgesandvalleys.com)
 - 💼 **LinkedIn:** [linkedin.com/in/matt-hummel-pa](https://www.linkedin.com/in/matt-hummel-pa)
 - ✍️ **Dev.to:** [dev.to/mattbuildsapps](https://dev.to/mattbuildsapps)
 
-<sub>Full-stack developer who likes clean, accessible code — documenting what actually works, and shipping it AI-first with Claude.</sub>
+<sub>Full-stack developer who likes clean, accessible code — documenting what actually works, and shipping it AI-first.</sub>
