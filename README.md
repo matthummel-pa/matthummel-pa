@@ -17,6 +17,21 @@
 </p>
 
 <p align="center">
+  <a href="#work"><img src="https://img.shields.io/badge/Work-0F172A?style=for-the-badge" alt="Work" /></a>
+  <a href="#about"><img src="https://img.shields.io/badge/About-0F172A?style=for-the-badge" alt="About" /></a>
+  <a href="#writing"><img src="https://img.shields.io/badge/Writing-0F172A?style=for-the-badge" alt="Writing" /></a>
+  <a href="#projects"><img src="https://img.shields.io/badge/Projects-0F172A?style=for-the-badge" alt="Projects" /></a>
+  <a href="#connect"><img src="https://img.shields.io/badge/Connect-0F172A?style=for-the-badge" alt="Connect" /></a>
+</p>
+<p align="center">
+  <a href="#tours"><img src="https://img.shields.io/badge/Tours-2C5A95?style=for-the-badge" alt="Tours" /></a>
+  <a href="#real-estate"><img src="https://img.shields.io/badge/Real_estate-2C5A95?style=for-the-badge" alt="Real estate" /></a>
+  <a href="#retail"><img src="https://img.shields.io/badge/Retail-2C5A95?style=for-the-badge" alt="Retail" /></a>
+  <a href="#restaurants"><img src="https://img.shields.io/badge/Restaurants-2C5A95?style=for-the-badge" alt="Restaurants" /></a>
+  <a href="#hotels"><img src="https://img.shields.io/badge/Hotels-2C5A95?style=for-the-badge" alt="Hotels" /></a>
+</p>
+
+<p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=html,css,js,ts,php,wordpress,react,nextjs,nodejs,tailwind,sass,vite,laravel,git,github,vscode&perline=8" alt="HTML, CSS, JavaScript, TypeScript, PHP, WordPress, React, Next.js, Node.js, Tailwind, Sass, Vite, Laravel, Git, GitHub, VS Code" />
   </a>
@@ -24,10 +39,12 @@
 
 ---
 
+<a id="work"></a>
 ## Featured work
 
 Live **concept sites** I designed and built for [Ridges &amp; Valleys Studio](https://ridgesandvalleys.com/work/) — one working demo per industry for Gettysburg and Adams County. Self-initiated builds (not client case studies), so you can click the real site.
 
+<a id="tours"></a>
 ### Tours
 
 <table>
@@ -58,6 +75,7 @@ Live **concept sites** I designed and built for [Ridges &amp; Valleys Studio](ht
   </tr>
 </table>
 
+<a id="real-estate"></a>
 ### Real estate
 
 <table>
@@ -79,6 +97,7 @@ Live **concept sites** I designed and built for [Ridges &amp; Valleys Studio](ht
   </tr>
 </table>
 
+<a id="retail"></a>
 ### Retail &amp; shops
 
 <table>
@@ -109,6 +128,7 @@ Live **concept sites** I designed and built for [Ridges &amp; Valleys Studio](ht
   </tr>
 </table>
 
+<a id="restaurants"></a>
 ### Restaurants
 
 <table>
@@ -146,6 +166,7 @@ Live **concept sites** I designed and built for [Ridges &amp; Valleys Studio](ht
   </tr>
 </table>
 
+<a id="hotels"></a>
 ### Hotels &amp; inns
 
 <table>
@@ -187,6 +208,7 @@ Browse filters and write-ups on the **[Ridges &amp; Valleys work page](https://r
 
 ---
 
+<a id="about"></a>
 ## What I do
 
 Drawn from how I actually work on [matthummel.com](https://matthummel.com/about/).
@@ -200,6 +222,7 @@ Drawn from how I actually work on [matthummel.com](https://matthummel.com/about/
 
 I ship AI-first with **Claude** and **Cursor** as collaborators for architecture, implementation, and review. Every change still gets held to the same accessibility and performance bar as a hand-built project — I wrote about that workflow in [AI Website Redesign: 5 Lessons From a Solo Developer](https://matthummel.com/web-development/ai-website-redesign-solo-developer/).
 
+<a id="writing"></a>
 ## Writing
 
 Latest posts from [matthummel.com](https://matthummel.com/blog/):
@@ -209,6 +232,7 @@ Latest posts from [matthummel.com](https://matthummel.com/blog/):
 - [Getting Started with React and Next.js: A Beginner’s Roadmap](https://matthummel.com/tutorials/getting-started-react-nextjs/)
 - [Core Web Vitals in plain English](https://matthummel.com/tutorials/core-web-vitals-explained/)
 
+<a id="projects"></a>
 ## Open to select side projects
 
 I’m in a full-time Power Platform role and take a small number of freelance / side projects — websites, landing pages, WordPress builds &amp; fixes, SEO &amp; performance. If you’ve got something interesting, [get in touch](https://matthummel.com/contact/).
@@ -220,6 +244,7 @@ I’m in a full-time Power Platform role and take a small number of freelance / 
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matthummel-pa&layout=compact&hide_border=true&title_color=2C5A95" alt="Top languages" height="160"/>
 </p>
 
+<a id="connect"></a>
 ## Connect
 
 - 🌐 **Website / blog:** [matthummel.com](https://matthummel.com)
