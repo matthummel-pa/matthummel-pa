@@ -26,28 +26,164 @@
 
 ## Featured work
 
-Live **concept sites** I designed and built for [Ridges &amp; Valleys Studio](https://ridgesandvalleys.com/work/) — one working demo per industry for restaurants, inns, shops, tours, and real estate around Gettysburg and Adams County. These are self-initiated builds (not client case studies), so you can click the real site.
+Live **concept sites** I designed and built for [Ridges &amp; Valleys Studio](https://ridgesandvalleys.com/work/) — one working demo per industry for Gettysburg and Adams County. Self-initiated builds (not client case studies), so you can click the real site.
 
-| Concept | What it is | Demo |
-| --- | --- | --- |
-| **[Hallowed Ground Battlefield Tours](https://ridgesandvalleys.com/work/concept-tour-hallowed-ground-tours/)** | Licensed-guide tours — historical vs after-dark pathways, five tours, an OpenLayers battlefield map, Sage + WooCommerce handoff | [Live demo](https://matthummel-pa.github.io/tour-hallowed-ground-tours-theme/) |
-| **[Keystone Homes &amp; Land](https://ridgesandvalleys.com/work/concept-realtor-keystone-homes-and-land/)** | Land &amp; farms agency — grid/map listings, acreage filters, financing tools | [Live demo](https://matthummel-pa.github.io/realtor-keystone-homes-and-land-theme/) |
-| **[Ridgeline Realty](https://ridgesandvalleys.com/work/concept-realtor-ridgeline-realty/)** | Realty site — filterable listings, live mortgage calculator, support tools | [Live demo](https://matthummel-pa.github.io/realtor-ridgeline-realty-theme/) |
-| **[First Shot Food &amp; History Tours](https://ridgesandvalleys.com/work/concept-tour-first-shot-food-tours/)** | Walking tours — calendar booking, add-ons, demo payment | [Live demo](https://matthummel-pa.github.io/tour-first-shot-food-tours-theme/) |
-| **[Ridgeline Outfitters](https://ridgesandvalleys.com/work/concept-retail-ridgeline-outfitters/)** | Outdoor gear shop — filters, quick-view, wishlist, cart with a free-shipping bar | [Live demo](https://matthummel-pa.github.io/retail-ridgeline-outfitters-theme/) |
-| **[Diamond &amp; Ridge Mercantile](https://ridgesandvalleys.com/work/concept-gettysburg-retail/)** | Downtown mercantile — full product shop, slide-in cart, checkout | [Live demo](https://matthummel-pa.github.io/gettysburg-retail-theme/) |
-| **[Cannon &amp; Crumb](https://ridgesandvalleys.com/work/concept-restaurant-cannon-and-crumb/)** | All-day cafe — tabbed, filterable menu and a real online-ordering cart | [Live demo](https://matthummel-pa.github.io/restaurant-cannon-and-crumb-theme/) |
-| **[Field &amp; Musket Tavern](https://ridgesandvalleys.com/work/concept-gettysburg-restaurant/)** | Farm-to-table tavern — editorial seasonal menu and a clear reservation path | [Live demo](https://matthummel-pa.github.io/gettysburg-restaurant-theme/) |
-| **[The Cupola &amp; Field Hotel](https://ridgesandvalleys.com/work/concept-hotel-cupola-field/)** | Modern boutique hotel — live reservation engine, concierge + guest-request tools | [Live demo](https://matthummel-pa.github.io/hotel-cupola-field-theme/) |
-| **[The Lantern &amp; Laurel Inn](https://ridgesandvalleys.com/work/concept-gettysburg-hotel/)** | Nine-room heritage inn — direct booking bar, forest-and-brass identity | [Live demo](https://matthummel-pa.github.io/gettysburg-hotel-theme/) |
-| **[Pintfield Creamery](https://ridgesandvalleys.com/work/gettysburg-creamery-website-design/)** | Gettysburg creamery — live 32-flavor Scoop Board, online ordering, three locations | [Live demo](https://pintfield-creamery.netlify.app/) |
-| **[Diamonds &amp; Threads](https://ridgesandvalleys.com/work/gettysburg-boutique-website/)** | Vintage-inspired boutique — distinctive branding and a clear customer journey | [Live demo](https://diamondsandthreads.ridgesandvalleys.com/) |
-| **[Willoughby Run Inn](https://ridgesandvalleys.com/work/gettysburg-inn-website/)** | Boutique inn — eight rooms with rates, booking flow, area guide, gallery | [Live demo](https://willoughbyruninn.ridgesandvalleys.com/) |
-| **[Reveille Kitchen &amp; Bar](https://ridgesandvalleys.com/work/gettysburg-restaurant-website/)** | Farm-to-table restaurant — menu, reservations, private events, online ordering | [Live demo](https://reveille.ridgesandvalleys.com/) |
-| **[Herr Ridge Cottage B&amp;B](https://ridgesandvalleys.com/work/gettysburg-bed-and-breakfast-website/)** | Three-room B&amp;B — full multi-page site built to turn searches into booked stays | [Live demo](https://herrridgecottage.ridgesandvalleys.com/) |
-| **[Field of Valor History Co.](https://ridgesandvalleys.com/work/gettysburg-tour-website-concept/)** | Battlefield tours — small groups, licensed guides, seven tours each with their own page | [Live demo](https://fieldofvalor.ridgesandvalleys.com/) |
+### Tours
 
-Browse the full set (filters + write-ups) on the **[Ridges &amp; Valleys work page](https://ridgesandvalleys.com/work/)**.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://matthummel-pa.github.io/tour-hallowed-ground-tours-theme/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/tour-hallowed-ground-tours-home-hero-720x480.jpg" alt="Hallowed Ground Battlefield Tours homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/concept-tour-hallowed-ground-tours/">Hallowed Ground Battlefield Tours</a></strong><br />
+      <sub>Licensed-guide tours · OpenLayers map · Sage + WooCommerce</sub><br />
+      <a href="https://ridgesandvalleys.com/work/concept-tour-hallowed-ground-tours/">Case study</a> · <a href="https://matthummel-pa.github.io/tour-hallowed-ground-tours-theme/">Live demo</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://matthummel-pa.github.io/tour-first-shot-food-tours-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/tour-first-shot-food-tours.jpg" alt="First Shot Food & History Tours homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/concept-tour-first-shot-food-tours/">First Shot Food &amp; History Tours</a></strong><br />
+      <sub>Walking tours · calendar booking · add-ons</sub><br />
+      <a href="https://ridgesandvalleys.com/work/concept-tour-first-shot-food-tours/">Case study</a> · <a href="https://matthummel-pa.github.io/tour-first-shot-food-tours-theme/">Live demo</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://fieldofvalor.ridgesandvalleys.com/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/field-of-valor-cover-720x480.jpg" alt="Field of Valor History Co. homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/gettysburg-tour-website-concept/">Field of Valor History Co.</a></strong><br />
+      <sub>Battlefield tours · seven tour pages · licensed guides</sub><br />
+      <a href="https://ridgesandvalleys.com/work/gettysburg-tour-website-concept/">Case study</a> · <a href="https://fieldofvalor.ridgesandvalleys.com/">Live demo</a>
+    </td>
+  </tr>
+</table>
+
+### Real estate
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://matthummel-pa.github.io/realtor-keystone-homes-and-land-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/realtor-keystone-homes-and-land.jpg" alt="Keystone Homes & Land homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/concept-realtor-keystone-homes-and-land/">Keystone Homes &amp; Land</a></strong><br />
+      <sub>Land &amp; farms · grid/map listings · acreage filters</sub><br />
+      <a href="https://ridgesandvalleys.com/work/concept-realtor-keystone-homes-and-land/">Case study</a> · <a href="https://matthummel-pa.github.io/realtor-keystone-homes-and-land-theme/">Live demo</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://matthummel-pa.github.io/realtor-ridgeline-realty-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/realtor-ridgeline-realty.jpg" alt="Ridgeline Realty homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/concept-realtor-ridgeline-realty/">Ridgeline Realty</a></strong><br />
+      <sub>Filterable listings · live mortgage calculator</sub><br />
+      <a href="https://ridgesandvalleys.com/work/concept-realtor-ridgeline-realty/">Case study</a> · <a href="https://matthummel-pa.github.io/realtor-ridgeline-realty-theme/">Live demo</a>
+    </td>
+  </tr>
+</table>
+
+### Retail &amp; shops
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://matthummel-pa.github.io/retail-ridgeline-outfitters-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/retail-ridgeline-outfitters.jpg" alt="Ridgeline Outfitters homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/concept-retail-ridgeline-outfitters/">Ridgeline Outfitters</a></strong><br />
+      <sub>Outdoor gear · quick-view · wishlist · free-shipping bar</sub><br />
+      <a href="https://ridgesandvalleys.com/work/concept-retail-ridgeline-outfitters/">Case study</a> · <a href="https://matthummel-pa.github.io/retail-ridgeline-outfitters-theme/">Live demo</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://matthummel-pa.github.io/gettysburg-retail-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/gettysburg-retail.jpg" alt="Diamond & Ridge Mercantile homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/concept-gettysburg-retail/">Diamond &amp; Ridge Mercantile</a></strong><br />
+      <sub>Downtown shop · slide-in cart · checkout</sub><br />
+      <a href="https://ridgesandvalleys.com/work/concept-gettysburg-retail/">Case study</a> · <a href="https://matthummel-pa.github.io/gettysburg-retail-theme/">Live demo</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://diamondsandthreads.ridgesandvalleys.com/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/concept-diamond-and-thread-720x480.jpg" alt="Diamonds & Threads homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/gettysburg-boutique-website/">Diamonds &amp; Threads</a></strong><br />
+      <sub>Vintage boutique · branding · a clear customer journey</sub><br />
+      <a href="https://ridgesandvalleys.com/work/gettysburg-boutique-website/">Case study</a> · <a href="https://diamondsandthreads.ridgesandvalleys.com/">Live demo</a>
+    </td>
+  </tr>
+</table>
+
+### Restaurants
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://matthummel-pa.github.io/restaurant-cannon-and-crumb-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/restaurant-cannon-and-crumb.jpg" alt="Cannon & Crumb homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/concept-restaurant-cannon-and-crumb/">Cannon &amp; Crumb</a></strong><br />
+      <sub>All-day cafe · filterable menu · online ordering</sub><br />
+      <a href="https://ridgesandvalleys.com/work/concept-restaurant-cannon-and-crumb/">Case study</a> · <a href="https://matthummel-pa.github.io/restaurant-cannon-and-crumb-theme/">Live demo</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://matthummel-pa.github.io/gettysburg-restaurant-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/gettysburg-restaurant.jpg" alt="Field & Musket Tavern homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/concept-gettysburg-restaurant/">Field &amp; Musket Tavern</a></strong><br />
+      <sub>Farm-to-table tavern · seasonal menu · reservations</sub><br />
+      <a href="https://ridgesandvalleys.com/work/concept-gettysburg-restaurant/">Case study</a> · <a href="https://matthummel-pa.github.io/gettysburg-restaurant-theme/">Live demo</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://pintfield-creamery.netlify.app/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/gettysburg-website-design-creamery-concept-720x480.jpg" alt="Pintfield Creamery homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/gettysburg-creamery-website-design/">Pintfield Creamery</a></strong><br />
+      <sub>32-flavor Scoop Board · online ordering · three locations</sub><br />
+      <a href="https://ridgesandvalleys.com/work/gettysburg-creamery-website-design/">Case study</a> · <a href="https://pintfield-creamery.netlify.app/">Live demo</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://reveille.ridgesandvalleys.com/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/reveille-home-720x480.png" alt="Reveille Kitchen & Bar homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/gettysburg-restaurant-website/">Reveille Kitchen &amp; Bar</a></strong><br />
+      <sub>Farm-to-table · menu · reservations · private events</sub><br />
+      <a href="https://ridgesandvalleys.com/work/gettysburg-restaurant-website/">Case study</a> · <a href="https://reveille.ridgesandvalleys.com/">Live demo</a>
+    </td>
+  </tr>
+</table>
+
+### Hotels &amp; inns
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://matthummel-pa.github.io/hotel-cupola-field-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/hotel-cupola-field.jpg" alt="The Cupola & Field Hotel homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/concept-hotel-cupola-field/">The Cupola &amp; Field Hotel</a></strong><br />
+      <sub>Modern boutique hotel · live rates · concierge tools</sub><br />
+      <a href="https://ridgesandvalleys.com/work/concept-hotel-cupola-field/">Case study</a> · <a href="https://matthummel-pa.github.io/hotel-cupola-field-theme/">Live demo</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://matthummel-pa.github.io/gettysburg-hotel-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/gettysburg-hotel.jpg" alt="The Lantern & Laurel Inn homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/concept-gettysburg-hotel/">The Lantern &amp; Laurel Inn</a></strong><br />
+      <sub>Nine-room heritage inn · direct booking · forest &amp; brass</sub><br />
+      <a href="https://ridgesandvalleys.com/work/concept-gettysburg-hotel/">Case study</a> · <a href="https://matthummel-pa.github.io/gettysburg-hotel-theme/">Live demo</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://willoughbyruninn.ridgesandvalleys.com/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/willoughby-cover-720x480.jpg" alt="Willoughby Run Inn homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/gettysburg-inn-website/">Willoughby Run Inn</a></strong><br />
+      <sub>Eight rooms · booking flow · Gettysburg area guide</sub><br />
+      <a href="https://ridgesandvalleys.com/work/gettysburg-inn-website/">Case study</a> · <a href="https://willoughbyruninn.ridgesandvalleys.com/">Live demo</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://herrridgecottage.ridgesandvalleys.com/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/herr-ridge-cover-720x480.jpg" alt="Herr Ridge Cottage B&B homepage" width="100%" /></a>
+      <br />
+      <strong><a href="https://ridgesandvalleys.com/work/gettysburg-bed-and-breakfast-website/">Herr Ridge Cottage B&amp;B</a></strong><br />
+      <sub>Three-room B&amp;B · multi-page stay site</sub><br />
+      <a href="https://ridgesandvalleys.com/work/gettysburg-bed-and-breakfast-website/">Case study</a> · <a href="https://herrridgecottage.ridgesandvalleys.com/">Live demo</a>
+    </td>
+  </tr>
+</table>
+
+Browse filters and write-ups on the **[Ridges &amp; Valleys work page](https://ridgesandvalleys.com/work/)**.
 
 ---
 
