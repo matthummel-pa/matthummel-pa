@@ -21,6 +21,7 @@
   <a href="#about"><img src="https://img.shields.io/badge/About-0F172A?style=for-the-badge" alt="About" /></a>
   <a href="#writing"><img src="https://img.shields.io/badge/Writing-0F172A?style=for-the-badge" alt="Writing" /></a>
   <a href="#projects"><img src="https://img.shields.io/badge/Projects-0F172A?style=for-the-badge" alt="Projects" /></a>
+  <a href="#stats"><img src="https://img.shields.io/badge/Stats-0F172A?style=for-the-badge" alt="Stats" /></a>
   <a href="#connect"><img src="https://img.shields.io/badge/Connect-0F172A?style=for-the-badge" alt="Connect" /></a>
 </p>
 <p align="center">
@@ -239,10 +240,19 @@ I’m in a full-time Power Platform role and take a small number of freelance / 
 
 ---
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=matthummel-pa&show_icons=true&hide_border=true&title_color=2C5A95&icon_color=2C5A95" alt="Matt Hummel's GitHub stats" height="160"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matthummel-pa&layout=compact&hide_border=true&title_color=2C5A95" alt="Top languages" height="160"/>
-</p>
+<a id="stats"></a>
+## GitHub
+
+<table align="center">
+  <tr>
+    <td valign="top" width="50%">
+      <img src="https://github-readme-stats.shion.dev/api?username=matthummel-pa&show_icons=true&hide_border=true&title_color=2C5A95&icon_color=2C5A95&text_color=334155&include_all_commits=true" alt="Matt Hummel's GitHub stats" />
+    </td>
+    <td valign="top" width="50%">
+      <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=matthummel-pa&layout=compact&hide_border=true&title_color=2C5A95&text_color=334155&langs_count=8" alt="Top languages" />
+    </td>
+  </tr>
+</table>
 
 <a id="connect"></a>
 ## Connect
