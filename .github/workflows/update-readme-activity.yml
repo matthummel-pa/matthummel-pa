@@ -1,0 +1,48 @@
+name: Update README activity
+
+on:
+  schedule:
+    # GitHub schedules are best-effort; hourly keeps the feed fresh.
+    - cron: "0 * * * *"
+  workflow_dispatch:
+  # Refresh soon after Matt ships elsewhere too (best-effort; only fires in this repo).
+  push:
+    branches: [main]
+    paths-ignore:
+      - "README.md"
+      - ".github/workflows/update-readme-activity.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-activity:
+    name: Refresh recent GitHub activity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update Recent activity section
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: matthummel-pa
+          ACTIVITY_MAX_LINES: "15"
+        run: python3 .github/scripts/update-activity.py
+
+      - name: Commit & push if changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "No README changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: refresh recent GitHub activity"
+          git push
