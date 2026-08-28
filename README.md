@@ -13,12 +13,13 @@
 </p>
 
 <p align="center">
-  <strong>Full-Stack Developer · Web Developer · WordPress &amp; Sage</strong>
+  <strong>Full-stack developer · WordPress specialist</strong>
 </p>
 
 <p align="center">
-  Fifteen years building fast, accessible websites and apps — higher-ed, government, and agency life.<br/>
-  WordPress is the work I enjoy most. Power Platform pays some of the bills. Coffee pays for neither.
+  More than 15 years building for the web — accessible front ends, PHP applications, APIs, and deployment workflows.<br/>
+  WordPress is my specialty: a flexible platform with an editor businesses can actually use.<br/>
+  Based in Gettysburg, PA. Open to collaboration.
 </p>
 
 <p align="center">
@@ -38,16 +39,16 @@
   "name": "matt-hummel",
   "version": "15.0.0",
   "private": false,
-  "description": "Full-stack web developer who likes clean, accessible code",
+  "description": "Full-stack developer · WordPress specialist · open to collaboration",
   "main": "WordPress + Sage",
   "scripts": {
     "dev": "cursor . && coffee --watch",
-    "build": "ship accessible sites",
-    "test": "a11y + Core Web Vitals + 'does the client smile?'",
-    "deploy": "git push && pray && celebrate"
+    "build": "ship accessible WordPress platforms",
+    "test": "a11y + Core Web Vitals + 'can the shop edit it?'",
+    "deploy": "you own the keys"
   },
   "dependencies": {
-    "wordpress": "latest",
+    "wordpress": "specialty",
     "roots/sage": "^11",
     "react": "^19",
     "curiosity": "*",
@@ -62,7 +63,7 @@
     "node": ">=human",
     "coffee": "required"
   },
-  "keywords": ["full-stack", "wordpress", "sage", "gettysburg", "a11y"],
+  "keywords": ["full-stack", "wordpress", "sage", "gettysburg", "a11y", "open-for-work"],
   "license": "MIT-and-kindness"
 }
 ```
@@ -81,7 +82,7 @@
   <a href="#work"><img src="https://img.shields.io/badge/Work-0F172A?style=for-the-badge" alt="Work" /></a>
   <a href="#about"><img src="https://img.shields.io/badge/About-0F172A?style=for-the-badge" alt="About" /></a>
   <a href="#writing"><img src="https://img.shields.io/badge/Writing-0F172A?style=for-the-badge" alt="Writing" /></a>
-  <a href="#projects"><img src="https://img.shields.io/badge/Projects-0F172A?style=for-the-badge" alt="Projects" /></a>
+  <a href="#projects"><img src="https://img.shields.io/badge/Open_for_work-0F172A?style=for-the-badge" alt="Open for work" /></a>
   <a href="#stats"><img src="https://img.shields.io/badge/Stats-0F172A?style=for-the-badge" alt="Stats" /></a>
   <a href="#connect"><img src="https://img.shields.io/badge/Connect-0F172A?style=for-the-badge" alt="Connect" /></a>
 </p>
@@ -285,21 +286,22 @@ Drawn from how I actually work on [matthummel.com](https://matthummel.com/about/
 | Mode | What that looks like |
 | --- | --- |
 | **Full-stack** | HTML, CSS, JS/TS, React, Next.js, PHP, Node — clean code, solid perf, interfaces that work for everyone |
-| **WordPress (home base)** | Sage 11, Blade, Acorn, Bedrock, Tailwind + Vite, Gutenberg blocks. A11y + Core Web Vitals baked in |
+| **WordPress (specialty)** | Sage 11, Blade, Acorn, Bedrock, Tailwind + Vite, Gutenberg blocks. A11y + Core Web Vitals baked in |
 | **Front-end** | Responsive layouts, readable type, one clear next step — especially on phones |
 | **Back-end** | PHP, Node, APIs — the logic and integrations behind the pretty pixels |
 | **Local business sites** | Gettysburg / Adams County restaurants, inns, shops, tours, realtors. You own the keys |
-| **Power Platform** | Power Apps, Automate, Dataverse, SharePoint — useful; WordPress is still where I’d rather spend the day |
+| **Agency partner** | Overflow and silent subs welcome — you keep the client relationship; I stay in the background |
 
-I ship AI-first with **Claude** and **Cursor** as collaborators. Every change still gets held to the same a11y and performance bar as a hand-built project — I wrote about that in [AI Website Redesign: 5 Lessons From a Solo Developer](https://matthummel.com/web-development/ai-website-redesign-solo-developer/).
+I use **Claude** and **Cursor** to move faster on the repeatable parts. Every line still gets read and tested by me before it ships — I wrote about that in [AI Website Redesign: 5 Lessons From a Solo Developer](https://matthummel.com/web-development/ai-website-redesign-solo-developer/).
 
-### Developer OS (aka how I stay sane)
+### How I actually work
 
-- `git commit -m "fix typo"` × 47, then one real feature
-- Lighthouse green > vibes (but vibes matter too)
-- Prefer boring technology that ships over exciting technology that demos
-- Accessibility isn’t a phase — it’s the definition of done
-- Pair with AI, review like a human, merge like an adult
+- Shops own everything: domain, hosting, database, and code
+- The admin experience is part of the build — if it’s hard to update, it doesn’t get updated
+- Plain, readable code (if you can’t follow a function in 30 seconds, it’s too clever)
+- AI assists; I review everything
+- Accessibility and plain language by default
+- Small, focused plugins — one job each
 
 <a id="writing"></a>
 ## Writing
@@ -312,9 +314,11 @@ Latest posts from [matthummel.com](https://matthummel.com/blog/):
 - [Core Web Vitals in plain English](https://matthummel.com/tutorials/core-web-vitals-explained/)
 
 <a id="projects"></a>
-## Open to select side projects
+## Open for work
 
-I’m in a full-time Power Platform role and take a small number of freelance / side projects — websites, landing pages, WordPress builds &amp; fixes, SEO &amp; performance. If you’ve got something interesting, [get in touch](https://matthummel.com/contact/).
+I’m looking for **full-time roles**, **contract gigs**, and **freelance projects** on [matthummel.com](https://matthummel.com) — WordPress platforms, full-stack web apps, and agency overflow. Based in Gettysburg, PA; happy to work remote.
+
+If you’re hiring a full-stack developer, need an experienced WordPress specialist, want agency overflow support, or have a web project to discuss, [send a short note](https://matthummel.com/contact/) about what you’re working on.
 
 ---
 
@@ -345,4 +349,4 @@ I’m in a full-time Power Platform role and take a small number of freelance / 
 - ✍️ **Dev.to:** [dev.to/mattbuildsapps](https://dev.to/mattbuildsapps)
 - 🦋 **Bluesky:** [@matthummel](https://bsky.app/profile/matthummel.bsky.social)
 
-<sub>Full-stack web developer who likes clean, accessible code — WordPress first, shipped with care. PRs welcome; puns tolerated.</sub>
+<sub>Full-stack developer · WordPress specialist — open for work. PRs welcome; puns tolerated.</sub>
