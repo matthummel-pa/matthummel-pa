@@ -107,6 +107,7 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#9](https://github.com/matthummel-pa/matthummel-pa/pull/9) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Fun fullstack README + live Recent activity feed
 - 🔀 Open PR [#1](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/pull/1) in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme) — UX / SEO / a11y / performance polish for Keystone concept site
 - 🔀 Open PR [#6](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme/pull/6) in [matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme) — docs: comprehensive advanced README (features, screenshots, architecture, changelog, er…
 - 🔀 Merged PR [#8](https://github.com/matthummel-pa/matthummel-pa/pull/8) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Compact featured work cards; titles link to GitHub repos
@@ -114,14 +115,13 @@ Live feed of what I’ve been shipping across GitHub — PRs, commits, releases,
 - 🔀 Merged PR [#78](https://github.com/matthummel-pa/matthummel-theme/pull/78) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Projects admin: concept custom fields, on-site toggle, filters
 - 🔀 Merged PR [#77](https://github.com/matthummel-pa/matthummel-theme/pull/77) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — On-site concept pages for Projects (/concept/{slug}/)
 - 🔀 Merged PR [#76](https://github.com/matthummel-pa/matthummel-theme/pull/76) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Projects page empty state when nothing is live
-- 🔀 Merged PR [#75](https://github.com/matthummel-pa/matthummel-theme/pull/75) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Projects CPT with live toggle for Work page
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/848c8bfe13247d381ff2dac55e6e4048bca4bad7) — _Projects CPT with live toggle for Work page (#75)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/dcf47f1700db7dbd2935621a6b550046c57c1bac) — _Post sidebar: closed toggles and author card refresh (#74)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/346d69b5ae7ff339e848277dcd25d3404b340e7a) — _Fix double-encoded apostrophes in post sidebar TOC links (#73)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d63389de215314fab456408301ecfb59ec7c2772) — _Exclude DEV.to imports from journal Latest featured slot (#72)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/59ef13420b18faf4a340b0c6b05f3635b2451a1a) — _Add Generate featured image on post editor (#71)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/34b17645557c5c50abe8ab0f408cce3fc43efa84) — _Improve journal post-end CTA for WordPress and full-stack (#70)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/7ef7a0aadf5524665e60831a25a518b9cd110c97) — _Improve principles section CTA accessibility and container UX (#69)_
-- ⭐ Starred [n8n-io/n8n](https://github.com/n8n-io/n8n)
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
