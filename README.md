@@ -1,13 +1,73 @@
 <h1 align="center">Hi, I'm Matt Hummel 👋</h1>
 
 <p align="center">
+  <a href="https://komarev.com/ghpvc/?username=matthummel-pa&style=for-the-badge&color=2C5A95">
+    <img src="https://komarev.com/ghpvc/?username=matthummel-pa&style=for-the-badge&color=2C5A95" alt="Profile views" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2C5A95&center=true&vCenter=true&width=640&lines=Full-stack+web+developer;WordPress+%2B+Sage+is+my+happy+place;I+ship+accessible%2C+fast+sites;AI-assisted.+Human-reviewed.;git+commit+-m+%22it+works+on+my+machine%22" alt="Typing SVG" />
+  </a>
+</p>
+
+<p align="center">
   <strong>Full-Stack Developer · Web Developer · WordPress &amp; Sage</strong>
 </p>
+
 <p align="center">
-  Fifteen years of building a wide range of fast, accessible websites and applications. Working from front-end to back-end in higher-ed, government, and web design agencies.<br/>
-  WordPress is the work I enjoy most — custom themes, clean markup, and sites people can actually run.<br/>
-  I also have professional Power Platform experience from a full-time consulting role.  
+  Fifteen years building fast, accessible websites and apps — higher-ed, government, and agency life.<br/>
+  WordPress is the work I enjoy most. Power Platform pays some of the bills. Coffee pays for neither.
 </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/years_shipping-15%2B-0F172A?style=flat-square" alt="15+ years shipping" />
+  <img src="https://img.shields.io/badge/stack-PHP%20%7C%20JS%20%7C%20React%20%7C%20WP-2C5A95?style=flat-square" alt="Stack" />
+  <img src="https://img.shields.io/badge/editor-Cursor%20%2B%20Claude-334155?style=flat-square" alt="Editor" />
+  <img src="https://img.shields.io/badge/tests-I%20write%20them%20(really)-22863a?style=flat-square" alt="Tests" />
+  <img src="https://img.shields.io/badge/Lighthouse-chase%20the%20green-e11d48?style=flat-square" alt="Lighthouse" />
+</p>
+
+<details align="center">
+  <summary><strong>package.json</strong> vibes (click me)</summary>
+  <br/>
+
+```json
+{
+  "name": "matt-hummel",
+  "version": "15.0.0",
+  "private": false,
+  "description": "Full-stack web developer who likes clean, accessible code",
+  "main": "WordPress + Sage",
+  "scripts": {
+    "dev": "cursor . && coffee --watch",
+    "build": "ship accessible sites",
+    "test": "a11y + Core Web Vitals + 'does the client smile?'",
+    "deploy": "git push && pray && celebrate"
+  },
+  "dependencies": {
+    "wordpress": "latest",
+    "roots/sage": "^11",
+    "react": "^19",
+    "curiosity": "*",
+    "patience": "^∞"
+  },
+  "devDependencies": {
+    "claude": "coworker",
+    "cursor": "pair-programmer",
+    "bad-pun-generator": "optional"
+  },
+  "engines": {
+    "node": ">=human",
+    "coffee": "required"
+  },
+  "keywords": ["full-stack", "wordpress", "sage", "gettysburg", "a11y"],
+  "license": "MIT-and-kindness"
+}
+```
+
+</details>
 
 <p align="center">
   <a href="https://matthummel.com">matthummel.com</a> &nbsp;·&nbsp;
@@ -17,6 +77,7 @@
 </p>
 
 <p align="center">
+  <a href="#activity"><img src="https://img.shields.io/badge/Recent_activity-0F172A?style=for-the-badge" alt="Recent activity" /></a>
   <a href="#work"><img src="https://img.shields.io/badge/Work-0F172A?style=for-the-badge" alt="Work" /></a>
   <a href="#about"><img src="https://img.shields.io/badge/About-0F172A?style=for-the-badge" alt="About" /></a>
   <a href="#writing"><img src="https://img.shields.io/badge/Writing-0F172A?style=for-the-badge" alt="Writing" /></a>
@@ -34,9 +95,36 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,ts,php,wordpress,react,nextjs,nodejs,tailwind,sass,vite,laravel,git,github,vscode&perline=8" alt="HTML, CSS, JavaScript, TypeScript, PHP, WordPress, React, Next.js, Node.js, Tailwind, Sass, Vite, Laravel, Git, GitHub, VS Code" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,ts,php,wordpress,react,nextjs,nodejs,tailwind,sass,vite,laravel,mysql,docker,git,github,vscode&perline=9" alt="HTML, CSS, JavaScript, TypeScript, PHP, WordPress, React, Next.js, Node.js, Tailwind, Sass, Vite, Laravel, MySQL, Docker, Git, GitHub, VS Code" />
   </a>
 </p>
+
+---
+
+<a id="activity"></a>
+## Recent activity
+
+Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
+
+<!--START_SECTION:activity-->
+- 🔀 Open PR [#1](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/pull/1) in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme) — UX / SEO / a11y / performance polish for Keystone concept site
+- 🔀 Open PR [#6](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme/pull/6) in [matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme) — docs: comprehensive advanced README (features, screenshots, architecture, changelog, er…
+- 🔀 Merged PR [#8](https://github.com/matthummel-pa/matthummel-pa/pull/8) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Compact featured work cards; titles link to GitHub repos
+- 🔀 Merged PR [#79](https://github.com/matthummel-pa/matthummel-theme/pull/79) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Projects admin: Generate featured image
+- 🔀 Merged PR [#78](https://github.com/matthummel-pa/matthummel-theme/pull/78) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Projects admin: concept custom fields, on-site toggle, filters
+- 🔀 Merged PR [#77](https://github.com/matthummel-pa/matthummel-theme/pull/77) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — On-site concept pages for Projects (/concept/{slug}/)
+- 🔀 Merged PR [#76](https://github.com/matthummel-pa/matthummel-theme/pull/76) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Projects page empty state when nothing is live
+- 🔀 Merged PR [#75](https://github.com/matthummel-pa/matthummel-theme/pull/75) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Projects CPT with live toggle for Work page
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/dcf47f1700db7dbd2935621a6b550046c57c1bac) — _Post sidebar: closed toggles and author card refresh (#74)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/346d69b5ae7ff339e848277dcd25d3404b340e7a) — _Fix double-encoded apostrophes in post sidebar TOC links (#73)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d63389de215314fab456408301ecfb59ec7c2772) — _Exclude DEV.to imports from journal Latest featured slot (#72)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/59ef13420b18faf4a340b0c6b05f3635b2451a1a) — _Add Generate featured image on post editor (#71)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/34b17645557c5c50abe8ab0f408cce3fc43efa84) — _Improve journal post-end CTA for WordPress and full-stack (#70)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/7ef7a0aadf5524665e60831a25a518b9cd110c97) — _Improve principles section CTA accessibility and container UX (#69)_
+- ⭐ Starred [n8n-io/n8n](https://github.com/n8n-io/n8n)
+<!--END_SECTION:activity-->
+
+<sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
 
 ---
 
@@ -88,7 +176,6 @@ Live **concept sites** for [Ridges &amp; Valleys Studio](https://ridgesandvalley
       <sub>Filterable listings · live mortgage calculator</sub><br />
       <a href="https://ridgesandvalleys.com/work/concept-realtor-ridgeline-realty/">Case study</a> · <a href="https://matthummel-pa.github.io/realtor-ridgeline-realty-theme/">Demo</a>
     </td>
-    <td width="33%"></td>
   </tr>
 </table>
 
@@ -195,14 +282,24 @@ Browse filters and write-ups on the **[Ridges &amp; Valleys work page](https://r
 
 Drawn from how I actually work on [matthummel.com](https://matthummel.com/about/).
 
-- **Full-stack web development** — HTML, CSS, JavaScript/TypeScript, React, Next.js, PHP, and Node. I care about clean code, solid performance, and interfaces that work for everyone, on every device.
-- **WordPress (the work I enjoy most)** — custom themes and plugins, **Sage 11 (Roots)** with **Blade**, **Acorn**, **Bedrock**, **Tailwind + Vite**, and Gutenberg blocks &amp; patterns. Also headless WordPress (REST API). Accessibility (WCAG), Core Web Vitals, and local SEO are part of the build, not a bolt-on.
-- **Front-end** — accessible, fast interfaces. Responsive layouts, readable type, and one clear next step — especially on phones.
-- **Back-end** — PHP, Node, and APIs: the logic, data, and integrations behind the site.
-- **Local business sites** — Gettysburg / Adams County restaurants, inns, shops, tours, and realtors. First draft in about a week; you own the domain, hosting, and site.
-- **Power Platform (experience, not the focus)** — Power Apps, Power Automate, Dataverse, and SharePoint / Microsoft 365 from my full-time consulting work. Useful when a team needs automation; WordPress is still where I’d rather spend the day.
+| Mode | What that looks like |
+| --- | --- |
+| **Full-stack** | HTML, CSS, JS/TS, React, Next.js, PHP, Node — clean code, solid perf, interfaces that work for everyone |
+| **WordPress (home base)** | Sage 11, Blade, Acorn, Bedrock, Tailwind + Vite, Gutenberg blocks. A11y + Core Web Vitals baked in |
+| **Front-end** | Responsive layouts, readable type, one clear next step — especially on phones |
+| **Back-end** | PHP, Node, APIs — the logic and integrations behind the pretty pixels |
+| **Local business sites** | Gettysburg / Adams County restaurants, inns, shops, tours, realtors. You own the keys |
+| **Power Platform** | Power Apps, Automate, Dataverse, SharePoint — useful; WordPress is still where I’d rather spend the day |
 
-I ship AI-first with **Claude** and **Cursor** as collaborators for architecture, implementation, and review. Every change still gets held to the same accessibility and performance bar as a hand-built project — I wrote about that workflow in [AI Website Redesign: 5 Lessons From a Solo Developer](https://matthummel.com/web-development/ai-website-redesign-solo-developer/).
+I ship AI-first with **Claude** and **Cursor** as collaborators. Every change still gets held to the same a11y and performance bar as a hand-built project — I wrote about that in [AI Website Redesign: 5 Lessons From a Solo Developer](https://matthummel.com/web-development/ai-website-redesign-solo-developer/).
+
+### Developer OS (aka how I stay sane)
+
+- `git commit -m "fix typo"` × 47, then one real feature
+- Lighthouse green > vibes (but vibes matter too)
+- Prefer boring technology that ships over exciting technology that demos
+- Accessibility isn’t a phase — it’s the definition of done
+- Pair with AI, review like a human, merge like an adult
 
 <a id="writing"></a>
 ## Writing
@@ -222,7 +319,11 @@ I’m in a full-time Power Platform role and take a small number of freelance / 
 ---
 
 <a id="stats"></a>
-## GitHub
+## GitHub stats
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=matthummel-pa&theme=default&hide_border=true&ring=2C5A95&fire=2C5A95&currStreakLabel=2C5A95&sideLabels=334155&dates=64748b" alt="GitHub streak" />
+</p>
 
 <table align="center">
   <tr>
@@ -244,4 +345,4 @@ I’m in a full-time Power Platform role and take a small number of freelance / 
 - ✍️ **Dev.to:** [dev.to/mattbuildsapps](https://dev.to/mattbuildsapps)
 - 🦋 **Bluesky:** [@matthummel](https://bsky.app/profile/matthummel.bsky.social)
 
-<sub>Full-stack web developer who likes clean, accessible code — WordPress first, shipped with care.</sub>
+<sub>Full-stack web developer who likes clean, accessible code — WordPress first, shipped with care. PRs welcome; puns tolerated.</sub>
