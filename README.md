@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Open PR [#1](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/1) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Keystone Homes Sage 11 theme from the concept site
+- 🔀 Merged PR [#4](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/pull/4) in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme) — Add About section to the README
+- 🔀 Merged PR [#3](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/pull/3) in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme) — Improve README for the current concept demo
+- 🔀 Merged PR [#2](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/pull/2) in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme) — Forest redesign, showing booking, and realtor blog posts
+- 🚀 Commit in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/commit/509bbcfaa9d8daf836b5caf8cda5c9b77831396c) — _Add About section to the README_
+- 🚀 Commit in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/commit/7dcb01103d40ab3f73cd84dbb18e33288a8f2acc) — _Improve README for concept page copy and SEO_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/b567829a0bc62be89d2e779559b9b063c51e7df1) — _Initial commit_
+- 🔀 Merged PR [#1](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/pull/1) in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme) — UX / SEO / a11y / performance polish for Keystone concept site
+- 🚀 Commit in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/commit/7e579ba7301e9a5648c6f049e42a27c18c888d66) — _Merge forest redesign, booking tool, and blog_
+- 🔀 Merged PR [#10](https://github.com/matthummel-pa/matthummel-pa/pull/10) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Align README availability copy with matthummel.com
+- 🔀 Merged PR [#80](https://github.com/matthummel-pa/matthummel-theme/pull/80) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Rewrite GitHub README for the repo About landing
 - 🔀 Merged PR [#9](https://github.com/matthummel-pa/matthummel-pa/pull/9) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Fun fullstack README + live Recent activity feed
-- 🔀 Open PR [#1](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/pull/1) in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme) — UX / SEO / a11y / performance polish for Keystone concept site
-- 🔀 Open PR [#6](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme/pull/6) in [matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme) — docs: comprehensive advanced README (features, screenshots, architecture, changelog, er…
-- 🔀 Merged PR [#8](https://github.com/matthummel-pa/matthummel-pa/pull/8) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Compact featured work cards; titles link to GitHub repos
-- 🔀 Merged PR [#79](https://github.com/matthummel-pa/matthummel-theme/pull/79) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Projects admin: Generate featured image
-- 🔀 Merged PR [#78](https://github.com/matthummel-pa/matthummel-theme/pull/78) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Projects admin: concept custom fields, on-site toggle, filters
-- 🔀 Merged PR [#77](https://github.com/matthummel-pa/matthummel-theme/pull/77) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — On-site concept pages for Projects (/concept/{slug}/)
-- 🔀 Merged PR [#76](https://github.com/matthummel-pa/matthummel-theme/pull/76) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Projects page empty state when nothing is live
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/848c8bfe13247d381ff2dac55e6e4048bca4bad7) — _Projects CPT with live toggle for Work page (#75)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/dcf47f1700db7dbd2935621a6b550046c57c1bac) — _Post sidebar: closed toggles and author card refresh (#74)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/346d69b5ae7ff339e848277dcd25d3404b340e7a) — _Fix double-encoded apostrophes in post sidebar TOC links (#73)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d63389de215314fab456408301ecfb59ec7c2772) — _Exclude DEV.to imports from journal Latest featured slot (#72)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/59ef13420b18faf4a340b0c6b05f3635b2451a1a) — _Add Generate featured image on post editor (#71)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/34b17645557c5c50abe8ab0f408cce3fc43efa84) — _Improve journal post-end CTA for WordPress and full-stack (#70)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/7ef7a0aadf5524665e60831a25a518b9cd110c97) — _Improve principles section CTA accessibility and container UX (#69)_
+- 🚀 Commit in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/commit/88cc544fded5cc26c36fd0904f686eaa6d9a108a) — _Merge redesign: traditional homes, realtor tools, SEO/a11y_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/bf7093eab978156beb41e4bf7569865c1bf96250) — _Compact featured work cards; titles link to GitHub repos (#8)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/43e5e011c200d966015840c5da953a121a30f346) — _Projects admin: Generate featured image (#79)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
