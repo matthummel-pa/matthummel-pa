@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#1](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/1) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Keystone Homes Sage 11 theme from the concept site
-- 🔀 Merged PR [#4](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/pull/4) in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme) — Add About section to the README
-- 🔀 Merged PR [#3](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/pull/3) in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme) — Improve README for the current concept demo
-- 🔀 Merged PR [#2](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/pull/2) in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme) — Forest redesign, showing booking, and realtor blog posts
-- 🚀 Commit in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/commit/509bbcfaa9d8daf836b5caf8cda5c9b77831396c) — _Add About section to the README_
-- 🚀 Commit in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/commit/7dcb01103d40ab3f73cd84dbb18e33288a8f2acc) — _Improve README for concept page copy and SEO_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/b567829a0bc62be89d2e779559b9b063c51e7df1) — _Initial commit_
-- 🔀 Merged PR [#1](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/pull/1) in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme) — UX / SEO / a11y / performance polish for Keystone concept site
-- 🚀 Commit in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/commit/7e579ba7301e9a5648c6f049e42a27c18c888d66) — _Merge forest redesign, booking tool, and blog_
-- 🔀 Merged PR [#10](https://github.com/matthummel-pa/matthummel-pa/pull/10) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Align README availability copy with matthummel.com
-- 🔀 Merged PR [#80](https://github.com/matthummel-pa/matthummel-theme/pull/80) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Rewrite GitHub README for the repo About landing
-- 🔀 Merged PR [#9](https://github.com/matthummel-pa/matthummel-pa/pull/9) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Fun fullstack README + live Recent activity feed
-- 🚀 Commit in [matthummel-pa/realtor-keystone-homes-and-land-theme](https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme/commit/88cc544fded5cc26c36fd0904f686eaa6d9a108a) — _Merge redesign: traditional homes, realtor tools, SEO/a11y_
-- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/bf7093eab978156beb41e4bf7569865c1bf96250) — _Compact featured work cards; titles link to GitHub repos (#8)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/43e5e011c200d966015840c5da953a121a30f346) — _Projects admin: Generate featured image (#79)_
+- 🔀 Merged PR [#13](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/13) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Editorial realtor layout for blog posts
+- ⭐ Starred [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)
+- 🔀 Open PR [#82](https://github.com/matthummel-pa/matthummel-theme/pull/82) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Prefer featured image for project / concept screenshots
+- 🔀 Merged PR [#81](https://github.com/matthummel-pa/matthummel-theme/pull/81) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Let Rank Math titles win on concept pages
+- 🔀 Merged PR [#12](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/12) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Photo heroes and native SEO for subpages and posts
+- 🔀 Merged PR [#11](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/11) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Add media library uploads for page, listing, agent, and post images
+- 🔀 Merged PR [#10](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/10) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Fix Book page 404 when preselecting a listing
+- 🔀 Merged PR [#9](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/9) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Add ThemeForest / WordPress.org marketplace Cursor rules
+- 🔀 Merged PR [#8](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/8) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Add UI, accessibility, and conversion UX Cursor rules
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/fac2f77b766d3cb014e903cc88d846e48e42db3e) — _Editorial realtor layout for blog posts_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/243839976c98bf3109860cfc8d3b9614e70c778e) — _Standard LCP hero image on the homepage (#7)_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/29767f3d2075bd65da34bf0f0d6a19c610c4539f) — _Improve homepage hero above the fold (#4)_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/f18d24166ce9a69a85904a5a8b7a268dd61c5027) — _Seed missing WordPress pages and demo inventory (#3)_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/ee9e29a6e6d3995b99832b477233f62f7d3b490a) — _Add JSON-LD on single listing pages (#6)_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/e6a6044fb715a702f208fda6624c05eb28f90d64) — _Add Cursor project rules for Keystone (#5)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
