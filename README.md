@@ -108,6 +108,9 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Open PR [#15](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/15) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Rename the public brand to Keystone Real Estate
+- 🔀 Merged PR [#14](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/14) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Replace book-form workflow column with a showing photo
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/76d71ea100f3bd9b210331fd34c1882f29c547a1) — _Replace book-form workflow column with a showing photo_
 - 🔀 Merged PR [#13](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/13) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Editorial realtor layout for blog posts
 - ⭐ Starred [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)
 - 🔀 Open PR [#82](https://github.com/matthummel-pa/matthummel-theme/pull/82) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Prefer featured image for project / concept screenshots
@@ -115,14 +118,11 @@ Live feed of what I’ve been shipping across GitHub — PRs, commits, releases,
 - 🔀 Merged PR [#12](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/12) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Photo heroes and native SEO for subpages and posts
 - 🔀 Merged PR [#11](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/11) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Add media library uploads for page, listing, agent, and post images
 - 🔀 Merged PR [#10](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/10) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Fix Book page 404 when preselecting a listing
-- 🔀 Merged PR [#9](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/9) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Add ThemeForest / WordPress.org marketplace Cursor rules
-- 🔀 Merged PR [#8](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/8) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Add UI, accessibility, and conversion UX Cursor rules
 - 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/fac2f77b766d3cb014e903cc88d846e48e42db3e) — _Editorial realtor layout for blog posts_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/3889785615d670f1bd19f333285a68b06d496557) — _Add ThemeForest / WordPress.org marketplace Cursor rules (#9)_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/8fc2442ed5e7a673f2e8e4c9e1fb630dec64e33d) — _Add UI, accessibility, and conversion UX Cursor rules (#8)_
 - 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/243839976c98bf3109860cfc8d3b9614e70c778e) — _Standard LCP hero image on the homepage (#7)_
 - 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/29767f3d2075bd65da34bf0f0d6a19c610c4539f) — _Improve homepage hero above the fold (#4)_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/f18d24166ce9a69a85904a5a8b7a268dd61c5027) — _Seed missing WordPress pages and demo inventory (#3)_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/ee9e29a6e6d3995b99832b477233f62f7d3b490a) — _Add JSON-LD on single listing pages (#6)_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/e6a6044fb715a702f208fda6624c05eb28f90d64) — _Add Cursor project rules for Keystone (#5)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
