@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#33](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/33) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Fix local homepage 500 from missing PageCopy keys
+- 🔀 Merged PR [#32](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/32) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Fix listings filter contrast and open FAQ cards
+- 🔀 Closed PR [#24](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/24) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Strengthen the homepage start-here strip under the hero
+- 🔀 Merged PR [#31](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/31) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Replay the start-here photo strip onto current main
+- 🔀 Merged PR [#27](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/27) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Improve Pulse cards and homepage SEO copy
+- 🔀 Merged PR [#29](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/29) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Lock card CSS so homepage styles stop disappearing
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/0d3156fe0646ce878af40ab66cdc32eceb597ccc) — _Merge pull request #33 from matthummel-pa/cursor/front-page-copy-keys-983a_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/46850278b149a8bd9f4f846e495510ed78cc7e81) — _Merge pull request #32 from matthummel-pa/cursor/listings-a11y-983a_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/a580dbd1245754033352237582c758e62efbf710) — _Merge pull request #31 from matthummel-pa/cursor/start-here-deploy-983a_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/bffcac8c6a2c7c462bb2792ae9bf4d52bca6f216) — _Merge pull request #27 from matthummel-pa/cursor/pulse-seo-copy-983a_
 - 🔀 Merged PR [#30](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/30) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Improve phone and tablet form layouts
-- 🔀 Open PR [#24](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/24) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Strengthen the homepage start-here strip under the hero
-- 🔀 Open PR [#29](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/29) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Lock card CSS so homepage styles stop disappearing
 - 🔀 Open PR [#28](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/28) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Add review avatars and Google-ready markup
-- 🔀 Open PR [#27](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/27) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Improve Pulse cards and homepage SEO copy
-- 🔀 Merged PR [#26](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/26) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Restore What clients might say cards
-- 🔀 Open PR [#25](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/25) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Stack From search to showing on mobile and restore forest kickers
-- 🔀 Merged PR [#23](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/23) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Tighten From search to showing
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/b5b0837f8bbd05550840f1d00c96d977a810873f) — _Restore What clients might say cards (#26)_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/2799db00a4ee3c68fc5e114a6f6d635ad9901ee6) — _Tighten From search to showing (#23)_
 - 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/76d71ea100f3bd9b210331fd34c1882f29c547a1) — _Replace book-form workflow column with a showing photo_
-- ⭐ Starred [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/fac2f77b766d3cb014e903cc88d846e48e42db3e) — _Editorial realtor layout for blog posts_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/5b11f3eab058dd3a638cebb138c00d4abbf418f1) — _Let Rank Math titles win on concept pages (#81)_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/62b1f262e5dd0ad7f1143237d4e553fb18747dc1) — _Add photo heroes and native SEO on subpages and posts (#12)_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/ccb2bef0933bf6f0ccb46fce6a9222550091830c) — _Add media library uploads for page, listing, agent, and post images (#11)_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/1f5630b0ebcecc368bd9b42af9f62751d423ad25) — _Fix Book page 404 when preselecting a listing (#10)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
