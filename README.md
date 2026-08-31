@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#38](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/38) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Rewrite README copy and add Acreline support page
+- 🔀 Merged PR [#37](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/37) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Add color styles and generic demo copy for marketplace
+- 🔀 Merged PR [#36](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/36) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Credit Acreline to Matt Hummel for theme shops
+- 🔀 Merged PR [#35](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/35) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Rename buyer-facing theme to Acreline
+- 🔀 Merged PR [#34](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/34) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Marketplace pack + general sample-market copy
+- 🔀 Merged PR [#83](https://github.com/matthummel-pa/matthummel-theme/pull/83) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Route contact and discovery forms to the n8n CRM webhook
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/738bebd8203046bae0bd322048595486f4a03e31) — _Merge pull request #38 from matthummel-pa/cursor/readme-support-6272_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/890ba69e13b192c1f935298aeeecec1a21525fc7) — _Merge pull request #37 from matthummel-pa/cursor/marketplace-variants-6272_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/ab9f89af9b71aaf41b58e06e71bf03bb667f12a5) — _Merge pull request #36 from matthummel-pa/cursor/acreline-author-matt-6272_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/87c2f21bdb19aed9fa71412e7f53b18f711596a7) — _Merge pull request #35 from matthummel-pa/cursor/acreline-theme-name-6272_
+- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/d3f94a1038752a14029a9524d03fafcfe6aa5032) — _Merge pull request #34 from matthummel-pa/cursor/marketplace-sellable-6272_
 - 🔀 Merged PR [#33](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/33) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Fix local homepage 500 from missing PageCopy keys
 - 🔀 Merged PR [#32](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/32) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Fix listings filter contrast and open FAQ cards
-- 🔀 Closed PR [#24](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/24) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Strengthen the homepage start-here strip under the hero
-- 🔀 Merged PR [#31](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/31) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Replay the start-here photo strip onto current main
-- 🔀 Merged PR [#27](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/27) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Improve Pulse cards and homepage SEO copy
-- 🔀 Merged PR [#29](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/29) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Lock card CSS so homepage styles stop disappearing
 - 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/0d3156fe0646ce878af40ab66cdc32eceb597ccc) — _Merge pull request #33 from matthummel-pa/cursor/front-page-copy-keys-983a_
 - 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/46850278b149a8bd9f4f846e495510ed78cc7e81) — _Merge pull request #32 from matthummel-pa/cursor/listings-a11y-983a_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/a580dbd1245754033352237582c758e62efbf710) — _Merge pull request #31 from matthummel-pa/cursor/start-here-deploy-983a_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/bffcac8c6a2c7c462bb2792ae9bf4d52bca6f216) — _Merge pull request #27 from matthummel-pa/cursor/pulse-seo-copy-983a_
-- 🔀 Merged PR [#30](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/30) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Improve phone and tablet form layouts
-- 🔀 Open PR [#28](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/28) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Add review avatars and Google-ready markup
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/b5b0837f8bbd05550840f1d00c96d977a810873f) — _Restore What clients might say cards (#26)_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/2799db00a4ee3c68fc5e114a6f6d635ad9901ee6) — _Tighten From search to showing (#23)_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/76d71ea100f3bd9b210331fd34c1882f29c547a1) — _Replace book-form workflow column with a showing photo_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
