@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#89](https://github.com/matthummel-pa/matthummel-theme/pull/89) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix live critical error from stale Acorn Heroicons cache
-- 🔀 Merged PR [#88](https://github.com/matthummel-pa/matthummel-theme/pull/88) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Buy theme from Work; public brand is Matt Hummel
-- 🔀 Merged PR [#87](https://github.com/matthummel-pa/matthummel-theme/pull/87) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Marketplace readiness: do not upload this theme; add Theme Check files
-- 🔀 Merged PR [#84](https://github.com/matthummel-pa/matthummel-theme/pull/84) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Product landings for theme and plugin sales
-- 🔀 Merged PR [#8](https://github.com/matthummel-pa/tocflow/pull/8) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — Bump setup-node v7 and @wordpress/scripts 34
-- 🔀 Merged PR [#7](https://github.com/matthummel-pa/tocflow/pull/7) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — Release 1.0.1 — first installable GitHub zip
-- 🔀 Merged PR [#3](https://github.com/matthummel-pa/tocflow/pull/3) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — Polish the public repo: sans-serif docs, GPL, and GitHub hygiene
-- 🔀 Merged PR [#86](https://github.com/matthummel-pa/matthummel-theme/pull/86) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Project pages at /projects/{slug}/ with buyer docs
+- 🔀 Open PR [#97](https://github.com/matthummel-pa/matthummel-theme/pull/97) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Boost WooCommerce pages: UX, UI, SEO, graphics, a11y
+- 🔀 Merged PR [#96](https://github.com/matthummel-pa/matthummel-theme/pull/96) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Rewrite How I work with upfront technical detail
+- 🔀 Merged PR [#95](https://github.com/matthummel-pa/matthummel-theme/pull/95) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Improve sitewide SEO copy without location stuffing
+- 🔀 Merged PR [#94](https://github.com/matthummel-pa/matthummel-theme/pull/94) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix live fatal: duplicate WooCommerce SKU during product seed
+- 🔀 Merged PR [#93](https://github.com/matthummel-pa/matthummel-theme/pull/93) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Seed known-good Acorn cache over FTP to restore live site
+- 🔀 Merged PR [#92](https://github.com/matthummel-pa/matthummel-theme/pull/92) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Capture live PHP fatals during deploy
+- 🔀 Merged PR [#91](https://github.com/matthummel-pa/matthummel-theme/pull/91) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Run live FTP diagnose during deploy
+- 🔀 Merged PR [#90](https://github.com/matthummel-pa/matthummel-theme/pull/90) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add live FTP diagnose workflow
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/477117bbdba0d118c5730dc80cde3226c1539ae8) — _Fix live critical error from stale Acorn Heroicons cache (#89)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/014c7d8cec4422237826b105a235afc8b14e5e53) — _Buy theme from Work; public brand is Matt Hummel (#88)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/f3e317c39dbf32f8da65f7dd2ed4edd864d85e34) — _Add Theme Check files and marketplace audit for Envato / WP.org (#87)_
+- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/e1ebab0b1b20de9b024890b7339eeb94ba119735) — _Bump setup-node v7 and @wordpress/scripts 34 (#8)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/049ac606a85dc3ca97bc4432989c4b4e2560b636) — _Product landings for theme and plugin sales_
-- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/82f54e7f8ed10d43a320fe9dbf33269e87945a11) — _Auto-generate the Gutenberg TOC block from plugin settings (#2)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/7dd7ba1e68849666dc6d41be075009e9fa98e496) — _Add WooCommerce templates and required store pages (#85)_
-- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/f56cc117de6bd7d4f746f9f3658fab1d06459592) — _Gutenberg-standard TOC block and marketplace-ready plugin (#1)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/3f71e23f94b41bf9718e93ba39a20035ae191110) — _Prefer featured image for project / concept screenshots (#82)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/dcb3eb24f1773a28d9f757d12b1a385620e3a21d) — _Merge pull request #48 from matthummel-pa/cursor/seller-docs-983a_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/bb1f9312872a4184f9bd5d63e6c84c678d7a03f7) — _Merge pull request #46 from matthummel-pa/cursor/readme-dev-notes-6272_
+- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/cf0c9f82638a4ff54d574527b3fc2b9648a713b6) — _Release 1.0.1 — first installable GitHub zip (#7)_
+- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/3168eaa602db32022b0a7483d49bfef4dc13444e) — _Polish the public repo: sans-serif docs, GPL, and GitHub hygiene (#3)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
