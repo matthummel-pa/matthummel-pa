@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#48](https://github.com/matthummel-pa/wp-acreline/pull/48) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Add ThemeForest documentation hub and WordPress.org seller files
-- 🔀 Merged PR [#46](https://github.com/matthummel-pa/wp-acreline/pull/46) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — ThemeForest docs hub, branding, and extra screenshots
-- 🔀 Open PR [#47](https://github.com/matthummel-pa/wp-acreline/pull/47) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — License Acreline as GPLv2+ for WordPress.org and ThemeForest
-- 🔀 Merged PR [#45](https://github.com/matthummel-pa/wp-acreline/pull/45) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Move the demo color switcher to the right middle
-- 🔀 Open PR [#11](https://github.com/matthummel-pa/matthummel-pa/pull/11) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Tighten Keystone / land-and-farms concept summary
-- 🔀 Merged PR [#43](https://github.com/matthummel-pa/wp-acreline/pull/43) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Fix Update Theme 404: use matthummel-pa/wp-acreline
-- 🔀 Merged PR [#44](https://github.com/matthummel-pa/wp-acreline/pull/44) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Prep README and Cursor rules for theme shops
-- 🔀 Open PR [#42](https://github.com/matthummel-pa/wp-acreline/pull/42) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Fix critical error on single blog posts
+- 🔀 Open PR [#89](https://github.com/matthummel-pa/matthummel-theme/pull/89) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix live critical error from stale Acorn Heroicons cache
+- 🔀 Merged PR [#88](https://github.com/matthummel-pa/matthummel-theme/pull/88) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Buy theme from Work; public brand is Matt Hummel
+- 🔀 Merged PR [#87](https://github.com/matthummel-pa/matthummel-theme/pull/87) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Marketplace readiness: do not upload this theme; add Theme Check files
+- 🔀 Merged PR [#84](https://github.com/matthummel-pa/matthummel-theme/pull/84) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Product landings for theme and plugin sales
+- 🔀 Merged PR [#8](https://github.com/matthummel-pa/tocflow/pull/8) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — Bump setup-node v7 and @wordpress/scripts 34
+- 🔀 Merged PR [#7](https://github.com/matthummel-pa/tocflow/pull/7) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — Release 1.0.1 — first installable GitHub zip
+- 🔀 Merged PR [#3](https://github.com/matthummel-pa/tocflow/pull/3) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — Polish the public repo: sans-serif docs, GPL, and GitHub hygiene
+- 🔀 Merged PR [#86](https://github.com/matthummel-pa/matthummel-theme/pull/86) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Project pages at /projects/{slug}/ with buyer docs
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/049ac606a85dc3ca97bc4432989c4b4e2560b636) — _Product landings for theme and plugin sales_
+- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/82f54e7f8ed10d43a320fe9dbf33269e87945a11) — _Auto-generate the Gutenberg TOC block from plugin settings (#2)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/7dd7ba1e68849666dc6d41be075009e9fa98e496) — _Add WooCommerce templates and required store pages (#85)_
+- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/f56cc117de6bd7d4f746f9f3658fab1d06459592) — _Gutenberg-standard TOC block and marketplace-ready plugin (#1)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/3f71e23f94b41bf9718e93ba39a20035ae191110) — _Prefer featured image for project / concept screenshots (#82)_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/dcb3eb24f1773a28d9f757d12b1a385620e3a21d) — _Merge pull request #48 from matthummel-pa/cursor/seller-docs-983a_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/bb1f9312872a4184f9bd5d63e6c84c678d7a03f7) — _Merge pull request #46 from matthummel-pa/cursor/readme-dev-notes-6272_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/16b9f59ab74f84fb148cc54a255556d2b9ef301d) — _Merge pull request #45 from matthummel-pa/cursor/color-switcher-right-6272_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/0d80637eab30c80264a9d866ec69f3863567e83d) — _Merge pull request #43 from matthummel-pa/cursor/wp-acreline-repo-6272_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/8e5d011fc39109779b6bb3c3049b3e5d824cca22) — _Merge pull request #44 from matthummel-pa/cursor/theme-shop-readme-rules-6272_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/7681a5cf220a807cf7a0ae8b27cc66e64f9d5cce) — _Merge pull request #41 from matthummel-pa/cursor/marketing-pages-6272_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/7590366fd278d1fc5b164ad6b645432e0c50a731) — _Merge pull request #40 from matthummel-pa/cursor/acreline-slug-6272_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/e4fd7d2ec034e7c2ce05e45c2c2edc457b6115a0) — _Merge pull request #39 from matthummel-pa/cursor/install-pack-6272_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
