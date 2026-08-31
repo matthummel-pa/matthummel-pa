@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
-- 🔀 Merged PR [#38](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/38) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Rewrite README copy and add Acreline support page
-- 🔀 Merged PR [#37](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/37) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Add color styles and generic demo copy for marketplace
-- 🔀 Merged PR [#36](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/36) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Credit Acreline to Matt Hummel for theme shops
-- 🔀 Merged PR [#35](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/35) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Rename buyer-facing theme to Acreline
-- 🔀 Merged PR [#34](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/34) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Marketplace pack + general sample-market copy
-- 🔀 Merged PR [#83](https://github.com/matthummel-pa/matthummel-theme/pull/83) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Route contact and discovery forms to the n8n CRM webhook
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/738bebd8203046bae0bd322048595486f4a03e31) — _Merge pull request #38 from matthummel-pa/cursor/readme-support-6272_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/890ba69e13b192c1f935298aeeecec1a21525fc7) — _Merge pull request #37 from matthummel-pa/cursor/marketplace-variants-6272_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/ab9f89af9b71aaf41b58e06e71bf03bb667f12a5) — _Merge pull request #36 from matthummel-pa/cursor/acreline-author-matt-6272_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/87c2f21bdb19aed9fa71412e7f53b18f711596a7) — _Merge pull request #35 from matthummel-pa/cursor/acreline-theme-name-6272_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/d3f94a1038752a14029a9524d03fafcfe6aa5032) — _Merge pull request #34 from matthummel-pa/cursor/marketplace-sellable-6272_
-- 🔀 Merged PR [#33](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/33) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Fix local homepage 500 from missing PageCopy keys
-- 🔀 Merged PR [#32](https://github.com/matthummel-pa/keystone-homes-wp-theme/pull/32) in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme) — Fix listings filter contrast and open FAQ cards
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/0d3156fe0646ce878af40ab66cdc32eceb597ccc) — _Merge pull request #33 from matthummel-pa/cursor/front-page-copy-keys-983a_
-- 🚀 Commit in [matthummel-pa/keystone-homes-wp-theme](https://github.com/matthummel-pa/keystone-homes-wp-theme/commit/46850278b149a8bd9f4f846e495510ed78cc7e81) — _Merge pull request #32 from matthummel-pa/cursor/listings-a11y-983a_
+- 🔀 Open PR [#48](https://github.com/matthummel-pa/wp-acreline/pull/48) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Add ThemeForest documentation hub and WordPress.org seller files
+- 🔀 Merged PR [#46](https://github.com/matthummel-pa/wp-acreline/pull/46) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — ThemeForest docs hub, branding, and extra screenshots
+- 🔀 Open PR [#47](https://github.com/matthummel-pa/wp-acreline/pull/47) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — License Acreline as GPLv2+ for WordPress.org and ThemeForest
+- 🔀 Merged PR [#45](https://github.com/matthummel-pa/wp-acreline/pull/45) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Move the demo color switcher to the right middle
+- 🔀 Open PR [#11](https://github.com/matthummel-pa/matthummel-pa/pull/11) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Tighten Keystone / land-and-farms concept summary
+- 🔀 Merged PR [#43](https://github.com/matthummel-pa/wp-acreline/pull/43) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Fix Update Theme 404: use matthummel-pa/wp-acreline
+- 🔀 Merged PR [#44](https://github.com/matthummel-pa/wp-acreline/pull/44) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Prep README and Cursor rules for theme shops
+- 🔀 Open PR [#42](https://github.com/matthummel-pa/wp-acreline/pull/42) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Fix critical error on single blog posts
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/bb1f9312872a4184f9bd5d63e6c84c678d7a03f7) — _Merge pull request #46 from matthummel-pa/cursor/readme-dev-notes-6272_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/16b9f59ab74f84fb148cc54a255556d2b9ef301d) — _Merge pull request #45 from matthummel-pa/cursor/color-switcher-right-6272_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/0d80637eab30c80264a9d866ec69f3863567e83d) — _Merge pull request #43 from matthummel-pa/cursor/wp-acreline-repo-6272_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/8e5d011fc39109779b6bb3c3049b3e5d824cca22) — _Merge pull request #44 from matthummel-pa/cursor/theme-shop-readme-rules-6272_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/7681a5cf220a807cf7a0ae8b27cc66e64f9d5cce) — _Merge pull request #41 from matthummel-pa/cursor/marketing-pages-6272_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/7590366fd278d1fc5b164ad6b645432e0c50a731) — _Merge pull request #40 from matthummel-pa/cursor/acreline-slug-6272_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/e4fd7d2ec034e7c2ce05e45c2c2edc457b6115a0) — _Merge pull request #39 from matthummel-pa/cursor/install-pack-6272_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
