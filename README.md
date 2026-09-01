@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#97](https://github.com/matthummel-pa/matthummel-theme/pull/97) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Boost WooCommerce pages: UX, UI, SEO, graphics, a11y
+- 🔀 Merged PR [#102](https://github.com/matthummel-pa/matthummel-theme/pull/102) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Site-wide SEO copy, content refresh, and Woo design boost
+- 🔀 Merged PR [#101](https://github.com/matthummel-pa/matthummel-theme/pull/101) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Marketing page heroes: split layout + snapshot panels
+- 🔀 Open PR [#100](https://github.com/matthummel-pa/matthummel-theme/pull/100) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Home hero SEO: H1, role, and lede rewrite
+- 🔀 Merged PR [#99](https://github.com/matthummel-pa/matthummel-theme/pull/99) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix hyphenated Code practice titles
+- 🔀 Merged PR [#98](https://github.com/matthummel-pa/matthummel-theme/pull/98) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix Bugbot copy migrations and Resources target=_blank
+- ⭐ Starred [tasnimultas67/toolstrek](https://github.com/tasnimultas67/toolstrek)
+- 🔀 Merged PR [#97](https://github.com/matthummel-pa/matthummel-theme/pull/97) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Hireable portfolio + disclosed affiliates (and Woo UX)
 - 🔀 Merged PR [#96](https://github.com/matthummel-pa/matthummel-theme/pull/96) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Rewrite How I work with upfront technical detail
 - 🔀 Merged PR [#95](https://github.com/matthummel-pa/matthummel-theme/pull/95) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Improve sitewide SEO copy without location stuffing
-- 🔀 Merged PR [#94](https://github.com/matthummel-pa/matthummel-theme/pull/94) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix live fatal: duplicate WooCommerce SKU during product seed
-- 🔀 Merged PR [#93](https://github.com/matthummel-pa/matthummel-theme/pull/93) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Seed known-good Acorn cache over FTP to restore live site
-- 🔀 Merged PR [#92](https://github.com/matthummel-pa/matthummel-theme/pull/92) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Capture live PHP fatals during deploy
-- 🔀 Merged PR [#91](https://github.com/matthummel-pa/matthummel-theme/pull/91) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Run live FTP diagnose during deploy
-- 🔀 Merged PR [#90](https://github.com/matthummel-pa/matthummel-theme/pull/90) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add live FTP diagnose workflow
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/4f46647f4dfb211900cfa8496262fcb9f8055527) — _Fix live fatal: duplicate WooCommerce SKU during product seed (#94)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d061fa5aee69348c058b9bdb655010ec331188fa) — _Seed known-good Acorn cache over FTP to restore live site (#93)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c76bdbee45bfc32193ec35ded85d26a5e0fcb6fc) — _Capture live PHP fatals during deploy (#92)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c5fed996fd757e0799db05e3f7e0a8448023f8a6) — _Run live FTP diagnose during deploy (#91)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/94f363678a7abfc993e53ccb8bd74fe4d66007ca) — _Add live FTP diagnose workflow (#90)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/477117bbdba0d118c5730dc80cde3226c1539ae8) — _Fix live critical error from stale Acorn Heroicons cache (#89)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/014c7d8cec4422237826b105a235afc8b14e5e53) — _Buy theme from Work; public brand is Matt Hummel (#88)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/f3e317c39dbf32f8da65f7dd2ed4edd864d85e34) — _Add Theme Check files and marketplace audit for Envato / WP.org (#87)_
-- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/e1ebab0b1b20de9b024890b7339eeb94ba119735) — _Bump setup-node v7 and @wordpress/scripts 34 (#8)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/049ac606a85dc3ca97bc4432989c4b4e2560b636) — _Product landings for theme and plugin sales_
-- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/cf0c9f82638a4ff54d574527b3fc2b9648a713b6) — _Release 1.0.1 — first installable GitHub zip (#7)_
-- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/3168eaa602db32022b0a7483d49bfef4dc13444e) — _Polish the public repo: sans-serif docs, GPL, and GitHub hygiene (#3)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
