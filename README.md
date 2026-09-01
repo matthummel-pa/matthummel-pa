@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
-- 🔀 Merged PR [#102](https://github.com/matthummel-pa/matthummel-theme/pull/102) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Site-wide SEO copy, content refresh, and Woo design boost
-- 🔀 Merged PR [#101](https://github.com/matthummel-pa/matthummel-theme/pull/101) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Marketing page heroes: split layout + snapshot panels
-- 🔀 Open PR [#100](https://github.com/matthummel-pa/matthummel-theme/pull/100) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Home hero SEO: H1, role, and lede rewrite
-- 🔀 Merged PR [#99](https://github.com/matthummel-pa/matthummel-theme/pull/99) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix hyphenated Code practice titles
-- 🔀 Merged PR [#98](https://github.com/matthummel-pa/matthummel-theme/pull/98) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix Bugbot copy migrations and Resources target=_blank
+- 🔀 Open PR [#107](https://github.com/matthummel-pa/matthummel-theme/pull/107) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — One adjacent-work sentence (not WordPress-only)
+- 🔀 Merged PR [#106](https://github.com/matthummel-pa/matthummel-theme/pull/106) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Hireability visual, layout, and copy pass
+- 🔀 Merged PR [#105](https://github.com/matthummel-pa/matthummel-theme/pull/105) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Recruiter glance, concept Work path, named /hire employers
+- 🔀 Merged PR [#10](https://github.com/matthummel-pa/tocflow/pull/10) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — Document 1.0.2 in readme changelog and docs
+- 🔀 Merged PR [#9](https://github.com/matthummel-pa/tocflow/pull/9) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — 1.0.2: Plugin Check cleanup for WordPress.org review
+- 🔀 Merged PR [#1](https://github.com/matthummel-pa/keepary/pull/1) in [matthummel-pa/keepary](https://github.com/matthummel-pa/keepary) — Fix leftover REPO_OWNER placeholders and README hygiene
+- 🔀 Open PR [#104](https://github.com/matthummel-pa/matthummel-theme/pull/104) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sync README activity feed and changelog through 3.1.47
+- 🔀 Merged PR [#100](https://github.com/matthummel-pa/matthummel-theme/pull/100) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Home hero SEO: H1, role, and lede rewrite
 - ⭐ Starred [tasnimultas67/toolstrek](https://github.com/tasnimultas67/toolstrek)
-- 🔀 Merged PR [#97](https://github.com/matthummel-pa/matthummel-theme/pull/97) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Hireable portfolio + disclosed affiliates (and Woo UX)
-- 🔀 Merged PR [#96](https://github.com/matthummel-pa/matthummel-theme/pull/96) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Rewrite How I work with upfront technical detail
-- 🔀 Merged PR [#95](https://github.com/matthummel-pa/matthummel-theme/pull/95) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Improve sitewide SEO copy without location stuffing
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/4f46647f4dfb211900cfa8496262fcb9f8055527) — _Fix live fatal: duplicate WooCommerce SKU during product seed (#94)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d061fa5aee69348c058b9bdb655010ec331188fa) — _Seed known-good Acorn cache over FTP to restore live site (#93)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c76bdbee45bfc32193ec35ded85d26a5e0fcb6fc) — _Capture live PHP fatals during deploy (#92)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c5fed996fd757e0799db05e3f7e0a8448023f8a6) — _Run live FTP diagnose during deploy (#91)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/94f363678a7abfc993e53ccb8bd74fe4d66007ca) — _Add live FTP diagnose workflow (#90)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/477117bbdba0d118c5730dc80cde3226c1539ae8) — _Fix live critical error from stale Acorn Heroicons cache (#89)_
+- 🚀 Commit in [matthummel-pa/keepary](https://github.com/matthummel-pa/keepary/commit/2b9c69b19c8e732c336c75106c4f8de3553bc714) — _Fix leftover REPO_OWNER placeholders and README hygiene_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2b7e7c66e0c9a16be24b5fa1bfa82c3525494632) — _Expand Work page content, add Uses/Resources fields, site-wide a11y. (#103)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/b7e6851a17ae68b17dea0d6d4ea816ca76f274ec) — _Improve site-wide SEO copy, content defaults, and Woo design. (#102)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/56534147cf20dfdc038faa58472f8c68eee438a9) — _Marketing page heroes: split layout + snapshot panels (#101)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/6ff4e42456c9b592ce09e5aa9a85654d7e55e313) — _Fix hyphenated Code practice titles (#99)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/7d46ca2db7b7a1147e94773a6c732fdafb79a4d7) — _Fix Bugbot copy migrations and Resources target=_blank (#98)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
