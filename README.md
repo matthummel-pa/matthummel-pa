@@ -108,16 +108,16 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#107](https://github.com/matthummel-pa/matthummel-theme/pull/107) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — One adjacent-work sentence (not WordPress-only)
+- 🔀 Merged PR [#109](https://github.com/matthummel-pa/matthummel-theme/pull/109) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — AI comparison cards: grey borders, chips, more SEO
+- 🔀 Merged PR [#108](https://github.com/matthummel-pa/matthummel-theme/pull/108) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — What actually gets faster with AI (journal comparison)
+- 🔀 Merged PR [#107](https://github.com/matthummel-pa/matthummel-theme/pull/107) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — One adjacent-work sentence (not WordPress-only)
 - 🔀 Merged PR [#106](https://github.com/matthummel-pa/matthummel-theme/pull/106) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Hireability visual, layout, and copy pass
 - 🔀 Merged PR [#105](https://github.com/matthummel-pa/matthummel-theme/pull/105) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Recruiter glance, concept Work path, named /hire employers
 - 🔀 Merged PR [#10](https://github.com/matthummel-pa/tocflow/pull/10) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — Document 1.0.2 in readme changelog and docs
 - 🔀 Merged PR [#9](https://github.com/matthummel-pa/tocflow/pull/9) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — 1.0.2: Plugin Check cleanup for WordPress.org review
 - 🔀 Merged PR [#1](https://github.com/matthummel-pa/keepary/pull/1) in [matthummel-pa/keepary](https://github.com/matthummel-pa/keepary) — Fix leftover REPO_OWNER placeholders and README hygiene
-- 🔀 Open PR [#104](https://github.com/matthummel-pa/matthummel-theme/pull/104) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sync README activity feed and changelog through 3.1.47
-- 🔀 Merged PR [#100](https://github.com/matthummel-pa/matthummel-theme/pull/100) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Home hero SEO: H1, role, and lede rewrite
-- ⭐ Starred [tasnimultas67/toolstrek](https://github.com/tasnimultas67/toolstrek)
 - 🚀 Commit in [matthummel-pa/keepary](https://github.com/matthummel-pa/keepary/commit/2b9c69b19c8e732c336c75106c4f8de3553bc714) — _Fix leftover REPO_OWNER placeholders and README hygiene_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/a3a06b4635d5a70b846c54c44384f5484389c225) — _Home hero SEO: H1, role, and lede rewrite (#100)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2b7e7c66e0c9a16be24b5fa1bfa82c3525494632) — _Expand Work page content, add Uses/Resources fields, site-wide a11y. (#103)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/b7e6851a17ae68b17dea0d6d4ea816ca76f274ec) — _Improve site-wide SEO copy, content defaults, and Woo design. (#102)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/56534147cf20dfdc038faa58472f8c68eee438a9) — _Marketing page heroes: split layout + snapshot panels (#101)_
