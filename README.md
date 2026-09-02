@@ -108,6 +108,7 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Open PR [#125](https://github.com/matthummel-pa/matthummel-theme/pull/125) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Retry product catalog migration after deploy
 - 🔀 Merged PR [#124](https://github.com/matthummel-pa/matthummel-theme/pull/124) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Make product pages marketplace-ready
 - ⭐ Starred [christianalberto/github-profile-achievements](https://github.com/christianalberto/github-profile-achievements)
 - 🔀 Merged PR [#123](https://github.com/matthummel-pa/matthummel-theme/pull/123) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Projects catalog: themes & plugins for sale (drop concept language)
@@ -116,7 +117,6 @@ Live feed of what I’ve been shipping across GitHub — PRs, commits, releases,
 - 🔀 Merged PR [#120](https://github.com/matthummel-pa/matthummel-theme/pull/120) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Code page layout: badges column + practice aside
 - 🔀 Merged PR [#119](https://github.com/matthummel-pa/matthummel-theme/pull/119) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Code page community panel: followers, stargazers, badges
 - 🔀 Merged PR [#118](https://github.com/matthummel-pa/matthummel-theme/pull/118) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Hotfix: remove merge conflict markers from style.css (3.1.62)
-- 🔀 Merged PR [#117](https://github.com/matthummel-pa/matthummel-theme/pull/117) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Restore list bullets/numbers in editor and posts (3.1.61)
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/15f84178e6034e2c97764e44834bf62c55d2e56c) — _Semantic tool cards + configurable heading levels (#115)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/a2874d703ef74a1a51f15c8b0ebadae949bd5a7a) — _Fit full featured image in post hero (no crop) (#114)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/702776a7b48849af4d4357b0407219765789049d) — _Tighten hero headings for above-the-fold fit (#113)_
