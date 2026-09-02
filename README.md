@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#117](https://github.com/matthummel-pa/matthummel-theme/pull/117) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Restore list bullets/numbers in editor and posts (3.1.61)
+- 🔀 Merged PR [#116](https://github.com/matthummel-pa/matthummel-theme/pull/116) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix double-encoded apostrophes in post titles (3.1.60)
+- 🔀 Merged PR [#115](https://github.com/matthummel-pa/matthummel-theme/pull/115) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Semantic tool cards + configurable heading levels (3.1.59)
+- 🔀 Merged PR [#114](https://github.com/matthummel-pa/matthummel-theme/pull/114) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fit full featured image in post hero (no crop)
+- 🔀 Merged PR [#113](https://github.com/matthummel-pa/matthummel-theme/pull/113) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Tighten hero headings for above-the-fold fit
 - 🔀 Merged PR [#112](https://github.com/matthummel-pa/matthummel-theme/pull/112) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Tool Blocks: fields, icon picker, add more cards
 - 🔀 Merged PR [#111](https://github.com/matthummel-pa/matthummel-theme/pull/111) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Journal grids: better front design + matching block editor styles
 - 🔀 Merged PR [#110](https://github.com/matthummel-pa/matthummel-theme/pull/110) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Post hero featured image + Gutenberg journal bodies
-- 🔀 Merged PR [#109](https://github.com/matthummel-pa/matthummel-theme/pull/109) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — AI comparison cards: grey borders, chips, more SEO
-- 🔀 Merged PR [#108](https://github.com/matthummel-pa/matthummel-theme/pull/108) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — What actually gets faster with AI (journal comparison)
-- 🔀 Merged PR [#107](https://github.com/matthummel-pa/matthummel-theme/pull/107) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — One adjacent-work sentence (not WordPress-only)
-- 🔀 Merged PR [#106](https://github.com/matthummel-pa/matthummel-theme/pull/106) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Hireability visual, layout, and copy pass
-- 🔀 Merged PR [#105](https://github.com/matthummel-pa/matthummel-theme/pull/105) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Recruiter glance, concept Work path, named /hire employers
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/a558f4dd865271e1a49b00e2d72b0dc6da3aa051) — _AI comparison cards: grey borders, chips, more SEO (#109)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/dc5fc451d0eabfd4f2a2f790d4c8f77903258403) — _What actually gets faster with AI (journal comparison) (#108)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2af1cf676e67aedb23dbf5317d879bbbf2641d9b) — _One adjacent-work sentence (not WordPress-only) (#107)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/39c4ad23baf955ea5d026ea93fe96e681ed8eada) — _Hireability visual, layout, and copy pass (#106)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/bcacd12d4fca38ed184a20f477c4318782e8bf2d) — _Recruiter glance, concept Work path, named /hire employers (#105)_
 - 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/beeeb6de4507357864d8ec982a54fac3a22def05) — _Document 1.0.2 in readme changelog and docs (#10)_
 - 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/ffc9898e5db85a7cfe17aeaf54947f782b62f2a4) — _1.0.2: Plugin Check cleanup for WordPress.org review (#9)_
-- 🚀 Commit in [matthummel-pa/keepary](https://github.com/matthummel-pa/keepary/commit/2b9c69b19c8e732c336c75106c4f8de3553bc714) — _Fix leftover REPO_OWNER placeholders and README hygiene_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/a3a06b4635d5a70b846c54c44384f5484389c225) — _Home hero SEO: H1, role, and lede rewrite (#100)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2b7e7c66e0c9a16be24b5fa1bfa82c3525494632) — _Expand Work page content, add Uses/Resources fields, site-wide a11y. (#103)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/b7e6851a17ae68b17dea0d6d4ea816ca76f274ec) — _Improve site-wide SEO copy, content defaults, and Woo design. (#102)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/56534147cf20dfdc038faa58472f8c68eee438a9) — _Marketing page heroes: split layout + snapshot panels (#101)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
