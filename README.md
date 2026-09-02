@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#121](https://github.com/matthummel-pa/matthummel-theme/pull/121) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix stars earned total and list watching/starred repos
+- 🔀 Merged PR [#120](https://github.com/matthummel-pa/matthummel-theme/pull/120) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Code page layout: badges column + practice aside
+- 🔀 Merged PR [#119](https://github.com/matthummel-pa/matthummel-theme/pull/119) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Code page community panel: followers, stargazers, badges
+- 🔀 Merged PR [#118](https://github.com/matthummel-pa/matthummel-theme/pull/118) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Hotfix: remove merge conflict markers from style.css (3.1.62)
 - 🔀 Merged PR [#117](https://github.com/matthummel-pa/matthummel-theme/pull/117) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Restore list bullets/numbers in editor and posts (3.1.61)
 - 🔀 Merged PR [#116](https://github.com/matthummel-pa/matthummel-theme/pull/116) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix double-encoded apostrophes in post titles (3.1.60)
 - 🔀 Merged PR [#115](https://github.com/matthummel-pa/matthummel-theme/pull/115) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Semantic tool cards + configurable heading levels (3.1.59)
 - 🔀 Merged PR [#114](https://github.com/matthummel-pa/matthummel-theme/pull/114) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fit full featured image in post hero (no crop)
-- 🔀 Merged PR [#113](https://github.com/matthummel-pa/matthummel-theme/pull/113) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Tighten hero headings for above-the-fold fit
-- 🔀 Merged PR [#112](https://github.com/matthummel-pa/matthummel-theme/pull/112) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Tool Blocks: fields, icon picker, add more cards
-- 🔀 Merged PR [#111](https://github.com/matthummel-pa/matthummel-theme/pull/111) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Journal grids: better front design + matching block editor styles
-- 🔀 Merged PR [#110](https://github.com/matthummel-pa/matthummel-theme/pull/110) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Post hero featured image + Gutenberg journal bodies
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/702776a7b48849af4d4357b0407219765789049d) — _Tighten hero headings for above-the-fold fit (#113)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/ec959ff32bbe8fb8a3f5ede4d1c2e709b6f40510) — _Tool Blocks: fields, icon picker, add more cards (#112)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/99b95f9ff49055fdf74ac08d74df085983827956) — _Journal comparison custom blocks + editor styles (#111)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/f770fdc4eedf14b966758bbceedf4cf56eac76bf) — _Post hero featured image + Gutenberg journal bodies (#110)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/a558f4dd865271e1a49b00e2d72b0dc6da3aa051) — _AI comparison cards: grey borders, chips, more SEO (#109)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/dc5fc451d0eabfd4f2a2f790d4c8f77903258403) — _What actually gets faster with AI (journal comparison) (#108)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2af1cf676e67aedb23dbf5317d879bbbf2641d9b) — _One adjacent-work sentence (not WordPress-only) (#107)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/39c4ad23baf955ea5d026ea93fe96e681ed8eada) — _Hireability visual, layout, and copy pass (#106)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/bcacd12d4fca38ed184a20f477c4318782e8bf2d) — _Recruiter glance, concept Work path, named /hire employers (#105)_
-- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/beeeb6de4507357864d8ec982a54fac3a22def05) — _Document 1.0.2 in readme changelog and docs (#10)_
-- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/ffc9898e5db85a7cfe17aeaf54947f782b62f2a4) — _1.0.2: Plugin Check cleanup for WordPress.org review (#9)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
