@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#124](https://github.com/matthummel-pa/matthummel-theme/pull/124) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Make product pages marketplace-ready
+- ⭐ Starred [christianalberto/github-profile-achievements](https://github.com/christianalberto/github-profile-achievements)
+- 🔀 Merged PR [#123](https://github.com/matthummel-pa/matthummel-theme/pull/123) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Projects catalog: themes & plugins for sale (drop concept language)
+- 🔀 Open PR [#122](https://github.com/matthummel-pa/matthummel-theme/pull/122) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add Google AI Search (GEO) Cursor rule
 - 🔀 Merged PR [#121](https://github.com/matthummel-pa/matthummel-theme/pull/121) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix stars earned total and list watching/starred repos
 - 🔀 Merged PR [#120](https://github.com/matthummel-pa/matthummel-theme/pull/120) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Code page layout: badges column + practice aside
 - 🔀 Merged PR [#119](https://github.com/matthummel-pa/matthummel-theme/pull/119) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Code page community panel: followers, stargazers, badges
 - 🔀 Merged PR [#118](https://github.com/matthummel-pa/matthummel-theme/pull/118) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Hotfix: remove merge conflict markers from style.css (3.1.62)
 - 🔀 Merged PR [#117](https://github.com/matthummel-pa/matthummel-theme/pull/117) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Restore list bullets/numbers in editor and posts (3.1.61)
-- 🔀 Merged PR [#116](https://github.com/matthummel-pa/matthummel-theme/pull/116) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix double-encoded apostrophes in post titles (3.1.60)
-- 🔀 Merged PR [#115](https://github.com/matthummel-pa/matthummel-theme/pull/115) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Semantic tool cards + configurable heading levels (3.1.59)
-- 🔀 Merged PR [#114](https://github.com/matthummel-pa/matthummel-theme/pull/114) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fit full featured image in post hero (no crop)
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/15f84178e6034e2c97764e44834bf62c55d2e56c) — _Semantic tool cards + configurable heading levels (#115)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/a2874d703ef74a1a51f15c8b0ebadae949bd5a7a) — _Fit full featured image in post hero (no crop) (#114)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/702776a7b48849af4d4357b0407219765789049d) — _Tighten hero headings for above-the-fold fit (#113)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/ec959ff32bbe8fb8a3f5ede4d1c2e709b6f40510) — _Tool Blocks: fields, icon picker, add more cards (#112)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/99b95f9ff49055fdf74ac08d74df085983827956) — _Journal comparison custom blocks + editor styles (#111)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/f770fdc4eedf14b966758bbceedf4cf56eac76bf) — _Post hero featured image + Gutenberg journal bodies (#110)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/a558f4dd865271e1a49b00e2d72b0dc6da3aa051) — _AI comparison cards: grey borders, chips, more SEO (#109)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/dc5fc451d0eabfd4f2a2f790d4c8f77903258403) — _What actually gets faster with AI (journal comparison) (#108)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2af1cf676e67aedb23dbf5317d879bbbf2641d9b) — _One adjacent-work sentence (not WordPress-only) (#107)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
