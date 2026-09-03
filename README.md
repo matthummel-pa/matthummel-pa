@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#52](https://github.com/matthummel-pa/wp-acreline/pull/52) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Refresh readme.txt + concept page screenshot set
-- 🔀 Merged PR [#51](https://github.com/matthummel-pa/wp-acreline/pull/51) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Point concept demo URL to acreline.matthummel.com (1.2.3)
-- 🔀 Merged PR [#50](https://github.com/matthummel-pa/wp-acreline/pull/50) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Fix rules compliance: featured flag, forms, a11y, SEO yield
+- 🔀 Merged PR [#122](https://github.com/matthummel-pa/matthummel-theme/pull/122) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add Google AI Search (GEO) Cursor rule
+- 🔀 Merged PR [#128](https://github.com/matthummel-pa/matthummel-theme/pull/128) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Docs: align AGENTS.md with native WPVibe HTTP MCP
+- 🔀 Closed PR [#104](https://github.com/matthummel-pa/matthummel-theme/pull/104) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sync README activity feed and changelog through 3.1.47
+- 🔀 Closed PR [#21](https://github.com/matthummel-pa/matthummel-theme/pull/21) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Use native HTTP for WPVibe MCP
+- 🔀 Closed PR [#27](https://github.com/matthummel-pa/matthummel-theme/pull/27) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add Cursor rule for SiteGround WordPress conventions
+- 🔀 Closed PR [#28](https://github.com/matthummel-pa/matthummel-theme/pull/28) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add SiteGround deploy-key and Husky pre-commit setup
+- 🔀 Closed PR [#50](https://github.com/matthummel-pa/matthummel-theme/pull/50) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: matthummel.com hub CTAs; R&V as proof only
+- 🔀 Closed PR [#62](https://github.com/matthummel-pa/matthummel-theme/pull/62) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Bluesky auto-share for journal posts
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/227eb0798e6223e06cf99b2526f1a415d49113d0) — _Refresh readme.txt + concept page screenshot set (#52)_
 - ⭐ Starred [spencerpauly/awesome-cursor-skills](https://github.com/spencerpauly/awesome-cursor-skills)
-- 🔀 Open PR [#8](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme/pull/8) in [matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme) — Add Supabase PostgREST MCP server to Cursor config
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/f5eb561c61060245530cca1b4fc63880c6d64579) — _Point concept demo URL to acreline.matthummel.com (1.2.3)_
-- 🔀 Merged PR [#127](https://github.com/matthummel-pa/matthummel-theme/pull/127) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix DEV.to icon to use the official logo
-- 🔀 Merged PR [#49](https://github.com/matthummel-pa/wp-acreline/pull/49) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Acreline brand kit + README product links
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/8c444a526610deef3e9baa189e80b578b3288b53) — _Fix rules compliance: featured flag, forms, a11y, SEO yield (#50)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/9c9cf55dbebfd6b7c81b4c30de34edded0a9edb5) — _Fix DEV.to icon to use the official logo (#127)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/7c72f98cf1140446803311d36189d43c196475cc) — _Acreline brand kit + README product links_
-- 🔀 Merged PR [#7](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme/pull/7) in [matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme) — Add Refund Policy page (matthummel.com digital products)
-- 🔀 Merged PR [#126](https://github.com/matthummel-pa/matthummel-theme/pull/126) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Update Vite and clear npm advisories
 - ⭐ Starred [christianalberto/github-profile-achievements](https://github.com/christianalberto/github-profile-achievements)
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/ce8a616ae01f875753ebfeb5318136498c3610cd) — _Retry product catalog migration after deploy (#125)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/ae82821b0e0de25df88ef4c6e5b639fa2655315a) — _Make product pages marketplace-ready (#124)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2e70e68df0110c441820a0af224746521a3aabba) — _Projects catalog: themes & plugins for sale (#123)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
