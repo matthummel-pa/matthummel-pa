@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#53](https://github.com/matthummel-pa/wp-acreline/pull/53) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — feat: convert page copy to core Gutenberg blocks + custom block generator
 - 🔀 Open PR [#9](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme/pull/9) in [matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme) — Marketplace readiness: GPL, Customizer, a11y, WC tours, forms
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/3cc7d724536dd9e8da746532a89701d467d841af) — _feat: core Gutenberg blocks + custom block generator + auto-seeded pages_
 - 🔀 Merged PR [#131](https://github.com/matthummel-pa/matthummel-theme/pull/131) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Archive earlier Power Platform posts
 - 🔀 Merged PR [#129](https://github.com/matthummel-pa/matthummel-theme/pull/129) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — SEO: skill-first Rank Math snippets for wider audience
 - 🔀 Merged PR [#130](https://github.com/matthummel-pa/matthummel-theme/pull/130) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Raise Rank Math scores for field-driven marketing pages
 - 🔀 Merged PR [#122](https://github.com/matthummel-pa/matthummel-theme/pull/122) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add Google AI Search (GEO) Cursor rule
 - 🔀 Merged PR [#128](https://github.com/matthummel-pa/matthummel-theme/pull/128) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Docs: align AGENTS.md with native WPVibe HTTP MCP
 - 🔀 Closed PR [#104](https://github.com/matthummel-pa/matthummel-theme/pull/104) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sync README activity feed and changelog through 3.1.47
-- 🔀 Closed PR [#21](https://github.com/matthummel-pa/matthummel-theme/pull/21) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Use native HTTP for WPVibe MCP
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/227eb0798e6223e06cf99b2526f1a415d49113d0) — _Refresh readme.txt + concept page screenshot set (#52)_
 - ⭐ Starred [spencerpauly/awesome-cursor-skills](https://github.com/spencerpauly/awesome-cursor-skills)
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/f5eb561c61060245530cca1b4fc63880c6d64579) — _Point concept demo URL to acreline.matthummel.com (1.2.3)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/8c444a526610deef3e9baa189e80b578b3288b53) — _Fix rules compliance: featured flag, forms, a11y, SEO yield (#50)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/9c9cf55dbebfd6b7c81b4c30de34edded0a9edb5) — _Fix DEV.to icon to use the official logo (#127)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/7c72f98cf1140446803311d36189d43c196475cc) — _Acreline brand kit + README product links_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d3909c39485112eed65784dd77407fe64cebafbd) — _Update Vite and clear npm advisories (#126)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
