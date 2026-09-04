@@ -108,14 +108,14 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#131](https://github.com/matthummel-pa/matthummel-theme/pull/131) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Archive earlier Power Platform posts
+- 🔀 Merged PR [#129](https://github.com/matthummel-pa/matthummel-theme/pull/129) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — SEO: skill-first Rank Math snippets for wider audience
+- 🔀 Merged PR [#130](https://github.com/matthummel-pa/matthummel-theme/pull/130) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Raise Rank Math scores for field-driven marketing pages
 - 🔀 Merged PR [#122](https://github.com/matthummel-pa/matthummel-theme/pull/122) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add Google AI Search (GEO) Cursor rule
 - 🔀 Merged PR [#128](https://github.com/matthummel-pa/matthummel-theme/pull/128) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Docs: align AGENTS.md with native WPVibe HTTP MCP
 - 🔀 Closed PR [#104](https://github.com/matthummel-pa/matthummel-theme/pull/104) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sync README activity feed and changelog through 3.1.47
 - 🔀 Closed PR [#21](https://github.com/matthummel-pa/matthummel-theme/pull/21) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Use native HTTP for WPVibe MCP
 - 🔀 Closed PR [#27](https://github.com/matthummel-pa/matthummel-theme/pull/27) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add Cursor rule for SiteGround WordPress conventions
-- 🔀 Closed PR [#28](https://github.com/matthummel-pa/matthummel-theme/pull/28) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add SiteGround deploy-key and Husky pre-commit setup
-- 🔀 Closed PR [#50](https://github.com/matthummel-pa/matthummel-theme/pull/50) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: matthummel.com hub CTAs; R&V as proof only
-- 🔀 Closed PR [#62](https://github.com/matthummel-pa/matthummel-theme/pull/62) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Bluesky auto-share for journal posts
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/227eb0798e6223e06cf99b2526f1a415d49113d0) — _Refresh readme.txt + concept page screenshot set (#52)_
 - ⭐ Starred [spencerpauly/awesome-cursor-skills](https://github.com/spencerpauly/awesome-cursor-skills)
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/f5eb561c61060245530cca1b4fc63880c6d64579) — _Point concept demo URL to acreline.matthummel.com (1.2.3)_
