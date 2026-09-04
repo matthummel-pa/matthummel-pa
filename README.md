@@ -122,7 +122,7 @@ Live feed of what I’ve been shipping across GitHub — PRs, commits, releases,
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/8c444a526610deef3e9baa189e80b578b3288b53) — _Fix rules compliance: featured flag, forms, a11y, SEO yield (#50)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/9c9cf55dbebfd6b7c81b4c30de34edded0a9edb5) — _Fix DEV.to icon to use the official logo (#127)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/7c72f98cf1140446803311d36189d43c196475cc) — _Acreline brand kit + README product links_
-- ⭐ Starred [christianalberto/github-profile-achievements](https://github.com/christianalberto/github-profile-achievements)
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d3909c39485112eed65784dd77407fe64cebafbd) — _Update Vite and clear npm advisories (#126)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
