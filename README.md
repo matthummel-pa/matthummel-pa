@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#16](https://github.com/matthummel-pa/wp-walkridge/pull/16) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — ci(deploy): read WR_-prefixed deploy secrets (HG_ fallback)
+- 🔀 Merged PR [#15](https://github.com/matthummel-pa/wp-walkridge/pull/15) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Genericize theme copy: remove Gettysburg/location-specific references
+- 🔀 Merged PR [#14](https://github.com/matthummel-pa/wp-walkridge/pull/14) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Migrate GitHub identity to matthummel-pa/wp-walkridge
+- 🔀 Merged PR [#8](https://github.com/matthummel-pa/wp-walkridge/pull/8) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Add Supabase PostgREST MCP server to Cursor config
+- 🔀 Merged PR [#4](https://github.com/matthummel-pa/wp-walkridge/pull/4) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Add Cursor rules for Blade templates and PHP/Sage conventions
+- 🔀 Merged PR [#13](https://github.com/matthummel-pa/wp-walkridge/pull/13) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Support encrypted SSH deploy key passphrase
 - 🔀 Open PR [#134](https://github.com/matthummel-pa/matthummel-theme/pull/134) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Relabel Acreline as a Real estate theme
-- 🔀 Merged PR [#12](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme/pull/12) in [matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme) — Buyer-facing README; tech and SEO policy moved to SUPPORT
-- 🔀 Merged PR [#11](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme/pull/11) in [matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme) — Rewrite README in Acreline marketable style for Walkridge
-- 🔀 Merged PR [#10](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme/pull/10) in [matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme) — Rebrand to Walkridge + Acreline-style Gutenberg blocks
-- 🔀 Merged PR [#132](https://github.com/matthummel-pa/matthummel-theme/pull/132) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sync Acreline product page from wp-acreline 1.2.3
-- 🔀 Merged PR [#133](https://github.com/matthummel-pa/matthummel-theme/pull/133) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add product Support hub and Theme details CTA
-- 🔀 Merged PR [#53](https://github.com/matthummel-pa/wp-acreline/pull/53) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — feat: convert page copy to core Gutenberg blocks + custom block generator
-- 🔀 Open PR [#9](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme/pull/9) in [matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme](https://github.com/matthummel-pa/hallowed-grounds-battlefield-tour-wp-theme) — Marketplace readiness: GPL, Customizer, a11y, WC tours, forms
+- 🔀 Merged PR [#12](https://github.com/matthummel-pa/wp-walkridge/pull/12) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Buyer-facing README; tech and SEO policy moved to SUPPORT
+- 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/4e3adf92fd6955f52845c52564674b05297e1997) — _Rewrite README in Acreline marketable style for Walkridge (#11)_
+- 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/32cba055645b78bdf09f699f660605301f46e774) — _Rebrand to Walkridge + Acreline-style Gutenberg blocks (#10)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2b34e06c6fe7d5591e24e5cdb07ba9206f2b2dcf) — _Sync Acreline product page from wp-acreline 1.2.3 (#132)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/49e9aa0167c7e2cf8eb0eccc5ecb2ae4e11fbb39) — _Add product Support hub and Theme details CTA (#133)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/3cc7d724536dd9e8da746532a89701d467d841af) — _feat: core Gutenberg blocks + custom block generator + auto-seeded pages_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d85850602b5e39d9f5385f6369f3c2ab394dff72) — _Archive earlier Power Platform posts (#131)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/de035ecb4dd25bd652be3f37983f3c87d437fa8a) — _SEO: improve Rank Math marketing page scores (#129)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2a39b7a9fde4be0c5fcaecf510dfdca2020f7b24) — _Docs: align AGENTS.md with native WPVibe HTTP MCP (#128)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/e7d85ec8c585137f7f8df175ef7cee2d7fd7f6d3) — _Add Google AI Search (GEO) Cursor rule (#122)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/227eb0798e6223e06cf99b2526f1a415d49113d0) — _Refresh readme.txt + concept page screenshot set (#52)_
-- ⭐ Starred [spencerpauly/awesome-cursor-skills](https://github.com/spencerpauly/awesome-cursor-skills)
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
