@@ -168,7 +168,7 @@ Live **concept sites** for [Ridges &amp; Valleys Studio](https://ridgesandvalley
     <td width="33%" align="center" valign="top">
       <a href="https://matthummel-pa.github.io/realtor-keystone-homes-and-land-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/realtor-keystone-homes-and-land.jpg" alt="Keystone Homes & Land" width="220" /></a><br />
       <strong><a href="https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme">Keystone Homes &amp; Land</a></strong><br />
-      <sub>Land &amp; farms · grid/map listings · acreage filters</sub><br />
+      <sub>Land &amp; farms · grid/map listings · township filters · financing tools</sub><br />
       <a href="https://ridgesandvalleys.com/work/concept-realtor-keystone-homes-and-land/">Case study</a> · <a href="https://matthummel-pa.github.io/realtor-keystone-homes-and-land-theme/">Demo</a>
     </td>
     <td width="33%" align="center" valign="top">
