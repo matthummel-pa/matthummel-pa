@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#18](https://github.com/matthummel-pa/wp-walkridge/pull/18) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — feat(editor): correct Gutenberg block rendering, lock footer, add advanced per-block co…
-- 🔀 Open PR [#17](https://github.com/matthummel-pa/wp-walkridge/pull/17) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — fix: code, SEO, UX, content review — security, a11y, and conversion improvements
+- 🔀 Merged PR [#18](https://github.com/matthummel-pa/wp-walkridge/pull/18) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — feat(editor): correct Gutenberg block rendering, lock footer, add advanced per-block co…
+- 🔀 Merged PR [#19](https://github.com/matthummel-pa/wp-walkridge/pull/19) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Marketplace readiness: v1.1.0 — escaping, i18n, a11y, metadata, OFL
+- 🔀 Merged PR [#17](https://github.com/matthummel-pa/wp-walkridge/pull/17) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — fix: code, SEO, UX, content review — security, a11y, and conversion improvements
 - 🔀 Merged PR [#16](https://github.com/matthummel-pa/wp-walkridge/pull/16) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — ci(deploy): read WR_-prefixed deploy secrets (HG_ fallback)
 - 🔀 Merged PR [#15](https://github.com/matthummel-pa/wp-walkridge/pull/15) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Genericize theme copy: remove Gettysburg/location-specific references
 - 🔀 Merged PR [#14](https://github.com/matthummel-pa/wp-walkridge/pull/14) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Migrate GitHub identity to matthummel-pa/wp-walkridge
 - 🔀 Merged PR [#8](https://github.com/matthummel-pa/wp-walkridge/pull/8) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Add Supabase PostgREST MCP server to Cursor config
 - 🔀 Merged PR [#4](https://github.com/matthummel-pa/wp-walkridge/pull/4) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Add Cursor rules for Blade templates and PHP/Sage conventions
-- 🔀 Merged PR [#13](https://github.com/matthummel-pa/wp-walkridge/pull/13) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Support encrypted SSH deploy key passphrase
+- 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/6ff1a321eef4e5d349c66219ffb2a84ac8097589) — _Support encrypted SSH deploy keys via HG_SSH_KEY_PASSPHRASE (#13)_
 - 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/17d593b7de4b7afc059b3ea61593dd45691d3979) — _Buyer-facing README; tech and SEO policy moved to SUPPORT (#12)_
 - 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/4e3adf92fd6955f52845c52564674b05297e1997) — _Rewrite README in Acreline marketable style for Walkridge (#11)_
 - 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/32cba055645b78bdf09f699f660605301f46e774) — _Rebrand to Walkridge + Acreline-style Gutenberg blocks (#10)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2b34e06c6fe7d5591e24e5cdb07ba9206f2b2dcf) — _Sync Acreline product page from wp-acreline 1.2.3 (#132)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/49e9aa0167c7e2cf8eb0eccc5ecb2ae4e11fbb39) — _Add product Support hub and Theme details CTA (#133)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/3cc7d724536dd9e8da746532a89701d467d841af) — _feat: core Gutenberg blocks + custom block generator + auto-seeded pages_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d85850602b5e39d9f5385f6369f3c2ab394dff72) — _Archive earlier Power Platform posts (#131)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
