@@ -108,21 +108,21 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🔀 Open PR [#140](https://github.com/matthummel-pa/matthummel-theme/pull/140) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sync Acreline product copy for setup wizard (1.3.0)
+- 🔀 Merged PR [#139](https://github.com/matthummel-pa/matthummel-theme/pull/139) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Redirect Acreline legacy SEO URLs to live product
+- 🔀 Merged PR [#138](https://github.com/matthummel-pa/matthummel-theme/pull/138) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Keep Acreline labeled Real estate on live shop
+- 🔀 Merged PR [#137](https://github.com/matthummel-pa/matthummel-theme/pull/137) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: WooCommerce product pages — marketplace layout + Gutenberg blocks showcase
 - 🔀 Merged PR [#136](https://github.com/matthummel-pa/matthummel-theme/pull/136) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Consolidate WooCommerce templates; remove Projects redirect template
 - 🔀 Merged PR [#134](https://github.com/matthummel-pa/matthummel-theme/pull/134) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Relabel Acreline as a Real estate theme
 - 🔀 Merged PR [#135](https://github.com/matthummel-pa/matthummel-theme/pull/135) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Rich WooCommerce product pages, portfolio template, Rank Math improvements, marketing p…
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/9d2ebb09457b261430810fd2b424cb92dce45fbb) — _Merge pull request #137 from matthummel-pa/cursor/product-pages-marketplace-b1bf_
 - ⭐ Starred [HexmosTech/LiveReview](https://github.com/HexmosTech/LiveReview)
 - 🔀 Merged PR [#132](https://github.com/matthummel-pa/matthummel-theme/pull/132) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sync Acreline product page from wp-acreline 1.2.3
-- 🔀 Merged PR [#133](https://github.com/matthummel-pa/matthummel-theme/pull/133) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add product Support hub and Theme details CTA
-- 🔀 Merged PR [#53](https://github.com/matthummel-pa/wp-acreline/pull/53) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — feat: convert page copy to core Gutenberg blocks + custom block generator
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/49e9aa0167c7e2cf8eb0eccc5ecb2ae4e11fbb39) — _Add product Support hub and Theme details CTA (#133)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/3cc7d724536dd9e8da746532a89701d467d841af) — _feat: core Gutenberg blocks + custom block generator + auto-seeded pages_
-- 🔀 Merged PR [#131](https://github.com/matthummel-pa/matthummel-theme/pull/131) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Archive earlier Power Platform posts
-- 🔀 Merged PR [#129](https://github.com/matthummel-pa/matthummel-theme/pull/129) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — SEO: skill-first Rank Math snippets for wider audience
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d85850602b5e39d9f5385f6369f3c2ab394dff72) — _Archive earlier Power Platform posts (#131)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/de035ecb4dd25bd652be3f37983f3c87d437fa8a) — _SEO: improve Rank Math marketing page scores (#129)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2a39b7a9fde4be0c5fcaecf510dfdca2020f7b24) — _Docs: align AGENTS.md with native WPVibe HTTP MCP (#128)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/e7d85ec8c585137f7f8df175ef7cee2d7fd7f6d3) — _Add Google AI Search (GEO) Cursor rule (#122)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/227eb0798e6223e06cf99b2526f1a415d49113d0) — _Refresh readme.txt + concept page screenshot set (#52)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/f5eb561c61060245530cca1b4fc63880c6d64579) — _Point concept demo URL to acreline.matthummel.com (1.2.3)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/8c444a526610deef3e9baa189e80b578b3288b53) — _Fix rules compliance: featured flag, forms, a11y, SEO yield (#50)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
