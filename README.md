@@ -108,6 +108,7 @@
 Live feed of what I’ve been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
+- 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/70c23ade647b0fdbcadaa16b9bf6f588382844d6) — _Update SSH secret names in deployment workflow_
 - 🔀 Merged PR [#18](https://github.com/matthummel-pa/wp-walkridge/pull/18) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — feat(editor): correct Gutenberg block rendering, lock footer, add advanced per-block co…
 - 🔀 Merged PR [#19](https://github.com/matthummel-pa/wp-walkridge/pull/19) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Marketplace readiness: v1.1.0 — escaping, i18n, a11y, metadata, OFL
 - 🔀 Merged PR [#17](https://github.com/matthummel-pa/wp-walkridge/pull/17) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — fix: code, SEO, UX, content review — security, a11y, and conversion improvements
@@ -122,7 +123,6 @@ Live feed of what I’ve been shipping across GitHub — PRs, commits, releases,
 - 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/32cba055645b78bdf09f699f660605301f46e774) — _Rebrand to Walkridge + Acreline-style Gutenberg blocks (#10)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2b34e06c6fe7d5591e24e5cdb07ba9206f2b2dcf) — _Sync Acreline product page from wp-acreline 1.2.3 (#132)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/49e9aa0167c7e2cf8eb0eccc5ecb2ae4e11fbb39) — _Add product Support hub and Theme details CTA (#133)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/3cc7d724536dd9e8da746532a89701d467d841af) — _feat: core Gutenberg blocks + custom block generator + auto-seeded pages_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
