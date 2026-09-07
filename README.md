@@ -72,7 +72,6 @@
 
 <p align="center">
   <a href="https://matthummel.com">matthummel.com</a> &nbsp;·&nbsp;
-  <a href="https://ridgesandvalleys.com">Ridges &amp; Valleys</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/matt-hummel-pa">LinkedIn</a> &nbsp;·&nbsp;
   <a href="https://dev.to/mattbuildsapps">Dev.to</a>
 </p>
@@ -130,28 +129,28 @@ WordPress themes and plugins I sell and support at [matthummel.com/shop](https:/
 <table>
   <tr>
     <td width="25%" align="center" valign="top">
-      <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/realtor-keystone-homes-and-land.jpg" alt="Acreline WordPress real estate theme" width="180" /></a><br />
+      <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/"><img src="https://matthummel.com/wp-content/uploads/products/acreline/01-homepage.webp" alt="Acreline WordPress real estate theme" width="180" /></a><br />
       <strong><a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/">Acreline</a></strong><br />
       <sub>WordPress theme · Real estate · $79</sub><br />
       <sub>21 Gutenberg blocks, listings, agents, showing requests.</sub><br />
       <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/">Buy</a> · <a href="https://github.com/matthummel-pa/wp-acreline">GitHub</a>
     </td>
     <td width="25%" align="center" valign="top">
-      <a href="https://github.com/matthummel-pa/wp-walkridge"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/tour-hallowed-ground-tours-home-hero-720x480.jpg" alt="WalkRidge WordPress battlefield tour theme" width="180" /></a><br />
+      <a href="https://github.com/matthummel-pa/wp-walkridge"><img src="https://opengraph.githubassets.com/1/matthummel-pa/wp-walkridge" alt="WalkRidge WordPress battlefield tour theme" width="180" /></a><br />
       <strong><a href="https://github.com/matthummel-pa/wp-walkridge">WalkRidge</a></strong><br />
       <sub>WordPress theme · Tour sites · Coming soon</sub><br />
       <sub>Browse tours, meet guides, book from WooCommerce.</sub><br />
       <a href="https://github.com/matthummel-pa/wp-walkridge">GitHub</a>
     </td>
     <td width="25%" align="center" valign="top">
-      <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/gettysburg-website-design-creamery-concept-720x480.jpg" alt="Pintfield WordPress creamery theme" width="180" /></a><br />
+      <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme"><img src="https://opengraph.githubassets.com/1/matthummel-pa/pintfield-creamery-wp-theme" alt="Pintfield WordPress creamery theme" width="180" /></a><br />
       <strong><a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme">Pintfield</a></strong><br />
       <sub>WordPress theme · Creamery &amp; food retail · Coming soon</sub><br />
       <sub>Scoop Board, online ordering, multi-location WooCommerce.</sub><br />
       <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme">GitHub</a>
     </td>
     <td width="25%" align="center" valign="top">
-      <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/tour-hallowed-ground-tours-home-hero-720x480.jpg" alt="TOCflow WordPress table of contents plugin" width="180" /></a><br />
+      <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/"><img src="https://matthummel.com/wp-content/uploads/products/tocflow/featured.webp" alt="TOCflow WordPress table of contents plugin" width="180" /></a><br />
       <strong><a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/">TOCflow</a></strong><br />
       <sub>WordPress plugin · Table of contents · Free</sub><br />
       <sub>Server-rendered TOC block. Zero config, accessible, SEO-friendly.</sub><br />
@@ -228,7 +227,6 @@ If you're hiring a full-stack developer, need an experienced WordPress specialis
 ## Connect
 
 - 🌐 **Website / blog:** [matthummel.com](https://matthummel.com)
-- 🌿 **Studio:** [ridgesandvalleys.com](https://ridgesandvalleys.com)
 - 💼 **LinkedIn:** [linkedin.com/in/matt-hummel-pa](https://www.linkedin.com/in/matt-hummel-pa)
 - ✍️ **Dev.to:** [dev.to/mattbuildsapps](https://dev.to/mattbuildsapps)
 - 🦋 **Bluesky:** [@matthummel](https://bsky.app/profile/matthummel.bsky.social)
