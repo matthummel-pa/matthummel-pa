@@ -79,19 +79,12 @@
 
 <p align="center">
   <a href="#activity"><img src="https://img.shields.io/badge/Recent_activity-0F172A?style=for-the-badge" alt="Recent activity" /></a>
-  <a href="#work"><img src="https://img.shields.io/badge/Work-0F172A?style=for-the-badge" alt="Work" /></a>
+  <a href="#work"><img src="https://img.shields.io/badge/Products-0F172A?style=for-the-badge" alt="Products" /></a>
   <a href="#about"><img src="https://img.shields.io/badge/About-0F172A?style=for-the-badge" alt="About" /></a>
   <a href="#writing"><img src="https://img.shields.io/badge/Writing-0F172A?style=for-the-badge" alt="Writing" /></a>
   <a href="#projects"><img src="https://img.shields.io/badge/Open_for_work-0F172A?style=for-the-badge" alt="Open for work" /></a>
   <a href="#stats"><img src="https://img.shields.io/badge/Stats-0F172A?style=for-the-badge" alt="Stats" /></a>
   <a href="#connect"><img src="https://img.shields.io/badge/Connect-0F172A?style=for-the-badge" alt="Connect" /></a>
-</p>
-<p align="center">
-  <a href="#tours"><img src="https://img.shields.io/badge/Tours-2C5A95?style=for-the-badge" alt="Tours" /></a>
-  <a href="#real-estate"><img src="https://img.shields.io/badge/Real_estate-2C5A95?style=for-the-badge" alt="Real estate" /></a>
-  <a href="#retail"><img src="https://img.shields.io/badge/Retail-2C5A95?style=for-the-badge" alt="Retail" /></a>
-  <a href="#restaurants"><img src="https://img.shields.io/badge/Restaurants-2C5A95?style=for-the-badge" alt="Restaurants" /></a>
-  <a href="#hotels"><img src="https://img.shields.io/badge/Hotels-2C5A95?style=for-the-badge" alt="Hotels" /></a>
 </p>
 
 <p align="center">
@@ -130,151 +123,42 @@ Live feed of what I've been shipping across GitHub — PRs, commits, releases, s
 ---
 
 <a id="work"></a>
-## Featured work
+## Featured products
 
-Live **concept sites** for [Ridges &amp; Valleys Studio](https://ridgesandvalleys.com/work/) — Gettysburg / Adams County demos. Titles open the GitHub repo; thumbs open the live site.
-
-<a id="tours"></a>
-### Tours
+WordPress themes and plugins I sell and support at [matthummel.com/shop](https://matthummel.com/shop/).
 
 <table>
   <tr>
-    <td width="33%" align="center" valign="top">
-      <a href="https://matthummel-pa.github.io/tour-hallowed-ground-tours-theme/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/tour-hallowed-ground-tours-home-hero-720x480.jpg" alt="Hallowed Ground Battlefield Tours" width="220" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/tour-hallowed-ground-tours-theme">Hallowed Ground Battlefield Tours</a></strong><br />
-      <sub>Licensed-guide tours · OpenLayers map · Sage + Woo</sub><br />
-      <a href="https://ridgesandvalleys.com/work/concept-tour-hallowed-ground-tours/">Case study</a> · <a href="https://matthummel-pa.github.io/tour-hallowed-ground-tours-theme/">Demo</a>
+    <td width="25%" align="center" valign="top">
+      <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/realtor-keystone-homes-and-land.jpg" alt="Acreline WordPress real estate theme" width="180" /></a><br />
+      <strong><a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/">Acreline</a></strong><br />
+      <sub>WordPress theme · Real estate · $79</sub><br />
+      <sub>21 Gutenberg blocks, listings, agents, showing requests.</sub><br />
+      <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/">Buy</a> · <a href="https://github.com/matthummel-pa/wp-acreline">GitHub</a>
     </td>
-    <td width="33%" align="center" valign="top">
-      <a href="https://matthummel-pa.github.io/tour-first-shot-food-tours-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/tour-first-shot-food-tours.jpg" alt="First Shot Food & History Tours" width="220" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/tour-first-shot-food-tours-theme">First Shot Food &amp; History Tours</a></strong><br />
-      <sub>Walking tours · calendar booking · add-ons</sub><br />
-      <a href="https://ridgesandvalleys.com/work/concept-tour-first-shot-food-tours/">Case study</a> · <a href="https://matthummel-pa.github.io/tour-first-shot-food-tours-theme/">Demo</a>
+    <td width="25%" align="center" valign="top">
+      <a href="https://github.com/matthummel-pa/wp-walkridge"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/tour-hallowed-ground-tours-home-hero-720x480.jpg" alt="WalkRidge WordPress battlefield tour theme" width="180" /></a><br />
+      <strong><a href="https://github.com/matthummel-pa/wp-walkridge">WalkRidge</a></strong><br />
+      <sub>WordPress theme · Tour sites · Coming soon</sub><br />
+      <sub>Browse tours, meet guides, book from WooCommerce.</sub><br />
+      <a href="https://github.com/matthummel-pa/wp-walkridge">GitHub</a>
     </td>
-    <td width="33%" align="center" valign="top">
-      <a href="https://fieldofvalor.ridgesandvalleys.com/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/field-of-valor-cover-720x480.jpg" alt="Field of Valor History Co." width="220" /></a><br />
-      <strong>Field of Valor History Co.</strong><br />
-      <sub>Battlefield tours · seven tour pages · licensed guides</sub><br />
-      <a href="https://ridgesandvalleys.com/work/gettysburg-tour-website-concept/">Case study</a> · <a href="https://fieldofvalor.ridgesandvalleys.com/">Demo</a>
+    <td width="25%" align="center" valign="top">
+      <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/gettysburg-website-design-creamery-concept-720x480.jpg" alt="Pintfield WordPress creamery theme" width="180" /></a><br />
+      <strong><a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme">Pintfield</a></strong><br />
+      <sub>WordPress theme · Creamery &amp; food retail · Coming soon</sub><br />
+      <sub>Scoop Board, online ordering, multi-location WooCommerce.</sub><br />
+      <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme">GitHub</a>
     </td>
-  </tr>
-</table>
-
-<a id="real-estate"></a>
-### Real estate
-
-<table>
-  <tr>
-    <td width="33%" align="center" valign="top">
-      <a href="https://matthummel-pa.github.io/realtor-keystone-homes-and-land-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/realtor-keystone-homes-and-land.jpg" alt="Keystone Homes & Land" width="220" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/realtor-keystone-homes-and-land-theme">Keystone Homes &amp; Land</a></strong><br />
-      <sub>Land &amp; farms · grid/map listings · acreage filters</sub><br />
-      <a href="https://ridgesandvalleys.com/work/concept-realtor-keystone-homes-and-land/">Case study</a> · <a href="https://matthummel-pa.github.io/realtor-keystone-homes-and-land-theme/">Demo</a>
-    </td>
-    <td width="33%" align="center" valign="top">
-      <a href="https://matthummel-pa.github.io/realtor-ridgeline-realty-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/realtor-ridgeline-realty.jpg" alt="Ridgeline Realty" width="220" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/realtor-ridgeline-realty-theme">Ridgeline Realty</a></strong><br />
-      <sub>Filterable listings · live mortgage calculator</sub><br />
-      <a href="https://ridgesandvalleys.com/work/concept-realtor-ridgeline-realty/">Case study</a> · <a href="https://matthummel-pa.github.io/realtor-ridgeline-realty-theme/">Demo</a>
+    <td width="25%" align="center" valign="top">
+      <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/tour-hallowed-ground-tours-home-hero-720x480.jpg" alt="TOCflow WordPress table of contents plugin" width="180" /></a><br />
+      <strong><a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/">TOCflow</a></strong><br />
+      <sub>WordPress plugin · Table of contents · Free</sub><br />
+      <sub>Server-rendered TOC block. Zero config, accessible, SEO-friendly.</sub><br />
+      <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/">Download</a> · <a href="https://github.com/matthummel-pa/tocflow">GitHub</a>
     </td>
   </tr>
 </table>
-
-<a id="retail"></a>
-### Retail &amp; shops
-
-<table>
-  <tr>
-    <td width="33%" align="center" valign="top">
-      <a href="https://matthummel-pa.github.io/retail-ridgeline-outfitters-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/retail-ridgeline-outfitters.jpg" alt="Ridgeline Outfitters" width="220" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/retail-ridgeline-outfitters-theme">Ridgeline Outfitters</a></strong><br />
-      <sub>Outdoor gear · quick-view · wishlist · free-shipping bar</sub><br />
-      <a href="https://ridgesandvalleys.com/work/concept-retail-ridgeline-outfitters/">Case study</a> · <a href="https://matthummel-pa.github.io/retail-ridgeline-outfitters-theme/">Demo</a>
-    </td>
-    <td width="33%" align="center" valign="top">
-      <a href="https://matthummel-pa.github.io/gettysburg-retail-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/gettysburg-retail.jpg" alt="Diamond & Ridge Mercantile" width="220" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/gettysburg-retail-theme">Diamond &amp; Ridge Mercantile</a></strong><br />
-      <sub>Downtown shop · slide-in cart · checkout</sub><br />
-      <a href="https://ridgesandvalleys.com/work/concept-gettysburg-retail/">Case study</a> · <a href="https://matthummel-pa.github.io/gettysburg-retail-theme/">Demo</a>
-    </td>
-    <td width="33%" align="center" valign="top">
-      <a href="https://diamondsandthreads.ridgesandvalleys.com/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/concept-diamond-and-thread-720x480.jpg" alt="Diamonds & Threads" width="220" /></a><br />
-      <strong>Diamonds &amp; Threads</strong><br />
-      <sub>Vintage boutique · branding · clear customer journey</sub><br />
-      <a href="https://ridgesandvalleys.com/work/gettysburg-boutique-website/">Case study</a> · <a href="https://diamondsandthreads.ridgesandvalleys.com/">Demo</a>
-    </td>
-  </tr>
-</table>
-
-<a id="restaurants"></a>
-### Restaurants
-
-<table>
-  <tr>
-    <td width="33%" align="center" valign="top">
-      <a href="https://matthummel-pa.github.io/restaurant-cannon-and-crumb-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/restaurant-cannon-and-crumb.jpg" alt="Cannon & Crumb" width="220" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/restaurant-cannon-and-crumb-theme">Cannon &amp; Crumb</a></strong><br />
-      <sub>All-day cafe · filterable menu · online ordering</sub><br />
-      <a href="https://ridgesandvalleys.com/work/concept-restaurant-cannon-and-crumb/">Case study</a> · <a href="https://matthummel-pa.github.io/restaurant-cannon-and-crumb-theme/">Demo</a>
-    </td>
-    <td width="33%" align="center" valign="top">
-      <a href="https://matthummel-pa.github.io/gettysburg-restaurant-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/gettysburg-restaurant.jpg" alt="Field & Musket Tavern" width="220" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/gettysburg-restaurant-theme">Field &amp; Musket Tavern</a></strong><br />
-      <sub>Farm-to-table tavern · seasonal menu · reservations</sub><br />
-      <a href="https://ridgesandvalleys.com/work/concept-gettysburg-restaurant/">Case study</a> · <a href="https://matthummel-pa.github.io/gettysburg-restaurant-theme/">Demo</a>
-    </td>
-    <td width="33%" align="center" valign="top">
-      <a href="https://pintfield-creamery.netlify.app/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/gettysburg-website-design-creamery-concept-720x480.jpg" alt="Pintfield Creamery" width="220" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/gettysburg-creamery-site">Pintfield Creamery</a></strong><br />
-      <sub>32-flavor Scoop Board · online ordering · three locations</sub><br />
-      <a href="https://ridgesandvalleys.com/work/gettysburg-creamery-website-design/">Case study</a> · <a href="https://pintfield-creamery.netlify.app/">Demo</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="33%" align="center" valign="top">
-      <a href="https://reveille.ridgesandvalleys.com/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/reveille-home-720x480.png" alt="Reveille Kitchen & Bar" width="220" /></a><br />
-      <strong>Reveille Kitchen &amp; Bar</strong><br />
-      <sub>Farm-to-table · menu · reservations · private events</sub><br />
-      <a href="https://ridgesandvalleys.com/work/gettysburg-restaurant-website/">Case study</a> · <a href="https://reveille.ridgesandvalleys.com/">Demo</a>
-    </td>
-  </tr>
-</table>
-
-<a id="hotels"></a>
-### Hotels &amp; inns
-
-<table>
-  <tr>
-    <td width="33%" align="center" valign="top">
-      <a href="https://matthummel-pa.github.io/hotel-cupola-field-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/hotel-cupola-field.jpg" alt="The Cupola & Field Hotel" width="220" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/hotel-cupola-field-theme">The Cupola &amp; Field Hotel</a></strong><br />
-      <sub>Modern boutique hotel · live rates · concierge tools</sub><br />
-      <a href="https://ridgesandvalleys.com/work/concept-hotel-cupola-field/">Case study</a> · <a href="https://matthummel-pa.github.io/hotel-cupola-field-theme/">Demo</a>
-    </td>
-    <td width="33%" align="center" valign="top">
-      <a href="https://matthummel-pa.github.io/gettysburg-hotel-theme/"><img src="https://ridgesandvalleys.com/wp-content/themes/ridgesandvalleys-theme/assets/concept-previews/gettysburg-hotel.jpg" alt="The Lantern & Laurel Inn" width="220" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/gettysburg-hotel-theme">The Lantern &amp; Laurel Inn</a></strong><br />
-      <sub>Nine-room heritage inn · direct booking · forest &amp; brass</sub><br />
-      <a href="https://ridgesandvalleys.com/work/concept-gettysburg-hotel/">Case study</a> · <a href="https://matthummel-pa.github.io/gettysburg-hotel-theme/">Demo</a>
-    </td>
-    <td width="33%" align="center" valign="top">
-      <a href="https://willoughbyruninn.ridgesandvalleys.com/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/willoughby-cover-720x480.jpg" alt="Willoughby Run Inn" width="220" /></a><br />
-      <strong>Willoughby Run Inn</strong><br />
-      <sub>Eight rooms · booking flow · Gettysburg area guide</sub><br />
-      <a href="https://ridgesandvalleys.com/work/gettysburg-inn-website/">Case study</a> · <a href="https://willoughbyruninn.ridgesandvalleys.com/">Demo</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="33%" align="center" valign="top">
-      <a href="https://herrridgecottage.ridgesandvalleys.com/"><img src="https://ridgesandvalleys.com/wp-content/uploads/2026/08/herr-ridge-cover-720x480.jpg" alt="Herr Ridge Cottage B&B" width="220" /></a><br />
-      <strong>Herr Ridge Cottage B&amp;B</strong><br />
-      <sub>Three-room B&amp;B · multi-page stay site</sub><br />
-      <a href="https://ridgesandvalleys.com/work/gettysburg-bed-and-breakfast-website/">Case study</a> · <a href="https://herrridgecottage.ridgesandvalleys.com/">Demo</a>
-    </td>
-  </tr>
-</table>
-
-Browse filters and write-ups on the **[Ridges &amp; Valleys work page](https://ridgesandvalleys.com/work/)**.
 
 ---
 
