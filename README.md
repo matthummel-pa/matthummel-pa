@@ -1,1 +1,234 @@
-PGgxIGFsaWduPSJjZW50ZXIiPkhpLCBJJ20gTWF0dCBIdW1tZWwg8J+RizwvaDE+Cgo8cCBhbGlnbj0iY2VudGVyIj4KICA8YSBocmVmPSJodHRwczovL2tvbWFyZXYuY29tL2docHZjLz91c2VybmFtZT1tYXR0aHVtbWVsLXBhJnN0eWxlPWZvci10aGUtYmFkZ2UmY29sb3I9MkM1QTk1Ij4KICAgIDxpbWcgc3JjPSJodHRwczovL2tvbWFyZXYuY29tL2docHZjLz91c2VybmFtZT1tYXR0aHVtbWVsLXBhJnN0eWxlPWZvci10aGUtYmFkZ2UmY29sb3I9MkM1QTk1IiBhbHQ9IlByb2ZpbGUgdmlld3MiIC8+CiAgPC9hPgo8L3A+Cgo8cCBhbGlnbj0iY2VudGVyIj4KICA8YSBocmVmPSJodHRwczovL2dpdC5pby90eXBpbmctc3ZnIj4KICAgIDxpbWcgc3JjPSJodHRwczovL3JlYWRtZS10eXBpbmctc3ZnLmRlbW9sYWIuY29tP2ZvbnQ9RmlyYStDb2RlJndlaWdodD02MDAmc2l6ZT0yMiZwYXVzZT0xMDAwJmNvbG9yPTJDNUE5NSZjZW50ZXI9dHJ1ZSZ2Q2VudGVyPXRydWUmd2lkdGg9NjQwJmxpbmVzPUZ1bGwtc3RhY2srd2ViK2RldmVsb3BlcjtXb3JkUHJlc3MrJTJCK1NhZ2UraXMrbXkraGFwcHkrcGxhY2U7SStzaGlwK2FjY2Vzc2libGUlMkMrZmFzdCtzaXRlcztBSS1hc3Npc3RlZC4rSHVtYW4tcmV2aWV3ZWQuO2dpdCtjb21taXQrLW0rJTIyaXQrd29ya3Mrb24rbXkrbWFjaGluZSUyMiIgYWx0PSJUeXBpbmcgU1ZHIiAvPgogIDwvYT4KPC9wPgoKPHAgYWxpZ249ImNlbnRlciI+CiAgPHN0cm9uZz5GdWxsLXN0YWNrIGRldmVsb3BlciDCtyBXb3JkUHJlc3Mgc3BlY2lhbGlzdDwvc3Ryb25nPgo8L3A+Cgo8cCBhbGlnbj0iY2VudGVyIj4KICBNb3JlIHRoYW4gMTUgeWVhcnMgYnVpbGRpbmcgZm9yIHRoZSB3ZWIg4oCUIGFjY2Vzc2libGUgZnJvbnQgZW5kcywgUEhQIGFwcGxpY2F0aW9ucywgQVBJcywgYW5kIGRlcGxveW1lbnQgd29ya2Zsb3dzLjxici8+CiAgV29yZFByZXNzIGlzIG15IHNwZWNpYWx0eTogYSBmbGV4aWJsZSBwbGF0Zm9ybSB3aXRoIGFuIGVkaXRvciBidXNpbmVzc2VzIGNhbiBhY3R1YWxseSB1c2UuPGJyLz4KICBCYXNlZCBpbiBHZXR0eXNidXJnLCBQQS4gT3BlbiB0byBjb2xsYWJvcmF0aW9uLgo8L3A+Cgo8cCBhbGlnbj0iY2VudGVyIj4KICA8aW1nIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS95ZWFyc19zaGlwcGluZy0xNSUyQi0wRjE3MkE/c3R5bGU9ZmxhdC1zcXVhcmUiIGFsdD0iMTUrIHllYXJzIHNoaXBwaW5nIiAvPgogIDxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL3N0YWNrLVBIUCUyMCU3QyUyMEpTJTIwJTdDJTIwUmVhY3QlMjAlN0MlMjBXUC0yQzVBOTU/c3R5bGU9ZmxhdC1zcXVhcmUiIGFsdD0iU3RhY2siIC8+CiAgPGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvZWRpdG9yLUN1cnNvciUyMCUyQiUyMENsYXVkZS0zMzQxNTU/c3R5bGU9ZmxhdC1zcXVhcmUiIGFsdD0iRWRpdG9yIiAvPgogIDxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL3Rlc3RzLUklMjB3cml0ZSUyMHRoZW0lMjAocmVhbGx5KS0yMjg2M2E/c3R5bGU9ZmxhdC1zcXVhcmUiIGFsdD0iVGVzdHMiIC8+CiAgPGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvTGlnaHRob3VzZS1jaGFzZSUyMHRoZSUyMGdyZWVuLWUxMWQ0OD9zdHlsZT1mbGF0LXNxdWFyZSIgYWx0PSJMaWdodGhvdXNlIiAvPgo8L3A+Cgo8ZGV0YWlscyBhbGlnbj0iY2VudGVyIj4KICA8c3VtbWFyeT48c3Ryb25nPnBhY2thZ2UuanNvbjwvc3Ryb25nPiB2aWJlcyAoY2xpY2sgbWUpPC9zdW1tYXJ5PgogIDxici8+CgpgYGBqc29uCnsKICAibmFtZSI6ICJtYXR0LWh1bW1lbCIsCiAgInZlcnNpb24iOiAiMTUuMC4wIiwKICAicHJpdmF0ZSI6IGZhbHNlLAogICJkZXNjcmlwdGlvbiI6ICJGdWxsLXN0YWNrIGRldmVsb3BlciDCtyBXb3JkUHJlc3Mgc3BlY2lhbGlzdCDCtyBvcGVuIHRvIGNvbGxhYm9yYXRpb24iLAogICJtYWluIjogIldvcmRQcmVzcyArIFNhZ2UiLAogICJzY3JpcHRzIjogewogICAgImRldiI6ICJjdXJzb3IgLiAmJiBjb2ZmZWUgLS13YXRjaCIsCiAgICAiYnVpbGQiOiAic2hpcCBhY2Nlc3NpYmxlIFdvcmRQcmVzcyBwbGF0Zm9ybXMiLAogICAgInRlc3QiOiAiYTExeSArIENvcmUgV2ViIFZpdGFscyArICdjYW4gdGhlIHNob3AgZWRpdCBpdD8nIiwKICAgICJkZXBsb3kiOiAieW91IG93biB0aGUga2V5cyIKICB9LAogICJkZXBlbmRlbmNpZXMiOiB7CiAgICAid29yZHByZXNzIjogInNwZWNpYWx0eSIsCiAgICAicm9vdHMvc2FnZSI6ICJeMTEiLAogICAgInJlYWN0IjogIl4xOSIsCiAgICAiY3VyaW9zaXR5IjogIioiLAogICAgInBhdGllbmNlIjogIl7iiJ4iCiAgfSwKICAiZGV2RGVwZW5kZW5jaWVzIjogewogICAgImNsYXVkZSI6ICJjb3dvcmtlciIsCiAgICAiY3Vyc29yIjogInBhaXItcHJvZ3JhbW1lciIsCiAgICAiYmFkLXB1bi1nZW5lcmF0b3IiOiAib3B0aW9uYWwiCiAgfSwKICAiZW5naW5lcyI6IHsKICAgICJub2RlIjogIj49aHVtYW4iLAogICAgImNvZmZlZSI6ICJyZXF1aXJlZCIKICB9LAogICJrZXl3b3JkcyI6IFsiZnVsbC1zdGFjayIsICJ3b3JkcHJlc3MiLCAic2FnZSIsICJnZXR0eXNidXJnIiwgImExMXkiLCAib3Blbi1mb3Itd29yayJdLAogICJsaWNlbnNlIjogIk1JVC1hbmQta2luZG5lc3MiCn0KYGBgCgo8L2RldGFpbHM+Cgo8cCBhbGlnbj0iY2VudGVyIj4KICA8YSBocmVmPSJodHRwczovL21hdHRodW1tZWwuY29tIj5tYXR0aHVtbWVsLmNvbTwvYT4gJm5ic3A7wrcmbmJzcDsKICA8YSBocmVmPSJodHRwczovL3d3dy5saW5rZWRpbi5jb20vaW4vbWF0dC1odW1tZWwtcGEiPkxpbmtlZEluPC9hPiAmbmJzcDvCtyZuYnNwOwogIDxhIGhyZWY9Imh0dHBzOi8vZGV2LnRvL21hdHRidWlsZHNhcHBzIj5EZXYudG88L2E+CjwvcD4KCjxwIGFsaWduPSJjZW50ZXIiPgogIDxhIGhyZWY9IiNhY3Rpdml0eSI+PGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvUmVjZW50X2FjdGl2aXR5LTBGMTcyQT9zdHlsZT1mb3ItdGhlLWJhZGdlIiBhbHQ9IlJlY2VudCBhY3Rpdml0eSIgLz48L2E+CiAgPGEgaHJlZj0iI3dvcmsiPjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1Byb2R1Y3RzLTBGMTcyQT9zdHlsZT1mb3ItdGhlLWJhZGdlIiBhbHQ9IlByb2R1Y3RzIiAvPjwvYT4KICA8YSBocmVmPSIjYWJvdXQiPjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0Fib3V0LTBGMTcyQT9zdHlsZT1mb3ItdGhlLWJhZGdlIiBhbHQ9IkFib3V0IiAvPjwvYT4KICA8YSBocmVmPSIjd3JpdGluZyI+PGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvV3JpdGluZy0wRjE3MkE/c3R5bGU9Zm9yLXRoZS1iYWRnZSIgYWx0PSJXcml0aW5nIiAvPjwvYT4KICA8YSBocmVmPSIjcHJvamVjdHMiPjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL09wZW5fZm9yX3dvcmstMEYxNzJBP3N0eWxlPWZvci10aGUtYmFkZ2UiIGFsdD0iT3BlbiBmb3Igd29yayIgLz48L2E+CiAgPGEgaHJlZj0iI3N0YXRzIj48aW1nIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9TdGF0cy0wRjE3MkE/c3R5bGU9Zm9yLXRoZS1iYWRnZSIgYWx0PSJTdGF0cyIgLz48L2E+CiAgPGEgaHJlZj0iI2Nvbm5lY3QiPjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0Nvbm5lY3QtMEYxNzJBP3N0eWxlPWZvci10aGUtYmFkZ2UiIGFsdD0iQ29ubmVjdCIgLz48L2E+CjwvcD4KCjxwIGFsaWduPSJjZW50ZXIiPgogIDxhIGhyZWY9Imh0dHBzOi8vc2tpbGxpY29ucy5kZXYiPgogICAgPGltZyBzcmM9Imh0dHBzOi8vc2tpbGxpY29ucy5kZXYvaWNvbnM/aT1odG1sLGNzcyxqcyx0cyxwaHAsd29yZHByZXNzLHJlYWN0LG5leHRqcyxub2RlanMsdGFpbHdpbmQsc2Fzcyx2aXRlLGxhcmF2ZWwsbXlzcWwsZG9ja2VyLGdpdCxnaXRodWIsdnNjb2RlJnBlcmxpbmU9OSIgYWx0PSJIVE1MLCBDU1MsIEphdmFTY3JpcHQsIFR5cGVTY3JpcHQsIFBIUCwgV29yZFByZXNzLCBSZWFjdCwgTmV4dC5qcywgTm9kZS5qcywgVGFpbHdpbmQsIFNhc3MsIFZpdGUsIExhcmF2ZWwsIE15U1FMLCBEb2NrZXIsIEdpdCwgR2l0SHViLCBWUyBDb2RlIiAvPgogIDwvYT4KPC9wPgoKLS0tCgo8YSBpZD0iYWN0aXZpdHkiPjwvYT4KIyMgUmVjZW50IGFjdGl2aXR5CgpMaXZlIGZlZWQgb2Ygd2hhdCBJJ3ZlIGJlZW4gc2hpcHBpbmcgYWNyb3NzIEdpdEh1YiDigJQgUFJzLCBjb21taXRzLCByZWxlYXNlcywgc3RhcnMsIHRoZSB3aG9sZSBjaGFuZ2Vsb2cgZW5lcmd5LiBBdXRvLXJlZnJlc2hlZCBieSBhIEdpdEh1YiBBY3Rpb24uCgo8IS0tU1RBUlRfU0VDVElPTjphY3Rpdml0eS0tPgotIPCflIAgT3BlbiBQUiBbIzE0N10oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZS9wdWxsLzE0NykgaW4gW21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZV0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZSkg4oCUIGZlYXQ6IFdhbGtSaWRnZSBwcm9kdWN0IHNjcmVlbnNob3RzICsgcHVyY2hhc2Ugd2lkZ2V0IGNsZWFudXAKLSDwn5SAIE1lcmdlZCBQUiBbIzE0Nl0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZS9wdWxsLzE0NikgaW4gW21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZV0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZSkg4oCUIGZpeDogdHdvLWNvbHVtbiBwdXJjaGFzZSBsYXlvdXQgb24gc2luZ2xlIHByb2R1Y3QgcGFnZQotIPCflIAgTWVyZ2VkIFBSIFsjMTQ1XShodHRwczovL2dpdGh1Yi5jb20vbWF0dGh1bW1lbC1wYS9tYXR0aHVtbWVsLXRoZW1lL3B1bGwvMTQ1KSBpbiBbbWF0dGh1bW1lbC1wYS9tYXR0aHVtbWVsLXRoZW1lXShodHRwczovL2dpdGh1Yi5jb20vbWF0dGh1bW1lbC1wYS9tYXR0aHVtbWVsLXRoZW1lKSDigJQgZml4KHNob3ApOiBzZWxmLWhlYWwgZHVwbGljYXRlIHByb2R1Y3RzICsgV2Fsa1JpZGdlIGNhdGFsb2ctb25seSBzeW5jICgzLjUuMykKLSDwn5SAIE1lcmdlZCBQUiBbIzE0NF0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZS9wdWxsLzE0NCkgaW4gW21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZV0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZSkg4oCUIGZlYXQoc2hvcCk6IGFkZCBXYWxrUmlkZ2UgYXMgc2Vjb25kIHNlbGxhYmxlIHByb2R1Y3QKLSDwn5SAIE1lcmdlZCBQUiBbIzE0M10oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZS9wdWxsLzE0MykgaW4gW21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZV0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZSkg4oCUIFNob3AgcHJvZHVjdCBwYWdlcywgU0VPIGZpeGVzLCBhbmQgZ3Jvd3RoIHRvb2xpbmcKLSDwn5SAIE1lcmdlZCBQUiBbIzE0Ml0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZS9wdWxsLzE0MikgaW4gW21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZV0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZSkg4oCUIEtlZXAgc2hvcCBwcm9kdWN0cyBvbiBXb28gVVJMcyB3aGVuIHByb2plY3QgQ1BUIGlzIGdvbmUKLSDwn5SAIE1lcmdlZCBQUiBbIzE0MV0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZS9wdWxsLzE0MSkgaW4gW21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZV0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZSkg4oCUIEdlbmVyYWxpc2Ugc2hvcCBwYWdlczogdGhlbWVzLCBwbHVnaW5zLCBhbmQgd2ViIGFwcHMKLSDwn5SAIE1lcmdlZCBQUiBbIzE0MF0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZS9wdWxsLzE0MCkgaW4gW21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZV0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZSkg4oCUIFN5bmMgQWNyZWxpbmUgcHJvZHVjdCBjb3B5IGZvciBzZXR1cCB3aXphcmQgKDEuMy4wKQotIPCfmoAgQ29tbWl0IGluIFttYXR0aHVtbWVsLXBhL21hdHRodW1tZWwtdGhlbWVdKGh0dHBzOi8vZ2l0aHViLmNvbS9tYXR0aHVtbWVsLXBhL21hdHRodW1tZWwtdGhlbWUvY29tbWl0L2MxYWE5ZWI3YmNmZGUwYThlODM0OWQ3YmI0ZjliYjRjYWExMTM0NjIpIOKAlCBfTWVyZ2UgcHVsbCByZXF1ZXN0ICMxNDUgZnJvbSBtYXR0aHVtbWVsLXBhL2N1cnNvci93Yy10ZW1wbGF0ZS1jb25zb2xpZGF0aW9uLWIxYmZfCi0g8J+agCBDb21taXQgaW4gW21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC1wYV0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC1wYS9jb21taXQvYTE0OWYyYzQ2M2Q2ODI0NTAxNDdjZjZlOTZjMWY0ODcxYWUzOWJmMSkg4oCUIF9jaG9yZTogcmVtb3ZlIFJpZGdlcyAmIFZhbGxleXMgcmVmZXJlbmNlcyDigJQgTWF0dCBIdW1tZWwgYnJhbmRpbmcgb25seV8KLSDwn5qAIENvbW1pdCBpbiBbbWF0dGh1bW1lbC1wYS9tYXR0aHVtbWVsLXBhXShodHRwczovL2dpdGh1Yi5jb20vbWF0dGh1bW1lbC1wYS9tYXR0aHVtbWVsLXBhL2NvbW1pdC83NTgyNGY5MGEwMzA0MDFlNWQ3MzhhYjE4MGNiOWI0NDM1MzA2Mjg4KSDigJQgX2ZlYXQ6IGZlYXR1cmVkIHByb2R1Y3RzIOKAlCBBY3JlbGluZSwgV2Fsa1JpZGdlLCBQaW50ZmllbGQsIFRPQ2Zsb3dfCi0g8J+agCBDb21taXQgaW4gW21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC1wYV0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC1wYS9jb21taXQvZWQ3ZmJiZDI3YWQ5YWMwZTU2YmRmOWMwMTBlNjkyNjEwOTY3N2UzNykg4oCUIF9yZXZlcnQ6IHJlc3RvcmUgUkVBRE1FIHRvIGNsZWFuIHZlcnNpb24gKHVuZG8gZG91YmxlLWVuY29kZSlfCi0g8J+agCBDb21taXQgaW4gW21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC1wYV0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC1wYS9jb21taXQvMDYxODY4ZGM0YmNjNmY1NzFmZTY2OWE2NTQxNTZhNzE4ODY4MzY2MSkg4oCUIF9jaG9yZTogcHJvZHVjdC1maXJzdCBSRUFETUUg4oCUIGNvbGxhcHNlIGNvbmNlcHQgc2l0ZXMsIHByb21vdGUgc2hvcF8KLSDwn5qAIENvbW1pdCBpbiBbbWF0dGh1bW1lbC1wYS93cC1hY3JlbGluZV0oaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvd3AtYWNyZWxpbmUvY29tbWl0L2YzMDgzMjdmYmU4NzY5MDZkYjI1NmQwZTMzZWM3ZTUyOTEzZjY3MzApIOKAlCBfQWRkIEFjcmVsaW5lIG11bHRpLXN0ZXAgc2V0dXAgd2l6YXJkICgjNTQpXwotIPCfmoAgQ29tbWl0IGluIFttYXR0aHVtbWVsLXBhL21hdHRodW1tZWwtdGhlbWVdKGh0dHBzOi8vZ2l0aHViLmNvbS9tYXR0aHVtbWVsLXBhL21hdHRodW1tZWwtdGhlbWUvY29tbWl0LzhkMWRhMWJkYTJmODViODNhNDM4ZDk2MTkzY2ZjYzBmZWVkNWE0MmMpIOKAlCBfUmVkaXJlY3QgQWNyZWxpbmUgbGVnYWN5IFNFTyBVUkxzIHRvIGxpdmUgcHJvZHVjdCAoIzEzOSlfCjwhLS1FTkRfU0VDVElPTjphY3Rpdml0eS0tPgoKPHN1Yj5XYW50IHRoZSByYXcgZmlyZWhvc2U/IOKGkiA8YSBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vbWF0dGh1bW1lbC1wYSI+R2l0SHViIHByb2ZpbGUgb3ZlcnZpZXc8L2E+PC9zdWI+CgotLS0KCjxhIGlkPSJ3b3JrIj48L2E+CiMjIEZlYXR1cmVkIHByb2R1Y3RzCgpXb3JkUHJlc3MgdGhlbWVzIGFuZCBwbHVnaW5zIEkgc2VsbCBhbmQgc3VwcG9ydCBhdCBbbWF0dGh1bW1lbC5jb20vc2hvcF0oaHR0cHM6Ly9tYXR0aHVtbWVsLmNvbS9zaG9wLykuCgo8dGFibGU+CiAgPHRyPgogICAgPHRkIHdpZHRoPSIyNSUiIGFsaWduPSJjZW50ZXIiIHZhbGlnbj0idG9wIj4KICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9tYXR0aHVtbWVsLmNvbS9wcm9kdWN0L3dvcmRwcmVzcy10aGVtZS1yZWFsLWVzdGF0ZS1hZ2VudHMvIj48aW1nIHNyYz0iaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZS9tYWluL3Jlc291cmNlcy9pbWFnZXMvcHJvZHVjdHMvYWNyZWxpbmUvZmVhdHVyZWQud2VicCIgYWx0PSJBY3JlbGluZSBXb3JkUHJlc3MgcmVhbCBlc3RhdGUgdGhlbWUiIHdpZHRoPSIxODAiIC8+PC9hPjxiciAvPgogICAgICA8c3Ryb25nPjxhIGhyZWY9Imh0dHBzOi8vbWF0dGh1bW1lbC5jb20vcHJvZHVjdC93b3JkcHJlc3MtdGhlbWUtcmVhbC1lc3RhdGUtYWdlbnRzLyI+QWNyZWxpbmU8L2E+PC9zdHJvbmc+PGJyIC8+CiAgICAgIDxzdWI+V29yZFByZXNzIHRoZW1lIMK3IFJlYWwgZXN0YXRlIMK3ICQ3OTwvc3ViPjxiciAvPgogICAgICA8c3ViPjIxIEd1dGVuYmVyZyBibG9ja3MsIGxpc3RpbmdzLCBhZ2VudHMsIHNob3dpbmcgcmVxdWVzdHMuPC9zdWI+PGJyIC8+CiAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWF0dGh1bW1lbC5jb20vcHJvZHVjdC93b3JkcHJlc3MtdGhlbWUtcmVhbC1lc3RhdGUtYWdlbnRzLyI+QnV5PC9hPiDCtyA8YSBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vbWF0dGh1bW1lbC1wYS93cC1hY3JlbGluZSI+R2l0SHViPC9hPgogICAgPC90ZD4KICAgIDx0ZCB3aWR0aD0iMjUlIiBhbGlnbj0iY2VudGVyIiB2YWxpZ249InRvcCI+CiAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWF0dGh1bW1lbC5jb20vcHJvZHVjdC93b3JkcHJlc3MtdGhlbWUtdG91ci1zaXRlcy8iPjxpbWcgc3JjPSJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbWF0dGh1bW1lbC1wYS9tYXR0aHVtbWVsLXRoZW1lL21haW4vcmVzb3VyY2VzL2ltYWdlcy9wcm9kdWN0cy93YWxrcmlkZ2UvZmVhdHVyZWQud2VicCIgYWx0PSJXYWxrUmlkZ2UgV29yZFByZXNzIGJhdHRsZWZpZWxkIHRvdXIgdGhlbWUiIHdpZHRoPSIxODAiIC8+PC9hPjxiciAvPgogICAgICA8c3Ryb25nPjxhIGhyZWY9Imh0dHBzOi8vbWF0dGh1bW1lbC5jb20vcHJvZHVjdC93b3JkcHJlc3MtdGhlbWUtdG91ci1zaXRlcy8iPldhbGtSaWRnZTwvYT48L3N0cm9uZz48YnIgLz4KICAgICAgPHN1Yj5Xb3JkUHJlc3MgdGhlbWUgwrcgVG91ciBzaXRlcyDCtyAkNTk8L3N1Yj48YnIgLz4KICAgICAgPHN1Yj5Ccm93c2UgdG91cnMsIG1lZXQgZ3VpZGVzLCBib29rIGZyb20gV29vQ29tbWVyY2UuPC9zdWI+PGJyIC8+CiAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWF0dGh1bW1lbC5jb20vcHJvZHVjdC93b3JkcHJlc3MtdGhlbWUtdG91ci1zaXRlcy8iPkJ1eTwvYT4gwrcgPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvd3Atd2Fsa3JpZGdlIj5HaXRIdWI8L2E+CiAgICA8L3RkPgogICAgPHRkIHdpZHRoPSIyNSUiIGFsaWduPSJjZW50ZXIiIHZhbGlnbj0idG9wIj4KICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvcGludGZpZWxkLWNyZWFtZXJ5LXdwLXRoZW1lIj48aW1nIHNyYz0iaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL21hdHRodW1tZWwtcGEvbWF0dGh1bW1lbC10aGVtZS9tYWluL3Jlc291cmNlcy9pbWFnZXMvd29yay9waW50ZmllbGQuanBnIiBhbHQ9IlBpbnRmaWVsZCBXb3JkUHJlc3MgY3JlYW1lcnkgdGhlbWUiIHdpZHRoPSIxODAiIC8+PC9hPjxiciAvPgogICAgICA8c3Ryb25nPjxhIGhyZWY9Imh0dHBzOi8vZ2l0aHViLmNvbS9tYXR0aHVtbWVsLXBhL3BpbnRmaWVsZC1jcmVhbWVyeS13cC10aGVtZSI+UGludGZpZWxkPC9hPjwvc3Ryb25nPjxiciAvPgogICAgICA8c3ViPldvcmRQcmVzcyB0aGVtZSDCtyBDcmVhbWVyeSAmYW1wOyBmb29kIHJldGFpbCDCtyBDb21pbmcgc29vbjwvc3ViPjxiciAvPgogICAgICA8c3ViPlNjb29wIEJvYXJkLCBvbmxpbmUgb3JkZXJpbmcsIG11bHRpLWxvY2F0aW9uIFdvb0NvbW1lcmNlLjwvc3ViPjxiciAvPgogICAgICA8YSBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vbWF0dGh1bW1lbC1wYS9waW50ZmllbGQtY3JlYW1lcnktd3AtdGhlbWUiPkdpdEh1YjwvYT4KICAgIDwvdGQ+CiAgICA8dGQgd2lkdGg9IjI1JSIgYWxpZ249ImNlbnRlciIgdmFsaWduPSJ0b3AiPgogICAgICA8YSBocmVmPSJodHRwczovL21hdHRodW1tZWwuY29tL3Byb2R1Y3QvdG9jZmxvdy13b3JkcHJlc3MtdGFibGUtb2YtY29udGVudHMtcGx1Z2luLyI+PGltZyBzcmM9Imh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9tYXR0aHVtbWVsLXBhL21hdHRodW1tZWwtdGhlbWUvbWFpbi9yZXNvdXJjZXMvaW1hZ2VzL3Byb2R1Y3RzL3RvY2Zsb3cvZmVhdHVyZWQud2VicCIgYWx0PSJUT0NmbG93IFdvcmRQcmVzcyB0YWJsZSBvZiBjb250ZW50cyBwbHVnaW4iIHdpZHRoPSIxODAiIC8+PC9hPjxiciAvPgogICAgICA8c3Ryb25nPjxhIGhyZWY9Imh0dHBzOi8vbWF0dGh1bW1lbC5jb20vcHJvZHVjdC90b2NmbG93LXdvcmRwcmVzcy10YWJsZS1vZi1jb250ZW50cy1wbHVnaW4vIj5UT0NmbG93PC9hPjwvc3Ryb25nPjxiciAvPgogICAgICA8c3ViPldvcmRQcmVzcyBwbHVnaW4gwrcgVGFibGUgb2YgY29udGVudHMgwrcgRnJlZTwvc3ViPjxiciAvPgogICAgICA8c3ViPlNlcnZlci1yZW5kZXJlZCBUT0MgYmxvY2suIFplcm8gY29uZmlnLCBhY2Nlc3NpYmxlLCBTRU8tZnJpZW5kbHkuPC9zdWI+PGJyIC8+CiAgICAgIDxhIGhyZWY9Imh0dHBzOi8vbWF0dGh1bW1lbC5jb20vcHJvZHVjdC90b2NmbG93LXdvcmRwcmVzcy10YWJsZS1vZi1jb250ZW50cy1wbHVnaW4vIj5Eb3dubG9hZDwvYT4gwrcgPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL21hdHRodW1tZWwtcGEvdG9jZmxvdyI+R2l0SHViPC9hPgogICAgPC90ZD4KICA8L3RyPgo8L3RhYmxlPgoKLS0tCgo8YSBpZD0iYWJvdXQiPjwvYT4KIyMgV2hhdCBJIGRvCgpEcmF3biBmcm9tIGhvdyBJIGFjdHVhbGx5IHdvcmsgb24gW21hdHRodW1tZWwuY29tXShodHRwczovL21hdHRodW1tZWwuY29tL2Fib3V0LykuCgp8IE1vZGUgfCBXaGF0IHRoYXQgbG9va3MgbGlrZSB8CnwgLS0tIHwgLS0tIHwKfCAqKkZ1bGwtc3RhY2sqKiB8IEhUTUwsIENTUywgSlMvVFMsIFJlYWN0LCBOZXh0LmpzLCBQSFAsIE5vZGUg4oCUIGNsZWFuIGNvZGUsIHNvbGlkIHBlcmYsIGludGVyZmFjZXMgdGhhdCB3b3JrIGZvciBldmVyeW9uZSB8CnwgKipXb3JkUHJlc3MgKHNwZWNpYWx0eSkqKiB8IFNhZ2UgMTEsIEJsYWRlLCBBY29ybiwgQmVkcm9jaywgVGFpbHdpbmQgKyBWaXRlLCBHdXRlbmJlcmcgYmxvY2tzLiBBMTF5ICsgQ29yZSBXZWIgVml0YWxzIGJha2VkIGluIHwKfCAqKkZyb250LWVuZCoqIHwgUmVzcG9uc2l2ZSBsYXlvdXRzLCByZWFkYWJsZSB0eXBlLCBvbmUgY2xlYXIgbmV4dCBzdGVwIOKAlCBlc3BlY2lhbGx5IG9uIHBob25lcyB8CnwgKipCYWNrLWVuZCoqIHwgUEhQLCBOb2RlLCBBUElzIOKAlCB0aGUgbG9naWMgYW5kIGludGVncmF0aW9ucyBiZWhpbmQgdGhlIHByZXR0eSBwaXhlbHMgfAp8ICoqTG9jYWwgYnVzaW5lc3Mgc2l0ZXMqKiB8IEdldHR5c2J1cmcgLyBBZGFtcyBDb3VudHkgcmVzdGF1cmFudHMsIGlubnMsIHNob3BzLCB0b3VycywgcmVhbHRvcnMuIFlvdSBvd24gdGhlIGtleXMgfAp8ICoqQWdlbmN5IHBhcnRuZXIqKiB8IE92ZXJmbG93IGFuZCBzaWxlbnQgc3VicyB3ZWxjb21lIOKAlCB5b3Uga2VlcCB0aGUgY2xpZW50IHJlbGF0aW9uc2hpcDsgSSBzdGF5IGluIHRoZSBiYWNrZ3JvdW5kIHwKCkkgdXNlICoqQ2xhdWRlKiogYW5kICoqQ3Vyc29yKiogdG8gbW92ZSBmYXN0ZXIgb24gdGhlIHJlcGVhdGFibGUgcGFydHMuIEV2ZXJ5IGxpbmUgc3RpbGwgZ2V0cyByZWFkIGFuZCB0ZXN0ZWQgYnkgbWUgYmVmb3JlIGl0IHNoaXBzIOKAlCBJIHdyb3RlIGFib3V0IHRoYXQgaW4gW0FJIFdlYnNpdGUgUmVkZXNpZ246IDUgTGVzc29ucyBGcm9tIGEgU29sbyBEZXZlbG9wZXJdKGh0dHBzOi8vbWF0dGh1bW1lbC5jb20vd2ViLWRldmVsb3BtZW50L2FpLXdlYnNpdGUtcmVkZXNpZ24tc29sby1kZXZlbG9wZXIvKS4KCiMjIyBIb3cgSSBhY3R1YWxseSB3b3JrCgotIFNob3BzIG93biBldmVyeXRoaW5nOiBkb21haW4sIGhvc3RpbmcsIGRhdGFiYXNlLCBhbmQgY29kZQotIFRoZSBhZG1pbiBleHBlcmllbmNlIGlzIHBhcnQgb2YgdGhlIGJ1aWxkIOKAlCBpZiBpdCdzIGhhcmQgdG8gdXBkYXRlLCBpdCBkb2Vzbid0IGdldCB1cGRhdGVkCi0gUGxhaW4sIHJlYWRhYmxlIGNvZGUgKGlmIHlvdSBjYW4ndCBmb2xsb3cgYSBmdW5jdGlvbiBpbiAzMCBzZWNvbmRzLCBpdCdzIHRvbyBjbGV2ZXIpCi0gQUkgYXNzaXN0czsgSSByZXZpZXcgZXZlcnl0aGluZwotIEFjY2Vzc2liaWxpdHkgYW5kIHBsYWluIGxhbmd1YWdlIGJ5IGRlZmF1bHQKLSBTbWFsbCwgZm9jdXNlZCBwbHVnaW5zIOKAlCBvbmUgam9iIGVhY2gKCjxhIGlkPSJ3cml0aW5nIj48L2E+CiMjIFdyaXRpbmcKCkxhdGVzdCBwb3N0cyBmcm9tIFttYXR0aHVtbWVsLmNvbV0oaHR0cHM6Ly9tYXR0aHVtbWVsLmNvbS9ibG9nLyk6CgotIFtBSSBXZWJzaXRlIFJlZGVzaWduOiA1IExlc3NvbnMgRnJvbSBhIFNvbG8gRGV2ZWxvcGVyXShodHRwczovL21hdHRodW1tZWwuY29tL3dlYi1kZXZlbG9wbWVudC9haS13ZWJzaXRlLXJlZGVzaWduLXNvbG8tZGV2ZWxvcGVyLykKLSBbR2l0IGFuZCBEZXBsb3ltZW50IGZvciBCZWdpbm5lcnM6IFNoaXAgWW91ciBQb3J0Zm9saW8gd2l0aCBDb25maWRlbmNlXShodHRwczovL21hdHRodW1tZWwuY29tL3dlYi1kZXZlbG9wbWVudC9naXQtYW5kLWRlcGxveW1lbnQtZm9yLWJlZ2lubmVycy8pCi0gW0dldHRpbmcgU3RhcnRlZCB3aXRoIFJlYWN0IGFuZCBOZXh0LmpzOiBBIEJlZ2lubmVyJ3MgUm9hZG1hcF0oaHR0cHM6Ly9tYXR0aHVtbWVsLmNvbS90dXRvcmlhbHMvZ2V0dGluZy1zdGFydGVkLXJlYWN0LW5leHRqcy8pCi0gW0NvcmUgV2ViIFZpdGFscyBpbiBwbGFpbiBFbmdsaXNoXShodHRwczovL21hdHRodW1tZWwuY29tL3R1dG9yaWFscy9jb3JlLXdlYi12aXRhbHMtZXhwbGFpbmVkLykKCjxhIGlkPSJwcm9qZWN0cyI+PC9hPgojIyBPcGVuIGZvciB3b3JrCgpJJ20gbG9va2luZyBmb3IgKipmdWxsLXRpbWUgcm9sZXMqKiwgKipjb250cmFjdCBnaWdzKiosIGFuZCAqKmZyZWVsYW5jZSBwcm9qZWN0cyoqIG9uIFttYXR0aHVtbWVsLmNvbV0oaHR0cHM6Ly9tYXR0aHVtbWVsLmNvbSkg4oCUIFdvcmRQcmVzcyBwbGF0Zm9ybXMsIGZ1bGwtc3RhY2sgd2ViIGFwcHMsIGFuZCBhZ2VuY3kgb3ZlcmZsb3cuIEJhc2VkIGluIEdldHR5c2J1cmcsIFBBOyBoYXBweSB0byB3b3JrIHJlbW90ZS4KCklmIHlvdSdyZSBoaXJpbmcgYSBmdWxsLXN0YWNrIGRldmVsb3BlciwgbmVlZCBhbiBleHBlcmllbmNlZCBXb3JkUHJlc3Mgc3BlY2lhbGlzdCwgd2FudCBhZ2VuY3kgb3ZlcmZsb3cgc3VwcG9ydCwgb3IgaGF2ZSBhIHdlYiBwcm9qZWN0IHRvIGRpc2N1c3MsIFtzZW5kIGEgc2hvcnQgbm90ZV0oaHR0cHM6Ly9tYXR0aHVtbWVsLmNvbS9jb250YWN0LykgYWJvdXQgd2hhdCB5b3UncmUgd29ya2luZyBvbi4KCi0tLQoKPGEgaWQ9InN0YXRzIj48L2E+CiMjIEdpdEh1YiBzdGF0cwoKPHAgYWxpZ249ImNlbnRlciI+CiAgPGltZyBzcmM9Imh0dHBzOi8vc3RyZWFrLXN0YXRzLmRlbW9sYWIuY29tP3VzZXI9bWF0dGh1bW1lbC1wYSZ0aGVtZT1kZWZhdWx0JmhpZGVfYm9yZGVyPXRydWUmcmluZz0yQzVBOTUmZmlyZT0yQzVBOTUmY3VyclN0cmVha0xhYmVsPTJDNUE5NSZzaWRlTGFiZWxzPTMzNDE1NSZkYXRlcz02NDc0OGIiIGFsdD0iR2l0SHViIHN0cmVhayIgLz4KPC9wPgoKPHRhYmxlIGFsaWduPSJjZW50ZXIiPgogIDx0cj4KICAgIDx0ZCB2YWxpZ249InRvcCIgd2lkdGg9IjUwJSI+CiAgICAgIDxpbWcgc3JjPSJodHRwczovL2dpdGh1Yi1yZWFkbWUtc3RhdHMuc2hpb24uZGV2L2FwaT91c2VybmFtZT1tYXR0aHVtbWVsLXBhJnNob3dfaWNvbnM9dHJ1ZSZoaWRlX2JvcmRlcj10cnVlJnRpdGxlX2NvbG9yPTJDNUE5NSZpY29uX2NvbG9yPTJDNUE5NSZ0ZXh0X2NvbG9yPTMzNDE1NSZpbmNsdWRlX2FsbF9jb21taXRzPXRydWUiIGFsdD0iTWF0dCBIdW1tZWwncyBHaXRIdWIgc3RhdHMiIC8+CiAgICA8L3RkPgogICAgPHRkIHZhbGlnbj0idG9wIiB3aWR0aD0iNTAlIj4KICAgICAgPGltZyBzcmM9Imh0dHBzOi8vZ2l0aHViLXJlYWRtZS1zdGF0cy5zaGlvbi5kZXYvYXBpL3RvcC1sYW5ncy8/dXNlcm5hbWU9bWF0dGh1bW1lbC1wYSZsYXlvdXQ9Y29tcGFjdCZoaWRlX2JvcmRlcj10cnVlJnRpdGxlX2NvbG9yPTJDNUE5NSZ0ZXh0X2NvbG9yPTMzNDE1NSZsYW5nc19jb3VudD04IiBhbHQ9IlRvcCBsYW5ndWFnZXMiIC8+CiAgICA8L3RkPgogIDwvdHI+CjwvdGFibGU+Cgo8YSBpZD0iY29ubmVjdCI+PC9hPgojIyBDb25uZWN0CgotIPCfjJAgKipXZWJzaXRlIC8gYmxvZzoqKiBbbWF0dGh1bW1lbC5jb21dKGh0dHBzOi8vbWF0dGh1bW1lbC5jb20pCi0g8J+SvCAqKkxpbmtlZEluOioqIFtsaW5rZWRpbi5jb20vaW4vbWF0dC1odW1tZWwtcGFdKGh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9tYXR0LWh1bW1lbC1wYSkKLSDinI3vuI8gKipEZXYudG86KiogW2Rldi50by9tYXR0YnVpbGRzYXBwc10oaHR0cHM6Ly9kZXYudG8vbWF0dGJ1aWxkc2FwcHMpCi0g8J+miyAqKkJsdWVza3k6KiogW0BtYXR0aHVtbWVsXShodHRwczovL2Jza3kuYXBwL3Byb2ZpbGUvbWF0dGh1bW1lbC5ic2t5LnNvY2lhbCkKCjxzdWI+RnVsbC1zdGFjayBkZXZlbG9wZXIgwrcgV29yZFByZXNzIHNwZWNpYWxpc3Qg4oCUIG9wZW4gZm9yIHdvcmsuIFBScyB3ZWxjb21lOyBwdW5zIHRvbGVyYXRlZC48L3N1Yj4K
+<h1 align="center">Hi, I'm Matt Hummel 👋</h1>
+
+<p align="center">
+  <a href="https://komarev.com/ghpvc/?username=matthummel-pa&style=for-the-badge&color=2C5A95">
+    <img src="https://komarev.com/ghpvc/?username=matthummel-pa&style=for-the-badge&color=2C5A95" alt="Profile views" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2C5A95&center=true&vCenter=true&width=640&lines=Full-stack+web+developer;WordPress+%2B+Sage+is+my+happy+place;I+ship+accessible%2C+fast+sites;AI-assisted.+Human-reviewed.;git+commit+-m+%22it+works+on+my+machine%22" alt="Typing SVG" />
+  </a>
+</p>
+
+<p align="center">
+  <strong>Full-stack developer · WordPress specialist</strong>
+</p>
+
+<p align="center">
+  More than 15 years building for the web — accessible front ends, PHP applications, APIs, and deployment workflows.<br/>
+  WordPress is my specialty: a flexible platform with an editor businesses can actually use.<br/>
+  Based in Gettysburg, PA. Open to collaboration.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/years_shipping-15%2B-0F172A?style=flat-square" alt="15+ years shipping" />
+  <img src="https://img.shields.io/badge/stack-PHP%20%7C%20JS%20%7C%20React%20%7C%20WP-2C5A95?style=flat-square" alt="Stack" />
+  <img src="https://img.shields.io/badge/editor-Cursor%20%2B%20Claude-334155?style=flat-square" alt="Editor" />
+  <img src="https://img.shields.io/badge/tests-I%20write%20them%20(really)-22863a?style=flat-square" alt="Tests" />
+  <img src="https://img.shields.io/badge/Lighthouse-chase%20the%20green-e11d48?style=flat-square" alt="Lighthouse" />
+</p>
+
+<details align="center">
+  <summary><strong>package.json</strong> vibes (click me)</summary>
+  <br/>
+
+```json
+{
+  "name": "matt-hummel",
+  "version": "15.0.0",
+  "private": false,
+  "description": "Full-stack developer · WordPress specialist · open to collaboration",
+  "main": "WordPress + Sage",
+  "scripts": {
+    "dev": "cursor . && coffee --watch",
+    "build": "ship accessible WordPress platforms",
+    "test": "a11y + Core Web Vitals + 'can the shop edit it?'",
+    "deploy": "you own the keys"
+  },
+  "dependencies": {
+    "wordpress": "specialty",
+    "roots/sage": "^11",
+    "react": "^19",
+    "curiosity": "*",
+    "patience": "^∞"
+  },
+  "devDependencies": {
+    "claude": "coworker",
+    "cursor": "pair-programmer",
+    "bad-pun-generator": "optional"
+  },
+  "engines": {
+    "node": ">=human",
+    "coffee": "required"
+  },
+  "keywords": ["full-stack", "wordpress", "sage", "gettysburg", "a11y", "open-for-work"],
+  "license": "MIT-and-kindness"
+}
+```
+
+</details>
+
+<p align="center">
+  <a href="https://matthummel.com">matthummel.com</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/matt-hummel-pa">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="https://dev.to/mattbuildsapps">Dev.to</a>
+</p>
+
+<p align="center">
+  <a href="#activity"><img src="https://img.shields.io/badge/Recent_activity-0F172A?style=for-the-badge" alt="Recent activity" /></a>
+  <a href="#work"><img src="https://img.shields.io/badge/Products-0F172A?style=for-the-badge" alt="Products" /></a>
+  <a href="#about"><img src="https://img.shields.io/badge/About-0F172A?style=for-the-badge" alt="About" /></a>
+  <a href="#writing"><img src="https://img.shields.io/badge/Writing-0F172A?style=for-the-badge" alt="Writing" /></a>
+  <a href="#projects"><img src="https://img.shields.io/badge/Open_for_work-0F172A?style=for-the-badge" alt="Open for work" /></a>
+  <a href="#stats"><img src="https://img.shields.io/badge/Stats-0F172A?style=for-the-badge" alt="Stats" /></a>
+  <a href="#connect"><img src="https://img.shields.io/badge/Connect-0F172A?style=for-the-badge" alt="Connect" /></a>
+</p>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js,ts,php,wordpress,react,nextjs,nodejs,tailwind,sass,vite,laravel,mysql,docker,git,github,vscode&perline=9" alt="HTML, CSS, JavaScript, TypeScript, PHP, WordPress, React, Next.js, Node.js, Tailwind, Sass, Vite, Laravel, MySQL, Docker, Git, GitHub, VS Code" />
+  </a>
+</p>
+
+---
+
+<a id="activity"></a>
+## Recent activity
+
+Live feed of what I've been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
+
+<!--START_SECTION:activity-->
+- 🔀 Open PR [#147](https://github.com/matthummel-pa/matthummel-theme/pull/147) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: WalkRidge product screenshots + purchase widget cleanup
+- 🔀 Merged PR [#146](https://github.com/matthummel-pa/matthummel-theme/pull/146) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — fix: two-column purchase layout on single product page
+- 🔀 Merged PR [#145](https://github.com/matthummel-pa/matthummel-theme/pull/145) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — fix(shop): self-heal duplicate products + WalkRidge catalog-only sync (3.5.3)
+- 🔀 Merged PR [#144](https://github.com/matthummel-pa/matthummel-theme/pull/144) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat(shop): add WalkRidge as second sellable product
+- 🔀 Merged PR [#143](https://github.com/matthummel-pa/matthummel-theme/pull/143) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Shop product pages, SEO fixes, and growth tooling
+- 🔀 Merged PR [#142](https://github.com/matthummel-pa/matthummel-theme/pull/142) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Keep shop products on Woo URLs when project CPT is gone
+- 🔀 Merged PR [#141](https://github.com/matthummel-pa/matthummel-theme/pull/141) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Generalise shop pages: themes, plugins, and web apps
+- 🔀 Merged PR [#140](https://github.com/matthummel-pa/matthummel-theme/pull/140) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sync Acreline product copy for setup wizard (1.3.0)
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c1aa9eb7bcfde0a8e8349d7bb4f9bb4caa113462) — _Merge pull request #145 from matthummel-pa/cursor/wc-template-consolidation-b1bf_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/a149f2c463d682450147cf6e96c1f4871ae39bf1) — _chore: remove Ridges & Valleys references — Matt Hummel branding only_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/75824f90a030401e5d738ab180cb9b4435306288) — _feat: featured products — Acreline, WalkRidge, Pintfield, TOCflow_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/ed7fbbd27ad9ac0e56bdf9c010e6926109677e37) — _revert: restore README to clean version (undo double-encode)_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/061868dc4bcc6f571fe669a654156a7188683661) — _chore: product-first README — collapse concept sites, promote shop_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/f308327fbe876906db256d0e33ec7e52913f6730) — _Add Acreline multi-step setup wizard (#54)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/8d1da1bda2f85b83a438d96193cfcc0feed5a42c) — _Redirect Acreline legacy SEO URLs to live product (#139)_
+<!--END_SECTION:activity-->
+
+<sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
+
+---
+
+<a id="work"></a>
+## Featured products
+
+WordPress themes and plugins I sell and support at [matthummel.com/shop](https://matthummel.com/shop/).
+
+<table>
+  <tr>
+    <td width="25%" align="center" valign="top">
+      <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/acreline/featured.webp" alt="Acreline WordPress real estate theme" width="180" /></a><br />
+      <strong><a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/">Acreline</a></strong><br />
+      <sub>WordPress theme · Real estate · $79</sub><br />
+      <sub>21 Gutenberg blocks, listings, agents, showing requests.</sub><br />
+      <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/">Buy</a> · <a href="https://github.com/matthummel-pa/wp-acreline">GitHub</a>
+    </td>
+    <td width="25%" align="center" valign="top">
+      <a href="https://matthummel.com/product/wordpress-theme-tour-sites/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/walkridge/featured.webp" alt="WalkRidge WordPress battlefield tour theme" width="180" /></a><br />
+      <strong><a href="https://matthummel.com/product/wordpress-theme-tour-sites/">WalkRidge</a></strong><br />
+      <sub>WordPress theme · Tour sites · $59</sub><br />
+      <sub>Browse tours, meet guides, book from WooCommerce.</sub><br />
+      <a href="https://matthummel.com/product/wordpress-theme-tour-sites/">Buy</a> · <a href="https://github.com/matthummel-pa/wp-walkridge">GitHub</a>
+    </td>
+    <td width="25%" align="center" valign="top">
+      <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/work/pintfield.jpg" alt="Pintfield WordPress creamery theme" width="180" /></a><br />
+      <strong><a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme">Pintfield</a></strong><br />
+      <sub>WordPress theme · Creamery &amp; food retail · Coming soon</sub><br />
+      <sub>Scoop Board, online ordering, multi-location WooCommerce.</sub><br />
+      <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme">GitHub</a>
+    </td>
+    <td width="25%" align="center" valign="top">
+      <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/tocflow/featured.webp" alt="TOCflow WordPress table of contents plugin" width="180" /></a><br />
+      <strong><a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/">TOCflow</a></strong><br />
+      <sub>WordPress plugin · Table of contents · Free</sub><br />
+      <sub>Server-rendered TOC block. Zero config, accessible, SEO-friendly.</sub><br />
+      <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/">Download</a> · <a href="https://github.com/matthummel-pa/tocflow">GitHub</a>
+    </td>
+  </tr>
+</table>
+
+---
+
+<a id="about"></a>
+## What I do
+
+Drawn from how I actually work on [matthummel.com](https://matthummel.com/about/).
+
+| Mode | What that looks like |
+| --- | --- |
+| **Full-stack** | HTML, CSS, JS/TS, React, Next.js, PHP, Node — clean code, solid perf, interfaces that work for everyone |
+| **WordPress (specialty)** | Sage 11, Blade, Acorn, Bedrock, Tailwind + Vite, Gutenberg blocks. A11y + Core Web Vitals baked in |
+| **Front-end** | Responsive layouts, readable type, one clear next step — especially on phones |
+| **Back-end** | PHP, Node, APIs — the logic and integrations behind the pretty pixels |
+| **Local business sites** | Gettysburg / Adams County restaurants, inns, shops, tours, realtors. You own the keys |
+| **Agency partner** | Overflow and silent subs welcome — you keep the client relationship; I stay in the background |
+
+I use **Claude** and **Cursor** to move faster on the repeatable parts. Every line still gets read and tested by me before it ships — I wrote about that in [AI Website Redesign: 5 Lessons From a Solo Developer](https://matthummel.com/web-development/ai-website-redesign-solo-developer/).
+
+### How I actually work
+
+- Shops own everything: domain, hosting, database, and code
+- The admin experience is part of the build — if it's hard to update, it doesn't get updated
+- Plain, readable code (if you can't follow a function in 30 seconds, it's too clever)
+- AI assists; I review everything
+- Accessibility and plain language by default
+- Small, focused plugins — one job each
+
+<a id="writing"></a>
+## Writing
+
+Latest posts from [matthummel.com](https://matthummel.com/blog/):
+
+- [AI Website Redesign: 5 Lessons From a Solo Developer](https://matthummel.com/web-development/ai-website-redesign-solo-developer/)
+- [Git and Deployment for Beginners: Ship Your Portfolio with Confidence](https://matthummel.com/web-development/git-and-deployment-for-beginners/)
+- [Getting Started with React and Next.js: A Beginner's Roadmap](https://matthummel.com/tutorials/getting-started-react-nextjs/)
+- [Core Web Vitals in plain English](https://matthummel.com/tutorials/core-web-vitals-explained/)
+
+<a id="projects"></a>
+## Open for work
+
+I'm looking for **full-time roles**, **contract gigs**, and **freelance projects** on [matthummel.com](https://matthummel.com) — WordPress platforms, full-stack web apps, and agency overflow. Based in Gettysburg, PA; happy to work remote.
+
+If you're hiring a full-stack developer, need an experienced WordPress specialist, want agency overflow support, or have a web project to discuss, [send a short note](https://matthummel.com/contact/) about what you're working on.
+
+---
+
+<a id="stats"></a>
+## GitHub stats
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=matthummel-pa&theme=default&hide_border=true&ring=2C5A95&fire=2C5A95&currStreakLabel=2C5A95&sideLabels=334155&dates=64748b" alt="GitHub streak" />
+</p>
+
+<table align="center">
+  <tr>
+    <td valign="top" width="50%">
+      <img src="https://github-readme-stats.shion.dev/api?username=matthummel-pa&show_icons=true&hide_border=true&title_color=2C5A95&icon_color=2C5A95&text_color=334155&include_all_commits=true" alt="Matt Hummel's GitHub stats" />
+    </td>
+    <td valign="top" width="50%">
+      <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=matthummel-pa&layout=compact&hide_border=true&title_color=2C5A95&text_color=334155&langs_count=8" alt="Top languages" />
+    </td>
+  </tr>
+</table>
+
+<a id="connect"></a>
+## Connect
+
+- 🌐 **Website / blog:** [matthummel.com](https://matthummel.com)
+- 💼 **LinkedIn:** [linkedin.com/in/matt-hummel-pa](https://www.linkedin.com/in/matt-hummel-pa)
+- ✍️ **Dev.to:** [dev.to/mattbuildsapps](https://dev.to/mattbuildsapps)
+- 🦋 **Bluesky:** [@matthummel](https://bsky.app/profile/matthummel.bsky.social)
+
+<sub>Full-stack developer · WordPress specialist — open for work. PRs welcome; puns tolerated.</sub>
