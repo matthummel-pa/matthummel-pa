@@ -100,21 +100,21 @@
 Live feed of what I've been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#140](https://github.com/matthummel-pa/matthummel-theme/pull/140) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sync Acreline product copy for setup wizard (1.3.0)
-- 🔀 Merged PR [#139](https://github.com/matthummel-pa/matthummel-theme/pull/139) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Redirect Acreline legacy SEO URLs to live product
-- 🔀 Merged PR [#138](https://github.com/matthummel-pa/matthummel-theme/pull/138) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Keep Acreline labeled Real estate on live shop
-- 🔀 Merged PR [#137](https://github.com/matthummel-pa/matthummel-theme/pull/137) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: WooCommerce product pages — marketplace layout + Gutenberg blocks showcase
-- 🔀 Merged PR [#136](https://github.com/matthummel-pa/matthummel-theme/pull/136) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Consolidate WooCommerce templates; remove Projects redirect template
-- 🔀 Merged PR [#134](https://github.com/matthummel-pa/matthummel-theme/pull/134) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Relabel Acreline as a Real estate theme
-- 🔀 Merged PR [#135](https://github.com/matthummel-pa/matthummel-theme/pull/135) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Rich WooCommerce product pages, portfolio template, Rank Math improvements, marketing p…
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/9d2ebb09457b261430810fd2b424cb92dce45fbb) — _Merge pull request #137 from matthummel-pa/cursor/product-pages-marketplace-b1bf_
-- ⭐ Starred [HexmosTech/LiveReview](https://github.com/HexmosTech/LiveReview)
-- 🔀 Merged PR [#132](https://github.com/matthummel-pa/matthummel-theme/pull/132) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sync Acreline product page from wp-acreline 1.2.3
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/49e9aa0167c7e2cf8eb0eccc5ecb2ae4e11fbb39) — _Add product Support hub and Theme details CTA (#133)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/3cc7d724536dd9e8da746532a89701d467d841af) — _feat: core Gutenberg blocks + custom block generator + auto-seeded pages_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d85850602b5e39d9f5385f6369f3c2ab394dff72) — _Archive earlier Power Platform posts (#131)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/de035ecb4dd25bd652be3f37983f3c87d437fa8a) — _SEO: improve Rank Math marketing page scores (#129)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/2a39b7a9fde4be0c5fcaecf510dfdca2020f7b24) — _Docs: align AGENTS.md with native WPVibe HTTP MCP (#128)_
+- 🔀 Open PR [#147](https://github.com/matthummel-pa/matthummel-theme/pull/147) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: WalkRidge product screenshots + purchase widget cleanup
+- 🔀 Merged PR [#146](https://github.com/matthummel-pa/matthummel-theme/pull/146) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — fix: two-column purchase layout on single product page
+- 🔀 Merged PR [#145](https://github.com/matthummel-pa/matthummel-theme/pull/145) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — fix(shop): self-heal duplicate products + WalkRidge catalog-only sync (3.5.3)
+- 🔀 Merged PR [#144](https://github.com/matthummel-pa/matthummel-theme/pull/144) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat(shop): add WalkRidge as second sellable product
+- 🔀 Merged PR [#143](https://github.com/matthummel-pa/matthummel-theme/pull/143) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Shop product pages, SEO fixes, and growth tooling
+- 🔀 Merged PR [#142](https://github.com/matthummel-pa/matthummel-theme/pull/142) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Keep shop products on Woo URLs when project CPT is gone
+- 🔀 Merged PR [#141](https://github.com/matthummel-pa/matthummel-theme/pull/141) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Generalise shop pages: themes, plugins, and web apps
+- 🔀 Merged PR [#140](https://github.com/matthummel-pa/matthummel-theme/pull/140) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sync Acreline product copy for setup wizard (1.3.0)
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c1aa9eb7bcfde0a8e8349d7bb4f9bb4caa113462) — _Merge pull request #145 from matthummel-pa/cursor/wc-template-consolidation-b1bf_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/a149f2c463d682450147cf6e96c1f4871ae39bf1) — _chore: remove Ridges & Valleys references — Matt Hummel branding only_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/75824f90a030401e5d738ab180cb9b4435306288) — _feat: featured products — Acreline, WalkRidge, Pintfield, TOCflow_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/ed7fbbd27ad9ac0e56bdf9c010e6926109677e37) — _revert: restore README to clean version (undo double-encode)_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/061868dc4bcc6f571fe669a654156a7188683661) — _chore: product-first README — collapse concept sites, promote shop_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/f308327fbe876906db256d0e33ec7e52913f6730) — _Add Acreline multi-step setup wizard (#54)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/8d1da1bda2f85b83a438d96193cfcc0feed5a42c) — _Redirect Acreline legacy SEO URLs to live product (#139)_
 <!--END_SECTION:activity-->
 
 <sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
