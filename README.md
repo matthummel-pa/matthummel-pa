@@ -1,45 +1,132 @@
-<h1 align="center">Hi, I'm Matt Hummel 👋</h1>
+<div align="center">
 
-<p align="center">
-  <a href="https://komarev.com/ghpvc/?username=matthummel-pa&style=for-the-badge&color=2C5A95">
-    <img src="https://komarev.com/ghpvc/?username=matthummel-pa&style=for-the-badge&color=2C5A95" alt="Profile views" />
-  </a>
-</p>
+# Hi, I'm Matt Hummel
 
-<p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2C5A95&center=true&vCenter=true&width=640&lines=Full-stack+web+developer;WordPress+%2B+Sage+is+my+happy+place;I+ship+accessible%2C+fast+sites;AI-assisted.+Human-reviewed.;git+commit+-m+%22it+works+on+my+machine%22" alt="Typing SVG" />
-  </a>
-</p>
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=2C5A95&center=true&vCenter=true&width=560&lines=WordPress+themes%2C+plugins%2C+and+platforms;Open+for+freelance%2C+contract%2C+or+full-time;Sage+11+%2B+Gutenberg+is+my+happy+place;Gettysburg%2C+PA+%C2%B7+remote+OK;AI-assisted.+Human-reviewed." alt="WordPress themes, plugins, and platforms" />
+</a>
 
-<p align="center">
-  <strong>Full-stack developer · WordPress specialist</strong>
-</p>
+**WordPress developer · full-stack PHP**
 
-<p align="center">
-  More than 15 years building for the web — accessible front ends, PHP applications, APIs, and deployment workflows.<br/>
-  WordPress is my specialty: a flexible platform with an editor businesses can actually use.<br/>
-  Based in Gettysburg, PA. Open to collaboration.
-</p>
+Themes, plugins, and platforms shops can actually run — plus Power Platform when that's the job.<br />
+Gettysburg, PA · Remote · Open for freelance, contract, or full-time
 
-<p align="center">
-  <img src="https://img.shields.io/badge/years_shipping-15%2B-0F172A?style=flat-square" alt="15+ years shipping" />
-  <img src="https://img.shields.io/badge/stack-PHP%20%7C%20JS%20%7C%20React%20%7C%20WP-2C5A95?style=flat-square" alt="Stack" />
-  <img src="https://img.shields.io/badge/editor-Cursor%20%2B%20Claude-334155?style=flat-square" alt="Editor" />
-  <img src="https://img.shields.io/badge/tests-I%20write%20them%20(really)-22863a?style=flat-square" alt="Tests" />
-  <img src="https://img.shields.io/badge/Lighthouse-chase%20the%20green-e11d48?style=flat-square" alt="Lighthouse" />
-</p>
+<a href="https://matthummel.com/hire/"><img src="https://img.shields.io/badge/Hire_me-2C5A95?style=for-the-badge" alt="Hire me" /></a>
+<a href="https://matthummel.com/contact/"><img src="https://img.shields.io/badge/Write_a_note-0F172A?style=for-the-badge" alt="Write a note" /></a>
+<a href="https://matthummel.com/shop/"><img src="https://img.shields.io/badge/Shop_products-0F172A?style=for-the-badge" alt="Shop products" /></a>
+<a href="https://www.linkedin.com/in/matt-hummel-pa"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 
-<details align="center">
-  <summary><strong>package.json</strong> vibes (click me)</summary>
-  <br/>
+[matthummel.com](https://matthummel.com) · [Hire](https://matthummel.com/hire/) · [Contact](https://matthummel.com/contact/) · [Shop](https://matthummel.com/shop/) · [LinkedIn](https://www.linkedin.com/in/matt-hummel-pa)
+
+<img src="https://komarev.com/ghpvc/?username=matthummel-pa&style=flat-square&color=2C5A95" alt="Profile views" />
+<img src="https://img.shields.io/badge/Open_for_work-2C5A95?style=flat-square" alt="Open for work" />
+<img src="https://img.shields.io/badge/Gettysburg%2C_PA-remote-0F172A?style=flat-square" alt="Gettysburg, PA · remote" />
+
+</div>
+
+---
+
+<a id="work"></a>
+## Featured products
+
+WordPress themes and plugins I sell and support at [matthummel.com/shop](https://matthummel.com/shop/). Buy a pack, or [hire me](https://matthummel.com/hire/) to adapt one.
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/acreline/featured.webp" alt="Acreline WordPress real estate theme" width="360" /></a><br />
+      <strong><a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/">Acreline</a></strong><br />
+      <sub>WordPress theme · Real estate · $59</sub><br />
+      21 Gutenberg blocks, listings, agents, showing requests.<br />
+      <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/">Buy</a> · <a href="https://github.com/matthummel-pa/wp-acreline">GitHub</a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://matthummel.com/product/wordpress-theme-tour-sites/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/walkridge/featured.webp" alt="WalkRidge WordPress battlefield tour theme" width="360" /></a><br />
+      <strong><a href="https://matthummel.com/product/wordpress-theme-tour-sites/">WalkRidge</a></strong><br />
+      <sub>WordPress theme · Tour sites · $59</sub><br />
+      Browse tours, meet guides, book from WooCommerce.<br />
+      <a href="https://matthummel.com/product/wordpress-theme-tour-sites/">Buy</a> · <a href="https://github.com/matthummel-pa/wp-walkridge">GitHub</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/work/pintfield.jpg" alt="Pintfield WordPress creamery theme" width="360" /></a><br />
+      <strong><a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme">Pintfield</a></strong><br />
+      <sub>WordPress theme · Creamery &amp; food retail · Coming soon</sub><br />
+      Scoop Board, online ordering, multi-location WooCommerce.<br />
+      <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme">GitHub</a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/tocflow/featured.webp" alt="TOCflow WordPress table of contents plugin" width="360" /></a><br />
+      <strong><a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/">TOCflow</a></strong><br />
+      <sub>WordPress plugin · Table of contents · Free</sub><br />
+      Server-rendered TOC block. Zero config, accessible, SEO-friendly.<br />
+      <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/">Download</a> · <a href="https://github.com/matthummel-pa/tocflow">GitHub</a>
+    </td>
+  </tr>
+</table>
+
+<a id="hire"></a>
+## Open for work
+
+I'm available for **freelance**, **contract**, and **full-time** — WordPress themes and plugins, custom Sage builds, agency overflow, and Power Platform (Power Apps / Power Automate) from federal agency work. Based in Gettysburg, PA. Remote anywhere.
+
+A short note is plenty. I usually reply within one business day (ET).
+
+**[Hire me](https://matthummel.com/hire/)** · **[Write a note](https://matthummel.com/contact/)** · **[LinkedIn](https://www.linkedin.com/in/matt-hummel-pa)**
+
+---
+
+<a id="activity"></a>
+## Recent activity
+
+Auto-refreshed from public GitHub work.
+
+<!--START_SECTION:activity-->
+- 🔀 Merged PR [#150](https://github.com/matthummel-pa/matthummel-theme/pull/150) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: hero work preview panel + shop page UX/UI/SEO boost (3/2/1 grid)
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/1691d059f7a94d422aa2ee0603d21ba3cf4bc9c0) — _feat: hero work preview panel + shop page UX/UI/SEO boost (3/2/1 grid)_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/cf9575337989cae94683d2a1b3de917b6b71d651) — _fix: restore README from double-encoded base64 back to raw Markdown_
+- 🔀 Merged PR [#147](https://github.com/matthummel-pa/matthummel-theme/pull/147) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: WalkRidge product screenshots + purchase widget cleanup
+- 🔀 Merged PR [#149](https://github.com/matthummel-pa/matthummel-theme/pull/149) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: home hero boost + journal page UX/SEO lift
+- 🔀 Merged PR [#148](https://github.com/matthummel-pa/matthummel-theme/pull/148) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat(shop): design and content boost for product archive
+- 🔀 Merged PR [#146](https://github.com/matthummel-pa/matthummel-theme/pull/146) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — fix: two-column purchase layout on single product page
+- 🔀 Merged PR [#145](https://github.com/matthummel-pa/matthummel-theme/pull/145) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — fix(shop): self-heal duplicate products + WalkRidge catalog-only sync (3.5.3)
+- 🔀 Merged PR [#144](https://github.com/matthummel-pa/matthummel-theme/pull/144) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat(shop): add WalkRidge as second sellable product
+- 🔀 Merged PR [#143](https://github.com/matthummel-pa/matthummel-theme/pull/143) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Shop product pages, SEO fixes, and growth tooling
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/6cec33cf4c141056dbcc027eefe3180cca4682b7) — _fix: replace broken product screenshot URLs with working raw GitHub CDN URLs_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c1aa9eb7bcfde0a8e8349d7bb4f9bb4caa113462) — _Merge pull request #145 from matthummel-pa/cursor/wc-template-consolidation-b1bf_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/a149f2c463d682450147cf6e96c1f4871ae39bf1) — _chore: remove Ridges & Valleys references — Matt Hummel branding only_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/75824f90a030401e5d738ab180cb9b4435306288) — _feat: featured products — Acreline, WalkRidge, Pintfield, TOCflow_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/ed7fbbd27ad9ac0e56bdf9c010e6926109677e37) — _revert: restore README to clean version (undo double-encode)_
+<!--END_SECTION:activity-->
+
+---
+
+<a id="about"></a>
+## What I do
+
+More than 15 years building for the web — accessible front ends, PHP applications, APIs, and deploys. WordPress is the specialty: Sage 11, Gutenberg, and an admin shops can keep using. Adjacent work (APIs, React, Power Platform) is in range.
+
+| Mode | What that looks like |
+| --- | --- |
+| **WordPress** | Sage 11, Blade, Acorn, Bedrock, Tailwind + Vite, Gutenberg blocks. A11y and Core Web Vitals baked in |
+| **Full-stack** | HTML, CSS, JS/TS, React, PHP, Node — clean code, solid perf, interfaces that work for everyone |
+| **Plugins** | Small, documented PHP. One job each. Standard hooks, a clean uninstall path |
+| **Power Platform** | Power Apps, Power Automate, SharePoint from federal agency work. No public demo — walkthrough under NDA |
+| **Local shops** | Gettysburg / Adams County restaurants, inns, tours, realtors. You own the keys |
+| **Agency partner** | Overflow and silent subs welcome — you keep the client; I stay in the background |
+
+I use **Claude** and **Cursor** on the repeatable parts. Every line still gets read and tested by me before it ships.
+
+<details>
+  <summary><strong>package.json</strong> vibes</summary>
 
 ```json
 {
   "name": "matt-hummel",
   "version": "15.0.0",
   "private": false,
-  "description": "Full-stack developer · WordPress specialist · open to collaboration",
+  "description": "WordPress developer · full-stack PHP · open for work",
   "main": "WordPress + Sage",
   "scripts": {
     "dev": "cursor . && coffee --watch",
@@ -63,7 +150,7 @@
     "node": ">=human",
     "coffee": "required"
   },
-  "keywords": ["full-stack", "wordpress", "sage", "gettysburg", "a11y", "open-for-work"],
+  "keywords": ["wordpress", "sage", "php", "gettysburg", "a11y", "open-for-work"],
   "license": "MIT-and-kindness"
 }
 ```
@@ -71,139 +158,20 @@
 </details>
 
 <p align="center">
-  <a href="https://matthummel.com">matthummel.com</a> &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/matt-hummel-pa">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="https://dev.to/mattbuildsapps">Dev.to</a>
-</p>
-
-<p align="center">
-  <a href="#activity"><img src="https://img.shields.io/badge/Recent_activity-0F172A?style=for-the-badge" alt="Recent activity" /></a>
-  <a href="#work"><img src="https://img.shields.io/badge/Products-0F172A?style=for-the-badge" alt="Products" /></a>
-  <a href="#about"><img src="https://img.shields.io/badge/About-0F172A?style=for-the-badge" alt="About" /></a>
-  <a href="#writing"><img src="https://img.shields.io/badge/Writing-0F172A?style=for-the-badge" alt="Writing" /></a>
-  <a href="#projects"><img src="https://img.shields.io/badge/Open_for_work-0F172A?style=for-the-badge" alt="Open for work" /></a>
-  <a href="#stats"><img src="https://img.shields.io/badge/Stats-0F172A?style=for-the-badge" alt="Stats" /></a>
-  <a href="#connect"><img src="https://img.shields.io/badge/Connect-0F172A?style=for-the-badge" alt="Connect" /></a>
-</p>
-
-<p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,ts,php,wordpress,react,nextjs,nodejs,tailwind,sass,vite,laravel,mysql,docker,git,github,vscode&perline=9" alt="HTML, CSS, JavaScript, TypeScript, PHP, WordPress, React, Next.js, Node.js, Tailwind, Sass, Vite, Laravel, MySQL, Docker, Git, GitHub, VS Code" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,ts,php,wordpress,react,tailwind,mysql,github&perline=10" alt="HTML, CSS, JavaScript, TypeScript, PHP, WordPress, React, Tailwind, MySQL, GitHub" />
   </a>
 </p>
-
----
-
-<a id="activity"></a>
-## Recent activity
-
-Live feed of what I've been shipping across GitHub — PRs, commits, releases, stars, the whole changelog energy. Auto-refreshed by a GitHub Action.
-
-<!--START_SECTION:activity-->
-- 🔀 Merged PR [#150](https://github.com/matthummel-pa/matthummel-theme/pull/150) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: hero work preview panel + shop page UX/UI/SEO boost (3/2/1 grid)
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/1691d059f7a94d422aa2ee0603d21ba3cf4bc9c0) — _feat: hero work preview panel + shop page UX/UI/SEO boost (3/2/1 grid)_
-- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/cf9575337989cae94683d2a1b3de917b6b71d651) — _fix: restore README from double-encoded base64 back to raw Markdown_
-- 🔀 Merged PR [#147](https://github.com/matthummel-pa/matthummel-theme/pull/147) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: WalkRidge product screenshots + purchase widget cleanup
-- 🔀 Merged PR [#149](https://github.com/matthummel-pa/matthummel-theme/pull/149) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: home hero boost + journal page UX/SEO lift
-- 🔀 Merged PR [#148](https://github.com/matthummel-pa/matthummel-theme/pull/148) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat(shop): design and content boost for product archive
-- 🔀 Merged PR [#146](https://github.com/matthummel-pa/matthummel-theme/pull/146) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — fix: two-column purchase layout on single product page
-- 🔀 Merged PR [#145](https://github.com/matthummel-pa/matthummel-theme/pull/145) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — fix(shop): self-heal duplicate products + WalkRidge catalog-only sync (3.5.3)
-- 🔀 Merged PR [#144](https://github.com/matthummel-pa/matthummel-theme/pull/144) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat(shop): add WalkRidge as second sellable product
-- 🔀 Merged PR [#143](https://github.com/matthummel-pa/matthummel-theme/pull/143) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Shop product pages, SEO fixes, and growth tooling
-- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/6cec33cf4c141056dbcc027eefe3180cca4682b7) — _fix: replace broken product screenshot URLs with working raw GitHub CDN URLs_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c1aa9eb7bcfde0a8e8349d7bb4f9bb4caa113462) — _Merge pull request #145 from matthummel-pa/cursor/wc-template-consolidation-b1bf_
-- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/a149f2c463d682450147cf6e96c1f4871ae39bf1) — _chore: remove Ridges & Valleys references — Matt Hummel branding only_
-- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/75824f90a030401e5d738ab180cb9b4435306288) — _feat: featured products — Acreline, WalkRidge, Pintfield, TOCflow_
-- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/ed7fbbd27ad9ac0e56bdf9c010e6926109677e37) — _revert: restore README to clean version (undo double-encode)_
-<!--END_SECTION:activity-->
-
-<sub>Want the raw firehose? → <a href="https://github.com/matthummel-pa">GitHub profile overview</a></sub>
-
----
-
-<a id="work"></a>
-## Featured products
-
-WordPress themes and plugins I sell and support at [matthummel.com/shop](https://matthummel.com/shop/).
-
-<table>
-  <tr>
-    <td width="25%" align="center" valign="top">
-      <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/acreline/featured.webp" alt="Acreline WordPress real estate theme" width="180" /></a><br />
-      <strong><a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/">Acreline</a></strong><br />
-      <sub>WordPress theme · Real estate · $79</sub><br />
-      <sub>21 Gutenberg blocks, listings, agents, showing requests.</sub><br />
-      <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/">Buy</a> · <a href="https://github.com/matthummel-pa/wp-acreline">GitHub</a>
-    </td>
-    <td width="25%" align="center" valign="top">
-      <a href="https://matthummel.com/product/wordpress-theme-tour-sites/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/walkridge/featured.webp" alt="WalkRidge WordPress battlefield tour theme" width="180" /></a><br />
-      <strong><a href="https://matthummel.com/product/wordpress-theme-tour-sites/">WalkRidge</a></strong><br />
-      <sub>WordPress theme · Tour sites · $59</sub><br />
-      <sub>Browse tours, meet guides, book from WooCommerce.</sub><br />
-      <a href="https://matthummel.com/product/wordpress-theme-tour-sites/">Buy</a> · <a href="https://github.com/matthummel-pa/wp-walkridge">GitHub</a>
-    </td>
-    <td width="25%" align="center" valign="top">
-      <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/work/pintfield.jpg" alt="Pintfield WordPress creamery theme" width="180" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme">Pintfield</a></strong><br />
-      <sub>WordPress theme · Creamery &amp; food retail · Coming soon</sub><br />
-      <sub>Scoop Board, online ordering, multi-location WooCommerce.</sub><br />
-      <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme">GitHub</a>
-    </td>
-    <td width="25%" align="center" valign="top">
-      <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/tocflow/featured.webp" alt="TOCflow WordPress table of contents plugin" width="180" /></a><br />
-      <strong><a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/">TOCflow</a></strong><br />
-      <sub>WordPress plugin · Table of contents · Free</sub><br />
-      <sub>Server-rendered TOC block. Zero config, accessible, SEO-friendly.</sub><br />
-      <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/">Download</a> · <a href="https://github.com/matthummel-pa/tocflow">GitHub</a>
-    </td>
-  </tr>
-</table>
-
----
-
-<a id="about"></a>
-## What I do
-
-Drawn from how I actually work on [matthummel.com](https://matthummel.com/about/).
-
-| Mode | What that looks like |
-| --- | --- |
-| **Full-stack** | HTML, CSS, JS/TS, React, Next.js, PHP, Node — clean code, solid perf, interfaces that work for everyone |
-| **WordPress (specialty)** | Sage 11, Blade, Acorn, Bedrock, Tailwind + Vite, Gutenberg blocks. A11y + Core Web Vitals baked in |
-| **Front-end** | Responsive layouts, readable type, one clear next step — especially on phones |
-| **Back-end** | PHP, Node, APIs — the logic and integrations behind the pretty pixels |
-| **Local business sites** | Gettysburg / Adams County restaurants, inns, shops, tours, realtors. You own the keys |
-| **Agency partner** | Overflow and silent subs welcome — you keep the client relationship; I stay in the background |
-
-I use **Claude** and **Cursor** to move faster on the repeatable parts. Every line still gets read and tested by me before it ships — I wrote about that in [AI Website Redesign: 5 Lessons From a Solo Developer](https://matthummel.com/web-development/ai-website-redesign-solo-developer/).
-
-### How I actually work
-
-- Shops own everything: domain, hosting, database, and code
-- The admin experience is part of the build — if it's hard to update, it doesn't get updated
-- Plain, readable code (if you can't follow a function in 30 seconds, it's too clever)
-- AI assists; I review everything
-- Accessibility and plain language by default
-- Small, focused plugins — one job each
 
 <a id="writing"></a>
 ## Writing
 
-Latest posts from [matthummel.com](https://matthummel.com/blog/):
+Latest from [matthummel.com/blog](https://matthummel.com/blog/):
 
-- [AI Website Redesign: 5 Lessons From a Solo Developer](https://matthummel.com/web-development/ai-website-redesign-solo-developer/)
-- [Git and Deployment for Beginners: Ship Your Portfolio with Confidence](https://matthummel.com/web-development/git-and-deployment-for-beginners/)
-- [Getting Started with React and Next.js: A Beginner's Roadmap](https://matthummel.com/tutorials/getting-started-react-nextjs/)
-- [Core Web Vitals in plain English](https://matthummel.com/tutorials/core-web-vitals-explained/)
-
-<a id="projects"></a>
-## Open for work
-
-I'm looking for **full-time roles**, **contract gigs**, and **freelance projects** on [matthummel.com](https://matthummel.com) — WordPress platforms, full-stack web apps, and agency overflow. Based in Gettysburg, PA; happy to work remote.
-
-If you're hiring a full-stack developer, need an experienced WordPress specialist, want agency overflow support, or have a web project to discuss, [send a short note](https://matthummel.com/contact/) about what you're working on.
-
----
+- [WordPress Abilities API integration — A Practical First Integration](https://matthummel.com/wordpress/wordpress-abilities-api-integration/)
+- [Why I'm Moving Away from Power Platform and Back to Modern WordPress](https://matthummel.com/web-development/why-moving-away-from-power-platform-back-to-wordpress/)
+- [5 Ways my new AI WordPress Workflow Actually speeds up development](https://matthummel.com/web-development/5-ways-ai-wordpress-workflow/)
+- [WordPress 7.1 Features for Developers](https://matthummel.com/wordpress/wordpress-7-1-features-developers/)
 
 <a id="stats"></a>
 ## GitHub stats
@@ -226,9 +194,11 @@ If you're hiring a full-stack developer, need an experienced WordPress specialis
 <a id="connect"></a>
 ## Connect
 
-- 🌐 **Website / blog:** [matthummel.com](https://matthummel.com)
+- 🌐 **Website:** [matthummel.com](https://matthummel.com)
+- 📬 **Hire / contact:** [matthummel.com/hire](https://matthummel.com/hire/) · [matthummel.com/contact](https://matthummel.com/contact/)
+- 🛒 **Shop:** [matthummel.com/shop](https://matthummel.com/shop/)
 - 💼 **LinkedIn:** [linkedin.com/in/matt-hummel-pa](https://www.linkedin.com/in/matt-hummel-pa)
 - ✍️ **Dev.to:** [dev.to/mattbuildsapps](https://dev.to/mattbuildsapps)
 - 🦋 **Bluesky:** [@matthummel](https://bsky.app/profile/matthummel.bsky.social)
 
-<sub>Full-stack developer · WordPress specialist — open for work. PRs welcome; puns tolerated.</sub>
+<sub>WordPress developer · full-stack PHP — open for work. PRs welcome; puns tolerated.</sub>
