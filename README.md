@@ -76,21 +76,21 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#153](https://github.com/matthummel-pa/matthummel-theme/pull/153) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Bolder blue chrome and heavier type (3.5.7)
+- 🔀 Open PR [#15](https://github.com/matthummel-pa/tocflow/pull/15) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — feat: global design, Reading Guide, Study Tools & Accessibility settings (v1.3.0)
+- 🔀 Merged PR [#14](https://github.com/matthummel-pa/tocflow/pull/14) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — docs: full CHANGELOG + README "What's New" / Performance sections; debounce bookmark wr…
+- 🏷️ Released [v1,0.0](https://github.com/matthummel-pa/wp-walkridge/releases/tag/v1%2C0.0) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)
+- 🔀 Merged PR [#154](https://github.com/matthummel-pa/matthummel-theme/pull/154) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Lock navy token and ticker edge fades (3.5.6)
+- 🔀 Merged PR [#152](https://github.com/matthummel-pa/matthummel-theme/pull/152) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Contrast, color pop, and portfolio polish (3.5.5)
+- 🔀 Merged PR [#13](https://github.com/matthummel-pa/matthummel-pa/pull/13) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Remove Pintfield from featured products
 - 🔀 Merged PR [#13](https://github.com/matthummel-pa/tocflow/pull/13) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — Align plugin version to 1.2.0 and prepare GitHub release
-- 🔀 Open PR [#152](https://github.com/matthummel-pa/matthummel-theme/pull/152) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Contrast and readability lift (3.5.5)
+- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/d626a8e1bfc0ed4aeb15c7fb20f97869000ebdfa) — _docs: full CHANGELOG + README What's New / Performance sections; debounce bookmark writ…_
+- 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/b202f44a6174a327183d2d8b305cd0068525253f) — _Remove Architecture section from README_
+- 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/897ada3d7d14ee114709fa45a17e9d1955884a45) — _Fix header formatting for Features section in README_
+- 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/51b2a71f1c7563ae303aa015efc025660e23fd6f) — _Enhance README with theme details and features_
 - 🔀 Merged PR [#12](https://github.com/matthummel-pa/tocflow/pull/12) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — feat: TOCflow as a mini study assistant — reader notes, progress bar, resume bookmark, …
-- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/b6db51c5133325923e9fecb75beb4c407128b38b) — _feat: TOCflow v1.2.0 — study assistant (reader notes, progress bar, resume bookmark, se…_
-- 🔀 Merged PR [#12](https://github.com/matthummel-pa/matthummel-pa/pull/12) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Redesign profile README for hireability and clearer hierarchy
-- 🔀 Merged PR [#151](https://github.com/matthummel-pa/matthummel-theme/pull/151) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Hire traction: Work links, Services pricing, SLA, product trust
-- 🔀 Merged PR [#42](https://github.com/matthummel-pa/wp-acreline/pull/42) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Fix critical error on single blog posts
-- 🔀 Open PR [#47](https://github.com/matthummel-pa/wp-acreline/pull/47) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — License Acreline as GPLv2+ for WordPress.org and ThemeForest
-- 🔀 Closed PR [#4](https://github.com/matthummel-pa/ridgesandvalleys/pull/4) in [matthummel-pa/ridgesandvalleys](https://github.com/matthummel-pa/ridgesandvalleys) — Cleanup: homepage CSS, leftover page fields, lint and Pint
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/1691d059f7a94d422aa2ee0603d21ba3cf4bc9c0) — _feat: hero work preview panel + shop page UX/UI/SEO boost (3/2/1 grid)_
-- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/cf9575337989cae94683d2a1b3de917b6b71d651) — _fix: restore README from double-encoded base64 back to raw Markdown_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/0179bf256686dfd6ce1ff43885f3240f194e42ab) — _feat: WalkRidge live screenshots + purchase widget cleanup (#147)_
-- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/6cec33cf4c141056dbcc027eefe3180cca4682b7) — _fix: replace broken product screenshot URLs with working raw GitHub CDN URLs_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/06aca78db8cc4cd7f89cba89066010e8e35e6e39) — _feat(shop): design and content boost for product archive (#148)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d10916394e734fb25d1dac5defec31389c71c261) — _fix: two-column purchase layout, cap WC widget at 400px (#146)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/1eff061447afba1329d1b87d2b4465d052c83591) — _Lock navy token and ticker edge fades (3.5.6)_
+- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/61bd41fa8cf41f1e6ecc669881b73bfe9ae60fd5) — _Remove Pintfield from featured products_
 <!--END_SECTION:activity-->
 
 ---
