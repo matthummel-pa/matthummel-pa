@@ -45,7 +45,7 @@ WordPress themes and plugins I sell and support at [matthummel.com/shop](https:/
       <strong><a href="https://matthummel.com/product/wordpress-theme-tour-sites/">WalkRidge</a></strong><br />
       <sub>WordPress theme · Tour sites · $59</sub><br />
       Browse tours, meet guides, book from WooCommerce.<br />
-      <a href="https://matthummel.com/product/wordpress-theme-tour-sites/">Buy</a> · <a href="https://github.com/matthummel-pa/wp-walkridge">GitHub</a>
+      <a href="https://matthummel.com/product/walkridge/">Buy</a> · <a href="https://github.com/matthummel-pa/wp-walkridge">GitHub</a>
     </td>
   </tr>
   <tr>
