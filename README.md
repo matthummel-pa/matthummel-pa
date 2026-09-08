@@ -51,17 +51,17 @@ WordPress themes and plugins I sell and support at [matthummel.com/shop](https:/
   <tr>
     <td width="50%" align="center" valign="top">
       <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/work/pintfield.jpg" alt="Pintfield WordPress creamery theme" width="360" /></a><br />
-      <strong><a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme">Pintfield</a></strong><br />
+      <strong><a href="https://github.com/matthummel-pa/pintfield/>Pintfield</a></strong><br />
       <sub>WordPress theme · Creamery &amp; food retail · Coming soon</sub><br />
       Scoop Board, online ordering, multi-location WooCommerce.<br />
       <a href="https://github.com/matthummel-pa/pintfield-creamery-wp-theme">GitHub</a>
     </td>
     <td width="50%" align="center" valign="top">
       <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/tocflow/featured.webp" alt="TOCflow WordPress table of contents plugin" width="360" /></a><br />
-      <strong><a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/">TOCflow</a></strong><br />
+      <strong><a href="https://matthummel.com/product/tocflow/">TOCflow</a></strong><br />
       <sub>WordPress plugin · Table of contents · Free</sub><br />
       Server-rendered TOC block. Zero config, accessible, SEO-friendly.<br />
-      <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/">Download</a> · <a href="https://github.com/matthummel-pa/tocflow">GitHub</a>
+      <a href="https://matthummel.com/product/tocflow/">Download</a> · <a href="https://github.com/matthummel-pa/tocflow">GitHub</a>
     </td>
   </tr>
 </table>
