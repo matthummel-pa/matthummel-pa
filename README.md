@@ -83,21 +83,21 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Merged PR [#150](https://github.com/matthummel-pa/matthummel-theme/pull/150) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: hero work preview panel + shop page UX/UI/SEO boost (3/2/1 grid)
+- 🔀 Merged PR [#12](https://github.com/matthummel-pa/matthummel-pa/pull/12) in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa) — Redesign profile README for hireability and clearer hierarchy
+- 🔀 Open PR [#12](https://github.com/matthummel-pa/tocflow/pull/12) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — feat: TOCflow as a mini study assistant — reader notes, progress bar, resume bookmark, …
+- 🔀 Merged PR [#151](https://github.com/matthummel-pa/matthummel-theme/pull/151) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Hire traction: Work links, Services pricing, SLA, product trust
+- 🔀 Merged PR [#42](https://github.com/matthummel-pa/wp-acreline/pull/42) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Fix critical error on single blog posts
+- 🔀 Open PR [#47](https://github.com/matthummel-pa/wp-acreline/pull/47) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — License Acreline as GPLv2+ for WordPress.org and ThemeForest
+- 🔀 Closed PR [#4](https://github.com/matthummel-pa/ridgesandvalleys/pull/4) in [matthummel-pa/ridgesandvalleys](https://github.com/matthummel-pa/ridgesandvalleys) — Cleanup: homepage CSS, leftover page fields, lint and Pint
+- 🔀 Open PR [#30](https://github.com/matthummel-pa/ridgesandvalleys/pull/30) in [matthummel-pa/ridgesandvalleys](https://github.com/matthummel-pa/ridgesandvalleys) — Fix mobile LCP: hero photo as a responsive image
+- 🔀 Closed PR [#28](https://github.com/matthummel-pa/ridgesandvalleys/pull/28) in [matthummel-pa/ridgesandvalleys](https://github.com/matthummel-pa/ridgesandvalleys) — Tighten phone and tablet layouts on Journal, Contact, and heroes
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/1691d059f7a94d422aa2ee0603d21ba3cf4bc9c0) — _feat: hero work preview panel + shop page UX/UI/SEO boost (3/2/1 grid)_
 - 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/cf9575337989cae94683d2a1b3de917b6b71d651) — _fix: restore README from double-encoded base64 back to raw Markdown_
-- 🔀 Merged PR [#147](https://github.com/matthummel-pa/matthummel-theme/pull/147) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: WalkRidge product screenshots + purchase widget cleanup
-- 🔀 Merged PR [#149](https://github.com/matthummel-pa/matthummel-theme/pull/149) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: home hero boost + journal page UX/SEO lift
-- 🔀 Merged PR [#148](https://github.com/matthummel-pa/matthummel-theme/pull/148) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat(shop): design and content boost for product archive
-- 🔀 Merged PR [#146](https://github.com/matthummel-pa/matthummel-theme/pull/146) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — fix: two-column purchase layout on single product page
-- 🔀 Merged PR [#145](https://github.com/matthummel-pa/matthummel-theme/pull/145) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — fix(shop): self-heal duplicate products + WalkRidge catalog-only sync (3.5.3)
-- 🔀 Merged PR [#144](https://github.com/matthummel-pa/matthummel-theme/pull/144) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat(shop): add WalkRidge as second sellable product
-- 🔀 Merged PR [#143](https://github.com/matthummel-pa/matthummel-theme/pull/143) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Shop product pages, SEO fixes, and growth tooling
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/0179bf256686dfd6ce1ff43885f3240f194e42ab) — _feat: WalkRidge live screenshots + purchase widget cleanup (#147)_
 - 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/6cec33cf4c141056dbcc027eefe3180cca4682b7) — _fix: replace broken product screenshot URLs with working raw GitHub CDN URLs_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/06aca78db8cc4cd7f89cba89066010e8e35e6e39) — _feat(shop): design and content boost for product archive (#148)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/d10916394e734fb25d1dac5defec31389c71c261) — _fix: two-column purchase layout, cap WC widget at 400px (#146)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c1aa9eb7bcfde0a8e8349d7bb4f9bb4caa113462) — _Merge pull request #145 from matthummel-pa/cursor/wc-template-consolidation-b1bf_
-- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/a149f2c463d682450147cf6e96c1f4871ae39bf1) — _chore: remove Ridges & Valleys references — Matt Hummel branding only_
-- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/75824f90a030401e5d738ab180cb9b4435306288) — _feat: featured products — Acreline, WalkRidge, Pintfield, TOCflow_
-- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/ed7fbbd27ad9ac0e56bdf9c010e6926109677e37) — _revert: restore README to clean version (undo double-encode)_
 <!--END_SECTION:activity-->
 
 ---
