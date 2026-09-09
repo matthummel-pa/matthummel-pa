@@ -76,21 +76,21 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Merged PR [#157](https://github.com/matthummel-pa/matthummel-theme/pull/157) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: major WooCommerce core page improvements (2026 redesign)
-- 🔀 Merged PR [#156](https://github.com/matthummel-pa/matthummel-theme/pull/156) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: Footer Bottom Navigation menu location for footer bar links
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/4f6d76afbc70e93a31752e61b1dc9852e191269a) — _Fix From search to showing cards on tablet and mobile (#64)_
+- 🔀 Open PR [#158](https://github.com/matthummel-pa/matthummel-theme/pull/158) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix shop listings on tablet and mobile, trim unused store CSS
+- 🔀 Merged PR [#66](https://github.com/matthummel-pa/wp-acreline/pull/66) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Guide checklist: promote question headings from strong to h3
+- 🔀 Merged PR [#65](https://github.com/matthummel-pa/wp-acreline/pull/65) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Complete Gutenberg stacks on every marketing page
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/639b63f588c7ce4a212780aa62b491acdeef5764) — _Merge pull request #66 from matthummel-pa/cursor/guide-checklist-h3-headings-7979_
+- 🔀 Merged PR [#64](https://github.com/matthummel-pa/wp-acreline/pull/64) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Fix From search to showing cards on tablet and mobile
+- 🔀 Merged PR [#63](https://github.com/matthummel-pa/wp-acreline/pull/63) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — feat: Advanced agent profiles + rich content boost across all marketing pages
+- 🔀 Merged PR [#17](https://github.com/matthummel-pa/wp-acreline/pull/17) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Thicken remaining public pages with buyer help and FAQs
+- 🔀 Merged PR [#19](https://github.com/matthummel-pa/wp-acreline/pull/19) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Restyle homepage Pulse market strip as realtor stat cards
+- 🔀 Merged PR [#21](https://github.com/matthummel-pa/wp-acreline/pull/21) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Add star ratings to homepage sample testimonials
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/7a2d78836bb2e807efa8d1ef05b0fece68e5ea5f) — _Add GitHub Actions workflow for static site deployment_
-- 🔀 Merged PR [#155](https://github.com/matthummel-pa/matthummel-theme/pull/155) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Unstick site header on mobile (3.5.8)
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/c8a541e9c6073e1a36d124ad3b029ceb21cc3b13) — _feat: differentiating features, redesigned admin, Theme Support page (v1.3.3)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/553d9fd67d2bf36115470347b8ec73005493747b) — _v1.3.2 — Accessibility, contrast, i18n, and documentation pass_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/8dbd16537807b0d374a0e73beee51614f3fcf7ef) — _Unstick site header on mobile (3.5.8)_
-- 🔀 Merged PR [#153](https://github.com/matthummel-pa/matthummel-theme/pull/153) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Bolder blue chrome and heavier type (3.5.7)
 - 🏷️ Released [v1,0.0](https://github.com/matthummel-pa/wp-walkridge/releases/tag/v1%2C0.0) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)
-- 🔀 Merged PR [#154](https://github.com/matthummel-pa/matthummel-theme/pull/154) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Lock navy token and ticker edge fades (3.5.6)
-- 🔀 Merged PR [#152](https://github.com/matthummel-pa/matthummel-theme/pull/152) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Contrast, color pop, and portfolio polish (3.5.5)
-- 🚀 Commit in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow/commit/d626a8e1bfc0ed4aeb15c7fb20f97869000ebdfa) — _docs: full CHANGELOG + README What's New / Performance sections; debounce bookmark writ…_
-- 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/b202f44a6174a327183d2d8b305cd0068525253f) — _Remove Architecture section from README_
-- 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/897ada3d7d14ee114709fa45a17e9d1955884a45) — _Fix header formatting for Features section in README_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/02e36ce6be41efdb0410f064ceb007dc7d2ecf2b) — _Bolder blue chrome and heavier type (3.5.7) (#153)_
 <!--END_SECTION:activity-->
 
 ---
