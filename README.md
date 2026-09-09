@@ -76,15 +76,15 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#69](https://github.com/matthummel-pa/wp-acreline/pull/69) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.4.4: persist hero motion settings + theme-colored top bar
+- 🔀 Merged PR [#68](https://github.com/matthummel-pa/wp-acreline/pull/68) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Homepage Ken Burns hero + optional mobile search tilt (1.4.3)
+- 🔀 Merged PR [#67](https://github.com/matthummel-pa/wp-acreline/pull/67) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Show a full-bleed farmhouse photo on the homepage hero
 - 🔀 Open PR [#158](https://github.com/matthummel-pa/matthummel-theme/pull/158) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix shop listings on tablet and mobile, trim unused store CSS
 - 🔀 Merged PR [#66](https://github.com/matthummel-pa/wp-acreline/pull/66) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Guide checklist: promote question headings from strong to h3
 - 🔀 Merged PR [#65](https://github.com/matthummel-pa/wp-acreline/pull/65) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Complete Gutenberg stacks on every marketing page
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/639b63f588c7ce4a212780aa62b491acdeef5764) — _Merge pull request #66 from matthummel-pa/cursor/guide-checklist-h3-headings-7979_
 - 🔀 Merged PR [#64](https://github.com/matthummel-pa/wp-acreline/pull/64) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Fix From search to showing cards on tablet and mobile
 - 🔀 Merged PR [#63](https://github.com/matthummel-pa/wp-acreline/pull/63) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — feat: Advanced agent profiles + rich content boost across all marketing pages
-- 🔀 Merged PR [#17](https://github.com/matthummel-pa/wp-acreline/pull/17) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Thicken remaining public pages with buyer help and FAQs
-- 🔀 Merged PR [#19](https://github.com/matthummel-pa/wp-acreline/pull/19) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Restyle homepage Pulse market strip as realtor stat cards
-- 🔀 Merged PR [#21](https://github.com/matthummel-pa/wp-acreline/pull/21) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Add star ratings to homepage sample testimonials
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/7a2d78836bb2e807efa8d1ef05b0fece68e5ea5f) — _Add GitHub Actions workflow for static site deployment_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/c8a541e9c6073e1a36d124ad3b029ceb21cc3b13) — _feat: differentiating features, redesigned admin, Theme Support page (v1.3.3)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/553d9fd67d2bf36115470347b8ec73005493747b) — _v1.3.2 — Accessibility, contrast, i18n, and documentation pass_
