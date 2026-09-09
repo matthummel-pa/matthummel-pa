@@ -76,15 +76,15 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Merged PR [#61](https://github.com/matthummel-pa/wp-acreline/pull/61) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — feat: branded GitHub Pages site — full theme guide at matthummel-pa.github.io/wp-acreli…
-- 🔀 Merged PR [#60](https://github.com/matthummel-pa/wp-acreline/pull/60) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — docs: buyer-only README + About card on Support page (v1.4.0)
-- 🔀 Merged PR [#59](https://github.com/matthummel-pa/wp-acreline/pull/59) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — docs: README tab navigation + refreshed v1.4.0 screenshots
-- 🔀 Merged PR [#58](https://github.com/matthummel-pa/wp-acreline/pull/58) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — feat: desktop-only top bar + v1.4.0 pre-sale documentation pass
-- 🔀 Closed PR [#56](https://github.com/matthummel-pa/wp-acreline/pull/56) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — feat: media picker everywhere, advanced listing/agent/booking fields, Acreline Settings…
-- 🔀 Merged PR [#57](https://github.com/matthummel-pa/wp-acreline/pull/57) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — feat: listing comparison, saved drawer, sticky CTA, share/print, nearby & market snapsh…
-- 🔀 Merged PR [#55](https://github.com/matthummel-pa/wp-acreline/pull/55) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — v1.3.2 — Accessibility, contrast, i18n, and documentation pass
+- 🔀 Merged PR [#64](https://github.com/matthummel-pa/wp-acreline/pull/64) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Fix From search to showing cards on tablet and mobile
+- 🔀 Merged PR [#63](https://github.com/matthummel-pa/wp-acreline/pull/63) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — feat: Advanced agent profiles + rich content boost across all marketing pages
+- 🔀 Merged PR [#17](https://github.com/matthummel-pa/wp-acreline/pull/17) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Thicken remaining public pages with buyer help and FAQs
+- 🔀 Merged PR [#19](https://github.com/matthummel-pa/wp-acreline/pull/19) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Restyle homepage Pulse market strip as realtor stat cards
+- 🔀 Merged PR [#21](https://github.com/matthummel-pa/wp-acreline/pull/21) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Add star ratings to homepage sample testimonials
+- 🔀 Merged PR [#18](https://github.com/matthummel-pa/wp-acreline/pull/18) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Add photos to homepage How a tour starts steps
+- 🔀 Merged PR [#22](https://github.com/matthummel-pa/wp-acreline/pull/22) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Replace card accent bars with thin rest shadows
+- 🔀 Merged PR [#47](https://github.com/matthummel-pa/wp-acreline/pull/47) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — License Acreline as GPLv2+ for WordPress.org and ThemeForest
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/7a2d78836bb2e807efa8d1ef05b0fece68e5ea5f) — _Add GitHub Actions workflow for static site deployment_
-- 🔀 Merged PR [#155](https://github.com/matthummel-pa/matthummel-theme/pull/155) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Unstick site header on mobile (3.5.8)
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/c8a541e9c6073e1a36d124ad3b029ceb21cc3b13) — _feat: differentiating features, redesigned admin, Theme Support page (v1.3.3)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/553d9fd67d2bf36115470347b8ec73005493747b) — _v1.3.2 — Accessibility, contrast, i18n, and documentation pass_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/8dbd16537807b0d374a0e73beee51614f3fcf7ef) — _Unstick site header on mobile (3.5.8)_
