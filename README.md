@@ -76,21 +76,21 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#75](https://github.com/matthummel-pa/wp-acreline/pull/75) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.1: premium newsletter / new-listings digest band
-- 🔀 Merged PR [#74](https://github.com/matthummel-pa/wp-acreline/pull/74) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.0: general real estate Gutenberg marketing pages
-- 🔀 Open PR [#73](https://github.com/matthummel-pa/wp-acreline/pull/73) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.4.8: default top bar to Accent so it tracks the color picker
-- 🔀 Merged PR [#72](https://github.com/matthummel-pa/wp-acreline/pull/72) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.4.7: CTA band follows the active color scheme
-- 🔀 Merged PR [#71](https://github.com/matthummel-pa/wp-acreline/pull/71) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.4.6: mobile-menu panel follows the active color scheme
+- 🔀 Merged PR [#161](https://github.com/matthummel-pa/matthummel-theme/pull/161) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — 3.5.11 Shop contrast and keyboard polish
+- 🔀 Open PR [#160](https://github.com/matthummel-pa/matthummel-theme/pull/160) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Checkout install notes so buyers can customize after purchase
+- 🔀 Merged PR [#159](https://github.com/matthummel-pa/matthummel-theme/pull/159) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Product shop polish, Services add-ons, and checkout install notes
 - 🔀 Open PR [#158](https://github.com/matthummel-pa/matthummel-theme/pull/158) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix shop listings on tablet and mobile, trim unused store CSS
-- 🔀 Merged PR [#70](https://github.com/matthummel-pa/wp-acreline/pull/70) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.4.5: header menu colors follow the active color scheme
-- 🔀 Merged PR [#69](https://github.com/matthummel-pa/wp-acreline/pull/69) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.4.4: persist hero motion settings + theme-colored top bar
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/4359bfa6872be8e3ce313b8d855cb1074cda178b) — _Homepage Ken Burns hero + optional mobile search tilt (1.4.3) (#68)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/846e4a0b1e6891a8a93df71a04709fbffee3e054) — _Show a full-bleed farmhouse photo on the homepage hero (#67)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/639b63f588c7ce4a212780aa62b491acdeef5764) — _Merge pull request #66 from matthummel-pa/cursor/guide-checklist-h3-headings-7979_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/0bd41a2c1528ce7f373c43f5e7f46381c7b0a440) — _Complete Gutenberg stacks on every marketing page (#65)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/4f6d76afbc70e93a31752e61b1dc9852e191269a) — _Fix From search to showing cards on tablet and mobile (#64)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/7a2d78836bb2e807efa8d1ef05b0fece68e5ea5f) — _Add GitHub Actions workflow for static site deployment_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/c8a541e9c6073e1a36d124ad3b029ceb21cc3b13) — _feat: differentiating features, redesigned admin, Theme Support page (v1.3.3)_
+- 🔀 Merged PR [#77](https://github.com/matthummel-pa/wp-acreline/pull/77) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.4: WCAG AA contrast pass across color schemes
+- 🔀 Merged PR [#73](https://github.com/matthummel-pa/wp-acreline/pull/73) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.3: default top bar to Accent so it tracks the color picker
+- 🔀 Merged PR [#75](https://github.com/matthummel-pa/wp-acreline/pull/75) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.2: premium newsletter / new-listings digest band
+- 🔀 Merged PR [#76](https://github.com/matthummel-pa/wp-acreline/pull/76) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.1: Gutenberg inspector pass, partners, newsletter, team intro
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c750b4c7573ad4677087b6462dae50fe71f80f2b) — _3.5.11 Shop contrast and keyboard polish_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/56cf4c0ecf0e6dcd20209f1bddb13afd2661623f) — _Product shop polish + Services Acreline add-ons (3.5.10)_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/7b85adb98075e333aa5eaa4bafbe4970f2457ae5) — _Merge pull request #76 from matthummel-pa/cursor/partners-newsletter-agents-3a74_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/2d07dcdbca03cb8d02cae563a7b5548b285e43df) — _1.5.0: general real estate Gutenberg marketing pages (#74)_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/87c4e545701787d0390cc63131185ef9cf7cc736) — _1.4.7: CTA band, top bar, and Settings color controls (#72)_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/efd6a1c0a252c792dea49a795f5ea844de8c272b) — _1.4.6: mobile-menu panel follows the active color scheme (#71)_
+- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/1fbb6a8d61672bbb86bbc2f87f42f65fc9e7f0fb) — _1.4.5: header menu colors follow the active color scheme (#70)_
 <!--END_SECTION:activity-->
 
 ---
