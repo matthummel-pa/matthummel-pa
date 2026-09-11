@@ -76,10 +76,10 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#160](https://github.com/matthummel-pa/matthummel-theme/pull/160) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Checkout install notes so buyers can customize after purchase
+- 🔀 Merged PR [#158](https://github.com/matthummel-pa/matthummel-theme/pull/158) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix shop listings on tablet and mobile, trim unused store CSS
 - 🔀 Merged PR [#161](https://github.com/matthummel-pa/matthummel-theme/pull/161) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — 3.5.11 Shop contrast and keyboard polish
-- 🔀 Open PR [#160](https://github.com/matthummel-pa/matthummel-theme/pull/160) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Checkout install notes so buyers can customize after purchase
 - 🔀 Merged PR [#159](https://github.com/matthummel-pa/matthummel-theme/pull/159) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Product shop polish, Services add-ons, and checkout install notes
-- 🔀 Open PR [#158](https://github.com/matthummel-pa/matthummel-theme/pull/158) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix shop listings on tablet and mobile, trim unused store CSS
 - 🔀 Merged PR [#77](https://github.com/matthummel-pa/wp-acreline/pull/77) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.4: WCAG AA contrast pass across color schemes
 - 🔀 Merged PR [#73](https://github.com/matthummel-pa/wp-acreline/pull/73) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.3: default top bar to Accent so it tracks the color picker
 - 🔀 Merged PR [#75](https://github.com/matthummel-pa/wp-acreline/pull/75) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.2: premium newsletter / new-listings digest band
