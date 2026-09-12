@@ -76,7 +76,7 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#164](https://github.com/matthummel-pa/matthummel-theme/pull/164) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Theme zip downloads after purchase, plus buyer update emails
+- 🔀 Open PR [#164](https://github.com/matthummel-pa/matthummel-theme/pull/164) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Theme zips after purchase (hummelwp.com shop)
 - 🔀 Open PR [#163](https://github.com/matthummel-pa/matthummel-theme/pull/163) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Point documented primary site to hummelwp.com
 - 🔀 Open PR [#162](https://github.com/matthummel-pa/matthummel-theme/pull/162) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add Hostinger + GitHub + WordPress workflow rules
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/d8a50e8277ad586cbdd19a83009fdaa9031ac022) — _Update theme purchase and demo links_
