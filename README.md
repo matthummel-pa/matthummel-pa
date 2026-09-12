@@ -16,7 +16,7 @@ Gettysburg, PA · Remote · Open for freelance, contract, or full-time
 <a href="https://matthummel.com/shop/"><img src="https://img.shields.io/badge/Shop_products-0F172A?style=for-the-badge" alt="Shop products" /></a>
 <a href="https://www.linkedin.com/in/matt-hummel-pa"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 
-[matthummel.com](https://matthummel.com)
+[hummelwp](https://hummelwp.com)
 
 <img src="https://komarev.com/ghpvc/?username=matthummel-pa&style=flat-square&color=2C5A95" alt="Profile views" />
 <img src="https://img.shields.io/badge/Open_for_work-2C5A95?style=flat-square" alt="Open for work" />
