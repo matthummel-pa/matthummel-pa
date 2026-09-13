@@ -76,7 +76,7 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#166](https://github.com/matthummel-pa/matthummel-theme/pull/166) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Tighten product pages: smaller H1s, blog body, section pills
+- 🔀 Merged PR [#166](https://github.com/matthummel-pa/matthummel-theme/pull/166) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Tighten product pages: smaller H1s, blog body, section pills
 - 🔀 Merged PR [#164](https://github.com/matthummel-pa/matthummel-theme/pull/164) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Theme zips after purchase (hummelwp.com shop)
 - 🔀 Open PR [#165](https://github.com/matthummel-pa/matthummel-theme/pull/165) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Shop a11y review and tighter product pages
 - 🔀 Open PR [#163](https://github.com/matthummel-pa/matthummel-theme/pull/163) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Point documented primary site to hummelwp.com
