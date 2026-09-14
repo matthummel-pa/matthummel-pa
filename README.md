@@ -76,16 +76,16 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
+- 🔀 Open PR [#78](https://github.com/matthummel-pa/wp-acreline/pull/78) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.5: restore the Gutenberg color picker
+- 🔀 Open PR [#171](https://github.com/matthummel-pa/matthummel-theme/pull/171) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — About sticky On this page nav (match Home)
+- 🔀 Merged PR [#170](https://github.com/matthummel-pa/matthummel-theme/pull/170) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Shop-first marketing cleanup (home + pages)
+- 🔀 Merged PR [#169](https://github.com/matthummel-pa/matthummel-theme/pull/169) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Home first impression: pathways, case studies, receive walkthrough
+- 🔀 Merged PR [#168](https://github.com/matthummel-pa/matthummel-theme/pull/168) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix Journal Grid/List toggle; remove sticky Latest hero
+- 🔀 Merged PR [#167](https://github.com/matthummel-pa/matthummel-theme/pull/167) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Product page: pills and article under gallery column
+- 🔀 Merged PR [#162](https://github.com/matthummel-pa/matthummel-theme/pull/162) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Move production to Hostinger (hummelwp.com)
 - 🔀 Merged PR [#166](https://github.com/matthummel-pa/matthummel-theme/pull/166) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Tighten product pages: smaller H1s, blog body, section pills
-- 🔀 Merged PR [#164](https://github.com/matthummel-pa/matthummel-theme/pull/164) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Theme zips after purchase (hummelwp.com shop)
-- 🔀 Open PR [#165](https://github.com/matthummel-pa/matthummel-theme/pull/165) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Shop a11y review and tighter product pages
-- 🔀 Open PR [#163](https://github.com/matthummel-pa/matthummel-theme/pull/163) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Point documented primary site to hummelwp.com
-- 🔀 Open PR [#162](https://github.com/matthummel-pa/matthummel-theme/pull/162) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add Hostinger + GitHub + WordPress workflow rules
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/d8a50e8277ad586cbdd19a83009fdaa9031ac022) — _Update theme purchase and demo links_
 - 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/9f8e68226e3de0ed91b55e5f0d40493737cc3c89) — _Update website link in README.md_
-- 🔀 Merged PR [#160](https://github.com/matthummel-pa/matthummel-theme/pull/160) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Checkout install notes so buyers can customize after purchase
-- 🔀 Merged PR [#158](https://github.com/matthummel-pa/matthummel-theme/pull/158) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix shop listings on tablet and mobile, trim unused store CSS
-- 🔀 Merged PR [#161](https://github.com/matthummel-pa/matthummel-theme/pull/161) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — 3.5.11 Shop contrast and keyboard polish
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c750b4c7573ad4677087b6462dae50fe71f80f2b) — _3.5.11 Shop contrast and keyboard polish_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/56cf4c0ecf0e6dcd20209f1bddb13afd2661623f) — _Product shop polish + Services Acreline add-ons (3.5.10)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/b61f255c6da5841a219e1a270fb77da93a7ec5fc) — _1.5.4: WCAG AA contrast pass across color schemes (#77)_
