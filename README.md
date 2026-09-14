@@ -76,14 +76,14 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#173](https://github.com/matthummel-pa/matthummel-theme/pull/173) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Increase shop page content area padding
+- 🔀 Merged PR [#174](https://github.com/matthummel-pa/matthummel-theme/pull/174) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix shop product grid edge padding
+- 🔀 Merged PR [#172](https://github.com/matthummel-pa/matthummel-theme/pull/172) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Cart, checkout & My Account desk: post-style layout + tools
+- 🔀 Merged PR [#171](https://github.com/matthummel-pa/matthummel-theme/pull/171) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — About sticky On this page nav (match Home)
 - 🔀 Open PR [#78](https://github.com/matthummel-pa/wp-acreline/pull/78) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.5: restore the Gutenberg color picker
-- 🔀 Open PR [#171](https://github.com/matthummel-pa/matthummel-theme/pull/171) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — About sticky On this page nav (match Home)
 - 🔀 Merged PR [#170](https://github.com/matthummel-pa/matthummel-theme/pull/170) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Shop-first marketing cleanup (home + pages)
 - 🔀 Merged PR [#169](https://github.com/matthummel-pa/matthummel-theme/pull/169) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Home first impression: pathways, case studies, receive walkthrough
 - 🔀 Merged PR [#168](https://github.com/matthummel-pa/matthummel-theme/pull/168) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix Journal Grid/List toggle; remove sticky Latest hero
-- 🔀 Merged PR [#167](https://github.com/matthummel-pa/matthummel-theme/pull/167) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Product page: pills and article under gallery column
-- 🔀 Merged PR [#162](https://github.com/matthummel-pa/matthummel-theme/pull/162) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Move production to Hostinger (hummelwp.com)
-- 🔀 Merged PR [#166](https://github.com/matthummel-pa/matthummel-theme/pull/166) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Tighten product pages: smaller H1s, blog body, section pills
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/d8a50e8277ad586cbdd19a83009fdaa9031ac022) — _Update theme purchase and demo links_
 - 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/9f8e68226e3de0ed91b55e5f0d40493737cc3c89) — _Update website link in README.md_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c750b4c7573ad4677087b6462dae50fe71f80f2b) — _3.5.11 Shop contrast and keyboard polish_
