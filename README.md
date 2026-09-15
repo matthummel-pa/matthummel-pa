@@ -76,7 +76,7 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#181](https://github.com/matthummel-pa/matthummel-theme/pull/181) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Bold blocky studio skin (3.5.30)
+- 🔀 Merged PR [#181](https://github.com/matthummel-pa/matthummel-theme/pull/181) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Bold blocky studio skin (3.5.30)
 - 🔀 Merged PR [#180](https://github.com/matthummel-pa/matthummel-theme/pull/180) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Simplify project page copy for hiring managers
 - 🔀 Merged PR [#179](https://github.com/matthummel-pa/matthummel-theme/pull/179) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Restore portfolio home and Projects CPT
 - 🔀 Merged PR [#177](https://github.com/matthummel-pa/matthummel-theme/pull/177) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sales-first homepage and product buy path
