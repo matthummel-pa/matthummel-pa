@@ -76,14 +76,14 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#184](https://github.com/matthummel-pa/matthummel-theme/pull/184) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Use matthummel.com as production; fix Woo notices
-- 🔀 Open PR [#185](https://github.com/matthummel-pa/matthummel-theme/pull/185) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Point theme deploy at matthummel.com
-- 🔀 Closed PR [#175](https://github.com/matthummel-pa/matthummel-theme/pull/175) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix Woo notices and use matthummel.com as production
-- 🔀 Merged PR [#183](https://github.com/matthummel-pa/matthummel-theme/pull/183) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix WooCommerce notice icons and padding (3.5.32)
-- 🔀 Merged PR [#182](https://github.com/matthummel-pa/matthummel-theme/pull/182) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Minimal blue portfolio: slim Home, About holds hire detail
-- 🔀 Merged PR [#181](https://github.com/matthummel-pa/matthummel-theme/pull/181) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Bold blocky studio skin (3.5.30)
-- 🔀 Merged PR [#180](https://github.com/matthummel-pa/matthummel-theme/pull/180) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Simplify project page copy for hiring managers
-- 🔀 Merged PR [#179](https://github.com/matthummel-pa/matthummel-theme/pull/179) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Restore portfolio home and Projects CPT
+- 🔀 Merged PR [#190](https://github.com/matthummel-pa/matthummel-theme/pull/190) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — 3.6.3 — Projects listing and singles on mobile
+- 🔀 Merged PR [#188](https://github.com/matthummel-pa/matthummel-theme/pull/188) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — 3.6.2 — Project gallery, GitHub facts, gray heroes
+- 🔀 Closed PR [#163](https://github.com/matthummel-pa/matthummel-theme/pull/163) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Point documented primary site to hummelwp.com
+- 🔀 Closed PR [#185](https://github.com/matthummel-pa/matthummel-theme/pull/185) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Point theme deploy at matthummel.com
+- 🔀 Closed PR [#178](https://github.com/matthummel-pa/matthummel-theme/pull/178) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add Cloud Agent browser GUI recording
+- 🔀 Closed PR [#165](https://github.com/matthummel-pa/matthummel-theme/pull/165) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Shop a11y review and tighter product pages
+- 🔀 Merged PR [#189](https://github.com/matthummel-pa/matthummel-theme/pull/189) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Grey heroes, white sections
+- 🔀 Closed PR [#187](https://github.com/matthummel-pa/matthummel-theme/pull/187) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Superseded by #186 — close (conflicts with main)
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/d8a50e8277ad586cbdd19a83009fdaa9031ac022) — _Update theme purchase and demo links_
 - 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/9f8e68226e3de0ed91b55e5f0d40493737cc3c89) — _Update website link in README.md_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c750b4c7573ad4677087b6462dae50fe71f80f2b) — _3.5.11 Shop contrast and keyboard polish_
