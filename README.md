@@ -76,14 +76,14 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
+- 🔀 Open PR [#184](https://github.com/matthummel-pa/matthummel-theme/pull/184) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Use matthummel.com as production; fix Woo notices
+- 🔀 Open PR [#185](https://github.com/matthummel-pa/matthummel-theme/pull/185) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Point theme deploy at matthummel.com
+- 🔀 Closed PR [#175](https://github.com/matthummel-pa/matthummel-theme/pull/175) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix Woo notices and use matthummel.com as production
+- 🔀 Merged PR [#183](https://github.com/matthummel-pa/matthummel-theme/pull/183) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix WooCommerce notice icons and padding (3.5.32)
 - 🔀 Merged PR [#182](https://github.com/matthummel-pa/matthummel-theme/pull/182) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Minimal blue portfolio: slim Home, About holds hire detail
 - 🔀 Merged PR [#181](https://github.com/matthummel-pa/matthummel-theme/pull/181) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Bold blocky studio skin (3.5.30)
 - 🔀 Merged PR [#180](https://github.com/matthummel-pa/matthummel-theme/pull/180) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Simplify project page copy for hiring managers
 - 🔀 Merged PR [#179](https://github.com/matthummel-pa/matthummel-theme/pull/179) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Restore portfolio home and Projects CPT
-- 🔀 Merged PR [#177](https://github.com/matthummel-pa/matthummel-theme/pull/177) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Sales-first homepage and product buy path
-- 🔀 Open PR [#178](https://github.com/matthummel-pa/matthummel-theme/pull/178) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Add Cloud Agent browser GUI recording
-- 🔀 Merged PR [#176](https://github.com/matthummel-pa/matthummel-theme/pull/176) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — About story: one WYSIWYG instead of four paragraph fields
-- 🔀 Open PR [#175](https://github.com/matthummel-pa/matthummel-theme/pull/175) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Fix WooCommerce notice icons and padding
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/d8a50e8277ad586cbdd19a83009fdaa9031ac022) — _Update theme purchase and demo links_
 - 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/9f8e68226e3de0ed91b55e5f0d40493737cc3c89) — _Update website link in README.md_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c750b4c7573ad4677087b6462dae50fe71f80f2b) — _3.5.11 Shop contrast and keyboard polish_
