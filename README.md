@@ -76,21 +76,21 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Merged PR [#196](https://github.com/matthummel-pa/matthummel-theme/pull/196) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Declare Cloud ports 8080/8081 for local WordPress
-- 🔀 Merged PR [#194](https://github.com/matthummel-pa/matthummel-theme/pull/194) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Grey tiles, list markers, FAQ toggles, architecture list, stats layout
-- 🔀 Merged PR [#195](https://github.com/matthummel-pa/matthummel-theme/pull/195) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Document one local WP install and port per project
-- 🔀 Merged PR [#193](https://github.com/matthummel-pa/matthummel-theme/pull/193) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Drop silver frames and gradients; use white space
-- 🔀 Open PR [#79](https://github.com/matthummel-pa/wp-acreline/pull/79) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — Add wordpress-studio-setup skill for local Acreline edits
-- 🔀 Merged PR [#192](https://github.com/matthummel-pa/matthummel-theme/pull/192) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Hug hero and project pill widths to their labels
-- 🔀 Merged PR [#191](https://github.com/matthummel-pa/matthummel-theme/pull/191) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — fix paragraph and heading spacing sitewide
-- 🔀 Merged PR [#190](https://github.com/matthummel-pa/matthummel-theme/pull/190) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — 3.6.3 — Projects listing and singles on mobile
+- 🔀 Open PR [#209](https://github.com/matthummel-pa/matthummel-theme/pull/209) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Restore hero snapshot photos and current-nav hover contrast
+- 🔀 Merged PR [#208](https://github.com/matthummel-pa/matthummel-theme/pull/208) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Center footer copyright on mobile
+- 🔀 Merged PR [#207](https://github.com/matthummel-pa/matthummel-theme/pull/207) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Project header pills and larger content headings
+- 🔀 Merged PR [#206](https://github.com/matthummel-pa/matthummel-theme/pull/206) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: footer social under Open for work, green hover not blue
+- 🔀 Merged PR [#205](https://github.com/matthummel-pa/matthummel-theme/pull/205) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: same On this page scroller on every multi-section page
+- 🔀 Merged PR [#204](https://github.com/matthummel-pa/matthummel-theme/pull/204) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Restore footer Get updates and simplified heroes
+- 🔀 Closed PR [#201](https://github.com/matthummel-pa/matthummel-theme/pull/201) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Footer Get updates, simple heroes, visible hover
+- 🔀 Closed PR [#203](https://github.com/matthummel-pa/matthummel-theme/pull/203) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Visible blue hover on footer and all links
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/516838228c5e76a080e2a4b970b4ae150ba8b2e5) — _fix(cloud): declare WordPress ports for Simple Browser forwarding (#196)_
+- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/511bedeb64a86d407d31f6228ba234d37f2002c2) — _fix paragraph and heading spacing sitewide (#191)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/d8a50e8277ad586cbdd19a83009fdaa9031ac022) — _Update theme purchase and demo links_
 - 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/9f8e68226e3de0ed91b55e5f0d40493737cc3c89) — _Update website link in README.md_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c750b4c7573ad4677087b6462dae50fe71f80f2b) — _3.5.11 Shop contrast and keyboard polish_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/56cf4c0ecf0e6dcd20209f1bddb13afd2661623f) — _Product shop polish + Services Acreline add-ons (3.5.10)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/b61f255c6da5841a219e1a270fb77da93a7ec5fc) — _1.5.4: WCAG AA contrast pass across color schemes (#77)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/3058f739af1a5d49bb9169d8cbc1c5926ebdbc18) — _1.5.3: default top bar to Accent so it tracks the color picker (#73)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/a89ac90fe9b68e8a0eaa79739c5ae9b22de5992c) — _1.5.2: premium newsletter / new-listings digest band (#75)_
 <!--END_SECTION:activity-->
 
 ---
