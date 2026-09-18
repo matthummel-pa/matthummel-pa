@@ -76,14 +76,14 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#211](https://github.com/matthummel-pa/matthummel-theme/pull/211) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Full-width hero copy panel
+- 🔀 Open PR [#212](https://github.com/matthummel-pa/matthummel-theme/pull/212) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Give the On this page bar more desktop padding
+- 🔀 Merged PR [#211](https://github.com/matthummel-pa/matthummel-theme/pull/211) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Full-width hero copy panel
 - 🔀 Merged PR [#210](https://github.com/matthummel-pa/matthummel-theme/pull/210) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Featured-image heroes with white panel and wave
 - 🔀 Merged PR [#209](https://github.com/matthummel-pa/matthummel-theme/pull/209) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Restore hero snapshot photos and current-nav hover contrast
 - 🔀 Merged PR [#208](https://github.com/matthummel-pa/matthummel-theme/pull/208) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Center footer copyright on mobile
 - 🔀 Merged PR [#207](https://github.com/matthummel-pa/matthummel-theme/pull/207) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Project header pills and larger content headings
 - 🔀 Merged PR [#206](https://github.com/matthummel-pa/matthummel-theme/pull/206) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: footer social under Open for work, green hover not blue
 - 🔀 Merged PR [#205](https://github.com/matthummel-pa/matthummel-theme/pull/205) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: same On this page scroller on every multi-section page
-- 🔀 Merged PR [#204](https://github.com/matthummel-pa/matthummel-theme/pull/204) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Restore footer Get updates and simplified heroes
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/516838228c5e76a080e2a4b970b4ae150ba8b2e5) — _fix(cloud): declare WordPress ports for Simple Browser forwarding (#196)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/511bedeb64a86d407d31f6228ba234d37f2002c2) — _fix paragraph and heading spacing sitewide (#191)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/d8a50e8277ad586cbdd19a83009fdaa9031ac022) — _Update theme purchase and demo links_
