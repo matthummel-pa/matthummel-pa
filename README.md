@@ -76,21 +76,21 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#4](https://github.com/matthummel-pa/wp-walkridge/pull/4) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — chore: production theme zip (do not merge)
+- ⭐ Starred [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)
+- 🔀 Merged PR [#2](https://github.com/matthummel-pa/wp-walkridge/pull/2) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Add WPVibe OAuth MCP server
+- 🔀 Merged PR [#1](https://github.com/matthummel-pa/wp-walkridge/pull/1) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Restore Walkridge pages and Acreline-style Sage setup
+- 🔀 Merged PR [#3](https://github.com/matthummel-pa/wp-walkridge/pull/3) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge block collection and theme-aware Area Map
+- 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/b4ec3e661e42d51c3ecfe26483e6ff5712060fb6) — _Merge pull request #4 from matthummel-pa/cursor/theme-release-zip-ca24_
 - 🔀 Merged PR [#213](https://github.com/matthummel-pa/matthummel-theme/pull/213) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Give page heroes more top and bottom padding
 - 🔀 Merged PR [#212](https://github.com/matthummel-pa/matthummel-theme/pull/212) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Give the On this page bar more desktop padding
 - 🔀 Merged PR [#211](https://github.com/matthummel-pa/matthummel-theme/pull/211) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Full-width hero copy panel
 - 🔀 Merged PR [#210](https://github.com/matthummel-pa/matthummel-theme/pull/210) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Featured-image heroes with white panel and wave
-- 🔀 Merged PR [#209](https://github.com/matthummel-pa/matthummel-theme/pull/209) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Restore hero snapshot photos and current-nav hover contrast
-- 🔀 Merged PR [#208](https://github.com/matthummel-pa/matthummel-theme/pull/208) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Center footer copyright on mobile
-- 🔀 Merged PR [#207](https://github.com/matthummel-pa/matthummel-theme/pull/207) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Project header pills and larger content headings
-- 🔀 Merged PR [#206](https://github.com/matthummel-pa/matthummel-theme/pull/206) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — feat: footer social under Open for work, green hover not blue
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/516838228c5e76a080e2a4b970b4ae150ba8b2e5) — _fix(cloud): declare WordPress ports for Simple Browser forwarding (#196)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/511bedeb64a86d407d31f6228ba234d37f2002c2) — _fix paragraph and heading spacing sitewide (#191)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/d8a50e8277ad586cbdd19a83009fdaa9031ac022) — _Update theme purchase and demo links_
 - 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/9f8e68226e3de0ed91b55e5f0d40493737cc3c89) — _Update website link in README.md_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c750b4c7573ad4677087b6462dae50fe71f80f2b) — _3.5.11 Shop contrast and keyboard polish_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/56cf4c0ecf0e6dcd20209f1bddb13afd2661623f) — _Product shop polish + Services Acreline add-ons (3.5.10)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/b61f255c6da5841a219e1a270fb77da93a7ec5fc) — _1.5.4: WCAG AA contrast pass across color schemes (#77)_
 <!--END_SECTION:activity-->
 
 ---
