@@ -76,6 +76,7 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
+- 🔀 Open PR [#7](https://github.com/matthummel-pa/wp-walkridge/pull/7) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.6.0 light default, a11y, Woo, denser pages
 - 🔀 Merged PR [#6](https://github.com/matthummel-pa/wp-walkridge/pull/6) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.5.0 cumulative release
 - 🔀 Merged PR [#5](https://github.com/matthummel-pa/wp-walkridge/pull/5) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.4.1 GitHub Release theme updates
 - 🔀 Merged PR [#4](https://github.com/matthummel-pa/wp-walkridge/pull/4) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — chore: production theme zip (do not merge)
@@ -85,7 +86,6 @@ Auto-refreshed from public GitHub work.
 - 🔀 Merged PR [#3](https://github.com/matthummel-pa/wp-walkridge/pull/3) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge block collection and theme-aware Area Map
 - 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/b4ec3e661e42d51c3ecfe26483e6ff5712060fb6) — _Merge pull request #4 from matthummel-pa/cursor/theme-release-zip-ca24_
 - 🔀 Merged PR [#213](https://github.com/matthummel-pa/matthummel-theme/pull/213) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Give page heroes more top and bottom padding
-- 🔀 Merged PR [#212](https://github.com/matthummel-pa/matthummel-theme/pull/212) in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) — Give the On this page bar more desktop padding
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/516838228c5e76a080e2a4b970b4ae150ba8b2e5) — _fix(cloud): declare WordPress ports for Simple Browser forwarding (#196)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/511bedeb64a86d407d31f6228ba234d37f2002c2) — _fix paragraph and heading spacing sitewide (#191)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/d8a50e8277ad586cbdd19a83009fdaa9031ac022) — _Update theme purchase and demo links_
