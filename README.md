@@ -76,7 +76,7 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Open PR [#17](https://github.com/matthummel-pa/tocflow/pull/17) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — Rebrand WordPress.org listing to TOCguide / tocguide
+- 🔀 Merged PR [#17](https://github.com/matthummel-pa/tocflow/pull/17) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — Rebrand WordPress.org listing to TOCguide / tocguide
 - 🔀 Open PR [#9](https://github.com/matthummel-pa/wp-walkridge/pull/9) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.7.0 light default, navbar, and Woo UX
 - 🔀 Open PR [#8](https://github.com/matthummel-pa/wp-walkridge/pull/8) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Seed WooCommerce tour products to match the Tours page
 - 🔀 Open PR [#7](https://github.com/matthummel-pa/wp-walkridge/pull/7) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.6.0 light default, a11y, Woo, denser pages
