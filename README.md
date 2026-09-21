@@ -76,21 +76,21 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Merged PR [#17](https://github.com/matthummel-pa/tocflow/pull/17) in [matthummel-pa/tocflow](https://github.com/matthummel-pa/tocflow) — Rebrand WordPress.org listing to TOCguide / tocguide
-- 🔀 Open PR [#9](https://github.com/matthummel-pa/wp-walkridge/pull/9) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.7.0 light default, navbar, and Woo UX
-- 🔀 Open PR [#8](https://github.com/matthummel-pa/wp-walkridge/pull/8) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Seed WooCommerce tour products to match the Tours page
-- 🔀 Open PR [#7](https://github.com/matthummel-pa/wp-walkridge/pull/7) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.6.0 light default, a11y, Woo, denser pages
+- 🔀 Merged PR [#10](https://github.com/matthummel-pa/wp-walkridge/pull/10) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.7.1 nav labels, Customizer load, Woo notices
 - 🔀 Merged PR [#6](https://github.com/matthummel-pa/wp-walkridge/pull/6) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.5.0 cumulative release
 - 🔀 Merged PR [#5](https://github.com/matthummel-pa/wp-walkridge/pull/5) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.4.1 GitHub Release theme updates
 - 🔀 Merged PR [#4](https://github.com/matthummel-pa/wp-walkridge/pull/4) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — chore: production theme zip (do not merge)
+- 🔀 Merged PR [#7](https://github.com/matthummel-pa/wp-walkridge/pull/7) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.6.0 light default, a11y, Woo, denser pages
+- 🔀 Merged PR [#8](https://github.com/matthummel-pa/wp-walkridge/pull/8) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Seed WooCommerce tour products to match the Tours page
+- 🔀 Merged PR [#9](https://github.com/matthummel-pa/wp-walkridge/pull/9) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.7.0 light default, navbar, and Woo UX
+- 🔀 Merged PR [#19](https://github.com/matthummel-pa/tocguide/pull/19) in [matthummel-pa/tocguide](https://github.com/matthummel-pa/tocguide) — Refresh GitHub Pages homepage about copy
+- 🚀 Commit in [matthummel-pa/tocguide](https://github.com/matthummel-pa/tocguide/commit/56fcf25aab042b62623e32b73bc9ca412b253bd0) — _Update links and CI badge in README.md_
 - ⭐ Starred [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)
-- 🔀 Merged PR [#2](https://github.com/matthummel-pa/wp-walkridge/pull/2) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Add WPVibe OAuth MCP server
 - 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/b4ec3e661e42d51c3ecfe26483e6ff5712060fb6) — _Merge pull request #4 from matthummel-pa/cursor/theme-release-zip-ca24_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/516838228c5e76a080e2a4b970b4ae150ba8b2e5) — _fix(cloud): declare WordPress ports for Simple Browser forwarding (#196)_
 - 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/511bedeb64a86d407d31f6228ba234d37f2002c2) — _fix paragraph and heading spacing sitewide (#191)_
 - 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/d8a50e8277ad586cbdd19a83009fdaa9031ac022) — _Update theme purchase and demo links_
 - 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/9f8e68226e3de0ed91b55e5f0d40493737cc3c89) — _Update website link in README.md_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/c750b4c7573ad4677087b6462dae50fe71f80f2b) — _3.5.11 Shop contrast and keyboard polish_
 <!--END_SECTION:activity-->
 
 ---
