@@ -76,14 +76,14 @@ A short note is plenty. I usually reply within one business day (ET).
 Auto-refreshed from public GitHub work.
 
 <!--START_SECTION:activity-->
-- 🔀 Merged PR [#10](https://github.com/matthummel-pa/wp-walkridge/pull/10) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.7.1 nav labels, Customizer load, Woo notices
-- 🔀 Merged PR [#6](https://github.com/matthummel-pa/wp-walkridge/pull/6) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.5.0 cumulative release
-- 🔀 Merged PR [#5](https://github.com/matthummel-pa/wp-walkridge/pull/5) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.4.1 GitHub Release theme updates
-- 🔀 Merged PR [#4](https://github.com/matthummel-pa/wp-walkridge/pull/4) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — chore: production theme zip (do not merge)
-- 🔀 Merged PR [#7](https://github.com/matthummel-pa/wp-walkridge/pull/7) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.6.0 light default, a11y, Woo, denser pages
-- 🔀 Merged PR [#8](https://github.com/matthummel-pa/wp-walkridge/pull/8) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Seed WooCommerce tour products to match the Tours page
-- 🔀 Merged PR [#9](https://github.com/matthummel-pa/wp-walkridge/pull/9) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.7.0 light default, navbar, and Woo UX
-- 🔀 Merged PR [#19](https://github.com/matthummel-pa/tocguide/pull/19) in [matthummel-pa/tocguide](https://github.com/matthummel-pa/tocguide) — Refresh GitHub Pages homepage about copy
+- 🔀 Open PR [#81](https://github.com/matthummel-pa/wp-acreline/pull/81) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.6: mobile menu and listing JS fail on first tap
+- 🔀 Closed PR [#15](https://github.com/matthummel-pa/wp-walkridge/pull/15) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — README: Walkridge 1.7.2 current, portfolio not theme shop
+- 🔀 Merged PR [#78](https://github.com/matthummel-pa/wp-acreline/pull/78) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.5: restore the Gutenberg color picker
+- 🔀 Open PR [#80](https://github.com/matthummel-pa/wp-acreline/pull/80) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.5: public settings, color chip, readable pills, new screenshots
+- 🔀 Merged PR [#14](https://github.com/matthummel-pa/wp-walkridge/pull/14) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Marketing README, full support docs, and store screenshots
+- 🔀 Merged PR [#13](https://github.com/matthummel-pa/wp-walkridge/pull/13) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.7.2 combine Gutenberg seed fix + WCAG/UX
+- 🔀 Closed PR [#11](https://github.com/matthummel-pa/wp-walkridge/pull/11) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Fix Gutenberg block comments leaking as visible HTML
+- 🔀 Closed PR [#12](https://github.com/matthummel-pa/wp-walkridge/pull/12) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.7.2 WCAG and UX after live review
 - 🚀 Commit in [matthummel-pa/tocguide](https://github.com/matthummel-pa/tocguide/commit/56fcf25aab042b62623e32b73bc9ca412b253bd0) — _Update links and CI badge in README.md_
 - ⭐ Starred [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)
 - 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/b4ec3e661e42d51c3ecfe26483e6ff5712060fb6) — _Merge pull request #4 from matthummel-pa/cursor/theme-release-zip-ca24_
