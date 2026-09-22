@@ -28,11 +28,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Pages must already use "GitHub Actions" as the source
+      # (Settings → Pages). Do not pass enablement:true — the
+      # GITHUB_TOKEN cannot create a Pages site in this repo.
       - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          # First deploy: turn on Pages (Actions source) if the repo never had it.
-          enablement: true
 
       - name: Upload game
         uses: actions/upload-pages-artifact@v3
