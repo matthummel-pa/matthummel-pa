@@ -18,9 +18,9 @@ if (! defined('ABSPATH')) {
 	<main class="page">
 		<p class="page-kicker"><?php esc_html_e('Mini player · Git Blocks', 'git-blocks'); ?></p>
 		<h1><?php esc_html_e('Git Blocks', 'git-blocks'); ?></h1>
-		<p class="page-lead"><?php esc_html_e('Stack commit pieces, squash clusters of 4+ matching kinds, fill rows to deploy, and ride cascade pipelines.', 'git-blocks'); ?></p>
+		<p class="page-lead"><?php esc_html_e('Jewel-style match-3 — swap adjacent web-dev logo gems, match 3+, and ride cascade pipelines.', 'git-blocks'); ?></p>
 
-		<section class="player" data-git-blocks aria-label="<?php esc_attr_e('Git Blocks game player', 'git-blocks'); ?>">
+		<section class="player" data-git-blocks aria-label="<?php esc_attr_e('Git Blocks gem matching game', 'git-blocks'); ?>">
 			<div class="player-chrome">
 				<div class="traffic" aria-hidden="true"><span></span><span></span><span></span></div>
 				<div class="player-title"><?php esc_html_e('Git Blocks', 'git-blocks'); ?></div>
@@ -35,12 +35,12 @@ if (! defined('ABSPATH')) {
 			<div class="player-screen">
 				<div class="board-wrap">
 					<div class="dev-clouds pattern-drift" data-dev-clouds aria-hidden="true"></div>
-					<canvas data-board width="240" height="480" tabindex="0" role="application" aria-label="<?php esc_attr_e('Git Blocks board. Scroll moves, right-click rotates, drag sideways.', 'git-blocks'); ?>"></canvas>
+					<canvas data-board width="480" height="480" tabindex="0" role="application" aria-label="<?php esc_attr_e('Git Blocks gem board. Click a gem, then an adjacent gem to swap.', 'git-blocks'); ?>"></canvas>
 					<div class="overlay is-clickable" data-overlay>
 						<div>
 							<p class="overlay-level" data-overlay-level hidden><?php esc_html_e('Level 1', 'git-blocks'); ?></p>
 							<h2 data-overlay-title><?php esc_html_e('Git Blocks', 'git-blocks'); ?></h2>
-							<p data-overlay-body><?php esc_html_e('Pieces fall on a timer — squash matching clusters · deploy full rows · don\'t let the backlog hit production.', 'git-blocks'); ?></p>
+							<p data-overlay-body><?php esc_html_e('Swap adjacent web-dev logo gems. Match 3+ in a row or column. Cascades chain for big scores.', 'git-blocks'); ?></p>
 							<button type="button" data-play><?php esc_html_e('Start sprint', 'git-blocks'); ?></button>
 						</div>
 					</div>
@@ -48,39 +48,30 @@ if (! defined('ABSPATH')) {
 				<aside class="side">
 					<div class="stats-row">
 						<div class="stat"><span><?php esc_html_e('Score', 'git-blocks'); ?></span><strong data-score>0</strong></div>
-						<div class="stat"><span><?php esc_html_e('Shipped', 'git-blocks'); ?></span><strong data-lines>0</strong></div>
+						<div class="stat"><span><?php esc_html_e('Cleared', 'git-blocks'); ?></span><strong data-lines>0</strong></div>
 						<div class="stat"><span><?php esc_html_e('Sprint', 'git-blocks'); ?></span><strong data-level>1</strong></div>
 						<div class="stat"><span><?php esc_html_e('Best', 'git-blocks'); ?></span><strong data-high>0</strong></div>
 					</div>
 					<div class="stats-row compact">
+						<div class="stat"><span><?php esc_html_e('Moves', 'git-blocks'); ?></span><strong data-moves>32</strong></div>
 						<div class="stat"><span><?php esc_html_e('Combo', 'git-blocks'); ?></span><strong data-combo>0</strong></div>
-						<div class="stat"><span><?php esc_html_e('Deploys', 'git-blocks'); ?></span><strong data-deploys>0</strong></div>
-						<div class="stat"><span><?php esc_html_e('Squashes', 'git-blocks'); ?></span><strong data-squashes>0</strong></div>
+						<div class="stat"><span><?php esc_html_e('Goal', 'git-blocks'); ?></span><strong data-goal>0/800</strong></div>
 					</div>
 					<p class="sprint-name" data-sprint>v0.1 scaffold</p>
-					<div class="trays">
-						<div class="tray"><span><?php esc_html_e('Stash', 'git-blocks'); ?></span><div data-hold></div></div>
-						<div class="tray"><span><?php esc_html_e('Queue', 'git-blocks'); ?></span><div data-next></div></div>
+					<div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="<?php esc_attr_e('Sprint goal', 'git-blocks'); ?>">
+						<span data-progress></span>
 					</div>
-					<p class="message" data-message><?php esc_html_e('Press Start sprint — pieces fall like Tetris.', 'git-blocks'); ?></p>
+					<p class="message" data-message><?php esc_html_e('Swap adjacent gems — match 3+ logos.', 'git-blocks'); ?></p>
 					<div class="power-row">
-						<button type="button" class="ghost" data-git-clean><?php esc_html_e('git clean (1)', 'git-blocks'); ?></button>
-						<button type="button" class="ghost" data-force-push><?php esc_html_e('force-push (1)', 'git-blocks'); ?></button>
+						<button type="button" class="ghost" data-hint><?php esc_html_e('Hint (2)', 'git-blocks'); ?></button>
+						<button type="button" class="ghost" data-shuffle><?php esc_html_e('Shuffle (2)', 'git-blocks'); ?></button>
 					</div>
-					<ul class="commit-log" data-commit-log aria-label="<?php esc_attr_e('Commit log', 'git-blocks'); ?>"></ul>
+					<div class="gem-legend" data-gem-legend aria-label="<?php esc_attr_e('Gem logos', 'git-blocks'); ?>"></div>
+					<ul class="commit-log" data-commit-log aria-label="<?php esc_attr_e('Match log', 'git-blocks'); ?>"></ul>
 					<div class="badge-row" data-badges aria-label="<?php esc_attr_e('Achievements', 'git-blocks'); ?>"></div>
 					<div class="player-dock">
-						<span class="controls-label"><?php esc_html_e('Controls', 'git-blocks'); ?></span>
-						<div class="pad" role="group" aria-label="<?php esc_attr_e('Game controls', 'git-blocks'); ?>">
-							<button type="button" data-move="left" aria-label="<?php esc_attr_e('Move left', 'git-blocks'); ?>">←</button>
-							<button type="button" data-move="rotate" aria-label="<?php esc_attr_e('Rotate clockwise', 'git-blocks'); ?>">↻</button>
-							<button type="button" data-move="right" aria-label="<?php esc_attr_e('Move right', 'git-blocks'); ?>">→</button>
-							<button type="button" data-move="down" aria-label="<?php esc_attr_e('Soft drop', 'git-blocks'); ?>">↓</button>
-							<button type="button" class="ghost" data-move="hold"><?php esc_html_e('Hold', 'git-blocks'); ?></button>
-							<button type="button" data-move="rotate-ccw" aria-label="<?php esc_attr_e('Rotate counter-clockwise', 'git-blocks'); ?>">↺</button>
-							<button type="button" data-move="drop"><?php esc_html_e('Hard drop', 'git-blocks'); ?></button>
-						</div>
-						<p class="keys" data-keys-help><?php esc_html_e('Arrows move · ↑ rotate · Space hard drop · Customize for more', 'git-blocks'); ?></p>
+						<span class="controls-label"><?php esc_html_e('How to play', 'git-blocks'); ?></span>
+						<p class="keys" data-keys-help><?php esc_html_e('Click a gem, then an adjacent gem to swap · or drag between neighbors · H hint · match 3+', 'git-blocks'); ?></p>
 					</div>
 				</aside>
 				<div class="customize-panel" data-customize-panel hidden>
@@ -91,7 +82,6 @@ if (! defined('ABSPATH')) {
 					<div class="customize-tabs" role="tablist">
 						<button type="button" class="is-active" data-tab="look" role="tab" aria-selected="true"><?php esc_html_e('Look', 'git-blocks'); ?></button>
 						<button type="button" data-tab="music" role="tab" aria-selected="false"><?php esc_html_e('Music', 'git-blocks'); ?></button>
-						<button type="button" data-tab="controls" role="tab" aria-selected="false"><?php esc_html_e('Controls', 'git-blocks'); ?></button>
 						<button type="button" data-tab="share" role="tab" aria-selected="false"><?php esc_html_e('Share', 'git-blocks'); ?></button>
 					</div>
 
@@ -139,23 +129,6 @@ if (! defined('ABSPATH')) {
 							<button type="button" class="ghost" data-music-preview><?php esc_html_e('Preview', 'git-blocks'); ?></button>
 							<button type="button" data-music-apply><?php esc_html_e('Play track', 'git-blocks'); ?></button>
 							<button type="button" class="ghost" data-music-stop><?php esc_html_e('Stop', 'git-blocks'); ?></button>
-						</div>
-						<p class="customize-hint"><?php esc_html_e('Preview game SFX', 'git-blocks'); ?></p>
-						<div class="row-actions wrap sfx-row">
-							<button type="button" class="ghost" data-sfx-preview="move"><?php esc_html_e('Move', 'git-blocks'); ?></button>
-							<button type="button" class="ghost" data-sfx-preview="rotate"><?php esc_html_e('Rotate', 'git-blocks'); ?></button>
-							<button type="button" class="ghost" data-sfx-preview="drop"><?php esc_html_e('Drop', 'git-blocks'); ?></button>
-							<button type="button" class="ghost" data-sfx-preview="clear"><?php esc_html_e('Clear', 'git-blocks'); ?></button>
-							<button type="button" class="ghost" data-sfx-preview="start"><?php esc_html_e('Start', 'git-blocks'); ?></button>
-						</div>
-					</section>
-
-					<section class="customize-pane" data-pane="controls" hidden>
-						<p class="customize-hint"><?php esc_html_e('Click a key chip, then press a new key. Mouse menus remap board gestures.', 'git-blocks'); ?></p>
-						<div class="bindings-grid" data-key-bindings></div>
-						<div class="bindings-grid mouse" data-mouse-bindings></div>
-						<div class="row-actions">
-							<button type="button" class="ghost" data-bindings-reset><?php esc_html_e('Reset controls', 'git-blocks'); ?></button>
 						</div>
 					</section>
 

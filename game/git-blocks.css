@@ -135,7 +135,7 @@ body {
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(200px, 280px);
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
   gap: 0;
   padding: 0;
   position: relative;
@@ -155,7 +155,7 @@ body {
   display: grid;
   place-items: center;
   overflow: hidden;
-  cursor: crosshair;
+  cursor: pointer;
 }
 
 canvas[data-board] {
@@ -164,6 +164,8 @@ canvas[data-board] {
   max-width: 100%;
   max-height: 100%;
   background: transparent;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
 }
 
 .overlay {
@@ -242,11 +244,52 @@ canvas[data-board] {
 
 .stats-row.compact .stat strong { font-size: 0.95rem; }
 
-.trays {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px;
+.goal-bar {
+  height: 8px;
+  border-radius: 99px;
+  background: #101a2b;
+  border: 1px solid var(--line);
+  overflow: hidden;
   flex: 0 0 auto;
+}
+
+.goal-bar span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #4f8fd4, #61dafb);
+  transition: width 0.25s ease;
+}
+
+.gem-legend {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 4px;
+  flex: 0 0 auto;
+  max-height: 5.5rem;
+  overflow: hidden;
+}
+
+.gem-legend-item {
+  display: grid;
+  justify-items: center;
+  gap: 1px;
+  font-size: 8px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.gem-legend-item canvas {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.trays,
+.concept-note,
+.pad {
+  display: none;
 }
 
 .gb-mini {

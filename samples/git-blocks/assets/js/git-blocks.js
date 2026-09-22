@@ -1,5 +1,6 @@
 /**
- * Git Blocks — a small tetris-style cabinet for Matt's GitHub profile.
+ * Git Blocks — Jewel Quest–style match-3 cabinet for Matt's GitHub profile.
+ * Swap adjacent web-dev logo gems. Match 3+ in a row or column. Cascades score big.
  * Works in the browser (canvas player) and in Node (engine unit tests).
  */
 (function (root, factory) {
@@ -11,61 +12,28 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   "use strict";
 
-  const COLS = 10;
-  const ROWS = 20;
-  const KINDS = ["I", "O", "T", "S", "Z", "J", "L"];
-  const SHAPES = {
-    I: [
-      [0, 0, 0, 0],
-      [1, 1, 1, 1],
-      [0, 0, 0, 0],
-      [0, 0, 0, 0],
-    ],
-    O: [
-      [1, 1],
-      [1, 1],
-    ],
-    T: [
-      [0, 1, 0],
-      [1, 1, 1],
-      [0, 0, 0],
-    ],
-    S: [
-      [0, 1, 1],
-      [1, 1, 0],
-      [0, 0, 0],
-    ],
-    Z: [
-      [1, 1, 0],
-      [0, 1, 1],
-      [0, 0, 0],
-    ],
-    J: [
-      [1, 0, 0],
-      [1, 1, 1],
-      [0, 0, 0],
-    ],
-    L: [
-      [0, 0, 1],
-      [1, 1, 1],
-      [0, 0, 0],
-    ],
-  };
-  const META = {
-    I: { label: "commit", color: "#5ec8d8", tip: "Long commit — clear four lines" },
-    O: { label: "stash", color: "#e7c35a", tip: "Stash square — park it for later" },
-    T: { label: "merge", color: "#8b7ce0", tip: "Merge T — spin into tight gaps" },
-    S: { label: "star", color: "#3d8b6e", tip: "Star S — offset pair" },
-    Z: { label: "hotfix", color: "#d45d5d", tip: "Hotfix Z — urgent zigzag" },
-    J: { label: "branch", color: "#4f8fd4", tip: "Branch J — hook left" },
-    L: { label: "review", color: "#e08a4a", tip: "Review L — hook right" },
-  };
-  const CLEARS = {
-    1: { points: 100, message: "feat: land a clean commit", label: "commit" },
-    2: { points: 300, message: "fix: unstick the merge", label: "fix" },
-    3: { points: 500, message: "refactor: smaller pieces", label: "refactor" },
-    4: { points: 800, message: "chore: ship the whole stack", label: "deploy" },
-  };
+  const SIZE = 8;
+  const COLS = SIZE;
+  const ROWS = SIZE;
+  const MATCH_MIN = 3;
+
+  /** Ten shiny web-dev logo gems (stylized marks — not official trademarks). */
+  const GEMS = [
+    { id: "html", label: "HTML", color: "#e34c26", accent: "#ff7a4d", ink: "#ffffff", mark: "html" },
+    { id: "css", label: "CSS", color: "#264de4", accent: "#5b8cff", ink: "#ffffff", mark: "css" },
+    { id: "js", label: "JS", color: "#f0db4f", accent: "#fff3a0", ink: "#1a1a1a", mark: "js" },
+    { id: "ts", label: "TS", color: "#3178c6", accent: "#6aa8e8", ink: "#ffffff", mark: "ts" },
+    { id: "react", label: "React", color: "#61dafb", accent: "#b6f0ff", ink: "#0b1220", mark: "react" },
+    { id: "php", label: "PHP", color: "#777bb4", accent: "#a8abe0", ink: "#ffffff", mark: "php" },
+    { id: "wp", label: "WP", color: "#21759b", accent: "#4fa8ce", ink: "#ffffff", mark: "wp" },
+    { id: "git", label: "Git", color: "#f05032", accent: "#ff8a6e", ink: "#ffffff", mark: "git" },
+    { id: "node", label: "Node", color: "#339933", accent: "#6dcf6d", ink: "#ffffff", mark: "node" },
+    { id: "npm", label: "npm", color: "#cb3837", accent: "#f06a68", ink: "#ffffff", mark: "npm" },
+  ];
+
+  const GEM_IDS = GEMS.map((g) => g.id);
+  const META = Object.fromEntries(GEMS.map((g) => [g.id, g]));
+
   const SPRINT_NAMES = [
     "v0.1 scaffold",
     "alpha spike",
@@ -88,318 +56,295 @@
     "zero-bug",
     "legendary",
   ];
+
   const ACHIEVEMENTS = [
-    { id: "first-commit", label: "First commit", test: (s) => s.lines >= 1 },
-    { id: "ship-it", label: "Ship a deploy", test: (s) => s.deploys >= 1 },
-    { id: "squash-king", label: "Squash merge", test: (s) => s.squashes >= 1 },
-    { id: "combo-3", label: "Pipeline ×3", test: (s) => s.maxCombo >= 3 },
-    { id: "green-ci", label: "Green CI", test: (s) => s.perfectClears >= 1 },
-    { id: "cascade", label: "Cascade hero", test: (s) => s.maxChain >= 3 },
+    { id: "first-match", label: "First match", test: (s) => s.matches >= 1 },
+    { id: "cascade-3", label: "Cascade ×3", test: (s) => s.maxChain >= 3 },
+    { id: "combo-5", label: "Combo ×5", test: (s) => s.maxCombo >= 5 },
+    { id: "clear-50", label: "50 gems", test: (s) => s.cleared >= 50 },
     { id: "sprint-5", label: "Sprint 5", test: (s) => s.level >= 5 },
-    { id: "force-push", label: "Force push", test: (s) => s.forcePushes >= 1 },
+    { id: "four-line", label: "Quad match", test: (s) => s.quads >= 1 },
+    { id: "shuffle", label: "Reshuffle", test: (s) => s.shufflesUsed >= 1 },
+    { id: "hint-pro", label: "Hint used", test: (s) => s.hintsUsed >= 1 },
   ];
-  // SRS-lite kicks: try in place, then nudge on X/Y so wall/floor spins succeed.
-  const KICKS = [
-    [0, 0],
-    [-1, 0],
-    [1, 0],
-    [0, -1],
-    [-2, 0],
-    [2, 0],
-    [0, 1],
-    [-1, -1],
-    [1, -1],
-    [-1, 1],
-    [1, 1],
-    [-2, -1],
-    [2, -1],
-    [0, -2],
-  ];
-
-  function cloneMatrix(matrix) {
-    return matrix.map((row) => row.slice());
-  }
-
-  function rotate(matrix, dir) {
-    const rows = matrix.length;
-    const cols = matrix[0].length;
-    const size = Math.max(rows, cols);
-    const square = Array.from({ length: size }, (_, y) =>
-      Array.from({ length: size }, (_, x) => (matrix[y] && matrix[y][x] ? 1 : 0))
-    );
-    const next = Array.from({ length: size }, () => Array(size).fill(0));
-    for (let y = 0; y < size; y += 1) {
-      for (let x = 0; x < size; x += 1) {
-        if (dir >= 0) {
-          next[x][size - 1 - y] = square[y][x];
-        } else {
-          next[size - 1 - x][y] = square[y][x];
-        }
-      }
-    }
-    return next;
-  }
-
-  function emptyBoard() {
-    return Array.from({ length: ROWS }, () => Array(COLS).fill(null));
-  }
-
-  function pieceCells(piece) {
-    const cells = [];
-    piece.matrix.forEach((row, y) => {
-      row.forEach((on, x) => {
-        if (on) cells.push({ x: piece.x + x, y: piece.y + y });
-      });
-    });
-    return cells;
-  }
-
-  function collides(board, piece) {
-    return pieceCells(piece).some(({ x, y }) => {
-      if (x < 0 || x >= COLS || y >= ROWS) return true;
-      if (y < 0) return false;
-      return Boolean(board[y][x]);
-    });
-  }
-
-  function spawnX(kind) {
-    const width = SHAPES[kind][0].length;
-    return Math.floor((COLS - width) / 2);
-  }
-
-  function makePiece(kind) {
-    return {
-      kind,
-      matrix: cloneMatrix(SHAPES[kind]),
-      x: spawnX(kind),
-      y: kind === "I" ? -1 : 0,
-      rotation: 0,
-    };
-  }
-
-  function clearLines(board) {
-    const kept = board.filter((row) => row.some((cell) => cell == null));
-    const cleared = ROWS - kept.length;
-    while (kept.length < ROWS) {
-      kept.unshift(Array(COLS).fill(null));
-    }
-    return { board: kept, cleared };
-  }
-
-  function boardIsEmpty(board) {
-    return board.every((row) => row.every((cell) => cell == null));
-  }
-
-  function applyColumnGravity(board) {
-    const next = emptyBoard();
-    for (let x = 0; x < COLS; x += 1) {
-      let write = ROWS - 1;
-      for (let y = ROWS - 1; y >= 0; y -= 1) {
-        if (board[y][x]) {
-          next[write][x] = board[y][x];
-          write -= 1;
-        }
-      }
-    }
-    return next;
-  }
-
-  function findSquashGroups(board, minSize) {
-    const need = minSize || 4;
-    const visited = Array.from({ length: ROWS }, () => Array(COLS).fill(false));
-    const groups = [];
-    for (let y = 0; y < ROWS; y += 1) {
-      for (let x = 0; x < COLS; x += 1) {
-        if (!board[y][x] || visited[y][x]) continue;
-        const kind = board[y][x];
-        const cells = [];
-        const stack = [[x, y]];
-        visited[y][x] = true;
-        while (stack.length) {
-          const cur = stack.pop();
-          const cx = cur[0];
-          const cy = cur[1];
-          cells.push({ x: cx, y: cy });
-          const neighbors = [
-            [cx + 1, cy],
-            [cx - 1, cy],
-            [cx, cy + 1],
-            [cx, cy - 1],
-          ];
-          for (let i = 0; i < neighbors.length; i += 1) {
-            const nx = neighbors[i][0];
-            const ny = neighbors[i][1];
-            if (nx < 0 || ny < 0 || nx >= COLS || ny >= ROWS) continue;
-            if (visited[ny][nx] || board[ny][nx] !== kind) continue;
-            visited[ny][nx] = true;
-            stack.push([nx, ny]);
-          }
-        }
-        if (cells.length >= need) groups.push({ kind, cells });
-      }
-    }
-    return groups;
-  }
-
-  function resolveStep(board) {
-    const mark = Array.from({ length: ROWS }, () => Array(COLS).fill(false));
-    const events = [];
-    const deployRows = [];
-    for (let y = 0; y < ROWS; y += 1) {
-      if (board[y].every((cell) => cell != null)) {
-        deployRows.push(y);
-        for (let x = 0; x < COLS; x += 1) mark[y][x] = true;
-      }
-    }
-    if (deployRows.length) events.push({ type: 'deploy', rows: deployRows.slice(), cells: deployRows.length * COLS });
-    const groups = findSquashGroups(board, 4);
-    groups.forEach((group) => {
-      let fresh = 0;
-      group.cells.forEach(({ x, y }) => {
-        if (!mark[y][x]) {
-          mark[y][x] = true;
-          fresh += 1;
-        }
-      });
-      if (fresh > 0) {
-        events.push({ type: 'squash', kind: group.kind, cells: group.cells.slice(), count: group.cells.length });
-      }
-    });
-    if (!events.length) return { board, events, changed: false, clearedCells: [] };
-    const clearedCells = [];
-    const stripped = board.map((row, y) =>
-      row.map((cell, x) => {
-        if (mark[y][x]) {
-          clearedCells.push({ x, y, kind: cell });
-          return null;
-        }
-        return cell;
-      })
-    );
-    return {
-      board: applyColumnGravity(stripped),
-      events,
-      changed: true,
-      clearedCells,
-    };
-  }
-
-  function resolveCascades(board) {
-    let working = board.map((row) => row.slice());
-    const waves = [];
-    let chain = 0;
-    while (chain < 24) {
-      const step = resolveStep(working);
-      if (!step.changed) break;
-      chain += 1;
-      waves.push({
-        chain,
-        events: step.events,
-        clearedCells: step.clearedCells,
-        board: step.board.map((row) => row.slice()),
-      });
-      working = step.board;
-    }
-    return { board: working, waves, chain };
-  }
-
-  function scoreForClears(cleared, level, combo, extras) {
-    const extra = extras || {};
-    const base = (CLEARS[cleared] || { points: 0 }).points;
-    const comboBonus = cleared ? combo * 50 * level : 0;
-    let total = base * level + comboBonus;
-    if (extra.backToBack && cleared >= 4) total = Math.round(total * 1.5);
-    if (extra.perfectClear) total += 1200 * level;
-    return total;
-  }
-
-  function scoreForSquash(count, level, chain, combo) {
-    return Math.round(count * 35 * level * (1 + (chain - 1) * 0.45) * (1 + combo * 0.15));
-  }
 
   function sprintName(level) {
     const idx = Math.max(0, Math.min(SPRINT_NAMES.length - 1, (level || 1) - 1));
     return SPRINT_NAMES[idx];
   }
 
-  function makeGarbageRow(random, kind) {
-    const rnd = random || Math.random;
-    const gap = Math.floor(rnd() * COLS);
-    const fill = kind || 'Z';
-    return Array.from({ length: COLS }, (_, x) => (x === gap ? null : fill));
+  function goalForLevel(level) {
+    return 800 + (Math.max(1, level) - 1) * 450;
   }
 
-  // Gravity ramps each sprint — still familiar, but clears are cascade-based.
-  const GRAVITY_TABLE_MS = [
-    920, 800, 680, 560, 460, 380, 310, 255, 210, 175, 145, 120, 100, 85, 72, 60, 50, 42, 36, 30,
-  ];
-
-  function gravityMs(level, reducedMotion) {
-    const idx = Math.max(1, Math.min(level, GRAVITY_TABLE_MS.length)) - 1;
-    const base = GRAVITY_TABLE_MS[idx];
-    return reducedMotion ? Math.round(base * 1.35) : base;
+  function movesForLevel(level) {
+    return Math.max(18, 32 - Math.min(12, level - 1));
   }
 
-  function lockDelayMs(level) {
-    return Math.max(180, 520 - (Math.max(1, level) - 1) * 28);
+  function gemKindsForLevel(level) {
+    // Unlock variety gradually: 6 → 10
+    return Math.min(GEM_IDS.length, 5 + Math.min(5, Math.floor((level - 1) / 2) + 1));
   }
 
-  function linesPerLevel() {
-    return 8;
+  function pickGemId(random, level) {
+    const n = gemKindsForLevel(level || 1);
+    return GEM_IDS[Math.floor(random() * n)];
   }
 
-  function shuffleBag(random) {
-    const bag = KINDS.slice();
-    for (let i = bag.length - 1; i > 0; i -= 1) {
-      const j = Math.floor(random() * (i + 1));
-      const tmp = bag[i];
-      bag[i] = bag[j];
-      bag[j] = tmp;
+  function emptyBoard() {
+    return Array.from({ length: ROWS }, () => Array(COLS).fill(null));
+  }
+
+  function cloneBoard(board) {
+    return board.map((row) => row.slice());
+  }
+
+  function inBounds(x, y) {
+    return x >= 0 && y >= 0 && x < COLS && y < ROWS;
+  }
+
+  function areAdjacent(a, b) {
+    return Math.abs(a.x - b.x) + Math.abs(a.y - b.y) === 1;
+  }
+
+  function findMatches(board) {
+    const marked = Array.from({ length: ROWS }, () => Array(COLS).fill(false));
+    const groups = [];
+
+    // Horizontal
+    for (let y = 0; y < ROWS; y += 1) {
+      let x = 0;
+      while (x < COLS) {
+        const kind = board[y][x];
+        if (!kind) {
+          x += 1;
+          continue;
+        }
+        let len = 1;
+        while (x + len < COLS && board[y][x + len] === kind) len += 1;
+        if (len >= MATCH_MIN) {
+          const cells = [];
+          for (let i = 0; i < len; i += 1) {
+            marked[y][x + i] = true;
+            cells.push({ x: x + i, y, kind });
+          }
+          groups.push({ kind, cells, axis: "h" });
+        }
+        x += len;
+      }
     }
-    return bag;
+
+    // Vertical
+    for (let x = 0; x < COLS; x += 1) {
+      let y = 0;
+      while (y < ROWS) {
+        const kind = board[y][x];
+        if (!kind) {
+          y += 1;
+          continue;
+        }
+        let len = 1;
+        while (y + len < ROWS && board[y + len][x] === kind) len += 1;
+        if (len >= MATCH_MIN) {
+          const cells = [];
+          for (let i = 0; i < len; i += 1) {
+            marked[y + i][x] = true;
+            cells.push({ x, y: y + i, kind });
+          }
+          groups.push({ kind, cells, axis: "v" });
+        }
+        y += len;
+      }
+    }
+
+    const cells = [];
+    for (let y = 0; y < ROWS; y += 1) {
+      for (let x = 0; x < COLS; x += 1) {
+        if (marked[y][x]) cells.push({ x, y, kind: board[y][x] });
+      }
+    }
+    return { cells, groups, marked };
+  }
+
+  function boardHasMatch(board) {
+    return findMatches(board).cells.length > 0;
+  }
+
+  function applyGravity(board, random, level) {
+    const next = emptyBoard();
+    const falls = [];
+    for (let x = 0; x < COLS; x += 1) {
+      let write = ROWS - 1;
+      for (let y = ROWS - 1; y >= 0; y -= 1) {
+        if (board[y][x]) {
+          next[write][x] = board[y][x];
+          if (write !== y) falls.push({ kind: board[y][x], from: { x, y }, to: { x, y: write } });
+          write -= 1;
+        }
+      }
+      while (write >= 0) {
+        const kind = pickGemId(random, level);
+        next[write][x] = kind;
+        falls.push({ kind, from: { x, y: write - ROWS }, to: { x, y: write }, spawn: true });
+        write -= 1;
+      }
+    }
+    return { board: next, falls };
+  }
+
+  function clearCells(board, cells) {
+    const next = cloneBoard(board);
+    cells.forEach(({ x, y }) => {
+      next[y][x] = null;
+    });
+    return next;
+  }
+
+  function resolveBoard(board, random, level) {
+    let working = cloneBoard(board);
+    const waves = [];
+    let chain = 0;
+    for (;;) {
+      const found = findMatches(working);
+      if (!found.cells.length) break;
+      chain += 1;
+      working = clearCells(working, found.cells);
+      const grav = applyGravity(working, random, level);
+      working = grav.board;
+      waves.push({
+        chain,
+        cells: found.cells,
+        groups: found.groups,
+        falls: grav.falls,
+      });
+      // Safety: avoid infinite loops on pathological boards
+      if (chain > 40) break;
+    }
+    return { board: working, waves, chain };
+  }
+
+  function swapCells(board, a, b) {
+    const next = cloneBoard(board);
+    const tmp = next[a.y][a.x];
+    next[a.y][a.x] = next[b.y][b.x];
+    next[b.y][b.x] = tmp;
+    return next;
+  }
+
+  function wouldMatch(board, a, b) {
+    if (!areAdjacent(a, b)) return false;
+    return boardHasMatch(swapCells(board, a, b));
+  }
+
+  function findHint(board) {
+    for (let y = 0; y < ROWS; y += 1) {
+      for (let x = 0; x < COLS; x += 1) {
+        const right = { x: x + 1, y };
+        const down = { x, y: y + 1 };
+        if (inBounds(right.x, right.y) && wouldMatch(board, { x, y }, right)) {
+          return { a: { x, y }, b: right };
+        }
+        if (inBounds(down.x, down.y) && wouldMatch(board, { x, y }, down)) {
+          return { a: { x, y }, b: down };
+        }
+      }
+    }
+    return null;
+  }
+
+  function hasValidMoves(board) {
+    return Boolean(findHint(board));
+  }
+
+  function fillBoardNoMatches(random, level) {
+    const board = emptyBoard();
+    const n = gemKindsForLevel(level || 1);
+    const pool = GEM_IDS.slice(0, n);
+    for (let y = 0; y < ROWS; y += 1) {
+      for (let x = 0; x < COLS; x += 1) {
+        const order = shuffleArray(pool, random);
+        let placed = false;
+        for (let i = 0; i < order.length; i += 1) {
+          board[y][x] = order[i];
+          if (!createsImmediateMatch(board, x, y)) {
+            placed = true;
+            break;
+          }
+        }
+        if (!placed) board[y][x] = order[0];
+      }
+    }
+    // Reshuffle until playable and match-free
+    let tries = 0;
+    while ((boardHasMatch(board) || !hasValidMoves(board)) && tries < 50) {
+      for (let y = 0; y < ROWS; y += 1) {
+        for (let x = 0; x < COLS; x += 1) {
+          const order = shuffleArray(pool, random);
+          let placed = false;
+          for (let i = 0; i < order.length; i += 1) {
+            board[y][x] = order[i];
+            if (!createsImmediateMatch(board, x, y)) {
+              placed = true;
+              break;
+            }
+          }
+          if (!placed) board[y][x] = order[x % order.length];
+        }
+      }
+      tries += 1;
+    }
+    return board;
+  }
+
+  function createsImmediateMatch(board, x, y) {
+    const kind = board[y][x];
+    if (!kind) return false;
+    if (x >= 2 && board[y][x - 1] === kind && board[y][x - 2] === kind) return true;
+    if (y >= 2 && board[y - 1][x] === kind && board[y - 2][x] === kind) return true;
+    return false;
+  }
+
+  function scoreMatch(cellCount, chain, level) {
+    const base = cellCount * 40;
+    const chainBonus = 1 + (chain - 1) * 0.55;
+    return Math.round(base * chainBonus * (1 + (level - 1) * 0.08));
   }
 
   function createGame(options) {
     const opts = options || {};
     const random = opts.random || Math.random;
     const now = opts.now || (() => Date.now());
-    let bag = [];
     const state = {
-      board: emptyBoard(),
-      active: null,
-      hold: null,
-      holdUsed: false,
-      queue: [],
+      board: fillBoardNoMatches(random, 1),
       score: 0,
-      lines: 0,
       level: 1,
+      levelScore: 0,
+      goal: goalForLevel(1),
+      moves: movesForLevel(1),
+      matches: 0,
+      cleared: 0,
       combo: 0,
       maxCombo: 0,
       maxChain: 0,
-      deploys: 0,
-      squashes: 0,
-      perfectClears: 0,
-      forcePushes: 0,
-      debtCleared: 0,
-      backToBack: false,
-      backToBackCount: 0,
+      quads: 0,
+      hints: 2,
+      shuffles: 2,
+      hintsUsed: 0,
+      shufflesUsed: 0,
       achievements: {},
       commitLog: [],
       fx: [],
-      status: 'ready',
-      message: 'Sprint ready — stack commits, squash matches, ship deploys.',
-      dropMs: gravityMs(1, Boolean(opts.reducedMotion)),
-      lastTick: null,
-      lockAt: 0,
+      status: "ready",
+      message: "Swap adjacent gems — match 3+ of the same logo.",
+      selected: null,
+      hint: null,
       levelFlash: 0,
-      reducedMotion: Boolean(opts.reducedMotion),
-      cleanCharges: 1,
-      pushCharges: 1,
+      busy: false,
     };
 
     function pushLog(entry) {
       state.commitLog.unshift(entry);
-      if (state.commitLog.length > 8) state.commitLog.length = 8;
+      if (state.commitLog.length > 6) state.commitLog.length = 6;
     }
 
     function unlockAchievements() {
@@ -415,345 +360,197 @@
       return unlocked;
     }
 
-    function fillQueue() {
-      while (state.queue.length < 5) {
-        if (bag.length === 0) bag = shuffleBag(random);
-        state.queue.push(bag.pop());
-      }
-    }
-
-    function spawn(spawnOpts) {
-      const so = spawnOpts || {};
-      fillQueue();
-      const kind = state.queue.shift();
-      fillQueue();
-      const piece = makePiece(kind);
-      if (collides(state.board, piece)) {
-        state.status = 'over';
-        state.active = piece;
-        state.message = 'Merge conflict — backlog hit production. Press R to rebase.';
-        return false;
-      }
-      state.active = piece;
-      if (!so.keepHoldUsed) state.holdUsed = false;
-      state.lockAt = 0;
-      return true;
-    }
-
-    function tryMove(dx, dy) {
-      if (!state.active || state.status !== 'playing') return false;
-      const next = {
-        ...state.active,
-        x: state.active.x + dx,
-        y: state.active.y + dy,
-      };
-      if (collides(state.board, next)) return false;
-      state.active = next;
-      if (dy > 0) state.lockAt = 0;
-      return true;
-    }
-
-    function tryRotate(dir) {
-      if (!state.active || state.status !== 'playing') return false;
-      if (state.active.kind === 'O') {
-        state.lockAt = 0;
-        return true;
-      }
-      const rotated = rotate(state.active.matrix, dir);
-      for (let i = 0; i < KICKS.length; i += 1) {
-        const kx = KICKS[i][0];
-        const ky = KICKS[i][1];
-        const next = {
-          ...state.active,
-          matrix: rotated,
-          x: state.active.x + kx,
-          y: state.active.y + ky,
-          rotation: ((state.active.rotation || 0) + (dir >= 0 ? 1 : 3)) % 4,
-        };
-        if (!collides(state.board, next)) {
-          state.active = next;
-          state.lockAt = 0;
-          return true;
-        }
-      }
-      return false;
-    }
-
-    function applyResolve(result) {
-      if (!result.waves.length) {
+    function applyWaves(waves) {
+      if (!waves.length) {
         state.combo = 0;
-        state.backToBack = false;
-        return { sounds: ['lock'], badges: [] };
+        return { sounds: [] };
       }
-      state.combo += 1;
-      state.maxCombo = Math.max(state.maxCombo, state.combo);
-      state.maxChain = Math.max(state.maxChain, result.chain);
       const sounds = [];
-      let deployRows = 0;
-      let squashCells = 0;
-      let difficult = false;
-      result.waves.forEach((wave) => {
+      waves.forEach((wave) => {
+        state.combo += 1;
+        state.maxCombo = Math.max(state.maxCombo, state.combo);
+        state.maxChain = Math.max(state.maxChain, wave.chain);
+        state.matches += 1;
+        state.cleared += wave.cells.length;
+        const pts = scoreMatch(wave.cells.length, wave.chain, state.level);
+        state.score += pts;
+        state.levelScore += pts;
+        wave.groups.forEach((g) => {
+          if (g.cells.length >= 4) state.quads += 1;
+        });
+        const label = (META[wave.cells[0] && wave.cells[0].kind] || {}).label || "gem";
+        pushLog(`match ${label} ×${wave.cells.length} · chain ${wave.chain} · +${pts}`);
         state.fx.push({
-          id: `wave-${now()}-${wave.chain}`,
+          id: `match-${now()}-${wave.chain}`,
           at: now(),
+          type: "match",
           chain: wave.chain,
-          events: wave.events,
-          cells: wave.clearedCells,
+          cells: wave.cells,
+          falls: wave.falls || [],
         });
-        wave.events.forEach((ev) => {
-          if (ev.type === 'deploy') {
-            deployRows += ev.rows.length;
-            state.deploys += 1;
-            difficult = ev.rows.length >= 4 || difficult;
-            sounds.push(ev.rows.length >= 4 ? 'deploy' : 'clear');
-            pushLog((CLEARS[Math.min(4, ev.rows.length)] || CLEARS[1]).message);
-          } else if (ev.type === 'squash') {
-            squashCells += ev.count;
-            state.squashes += 1;
-            sounds.push('squash');
-            const label = (META[ev.kind] && META[ev.kind].label) || 'commit';
-            pushLog(`squash: ${label} ×${ev.count} (chain ${wave.chain})`);
-          }
-        });
-        wave.events.forEach((ev) => {
-          if (ev.type === 'deploy') {
-            const n = Math.min(4, ev.rows.length);
-            const b2b = state.backToBack && n >= 4;
-            state.score += scoreForClears(n, state.level, state.combo, {
-              backToBack: b2b,
-            });
-            if (b2b) state.backToBackCount += 1;
-          } else if (ev.type === 'squash') {
-            state.score += scoreForSquash(ev.count, state.level, wave.chain, state.combo);
-          }
-        });
+        sounds.push(wave.chain >= 3 ? "deploy" : wave.cells.length >= 4 ? "squash" : "clear");
       });
-      state.lines += deployRows + Math.floor(squashCells / 4);
-      if (boardIsEmpty(result.board)) {
-        state.perfectClears += 1;
-        state.score += 1200 * state.level;
-        pushLog('ci: pipeline green — perfect clear');
-        sounds.push('perfect');
-        state.fx.push({ id: `ci-${now()}`, at: now(), type: 'ci-scan' });
-      }
-      state.backToBack = difficult;
-      const nextLevel = 1 + Math.floor(state.lines / linesPerLevel());
-      if (nextLevel > state.level) {
-        state.level = nextLevel;
-        state.dropMs = gravityMs(state.level, state.reducedMotion);
+      state.message =
+        waves.length > 1
+          ? `Cascade ×${waves.length} — pipeline humming.`
+          : `Matched ${waves[0].cells.length} gems.`;
+      if (state.levelScore >= state.goal) {
+        state.level += 1;
+        state.levelScore = 0;
+        state.goal = goalForLevel(state.level);
+        state.moves += Math.min(8, 4 + Math.floor(state.level / 3));
+        state.hints = Math.min(3, state.hints + 1);
+        state.shuffles = Math.min(3, state.shuffles + 1);
         state.levelFlash = now();
-        state.cleanCharges = Math.min(2, state.cleanCharges + 1);
-        state.pushCharges = Math.min(2, state.pushCharges + 1);
         state.message = `Sprint ${state.level}: ${sprintName(state.level)}`;
         pushLog(`sprint → ${sprintName(state.level)}`);
-        sounds.push('level');
-        // inject light tech-debt at higher sprints
-        if (state.level >= 3 && random() < 0.55) {
-          state.board = result.board;
-          injectDebt(1);
-          result.board = state.board;
-          pushLog('debt: tech debt floated up from staging');
-        }
-      } else if (deployRows) {
-        state.message = (CLEARS[Math.min(4, deployRows)] || CLEARS[1]).message;
-      } else {
-        state.message = `Squash cascade ×${result.chain}`;
+        sounds.push("level");
+        // Refill board for new gem variety
+        state.board = fillBoardNoMatches(random, state.level);
       }
-      state.dropMs = gravityMs(state.level, state.reducedMotion);
       const badges = unlockAchievements();
-      if (badges.length) sounds.push('badge');
+      if (badges.length) sounds.push("badge");
       return { sounds, badges };
     }
 
-    function injectDebt(rows) {
-      const n = rows || 1;
-      for (let i = 0; i < n; i += 1) {
-        // shift up — lose top if overflow
-        for (let y = 0; y < ROWS - 1; y += 1) {
-          state.board[y] = state.board[y + 1].slice();
+    function afterResolveCheck() {
+      if (!hasValidMoves(state.board)) {
+        if (state.shuffles > 0) {
+          state.message = "No moves — auto-shuffling the board.";
+          doShuffle(true);
+        } else if (state.moves <= 0) {
+          state.status = "over";
+          state.message = "No moves left — rebase to try again.";
+        } else {
+          state.message = "No moves — use Shuffle or keep hunting.";
         }
-        state.board[ROWS - 1] = makeGarbageRow(random, 'Z');
+      }
+      if (state.moves <= 0 && state.status === "playing" && state.levelScore < state.goal) {
+        state.status = "over";
+        state.message = "Out of moves — rebase to try again.";
       }
     }
 
-    function lockPiece() {
-      if (!state.active) return { sounds: [] };
-      pieceCells(state.active).forEach(({ x, y }) => {
-        if (y >= 0 && y < ROWS && x >= 0 && x < COLS) {
-          state.board[y][x] = state.active.kind;
-        }
-      });
-      state.active = null;
-      const result = resolveCascades(state.board);
-      state.board = result.board;
-      const outcome = applyResolve(result);
-      spawn();
-      return outcome;
-    }
+    function trySwap(a, b) {
+      if (state.status !== "playing" || state.busy) return { ok: false };
+      if (!a || !b || !areAdjacent(a, b)) return { ok: false };
+      if (!inBounds(a.x, a.y) || !inBounds(b.x, b.y)) return { ok: false };
 
-    function hardDrop() {
-      if (!state.active || state.status !== 'playing') return 0;
-      let dropped = 0;
-      while (tryMove(0, 1)) dropped += 1;
-      state.score += dropped * 2;
-      lockPiece();
-      return dropped;
-    }
-
-    function softDrop() {
-      if (!tryMove(0, 1)) return false;
-      state.score += 1;
-      return true;
-    }
-
-    function hold() {
-      if (!state.active || state.holdUsed || state.status !== 'playing') return false;
-      const current = state.active.kind;
-      if (state.hold) {
-        const swapped = makePiece(state.hold);
-        if (collides(state.board, swapped)) return false;
-        state.active = swapped;
-      } else if (!spawn({ keepHoldUsed: true })) {
-        return false;
+      const swapped = swapCells(state.board, a, b);
+      if (!boardHasMatch(swapped)) {
+        state.fx.push({ id: `bounce-${now()}`, at: now(), type: "bounce", a, b });
+        return { ok: false, bounce: true, sounds: ["move"] };
       }
-      state.hold = current;
-      state.holdUsed = true;
-      state.message = 'Stashed on the shelf.';
-      return true;
+
+      state.board = swapped;
+      state.moves -= 1;
+      state.selected = null;
+      state.hint = null;
+      state.busy = true;
+      const resolved = resolveBoard(state.board, random, state.level);
+      state.board = resolved.board;
+      const outcome = applyWaves(resolved.waves);
+      state.busy = false;
+      afterResolveCheck();
+      state.fx.push({ id: `swap-${now()}`, at: now(), type: "swap", a, b });
+      return { ok: true, waves: resolved.waves, sounds: ["rotate"].concat(outcome.sounds || []) };
     }
 
-    function gitClean() {
-      if (state.status !== 'playing' || state.cleanCharges < 1) return false;
-      // remove bottom-most garbage-ish incomplete row with most fills
-      let bestY = -1;
-      let bestFill = 0;
-      for (let y = ROWS - 1; y >= 0; y -= 1) {
-        const fill = state.board[y].filter(Boolean).length;
-        if (fill > 0 && fill < COLS && fill >= bestFill) {
-          bestFill = fill;
-          bestY = y;
-        }
+    function selectCell(x, y) {
+      if (state.status !== "playing" || state.busy || !inBounds(x, y)) return null;
+      const cell = { x, y };
+      if (!state.selected) {
+        state.selected = cell;
+        return { selected: cell };
       }
-      if (bestY < 0) return false;
-      state.board[bestY] = Array(COLS).fill(null);
-      state.board = applyColumnGravity(state.board);
-      state.cleanCharges -= 1;
-      state.debtCleared += bestFill;
-      state.score += 40 * state.level;
-      pushLog('git clean — swept a messy row');
-      state.message = 'git clean — working tree tidied.';
-      state.fx.push({ id: `clean-${now()}`, at: now(), type: 'clean', y: bestY });
+      if (state.selected.x === x && state.selected.y === y) {
+        state.selected = null;
+        return { selected: null };
+      }
+      if (areAdjacent(state.selected, cell)) {
+        const a = state.selected;
+        state.selected = null;
+        return trySwap(a, cell);
+      }
+      state.selected = cell;
+      return { selected: cell };
+    }
+
+    function doHint() {
+      if (state.status !== "playing" || state.hints < 1) return false;
+      const hint = findHint(state.board);
+      if (!hint) return false;
+      state.hints -= 1;
+      state.hintsUsed += 1;
+      state.hint = hint;
+      state.message = "Hint lit — swap the glowing gems.";
       unlockAchievements();
       return true;
     }
 
-    function forcePush() {
-      if (state.status !== 'playing' || state.pushCharges < 1) return false;
-      // clear the fullest incomplete row as a panic deploy
-      let bestY = -1;
-      let bestFill = 0;
-      for (let y = 0; y < ROWS; y += 1) {
-        const fill = state.board[y].filter(Boolean).length;
-        if (fill > 0 && fill < COLS && fill > bestFill) {
-          bestFill = fill;
-          bestY = y;
-        }
+    function doShuffle(free) {
+      if (state.status !== "playing") return false;
+      if (!free) {
+        if (state.shuffles < 1) return false;
+        state.shuffles -= 1;
+        state.shufflesUsed += 1;
       }
-      if (bestY < 0) return false;
-      state.board[bestY] = Array(COLS).fill(null);
-      state.board = applyColumnGravity(state.board);
-      const result = resolveCascades(state.board);
-      state.board = result.board;
-      state.pushCharges -= 1;
-      state.forcePushes += 1;
-      state.score += 90 * state.level;
-      pushLog('force-push — rewrote history (carefully)');
-      applyResolve(result);
-      state.message = 'force-push — history rewritten.';
+      state.board = fillBoardNoMatches(random, state.level);
+      state.selected = null;
+      state.hint = null;
+      state.message = "Board reshuffled.";
+      pushLog("shuffle: redeployed gem grid");
+      state.fx.push({ id: `shuffle-${now()}`, at: now(), type: "shuffle" });
+      unlockAchievements();
       return true;
     }
 
-    function ghost() {
-      if (!state.active) return null;
-      const shadow = {
-        ...state.active,
-        matrix: cloneMatrix(state.active.matrix),
-      };
-      while (!collides(state.board, { ...shadow, y: shadow.y + 1 })) {
-        shadow.y += 1;
-      }
-      return shadow;
-    }
-
-    function tick(ts) {
-      if (state.status !== 'playing' || !state.active) return;
-      if (state.lastTick == null) state.lastTick = ts;
-      if (ts - state.lastTick < state.dropMs) return;
-      state.lastTick = ts;
-      if (!tryMove(0, 1)) {
-        if (!state.lockAt) state.lockAt = ts;
-        if (ts - state.lockAt >= lockDelayMs(state.level)) lockPiece();
-      }
-    }
-
     function play() {
-      if (state.status === 'playing') return;
-      if (state.status === 'over') reset();
-      state.status = 'playing';
-      state.message = `Sprint ${state.level}: ${sprintName(state.level)} — match 4+ or fill a row.`;
-      // Keep lastTick null so the RAF clock in tick() can sync (Date.now ≠ performance.now).
-      state.lastTick = null;
-      state.lockAt = 0;
+      if (state.status === "playing") return;
+      if (state.status === "over") reset();
+      state.status = "playing";
+      state.message = `Sprint ${state.level}: ${sprintName(state.level)} — match 3+ logos.`;
       state.levelFlash = now();
-      if (!state.active) spawn();
     }
 
     function pause() {
-      if (state.status !== 'playing') return;
-      state.status = 'paused';
-      state.message = 'Working tree paused.';
+      if (state.status !== "playing") return;
+      state.status = "paused";
+      state.message = "Working tree paused.";
     }
 
     function resume() {
-      if (state.status !== 'paused') return;
-      state.status = 'playing';
-      state.lastTick = null;
-      state.lockAt = 0;
-      state.message = 'Back on the main branch.';
+      if (state.status !== "paused") return;
+      state.status = "playing";
+      state.message = "Back on the main branch.";
     }
 
     function reset() {
-      state.board = emptyBoard();
-      state.active = null;
-      state.hold = null;
-      state.holdUsed = false;
-      state.queue = [];
+      state.board = fillBoardNoMatches(random, 1);
       state.score = 0;
-      state.lines = 0;
       state.level = 1;
+      state.levelScore = 0;
+      state.goal = goalForLevel(1);
+      state.moves = movesForLevel(1);
+      state.matches = 0;
+      state.cleared = 0;
       state.combo = 0;
       state.maxCombo = 0;
       state.maxChain = 0;
-      state.deploys = 0;
-      state.squashes = 0;
-      state.perfectClears = 0;
-      state.forcePushes = 0;
-      state.debtCleared = 0;
-      state.backToBack = false;
-      state.backToBackCount = 0;
+      state.quads = 0;
+      state.hints = 2;
+      state.shuffles = 2;
+      state.hintsUsed = 0;
+      state.shufflesUsed = 0;
       state.achievements = {};
       state.commitLog = [];
       state.fx = [];
-      state.status = 'ready';
-      state.message = 'Sprint ready — stack commits, squash matches, ship deploys.';
-      state.dropMs = gravityMs(1, state.reducedMotion);
-      state.lastTick = null;
-      state.lockAt = 0;
+      state.status = "ready";
+      state.message = "Swap adjacent gems — match 3+ of the same logo.";
+      state.selected = null;
+      state.hint = null;
       state.levelFlash = 0;
-      state.cleanCharges = 1;
-      state.pushCharges = 1;
-      bag = [];
-      fillQueue();
+      state.busy = false;
     }
 
     function consumeFx() {
@@ -764,51 +561,49 @@
 
     function snapshot() {
       return {
-        board: state.board.map((row) => row.slice()),
-        active: state.active
-          ? { ...state.active, matrix: cloneMatrix(state.active.matrix) }
-          : null,
-        ghost: ghost(),
-        hold: state.hold,
-        queue: state.queue.slice(0, 4),
+        board: cloneBoard(state.board),
         score: state.score,
-        lines: state.lines,
         level: state.level,
+        levelScore: state.levelScore,
+        goal: state.goal,
+        moves: state.moves,
+        matches: state.matches,
+        cleared: state.cleared,
         combo: state.combo,
         maxCombo: state.maxCombo,
         maxChain: state.maxChain,
-        deploys: state.deploys,
-        squashes: state.squashes,
+        quads: state.quads,
+        hints: state.hints,
+        shuffles: state.shuffles,
         sprint: sprintName(state.level),
-        cleanCharges: state.cleanCharges,
-        pushCharges: state.pushCharges,
         commitLog: state.commitLog.slice(),
         achievements: Object.keys(state.achievements),
         status: state.status,
         message: state.message,
+        selected: state.selected ? { ...state.selected } : null,
+        hint: state.hint
+          ? { a: { ...state.hint.a }, b: { ...state.hint.b } }
+          : null,
         levelFlash: state.levelFlash,
-        dropMs: state.dropMs,
+        busy: state.busy,
       };
     }
 
-    fillQueue();
     return {
       COLS,
       ROWS,
+      SIZE,
       play,
       pause,
       resume,
       reset,
-      tick,
-      tryMove,
-      tryRotate,
-      hardDrop,
-      softDrop,
-      hold,
-      gitClean,
-      forcePush,
+      selectCell,
+      trySwap,
+      hint: doHint,
+      shuffle: doShuffle,
       consumeFx,
       snapshot,
+      findMatches: () => findMatches(state.board),
       get status() {
         return state.status;
       },
@@ -819,125 +614,58 @@
   }
 
   const STORAGE = {
-    high: 'git-blocks-high-score',
-    prefs: 'git-blocks-prefs-v1',
-  };
-
-  const ACTION_OPTIONS = [
-    { id: 'left', label: 'Move left' },
-    { id: 'right', label: 'Move right' },
-    { id: 'down', label: 'Soft drop' },
-    { id: 'drop', label: 'Hard drop' },
-    { id: 'rotate', label: 'Rotate CW' },
-    { id: 'rotate-ccw', label: 'Rotate CCW' },
-    { id: 'hold', label: 'Hold' },
-    { id: 'none', label: 'Do nothing' },
-  ];
-
-  const KEY_ACTIONS = [
-    { id: 'left', label: 'Move left' },
-    { id: 'right', label: 'Move right' },
-    { id: 'down', label: 'Soft drop' },
-    { id: 'drop', label: 'Hard drop' },
-    { id: 'rotate', label: 'Rotate CW' },
-    { id: 'rotateCcw', label: 'Rotate CCW' },
-    { id: 'hold', label: 'Hold' },
-    { id: 'pause', label: 'Pause' },
-    { id: 'mute', label: 'Mute SFX' },
-  ];
-
-  const DEFAULT_BINDINGS = {
-    keys: {
-      left: ['ArrowLeft', 'a', 'A'],
-      right: ['ArrowRight', 'd', 'D'],
-      down: ['ArrowDown', 's', 'S'],
-      drop: [' '],
-      rotate: ['ArrowUp', 'x', 'X', 'w', 'W'],
-      rotateCcw: ['z', 'Z'],
-      hold: ['c', 'C'],
-      pause: ['p', 'P'],
-      mute: ['m', 'M'],
-    },
-    mouse: {
-      leftClick: 'down',
-      rightClick: 'rotate',
-      middleClick: 'drop',
-      wheel: 'move',
-      doubleClick: 'drop',
-      edgeClick: 'move',
-      drag: 'move',
-    },
+    high: "git-blocks-high-score",
+    prefs: "git-blocks-prefs-v2",
   };
 
   const BG_PRESETS = [
     {
-      id: 'navy',
-      label: 'Navy',
-      pattern: 'drift',
-      css: 'radial-gradient(900px 420px at 8% -8%, rgba(79,143,212,.22), transparent 55%), radial-gradient(700px 360px at 100% 0%, rgba(13,46,87,.55), transparent 48%), #0b1220',
+      id: "navy",
+      label: "Navy",
+      pattern: "drift",
+      css: "radial-gradient(900px 420px at 8% -8%, rgba(79,143,212,.22), transparent 55%), radial-gradient(700px 360px at 100% 0%, rgba(13,46,87,.55), transparent 48%), #0b1220",
     },
     {
-      id: 'solid-ink',
-      label: 'Ink',
-      pattern: 'rise',
-      css: '#0b1220',
+      id: "solid-ink",
+      label: "Ink",
+      pattern: "rise",
+      css: "#0b1220",
     },
     {
-      id: 'solid-navy',
-      label: 'Deep',
-      pattern: 'cross',
-      css: '#0d2e57',
+      id: "aurora",
+      label: "Aurora",
+      pattern: "orbit",
+      css: "radial-gradient(circle at 20% 20%, rgba(61,139,110,.4), transparent 40%), radial-gradient(circle at 80% 0%, rgba(139,124,224,.35), transparent 42%), #0a1220",
     },
     {
-      id: 'aurora',
-      label: 'Aurora',
-      pattern: 'orbit',
-      css: 'linear-gradient(135deg, #07111f 0%, #123b2e 40%, #0d2e57 75%, #1a1030 100%)',
+      id: "terminal",
+      label: "Term",
+      pattern: "rise",
+      css: "radial-gradient(circle at 30% 20%, rgba(61,139,110,.35), transparent 40%), #07140f",
     },
     {
-      id: 'sunset',
-      label: 'Merge',
-      pattern: 'sway',
-      css: 'linear-gradient(160deg, #1a0f14, #3a1d2e 45%, #0d2e57 100%)',
-    },
-    {
-      id: 'grid',
-      label: 'Grid',
-      pattern: 'scan',
-      css: 'linear-gradient(rgba(79,143,212,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(79,143,212,.08) 1px, transparent 1px), #0b1220',
-    },
-    {
-      id: 'terminal',
-      label: 'Term',
-      pattern: 'rise',
-      css: 'radial-gradient(circle at 30% 20%, rgba(61,139,110,.35), transparent 40%), #07140f',
-    },
-    {
-      id: 'paper',
-      label: 'Paper',
-      pattern: 'drift',
-      css: 'linear-gradient(180deg, #e8eef6, #c5d3e6)',
+      id: "ember",
+      label: "Ember",
+      pattern: "sway",
+      css: "radial-gradient(circle at 70% 10%, rgba(224,138,74,.35), transparent 45%), #1a0f0c",
     },
   ];
 
   const DEV_CLOUD_WORDS = {
-    css: ['flex', 'grid', 'clamp()', ':root', 'var(--navy)', '@media', 'gap', 'aspect-ratio', '::before', 'container', 'oklch()', 'subgrid'],
-    php: ['foreach', 'namespace', '??=', 'match()', 'PDO', 'Composer', 'strict_types', 'yield', 'enum', 'readonly'],
-    wordpress: ['add_action', 'WP_Query', 'the_content', 'block.json', 'get_posts', 'shortcode', 'hooks', 'REST', 'Sage', 'Blade'],
-    react: ['useState', 'useEffect', 'JSX', 'props', 'memo', 'Suspense', 'useRef', 'Fragment', 'hooks', 'Server Component'],
-    general: ['git merge', 'CI', 'API', 'GraphQL', 'TypeScript', 'PR', 'lint', 'deploy', 'a11y', 'Core Web Vitals'],
+    css: ["flex", "grid", "clamp()", ":root", "var(--navy)", "@media", "gap", "aspect-ratio", "::before", "container"],
+    php: ["foreach", "namespace", "??=", "match()", "PDO", "Composer", "strict_types", "yield", "enum", "readonly"],
+    wordpress: ["add_action", "WP_Query", "the_content", "block.json", "get_posts", "shortcode", "hooks", "REST"],
+    react: ["useState", "useEffect", "JSX", "props", "memo", "Suspense", "useRef", "Fragment", "hooks"],
+    general: ["git merge", "CI", "API", "GraphQL", "TypeScript", "PR", "lint", "deploy", "a11y", "npm"],
   };
 
-  /**
-   * WordGenerator — random letter clusters + Dev-related tokens for floating clouds.
-   */
   const WordGenerator = (function createWordGenerator() {
-    const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const LOWER = 'abcdefghijklmnopqrstuvwxyz';
-    const DIGITS = '0123456789';
-    const LANGS = ['css', 'php', 'wordpress', 'react', 'general'];
-    const PREFIXES = ['git', 'npm', 'wp', 'css', 'js', 'ts', 'api', 'ci', 'dev', 'web', 'db', 'ux'];
-    const SUFFIXES = ['fix', 'ship', 'merge', 'build', 'lint', 'test', 'hook', 'sync', 'diff', 'push', 'pull', 'pack'];
+    const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const LOWER = "abcdefghijklmnopqrstuvwxyz";
+    const DIGITS = "0123456789";
+    const LANGS = ["css", "php", "wordpress", "react", "general"];
+    const PREFIXES = ["git", "npm", "wp", "css", "js", "ts", "api", "ci", "dev", "web"];
+    const SUFFIXES = ["fix", "ship", "merge", "build", "lint", "test", "hook", "sync", "diff", "push"];
 
     function pick(list, random) {
       const rnd = random || Math.random;
@@ -947,7 +675,7 @@
     function randomLetters(len, random) {
       const rnd = random || Math.random;
       const n = Math.max(1, Math.min(12, len || 2 + Math.floor(rnd() * 4)));
-      let out = '';
+      let out = "";
       for (let i = 0; i < n; i += 1) {
         const pool = i === 0 ? LETTERS : rnd() > 0.35 ? LOWER : LETTERS;
         out += pool[Math.floor(rnd() * pool.length)];
@@ -958,8 +686,8 @@
     function randomHexToken(random) {
       const rnd = random || Math.random;
       const n = 3 + Math.floor(rnd() * 4);
-      let out = '#';
-      for (let i = 0; i < n; i += 1) out += '0123456789abcdef'[Math.floor(rnd() * 16)];
+      let out = "#";
+      for (let i = 0; i < n; i += 1) out += "0123456789abcdef"[Math.floor(rnd() * 16)];
       return out;
     }
 
@@ -972,25 +700,19 @@
       const rnd = random || Math.random;
       const lang = pick(LANGS, rnd);
       const pool = DEV_CLOUD_WORDS[lang] || DEV_CLOUD_WORDS.general;
-      return { text: pick(pool, rnd), lang: lang === 'wordpress' ? 'wp' : lang === 'general' ? 'dev' : lang };
+      return { text: pick(pool, rnd), lang: lang === "wordpress" ? "wp" : lang === "general" ? "dev" : lang };
     }
 
     function nextCloudToken(random) {
       const rnd = random || Math.random;
       const roll = rnd();
-      if (roll < 0.28) {
-        return { text: randomLetters(2 + Math.floor(rnd() * 5), rnd), lang: 'dev' };
-      }
-      if (roll < 0.4) {
-        return { text: randomHexToken(rnd), lang: 'css' };
-      }
-      if (roll < 0.52) {
-        return { text: randomDevCompound(rnd), lang: 'dev' };
-      }
+      if (roll < 0.28) return { text: randomLetters(2 + Math.floor(rnd() * 5), rnd), lang: "dev" };
+      if (roll < 0.4) return { text: randomHexToken(rnd), lang: "css" };
+      if (roll < 0.52) return { text: randomDevCompound(rnd), lang: "dev" };
       if (roll < 0.6) {
         const a = LETTERS[Math.floor(rnd() * 26)];
         const b = DIGITS[Math.floor(rnd() * 10)];
-        return { text: `${a}${b}${randomLetters(2, rnd)}`, lang: 'dev' };
+        return { text: `${a}${b}${randomLetters(2, rnd)}`, lang: "dev" };
       }
       return randomDevWord(rnd);
     }
@@ -1004,7 +726,6 @@
     }
 
     return {
-      LETTERS,
       randomLetters,
       randomHexToken,
       randomDevCompound,
@@ -1015,14 +736,13 @@
   })();
 
   function resolveGameAsset(relativePath) {
-    if (typeof document === 'undefined') return relativePath;
+    if (typeof document === "undefined") return relativePath;
     const el =
-      (typeof document.currentScript !== 'undefined' && document.currentScript) ||
+      (typeof document.currentScript !== "undefined" && document.currentScript) ||
       document.querySelector('script[src*="git-blocks.js"]');
     if (!el || !el.src) return relativePath;
     try {
-      const base = el.src.replace(/[^/]+$/, '');
-      // WordPress packs JS under assets/js/ — audio lives in assets/audio/.
+      const base = el.src.replace(/[^/]+$/, "");
       if (/\/js\/$/i.test(base)) return new URL(`../${relativePath}`, base).href;
       return new URL(relativePath, base).href;
     } catch (_err) {
@@ -1030,35 +750,27 @@
     }
   }
 
-  // Free / open catalog: original theme file + generated loops + CC0 remote samples.
   const OPEN_SOURCE_POOL = [
-    { id: 'chip', label: 'Chip commit', kind: 'generated', style: 'chip', credit: 'Procedural chip loop — MIT, in-browser.' },
-    { id: 'pad', label: 'Soft backlog pad', kind: 'generated', style: 'pad', credit: 'Procedural pad loop — MIT, in-browser.' },
-    { id: 'pulse', label: 'Merge pulse', kind: 'generated', style: 'pulse', credit: 'Procedural pulse loop — MIT, in-browser.' },
-    { id: 'arcade', label: 'Arcade rebase', kind: 'generated', style: 'arcade', credit: 'Procedural arcade loop — MIT, in-browser.' },
-    { id: 'ambient', label: 'Idle deploy hum', kind: 'generated', style: 'ambient', credit: 'Procedural ambient hum — MIT, in-browser.' },
-    { id: 'glitch', label: 'Hotfix glitch', kind: 'generated', style: 'glitch', credit: 'Procedural glitch loop — MIT, in-browser.' },
-    {
-      id: 'cc0-keys',
-      label: 'CC0 keys (remote)',
-      kind: 'url',
-      url: 'https://cdn.jsdelivr.net/gh/anars/blank-audio@master/250-milliseconds-of-silence.mp3',
-      credit: 'Silence placeholder used when remote CC0 hosts block hotlinking — shuffle regenerates free loops.',
-    },
+    { id: "chip", label: "Chip commit", kind: "generated", style: "chip", credit: "Procedural chip loop — MIT, in-browser." },
+    { id: "pad", label: "Soft backlog pad", kind: "generated", style: "pad", credit: "Procedural pad loop — MIT, in-browser." },
+    { id: "pulse", label: "Merge pulse", kind: "generated", style: "pulse", credit: "Procedural pulse loop — MIT, in-browser." },
+    { id: "arcade", label: "Arcade rebase", kind: "generated", style: "arcade", credit: "Procedural arcade loop — MIT, in-browser." },
+    { id: "ambient", label: "Idle deploy hum", kind: "generated", style: "ambient", credit: "Procedural ambient hum — MIT, in-browser." },
+    { id: "glitch", label: "Hotfix glitch", kind: "generated", style: "glitch", credit: "Procedural glitch loop — MIT, in-browser." },
   ];
 
   const THEME_TRACK = {
-    id: 'stack-sprint',
-    label: 'Stack sprint theme',
-    kind: 'url',
-    url: resolveGameAsset('audio/stack-sprint.ogg'),
-    credit: 'Original chiptune — generated for Git Blocks (MIT). Auto-plays when a sprint starts.',
+    id: "stack-sprint",
+    label: "Stack sprint theme",
+    kind: "url",
+    url: resolveGameAsset("audio/stack-sprint.ogg"),
+    credit: "Original chiptune — generated for Git Blocks (MIT). Auto-plays when a sprint starts.",
   };
 
   const MUSIC_TRACKS_BASE = [
-    { id: 'off', label: 'Music off', kind: 'off', credit: 'Silence — focus mode.' },
+    { id: "off", label: "Music off", kind: "off", credit: "Silence — focus mode." },
     THEME_TRACK,
-    { id: 'custom', label: 'Custom open-source URL…', kind: 'custom', credit: 'Paste a CC0 / CC-BY MP3 or OGG URL you have rights to stream.' },
+    { id: "custom", label: "Custom open-source URL…", kind: "custom", credit: "Paste a CC0 / CC-BY MP3 or OGG URL you have rights to stream." },
   ];
 
   let MUSIC_TRACKS = MUSIC_TRACKS_BASE.slice();
@@ -1083,10 +795,8 @@
       label: `${track.label} · free`,
       discovered: true,
     }));
-    // Keep theme + off + custom pinned; shuffle fills the middle.
     MUSIC_TRACKS = [MUSIC_TRACKS_BASE[0], THEME_TRACK].concat(picked, MUSIC_TRACKS_BASE.slice(2));
-    // Refresh theme URL in case script path resolved after first load.
-    THEME_TRACK.url = resolveGameAsset('audio/stack-sprint.ogg');
+    THEME_TRACK.url = resolveGameAsset("audio/stack-sprint.ogg");
     return MUSIC_TRACKS;
   }
 
@@ -1094,10 +804,9 @@
 
   function defaultPrefs() {
     return {
-      bindings: JSON.parse(JSON.stringify(DEFAULT_BINDINGS)),
-      background: { mode: 'preset', presetId: 'navy', css: BG_PRESETS[0].css, image: '' },
-      music: { trackId: 'stack-sprint', customUrl: '', volume: 0.38 },
-      graphics: 'advanced',
+      background: { mode: "preset", presetId: "navy", css: BG_PRESETS[0].css, image: "" },
+      music: { trackId: "stack-sprint", customUrl: "", volume: 0.38 },
+      graphics: "advanced",
     };
   }
 
@@ -1108,13 +817,9 @@
       if (!raw) return base;
       const parsed = JSON.parse(raw);
       return {
-        bindings: {
-          keys: Object.assign({}, base.bindings.keys, (parsed.bindings && parsed.bindings.keys) || {}),
-          mouse: Object.assign({}, base.bindings.mouse, (parsed.bindings && parsed.bindings.mouse) || {}),
-        },
         background: Object.assign({}, base.background, parsed.background || {}),
         music: Object.assign({}, base.music, parsed.music || {}),
-        graphics: parsed.graphics === 'simple' ? 'simple' : 'advanced',
+        graphics: parsed.graphics === "simple" ? "simple" : "advanced",
       };
     } catch (_err) {
       return base;
@@ -1129,29 +834,17 @@
     }
   }
 
-  function keyLabel(key) {
-    if (key === ' ') return 'Space';
-    if (key.startsWith('Arrow')) return key.replace('Arrow', '');
-    return key.length === 1 ? key.toUpperCase() : key;
-  }
-
   function randomGradient() {
     const hues = [
       Math.floor(Math.random() * 360),
       Math.floor(Math.random() * 360),
       Math.floor(Math.random() * 360),
     ];
-    const a = `hsl(${hues[0]} 42% 14%)`;
-    const b = `hsl(${hues[1]} 48% 22%)`;
-    const c = `hsl(${hues[2]} 40% 10%)`;
-    return `linear-gradient(${120 + Math.floor(Math.random() * 80)}deg, ${a}, ${b} 55%, ${c})`;
+    return `linear-gradient(${120 + Math.floor(Math.random() * 80)}deg, hsl(${hues[0]} 42% 14%), hsl(${hues[1]} 48% 22%) 55%, hsl(${hues[2]} 40% 10%))`;
   }
 
   function prefersReducedMotion() {
-    return Boolean(
-      typeof matchMedia === 'function' &&
-        matchMedia('(prefers-reduced-motion: reduce)').matches
-    );
+    return Boolean(typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches);
   }
 
   function roundedRect(ctx, x, y, w, h, r) {
@@ -1165,87 +858,211 @@
     ctx.closePath();
   }
 
-  function drawCell(ctx, x, y, size, color, ghost, pulse, advanced) {
-    const pad = Math.max(1, Math.floor(size * (advanced ? 0.06 : 0.08)));
-    const glow = pulse ? 0.35 + pulse * 0.45 : 0;
-    const useAdvanced = advanced !== false;
+  function gemPath(ctx, cx, cy, r) {
+    // Faceted jewel silhouette (octagon-ish diamond)
+    ctx.beginPath();
+    ctx.moveTo(cx, cy - r);
+    ctx.lineTo(cx + r * 0.72, cy - r * 0.35);
+    ctx.lineTo(cx + r * 0.72, cy + r * 0.35);
+    ctx.lineTo(cx, cy + r);
+    ctx.lineTo(cx - r * 0.72, cy + r * 0.35);
+    ctx.lineTo(cx - r * 0.72, cy - r * 0.35);
+    ctx.closePath();
+  }
+
+  function drawLogoMark(ctx, mark, cx, cy, size, ink) {
+    ctx.fillStyle = ink;
+    ctx.strokeStyle = ink;
+    ctx.lineWidth = Math.max(1.2, size * 0.07);
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    const s = size * 0.28;
+
+    if (mark === "html") {
+      ctx.font = `700 ${Math.floor(size * 0.28)}px "IBM Plex Sans", sans-serif`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("</>", cx, cy + 1);
+    } else if (mark === "css") {
+      ctx.font = `700 ${Math.floor(size * 0.32)}px "IBM Plex Sans", sans-serif`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("#", cx, cy + 1);
+    } else if (mark === "js") {
+      ctx.font = `800 ${Math.floor(size * 0.34)}px "IBM Plex Sans", sans-serif`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("JS", cx, cy + 1);
+    } else if (mark === "ts") {
+      ctx.font = `800 ${Math.floor(size * 0.34)}px "IBM Plex Sans", sans-serif`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("TS", cx, cy + 1);
+    } else if (mark === "react") {
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, s * 1.35, s * 0.55, 0, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, s * 1.35, s * 0.55, Math.PI / 3, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, s * 1.35, s * 0.55, -Math.PI / 3, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(cx, cy, s * 0.22, 0, Math.PI * 2);
+      ctx.fill();
+    } else if (mark === "php") {
+      ctx.font = `700 ${Math.floor(size * 0.26)}px "IBM Plex Sans", sans-serif`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("PHP", cx, cy + 1);
+    } else if (mark === "wp") {
+      ctx.beginPath();
+      ctx.arc(cx, cy, s * 1.05, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.font = `700 ${Math.floor(size * 0.28)}px "IBM Plex Sans", sans-serif`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("W", cx, cy + 1);
+    } else if (mark === "git") {
+      // branching nodes
+      ctx.beginPath();
+      ctx.arc(cx - s * 0.55, cy + s * 0.55, s * 0.28, 0, Math.PI * 2);
+      ctx.arc(cx + s * 0.55, cy - s * 0.55, s * 0.28, 0, Math.PI * 2);
+      ctx.arc(cx + s * 0.55, cy + s * 0.55, s * 0.28, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.beginPath();
+      ctx.moveTo(cx - s * 0.55, cy + s * 0.55);
+      ctx.lineTo(cx + s * 0.55, cy + s * 0.55);
+      ctx.lineTo(cx + s * 0.55, cy - s * 0.55);
+      ctx.stroke();
+    } else if (mark === "node") {
+      // hexagon
+      ctx.beginPath();
+      for (let i = 0; i < 6; i += 1) {
+        const ang = (Math.PI / 3) * i - Math.PI / 6;
+        const px = cx + Math.cos(ang) * s * 1.15;
+        const py = cy + Math.sin(ang) * s * 1.15;
+        if (i === 0) ctx.moveTo(px, py);
+        else ctx.lineTo(px, py);
+      }
+      ctx.closePath();
+      ctx.stroke();
+      ctx.font = `700 ${Math.floor(size * 0.22)}px "IBM Plex Sans", sans-serif`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("n", cx, cy + 1);
+    } else if (mark === "npm") {
+      roundedRect(ctx, cx - s * 1.1, cy - s * 0.7, s * 2.2, s * 1.4, 2);
+      ctx.stroke();
+      ctx.font = `800 ${Math.floor(size * 0.22)}px "IBM Plex Sans", sans-serif`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("npm", cx, cy + 1);
+    }
+  }
+
+  function drawGem(ctx, x, y, size, kind, opts) {
+    const o = opts || {};
+    const meta = META[kind];
+    if (!meta) return;
+    const advanced = o.advanced !== false;
+    const pulse = o.pulse || 0;
+    const selected = Boolean(o.selected);
+    const hinted = Boolean(o.hinted);
+    const scale = o.scale == null ? 1 : o.scale;
+    const alpha = o.alpha == null ? 1 : o.alpha;
+    const cx = x + size / 2;
+    const cy = y + size / 2;
+    const r = (size * 0.38) * scale;
+
     ctx.save();
-    if (useAdvanced && !ghost) {
-      // drop shadow for depth
-      ctx.fillStyle = 'rgba(0,0,0,0.35)';
-      roundedRect(ctx, x + pad + 1, y + pad + 2, size - pad * 2, size - pad * 2, size * 0.16);
+    ctx.globalAlpha = alpha;
+
+    if (advanced) {
+      ctx.fillStyle = "rgba(0,0,0,0.35)";
+      gemPath(ctx, cx + 1.5, cy + 2.5, r);
       ctx.fill();
     }
-    if (!ghost && glow > 0) {
-      ctx.shadowColor = color;
-      ctx.shadowBlur = size * (useAdvanced ? 0.45 + glow : 0.35 + glow);
+
+    if (pulse > 0 || selected || hinted) {
+      ctx.shadowColor = meta.accent;
+      ctx.shadowBlur = size * (0.35 + pulse * 0.55 + (selected ? 0.25 : 0));
     }
-    ctx.globalAlpha = ghost ? (useAdvanced ? 0.22 : 0.28) : 1;
-    roundedRect(ctx, x + pad, y + pad, size - pad * 2, size - pad * 2, size * 0.18);
-    if (ghost && useAdvanced) {
-      ctx.strokeStyle = color;
-      ctx.lineWidth = Math.max(1, size * 0.06);
-      ctx.setLineDash([Math.max(2, size * 0.12), Math.max(2, size * 0.1)]);
+
+    const body = ctx.createLinearGradient(cx - r, cy - r, cx + r, cy + r);
+    body.addColorStop(0, meta.accent);
+    body.addColorStop(0.45, meta.color);
+    body.addColorStop(1, shade(meta.color, -35));
+    gemPath(ctx, cx, cy, r);
+    ctx.fillStyle = body;
+    ctx.fill();
+
+    if (advanced) {
+      // facet lines
+      ctx.strokeStyle = "rgba(255,255,255,0.22)";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy - r);
+      ctx.lineTo(cx, cy + r);
+      ctx.moveTo(cx - r * 0.72, cy - r * 0.35);
+      ctx.lineTo(cx + r * 0.72, cy + r * 0.35);
+      ctx.moveTo(cx + r * 0.72, cy - r * 0.35);
+      ctx.lineTo(cx - r * 0.72, cy + r * 0.35);
+      ctx.stroke();
+
+      // specular
+      const shine = ctx.createRadialGradient(cx - r * 0.35, cy - r * 0.45, 1, cx - r * 0.2, cy - r * 0.3, r * 0.9);
+      shine.addColorStop(0, "rgba(255,255,255,0.65)");
+      shine.addColorStop(0.35, "rgba(255,255,255,0.18)");
+      shine.addColorStop(1, "rgba(255,255,255,0)");
+      gemPath(ctx, cx, cy, r);
+      ctx.fillStyle = shine;
+      ctx.fill();
+
+      ctx.strokeStyle = "rgba(255,255,255,0.35)";
+      ctx.lineWidth = Math.max(1, size * 0.03);
+      gemPath(ctx, cx, cy, r);
+      ctx.stroke();
+    }
+
+    ctx.shadowBlur = 0;
+    drawLogoMark(ctx, meta.mark, cx, cy + size * 0.02, size * scale, meta.ink || "#fff");
+
+    if (selected) {
+      ctx.strokeStyle = "#fff";
+      ctx.lineWidth = Math.max(2, size * 0.05);
+      roundedRect(ctx, x + size * 0.06, y + size * 0.06, size * 0.88, size * 0.88, size * 0.16);
+      ctx.stroke();
+    }
+    if (hinted && !selected) {
+      ctx.strokeStyle = meta.accent;
+      ctx.lineWidth = Math.max(2, size * 0.045);
+      ctx.setLineDash([4, 3]);
+      roundedRect(ctx, x + size * 0.08, y + size * 0.08, size * 0.84, size * 0.84, size * 0.16);
       ctx.stroke();
       ctx.setLineDash([]);
-    } else {
-      ctx.fillStyle = color;
-      ctx.fill();
     }
-    if (!ghost) {
-      ctx.shadowBlur = 0;
-      const g = ctx.createLinearGradient(x, y, x + (useAdvanced ? size * 0.35 : 0), y + size);
-      g.addColorStop(0, useAdvanced ? 'rgba(255,255,255,0.42)' : 'rgba(255,255,255,0.28)');
-      g.addColorStop(0.4, 'rgba(255,255,255,0.08)');
-      g.addColorStop(1, useAdvanced ? 'rgba(0,0,0,0.35)' : 'rgba(0,0,0,0.22)');
-      ctx.fillStyle = g;
-      roundedRect(ctx, x + pad, y + pad, size - pad * 2, size - pad * 2, size * 0.18);
-      ctx.fill();
-      if (useAdvanced) {
-        // specular chip + inner rim
-        ctx.fillStyle = 'rgba(255,255,255,0.34)';
-        roundedRect(
-          ctx,
-          x + pad + 2,
-          y + pad + 2,
-          (size - pad * 2) * 0.48,
-          (size - pad * 2) * 0.22,
-          3
-        );
-        ctx.fill();
-        ctx.strokeStyle = 'rgba(255,255,255,0.18)';
-        ctx.lineWidth = 1;
-        roundedRect(ctx, x + pad + 0.5, y + pad + 0.5, size - pad * 2 - 1, size - pad * 2 - 1, size * 0.16);
-        ctx.stroke();
-        // tiny commit glyph
-        ctx.fillStyle = 'rgba(7,17,31,0.28)';
-        const cx = x + size * 0.5;
-        const cy = y + size * 0.58;
-        const r = size * 0.1;
-        ctx.beginPath();
-        ctx.arc(cx, cy, r, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.fillRect(cx - size * 0.03, cy - size * 0.22, size * 0.06, size * 0.18);
-      } else {
-        ctx.fillStyle = 'rgba(255,255,255,0.22)';
-        roundedRect(
-          ctx,
-          x + pad + 2,
-          y + pad + 2,
-          (size - pad * 2) * 0.42,
-          (size - pad * 2) * 0.28,
-          3
-        );
-        ctx.fill();
-      }
-    }
+
     ctx.restore();
+  }
+
+  function shade(hex, amt) {
+    const n = hex.replace("#", "");
+    const num = parseInt(n.length === 3 ? n.split("").map((c) => c + c).join("") : n, 16);
+    let r = (num >> 16) + amt;
+    let g = ((num >> 8) & 0xff) + amt;
+    let b = (num & 0xff) + amt;
+    r = Math.max(0, Math.min(255, r));
+    g = Math.max(0, Math.min(255, g));
+    b = Math.max(0, Math.min(255, b));
+    return `rgb(${r},${g},${b})`;
   }
 
   function createSfxEngine() {
     let audioCtx = null;
     function ctx() {
-      if (typeof AudioContext === 'undefined') return null;
+      if (typeof AudioContext === "undefined") return null;
       audioCtx = audioCtx || new AudioContext();
       return audioCtx;
     }
@@ -1255,7 +1072,7 @@
       const osc = ac.createOscillator();
       const gain = ac.createGain();
       const t = ac.currentTime;
-      osc.type = type || 'square';
+      osc.type = type || "square";
       osc.frequency.setValueAtTime(freq, t);
       if (slide) osc.frequency.exponentialRampToValueAtTime(Math.max(40, slide), t + dur);
       gain.gain.setValueAtTime(gainVal || 0.05, t);
@@ -1265,65 +1082,31 @@
       osc.start(t);
       osc.stop(t + dur + 0.02);
     }
-    function noiseBurst(dur, gainVal) {
-      const ac = ctx();
-      if (!ac) return;
-      const len = Math.floor(ac.sampleRate * dur);
-      const buffer = ac.createBuffer(1, len, ac.sampleRate);
-      const data = buffer.getChannelData(0);
-      for (let i = 0; i < len; i += 1) data[i] = (Math.random() * 2 - 1) * (1 - i / len);
-      const src = ac.createBufferSource();
-      const gain = ac.createGain();
-      const filter = ac.createBiquadFilter();
-      filter.type = 'bandpass';
-      filter.frequency.value = 1200;
-      src.buffer = buffer;
-      gain.gain.setValueAtTime(gainVal || 0.04, ac.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + dur);
-      src.connect(filter);
-      filter.connect(gain);
-      gain.connect(ac.destination);
-      src.start();
-    }
     function play(kind) {
       try {
-        if (kind === 'move') tone(420, 0.06, 'square', 0.03);
-        else if (kind === 'rotate') {
-          tone(560, 0.07, 'triangle', 0.04);
-          tone(720, 0.08, 'triangle', 0.025, 900);
-        } else if (kind === 'drop' || kind === 'lock') {
-          tone(180, 0.1, 'sawtooth', 0.04, 90);
-          noiseBurst(0.08, 0.03);
-        } else if (kind === 'clear') {
-          tone(520, 0.1, 'triangle', 0.05);
-          tone(780, 0.14, 'triangle', 0.04, 980);
-        } else if (kind === 'squash') {
-          tone(360, 0.09, 'square', 0.045, 280);
-          tone(640, 0.12, 'triangle', 0.04);
-          noiseBurst(0.1, 0.035);
-        } else if (kind === 'deploy') {
-          [523, 659, 784, 1046].forEach((f, i) => {
-            setTimeout(() => tone(f, 0.16, 'triangle', 0.05), i * 70);
-          });
-          noiseBurst(0.18, 0.04);
-        } else if (kind === 'perfect') {
-          [523, 659, 784, 988, 1174].forEach((f, i) => {
-            setTimeout(() => tone(f, 0.18, 'sine', 0.045), i * 55);
-          });
-        } else if (kind === 'level') {
-          tone(440, 0.12, 'square', 0.04);
-          setTimeout(() => tone(660, 0.16, 'square', 0.045), 90);
-          setTimeout(() => tone(880, 0.2, 'triangle', 0.05), 180);
-        } else if (kind === 'badge') {
-          tone(880, 0.1, 'sine', 0.04);
-          setTimeout(() => tone(1320, 0.14, 'sine', 0.035), 80);
-        } else if (kind === 'start') {
-          tone(392, 0.1, 'triangle', 0.04);
-          setTimeout(() => tone(523, 0.14, 'triangle', 0.045), 90);
-        } else if (kind === 'clean') {
-          tone(700, 0.1, 'sine', 0.035, 1100);
-          noiseBurst(0.12, 0.03);
-        } else tone(440, 0.08, 'square', 0.03);
+        if (kind === "move") tone(420, 0.06, "square", 0.03);
+        else if (kind === "rotate") {
+          tone(560, 0.07, "triangle", 0.04);
+          tone(720, 0.08, "triangle", 0.025, 900);
+        } else if (kind === "clear") {
+          tone(520, 0.1, "triangle", 0.05);
+          tone(780, 0.14, "triangle", 0.04, 980);
+        } else if (kind === "squash") {
+          tone(360, 0.09, "square", 0.045, 280);
+          tone(640, 0.12, "triangle", 0.04);
+        } else if (kind === "deploy") {
+          [523, 659, 784, 1046].forEach((f, i) => setTimeout(() => tone(f, 0.16, "triangle", 0.05), i * 70));
+        } else if (kind === "level") {
+          tone(440, 0.12, "square", 0.04);
+          setTimeout(() => tone(660, 0.16, "square", 0.045), 90);
+          setTimeout(() => tone(880, 0.2, "triangle", 0.05), 180);
+        } else if (kind === "badge") {
+          tone(880, 0.1, "sine", 0.04);
+          setTimeout(() => tone(1320, 0.14, "sine", 0.035), 80);
+        } else if (kind === "start") {
+          tone(392, 0.1, "triangle", 0.04);
+          setTimeout(() => tone(523, 0.14, "triangle", 0.045), 90);
+        } else tone(440, 0.08, "square", 0.03);
       } catch (_err) {
         /* ignore */
       }
@@ -1336,14 +1119,14 @@
     let master = null;
     let nodes = [];
     let timer = 0;
-    let style = 'chip';
+    let style = "chip";
     let playing = false;
     let volume = 0.35;
     let htmlAudio = null;
     let previewTimer = 0;
 
     function ensure() {
-      if (typeof AudioContext === 'undefined') return null;
+      if (typeof AudioContext === "undefined") return null;
       audioCtx = audioCtx || new AudioContext();
       if (!master) {
         master = audioCtx.createGain();
@@ -1358,12 +1141,12 @@
         try {
           n.stop();
         } catch (_e) {
-          /* already stopped */
+          /* */
         }
         try {
           n.disconnect();
         } catch (_e2) {
-          /* ignore */
+          /* */
         }
       });
       nodes = [];
@@ -1381,7 +1164,7 @@
       }
       if (htmlAudio) {
         htmlAudio.pause();
-        htmlAudio.src = '';
+        htmlAudio.src = "";
         htmlAudio = null;
       }
       playing = false;
@@ -1409,82 +1192,53 @@
     }
 
     function scheduleChip(ctx) {
-      const now = ctx.currentTime;
-      [196, 247, 294, 392, 294, 247].forEach((freq, i) => {
-        blip(ctx, freq, 'square', now + i * 0.22, 0.18, 0.05);
-      });
-    }
-
-    function schedulePad(ctx) {
-      const now = ctx.currentTime;
-      [130.81, 164.81, 196].forEach((freq, i) => {
-        const osc = ctx.createOscillator();
-        const gain = ctx.createGain();
-        osc.type = 'sine';
-        osc.frequency.value = freq;
-        gain.gain.setValueAtTime(0.0001, now);
-        gain.gain.linearRampToValueAtTime(0.03 - i * 0.005, now + 0.8);
-        gain.gain.linearRampToValueAtTime(0.0001, now + 2.4);
-        osc.connect(gain);
-        gain.connect(master);
-        osc.start(now);
-        osc.stop(now + 2.5);
-        nodes.push(osc);
-      });
-    }
-
-    function schedulePulse(ctx) {
-      const now = ctx.currentTime;
-      for (let i = 0; i < 4; i += 1) {
-        blip(ctx, i % 2 === 0 ? 98 : 147, 'triangle', now + i * 0.35, 0.28, 0.06);
-      }
-    }
-
-    function scheduleArcade(ctx) {
-      const now = ctx.currentTime;
-      [262, 330, 392, 523, 392, 330, 294, 262].forEach((freq, i) => {
-        blip(ctx, freq, 'square', now + i * 0.14, 0.12, 0.045);
-      });
-    }
-
-    function scheduleAmbient(ctx) {
-      const now = ctx.currentTime;
-      [110, 138.59, 164.81].forEach((freq, i) => {
-        const osc = ctx.createOscillator();
-        const gain = ctx.createGain();
-        osc.type = 'sine';
-        osc.frequency.value = freq;
-        gain.gain.value = 0.018 - i * 0.003;
-        osc.connect(gain);
-        gain.connect(master);
-        osc.start(now);
-        osc.stop(now + 3.2);
-        nodes.push(osc);
-      });
-    }
-
-    function scheduleGlitch(ctx) {
-      const now = ctx.currentTime;
-      for (let i = 0; i < 10; i += 1) {
-        const freq = 180 + Math.random() * 640;
-        blip(ctx, freq, Math.random() > 0.5 ? 'sawtooth' : 'square', now + i * 0.09, 0.06, 0.035);
-      }
+      const t = ctx.currentTime;
+      [196, 247, 294, 392, 294, 247].forEach((freq, i) => blip(ctx, freq, "square", t + i * 0.22, 0.18, 0.05));
     }
 
     function runStyle(ctx) {
-      if (style === 'pad') schedulePad(ctx);
-      else if (style === 'pulse') schedulePulse(ctx);
-      else if (style === 'arcade') scheduleArcade(ctx);
-      else if (style === 'ambient') scheduleAmbient(ctx);
-      else if (style === 'glitch') scheduleGlitch(ctx);
-      else scheduleChip(ctx);
-    }
-
-    function intervalForStyle() {
-      if (style === 'pad' || style === 'ambient') return 2800;
-      if (style === 'arcade') return 1200;
-      if (style === 'glitch') return 1000;
-      return 1400;
+      if (style === "pad") {
+        const now = ctx.currentTime;
+        [130.81, 164.81, 196].forEach((freq, i) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = "sine";
+          osc.frequency.value = freq;
+          gain.gain.setValueAtTime(0.0001, now);
+          gain.gain.linearRampToValueAtTime(0.03 - i * 0.005, now + 0.8);
+          gain.gain.linearRampToValueAtTime(0.0001, now + 2.4);
+          osc.connect(gain);
+          gain.connect(master);
+          osc.start(now);
+          osc.stop(now + 2.5);
+          nodes.push(osc);
+        });
+      } else if (style === "arcade") {
+        const now = ctx.currentTime;
+        [262, 330, 392, 523, 392, 330, 294, 262].forEach((freq, i) => blip(ctx, freq, "square", now + i * 0.14, 0.12, 0.045));
+      } else if (style === "pulse") {
+        const now = ctx.currentTime;
+        for (let i = 0; i < 4; i += 1) blip(ctx, i % 2 === 0 ? 98 : 147, "triangle", now + i * 0.35, 0.28, 0.06);
+      } else if (style === "ambient") {
+        const now = ctx.currentTime;
+        [110, 138.59, 164.81].forEach((freq, i) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = "sine";
+          osc.frequency.value = freq;
+          gain.gain.value = 0.018 - i * 0.003;
+          osc.connect(gain);
+          gain.connect(master);
+          osc.start(now);
+          osc.stop(now + 3.2);
+          nodes.push(osc);
+        });
+      } else if (style === "glitch") {
+        const now = ctx.currentTime;
+        for (let i = 0; i < 10; i += 1) {
+          blip(ctx, 180 + Math.random() * 640, Math.random() > 0.5 ? "sawtooth" : "square", now + i * 0.09, 0.06, 0.035);
+        }
+      } else scheduleChip(ctx);
     }
 
     function startGenerated(nextStyle) {
@@ -1500,7 +1254,7 @@
         runStyle(ctx);
       };
       beat();
-      timer = setInterval(beat, intervalForStyle());
+      timer = setInterval(beat, style === "pad" || style === "ambient" ? 2800 : style === "arcade" ? 1200 : 1400);
       return true;
     }
 
@@ -1510,10 +1264,7 @@
       htmlAudio = new Audio(url);
       htmlAudio.loop = true;
       htmlAudio.volume = volume;
-      htmlAudio.play().catch(() => {
-        /* autoplay blocked — fall back to a free generated loop */
-        startGenerated('ambient');
-      });
+      htmlAudio.play().catch(() => startGenerated("ambient"));
       playing = true;
       return true;
     }
@@ -1524,7 +1275,7 @@
       const wasPlaying = playing;
       const prevStyle = style;
       stopGenerated();
-      style = nextStyle || 'chip';
+      style = nextStyle || "chip";
       playing = true;
       runStyle(ctx);
       if (previewTimer) clearTimeout(previewTimer);
@@ -1537,47 +1288,37 @@
       return true;
     }
 
-    function previewSfx(kind, beepFn) {
-      if (typeof beepFn === 'function') beepFn(kind);
-    }
-
     return {
       setVolume,
       stop: stopAll,
       playGenerated: startGenerated,
       playUrl: startUrl,
       previewGenerated,
-      previewSfx,
       get playing() {
         return playing;
       },
     };
   }
 
-  function flatDevWords() {
-    return []
-      .concat(DEV_CLOUD_WORDS.css, DEV_CLOUD_WORDS.php, DEV_CLOUD_WORDS.wordpress, DEV_CLOUD_WORDS.react, DEV_CLOUD_WORDS.general);
-  }
-
   function patternForBackground(bg) {
-    if (bg.mode === 'preset') {
+    if (bg.mode === "preset") {
       const preset = BG_PRESETS.find((p) => p.id === bg.presetId);
-      return (preset && preset.pattern) || 'drift';
+      return (preset && preset.pattern) || "drift";
     }
-    if (bg.mode === 'image') return 'sway';
-    return 'orbit';
+    if (bg.mode === "image") return "sway";
+    return "orbit";
   }
 
   function mountDevClouds(host, pattern) {
     if (!host) return;
     const tokens = WordGenerator.generateCloud(28);
-    host.className = `dev-clouds pattern-${pattern || 'drift'}`;
-    host.setAttribute('data-dev-clouds', '');
-    host.setAttribute('aria-hidden', 'true');
+    host.className = `dev-clouds pattern-${pattern || "drift"}`;
+    host.setAttribute("data-dev-clouds", "");
+    host.setAttribute("aria-hidden", "true");
     host.replaceChildren();
     tokens.forEach((token, index) => {
-      const span = document.createElement('span');
-      span.className = 'dev-cloud';
+      const span = document.createElement("span");
+      span.className = "dev-cloud";
       span.textContent = token.text;
       const col = index % 7;
       const row = Math.floor(index / 7);
@@ -1587,76 +1328,74 @@
       span.style.animationDuration = `${12 + Math.random() * 16}s`;
       span.style.fontSize = `${0.65 + Math.random() * 0.75}rem`;
       span.style.opacity = String(0.22 + Math.random() * 0.4);
-      span.dataset.lang = token.lang || 'dev';
+      span.dataset.lang = token.lang || "dev";
       host.appendChild(span);
     });
   }
 
   function refreshDevCloudText(doc) {
-    const rootDoc = doc || (typeof document !== 'undefined' ? document : null);
+    const rootDoc = doc || (typeof document !== "undefined" ? document : null);
     if (!rootDoc) return;
-    rootDoc.querySelectorAll('[data-dev-clouds] .dev-cloud').forEach((el) => {
+    rootDoc.querySelectorAll("[data-dev-clouds] .dev-cloud").forEach((el) => {
       const token = WordGenerator.nextCloudToken();
       el.textContent = token.text;
-      el.dataset.lang = token.lang || 'dev';
+      el.dataset.lang = token.lang || "dev";
     });
   }
 
   function ensureDevCloudHost(rootEl) {
-    if (!rootEl || !rootEl.querySelector) return document.querySelector('[data-dev-clouds]');
-    let host = rootEl.querySelector('[data-dev-clouds]');
+    if (!rootEl || !rootEl.querySelector) return document.querySelector("[data-dev-clouds]");
+    let host = rootEl.querySelector("[data-dev-clouds]");
     if (host) return host;
-    const boardWrap = rootEl.querySelector('.board-wrap');
+    const boardWrap = rootEl.querySelector(".board-wrap");
     if (boardWrap) {
-      host = document.createElement('div');
-      host.setAttribute('data-dev-clouds', '');
-      host.setAttribute('aria-hidden', 'true');
+      host = document.createElement("div");
+      host.setAttribute("data-dev-clouds", "");
+      host.setAttribute("aria-hidden", "true");
       boardWrap.insertBefore(host, boardWrap.firstChild);
       return host;
     }
-    return document.querySelector('[data-dev-clouds]');
+    return document.querySelector("[data-dev-clouds]");
   }
 
   function applyBackground(bg, rootEl) {
     const target = document.documentElement;
     let value = bg.css || BG_PRESETS[0].css;
-    if (bg.mode === 'image' && bg.image) {
-      value = `linear-gradient(rgba(7,17,31,.55), rgba(7,17,31,.72)), url("${bg.image.replace(/"/g, '')}") center / cover no-repeat fixed`;
-    } else if (bg.mode === 'css' && bg.css) {
+    if (bg.mode === "image" && bg.image) {
+      value = `linear-gradient(rgba(7,17,31,.55), rgba(7,17,31,.72)), url("${bg.image.replace(/"/g, "")}") center / cover no-repeat fixed`;
+    } else if (bg.mode === "css" && bg.css) {
       value = bg.css;
-    } else if (bg.mode === 'preset') {
+    } else if (bg.mode === "preset") {
       const preset = BG_PRESETS.find((p) => p.id === bg.presetId) || BG_PRESETS[0];
       value = preset.css;
       bg.css = preset.css;
     }
-    target.style.setProperty('--gb-backdrop', value);
+    target.style.setProperty("--gb-backdrop", value);
     const pattern = patternForBackground(bg);
     target.dataset.gbPattern = pattern;
     if (rootEl && rootEl.closest) {
-      const embed = rootEl.closest('.git-blocks-embed');
+      const embed = rootEl.closest(".git-blocks-embed");
       if (embed) {
-        embed.style.setProperty('--gb-backdrop', value);
+        embed.style.setProperty("--gb-backdrop", value);
         embed.dataset.gbPattern = pattern;
       }
-      const clouds = ensureDevCloudHost(rootEl);
-      mountDevClouds(clouds, pattern);
+      mountDevClouds(ensureDevCloudHost(rootEl), pattern);
     }
   }
 
   function readConfig() {
-    const cfg = (typeof window !== 'undefined' && window.GitBlocksConfig) || {};
+    const cfg = (typeof window !== "undefined" && window.GitBlocksConfig) || {};
     return {
       shareUrl:
         cfg.shareUrl ||
-        (typeof location !== 'undefined' ? `${location.origin}${location.pathname}` : 'https://matthummel.com/git-blocks/'),
-      // Wait for Start sprint — do not auto-begin.
+        (typeof location !== "undefined" ? `${location.origin}${location.pathname}` : "https://matthummel.com/git-blocks/"),
       autoStart: cfg.autoStart === true,
-      layout: cfg.layout || 'viewport',
+      layout: cfg.layout || "viewport",
     };
   }
 
   function encodeShareHash(prefs, includePrefs) {
-    if (!includePrefs) return '';
+    if (!includePrefs) return "";
     const payload = {
       bg: prefs.background,
       music: { trackId: prefs.music.trackId, customUrl: prefs.music.customUrl, volume: prefs.music.volume },
@@ -1664,12 +1403,12 @@
     try {
       return `#gb=${btoa(unescape(encodeURIComponent(JSON.stringify(payload))))}`;
     } catch (_err) {
-      return '';
+      return "";
     }
   }
 
   function decodeShareHash() {
-    if (typeof location === 'undefined') return null;
+    if (typeof location === "undefined") return null;
     const m = location.hash.match(/#gb=([^&]+)/);
     if (!m) return null;
     try {
@@ -1679,12 +1418,12 @@
     }
   }
 
-  function boot(root, options = {}) {
-    if (!root || typeof document === 'undefined') return null;
-    const canvas = root.querySelector('[data-board]');
+  function boot(root, options) {
+    if (!root || typeof document === "undefined") return null;
+    const canvas = root.querySelector("[data-board]");
     if (!canvas) return null;
 
-    const cfg = Object.assign({}, readConfig(), options);
+    const cfg = Object.assign({}, readConfig(), options || {});
     const prefs = loadPrefs();
     const shared = decodeShareHash();
     if (shared) {
@@ -1692,25 +1431,22 @@
       if (shared.music) prefs.music = Object.assign({}, prefs.music, shared.music);
     }
 
-    const overlay = root.querySelector('[data-overlay]');
-    const overlayTitle = root.querySelector('[data-overlay-title]');
-    const overlayBody = root.querySelector('[data-overlay-body]');
-    const overlayLevel = root.querySelector('[data-overlay-level]');
-    const playBtn = root.querySelector('[data-play]');
-    const messageEl = root.querySelector('[data-message]');
-    const scoreEl = root.querySelector('[data-score]');
-    const linesEl = root.querySelector('[data-lines]');
-    const levelEl = root.querySelector('[data-level]');
-    const highEl = root.querySelector('[data-high]');
-    const holdEl = root.querySelector('[data-hold]');
-    const nextEl = root.querySelector('[data-next]');
-    const liveEl = root.querySelector('[data-live]');
-    const muteBtn = root.querySelector('[data-mute]');
-    const pauseBtn = root.querySelector('[data-pause]');
-    const customizeBtn = root.querySelector('[data-customize]');
-    const shareBtn = root.querySelector('[data-share]');
-    const panel = root.querySelector('[data-customize-panel]');
-    const keysHelp = root.querySelector('[data-keys-help]');
+    const overlay = root.querySelector("[data-overlay]");
+    const overlayTitle = root.querySelector("[data-overlay-title]");
+    const overlayBody = root.querySelector("[data-overlay-body]");
+    const overlayLevel = root.querySelector("[data-overlay-level]");
+    const playBtn = root.querySelector("[data-play]");
+    const messageEl = root.querySelector("[data-message]");
+    const scoreEl = root.querySelector("[data-score]");
+    const linesEl = root.querySelector("[data-lines]");
+    const levelEl = root.querySelector("[data-level]");
+    const highEl = root.querySelector("[data-high]");
+    const liveEl = root.querySelector("[data-live]");
+    const muteBtn = root.querySelector("[data-mute]");
+    const pauseBtn = root.querySelector("[data-pause]");
+    const customizeBtn = root.querySelector("[data-customize]");
+    const shareBtn = root.querySelector("[data-share]");
+    const panel = root.querySelector("[data-customize-panel]");
 
     let high = 0;
     try {
@@ -1720,29 +1456,24 @@
     }
 
     const game = createGame({ reducedMotion: prefersReducedMotion() });
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     const music = createMusicEngine();
     const sfx = createSfxEngine();
     let muted = false;
     let raf = 0;
     let lastLevelShown = 1;
     let autoStarted = false;
-    let listeningAction = null;
-    let wheelAcc = 0;
-    let dragState = null;
-    let lastClickAt = 0;
     const particles = [];
-    let shakeUntil = 0;
-    let ciScan = null;
     let flashCells = [];
+    let anims = [];
+    let sparkle = 0;
 
     applyBackground(prefs.background, root);
     music.setVolume(prefs.music.volume || 0.35);
+    root.classList.toggle("gfx-simple", prefs.graphics === "simple");
 
     if (!prefersReducedMotion()) {
-      window.setInterval(() => {
-        refreshDevCloudText(root.ownerDocument);
-      }, 4200);
+      window.setInterval(() => refreshDevCloudText(root.ownerDocument), 4200);
     }
 
     function beep(kind) {
@@ -1750,19 +1481,23 @@
       sfx.play(kind);
     }
 
-    function spawnParticles(cells, cellSize) {
+    function announce(text) {
+      if (liveEl) liveEl.textContent = text;
+    }
+
+    function spawnBurst(cells, cellSize) {
       if (prefersReducedMotion()) return;
       cells.forEach((cell) => {
-        const color = (META[cell.kind] && META[cell.kind].color) || '#8ec8ff';
-        for (let i = 0; i < 5; i += 1) {
+        const color = (META[cell.kind] && META[cell.kind].accent) || "#8ec8ff";
+        for (let i = 0; i < 10; i += 1) {
           particles.push({
             x: (cell.x + 0.5) * cellSize,
             y: (cell.y + 0.5) * cellSize,
-            vx: (Math.random() - 0.5) * 4.5,
-            vy: (Math.random() - 0.8) * 5.5,
+            vx: (Math.random() - 0.5) * 6,
+            vy: (Math.random() - 0.8) * 6,
             life: 1,
             color,
-            size: 2 + Math.random() * 3,
+            size: 2 + Math.random() * 3.5,
           });
         }
       });
@@ -1770,64 +1505,25 @@
 
     function ingestFx(fxList, cellSize) {
       fxList.forEach((fx) => {
-        if (fx.cells && fx.cells.length) {
-          spawnParticles(fx.cells, cellSize);
-          flashCells = fx.cells.map((c) => ({ ...c, until: Date.now() + 280 }));
-          shakeUntil = Date.now() + 160;
+        if (fx.type === "match" && fx.cells) {
+          flashCells = fx.cells.map((c) => ({ ...c, until: Date.now() + 320 }));
+          spawnBurst(fx.cells, cellSize);
+          anims.push({ type: "pulse", at: Date.now(), cells: fx.cells });
         }
-        if (fx.type === 'ci-scan' || (fx.events && fx.events.some((e) => e.type === 'deploy'))) {
-          ciScan = { y: 0, until: Date.now() + 700 };
+        if (fx.type === "bounce") {
+          anims.push({ type: "bounce", at: Date.now(), a: fx.a, b: fx.b });
         }
-        if (fx.events) {
-          fx.events.forEach((ev) => {
-            if (ev.type === 'deploy' && ev.rows && ev.rows.length >= 4) shakeUntil = Date.now() + 280;
-          });
+        if (fx.type === "shuffle") {
+          anims.push({ type: "shuffle", at: Date.now() });
         }
-      });
-    }
-
-    function miniCanvas(kind) {
-      const node = document.createElement('canvas');
-      node.width = 72;
-      node.height = 72;
-      node.setAttribute('aria-hidden', 'true');
-      const c = node.getContext('2d');
-      c.fillStyle = '#0b1220';
-      c.fillRect(0, 0, 72, 72);
-      if (!kind) return node;
-      const matrix = SHAPES[kind];
-      const cell = 14;
-      const w = matrix[0].length * cell;
-      const h = matrix.length * cell;
-      const ox = Math.floor((72 - w) / 2);
-      const oy = Math.floor((72 - h) / 2);
-      matrix.forEach((row, y) => {
-        row.forEach((on, x) => {
-          if (on) drawCell(c, ox + x * cell, oy + y * cell, cell, META[kind].color, false);
-        });
-      });
-      return node;
-    }
-
-    function paintMini(el, kinds) {
-      if (!el) return;
-      el.replaceChildren();
-      kinds.forEach((kind) => {
-        const wrap = document.createElement('div');
-        wrap.className = 'gb-mini';
-        wrap.appendChild(miniCanvas(kind));
-        const cap = document.createElement('span');
-        cap.textContent = kind ? META[kind].label : 'empty';
-        wrap.appendChild(cap);
-        el.appendChild(wrap);
       });
     }
 
     function sizeCanvas() {
       const wrap = canvas.parentElement;
-      const availW = Math.max(120, wrap.clientWidth - 8);
-      const availH = Math.max(160, wrap.clientHeight - 8);
-      const cell = Math.max(8, Math.min(Math.floor(availW / COLS), Math.floor(availH / ROWS)));
+      const availW = Math.max(120, wrap.clientWidth - 16);
+      const availH = Math.max(160, wrap.clientHeight - 16);
+      const cell = Math.max(28, Math.min(Math.floor(availW / COLS), Math.floor(availH / ROWS)));
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       canvas.width = COLS * cell * dpr;
       canvas.height = ROWS * cell * dpr;
@@ -1837,128 +1533,110 @@
       return cell;
     }
 
+    function paintLegend() {
+      const host = root.querySelector("[data-gem-legend]");
+      if (!host || host.dataset.ready) return;
+      host.dataset.ready = "1";
+      host.replaceChildren();
+      GEMS.forEach((gem) => {
+        const item = document.createElement("div");
+        item.className = "gem-legend-item";
+        const c = document.createElement("canvas");
+        c.width = 36;
+        c.height = 36;
+        c.setAttribute("aria-hidden", "true");
+        drawGem(c.getContext("2d"), 0, 0, 36, gem.id, { advanced: true });
+        const cap = document.createElement("span");
+        cap.textContent = gem.label;
+        item.append(c, cap);
+        host.appendChild(item);
+      });
+    }
+
     function draw() {
       const cell = sizeCanvas();
-      const fx = typeof game.consumeFx === 'function' ? game.consumeFx() : [];
+      const advancedGfx = prefs.graphics !== "simple";
+      const fx = game.consumeFx();
       if (fx.length) {
         ingestFx(fx, cell);
         fx.forEach((item) => {
-          if (item.type === 'ci-scan') beep('perfect');
-          if (item.type === 'clean') beep('clean');
-          (item.events || []).forEach((ev) => {
-            if (ev.type === 'deploy') beep(ev.rows && ev.rows.length >= 4 ? 'deploy' : 'clear');
-            if (ev.type === 'squash') beep('squash');
-          });
-          if (item.chain >= 3) beep('level');
+          if (item.type === "match") {
+            const big = item.chain >= 3 || (item.cells && item.cells.length >= 4);
+            beep(big ? "deploy" : "clear");
+          }
+          if (item.type === "bounce") beep("move");
+          if (item.type === "shuffle") beep("rotate");
         });
       }
 
       const snap = game.snapshot();
-      const shaking = Date.now() < shakeUntil && !prefersReducedMotion();
-      ctx.save();
-      if (shaking) {
-        ctx.translate((Math.random() - 0.5) * 5, (Math.random() - 0.5) * 4);
-      }
-
-      // atmospheric board backdrop — translucent so floating clouds stay visible
-      const advancedGfx = prefs.graphics !== 'simple';
-      if (advancedGfx) {
-        const bg = ctx.createLinearGradient(0, 0, 0, ROWS * cell);
-        bg.addColorStop(0, 'rgba(10, 21, 40, 0.55)');
-        bg.addColorStop(0.55, 'rgba(7, 17, 31, 0.62)');
-        bg.addColorStop(1, 'rgba(5, 12, 22, 0.72)');
-        ctx.fillStyle = bg;
-        ctx.fillRect(0, 0, COLS * cell, ROWS * cell);
-        // vignette
-        const vig = ctx.createRadialGradient(
-          (COLS * cell) / 2,
-          (ROWS * cell) / 2,
-          cell * 2,
-          (COLS * cell) / 2,
-          (ROWS * cell) / 2,
-          Math.max(COLS, ROWS) * cell * 0.72
-        );
-        vig.addColorStop(0, 'rgba(0,0,0,0)');
-        vig.addColorStop(1, 'rgba(0,0,0,0.35)');
-        ctx.fillStyle = vig;
-        ctx.fillRect(0, 0, COLS * cell, ROWS * cell);
-        // scanlines
-        ctx.fillStyle = 'rgba(255,255,255,0.018)';
-        for (let y = 0; y < ROWS * cell; y += 3) {
-          ctx.fillRect(0, y, COLS * cell, 1);
-        }
-      } else {
-        const bg = ctx.createLinearGradient(0, 0, 0, ROWS * cell);
-        bg.addColorStop(0, '#0a1528');
-        bg.addColorStop(1, '#07111f');
-        ctx.fillStyle = bg;
-        ctx.fillRect(0, 0, COLS * cell, ROWS * cell);
-      }
-
-      ctx.strokeStyle = advancedGfx ? 'rgba(207,217,230,0.1)' : 'rgba(207,217,230,0.07)';
-      for (let x = 0; x <= COLS; x += 1) {
-        ctx.beginPath();
-        ctx.moveTo(x * cell + 0.5, 0);
-        ctx.lineTo(x * cell + 0.5, ROWS * cell);
-        ctx.stroke();
-      }
-      for (let y = 0; y <= ROWS; y += 1) {
-        ctx.beginPath();
-        ctx.moveTo(0, y * cell + 0.5);
-        ctx.lineTo(COLS * cell, y * cell + 0.5);
-        ctx.stroke();
-      }
-
       const nowTs = Date.now();
+      sparkle += 0.04;
+
+      // board backdrop
+      ctx.clearRect(0, 0, COLS * cell, ROWS * cell);
+      const bg = ctx.createLinearGradient(0, 0, 0, ROWS * cell);
+      bg.addColorStop(0, "rgba(10, 21, 40, 0.55)");
+      bg.addColorStop(1, "rgba(5, 12, 22, 0.72)");
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, COLS * cell, ROWS * cell);
+
+      // soft cell wells
+      for (let y = 0; y < ROWS; y += 1) {
+        for (let x = 0; x < COLS; x += 1) {
+          roundedRect(ctx, x * cell + 2, y * cell + 2, cell - 4, cell - 4, cell * 0.14);
+          ctx.fillStyle = "rgba(255,255,255,0.03)";
+          ctx.fill();
+        }
+      }
+
       flashCells = flashCells.filter((c) => c.until > nowTs);
       const flashMap = {};
       flashCells.forEach((c) => {
-        flashMap[`${c.x},${c.y}`] = (c.until - nowTs) / 280;
+        flashMap[`${c.x},${c.y}`] = (c.until - nowTs) / 320;
       });
+
+      const hintSet = {};
+      if (snap.hint) {
+        hintSet[`${snap.hint.a.x},${snap.hint.a.y}`] = true;
+        hintSet[`${snap.hint.b.x},${snap.hint.b.y}`] = true;
+      }
+
+      // idle sparkles
+      if (advancedGfx && !prefersReducedMotion()) {
+        for (let i = 0; i < 6; i += 1) {
+          const sx = ((Math.sin(sparkle + i * 1.7) * 0.5 + 0.5) * COLS) * cell;
+          const sy = ((Math.cos(sparkle * 0.8 + i) * 0.5 + 0.5) * ROWS) * cell;
+          ctx.fillStyle = `rgba(255,255,255,${0.04 + (Math.sin(sparkle + i) * 0.5 + 0.5) * 0.08})`;
+          ctx.beginPath();
+          ctx.arc(sx, sy, 1.2, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
 
       snap.board.forEach((row, y) => {
         row.forEach((kind, x) => {
           if (!kind) return;
-          const pulse = flashMap[`${x},${y}`] || 0;
-          drawCell(ctx, x * cell, y * cell, cell, META[kind].color, false, pulse, advancedGfx);
+          const key = `${x},${y}`;
+          const selected = snap.selected && snap.selected.x === x && snap.selected.y === y;
+          const pulse = flashMap[key] || (selected ? 0.25 + Math.sin(sparkle * 3) * 0.1 : 0);
+          drawGem(ctx, x * cell, y * cell, cell, kind, {
+            advanced: advancedGfx,
+            pulse,
+            selected,
+            hinted: hintSet[key],
+            scale: flashMap[key] ? 1 + flashMap[key] * 0.18 : selected ? 1.05 : 1,
+          });
         });
       });
-      if (snap.ghost && snap.active) {
-        pieceCells(snap.ghost).forEach(({ x, y }) => {
-          if (y >= 0) {
-            drawCell(ctx, x * cell, y * cell, cell, META[snap.active.kind].color, true, 0, advancedGfx);
-          }
-        });
-      }
-      if (snap.active) {
-        pieceCells(snap.active).forEach(({ x, y }) => {
-          if (y >= 0) {
-            drawCell(ctx, x * cell, y * cell, cell, META[snap.active.kind].color, false, 0.2, advancedGfx);
-          }
-        });
-      }
-
-      // CI scan sweep
-      if (ciScan && nowTs < ciScan.until && !prefersReducedMotion()) {
-        const t = 1 - (ciScan.until - nowTs) / 700;
-        const y = t * ROWS * cell;
-        const grad = ctx.createLinearGradient(0, y - 18, 0, y + 18);
-        grad.addColorStop(0, 'rgba(94,200,216,0)');
-        grad.addColorStop(0.5, 'rgba(94,200,216,0.45)');
-        grad.addColorStop(1, 'rgba(94,200,216,0)');
-        ctx.fillStyle = grad;
-        ctx.fillRect(0, y - 18, COLS * cell, 36);
-      } else {
-        ciScan = null;
-      }
 
       // particles
       for (let i = particles.length - 1; i >= 0; i -= 1) {
         const p = particles[i];
         p.x += p.vx;
         p.y += p.vy;
-        p.vy += 0.12;
-        p.life -= 0.03;
+        p.vy += 0.14;
+        p.life -= 0.028;
         if (p.life <= 0) {
           particles.splice(i, 1);
           continue;
@@ -1971,101 +1649,110 @@
         ctx.globalAlpha = 1;
       }
 
-      ctx.restore();
-
+      // HUD fields
       if (scoreEl) scoreEl.textContent = String(snap.score);
-      if (linesEl) linesEl.textContent = String(snap.lines);
+      if (linesEl) linesEl.textContent = String(snap.cleared);
       if (levelEl) levelEl.textContent = String(snap.level);
       if (highEl) highEl.textContent = String(Math.max(high, snap.score));
       if (messageEl) messageEl.textContent = snap.message;
-      const comboEl = root.querySelector('[data-combo]');
-      const deployEl = root.querySelector('[data-deploys]');
-      const squashEl = root.querySelector('[data-squashes]');
-      const sprintEl = root.querySelector('[data-sprint]');
+      const comboEl = root.querySelector("[data-combo]");
+      const movesEl = root.querySelector("[data-moves]");
+      const goalEl = root.querySelector("[data-goal]");
+      const sprintEl = root.querySelector("[data-sprint]");
       if (comboEl) comboEl.textContent = String(snap.combo);
-      if (deployEl) deployEl.textContent = String(snap.deploys);
-      if (squashEl) squashEl.textContent = String(snap.squashes);
-      if (sprintEl) sprintEl.textContent = snap.sprint || '';
-      const cleanBtn = root.querySelector('[data-git-clean]');
-      const pushBtn = root.querySelector('[data-force-push]');
-      if (cleanBtn) {
-        cleanBtn.disabled = snap.status !== 'playing' || snap.cleanCharges < 1;
-        cleanBtn.textContent = `git clean (${snap.cleanCharges})`;
+      if (movesEl) movesEl.textContent = String(snap.moves);
+      if (goalEl) goalEl.textContent = `${snap.levelScore}/${snap.goal}`;
+      if (sprintEl) sprintEl.textContent = snap.sprint || "";
+
+      const hintBtn = root.querySelector("[data-hint]");
+      const shuffleBtn = root.querySelector("[data-shuffle]");
+      if (hintBtn) {
+        hintBtn.disabled = snap.status !== "playing" || snap.hints < 1;
+        hintBtn.textContent = `Hint (${snap.hints})`;
       }
-      if (pushBtn) {
-        pushBtn.disabled = snap.status !== 'playing' || snap.pushCharges < 1;
-        pushBtn.textContent = `force-push (${snap.pushCharges})`;
+      if (shuffleBtn) {
+        shuffleBtn.disabled = snap.status !== "playing" || snap.shuffles < 1;
+        shuffleBtn.textContent = `Shuffle (${snap.shuffles})`;
       }
-      const logEl = root.querySelector('[data-commit-log]');
+
+      const logEl = root.querySelector("[data-commit-log]");
       if (logEl) {
         logEl.replaceChildren();
         (snap.commitLog || []).slice(0, 3).forEach((line) => {
-          const li = document.createElement('li');
+          const li = document.createElement("li");
           li.textContent = line;
           logEl.appendChild(li);
         });
       }
-      const badgeEl = root.querySelector('[data-badges]');
+      const badgeEl = root.querySelector("[data-badges]");
       if (badgeEl) {
         badgeEl.replaceChildren();
         (snap.achievements || []).forEach((id) => {
           const ach = ACHIEVEMENTS.find((a) => a.id === id);
-          const span = document.createElement('span');
-          span.className = 'badge-chip';
+          const span = document.createElement("span");
+          span.className = "badge-chip";
           span.textContent = ach ? ach.label : id;
           badgeEl.appendChild(span);
         });
       }
-      paintMini(holdEl, [snap.hold]);
-      paintMini(nextEl, snap.queue);
+
+      paintLegend();
+
+      const progress = root.querySelector("[data-progress]");
+      if (progress) {
+        const pct = Math.max(0, Math.min(100, Math.round((snap.levelScore / Math.max(1, snap.goal)) * 100)));
+        progress.style.width = `${pct}%`;
+        progress.parentElement && progress.parentElement.setAttribute("aria-valuenow", String(pct));
+      }
 
       const flashAge = snap.levelFlash ? Date.now() - snap.levelFlash : 9999;
-      const showLevelBanner = snap.status === 'playing' && flashAge < 900;
+      const showLevelBanner = snap.status === "playing" && flashAge < 900;
       const customizing = panel && !panel.hidden;
       if (overlay && overlayTitle && overlayBody) {
-        const show = !customizing && (snap.status !== 'playing' || showLevelBanner);
+        const show = !customizing && (snap.status !== "playing" || showLevelBanner);
         overlay.hidden = !show;
-        overlay.classList.toggle('is-clickable', !customizing && snap.status !== 'playing');
+        overlay.classList.toggle("is-clickable", !customizing && snap.status !== "playing");
         if (overlayLevel) {
-          overlayLevel.hidden = !(showLevelBanner || snap.status === 'ready');
+          overlayLevel.hidden = !(showLevelBanner || snap.status === "ready");
           overlayLevel.textContent = snap.sprint || `Sprint ${snap.level}`;
         }
-        if (showLevelBanner && snap.status === 'playing') {
-          overlayTitle.textContent = 'New sprint';
-          overlayBody.textContent = `${snap.sprint}. Gravity rises — keep matching clusters of 4+ or fill rows to deploy.`;
+        if (showLevelBanner && snap.status === "playing") {
+          overlayTitle.textContent = "New sprint";
+          overlayBody.textContent = `${snap.sprint}. More logo gems unlock — keep matching 3+.`;
           if (playBtn) playBtn.hidden = true;
-        } else if (snap.status === 'ready') {
-          overlayTitle.textContent = 'Git Blocks';
+        } else if (snap.status === "ready") {
+          overlayTitle.textContent = "Git Blocks";
           overlayBody.textContent =
-            'Pieces fall on a timer — squash 4+ matching clusters or fill a row to deploy. Cascades chain for big scores.';
+            "Jewel-style match-3 — swap adjacent web-dev logo gems. Match 3+ in a row or column. Cascades chain for big scores.";
           if (playBtn) {
             playBtn.hidden = false;
-            playBtn.textContent = 'Start sprint';
+            playBtn.textContent = "Start sprint";
           }
-        } else if (snap.status === 'paused') {
-          overlayTitle.textContent = 'Paused';
+        } else if (snap.status === "paused") {
+          overlayTitle.textContent = "Paused";
           overlayBody.textContent = snap.message;
           if (playBtn) {
             playBtn.hidden = false;
-            playBtn.textContent = 'Resume';
+            playBtn.textContent = "Resume";
           }
-        } else if (snap.status === 'over') {
-          overlayTitle.textContent = 'Merge conflict';
-          overlayBody.textContent = `Score ${snap.score} · ${snap.deploys} deploys · ${snap.squashes} squashes. Rebase to try again.`;
+        } else if (snap.status === "over") {
+          overlayTitle.textContent = "Sprint ended";
+          overlayBody.textContent = `Score ${snap.score} · ${snap.cleared} gems cleared · ${snap.matches} matches.`;
           if (playBtn) {
             playBtn.hidden = false;
-            playBtn.textContent = 'Rebase';
+            playBtn.textContent = "Rebase";
           }
         }
       }
-      if (snap.level !== lastLevelShown && snap.status === 'playing') {
+
+      if (snap.level !== lastLevelShown && snap.status === "playing") {
         lastLevelShown = snap.level;
         announce(`Sprint ${snap.level}: ${snap.sprint}`);
-        beep('level');
+        beep("level");
       }
       if (pauseBtn) {
-        pauseBtn.textContent = snap.status === 'paused' ? 'Resume' : 'Pause';
-        pauseBtn.disabled = snap.status === 'ready' || snap.status === 'over';
+        pauseBtn.textContent = snap.status === "paused" ? "Resume" : "Pause";
+        pauseBtn.disabled = snap.status === "ready" || snap.status === "over";
       }
     }
 
@@ -2074,34 +1761,38 @@
       try {
         localStorage.setItem(STORAGE.high, String(high));
       } catch (_err) {
-        /* ignore */
+        /* */
       }
-    }
-
-    function announce(text) {
-      if (liveEl) liveEl.textContent = text;
     }
 
     function startLoop() {
       cancelAnimationFrame(raf);
-      const loop = (ts) => {
-        game.tick(ts);
-        if (game.status === 'over') persistHigh();
+      const loop = () => {
+        if (game.status === "over") persistHigh();
         draw();
         raf = requestAnimationFrame(loop);
       };
       raf = requestAnimationFrame(loop);
     }
 
+    function playSelectedMusic() {
+      THEME_TRACK.url = resolveGameAsset("audio/stack-sprint.ogg");
+      const track = MUSIC_TRACKS.find((t) => t.id === prefs.music.trackId) || THEME_TRACK;
+      music.setVolume(prefs.music.volume || 0.35);
+      if (track.kind === "off") music.stop();
+      else if (track.kind === "generated") music.playGenerated(track.style);
+      else if (track.kind === "url") music.playUrl(track.url || prefs.music.customUrl || THEME_TRACK.url);
+      else if (track.kind === "custom") music.playUrl(prefs.music.customUrl || THEME_TRACK.url);
+    }
+
     function handlePlay() {
-      if (game.status === 'paused') game.resume();
+      if (game.status === "paused") game.resume();
       else {
         game.play();
-        beep('start');
-        announce(`Level ${game.snapshot().level} started`);
-        // Unlock audio on the user gesture and start theme / selected track.
-        if (prefs.music.trackId === 'off') {
-          prefs.music.trackId = 'stack-sprint';
+        beep("start");
+        announce(`Sprint ${game.snapshot().level} started`);
+        if (prefs.music.trackId === "off") {
+          prefs.music.trackId = "stack-sprint";
           savePrefs(prefs);
           renderMusicUi();
         }
@@ -2111,334 +1802,182 @@
     }
 
     function handlePause() {
-      if (game.status === 'playing') {
+      if (game.status === "playing") {
         game.pause();
-        announce('Paused');
-      } else if (game.status === 'paused') game.resume();
+        announce("Paused");
+      } else if (game.status === "paused") game.resume();
     }
 
-    function applyMove(move) {
-      if (!move || move === 'none') return;
-      if (game.status !== 'playing') {
-        if (['rotate', 'rotate-ccw', 'drop', 'down'].includes(move)) handlePlay();
-        return;
-      }
-      if (move === 'left' && game.tryMove(-1, 0)) beep('move');
-      if (move === 'right' && game.tryMove(1, 0)) beep('move');
-      if (move === 'down') {
-        if (!game.softDrop()) beep('lock');
-      }
-      if (move === 'rotate' && game.tryRotate(1)) beep('rotate');
-      if (move === 'rotate-ccw' && game.tryRotate(-1)) beep('rotate');
-      if (move === 'drop') {
-        game.hardDrop();
-        beep('lock');
-      }
-      if (move === 'hold') game.hold();
-      if (move === 'clean' && game.gitClean && game.gitClean()) beep('clean');
-      if (move === 'push' && game.forcePush && game.forcePush()) beep('deploy');
-      draw();
-    }
-
-    function actionFromKey(key) {
-      const map = prefs.bindings.keys;
-      for (const action of Object.keys(map)) {
-        if ((map[action] || []).includes(key)) return action;
-      }
-      return null;
-    }
-
-    function isEditableTarget(target) {
-      if (!target || !target.tagName) return false;
-      if (['INPUT', 'TEXTAREA', 'SELECT', 'BUTTON'].includes(target.tagName)) {
-        if (target.closest && target.closest('[data-customize-panel]')) return true;
-        if (['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)) return true;
-      }
-      return Boolean(target.isContentEditable);
-    }
-
-    function onKey(event) {
-      if (listeningAction) {
-        event.preventDefault();
-        if (event.key === 'Escape') {
-          listeningAction = null;
-          renderBindingsUi();
-          return;
-        }
-        const next = event.key;
-        if (next === 'Shift' || next === 'Meta' || next === 'Control' || next === 'Alt') return;
-        // remove key from other actions
-        Object.keys(prefs.bindings.keys).forEach((action) => {
-          prefs.bindings.keys[action] = (prefs.bindings.keys[action] || []).filter((k) => k !== next);
-        });
-        prefs.bindings.keys[listeningAction] = [next];
-        listeningAction = null;
-        savePrefs(prefs);
-        renderBindingsUi();
-        updateKeysHelp();
-        return;
-      }
-
-      if (isEditableTarget(event.target)) return;
-      if (panel && !panel.hidden) {
-        if (event.key === 'Escape') {
-          closeCustomize();
-        }
-        return;
-      }
-
-      const action = actionFromKey(event.key);
-      if (!action && event.key !== 'Enter' && event.key !== 'r' && event.key !== 'R') return;
-      event.preventDefault();
-
-      if (action === 'pause') {
-        handlePause();
-        return;
-      }
-      if (action === 'mute') {
-        if (muteBtn) muteBtn.click();
-        return;
-      }
-      if ((event.key === 'r' || event.key === 'R') && game.status === 'over') {
-        handlePlay();
-        return;
-      }
-      if (game.status !== 'playing') {
-        if (event.key === 'Enter' || action === 'drop' || action === 'rotate') handlePlay();
-        return;
-      }
-      if (action === 'left') applyMove('left');
-      if (action === 'right') applyMove('right');
-      if (action === 'down') applyMove('down');
-      if (action === 'drop') applyMove('drop');
-      if (action === 'rotate') applyMove('rotate');
-      if (action === 'rotateCcw') applyMove('rotate-ccw');
-      if (action === 'hold') applyMove('hold');
-    }
-
-    function boardPoint(event) {
+    function cellFromEvent(event) {
       const rect = canvas.getBoundingClientRect();
-      return {
-        x: event.clientX - rect.left,
-        y: event.clientY - rect.top,
-        w: rect.width,
-        h: rect.height,
-      };
+      const cellW = rect.width / COLS;
+      const cellH = rect.height / ROWS;
+      const x = Math.floor((event.clientX - rect.left) / cellW);
+      const y = Math.floor((event.clientY - rect.top) / cellH);
+      if (!inBounds(x, y)) return null;
+      return { x, y };
     }
 
-    function onContextMenu(event) {
-      event.preventDefault();
-      if (game.status !== 'playing') {
-        handlePlay();
-        return;
-      }
-      applyMove(prefs.bindings.mouse.rightClick || 'rotate');
-    }
+    let dragStart = null;
 
     function onPointerDown(event) {
-      if (event.button === 2) return;
-      if (event.button === 1) {
-        event.preventDefault();
-        applyMove(prefs.bindings.mouse.middleClick || 'drop');
-        return;
-      }
       if (event.button !== 0) return;
-      const now = Date.now();
-      const pt = boardPoint(event);
-      dragState = { x: pt.x, y: pt.y, moved: false, col: Math.floor((pt.x / pt.w) * COLS) };
-
-      if (now - lastClickAt < 280) {
-        applyMove(prefs.bindings.mouse.doubleClick || 'drop');
-        lastClickAt = 0;
-        dragState = null;
+      if (game.status !== "playing") {
+        handlePlay();
         return;
       }
-      lastClickAt = now;
-
-      if (prefs.bindings.mouse.edgeClick === 'move') {
-        if (pt.x < pt.w * 0.22) applyMove('left');
-        else if (pt.x > pt.w * 0.78) applyMove('right');
-      }
-    }
-
-    function onPointerMove(event) {
-      if (!dragState || prefs.bindings.mouse.drag !== 'move') return;
-      if (game.status !== 'playing') return;
-      const pt = boardPoint(event);
-      const col = Math.floor((pt.x / pt.w) * COLS);
-      if (col !== dragState.col) {
-        const dir = col > dragState.col ? 1 : -1;
-        const steps = Math.min(3, Math.abs(col - dragState.col));
-        for (let i = 0; i < steps; i += 1) applyMove(dir > 0 ? 'right' : 'left');
-        dragState.col = col;
-        dragState.moved = true;
-      }
+      const cell = cellFromEvent(event);
+      if (!cell) return;
+      dragStart = cell;
+      canvas.setPointerCapture(event.pointerId);
     }
 
     function onPointerUp(event) {
-      if (!dragState) return;
-      const moved = dragState.moved;
-      dragState = null;
-      if (moved) return;
-      if (event.button === 0) applyMove(prefs.bindings.mouse.leftClick || 'down');
-    }
-
-    function onWheel(event) {
-      event.preventDefault();
-      if (game.status !== 'playing') {
-        handlePlay();
+      if (game.status !== "playing") return;
+      const end = cellFromEvent(event);
+      if (!dragStart) return;
+      const start = dragStart;
+      dragStart = null;
+      try {
+        canvas.releasePointerCapture(event.pointerId);
+      } catch (_e) {
+        /* */
+      }
+      if (!end) return;
+      if (start.x === end.x && start.y === end.y) {
+        const result = game.selectCell(end.x, end.y);
+        if (result && result.ok) (result.sounds || []).forEach(beep);
+        else if (result && result.bounce) beep("move");
+        else if (result && result.selected) beep("move");
+        draw();
         return;
       }
-      const mode = prefs.bindings.mouse.wheel || 'move';
-      wheelAcc += event.deltaY + event.deltaX;
-      const step = 40;
-      while (Math.abs(wheelAcc) >= step) {
-        const dir = wheelAcc > 0 ? 1 : -1;
-        wheelAcc -= dir * step;
-        if (mode === 'move') applyMove(dir > 0 ? 'right' : 'left');
-        else if (mode === 'down') applyMove('down');
-        else if (mode === 'rotate') applyMove(dir > 0 ? 'rotate' : 'rotate-ccw');
+      if (areAdjacent(start, end)) {
+        const result = game.trySwap(start, end);
+        if (result.ok) (result.sounds || []).forEach(beep);
+        else if (result.bounce) beep("move");
+        draw();
+      } else {
+        game.selectCell(end.x, end.y);
+        draw();
       }
     }
 
-    function updateKeysHelp() {
-      if (!keysHelp) return;
-      const k = prefs.bindings.keys;
-      keysHelp.innerHTML = `Scroll ${prefs.bindings.mouse.wheel} · right-click ${prefs.bindings.mouse.rightClick} · <kbd>${keyLabel(
-        (k.left || ['←'])[0]
-      )}</kbd>/<kbd>${keyLabel((k.right || ['→'])[0])}</kbd> move · <kbd>${keyLabel(
-        (k.rotate || ['↑'])[0]
-      )}</kbd> rotate`;
+    function onKey(event) {
+      if (panel && !panel.hidden) {
+        if (event.key === "Escape") closeCustomize();
+        return;
+      }
+      if (event.key === "Enter" && game.status !== "playing") {
+        event.preventDefault();
+        handlePlay();
+      }
+      if ((event.key === "p" || event.key === "P") && (game.status === "playing" || game.status === "paused")) {
+        event.preventDefault();
+        handlePause();
+      }
+      if ((event.key === "r" || event.key === "R") && game.status === "over") {
+        event.preventDefault();
+        handlePlay();
+      }
+      if ((event.key === "h" || event.key === "H") && game.status === "playing") {
+        event.preventDefault();
+        if (game.hint()) beep("badge");
+      }
+      if ((event.key === "s" || event.key === "S") && game.status === "playing" && !event.metaKey && !event.ctrlKey) {
+        // avoid stealing browser save — only when focused on canvas
+        if (document.activeElement === canvas) {
+          event.preventDefault();
+          if (game.shuffle()) beep("rotate");
+        }
+      }
     }
 
-    function renderBindingsUi() {
-      const keyHost = root.querySelector('[data-key-bindings]');
-      const mouseHost = root.querySelector('[data-mouse-bindings]');
-      if (keyHost) {
-        keyHost.replaceChildren();
-        KEY_ACTIONS.forEach((action) => {
-          const row = document.createElement('div');
-          row.className = 'binding-row';
-          const label = document.createElement('label');
-          label.textContent = action.label;
-          const btn = document.createElement('button');
-          btn.type = 'button';
-          const keys = prefs.bindings.keys[action.id] || [];
-          btn.textContent =
-            listeningAction === action.id ? 'Press a key…' : keys.map(keyLabel).join(', ') || '—';
-          if (listeningAction === action.id) btn.classList.add('listening');
-          btn.addEventListener('click', () => {
-            listeningAction = action.id;
-            renderBindingsUi();
-          });
-          row.append(label, btn);
-          keyHost.appendChild(row);
-        });
-      }
-      if (mouseHost) {
-        mouseHost.replaceChildren();
-        const mouseFields = [
-          { id: 'leftClick', label: 'Left click' },
-          { id: 'rightClick', label: 'Right click' },
-          { id: 'middleClick', label: 'Middle click' },
-          { id: 'doubleClick', label: 'Double click' },
-          { id: 'wheel', label: 'Scroll wheel' },
-          { id: 'drag', label: 'Drag on board' },
-          { id: 'edgeClick', label: 'Click board edges' },
-        ];
-        mouseFields.forEach((field) => {
-          const row = document.createElement('div');
-          row.className = 'binding-row';
-          const label = document.createElement('label');
-          label.textContent = field.label;
-          const select = document.createElement('select');
-          const wheelExtras =
-            field.id === 'wheel' || field.id === 'drag' || field.id === 'edgeClick'
-              ? [{ id: 'move', label: 'Move L/R' }, ...ACTION_OPTIONS]
-              : ACTION_OPTIONS;
-          const options =
-            field.id === 'wheel'
-              ? [
-                  { id: 'move', label: 'Move L/R' },
-                  { id: 'down', label: 'Soft drop' },
-                  { id: 'rotate', label: 'Rotate' },
-                  { id: 'none', label: 'Do nothing' },
-                ]
-              : wheelExtras;
-          options.forEach((opt) => {
-            const o = document.createElement('option');
-            o.value = opt.id;
-            o.textContent = opt.label;
-            if ((prefs.bindings.mouse[field.id] || '') === opt.id) o.selected = true;
-            select.appendChild(o);
-          });
-          select.addEventListener('change', () => {
-            prefs.bindings.mouse[field.id] = select.value;
-            savePrefs(prefs);
-            updateKeysHelp();
-          });
-          row.append(label, select);
-          mouseHost.appendChild(row);
-        });
-      }
+    function openCustomize(tab) {
+      if (!panel) return;
+      panel.hidden = false;
+      panel.removeAttribute("hidden");
+      root.classList.add("is-customizing");
+      switchTab(tab || "look");
+      renderBgPresets();
+      renderMusicUi();
+      refreshShareUi();
+    }
+
+    function closeCustomize() {
+      if (!panel) return;
+      panel.hidden = true;
+      panel.setAttribute("hidden", "");
+      root.classList.remove("is-customizing");
+      canvas.focus({ preventScroll: true });
+    }
+
+    function switchTab(name) {
+      root.querySelectorAll("[data-tab]").forEach((btn) => {
+        const on = btn.getAttribute("data-tab") === name;
+        btn.classList.toggle("is-active", on);
+        btn.setAttribute("aria-selected", on ? "true" : "false");
+      });
+      root.querySelectorAll("[data-pane]").forEach((pane) => {
+        const on = pane.getAttribute("data-pane") === name;
+        pane.hidden = !on;
+        pane.classList.toggle("is-active", on);
+      });
     }
 
     function renderBgPresets() {
-      const host = root.querySelector('[data-bg-presets]');
+      const host = root.querySelector("[data-bg-presets]");
       if (!host) return;
       host.replaceChildren();
       BG_PRESETS.forEach((preset) => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'bg-swatch' + (prefs.background.presetId === preset.id ? ' is-active' : '');
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "bg-swatch" + (prefs.background.presetId === preset.id ? " is-active" : "");
         btn.style.background = preset.css;
         btn.title = preset.label;
-        const cap = document.createElement('span');
+        const cap = document.createElement("span");
         cap.textContent = preset.label;
         btn.appendChild(cap);
-        btn.addEventListener('click', () => {
-          prefs.background = { mode: 'preset', presetId: preset.id, css: preset.css, image: '' };
+        btn.addEventListener("click", () => {
+          prefs.background = { mode: "preset", presetId: preset.id, css: preset.css, image: "" };
           applyBackground(prefs.background, root);
           savePrefs(prefs);
           renderBgPresets();
-          const cssField = root.querySelector('[data-bg-css]');
+          const cssField = root.querySelector("[data-bg-css]");
           if (cssField) cssField.value = preset.css;
         });
         host.appendChild(btn);
       });
-      const cssField = root.querySelector('[data-bg-css]');
-      const imgField = root.querySelector('[data-bg-image]');
+      const cssField = root.querySelector("[data-bg-css]");
+      const imgField = root.querySelector("[data-bg-image]");
       if (cssField && !cssField.dataset.bound) {
-        cssField.dataset.bound = '1';
-        cssField.value = prefs.background.css || '';
+        cssField.dataset.bound = "1";
+        cssField.value = prefs.background.css || "";
       }
       if (imgField && !imgField.dataset.bound) {
-        imgField.dataset.bound = '1';
-        imgField.value = prefs.background.image || '';
+        imgField.dataset.bound = "1";
+        imgField.value = prefs.background.image || "";
       }
-      const gfx = root.querySelector('[data-graphics]');
+      const gfx = root.querySelector("[data-graphics]");
       if (gfx && !gfx.dataset.bound) {
-        gfx.dataset.bound = '1';
-        gfx.value = prefs.graphics === 'simple' ? 'simple' : 'advanced';
-        gfx.addEventListener('change', () => {
-          prefs.graphics = gfx.value === 'simple' ? 'simple' : 'advanced';
+        gfx.dataset.bound = "1";
+        gfx.value = prefs.graphics === "simple" ? "simple" : "advanced";
+        gfx.addEventListener("change", () => {
+          prefs.graphics = gfx.value === "simple" ? "simple" : "advanced";
           savePrefs(prefs);
-          root.classList.toggle('gfx-simple', prefs.graphics === 'simple');
+          root.classList.toggle("gfx-simple", prefs.graphics === "simple");
           draw();
         });
-      } else if (gfx) {
-        gfx.value = prefs.graphics === 'simple' ? 'simple' : 'advanced';
-      }
-      root.classList.toggle('gfx-simple', prefs.graphics === 'simple');
+      } else if (gfx) gfx.value = prefs.graphics === "simple" ? "simple" : "advanced";
     }
 
     function refillMusicSelect() {
-      const select = root.querySelector('[data-music-track]');
+      const select = root.querySelector("[data-music-track]");
       if (!select) return;
       const current = prefs.music.trackId;
       select.replaceChildren();
       MUSIC_TRACKS.forEach((track) => {
-        const o = document.createElement('option');
+        const o = document.createElement("option");
         o.value = track.id;
         o.textContent = track.label;
         select.appendChild(o);
@@ -2451,186 +1990,99 @@
     }
 
     function renderMusicUi() {
-      const select = root.querySelector('[data-music-track]');
-      const credit = root.querySelector('[data-music-credit]');
-      const custom = root.querySelector('[data-music-custom]');
-      const volume = root.querySelector('[data-music-volume]');
+      const select = root.querySelector("[data-music-track]");
+      const credit = root.querySelector("[data-music-credit]");
+      const custom = root.querySelector("[data-music-custom]");
+      const volume = root.querySelector("[data-music-volume]");
       if (select && !select.dataset.bound) {
-        select.dataset.bound = '1';
-        select.addEventListener('change', () => {
+        select.dataset.bound = "1";
+        select.addEventListener("change", () => {
           prefs.music.trackId = select.value;
           const meta = MUSIC_TRACKS.find((t) => t.id === select.value);
-          if (credit) credit.textContent = meta ? meta.credit : '';
+          if (credit) credit.textContent = meta ? meta.credit : "";
           savePrefs(prefs);
         });
       }
       refillMusicSelect();
       const meta = MUSIC_TRACKS.find((t) => t.id === prefs.music.trackId) || MUSIC_TRACKS[0];
-      if (credit) credit.textContent = meta.credit;
-      if (custom) {
-        custom.value = prefs.music.customUrl || '';
-        if (!custom.dataset.bound) {
-          custom.dataset.bound = '1';
-          custom.addEventListener('change', () => {
-            prefs.music.customUrl = custom.value.trim();
-            savePrefs(prefs);
-          });
-        }
+      if (credit) credit.textContent = meta ? meta.credit : "";
+      if (custom && !custom.dataset.bound) {
+        custom.dataset.bound = "1";
+        custom.value = prefs.music.customUrl || "";
+        custom.addEventListener("change", () => {
+          prefs.music.customUrl = custom.value.trim();
+          savePrefs(prefs);
+        });
       }
-      if (volume) {
+      if (volume && !volume.dataset.bound) {
+        volume.dataset.bound = "1";
         volume.value = String(Math.round((prefs.music.volume || 0.35) * 100));
-        if (!volume.dataset.bound) {
-          volume.dataset.bound = '1';
-          volume.addEventListener('input', () => {
-            prefs.music.volume = Number(volume.value) / 100;
-            music.setVolume(prefs.music.volume);
-            savePrefs(prefs);
-          });
-        }
+        volume.addEventListener("input", () => {
+          prefs.music.volume = Number(volume.value) / 100;
+          music.setVolume(prefs.music.volume);
+          savePrefs(prefs);
+        });
       }
-    }
-
-    function playSelectedMusic() {
-      THEME_TRACK.url = resolveGameAsset('audio/stack-sprint.ogg');
-      const track = MUSIC_TRACKS.find((t) => t.id === prefs.music.trackId) || THEME_TRACK;
-      music.setVolume(prefs.music.volume || 0.35);
-      if (track.kind === 'off') music.stop();
-      else if (track.kind === 'generated') music.playGenerated(track.style);
-      else if (track.kind === 'url') music.playUrl(track.url || prefs.music.customUrl || THEME_TRACK.url);
-      else if (track.kind === 'custom') music.playUrl(prefs.music.customUrl || THEME_TRACK.url);
-    }
-
-    function previewSelectedMusic() {
-      const track = MUSIC_TRACKS.find((t) => t.id === prefs.music.trackId) || MUSIC_TRACKS[0];
-      music.setVolume(prefs.music.volume || 0.35);
-      if (track.kind === 'generated') music.previewGenerated(track.style, 2000);
-      else if (track.kind === 'url' || track.kind === 'custom') {
-        const url = track.url || prefs.music.customUrl;
-        if (!url) {
-          music.previewGenerated('chip', 1600);
-          return;
-        }
-        music.playUrl(url);
-        window.setTimeout(() => music.stop(), 2200);
-      } else {
-        music.previewGenerated('chip', 1200);
-      }
-      announce('Previewing sound');
     }
 
     function buildShareUrl() {
-      const include = root.querySelector('[data-share-include-prefs]');
-      const includePrefs = !include || include.checked;
-      return `${cfg.shareUrl.replace(/#.*$/, '')}${encodeShareHash(prefs, includePrefs)}`;
+      const include = root.querySelector("[data-share-include-prefs]");
+      const withPrefs = !include || include.checked;
+      return `${cfg.shareUrl || location.href.split("#")[0]}${encodeShareHash(prefs, withPrefs)}`;
     }
 
     function refreshShareUi() {
-      const urlField = root.querySelector('[data-share-url]');
-      const url = buildShareUrl();
-      if (urlField) urlField.value = url;
-      const text = encodeURIComponent('Play Git Blocks — a tiny tetris cabinet for shipping commits.');
-      const x = root.querySelector('[data-share-x]');
-      const li = root.querySelector('[data-share-linkedin]');
-      if (x) x.href = `https://twitter.com/intent/tweet?text=${text}&url=${encodeURIComponent(url)}`;
-      if (li) {
-        li.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
-      }
+      const field = root.querySelector("[data-share-url]");
+      if (field) field.value = buildShareUrl();
+      const x = root.querySelector("[data-share-x]");
+      const li = root.querySelector("[data-share-linkedin]");
+      const text = encodeURIComponent("Play Git Blocks — match shiny web-dev logo gems.");
+      const url = encodeURIComponent(buildShareUrl());
+      if (x) x.href = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+      if (li) li.href = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
     }
 
-    function openCustomize(tab) {
-      if (!panel) return;
-      panel.hidden = false;
-      panel.removeAttribute('hidden');
-      root.classList.add('is-customizing');
-      if (overlay) {
-        overlay.hidden = true;
-        overlay.classList.remove('is-clickable');
-      }
-      if (game.status === 'playing') game.pause();
-      renderBgPresets();
-      renderMusicUi();
-      renderBindingsUi();
-      refreshShareUi();
-      if (tab) switchTab(tab);
-      const firstTab = panel.querySelector(`[data-tab="${tab || 'look'}"]`);
-      if (firstTab && typeof firstTab.focus === 'function') firstTab.focus({ preventScroll: true });
-    }
-
-    function closeCustomize() {
-      if (!panel) return;
-      panel.hidden = true;
-      panel.setAttribute('hidden', '');
-      root.classList.remove('is-customizing');
-      listeningAction = null;
-      if (game.status === 'paused') game.resume();
-      draw();
-      canvas.focus({ preventScroll: true });
-    }
-
-    function switchTab(id) {
-      root.querySelectorAll('[data-tab]').forEach((btn) => {
-        const on = btn.getAttribute('data-tab') === id;
-        btn.classList.toggle('is-active', on);
-        btn.setAttribute('aria-selected', on ? 'true' : 'false');
-      });
-      root.querySelectorAll('[data-pane]').forEach((pane) => {
-        const on = pane.getAttribute('data-pane') === id;
-        pane.hidden = !on;
-        pane.classList.toggle('is-active', on);
-      });
-      if (id === 'share') refreshShareUi();
-    }
-
-    // Wire chrome
-    root.querySelectorAll('[data-move]').forEach((btn) => {
-      btn.addEventListener('click', (event) => {
-        event.preventDefault();
-        applyMove(btn.getAttribute('data-move'));
-        canvas.focus({ preventScroll: true });
-      });
-    });
-    if (playBtn) playBtn.addEventListener('click', handlePlay);
-    if (pauseBtn) pauseBtn.addEventListener('click', handlePause);
+    if (playBtn) playBtn.addEventListener("click", handlePlay);
+    if (pauseBtn) pauseBtn.addEventListener("click", handlePause);
     if (muteBtn) {
-      muteBtn.addEventListener('click', () => {
+      muteBtn.addEventListener("click", () => {
         muted = !muted;
-        muteBtn.setAttribute('aria-pressed', String(muted));
-        muteBtn.textContent = muted ? 'Sound off' : 'Sound on';
+        muteBtn.textContent = muted ? "Sound off" : "Sound on";
+        muteBtn.setAttribute("aria-pressed", muted ? "true" : "false");
+        if (muted) music.stop();
+        else if (game.status === "playing") playSelectedMusic();
       });
     }
-    if (customizeBtn) customizeBtn.addEventListener('click', () => openCustomize('look'));
-    const cleanBtnWire = root.querySelector('[data-git-clean]');
-    const pushBtnWire = root.querySelector('[data-force-push]');
-    if (cleanBtnWire) cleanBtnWire.addEventListener('click', () => applyMove('clean'));
-    if (pushBtnWire) pushBtnWire.addEventListener('click', () => applyMove('push'));
-
-    if (shareBtn) shareBtn.addEventListener('click', () => openCustomize('share'));
-    root.querySelectorAll('[data-customize-close]').forEach((btn) => {
-      btn.addEventListener('click', closeCustomize);
-    });
-    root.querySelectorAll('[data-tab]').forEach((btn) => {
-      btn.addEventListener('click', () => switchTab(btn.getAttribute('data-tab')));
+    if (customizeBtn) customizeBtn.addEventListener("click", () => openCustomize("look"));
+    if (shareBtn) shareBtn.addEventListener("click", () => openCustomize("share"));
+    root.querySelectorAll("[data-customize-close]").forEach((btn) => btn.addEventListener("click", closeCustomize));
+    root.querySelectorAll("[data-tab]").forEach((btn) => {
+      btn.addEventListener("click", () => switchTab(btn.getAttribute("data-tab")));
     });
 
-    const bgApply = root.querySelector('[data-bg-apply]');
-    const bgRandom = root.querySelector('[data-bg-random]');
+    const hintBtn = root.querySelector("[data-hint]");
+    const shuffleBtn = root.querySelector("[data-shuffle]");
+    if (hintBtn) hintBtn.addEventListener("click", () => { if (game.hint()) beep("badge"); draw(); });
+    if (shuffleBtn) shuffleBtn.addEventListener("click", () => { if (game.shuffle()) beep("rotate"); draw(); });
+
+    const bgApply = root.querySelector("[data-bg-apply]");
+    const bgRandom = root.querySelector("[data-bg-random]");
     if (bgApply) {
-      bgApply.addEventListener('click', () => {
-        const css = (root.querySelector('[data-bg-css]') || {}).value || '';
-        const image = ((root.querySelector('[data-bg-image]') || {}).value || '').trim();
-        if (image) prefs.background = { mode: 'image', presetId: '', css, image };
-        else prefs.background = { mode: 'css', presetId: '', css, image: '' };
+      bgApply.addEventListener("click", () => {
+        const css = (root.querySelector("[data-bg-css]") || {}).value || "";
+        const image = ((root.querySelector("[data-bg-image]") || {}).value || "").trim();
+        if (image) prefs.background = { mode: "image", presetId: "", css, image };
+        else prefs.background = { mode: "css", presetId: "", css, image: "" };
         applyBackground(prefs.background, root);
         savePrefs(prefs);
         renderBgPresets();
-        announce('Backdrop updated');
       });
     }
     if (bgRandom) {
-      bgRandom.addEventListener('click', () => {
+      bgRandom.addEventListener("click", () => {
         const css = randomGradient();
-        prefs.background = { mode: 'css', presetId: '', css, image: '' };
-        const field = root.querySelector('[data-bg-css]');
+        prefs.background = { mode: "css", presetId: "", css, image: "" };
+        const field = root.querySelector("[data-bg-css]");
         if (field) field.value = css;
         applyBackground(prefs.background, root);
         savePrefs(prefs);
@@ -2638,115 +2090,70 @@
       });
     }
 
-    const musicApply = root.querySelector('[data-music-apply]');
-    const musicStop = root.querySelector('[data-music-stop]');
-    const musicPreview = root.querySelector('[data-music-preview]');
-    const musicDiscover = root.querySelector('[data-music-discover]');
-    if (musicApply) musicApply.addEventListener('click', playSelectedMusic);
-    if (musicStop) musicStop.addEventListener('click', () => music.stop());
-    if (musicPreview) musicPreview.addEventListener('click', previewSelectedMusic);
+    const musicApply = root.querySelector("[data-music-apply]");
+    const musicStop = root.querySelector("[data-music-stop]");
+    const musicPreview = root.querySelector("[data-music-preview]");
+    const musicDiscover = root.querySelector("[data-music-discover]");
+    if (musicApply) musicApply.addEventListener("click", playSelectedMusic);
+    if (musicStop) musicStop.addEventListener("click", () => music.stop());
+    if (musicPreview) {
+      musicPreview.addEventListener("click", () => {
+        const track = MUSIC_TRACKS.find((t) => t.id === prefs.music.trackId) || THEME_TRACK;
+        if (track.kind === "generated") music.previewGenerated(track.style, 2000);
+        else if (track.kind === "url" || track.kind === "custom") {
+          playSelectedMusic();
+          window.setTimeout(() => music.stop(), 2200);
+        } else music.previewGenerated("chip", 1200);
+      });
+    }
     if (musicDiscover) {
-      musicDiscover.addEventListener('click', () => {
+      musicDiscover.addEventListener("click", () => {
         discoverFreeTracks(5);
         prefs.music.trackId = (MUSIC_TRACKS.find((t) => t.discovered) || MUSIC_TRACKS[1] || MUSIC_TRACKS[0]).id;
         savePrefs(prefs);
         renderMusicUi();
-        announce('Shuffled free open-source catalog');
       });
     }
-    root.querySelectorAll('[data-sfx-preview]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        beep(btn.getAttribute('data-sfx-preview') || 'move');
-      });
+    root.querySelectorAll("[data-sfx-preview]").forEach((btn) => {
+      btn.addEventListener("click", () => beep(btn.getAttribute("data-sfx-preview") || "move"));
     });
 
-    const bindingsReset = root.querySelector('[data-bindings-reset]');
-    if (bindingsReset) {
-      bindingsReset.addEventListener('click', () => {
-        prefs.bindings = JSON.parse(JSON.stringify(DEFAULT_BINDINGS));
-        savePrefs(prefs);
-        renderBindingsUi();
-        updateKeysHelp();
-      });
-    }
-
-    const shareCopy = root.querySelector('[data-share-copy]');
-    const shareNative = root.querySelector('[data-share-native]');
-    const shareStatus = root.querySelector('[data-share-status]');
-    const shareInclude = root.querySelector('[data-share-include-prefs]');
-    if (shareInclude) shareInclude.addEventListener('change', refreshShareUi);
+    const shareCopy = root.querySelector("[data-share-copy]");
+    const shareNative = root.querySelector("[data-share-native]");
+    const shareStatus = root.querySelector("[data-share-status]");
+    const shareInclude = root.querySelector("[data-share-include-prefs]");
+    if (shareInclude) shareInclude.addEventListener("change", refreshShareUi);
     if (shareCopy) {
-      shareCopy.addEventListener('click', async () => {
-        const url = buildShareUrl();
+      shareCopy.addEventListener("click", async () => {
         refreshShareUi();
         try {
-          await navigator.clipboard.writeText(url);
-          if (shareStatus) shareStatus.textContent = 'Link copied.';
+          await navigator.clipboard.writeText(buildShareUrl());
+          if (shareStatus) shareStatus.textContent = "Link copied.";
         } catch (_err) {
-          if (shareStatus) shareStatus.textContent = 'Copy failed — select the field and copy manually.';
+          if (shareStatus) shareStatus.textContent = "Copy failed — select the field and copy manually.";
         }
       });
     }
     if (shareNative) {
-      shareNative.addEventListener('click', async () => {
+      shareNative.addEventListener("click", async () => {
         const url = buildShareUrl();
         if (navigator.share) {
           try {
-            await navigator.share({
-              title: 'Git Blocks',
-              text: 'Play Git Blocks — clear the backlog.',
-              url,
-            });
-            if (shareStatus) shareStatus.textContent = 'Shared.';
+            await navigator.share({ title: "Git Blocks", text: "Match shiny web-dev logo gems.", url });
+            if (shareStatus) shareStatus.textContent = "Shared.";
           } catch (_err) {
-            if (shareStatus) shareStatus.textContent = 'Share cancelled.';
+            if (shareStatus) shareStatus.textContent = "Share cancelled.";
           }
-        } else if (shareStatus) {
-          shareStatus.textContent = 'System share unavailable — use Copy link.';
-        }
+        } else if (shareStatus) shareStatus.textContent = "System share unavailable — use Copy link.";
       });
     }
 
-    canvas.addEventListener('keydown', onKey);
-    window.addEventListener('keydown', onKey, { capture: true });
-    canvas.addEventListener('contextmenu', onContextMenu);
-    canvas.addEventListener('pointerdown', onPointerDown);
-    window.addEventListener('pointermove', onPointerMove);
-    window.addEventListener('pointerup', onPointerUp);
-    canvas.addEventListener('wheel', onWheel, { passive: false });
+    canvas.addEventListener("pointerdown", onPointerDown);
+    canvas.addEventListener("pointerup", onPointerUp);
+    canvas.addEventListener("keydown", onKey);
+    window.addEventListener("keydown", onKey, { capture: true });
+    window.addEventListener("resize", draw);
 
-    let touchStart = null;
-    canvas.addEventListener(
-      'touchstart',
-      (event) => {
-        const t = event.changedTouches[0];
-        touchStart = { x: t.clientX, y: t.clientY, at: Date.now() };
-      },
-      { passive: true }
-    );
-    canvas.addEventListener(
-      'touchend',
-      (event) => {
-        if (!touchStart) return;
-        const t = event.changedTouches[0];
-        const dx = t.clientX - touchStart.x;
-        const dy = t.clientY - touchStart.y;
-        const dt = Date.now() - touchStart.at;
-        touchStart = null;
-        if (game.status !== 'playing') {
-          handlePlay();
-          return;
-        }
-        if (Math.abs(dx) < 24 && Math.abs(dy) < 24 && dt < 250) applyMove('rotate');
-        else if (Math.abs(dx) > Math.abs(dy)) applyMove(dx > 0 ? 'right' : 'left');
-        else if (dy > 0) applyMove('down');
-        else applyMove('drop');
-      },
-      { passive: true }
-    );
-
-    window.addEventListener('resize', draw);
-    updateKeysHelp();
     renderMusicUi();
     startLoop();
     draw();
@@ -2754,48 +2161,49 @@
     if (cfg.autoStart && !autoStarted) {
       autoStarted = true;
       window.setTimeout(() => {
-        if (game.status === 'ready') handlePlay();
+        if (game.status === "ready") handlePlay();
       }, prefersReducedMotion() ? 200 : 700);
     }
 
     return game;
   }
 
-  if (typeof document !== 'undefined') {
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('[data-git-blocks]').forEach((node) => boot(node));
+  if (typeof document !== "undefined") {
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("[data-git-blocks]").forEach((node) => boot(node));
     });
   }
 
   return {
     COLS,
     ROWS,
-    SHAPES,
+    SIZE,
+    MATCH_MIN,
+    GEMS,
+    GEM_IDS,
     META,
-    CLEARS,
-    KICKS,
-    GRAVITY_TABLE_MS,
+    ACHIEVEMENTS,
     BG_PRESETS,
     MUSIC_TRACKS,
     DEV_CLOUD_WORDS,
     WordGenerator,
-    DEFAULT_BINDINGS,
-    gravityMs,
-    lockDelayMs,
-    discoverFreeTracks,
-    rotate,
-    collides,
-    clearLines,
-    findSquashGroups,
-    resolveCascades,
-    applyColumnGravity,
-    scoreForClears,
-    scoreForSquash,
     sprintName,
-    ACHIEVEMENTS,
-    makePiece,
+    goalForLevel,
+    movesForLevel,
+    findMatches,
+    findHint,
+    wouldMatch,
+    hasValidMoves,
+    boardHasMatch,
+    swapCells,
+    applyGravity,
+    resolveBoard,
+    fillBoardNoMatches,
+    areAdjacent,
+    scoreMatch,
     createGame,
     createSfxEngine,
+    discoverFreeTracks,
     boot,
   };
 });
