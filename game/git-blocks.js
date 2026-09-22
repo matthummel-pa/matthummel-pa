@@ -207,7 +207,7 @@
       status: "ready",
       message: "Starting level 1…",
       dropMs: gravityMs(1, Boolean(options.reducedMotion)),
-      lastTick: 0,
+      lastTick: null,
       lockAt: 0,
       levelFlash: 0,
       reducedMotion: Boolean(options.reducedMotion),
@@ -349,7 +349,7 @@
 
     function tick(ts) {
       if (state.status !== "playing" || !state.active) return;
-      if (!state.lastTick) state.lastTick = ts;
+      if (state.lastTick == null) state.lastTick = ts;
       if (ts - state.lastTick < state.dropMs) return;
       state.lastTick = ts;
       if (!tryMove(0, 1)) {
@@ -394,7 +394,7 @@
       state.status = "ready";
       state.message = "Starting level 1…";
       state.dropMs = gravityMs(1, state.reducedMotion);
-      state.lastTick = 0;
+      state.lastTick = null;
       state.lockAt = 0;
       state.levelFlash = 0;
       bag = [];
