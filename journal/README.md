@@ -1,6 +1,6 @@
 # Journal post drafts (profile repo copy)
 
-Canonical theme path is `matthummel-theme/docs/posts/`. Mirror kept here so Cloud Agents with profile-repo write access can still ship draft HTML.
+Canonical theme path is `matthummel-theme/journal/`. Mirror kept here so Cloud Agents with profile-repo write access can still ship draft HTML.
 
 ## Publish to matthummel.com
 
@@ -13,4 +13,4 @@ Canonical theme path is `matthummel-theme/docs/posts/`. Mirror kept here so Clou
 7. Featured image: upload `assets/blog/git-blocks/01-pathway-select.jpg` (or set from Media).
 8. Publish. Live URL target: `/building-git-blocks-with-cursor-ai/`.
 
-Social drafts: `docs/posts/social/`.
+Social drafts: `journal/social/`.
