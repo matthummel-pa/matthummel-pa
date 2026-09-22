@@ -108,12 +108,26 @@ test("hold only works once per drop", () => {
   assert.equal(game.hold(), false);
 });
 
+test("gravity gets harder each level", () => {
+  assert.ok(engine.gravityMs(1, false) > engine.gravityMs(5, false));
+  assert.ok(engine.gravityMs(5, false) > engine.gravityMs(12, false));
+  assert.ok(engine.lockDelayMs(1) > engine.lockDelayMs(10));
+  const game = engine.createGame({ random: () => 0.2 });
+  game.play();
+  const drop1 = game.snapshot().dropMs;
+  assert.equal(drop1, engine.GRAVITY_TABLE_MS[0]);
+  assert.ok(engine.DEV_CLOUD_WORDS.css.length > 3);
+  assert.ok(engine.discoverFreeTracks(4).length >= 4);
+});
+
 test("player files ship together", () => {
   const gameDir = path.join(__dirname, "..", "game");
   const html = fs.readFileSync(path.join(gameDir, "index.html"), "utf8");
   assert.match(html, /data-git-blocks/);
   assert.match(html, /acreline\.matthummel\.com/);
   assert.match(html, /walkridge\.matthummel\.com/);
+  assert.match(html, /data-dev-clouds/);
+  assert.match(html, /Concept game for fun/);
   assert.doesNotMatch(html, /hummelwp/);
   assert.equal(typeof engine.boot, "function");
   assert.ok(fs.existsSync(path.join(gameDir, "git-blocks.css")));

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./git-blocks.css" />
 </head>
 <body>
+  <div class="dev-clouds pattern-drift" data-dev-clouds aria-hidden="true"></div>
   <main class="page">
     <p class="page-kicker">Mini player · matthummel.com</p>
     <h1>Git Blocks</h1>
@@ -70,7 +71,7 @@
             </section>
 
             <section class="customize-pane" data-pane="music" hidden>
-              <p class="customize-hint">Open-source / generated loops. Attribution shows under the picker.</p>
+              <p class="customize-hint">Free / open-source loops (mostly generated in-browser). Shuffle discovers a fresh random set.</p>
               <label class="field">
                 <span>Background music</span>
                 <select data-music-track></select>
@@ -84,9 +85,19 @@
                 <span>Music volume</span>
                 <input type="range" data-music-volume min="0" max="100" value="35" />
               </label>
-              <div class="row-actions">
+              <div class="row-actions wrap">
+                <button type="button" data-music-discover>Find free tracks</button>
+                <button type="button" class="ghost" data-music-preview>Preview</button>
                 <button type="button" data-music-apply>Play track</button>
                 <button type="button" class="ghost" data-music-stop>Stop</button>
+              </div>
+              <p class="customize-hint">Preview game SFX</p>
+              <div class="row-actions wrap sfx-row">
+                <button type="button" class="ghost" data-sfx-preview="move">Move</button>
+                <button type="button" class="ghost" data-sfx-preview="rotate">Rotate</button>
+                <button type="button" class="ghost" data-sfx-preview="drop">Drop</button>
+                <button type="button" class="ghost" data-sfx-preview="clear">Clear</button>
+                <button type="button" class="ghost" data-sfx-preview="start">Start</button>
               </div>
             </section>
 
@@ -135,6 +146,7 @@
             <div class="tray"><span>Next</span><div data-next></div></div>
           </div>
           <p class="message" data-message>Starting level 1…</p>
+          <p class="concept-note">Concept game for fun — not production software. Pieces auto-fall; each level gets harder.</p>
           <div class="player-dock">
             <span class="controls-label">Controls</span>
             <div class="pad" role="group" aria-label="Game controls">

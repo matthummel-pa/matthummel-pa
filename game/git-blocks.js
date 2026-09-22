@@ -160,10 +160,23 @@
     return base * level + comboBonus;
   }
 
+  // Classic-style gravity: starts leisurely, ramps hard each level.
+  const GRAVITY_TABLE_MS = [
+    900, 780, 660, 540, 440, 360, 290, 240, 195, 160, 130, 105, 88, 74, 62, 52, 44, 38, 32, 28,
+  ];
+
   function gravityMs(level, reducedMotion) {
-    const clamped = Math.max(1, Math.min(level, 15));
-    const base = Math.max(80, 1000 - (clamped - 1) * 70);
-    return reducedMotion ? base + 220 : base;
+    const idx = Math.max(1, Math.min(level, GRAVITY_TABLE_MS.length)) - 1;
+    const base = GRAVITY_TABLE_MS[idx];
+    return reducedMotion ? Math.round(base * 1.35) : base;
+  }
+
+  function lockDelayMs(level) {
+    return Math.max(180, 520 - (Math.max(1, level) - 1) * 28);
+  }
+
+  function linesPerLevel() {
+    return 8;
   }
 
   function shuffleBag(random) {
@@ -274,15 +287,17 @@
       if (result.cleared) {
         state.combo += 1;
         state.lines += result.cleared;
-        const nextLevel = 1 + Math.floor(state.lines / 10);
+        const nextLevel = 1 + Math.floor(state.lines / linesPerLevel());
         if (nextLevel > state.level) {
+          const prevDrop = state.dropMs;
           state.level = nextLevel;
+          state.dropMs = gravityMs(state.level, state.reducedMotion);
           state.levelFlash = now();
-          state.message = `Level ${state.level} — gravity up.`;
+          state.message = `Level ${state.level} — gravity ${prevDrop}→${state.dropMs}ms`;
         } else {
           state.message = CLEARS[result.cleared].message;
+          state.dropMs = gravityMs(state.level, state.reducedMotion);
         }
-        state.dropMs = gravityMs(state.level, state.reducedMotion);
         state.score += scoreForClears(result.cleared, state.level, state.combo);
       } else {
         state.combo = 0;
@@ -339,7 +354,7 @@
       state.lastTick = ts;
       if (!tryMove(0, 1)) {
         if (!state.lockAt) state.lockAt = ts;
-        if (ts - state.lockAt >= 500) lockPiece();
+        if (ts - state.lockAt >= lockDelayMs(state.level)) lockPiece();
       }
     }
 
@@ -485,80 +500,110 @@
     {
       id: 'navy',
       label: 'Navy',
+      pattern: 'drift',
       css: 'radial-gradient(900px 420px at 8% -8%, rgba(79,143,212,.22), transparent 55%), radial-gradient(700px 360px at 100% 0%, rgba(13,46,87,.55), transparent 48%), #0b1220',
     },
     {
       id: 'solid-ink',
       label: 'Ink',
+      pattern: 'rise',
       css: '#0b1220',
     },
     {
       id: 'solid-navy',
       label: 'Deep',
+      pattern: 'cross',
       css: '#0d2e57',
     },
     {
       id: 'aurora',
       label: 'Aurora',
+      pattern: 'orbit',
       css: 'linear-gradient(135deg, #07111f 0%, #123b2e 40%, #0d2e57 75%, #1a1030 100%)',
     },
     {
       id: 'sunset',
       label: 'Merge',
+      pattern: 'sway',
       css: 'linear-gradient(160deg, #1a0f14, #3a1d2e 45%, #0d2e57 100%)',
     },
     {
       id: 'grid',
       label: 'Grid',
+      pattern: 'scan',
       css: 'linear-gradient(rgba(79,143,212,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(79,143,212,.08) 1px, transparent 1px), #0b1220',
     },
     {
       id: 'terminal',
       label: 'Term',
+      pattern: 'rise',
       css: 'radial-gradient(circle at 30% 20%, rgba(61,139,110,.35), transparent 40%), #07140f',
     },
     {
       id: 'paper',
       label: 'Paper',
+      pattern: 'drift',
       css: 'linear-gradient(180deg, #e8eef6, #c5d3e6)',
     },
   ];
 
-  const MUSIC_TRACKS = [
+  const DEV_CLOUD_WORDS = {
+    css: ['flex', 'grid', 'clamp()', ':root', 'var(--navy)', '@media', 'gap', 'aspect-ratio', '::before', 'container', 'oklch()', 'subgrid'],
+    php: ['foreach', 'namespace', '??=', 'match()', 'PDO', 'Composer', 'strict_types', 'yield', 'enum', 'readonly'],
+    wordpress: ['add_action', 'WP_Query', 'the_content', 'block.json', 'get_posts', 'shortcode', 'hooks', 'REST', 'Sage', 'Blade'],
+    react: ['useState', 'useEffect', 'JSX', 'props', 'memo', 'Suspense', 'useRef', 'Fragment', 'hooks', 'Server Component'],
+    general: ['git merge', 'CI', 'API', 'GraphQL', 'TypeScript', 'PR', 'lint', 'deploy', 'a11y', 'Core Web Vitals'],
+  };
+
+  // Free / open catalog: generated loops + CC0 remote samples (CORS-friendly where possible).
+  const OPEN_SOURCE_POOL = [
+    { id: 'chip', label: 'Chip commit', kind: 'generated', style: 'chip', credit: 'Procedural chip loop — MIT, in-browser.' },
+    { id: 'pad', label: 'Soft backlog pad', kind: 'generated', style: 'pad', credit: 'Procedural pad loop — MIT, in-browser.' },
+    { id: 'pulse', label: 'Merge pulse', kind: 'generated', style: 'pulse', credit: 'Procedural pulse loop — MIT, in-browser.' },
+    { id: 'arcade', label: 'Arcade rebase', kind: 'generated', style: 'arcade', credit: 'Procedural arcade loop — MIT, in-browser.' },
+    { id: 'ambient', label: 'Idle deploy hum', kind: 'generated', style: 'ambient', credit: 'Procedural ambient hum — MIT, in-browser.' },
+    { id: 'glitch', label: 'Hotfix glitch', kind: 'generated', style: 'glitch', credit: 'Procedural glitch loop — MIT, in-browser.' },
     {
-      id: 'off',
-      label: 'Music off',
-      kind: 'off',
-      credit: 'Silence — focus mode.',
-    },
-    {
-      id: 'chip',
-      label: 'Chip commit (generated)',
-      kind: 'generated',
-      style: 'chip',
-      credit: 'Procedural chip loop — MIT, generated in-browser (no download).',
-    },
-    {
-      id: 'pad',
-      label: 'Soft backlog pad (generated)',
-      kind: 'generated',
-      style: 'pad',
-      credit: 'Procedural pad loop — MIT, generated in-browser.',
-    },
-    {
-      id: 'pulse',
-      label: 'Merge pulse (generated)',
-      kind: 'generated',
-      style: 'pulse',
-      credit: 'Procedural pulse loop — MIT, generated in-browser.',
-    },
-    {
-      id: 'custom',
-      label: 'Custom open-source URL…',
-      kind: 'custom',
-      credit: 'Paste a CC0 / CC-BY MP3 or OGG URL you have rights to stream.',
+      id: 'cc0-keys',
+      label: 'CC0 keys (remote)',
+      kind: 'url',
+      url: 'https://cdn.jsdelivr.net/gh/anars/blank-audio@master/250-milliseconds-of-silence.mp3',
+      credit: 'Silence placeholder used when remote CC0 hosts block hotlinking — shuffle regenerates free loops.',
     },
   ];
+
+  const MUSIC_TRACKS_BASE = [
+    { id: 'off', label: 'Music off', kind: 'off', credit: 'Silence — focus mode.' },
+    { id: 'custom', label: 'Custom open-source URL…', kind: 'custom', credit: 'Paste a CC0 / CC-BY MP3 or OGG URL you have rights to stream.' },
+  ];
+
+  let MUSIC_TRACKS = MUSIC_TRACKS_BASE.slice();
+
+  function shuffleArray(list, random) {
+    const arr = list.slice();
+    const rnd = random || Math.random;
+    for (let i = arr.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(rnd() * (i + 1));
+      const tmp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = tmp;
+    }
+    return arr;
+  }
+
+  function discoverFreeTracks(count) {
+    const pool = shuffleArray(OPEN_SOURCE_POOL);
+    const picked = pool.slice(0, Math.max(3, count || 5)).map((track, i) => ({
+      ...track,
+      id: `${track.id}-r${i}-${Math.floor(Math.random() * 9999)}`,
+      label: `${track.label} · free`,
+      discovered: true,
+    }));
+    MUSIC_TRACKS = MUSIC_TRACKS_BASE.slice(0, 1).concat(picked, MUSIC_TRACKS_BASE.slice(1));
+    return MUSIC_TRACKS;
+  }
+
+  discoverFreeTracks(5);
 
   function defaultPrefs() {
     return {
@@ -662,6 +707,7 @@
     let playing = false;
     let volume = 0.35;
     let htmlAudio = null;
+    let previewTimer = 0;
 
     function ensure() {
       if (typeof AudioContext === 'undefined') return null;
@@ -696,6 +742,10 @@
 
     function stopAll() {
       stopGenerated();
+      if (previewTimer) {
+        clearTimeout(previewTimer);
+        previewTimer = 0;
+      }
       if (htmlAudio) {
         htmlAudio.pause();
         htmlAudio.src = '';
@@ -710,22 +760,25 @@
       if (htmlAudio) htmlAudio.volume = volume;
     }
 
+    function blip(ctx, freq, type, start, dur, amp) {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = type;
+      osc.frequency.value = freq;
+      gain.gain.setValueAtTime(0.0001, start);
+      gain.gain.exponentialRampToValueAtTime(amp, start + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.0001, start + dur);
+      osc.connect(gain);
+      gain.connect(master);
+      osc.start(start);
+      osc.stop(start + dur + 0.02);
+      nodes.push(osc);
+    }
+
     function scheduleChip(ctx) {
       const now = ctx.currentTime;
-      const notes = [196, 247, 294, 392, 294, 247];
-      notes.forEach((freq, i) => {
-        const osc = ctx.createOscillator();
-        const gain = ctx.createGain();
-        osc.type = 'square';
-        osc.frequency.value = freq;
-        gain.gain.setValueAtTime(0.0001, now + i * 0.22);
-        gain.gain.exponentialRampToValueAtTime(0.05, now + i * 0.22 + 0.02);
-        gain.gain.exponentialRampToValueAtTime(0.0001, now + i * 0.22 + 0.18);
-        osc.connect(gain);
-        gain.connect(master);
-        osc.start(now + i * 0.22);
-        osc.stop(now + i * 0.22 + 0.2);
-        nodes.push(osc);
+      [196, 247, 294, 392, 294, 247].forEach((freq, i) => {
+        blip(ctx, freq, 'square', now + i * 0.22, 0.18, 0.05);
       });
     }
 
@@ -750,20 +803,55 @@
     function schedulePulse(ctx) {
       const now = ctx.currentTime;
       for (let i = 0; i < 4; i += 1) {
+        blip(ctx, i % 2 === 0 ? 98 : 147, 'triangle', now + i * 0.35, 0.28, 0.06);
+      }
+    }
+
+    function scheduleArcade(ctx) {
+      const now = ctx.currentTime;
+      [262, 330, 392, 523, 392, 330, 294, 262].forEach((freq, i) => {
+        blip(ctx, freq, 'square', now + i * 0.14, 0.12, 0.045);
+      });
+    }
+
+    function scheduleAmbient(ctx) {
+      const now = ctx.currentTime;
+      [110, 138.59, 164.81].forEach((freq, i) => {
         const osc = ctx.createOscillator();
         const gain = ctx.createGain();
-        osc.type = 'triangle';
-        osc.frequency.value = i % 2 === 0 ? 98 : 147;
-        const t = now + i * 0.35;
-        gain.gain.setValueAtTime(0.0001, t);
-        gain.gain.exponentialRampToValueAtTime(0.06, t + 0.03);
-        gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.28);
+        osc.type = 'sine';
+        osc.frequency.value = freq;
+        gain.gain.value = 0.018 - i * 0.003;
         osc.connect(gain);
         gain.connect(master);
-        osc.start(t);
-        osc.stop(t + 0.3);
+        osc.start(now);
+        osc.stop(now + 3.2);
         nodes.push(osc);
+      });
+    }
+
+    function scheduleGlitch(ctx) {
+      const now = ctx.currentTime;
+      for (let i = 0; i < 10; i += 1) {
+        const freq = 180 + Math.random() * 640;
+        blip(ctx, freq, Math.random() > 0.5 ? 'sawtooth' : 'square', now + i * 0.09, 0.06, 0.035);
       }
+    }
+
+    function runStyle(ctx) {
+      if (style === 'pad') schedulePad(ctx);
+      else if (style === 'pulse') schedulePulse(ctx);
+      else if (style === 'arcade') scheduleArcade(ctx);
+      else if (style === 'ambient') scheduleAmbient(ctx);
+      else if (style === 'glitch') scheduleGlitch(ctx);
+      else scheduleChip(ctx);
+    }
+
+    function intervalForStyle() {
+      if (style === 'pad' || style === 'ambient') return 2800;
+      if (style === 'arcade') return 1200;
+      if (style === 'glitch') return 1000;
+      return 1400;
     }
 
     function startGenerated(nextStyle) {
@@ -776,12 +864,10 @@
         if (!playing) return;
         stopGenerated();
         playing = true;
-        if (style === 'pad') schedulePad(ctx);
-        else if (style === 'pulse') schedulePulse(ctx);
-        else scheduleChip(ctx);
+        runStyle(ctx);
       };
       beat();
-      timer = setInterval(beat, style === 'pad' ? 2400 : style === 'pulse' ? 1400 : 1400);
+      timer = setInterval(beat, intervalForStyle());
       return true;
     }
 
@@ -792,10 +878,34 @@
       htmlAudio.loop = true;
       htmlAudio.volume = volume;
       htmlAudio.play().catch(() => {
-        /* autoplay blocked until gesture */
+        /* autoplay blocked — fall back to a free generated loop */
+        startGenerated('ambient');
       });
       playing = true;
       return true;
+    }
+
+    function previewGenerated(nextStyle, ms) {
+      const ctx = ensure();
+      if (!ctx) return false;
+      const wasPlaying = playing;
+      const prevStyle = style;
+      stopGenerated();
+      style = nextStyle || 'chip';
+      playing = true;
+      runStyle(ctx);
+      if (previewTimer) clearTimeout(previewTimer);
+      previewTimer = setTimeout(() => {
+        stopGenerated();
+        playing = wasPlaying;
+        style = prevStyle;
+        if (wasPlaying) startGenerated(prevStyle);
+      }, ms || 1800);
+      return true;
+    }
+
+    function previewSfx(kind, beepFn) {
+      if (typeof beepFn === 'function') beepFn(kind);
     }
 
     return {
@@ -803,10 +913,46 @@
       stop: stopAll,
       playGenerated: startGenerated,
       playUrl: startUrl,
+      previewGenerated,
+      previewSfx,
       get playing() {
         return playing;
       },
     };
+  }
+
+  function flatDevWords() {
+    return []
+      .concat(DEV_CLOUD_WORDS.css, DEV_CLOUD_WORDS.php, DEV_CLOUD_WORDS.wordpress, DEV_CLOUD_WORDS.react, DEV_CLOUD_WORDS.general);
+  }
+
+  function patternForBackground(bg) {
+    if (bg.mode === 'preset') {
+      const preset = BG_PRESETS.find((p) => p.id === bg.presetId);
+      return (preset && preset.pattern) || 'drift';
+    }
+    if (bg.mode === 'image') return 'sway';
+    return 'orbit';
+  }
+
+  function mountDevClouds(host, pattern) {
+    if (!host) return;
+    const words = shuffleArray(flatDevWords()).slice(0, 22);
+    host.className = `dev-clouds pattern-${pattern || 'drift'}`;
+    host.replaceChildren();
+    words.forEach((word, i) => {
+      const span = document.createElement('span');
+      span.className = 'dev-cloud';
+      span.textContent = word;
+      span.style.left = `${4 + Math.random() * 90}%`;
+      span.style.top = `${6 + Math.random() * 84}%`;
+      span.style.animationDelay = `${(-Math.random() * 18).toFixed(2)}s`;
+      span.style.animationDuration = `${14 + Math.random() * 18}s`;
+      span.style.fontSize = `${0.7 + Math.random() * 0.85}rem`;
+      span.style.opacity = String(0.18 + Math.random() * 0.35);
+      span.dataset.lang = i % 5 === 0 ? 'css' : i % 5 === 1 ? 'php' : i % 5 === 2 ? 'wp' : i % 5 === 3 ? 'react' : 'dev';
+      host.appendChild(span);
+    });
   }
 
   function applyBackground(bg, rootEl) {
@@ -822,9 +968,16 @@
       bg.css = preset.css;
     }
     target.style.setProperty('--gb-backdrop', value);
+    const pattern = patternForBackground(bg);
+    target.dataset.gbPattern = pattern;
     if (rootEl && rootEl.closest) {
       const embed = rootEl.closest('.git-blocks-embed');
-      if (embed) embed.style.setProperty('--gb-backdrop', value);
+      if (embed) {
+        embed.style.setProperty('--gb-backdrop', value);
+        embed.dataset.gbPattern = pattern;
+      }
+      const clouds = rootEl.querySelector('[data-dev-clouds]') || document.querySelector('[data-dev-clouds]');
+      mountDevClouds(clouds, pattern);
     }
   }
 
@@ -918,6 +1071,15 @@
 
     applyBackground(prefs.background, root);
     music.setVolume(prefs.music.volume || 0.35);
+
+    if (!prefersReducedMotion()) {
+      window.setInterval(() => {
+        root.ownerDocument.querySelectorAll('[data-dev-clouds] .dev-cloud').forEach((el) => {
+          const pool = flatDevWords();
+          el.textContent = pool[Math.floor(Math.random() * pool.length)];
+        });
+      }, 4200);
+    }
 
     function beep(kind) {
       if (muted || typeof AudioContext === 'undefined') return;
@@ -1044,11 +1206,12 @@
         }
         if (showLevelBanner && snap.status === 'playing') {
           overlayTitle.textContent = 'Gravity up';
-          overlayBody.textContent = 'Keep clearing. Levels auto-advance every 10 lines.';
+          overlayBody.textContent = `Level ${snap.level}. Pieces fall faster every 8 lines — concept game for fun.`;
           if (playBtn) playBtn.hidden = true;
         } else if (snap.status === 'ready') {
           overlayTitle.textContent = 'Git Blocks';
-          overlayBody.textContent = "Stack commits. Clear lines. Don't let the backlog reach production.";
+          overlayBody.textContent =
+            "Concept game for fun — not a real job simulator. Stack commits, clear lines, don't ship the backlog.";
           if (playBtn) {
             playBtn.hidden = false;
             playBtn.textContent = 'Play';
@@ -1417,6 +1580,24 @@
       }
     }
 
+    function refillMusicSelect() {
+      const select = root.querySelector('[data-music-track]');
+      if (!select) return;
+      const current = prefs.music.trackId;
+      select.replaceChildren();
+      MUSIC_TRACKS.forEach((track) => {
+        const o = document.createElement('option');
+        o.value = track.id;
+        o.textContent = track.label;
+        select.appendChild(o);
+      });
+      if (MUSIC_TRACKS.some((t) => t.id === current)) select.value = current;
+      else {
+        select.value = MUSIC_TRACKS[0].id;
+        prefs.music.trackId = select.value;
+      }
+    }
+
     function renderMusicUi() {
       const select = root.querySelector('[data-music-track]');
       const credit = root.querySelector('[data-music-credit]');
@@ -1424,12 +1605,6 @@
       const volume = root.querySelector('[data-music-volume]');
       if (select && !select.dataset.bound) {
         select.dataset.bound = '1';
-        MUSIC_TRACKS.forEach((track) => {
-          const o = document.createElement('option');
-          o.value = track.id;
-          o.textContent = track.label;
-          select.appendChild(o);
-        });
         select.addEventListener('change', () => {
           prefs.music.trackId = select.value;
           const meta = MUSIC_TRACKS.find((t) => t.id === select.value);
@@ -1437,7 +1612,7 @@
           savePrefs(prefs);
         });
       }
-      if (select) select.value = prefs.music.trackId || 'off';
+      refillMusicSelect();
       const meta = MUSIC_TRACKS.find((t) => t.id === prefs.music.trackId) || MUSIC_TRACKS[0];
       if (credit) credit.textContent = meta.credit;
       if (custom) {
@@ -1468,7 +1643,26 @@
       music.setVolume(prefs.music.volume || 0.35);
       if (track.kind === 'off') music.stop();
       else if (track.kind === 'generated') music.playGenerated(track.style);
+      else if (track.kind === 'url') music.playUrl(track.url || prefs.music.customUrl);
       else if (track.kind === 'custom') music.playUrl(prefs.music.customUrl);
+    }
+
+    function previewSelectedMusic() {
+      const track = MUSIC_TRACKS.find((t) => t.id === prefs.music.trackId) || MUSIC_TRACKS[0];
+      music.setVolume(prefs.music.volume || 0.35);
+      if (track.kind === 'generated') music.previewGenerated(track.style, 2000);
+      else if (track.kind === 'url' || track.kind === 'custom') {
+        const url = track.url || prefs.music.customUrl;
+        if (!url) {
+          music.previewGenerated('chip', 1600);
+          return;
+        }
+        music.playUrl(url);
+        window.setTimeout(() => music.stop(), 2200);
+      } else {
+        music.previewGenerated('chip', 1200);
+      }
+      announce('Previewing sound');
     }
 
     function buildShareUrl() {
@@ -1577,8 +1771,25 @@
 
     const musicApply = root.querySelector('[data-music-apply]');
     const musicStop = root.querySelector('[data-music-stop]');
+    const musicPreview = root.querySelector('[data-music-preview]');
+    const musicDiscover = root.querySelector('[data-music-discover]');
     if (musicApply) musicApply.addEventListener('click', playSelectedMusic);
     if (musicStop) musicStop.addEventListener('click', () => music.stop());
+    if (musicPreview) musicPreview.addEventListener('click', previewSelectedMusic);
+    if (musicDiscover) {
+      musicDiscover.addEventListener('click', () => {
+        discoverFreeTracks(5);
+        prefs.music.trackId = (MUSIC_TRACKS.find((t) => t.discovered) || MUSIC_TRACKS[1] || MUSIC_TRACKS[0]).id;
+        savePrefs(prefs);
+        renderMusicUi();
+        announce('Shuffled free open-source catalog');
+      });
+    }
+    root.querySelectorAll('[data-sfx-preview]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        beep(btn.getAttribute('data-sfx-preview') || 'move');
+      });
+    });
 
     const bindingsReset = root.querySelector('[data-bindings-reset]');
     if (bindingsReset) {
@@ -1695,9 +1906,14 @@
     META,
     CLEARS,
     KICKS,
+    GRAVITY_TABLE_MS,
     BG_PRESETS,
     MUSIC_TRACKS,
+    DEV_CLOUD_WORDS,
     DEFAULT_BINDINGS,
+    gravityMs,
+    lockDelayMs,
+    discoverFreeTracks,
     rotate,
     collides,
     clearLines,
