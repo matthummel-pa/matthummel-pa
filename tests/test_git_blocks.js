@@ -71,7 +71,7 @@ test("frontend pathway reorders lessons toward UI craft", () => {
   assert.ok(lessons.length < engine.CURRICULUM.length || lessons.length === engine.CURRICULUM.length);
 });
 
-test("matches award lines of code not abstract score", () => {
+test("each clear queues a lesson fact popup payload", () => {
   const game = seededGame();
   game.play();
   let hint = engine.findHint(game.snapshot().board);
@@ -86,9 +86,15 @@ test("matches award lines of code not abstract score", () => {
   assert.ok(snap.linesOfCode > 0);
   assert.equal(snap.score, snap.linesOfCode);
   assert.ok(snap.skills.length >= 1);
-  assert.ok(snap.pendingFact || snap.lastFact);
   assert.ok(snap.mana > 0);
   assert.equal(snap.pathwayId, "fullstack");
+  const pending = game.consumeFact();
+  assert.ok(pending);
+  assert.ok(pending.fact && pending.fact.length > 10);
+  assert.ok(pending.lesson);
+  assert.ok(pending.rank);
+  assert.ok(pending.track);
+  assert.equal(game.consumeFact(), null);
 });
 
 test("class select is required before play without pathwayId", () => {

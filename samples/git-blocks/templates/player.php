@@ -59,6 +59,7 @@ if (! defined('ABSPATH')) {
 					</div>
 					<p class="sprint-name" data-sprint>Pick a pathway class</p>
 					<p class="rank-line" data-rank>Gem-drop RPG</p>
+					<p class="path-progress" data-path-progress><?php esc_html_e('Path to Senior Developer', 'git-blocks'); ?></p>
 					<div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="<?php esc_attr_e('Lesson LOC goal', 'git-blocks'); ?>">
 						<span data-progress></span>
 					</div>

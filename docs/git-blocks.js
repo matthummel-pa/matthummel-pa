@@ -1053,6 +1053,7 @@
           fact,
           lesson: lesson.title,
           track: lesson.track,
+          rank: lesson.rank,
           loc,
           chain: wave.chain,
           at: now(),
@@ -2273,16 +2274,22 @@
     if (!host) return;
     const lesson = lessonFor(level || 1, pathwayId, phase, challengeIndex);
     const path = pathwayId ? pathwayFor(pathwayId) : null;
+    // Background words stay on-topic for the current lesson (learning path).
+    const lessonClouds = (lesson.clouds || []).slice();
     const pathClouds = (path && path.clouds) || [];
-    const lessonClouds = lesson.clouds || [];
-    const themed = pathClouds.concat(lessonClouds).map((text) => ({
-      text,
-      lang: path ? path.id : "dev",
-    }));
-    const filler = WordGenerator.generateCloud(Math.max(6, 28 - themed.length));
-    const tokens = themed.concat(filler).slice(0, 28);
+    const pool = (lessonClouds.length ? lessonClouds : pathClouds).slice();
+    if (!pool.length) pool.push("learn", "build", "ship");
+    const tokens = [];
+    for (let i = 0; i < 28; i += 1) {
+      tokens.push({
+        text: pool[i % pool.length],
+        lang: path ? path.id : "lesson",
+        lesson: true,
+      });
+    }
     host.className = `dev-clouds pattern-${pattern || (path && path.pattern) || "drift"}`;
     host.setAttribute("data-dev-clouds", "");
+    host.setAttribute("data-lesson", lesson.id || "");
     host.setAttribute("aria-hidden", "true");
     host.replaceChildren();
     tokens.forEach((token, index) => {
@@ -2296,7 +2303,7 @@
       span.style.animationDelay = `${(-Math.random() * 18).toFixed(2)}s`;
       span.style.animationDuration = `${12 + Math.random() * 16}s`;
       span.style.fontSize = `${0.65 + Math.random() * 0.75}rem`;
-      span.style.opacity = String(0.22 + Math.random() * 0.4);
+      span.style.opacity = String(0.28 + Math.random() * 0.4);
       span.dataset.lang = token.lang || "dev";
       if (path && path.accent) span.style.color = path.accent;
       host.appendChild(span);
@@ -2308,17 +2315,13 @@
     if (!rootDoc) return;
     const lesson = lessonFor(level || 1, pathwayId, phase, challengeIndex);
     const path = pathwayId ? pathwayFor(pathwayId) : null;
-    const pool = ((path && path.clouds) || []).concat(lesson.clouds || []).slice();
+    const pool = (lesson.clouds || []).concat((path && path.clouds) || []).slice();
+    if (!pool.length) return;
     rootDoc.querySelectorAll("[data-dev-clouds] .dev-cloud").forEach((el, i) => {
-      if (pool.length && Math.random() < 0.7) {
-        el.textContent = pool[i % pool.length];
-        el.dataset.lang = path ? path.id : "dev";
-        if (path && path.accent) el.style.color = path.accent;
-      } else {
-        const token = WordGenerator.nextCloudToken();
-        el.textContent = token.text;
-        el.dataset.lang = token.lang || "dev";
-      }
+      el.textContent = pool[Math.floor(Math.random() * pool.length)];
+      el.dataset.lang = path ? path.id : "lesson";
+      if (path && path.accent) el.style.color = path.accent;
+      else el.style.color = "";
     });
   }
 
@@ -2490,21 +2493,37 @@
         toast = document.createElement("div");
         toast.className = "fact-toast";
         toast.setAttribute("data-fact-toast", "");
-        toast.setAttribute("role", "status");
+        toast.setAttribute("role", "dialog");
+        toast.setAttribute("aria-label", "Web development fact");
         const boardWrap = root.querySelector(".board-wrap") || root;
         boardWrap.appendChild(toast);
+        toast.addEventListener("click", () => toast.classList.remove("is-visible"));
       }
+      const snap = game.snapshot();
+      const total = snap.curriculumLength || CURRICULUM.length;
+      const step = Math.min(snap.level, total);
       toast.innerHTML = "";
+      const title = document.createElement("p");
+      title.className = "fact-title";
+      title.textContent = "Web Dev Fact";
       const kicker = document.createElement("p");
       kicker.className = "fact-kicker";
-      kicker.textContent = `${payload.track || "Lesson"} · ${payload.lesson || ""} · +${payload.loc || 0} LOC`;
+      kicker.textContent = `Lesson ${step}/${total} · ${payload.track || "Path"} · ${
+        payload.lesson || ""
+      } · +${payload.loc || 0} LOC`;
+      const rank = document.createElement("p");
+      rank.className = "fact-rank";
+      rank.textContent = `${payload.rank || snap.lessonRank || "Learner"} → Senior Developer`;
       const body = document.createElement("p");
       body.className = "fact-body";
       body.textContent = payload.fact || "";
-      toast.append(kicker, body);
+      const hint = document.createElement("p");
+      hint.className = "fact-dismiss";
+      hint.textContent = "Tap to dismiss";
+      toast.append(title, kicker, rank, body, hint);
       toast.classList.add("is-visible");
       window.clearTimeout(showFactToast._timer);
-      showFactToast._timer = window.setTimeout(() => toast.classList.remove("is-visible"), 4200);
+      showFactToast._timer = window.setTimeout(() => toast.classList.remove("is-visible"), 5600);
     }
 
     function showSkillUnlock(skill) {
@@ -2939,6 +2958,19 @@
             ? `${snap.lessonTrack} · ${snap.lessonRank}`
             : "";
       }
+      const pathProgressEl = root.querySelector("[data-path-progress]");
+      if (pathProgressEl) {
+        const total = snap.curriculumLength || CURRICULUM.length;
+        if (snap.phase === "endgame") {
+          pathProgressEl.textContent = `Senior graduate · Raid ${snap.challengeIndex + 1}`;
+        } else if (snap.graduated) {
+          pathProgressEl.textContent = "Senior Developer — path complete";
+        } else if (snap.pathway || snap.lessonTitle) {
+          pathProgressEl.textContent = `Lesson ${Math.min(snap.level, total)}/${total} · path to Senior Developer`;
+        } else {
+          pathProgressEl.textContent = "Path to Senior Developer";
+        }
+      }
 
       paintHero(snap);
       paintMana(snap);
@@ -3032,16 +3064,17 @@
           overlayTitle.textContent =
             snap.phase === "endgame"
               ? `Endgame raid · ${snap.lessonRank || "Boss"}`
-              : `Skill path · ${snap.lessonRank || "Next"}`;
-          overlayBody.textContent = `${snap.lessonTitle}. ${
-            (snap.lessonSkill && snap.lessonSkill.blurb) || "Keep matching to write more lines of code."
-          }`;
+              : `Lesson ${snap.level}/${snap.curriculumLength || CURRICULUM.length}`;
+          overlayBody.textContent =
+            snap.phase === "endgame"
+              ? `${snap.lessonTitle}. ${(snap.lessonSkill && snap.lessonSkill.blurb) || "Keep matching to clear the raid."}`
+              : `${snap.lessonTitle} (${snap.lessonRank}). Cloud words match this lesson — every clear pops a web-dev fact on your path to Senior Developer.`;
           if (playBtn) playBtn.hidden = true;
         } else if (snap.status === "ready") {
           overlayTitle.textContent = snap.pathway ? snap.pathway.name : "Git Blocks";
           overlayBody.textContent = snap.pathway
-            ? `${snap.pathway.blurb} Match affinity gems to fill mana and cast ${snap.pathway.power.name}.`
-            : "Learn web development from HTML to senior craft. Match shiny logo gems to write lines of code, unlock RPG skills, and graduate.";
+            ? `${snap.pathway.blurb} Match gems to learn each lesson, unlock facts, and graduate to Senior Developer.`
+            : "Learn web development from HTML to Senior Developer. Match shiny logo gems — every clear teaches a fact.";
           if (playBtn) {
             playBtn.hidden = false;
             playBtn.textContent = "Start learning";

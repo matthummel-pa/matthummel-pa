@@ -995,22 +995,28 @@ button:disabled {
 .skill-unlock {
   position: absolute;
   left: 50%;
-  z-index: 8;
-  transform: translateX(-50%) translateY(8px);
-  width: min(420px, calc(100% - 24px));
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid rgba(79, 143, 212, 0.45);
-  background: rgba(8, 16, 28, 0.92);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  z-index: 12;
+  transform: translateX(-50%) translateY(12px) scale(0.98);
+  width: min(440px, calc(100% - 28px));
+  padding: 14px 16px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(79, 143, 212, 0.55);
+  background: linear-gradient(180deg, rgba(12, 24, 42, 0.96), rgba(7, 14, 26, 0.94));
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.25s ease, transform 0.25s ease;
-  backdrop-filter: blur(8px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+  backdrop-filter: blur(10px);
 }
 
 .fact-toast {
-  bottom: 18px;
+  bottom: 22px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.fact-toast.is-visible {
+  pointer-events: auto;
 }
 
 .skill-unlock {
@@ -1024,7 +1030,16 @@ button:disabled {
 .fact-toast.is-visible,
 .skill-unlock.is-visible {
   opacity: 1;
-  transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+
+.fact-title {
+  margin: 0 0 6px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #f2f7ff;
 }
 
 .fact-kicker {
@@ -1036,12 +1051,39 @@ button:disabled {
   color: var(--accent);
 }
 
+.fact-rank {
+  margin: 0 0 8px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  color: #9ec8ef;
+}
+
 .fact-body,
 .skill-unlock p {
   margin: 0;
-  font-size: 13px;
-  line-height: 1.4;
+  font-size: 14px;
+  line-height: 1.45;
   color: #d7e3f2;
+}
+
+.fact-dismiss {
+  margin: 10px 0 0;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.path-progress {
+  margin: 0;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: #9fb4ce;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .skill-unlock strong {
