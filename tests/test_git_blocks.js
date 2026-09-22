@@ -64,4 +64,7 @@ test("player files ship together", () => {
   assert.doesNotMatch(html, /hummelwp/);
   assert.equal(typeof engine.boot, "function");
   assert.ok(fs.existsSync(path.join(gameDir, "git-blocks.css")));
+  const player = fs.readFileSync(path.join(__dirname, "..", "assets", "git-blocks-player.svg"), "utf8");
+  assert.match(player, /GIT BLOCKS/);
+  assert.doesNotMatch(player, /[\uFFFD\u0090\u0091\u0092]/);
 });
