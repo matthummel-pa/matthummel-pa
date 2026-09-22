@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Git Blocks — Matt Hummel</title>
-  <meta name="description" content="A tetris-style mini game from Matt Hummel's GitHub profile. Stack commits, clear the backlog." />
+  <meta name="description" content="Git Blocks — a developer cascade puzzle. Squash matching commits, deploy full rows, clear the backlog." />
   <link rel="canonical" href="https://matthummel.com/git-blocks/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +16,7 @@
   <main class="page">
     <p class="page-kicker">Mini player · matthummel.com</p>
     <h1>Git Blocks</h1>
-    <p class="page-lead">A tiny tetris cabinet for the GitHub profile. Pieces are commits, branches, hotfixes, and reviews. Clear a line, ship the backlog.</p>
+    <p class="page-lead">A developer puzzle cabinet — not Tetris. Stack commit pieces, squash clusters of 4+ matching kinds, fill rows to deploy, and ride cascade pipelines.</p>
 
     <section class="player" data-git-blocks aria-label="Git Blocks game player">
       <div class="player-chrome">
@@ -37,116 +37,36 @@
             <div>
               <p class="overlay-level" data-overlay-level hidden>Level 1</p>
               <h2 data-overlay-title>Git Blocks</h2>
-              <p data-overlay-body>Stack commits. Clear lines. Don't let the backlog reach production.</p>
-              <button type="button" data-play>Play</button>
-            </div>
-          </div>
-          <div class="customize-panel" data-customize-panel hidden>
-            <div class="customize-head">
-              <h3>Customize</h3>
-              <button type="button" class="ghost" data-customize-close aria-label="Close customize">Close</button>
-            </div>
-            <div class="customize-tabs" role="tablist">
-              <button type="button" class="is-active" data-tab="look" role="tab" aria-selected="true">Look</button>
-              <button type="button" data-tab="music" role="tab" aria-selected="false">Music</button>
-              <button type="button" data-tab="controls" role="tab" aria-selected="false">Controls</button>
-              <button type="button" data-tab="share" role="tab" aria-selected="false">Share</button>
-            </div>
-
-            <section class="customize-pane is-active" data-pane="look">
-              <p class="customize-hint">Pick a CSS backdrop, paste a gradient, or load a custom image URL.</p>
-              <div class="bg-presets" data-bg-presets></div>
-              <label class="field">
-                <span>Custom CSS background</span>
-                <textarea data-bg-css rows="3" placeholder="linear-gradient(135deg, #0b1220, #0d2e57)"></textarea>
-              </label>
-              <label class="field">
-                <span>Custom image URL</span>
-                <input type="url" data-bg-image placeholder="https://…/wallpaper.jpg" />
-              </label>
-              <div class="row-actions">
-                <button type="button" data-bg-apply>Apply look</button>
-                <button type="button" class="ghost" data-bg-random>Random gradient</button>
-              </div>
-            </section>
-
-            <section class="customize-pane" data-pane="music" hidden>
-              <p class="customize-hint">Free / open-source loops (mostly generated in-browser). Shuffle discovers a fresh random set.</p>
-              <label class="field">
-                <span>Background music</span>
-                <select data-music-track></select>
-              </label>
-              <p class="music-credit" data-music-credit></p>
-              <label class="field">
-                <span>Custom audio URL (CC0 / CC-BY welcome)</span>
-                <input type="url" data-music-custom placeholder="https://…/track.mp3" />
-              </label>
-              <label class="field inline">
-                <span>Music volume</span>
-                <input type="range" data-music-volume min="0" max="100" value="35" />
-              </label>
-              <div class="row-actions wrap">
-                <button type="button" data-music-discover>Find free tracks</button>
-                <button type="button" class="ghost" data-music-preview>Preview</button>
-                <button type="button" data-music-apply>Play track</button>
-                <button type="button" class="ghost" data-music-stop>Stop</button>
-              </div>
-              <p class="customize-hint">Preview game SFX</p>
-              <div class="row-actions wrap sfx-row">
-                <button type="button" class="ghost" data-sfx-preview="move">Move</button>
-                <button type="button" class="ghost" data-sfx-preview="rotate">Rotate</button>
-                <button type="button" class="ghost" data-sfx-preview="drop">Drop</button>
-                <button type="button" class="ghost" data-sfx-preview="clear">Clear</button>
-                <button type="button" class="ghost" data-sfx-preview="start">Start</button>
-              </div>
-            </section>
-
-            <section class="customize-pane" data-pane="controls" hidden>
-              <p class="customize-hint">Click a key chip, then press a new key. Mouse menus remap board gestures.</p>
-              <div class="bindings-grid" data-key-bindings></div>
-              <div class="bindings-grid mouse" data-mouse-bindings></div>
-              <div class="row-actions">
-                <button type="button" class="ghost" data-bindings-reset>Reset controls</button>
-              </div>
-            </section>
-
-            <section class="customize-pane" data-pane="share" hidden>
-              <p class="customize-hint">Share the cabinet — optionally with your current look &amp; music baked into the link.</p>
-              <label class="field">
-                <span>Share link</span>
-                <input type="text" readonly data-share-url />
-              </label>
-              <label class="field checkbox">
-                <input type="checkbox" data-share-include-prefs checked />
-                <span>Include look + music in the link</span>
-              </label>
-              <div class="row-actions wrap">
-                <button type="button" data-share-copy>Copy link</button>
-                <button type="button" class="ghost" data-share-native>System share</button>
-                <a class="button-link ghost" data-share-x target="_blank" rel="noopener">Share on X</a>
-                <a class="button-link ghost" data-share-linkedin target="_blank" rel="noopener">LinkedIn</a>
-              </div>
-              <p class="share-status" data-share-status aria-live="polite"></p>
-            </section>
-
-            <div class="customize-foot">
-              <button type="button" data-customize-close>Done</button>
+              <p data-overlay-body>Squash matching clusters · deploy full rows · don't let the backlog hit production.</p>
+              <button type="button" data-play>Start sprint</button>
             </div>
           </div>
         </div>
         <aside class="side">
           <div class="stats-row">
             <div class="stat"><span>Score</span><strong data-score>0</strong></div>
-            <div class="stat"><span>Lines</span><strong data-lines>0</strong></div>
-            <div class="stat"><span>Level</span><strong data-level>1</strong></div>
+            <div class="stat"><span>Shipped</span><strong data-lines>0</strong></div>
+            <div class="stat"><span>Sprint</span><strong data-level>1</strong></div>
             <div class="stat"><span>Best</span><strong data-high>0</strong></div>
           </div>
-          <div class="trays">
-            <div class="tray"><span>Hold</span><div data-hold></div></div>
-            <div class="tray"><span>Next</span><div data-next></div></div>
+          <div class="stats-row compact">
+            <div class="stat"><span>Combo</span><strong data-combo>0</strong></div>
+            <div class="stat"><span>Deploys</span><strong data-deploys>0</strong></div>
+            <div class="stat"><span>Squashes</span><strong data-squashes>0</strong></div>
           </div>
-          <p class="message" data-message>Starting level 1…</p>
-          <p class="concept-note">Concept game for fun — not production software. Pieces auto-fall; each level gets harder.</p>
+          <p class="sprint-name" data-sprint>v0.1 scaffold</p>
+          <div class="trays">
+            <div class="tray"><span>Stash</span><div data-hold></div></div>
+            <div class="tray"><span>Queue</span><div data-next></div></div>
+          </div>
+          <p class="message" data-message>Sprint ready — match 4+ or fill a row.</p>
+          <div class="power-row">
+            <button type="button" class="ghost" data-git-clean>git clean (1)</button>
+            <button type="button" class="ghost" data-force-push>force-push (1)</button>
+          </div>
+          <ul class="commit-log" data-commit-log aria-label="Commit log"></ul>
+          <div class="badge-row" data-badges aria-label="Achievements"></div>
+          <p class="concept-note">Match 4+ same commits to squash. Fill a full row to deploy. Cascades chain for pipeline combos.</p>
           <div class="player-dock">
             <span class="controls-label">Controls</span>
             <div class="pad" role="group" aria-label="Game controls">
@@ -159,10 +79,102 @@
               <button type="button" data-move="drop">Hard drop</button>
             </div>
             <p class="keys" data-keys-help>
-              Scroll moves · right-click rotates · drag sideways · Customize to remap
+              Scroll moves · right-click rotates · drag · git clean / force-push · Customize
             </p>
           </div>
         </aside>
+        <div class="customize-panel" data-customize-panel hidden>
+          <div class="customize-head">
+            <h3>Customize</h3>
+            <button type="button" class="ghost" data-customize-close aria-label="Close customize">Close</button>
+          </div>
+          <div class="customize-tabs" role="tablist">
+            <button type="button" class="is-active" data-tab="look" role="tab" aria-selected="true">Look</button>
+            <button type="button" data-tab="music" role="tab" aria-selected="false">Music</button>
+            <button type="button" data-tab="controls" role="tab" aria-selected="false">Controls</button>
+            <button type="button" data-tab="share" role="tab" aria-selected="false">Share</button>
+          </div>
+
+          <section class="customize-pane is-active" data-pane="look">
+            <p class="customize-hint">Pick a CSS backdrop, paste a gradient, or load a custom image URL.</p>
+            <div class="bg-presets" data-bg-presets></div>
+            <label class="field">
+              <span>Custom CSS background</span>
+              <textarea data-bg-css rows="3" placeholder="linear-gradient(135deg, #0b1220, #0d2e57)"></textarea>
+            </label>
+            <label class="field">
+              <span>Custom image URL</span>
+              <input type="url" data-bg-image placeholder="https://…/wallpaper.jpg" />
+            </label>
+            <div class="row-actions">
+              <button type="button" data-bg-apply>Apply look</button>
+              <button type="button" class="ghost" data-bg-random>Random gradient</button>
+            </div>
+          </section>
+
+          <section class="customize-pane" data-pane="music" hidden>
+            <p class="customize-hint">Free / open-source loops (mostly generated in-browser). Shuffle discovers a fresh random set.</p>
+            <label class="field">
+              <span>Background music</span>
+              <select data-music-track></select>
+            </label>
+            <p class="music-credit" data-music-credit></p>
+            <label class="field">
+              <span>Custom audio URL (CC0 / CC-BY welcome)</span>
+              <input type="url" data-music-custom placeholder="https://…/track.mp3" />
+            </label>
+            <label class="field inline">
+              <span>Music volume</span>
+              <input type="range" data-music-volume min="0" max="100" value="35" />
+            </label>
+            <div class="row-actions wrap">
+              <button type="button" data-music-discover>Find free tracks</button>
+              <button type="button" class="ghost" data-music-preview>Preview</button>
+              <button type="button" data-music-apply>Play track</button>
+              <button type="button" class="ghost" data-music-stop>Stop</button>
+            </div>
+            <p class="customize-hint">Preview game SFX</p>
+            <div class="row-actions wrap sfx-row">
+              <button type="button" class="ghost" data-sfx-preview="move">Move</button>
+              <button type="button" class="ghost" data-sfx-preview="rotate">Rotate</button>
+              <button type="button" class="ghost" data-sfx-preview="drop">Drop</button>
+              <button type="button" class="ghost" data-sfx-preview="clear">Clear</button>
+              <button type="button" class="ghost" data-sfx-preview="start">Start</button>
+            </div>
+          </section>
+
+          <section class="customize-pane" data-pane="controls" hidden>
+            <p class="customize-hint">Click a key chip, then press a new key. Mouse menus remap board gestures.</p>
+            <div class="bindings-grid" data-key-bindings></div>
+            <div class="bindings-grid mouse" data-mouse-bindings></div>
+            <div class="row-actions">
+              <button type="button" class="ghost" data-bindings-reset>Reset controls</button>
+            </div>
+          </section>
+
+          <section class="customize-pane" data-pane="share" hidden>
+            <p class="customize-hint">Share the cabinet — optionally with your current look &amp; music baked into the link.</p>
+            <label class="field">
+              <span>Share link</span>
+              <input type="text" readonly data-share-url />
+            </label>
+            <label class="field checkbox">
+              <input type="checkbox" data-share-include-prefs checked />
+              <span>Include look + music in the link</span>
+            </label>
+            <div class="row-actions wrap">
+              <button type="button" data-share-copy>Copy link</button>
+              <button type="button" class="ghost" data-share-native>System share</button>
+              <a class="button-link ghost" data-share-x target="_blank" rel="noopener">Share on X</a>
+              <a class="button-link ghost" data-share-linkedin target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+            <p class="share-status" data-share-status aria-live="polite"></p>
+          </section>
+
+          <div class="customize-foot">
+            <button type="button" data-customize-close>Done</button>
+          </div>
+        </div>
       </div>
     </section>
 

@@ -120,6 +120,21 @@ test("gravity gets harder each level", () => {
   assert.ok(engine.discoverFreeTracks(4).length >= 4);
 });
 
+test("WordGenerator emits rand letters and Dev words for clouds", () => {
+  assert.equal(typeof engine.WordGenerator, "object");
+  const letters = engine.WordGenerator.randomLetters(4, () => 0.1);
+  assert.match(letters, /^[A-Za-z]+$/);
+  assert.ok(letters.length >= 1);
+  const token = engine.WordGenerator.nextCloudToken(() => 0.9);
+  assert.ok(token.text.length >= 1);
+  assert.ok(token.lang);
+  const cloud = engine.WordGenerator.generateCloud(12, () => 0.2);
+  assert.equal(cloud.length, 12);
+  assert.ok(cloud.every((t) => typeof t.text === "string" && t.text.length > 0));
+  const compound = engine.WordGenerator.randomDevCompound(() => 0);
+  assert.match(compound, /-/);
+});
+
 test("player files ship together", () => {
   const gameDir = path.join(__dirname, "..", "game");
   const html = fs.readFileSync(path.join(gameDir, "index.html"), "utf8");
@@ -127,13 +142,35 @@ test("player files ship together", () => {
   assert.match(html, /acreline\.matthummel\.com/);
   assert.match(html, /walkridge\.matthummel\.com/);
   assert.match(html, /data-dev-clouds/);
-  assert.match(html, /Concept game for fun/);
+  assert.match(html, /not Tetris/);
+  assert.match(html, /data-git-clean/);
+  assert.match(html, /data-force-push/);
+  assert.match(html, /data-commit-log/);
   assert.doesNotMatch(html, /hummelwp/);
   assert.equal(typeof engine.boot, "function");
   assert.ok(fs.existsSync(path.join(gameDir, "git-blocks.css")));
   const player = fs.readFileSync(path.join(__dirname, "..", "assets", "git-blocks-player.svg"), "utf8");
   assert.match(player, /GIT BLOCKS/);
   assert.doesNotMatch(player, /[\uFFFD\u0090\u0091\u0092]/);
+});
+
+test("squash merges clear connected clusters of four", () => {
+  const board = Array.from({ length: engine.ROWS }, () => Array(engine.COLS).fill(null));
+  [
+    [0, 19],
+    [1, 19],
+    [0, 18],
+    [1, 18],
+  ].forEach(([x, y]) => {
+    board[y][x] = "T";
+  });
+  const groups = engine.findSquashGroups(board, 4);
+  assert.equal(groups.length, 1);
+  assert.equal(groups[0].cells.length, 4);
+  const resolved = engine.resolveCascades(board);
+  assert.ok(resolved.waves.length >= 1);
+  assert.equal(resolved.board[19][0], null);
+  assert.ok(engine.scoreForSquash(4, 2, 2, 1) > engine.scoreForSquash(4, 1, 1, 0));
 });
 
 test("wordpress plugin sample packs the cabinet", () => {
