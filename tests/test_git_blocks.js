@@ -1,0 +1,70 @@
+const test = require("node:test");
+const assert = require("node:assert/strict");
+const path = require("node:path");
+const fs = require("node:fs");
+
+const engine = require(path.join(__dirname, "..", "game", "git-blocks.js"));
+
+test("rotate turns a T piece clockwise", () => {
+  const rotated = engine.rotate(engine.SHAPES.T, 1);
+  assert.deepEqual(rotated, [
+    [0, 1, 0],
+    [0, 1, 1],
+    [0, 1, 0],
+  ]);
+});
+
+test("collides with walls and filled cells", () => {
+  const board = Array.from({ length: engine.ROWS }, () => Array(engine.COLS).fill(null));
+  const piece = engine.makePiece("O");
+  piece.x = -1;
+  assert.equal(engine.collides(board, piece), true);
+  piece.x = 0;
+  assert.equal(engine.collides(board, piece), false);
+  board[0][0] = "I";
+  board[0][1] = "I";
+  assert.equal(engine.collides(board, piece), true);
+});
+
+test("clearLines removes full rows and scores a tetris", () => {
+  const board = Array.from({ length: engine.ROWS }, () => Array(engine.COLS).fill(null));
+  for (let y = engine.ROWS - 4; y < engine.ROWS; y += 1) {
+    board[y] = Array(engine.COLS).fill("I");
+  }
+  const result = engine.clearLines(board);
+  assert.equal(result.cleared, 4);
+  assert.equal(result.board[engine.ROWS - 1].every((cell) => cell == null), true);
+  assert.equal(engine.scoreForClears(4, 1, 1), 850);
+});
+
+test("createGame hard-drop locks a piece and stays playable", () => {
+  let i = 0;
+  const game = engine.createGame({ random: () => (i++ % 10) / 10 });
+  game.play();
+  game.hardDrop();
+  const snap = game.snapshot();
+  assert.ok(["playing", "over"].includes(snap.status));
+  assert.ok(snap.queue.length >= 3);
+  assert.ok(snap.score >= 0);
+});
+
+test("hold only works once per drop", () => {
+  const game = engine.createGame({ random: () => 0.2 });
+  game.play();
+  assert.equal(game.hold(), true);
+  assert.equal(game.hold(), false);
+});
+
+test("player files ship together", () => {
+  const gameDir = path.join(__dirname, "..", "game");
+  const html = fs.readFileSync(path.join(gameDir, "index.html"), "utf8");
+  assert.match(html, /data-git-blocks/);
+  assert.match(html, /acreline\.matthummel\.com/);
+  assert.match(html, /walkridge\.matthummel\.com/);
+  assert.doesNotMatch(html, /hummelwp/);
+  assert.equal(typeof engine.boot, "function");
+  assert.ok(fs.existsSync(path.join(gameDir, "git-blocks.css")));
+  const player = fs.readFileSync(path.join(__dirname, "..", "assets", "git-blocks-player.svg"), "utf8");
+  assert.match(player, /GIT BLOCKS/);
+  assert.doesNotMatch(player, /[\uFFFD\u0090\u0091\u0092]/);
+});

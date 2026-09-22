@@ -28,21 +28,21 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Update Recent activity section
+      - name: Update activity heatmap and feed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USERNAME: matthummel-pa
-          ACTIVITY_MAX_LINES: "15"
+          ACTIVITY_MAX_LINES: "12"
         run: python3 .github/scripts/update-activity.py
 
       - name: Commit & push if changed
         run: |
-          if git diff --quiet README.md; then
-            echo "No README changes."
+          git add README.md assets/activity-heatmap.svg
+          if git diff --cached --quiet; then
+            echo "No README or heatmap changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "chore: refresh recent GitHub activity"
+          git commit -m "chore: refresh custom GitHub activity"
           git push
