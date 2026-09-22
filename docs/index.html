@@ -4,20 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Git Blocks — Matt Hummel</title>
-  <meta name="description" content="Git Blocks — a developer cascade puzzle. Squash matching commits, deploy full rows, clear the backlog." />
+  <meta name="description" content="Git Blocks — gem-drop RPG. Pick a pathway class, match logo gems, write LOC, unlock skills, clear senior endgame raids." />
   <link rel="canonical" href="https://matthummel.com/git-blocks/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./git-blocks.css" />
 </head>
 <body>
   <main class="page">
     <p class="page-kicker">Mini player · matthummel.com</p>
     <h1>Git Blocks</h1>
-    <p class="page-lead">A developer puzzle cabinet — stack commit pieces, squash clusters of 4+ matching kinds, fill rows to deploy, and ride cascade pipelines.</p>
+    <p class="page-lead">Match shiny web-dev gems, learn from Intern to Senior Developer, and clear endgame raids.</p>
 
-    <section class="player" data-git-blocks aria-label="Git Blocks game player">
+    <section class="player" data-git-blocks aria-label="Git Blocks gem matching game">
       <div class="player-chrome">
         <div class="traffic" aria-hidden="true"><span></span><span></span><span></span></div>
         <div class="player-title">Git Blocks</div>
@@ -32,53 +32,47 @@
       <div class="player-screen">
         <div class="board-wrap">
           <div class="dev-clouds pattern-drift" data-dev-clouds aria-hidden="true"></div>
-          <canvas data-board width="240" height="480" tabindex="0" role="application" aria-label="Git Blocks board. Scroll moves the piece, right-click rotates, drag sideways. Open Customize to remap."></canvas>
+          <canvas data-board width="480" height="480" tabindex="0" role="application" aria-label="Git Blocks gem board. Click a gem, then an adjacent gem to swap. Drag between neighbors also works."></canvas>
           <div class="overlay is-clickable" data-overlay>
             <div>
-              <p class="overlay-level" data-overlay-level hidden>Level 1</p>
-              <h2 data-overlay-title>Git Blocks</h2>
-              <p data-overlay-body>Squash matching clusters · deploy full rows · don't let the backlog hit production.</p>
-              <button type="button" data-play>Start sprint</button>
+              <p class="overlay-level" data-overlay-level hidden>Lesson 1</p>
+              <h2 data-overlay-title>Choose your pathway class</h2>
+              <p data-overlay-body>Each class is a web-dev career path with affinity gems, themed clouds, and a class power — then fight endgame raids after senior.</p>
+              <button type="button" data-play hidden>Start learning</button>
             </div>
           </div>
         </div>
         <aside class="side">
           <div class="stats-row">
-            <div class="stat"><span>Score</span><strong data-score>0</strong></div>
-            <div class="stat"><span>Shipped</span><strong data-lines>0</strong></div>
-            <div class="stat"><span>Sprint</span><strong data-level>1</strong></div>
-            <div class="stat"><span>Best</span><strong data-high>0</strong></div>
+            <div class="stat"><span>Lines of code</span><strong data-score>0</strong></div>
+            <div class="stat"><span>Cleared</span><strong data-lines>0</strong></div>
+            <div class="stat"><span>Lesson</span><strong data-level>1</strong></div>
+            <div class="stat"><span>Best LOC</span><strong data-high>0</strong></div>
           </div>
           <div class="stats-row compact">
+            <div class="stat"><span>Moves</span><strong data-moves>32</strong></div>
             <div class="stat"><span>Combo</span><strong data-combo>0</strong></div>
-            <div class="stat"><span>Deploys</span><strong data-deploys>0</strong></div>
-            <div class="stat"><span>Squashes</span><strong data-squashes>0</strong></div>
+            <div class="stat"><span>Goal</span><strong data-goal>0/600 LOC</strong></div>
           </div>
-          <p class="sprint-name" data-sprint>v0.1 scaffold</p>
-          <div class="trays">
-            <div class="tray"><span>Stash</span><div data-hold></div></div>
-            <div class="tray"><span>Queue</span><div data-next></div></div>
+          <p class="sprint-name" data-sprint>Pick a pathway class</p>
+          <p class="rank-line" data-rank>Gem-drop RPG</p>
+          <p class="path-progress" data-path-progress>Path to Senior Developer</p>
+          <div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Lesson LOC goal">
+            <span data-progress></span>
           </div>
-          <p class="message" data-message>Press Start sprint — pieces fall like Tetris.</p>
+          <p class="message" data-message>Choose a pathway class to begin.</p>
           <div class="power-row">
-            <button type="button" class="ghost" data-git-clean>git clean (1)</button>
-            <button type="button" class="ghost" data-force-push>force-push (1)</button>
+            <button type="button" class="ghost" data-hint>Hint (2)</button>
+            <button type="button" class="ghost" data-shuffle>Shuffle (2)</button>
           </div>
-          <ul class="commit-log" data-commit-log aria-label="Commit log"></ul>
+          <div class="skills-row" data-skills aria-label="Unlocked skills"></div>
+          <div class="gem-legend" data-gem-legend aria-label="Gem logos"></div>
+          <ul class="commit-log" data-commit-log aria-label="Match log"></ul>
           <div class="badge-row" data-badges aria-label="Achievements"></div>
           <div class="player-dock">
-            <span class="controls-label">Controls</span>
-            <div class="pad" role="group" aria-label="Game controls">
-              <button type="button" data-move="left" aria-label="Move left">←</button>
-              <button type="button" data-move="rotate" aria-label="Rotate clockwise">↻</button>
-              <button type="button" data-move="right" aria-label="Move right">→</button>
-              <button type="button" data-move="down" aria-label="Soft drop">↓</button>
-              <button type="button" class="ghost" data-move="hold">Hold</button>
-              <button type="button" data-move="rotate-ccw" aria-label="Rotate counter-clockwise">↺</button>
-              <button type="button" data-move="drop">Hard drop</button>
-            </div>
+            <span class="controls-label">Path to Senior Developer</span>
             <p class="keys" data-keys-help>
-              Arrows move · ↑ rotate · Space hard drop · Customize for more
+              Match gems · learn a fact each clear · graduate Senior · then raids
             </p>
           </div>
         </aside>
@@ -90,7 +84,6 @@
           <div class="customize-tabs" role="tablist">
             <button type="button" class="is-active" data-tab="look" role="tab" aria-selected="true">Look</button>
             <button type="button" data-tab="music" role="tab" aria-selected="false">Music</button>
-            <button type="button" data-tab="controls" role="tab" aria-selected="false">Controls</button>
             <button type="button" data-tab="share" role="tab" aria-selected="false">Share</button>
           </div>
 
@@ -141,20 +134,11 @@
             </div>
             <p class="customize-hint">Preview game SFX</p>
             <div class="row-actions wrap sfx-row">
-              <button type="button" class="ghost" data-sfx-preview="move">Move</button>
-              <button type="button" class="ghost" data-sfx-preview="rotate">Rotate</button>
-              <button type="button" class="ghost" data-sfx-preview="drop">Drop</button>
-              <button type="button" class="ghost" data-sfx-preview="clear">Clear</button>
+              <button type="button" class="ghost" data-sfx-preview="move">Select</button>
+              <button type="button" class="ghost" data-sfx-preview="rotate">Swap</button>
+              <button type="button" class="ghost" data-sfx-preview="clear">Match</button>
+              <button type="button" class="ghost" data-sfx-preview="deploy">Cascade</button>
               <button type="button" class="ghost" data-sfx-preview="start">Start</button>
-            </div>
-          </section>
-
-          <section class="customize-pane" data-pane="controls" hidden>
-            <p class="customize-hint">Click a key chip, then press a new key. Mouse menus remap board gestures.</p>
-            <div class="bindings-grid" data-key-bindings></div>
-            <div class="bindings-grid mouse" data-mouse-bindings></div>
-            <div class="row-actions">
-              <button type="button" class="ghost" data-bindings-reset>Reset controls</button>
             </div>
           </section>
 
@@ -184,7 +168,7 @@
       </div>
     </section>
 
-    <p class="page-note">GitHub READMEs cannot run JavaScript, so this cabinet lives here. High score stays in this browser.</p>
+    <p class="page-note">GitHub READMEs cannot run JavaScript, so this cabinet lives here. Best LOC stays in this browser.</p>
     <p class="links">
       <a href="https://github.com/matthummel-pa">GitHub</a>
       <a href="https://matthummel.com">matthummel.com</a>
