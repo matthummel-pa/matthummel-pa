@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420" role="img" aria-label="Play Git Blocks, a tetris-style commit game">
+  <title>Play Git Blocks</title>
+  <defs>
+    <linearGradient id="cabinet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#152033"/>
+      <stop offset="100%" stop-color="#0d1522"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1a30"/>
+      <stop offset="100%" stop-color="#07111f"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="420" rx="24" fill="url(#cabinet)" stroke="#243041"/>
+  <circle cx="28" cy="26" r="6" fill="#d45d5d"/>
+  <circle cx="48" cy="26" r="6" fill="#e7c35a"/>
+  <circle cx="68" cy="26" r="6" fill="#3d8b6e"/>
+  <text x="360" y="32" text-anchor="middle" fill="#d5deea" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="3">GIT BLOCKS</text>
+  <text x="640" y="32" text-anchor="middle" fill="#8ea0b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">LIVE</text>
+  <rect x="24" y="52" width="430" height="300" rx="14" fill="url(#screen)" stroke="#243041"/>
+  <!-- board grid blocks -->
+  <g transform="translate(48,72)">
+    <rect x="96" y="0" width="22" height="22" rx="4" fill="#5ec8d8"/>
+    <rect x="120" y="0" width="22" height="22" rx="4" fill="#5ec8d8"/>
+    <rect x="144" y="0" width="22" height="22" rx="4" fill="#5ec8d8"/>
+    <rect x="168" y="0" width="22" height="22" rx="4" fill="#5ec8d8"/>
+    <rect x="144" y="48" width="22" height="22" rx="4" fill="#8b7ce0"/>
+    <rect x="120" y="72" width="22" height="22" rx="4" fill="#8b7ce0"/>
+    <rect x="144" y="72" width="22" height="22" rx="4" fill="#8b7ce0"/>
+    <rect x="168" y="72" width="22" height="22" rx="4" fill="#8b7ce0"/>
+    <rect x="48" y="168" width="22" height="22" rx="4" fill="#4f8fd4"/>
+    <rect x="48" y="192" width="22" height="22" rx="4" fill="#4f8fd4"/>
+    <rect x="72" y="192" width="22" height="22" rx="4" fill="#4f8fd4"/>
+    <rect x="96" y="192" width="22" height="22" rx="4" fill="#4f8fd4"/>
+    <rect x="216" y="192" width="22" height="22" rx="4" fill="#e08a4a"/>
+    <rect x="240" y="192" width="22" height="22" rx="4" fill="#e08a4a"/>
+    <rect x="264" y="192" width="22" height="22" rx="4" fill="#e08a4a"/>
+    <rect x="264" y="168" width="22" height="22" rx="4" fill="#e08a4a"/>
+    <rect x="0" y="216" width="22" height="22" rx="4" fill="#3d8b6e"/>
+    <rect x="24" y="216" width="22" height="22" rx="4" fill="#3d8b6e"/>
+    <rect x="24" y="192" width="22" height="22" rx="4" fill="#3d8b6e"/>
+    <rect x="48" y="216" width="22" height="22" rx="4" fill="#d45d5d"/>
+    <rect x="72" y="216" width="22" height="22" rx="4" fill="#d45d5d"/>
+    <rect x="48" y="240" width="22" height="22" rx="4" fill="#d45d5d"/>
+    <rect x="72" y="240" width="22" height="22" rx="4" fill="#e7c35a"/>
+    <rect x="96" y="216" width="22" height="22" rx="4" fill="#e7c35a"/>
+    <rect x="96" y="240" width="22" height="22" rx="4" fill="#e7c35a"/>
+    <rect x="120" y="216" width="22" height="22" rx="4" fill="#e7c35a"/>
+    <rect x="120" y="240" width="22" height="22" rx="4" fill="#0d2e57"/>
+    <rect x="144" y="216" width="22" height="22" rx="4" fill="#4f8fd4"/>
+    <rect x="144" y="240" width="22" height="22" rx="4" fill="#4f8fd4"/>
+    <rect x="168" y="216" width="22" height="22" rx="4" fill="#8b7ce0"/>
+    <rect x="168" y="240" width="22" height="22" rx="4" fill="#8b7ce0"/>
+    <rect x="192" y="216" width="22" height="22" rx="4" fill="#5ec8d8"/>
+    <rect x="192" y="240" width="22" height="22" rx="4" fill="#5ec8d8"/>
+    <rect x="216" y="216" width="22" height="22" rx="4" fill="#3d8b6e"/>
+    <rect x="216" y="240" width="22" height="22" rx="4" fill="#3d8b6e"/>
+    <rect x="240" y="216" width="22" height="22" rx="4" fill="#e08a4a"/>
+    <rect x="240" y="240" width="22" height="22" rx="4" fill="#d45d5d"/>
+    <rect x="264" y="216" width="22" height="22" rx="4" fill="#d45d5d"/>
+    <rect x="264" y="240" width="22" height="22" rx="4" fill="#d45d5d"/>
+    <rect x="288" y="216" width="22" height="22" rx="4" fill="#e7c35a"/>
+    <rect x="288" y="240" width="22" height="22" rx="4" fill="#e7c35a"/>
+    <rect x="312" y="216" width="22" height="22" rx="4" fill="#4f8fd4"/>
+    <rect x="312" y="240" width="22" height="22" rx="4" fill="#4f8fd4"/>
+    <rect x="336" y="240" width="22" height="22" rx="4" fill="#8b7ce0"/>
+  </g>
+  <circle cx="239" cy="202" r="36" fill="#0d2e57" stroke="#f7f9fc" stroke-width="3"/>
+  <polygon points="229,182 259,202 229,222" fill="#f7f9fc"/>
+  <rect x="470" y="52" width="226" height="300" rx="14" fill="#101a2b" stroke="#243041"/>
+  <text x="492" y="84" fill="#8ea0b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">SCORE</text>
+  <text x="492" y="114" fill="#f7f9fc" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700">PLAY</text>
+  <text x="492" y="150" fill="#8ea0b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">NEXT</text>
+  <rect x="492" y="162" width="22" height="22" rx="4" fill="#8b7ce0"/>
+  <rect x="516" y="162" width="22" height="22" rx="4" fill="#8b7ce0"/>
+  <rect x="540" y="162" width="22" height="22" rx="4" fill="#8b7ce0"/>
+  <rect x="516" y="138" width="22" height="22" rx="4" fill="#8b7ce0"/>
+  <text x="492" y="220" fill="#8ea0b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">PIECES</text>
+  <text x="492" y="244" fill="#d5deea" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">commit ∑ branch ∑ merge</text>
+  <text x="492" y="264" fill="#d5deea" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">hotfix ∑ stash ∑ review</text>
+  <text x="492" y="300" fill="#4f8fd4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">TAP TO PLAY í</text>
+  <rect x="24" y="366" width="672" height="32" rx="10" fill="#101a2b"/>
+  <text x="360" y="387" text-anchor="middle" fill="#9fb4ce" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">ê í move ∑ ë rotate ∑ space drop ∑ C hold</text>
+</svg>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Git Blocks — Matt Hummel</title>
+  <meta name="description" content="A tetris-style mini game from Matt Hummel's GitHub profile. Stack commits, clear the backlog." />
+  <link rel="canonical" href="https://matthummel-pa.github.io/matthummel-pa/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./git-blocks.css" />
+</head>
+<body>
+  <main class="page">
+    <p class="page-kicker">Mini player · matthummel.com</p>
+    <h1>Git Blocks</h1>
+    <p class="page-lead">A tiny tetris cabinet for the GitHub profile. Pieces are commits, branches, hotfixes, and reviews. Clear a line, ship the backlog.</p>
+
+    <section class="player" data-git-blocks aria-label="Git Blocks game player">
+      <div class="player-chrome">
+        <div class="traffic" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="player-title">Git Blocks</div>
+        <div class="player-actions">
+          <button type="button" class="ghost" data-pause>Pause</button>
+          <button type="button" class="ghost" data-mute aria-pressed="false">Sound on</button>
+        </div>
+      </div>
+
+      <div class="player-screen">
+        <div class="board-wrap">
+          <canvas data-board width="240" height="480" tabindex="0" role="application" aria-label="Git Blocks board. Arrow keys move, space hard-drops, C holds."></canvas>
+          <div class="overlay" data-overlay>
+            <div>
+              <h2 data-overlay-title>Git Blocks</h2>
+              <p data-overlay-body>Stack commits. Clear lines. Don’t let the backlog reach production.</p>
+              <button type="button" data-play>Play</button>
+            </div>
+          </div>
+        </div>
+        <aside class="side">
+          <div class="stat"><span>Score</span><strong data-score>0</strong></div>
+          <div class="stat"><span>Lines</span><strong data-lines>0</strong></div>
+          <div class="stat"><span>Level</span><strong data-level>1</strong></div>
+          <div class="stat"><span>Best</span><strong data-high>0</strong></div>
+          <div class="trays">
+            <div class="tray"><span>Hold</span><div data-hold></div></div>
+            <div class="tray"><span>Next</span><div data-next></div></div>
+          </div>
+        </aside>
+      </div>
+      <p class="message" data-message>Press play to start committing.</p>
+      <div class="player-dock">
+        <div class="pad" role="group" aria-label="Game controls">
+          <button type="button" data-move="left" aria-label="Move left">Left</button>
+          <button type="button" data-move="rotate" aria-label="Rotate">Rotate</button>
+          <button type="button" data-move="right" aria-label="Move right">Right</button>
+          <button type="button" data-move="down" aria-label="Soft drop">Down</button>
+          <button type="button" data-move="drop">Hard drop</button>
+          <button type="button" class="ghost" data-move="hold">Hold</button>
+        </div>
+      </div>
+    </section>
+
+    <p class="keys">
+      <kbd>←</kbd> <kbd>→</kbd> move · <kbd>↑</kbd> rotate · <kbd>↓</kbd> soft drop ·
+      <kbd>space</kbd> hard drop · <kbd>C</kbd> hold · <kbd>P</kbd> pause · <kbd>M</kbd> mute
+    </p>
+    <p class="page-note">GitHub READMEs cannot run JavaScript, so this cabinet lives here. High score stays in this browser.</p>
+    <p class="links">
+      <a href="https://github.com/matthummel-pa">GitHub</a>
+      <a href="https://matthummel.com">matthummel.com</a>
+      <a href="https://acreline.matthummel.com">Acreline demo</a>
+      <a href="https://walkridge.matthummel.com">WalkRidge demo</a>
+    </p>
+    <div class="sr-only" data-live aria-live="polite"></div>
+  </main>
+  <script src="./git-blocks.js"></script>
+</body>
+</html>

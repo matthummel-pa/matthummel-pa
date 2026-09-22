@@ -3,58 +3,81 @@
 # Hi, I'm Matt Hummel
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=2C5A95&center=true&vCenter=true&width=640&lines=WordPress+themes%2C+plugins%2C+and+platforms;Open+for+freelance%2C+contract%2C+or+full-time;Sage+11+is+my+happy+place;Gettysburg%2C+PA+%C2%B7+remote+OK;AI-assisted.+Human-reviewed." alt="WordPress themes, plugins, and platforms" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=2C5A95&center=true&vCenter=true&width=720&lines=WordPress+themes%2C+plugins%2C+and+platforms;Sage+11+%C2%B7+PHP+8.3+%C2%B7+Gutenberg;Acreline+%2B+WalkRidge+live+on+subdomains;Open+for+freelance%2C+contract%2C+or+full-time;AI-assisted.+Human-reviewed." alt="WordPress themes, plugins, and platforms" />
 </a>
 
-**WordPress developer · full-stack PHP**
+**WordPress developer · full-stack PHP · Gettysburg, PA**
 
-Themes, plugins, and platforms shops can actually run — plus Power Platform when that's the job.<br />
-Gettysburg, PA · Remote · Open for freelance, contract, or full-time
+I ship Sage 11 themes, small plugins, and the APIs around them — then hand the keys to the shop. Remote anywhere. Open for freelance, contract, or full-time.
 
 <a href="https://matthummel.com/hire/"><img src="https://img.shields.io/badge/Hire_me-2C5A95?style=for-the-badge" alt="Hire me" /></a>
 <a href="https://matthummel.com/contact/"><img src="https://img.shields.io/badge/Write_a_note-0F172A?style=for-the-badge" alt="Write a note" /></a>
-<a href="https://matthummel.com/shop/"><img src="https://img.shields.io/badge/Shop_products-0F172A?style=for-the-badge" alt="Shop products" /></a>
+<a href="https://matthummel.com/code/"><img src="https://img.shields.io/badge/Code_%26_repos-0F172A?style=for-the-badge" alt="Code and repos" /></a>
 <a href="https://www.linkedin.com/in/matt-hummel-pa"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-
-[hummelwp](https://hummelwp.com)
 
 <img src="https://komarev.com/ghpvc/?username=matthummel-pa&style=flat-square&color=2C5A95" alt="Profile views" />
 <img src="https://img.shields.io/badge/Open_for_work-2C5A95?style=flat-square" alt="Open for work" />
-<img src="https://img.shields.io/badge/Gettysburg%2C_PA-remote-0F172A?style=flat-square" alt="Gettysburg, PA · remote" />
+<img src="https://img.shields.io/badge/Timezone-America/New_York-0F172A?style=flat-square" alt="America/New_York" />
+<img src="https://img.shields.io/badge/PHP-8.3-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP 8.3" />
+<img src="https://img.shields.io/badge/Sage-11-0D2E57?style=flat-square" alt="Sage 11" />
 
 </div>
 
 ---
 
-<a id="work"></a>
-## Featured products
+<a id="play"></a>
+## Git Blocks
 
-WordPress themes and plugins I sell and support at [matthummel.com/shop](https://matthummel.com/shop/). Buy a pack, or [hire me](https://matthummel.com/hire/) to adapt one.
+GitHub READMEs cannot run JavaScript, so the cabinet lives on GitHub Pages. Click the player — pieces are commits, branches, hotfixes, and reviews. Clear a line, ship the backlog.
+
+<div align="center">
+  <a href="https://matthummel-pa.github.io/matthummel-pa/">
+    <img src="./assets/git-blocks-player.svg" alt="Play Git Blocks, a tetris-style commit game" width="720" />
+  </a>
+  <br />
+  <a href="https://matthummel-pa.github.io/matthummel-pa/"><img src="https://img.shields.io/badge/▶_Play_Git_Blocks-0D2E57?style=for-the-badge" alt="Play Git Blocks" /></a>
+</div>
+
+<p align="center"><sub><kbd>←</kbd> <kbd>→</kbd> move · <kbd>↑</kbd> rotate · <kbd>space</kbd> hard drop · <kbd>C</kbd> hold · high score stays in your browser</sub></p>
+
+---
+
+<a id="work"></a>
+## Featured work
+
+Portfolio samples I built in public — not client sites. Project write-ups live on [matthummel.com](https://matthummel.com/projects/). Live concept demos are on matthummel.com subdomains.
 
 <table>
   <tr>
     <td width="50%" align="center" valign="top">
-      <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/acreline/featured.webp" alt="Acreline WordPress real estate theme" width="360" /></a><br />
-      <strong><a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/">Acreline</a></strong><br />
-      <sub>WordPress theme · Real estate · $59</sub><br />
-      21 Gutenberg blocks, listings, agents, showing requests.<br />
-      <a href="https://matthummel.com/product/wordpress-theme-real-estate-agents/">Buy</a> · <a href="https://github.com/matthummel-pa/wp-acreline">GitHub</a>
+      <a href="https://matthummel.com/projects/acreline/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/acreline/featured.webp" alt="Acreline WordPress real estate theme" width="360" /></a><br />
+      <strong><a href="https://matthummel.com/projects/acreline/">Acreline</a></strong><br />
+      <sub>Sage 11 theme · Real estate · GPL</sub><br />
+      Listings, map, agents, showing requests, 21 Gutenberg blocks, setup wizard.<br />
+      <a href="https://matthummel.com/projects/acreline/">Story</a> · <a href="https://acreline.matthummel.com/">Live demo</a> · <a href="https://github.com/matthummel-pa/wp-acreline">GitHub</a>
     </td>
     <td width="50%" align="center" valign="top">
-      <a href="https://matthummel.com/product/wordpress-theme-tour-sites/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/walkridge/featured.webp" alt="WalkRidge WordPress battlefield tour theme" width="360" /></a><br />
-      <strong><a href="https://matthummel.com/product/walkridge/">WalkRidge</a></strong><br />
-      <sub>WordPress theme · Tour sites · $59</sub><br />
-      Browse tours, meet guides, book from WooCommerce.<br />
-      <a href="https://matthummel.com/product/walkridge/">Buy</a> · <a href="https://github.com/matthummel-pa/wp-walkridge">GitHub</a>
+      <a href="https://matthummel.com/projects/walkridge/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/walkridge/featured.webp" alt="WalkRidge WordPress tour theme" width="360" /></a><br />
+      <strong><a href="https://matthummel.com/projects/walkridge/">WalkRidge</a></strong><br />
+      <sub>Sage 11 theme · Tour shops · WooCommerce</sub><br />
+      Tours, guides, and checkout. Concept demo uses 555 numbers and @walkridge.test.<br />
+      <a href="https://matthummel.com/projects/walkridge/">Story</a> · <a href="https://walkridge.matthummel.com/">Live demo</a> · <a href="https://github.com/matthummel-pa/wp-walkridge">GitHub</a>
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center" valign="top">
-      <a href="https://matthummel.com/product/tocflow-wordpress-table-of-contents-plugin/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/tocflow/featured.webp" alt="TOCflow WordPress table of contents plugin" width="360" /></a><br />
-      <strong><a href="https://matthummel.com/product/tocflow/">TOCflow</a></strong><br />
-      <sub>WordPress plugin · Table of contents · Free</sub><br />
+    <td width="50%" align="center" valign="top">
+      <a href="https://matthummel.com/projects/tocguide/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/tocflow/featured.webp" alt="TOCGuide WordPress table of contents plugin" width="360" /></a><br />
+      <strong><a href="https://matthummel.com/projects/tocguide/">TOCGuide</a></strong><br />
+      <sub>WordPress plugin · Table of contents · Free / GPLv2+</sub><br />
       Server-rendered TOC block. Zero config, accessible, SEO-friendly.<br />
-      <a href="https://matthummel.com/product/tocflow/">Download</a> · <a href="https://github.com/matthummel-pa/tocflow">GitHub</a>
+      <a href="https://matthummel.com/projects/tocguide/">Story</a> · <a href="https://matthummel-pa.github.io/tocguide/">Live demo</a> · <a href="https://github.com/matthummel-pa/tocguide">GitHub</a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://matthummel.com/"><img src="https://matthummel.com/wp-content/uploads/2026/09/profile-photo.jpeg" alt="Matt Hummel" width="160" /></a><br />
+      <strong><a href="https://github.com/matthummel-pa/matthummel-theme">matthummel-theme</a></strong><br />
+      <sub>Sage 11 · This site · Blade + Tailwind v4 + Vite</sub><br />
+      The theme behind <a href="https://matthummel.com">matthummel.com</a>, including the live GitHub activity board.<br />
+      <a href="https://matthummel.com/code/">Code page</a> · <a href="https://github.com/matthummel-pa/matthummel-theme">GitHub</a> · <a href="https://github.com/matthummel-pa/keepary">Keepary (React + Supabase)</a>
     </td>
   </tr>
 </table>
@@ -62,74 +85,65 @@ WordPress themes and plugins I sell and support at [matthummel.com/shop](https:/
 <a id="hire"></a>
 ## Open for work
 
-I'm available for **freelance**, **contract**, and **full-time** — WordPress themes and plugins, custom Sage builds, agency overflow, and Power Platform (Power Apps / Power Automate) from federal agency work. Based in Gettysburg, PA. Remote anywhere.
-
-A short note is plenty. I usually reply within one business day (ET).
+**Freelance · contract · full-time · agency overflow.** WordPress themes and plugins, custom Sage builds, and Power Platform from federal agency work (walkthrough under NDA — no public demo). Based in Gettysburg, PA. Remote anywhere. I usually reply within one business day (ET).
 
 **[Hire me](https://matthummel.com/hire/)** · **[Write a note](https://matthummel.com/contact/)** · **[LinkedIn](https://www.linkedin.com/in/matt-hummel-pa)**
 
 ---
 
-<a id="activity"></a>
-## Recent activity
+<a id="devs"></a>
+## For other developers
 
-Auto-refreshed from public GitHub work.
+Seventeen years of in-house web work (higher-ed marketing, then SharePoint / Power Platform for federal teams). Public GitHub is the trail I started in 2025 — most production code still lives behind employer walls.
 
-<!--START_SECTION:activity-->
-- 🔀 Open PR [#81](https://github.com/matthummel-pa/wp-acreline/pull/81) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.6: mobile menu and listing JS fail on first tap
-- 🔀 Closed PR [#15](https://github.com/matthummel-pa/wp-walkridge/pull/15) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — README: Walkridge 1.7.2 current, portfolio not theme shop
-- 🔀 Merged PR [#78](https://github.com/matthummel-pa/wp-acreline/pull/78) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.5: restore the Gutenberg color picker
-- 🔀 Open PR [#80](https://github.com/matthummel-pa/wp-acreline/pull/80) in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline) — 1.5.5: public settings, color chip, readable pills, new screenshots
-- 🔀 Merged PR [#14](https://github.com/matthummel-pa/wp-walkridge/pull/14) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Marketing README, full support docs, and store screenshots
-- 🔀 Merged PR [#13](https://github.com/matthummel-pa/wp-walkridge/pull/13) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.7.2 combine Gutenberg seed fix + WCAG/UX
-- 🔀 Closed PR [#11](https://github.com/matthummel-pa/wp-walkridge/pull/11) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Fix Gutenberg block comments leaking as visible HTML
-- 🔀 Closed PR [#12](https://github.com/matthummel-pa/wp-walkridge/pull/12) in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge) — Walkridge 1.7.2 WCAG and UX after live review
-- 🚀 Commit in [matthummel-pa/tocguide](https://github.com/matthummel-pa/tocguide/commit/56fcf25aab042b62623e32b73bc9ca412b253bd0) — _Update links and CI badge in README.md_
-- ⭐ Starred [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)
-- 🚀 Commit in [matthummel-pa/wp-walkridge](https://github.com/matthummel-pa/wp-walkridge/commit/b4ec3e661e42d51c3ecfe26483e6ff5712060fb6) — _Merge pull request #4 from matthummel-pa/cursor/theme-release-zip-ca24_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/516838228c5e76a080e2a4b970b4ae150ba8b2e5) — _fix(cloud): declare WordPress ports for Simple Browser forwarding (#196)_
-- 🚀 Commit in [matthummel-pa/matthummel-theme](https://github.com/matthummel-pa/matthummel-theme/commit/511bedeb64a86d407d31f6228ba234d37f2002c2) — _fix paragraph and heading spacing sitewide (#191)_
-- 🚀 Commit in [matthummel-pa/wp-acreline](https://github.com/matthummel-pa/wp-acreline/commit/d8a50e8277ad586cbdd19a83009fdaa9031ac022) — _Update theme purchase and demo links_
-- 🚀 Commit in [matthummel-pa/matthummel-pa](https://github.com/matthummel-pa/matthummel-pa/commit/9f8e68226e3de0ed91b55e5f0d40493737cc3c89) — _Update website link in README.md_
-<!--END_SECTION:activity-->
-
----
-
-<a id="about"></a>
-## What I do
-
-More than 15 years building for the web — accessible front ends, PHP applications, APIs, and deploys. WordPress is the specialty: Sage 11, Gutenberg, and an admin shops can keep using. Adjacent work (APIs, React, Power Platform) is in range.
-
-| Mode | What that looks like |
+| | The useful version |
 | --- | --- |
-| **WordPress** | Sage 11, Blade, Acorn, Bedrock, Tailwind + Vite, Gutenberg blocks. A11y and Core Web Vitals baked in |
-| **Full-stack** | HTML, CSS, JS/TS, React, PHP, Node — clean code, solid perf, interfaces that work for everyone |
-| **Plugins** | Small, documented PHP. One job each. Standard hooks, a clean uninstall path |
-| **Power Platform** | Power Apps, Power Automate, SharePoint from federal agency work. No public demo — walkthrough under NDA |
-| **Local shops** | Gettysburg / Adams County restaurants, inns, tours, realtors. You own the keys |
-| **Agency partner** | Overflow and silent subs welcome — you keep the client; I stay in the background |
-
-I use **Claude** and **Cursor** on the repeatable parts. Every line still gets read and tested by me before it ships.
+| **Day job shape** | I write PHP, Blade, and just enough JS/TS. I am not a designer — I will refer one. |
+| **Happy path** | Sage 11, Acorn, Blade, Tailwind v4, Vite 8, PHP 8.3, WordPress 6.6+, Core Gutenberg (no page builder). |
+| **Plugins** | One job each. PHPDoc, standard hooks, uninstall that actually uninstalls. |
+| **AI** | Cursor + Claude scaffold. I still read, click, and test every line that ships. |
+| **PRs I like** | Small, named after the change, conventional commits (`feat`, `fix`, `docs`). Tell me how you tried it. |
+| **PRs I bounce** | Drive-by refactors, page-builder add-ons, and “while I was here” diffs. |
+| **Handoff** | Domain, hosting, repo, and database in the client’s name. Short admin notes in plain English. |
+| **Agency mode** | Silent sub is fine. You keep the client. I stay off their Slack unless you ask. |
+| **Hours** | America/New_York. Async first. Overlap afternoons ET for pairing. |
+| **A11y** | Keyboard paths, contrast, semantic HTML. If a shop owner cannot tab it, it is not done. |
 
 <details>
-  <summary><strong>package.json</strong> vibes</summary>
+  <summary><strong>How to drop me into a repo</strong></summary>
+
+```text
+1. Node + Composer + Local WP (Herd, Local, or wp-env). PHP 8.3.
+2. Theme: composer install && npm install && npm run build
+3. Do not install Elementor / ACF “because the last theme had it”.
+4. Open a draft PR early. I review staged URLs, not zip files in Drive.
+5. If it is agency overflow: send brand, IA, and who owns hosting first.
+```
+
+</details>
+
+<details>
+  <summary><strong>package.json vibes</strong></summary>
 
 ```json
 {
   "name": "matt-hummel",
-  "version": "15.0.0",
+  "version": "17.0.0",
   "private": false,
   "description": "WordPress developer · full-stack PHP · open for work",
-  "main": "WordPress + Sage",
+  "homepage": "https://matthummel.com",
+  "main": "WordPress + Sage 11",
   "scripts": {
     "dev": "cursor . && coffee --watch",
     "build": "ship accessible WordPress platforms",
     "test": "a11y + Core Web Vitals + 'can the shop edit it?'",
+    "play": "open https://matthummel-pa.github.io/matthummel-pa/",
     "deploy": "you own the keys"
   },
   "dependencies": {
     "wordpress": "specialty",
     "roots/sage": "^11",
+    "php": "8.3",
     "react": "^19",
     "curiosity": "*",
     "patience": "^∞"
@@ -141,7 +155,8 @@ I use **Claude** and **Cursor** on the repeatable parts. Every line still gets r
   },
   "engines": {
     "node": ">=human",
-    "coffee": "required"
+    "coffee": "required",
+    "timezone": "America/New_York"
   },
   "keywords": ["wordpress", "sage", "php", "gettysburg", "a11y", "open-for-work"],
   "license": "MIT-and-kindness"
@@ -152,15 +167,69 @@ I use **Claude** and **Cursor** on the repeatable parts. Every line still gets r
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,ts,php,wordpress,react,tailwind,mysql,github&perline=10" alt="HTML, CSS, JavaScript, TypeScript, PHP, WordPress, React, Tailwind, MySQL, GitHub" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,ts,php,wordpress,react,tailwind,mysql,vite,github,vscode&perline=12" alt="HTML, CSS, JavaScript, TypeScript, PHP, WordPress, React, Tailwind, MySQL, Vite, GitHub, VS Code" />
   </a>
 </p>
+
+---
+
+<a id="activity"></a>
+## Public GitHub activity
+
+Same idea as the live board on [matthummel.com/code](https://matthummel.com/code/): a custom 90-day heat map (newest week first, navy cells) plus the latest public pushes. Refreshed hourly from this repo’s Actions — not a third-party stats card.
+
+<!--START_SECTION:heatmap-->
+<p align="center">
+  <a href="https://matthummel.com/code/#gh-contributions">
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1175 public contributions in the last 90 days" />
+  </a>
+</p>
+
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,175 contributions in 90 days · 1,214 in the last year.</sub>
+<!--END_SECTION:heatmap-->
+
+### Feed
+
+Pushes, pull requests, and the rest of the public trail. Open a row to jump into the repo.
+
+<!--START_SECTION:activity-->
+| | Shipped | Repo | When |
+| --- | --- | --- | --- |
+| | ✅ [Merged PR #80](https://github.com/matthummel-pa/wp-acreline/pull/80) — 1.5.9: public settings, color chip, readable pills, screenshots | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 29m |
+| | ✅ [Merged PR #82](https://github.com/matthummel-pa/wp-acreline/pull/82) — 1.5.8: stop Vite JS from closing the menu and hiding Home | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 1h |
+| | ✅ [Merged PR #81](https://github.com/matthummel-pa/wp-acreline/pull/81) — 1.5.6: mobile menu and listing JS fail on first tap | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 3h |
+| | ❎ [Closed PR #15](https://github.com/matthummel-pa/wp-walkridge/pull/15) — README: Walkridge 1.7.2 current, portfolio not theme shop | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 3h |
+| | ✅ [Merged PR #78](https://github.com/matthummel-pa/wp-acreline/pull/78) — 1.5.5: restore the Gutenberg color picker | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 4h |
+| | ✅ [Merged PR #14](https://github.com/matthummel-pa/wp-walkridge/pull/14) — Marketing README, full support docs, and store screenshots | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 6h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/tocguide/commit/56fcf25aab042b62623e32b73bc9ca412b253bd0) — Update links and CI badge in README.md | [`tocguide`](https://github.com/matthummel-pa/tocguide) | 9h |
+| | ⭐ [Starred](https://github.com/matthummel-pa/wp-walkridge) — matthummel-pa/wp-walkridge | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 2d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-walkridge/commit/b4ec3e661e42d51c3ecfe26483e6ff5712060fb6) — Merge pull request #4 from matthummel-pa/cursor/theme-release-z… | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 2d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/516838228c5e76a080e2a4b970b4ae150ba8b2e5) — fix(cloud): declare WordPress ports for Simple Browser forwardi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/511bedeb64a86d407d31f6228ba234d37f2002c2) — fix paragraph and heading spacing sitewide (#191) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline/commit/d8a50e8277ad586cbdd19a83009fdaa9031ac022) — Update theme purchase and demo links | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 9d |
+<!--END_SECTION:activity-->
+
+### Recently pushed
+
+<!--START_SECTION:pushed-->
+| Repo | Stack | Last push |
+| --- | --- | --- |
+| **[wp-acreline](https://github.com/matthummel-pa/wp-acreline)** — Acreline is a WordPress theme for farms, land, and historic homes — searchable listings… | PHP · ★0 | 29m |
+| **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★1 | 3h |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 8h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 3d |
+<!--END_SECTION:pushed-->
+
+<p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
+
+---
 
 <a id="writing"></a>
 ## Writing
 
 Latest from [matthummel.com/blog](https://matthummel.com/blog/):
 
+- [What’s on my GitHub (and on this site)](https://matthummel.com/code/)
 - [WordPress Abilities API integration — A Practical First Integration](https://matthummel.com/wordpress/wordpress-abilities-api-integration/)
 - [Why I'm Moving Away from Power Platform and Back to Modern WordPress](https://matthummel.com/web-development/why-moving-away-from-power-platform-back-to-wordpress/)
 - [5 Ways my new AI WordPress Workflow Actually speeds up development](https://matthummel.com/web-development/5-ways-ai-wordpress-workflow/)
@@ -188,10 +257,14 @@ Latest from [matthummel.com/blog](https://matthummel.com/blog/):
 ## Connect
 
 - 🌐 **Website:** [matthummel.com](https://matthummel.com)
+- 🧪 **Live demos:** [acreline.matthummel.com](https://acreline.matthummel.com/) · [walkridge.matthummel.com](https://walkridge.matthummel.com/)
 - 📬 **Hire / contact:** [matthummel.com/hire](https://matthummel.com/hire/) · [matthummel.com/contact](https://matthummel.com/contact/)
-- 🛒 **Shop:** [matthummel.com/shop](https://matthummel.com/shop/)
+- 🧩 **Projects + code:** [matthummel.com/projects](https://matthummel.com/projects/) · [matthummel.com/code](https://matthummel.com/code/)
 - 💼 **LinkedIn:** [linkedin.com/in/matt-hummel-pa](https://www.linkedin.com/in/matt-hummel-pa)
-- ✍️ **Dev.to:** [dev.to/mattbuildsapps](https://dev.to/mattbuildsapps)
+- ✍️ **Dev.to:** [dev.to/matthummeldev](https://dev.to/matthummeldev)
 - 🦋 **Bluesky:** [@matthummel](https://bsky.app/profile/matthummel.bsky.social)
+- 👽 **Reddit:** [u/matt-hummel](https://www.reddit.com/user/matt-hummel)
+- 📡 **RSS:** [matthummel.com/feed](https://matthummel.com/feed/)
+- 🎮 **Git Blocks:** [Play the cabinet](https://matthummel-pa.github.io/matthummel-pa/)
 
 <sub>WordPress developer · full-stack PHP — open for work. PRs welcome; puns tolerated.</sub>
