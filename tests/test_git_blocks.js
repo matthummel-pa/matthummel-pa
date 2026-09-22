@@ -154,6 +154,16 @@ test("player files ship together", () => {
   assert.doesNotMatch(player, /[\uFFFD\u0090\u0091\u0092]/);
 });
 
+test("docs/ mirrors game for branch-based GitHub Pages", () => {
+  const docsDir = path.join(__dirname, "..", "docs");
+  const html = fs.readFileSync(path.join(docsDir, "index.html"), "utf8");
+  assert.match(html, /data-git-blocks/);
+  assert.match(html, /git-blocks\.js/);
+  assert.ok(fs.existsSync(path.join(docsDir, "git-blocks.css")));
+  assert.ok(fs.existsSync(path.join(docsDir, "git-blocks.js")));
+  assert.ok(fs.existsSync(path.join(docsDir, ".nojekyll")));
+});
+
 test("squash merges clear connected clusters of four", () => {
   const board = Array.from({ length: engine.ROWS }, () => Array(engine.COLS).fill(null));
   [
