@@ -1,0 +1,13 @@
+{
+  "title": "Building Git Blocks with Cursor AI — for fun",
+  "seo_title": "Building Git Blocks with Cursor AI | Matt Hummel",
+  "slug": "building-git-blocks-with-cursor-ai",
+  "excerpt": "I prompted Cursor Cloud agents to turn a broken Tetris toy into a match-3 web-dev RPG. Here is the folder layout, real prompts, code the AI wrote, what I would prompt differently, and how long it took.",
+  "date": "2026-09-22 19:30:00",
+  "category": "Web Development",
+  "tags": ["AI", "Cursor", "JavaScript", "Games", "WordPress"],
+  "status": "publish",
+  "focus_keyword": "building a browser game with Cursor AI",
+  "seo_description": "How I built Git Blocks — a match-3 web-dev learning game — with Cursor Cloud agents: prompts, folder structure, code snippets, and lessons. Play the demo.",
+  "content_file": "2026-09-22-building-git-blocks-with-cursor-ai.html"
+}

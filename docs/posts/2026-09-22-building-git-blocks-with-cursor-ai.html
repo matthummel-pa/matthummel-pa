@@ -1,0 +1,398 @@
+<!-- wp:paragraph -->
+<p><strong>Building a browser game with Cursor AI</strong> started as a joke on my GitHub profile. I wanted something people could click — not another static badge row. By the end of one dense day of prompting, review, and merges, Git Blocks was a match-3 RPG that teaches web development from Intern to Senior Developer.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I built it for fun. That matters. No shop brief. No agency overflow ticket. Just me, Cursor Cloud agents, and a willingness to throw away a Tetris clone when the idea got better.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Play it live: <a href="https://matthummel-pa.github.io/matthummel-pa/">Git Blocks on GitHub Pages</a>. The source lives in my profile repo under <code>game/</code>, with a WordPress plugin sample and a <code>docs/</code> mirror for Pages.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-buttons">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://matthummel-pa.github.io/matthummel-pa/">Play Git Blocks</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="https://github.com/matthummel-pa/matthummel-pa">View the repo</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why I made it</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>GitHub READMEs cannot run JavaScript. I still wanted the profile to feel alive. Early Git Blocks was a tiny Tetris cabinet: commits as pieces, lines as merges, a high score in <code>localStorage</code>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That version was fine until it was not. Gravity bugs, missing music unlock, clouds that never showed. Fixing it taught me something useful about AI coding: vague “make it better” prompts produce vague diffs. Specific failure reports produce patches you can merge.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Then I asked a sharper question: does this need to be Tetris at all? I wanted something original for the profile — closer to Jewel Quest than a falling-block clone — and tied to how I actually learn and ship web work.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>For fun is a real product constraint. It means I can rewrite the genre mid-day. It also means I still owe myself a reviewable PR.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What shipped</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Git Blocks is now an 8×8 match-3. You swap adjacent logo gems — HTML, CSS, JS, TypeScript, React, PHP, WordPress, Git, Node, npm. Clears write “lines of code.” Levels walk a 20-lesson path from HTML bones to Senior Developer. Background cloud words stay on the current lesson. Every clear pops a web-dev fact.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>You also pick a pathway class: Classic, Frontend Mage, Backend Sentinel, WordPress Artisan, or Full-Stack Ranger. Each has a cartoon chibi, affinity gems, and a class power (Style Nova, Query Storm, Hook Cascade, Polyglot Pulse). Clear the senior path and you unlock endgame raids.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"none","sizeSlug":"large","className":"is-style-default"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped">
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://cdn.jsdelivr.net/gh/matthummel-pa/matthummel-pa@main/assets/blog/git-blocks/01-pathway-select.jpg" alt="Git Blocks pathway select screen with cartoon class heroes"/><figcaption class="wp-element-caption">Pathway select — pick a hero, see the power, start learning.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://cdn.jsdelivr.net/gh/matthummel-pa/matthummel-pa@main/assets/blog/git-blocks/02-frontend-mage-start.jpg" alt="Frontend Mage lesson intro for HTML bones on the path to Senior Developer"/><figcaption class="wp-element-caption">Lesson intro after picking Frontend Mage — HTML bones, Intern rank.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://cdn.jsdelivr.net/gh/matthummel-pa/matthummel-pa@main/assets/blog/git-blocks/03-web-dev-fact.jpg" alt="Web Dev Fact popup after clearing gems with Intern to Senior progress"/><figcaption class="wp-element-caption">Fact modal on every clear — progress bar toward Senior Developer.</figcaption></figure>
+<!-- /wp:image -->
+</figure>
+<!-- /wp:gallery -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How long it took</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Wall clock: one calendar day (22 Sep 2026), from morning polish on the old Tetris cabinet through evening pathway heroes. Merged pull requests tell the story better than a stopwatch.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>PR</th><th>What changed</th><th>Merged</th></tr></thead><tbody><tr><td><a href="https://github.com/matthummel-pa/matthummel-pa/pull/27">#27</a></td><td>Play polish — gravity, clouds, music</td><td>~16:52 UTC</td></tr><tr><td><a href="https://github.com/matthummel-pa/matthummel-pa/pull/28">#28</a></td><td>Match-3 gems + Intern→Senior curriculum</td><td>~18:16 UTC</td></tr><tr><td><a href="https://github.com/matthummel-pa/matthummel-pa/pull/29">#29</a></td><td>Lesson intros + fact modals</td><td>~18:58 UTC</td></tr><tr><td><a href="https://github.com/matthummel-pa/matthummel-pa/pull/30">#30</a></td><td>Start menu fix + cartoon heroes</td><td>~19:23 UTC</td></tr></tbody></table><figcaption class="wp-element-caption">Four feature merges the same day — after earlier Pages and Tetris groundwork that morning.</figcaption></figure>
+<!-- /wp:table -->
+
+<!-- wp:paragraph -->
+<p>My time was mostly prompting, watching demos, rejecting wrong genres, and clicking merge. Agent runtime was longer. Rough honest split: a few hours of my attention across the day, many more of Cloud Agent loops writing, testing, and recording walkthroughs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I would not sell that as “built a game in an afternoon” on a client job. For a profile toy with tests and Pages deploy, the AI-assisted pace was real — and the review bar still applied.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How the idea evolved</h2>
+<!-- /wp:heading -->
+
+<!-- wp:matthummel/ship-pipe -->
+<div class="wp-block-matthummel-ship-pipe mh-ship-pipe">
+<!-- wp:matthummel/ship-step {"title":"Broken Tetris","body":"Auto-start bugs, gravity clock wrong, clouds missing, music silent until unlock. Fix prompts with symptoms, not vibes."} -->
+<div class="wp-block-matthummel-ship-step mh-ship-step"><p class="mh-ship-pipe__name">Broken Tetris</p><p class="mh-ship-pipe__body">Auto-start bugs, gravity clock wrong, clouds missing, music silent until unlock. Fix prompts with symptoms, not vibes.</p></div>
+<!-- /wp:matthummel/ship-step -->
+
+<!-- wp:matthummel/ship-step {"title":"Match-3 pivot","body":"Ask for originality vs Tetris. Swap to Jewel Quest–style play with shiny web-dev logo gems and cascade FX."} -->
+<div class="wp-block-matthummel-ship-step mh-ship-step"><p class="mh-ship-pipe__name">Match-3 pivot</p><p class="mh-ship-pipe__body">Ask for originality vs Tetris. Swap to Jewel Quest–style play with shiny web-dev logo gems and cascade FX.</p></div>
+<!-- /wp:matthummel-ship-step -->
+
+<!-- wp:matthummel/ship-step {"title":"Learning path","body":"Each level teaches web dev from the beginning. Cloud words match the lesson. Facts on clear. Goal: Senior Developer."} -->
+<div class="wp-block-matthummel-ship-step mh-ship-step"><p class="mh-ship-pipe__name">Learning path</p><p class="mh-ship-pipe__body">Each level teaches web dev from the beginning. Cloud words match the lesson. Facts on clear. Goal: Senior Developer.</p></div>
+<!-- /wp:matthummel-ship-step -->
+
+<!-- wp:matthummel/ship-step {"title":"Pathway RPG","body":"Class select, mana powers, cartoon chibis, endgame raids. Fix the start menu when pointer-events block the cards."} -->
+<div class="wp-block-matthummel-ship-step mh-ship-step"><p class="mh-ship-pipe__name">Pathway RPG</p><p class="mh-ship-pipe__body">Class select, mana powers, cartoon chibis, endgame raids. Fix the start menu when pointer-events block the cards.</p></div>
+<!-- /wp:matthummel-ship-step -->
+</div>
+<!-- /wp:matthummel/ship-pipe -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How I prompted</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>I did not paste “build me a game.” I steered in short, concrete turns. The useful prompts looked like bug reports, genre decisions, and product goals.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Prompts that worked</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Symptom-first bugs:</strong> “still broken — no auto-start, pieces don’t fall, clouds missing, music should unlock on Start.”</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Genre pivot:</strong> “is this original besides Tetris?” then “make it gem match-3 with web-dev logo gems like Jewel Quest.”</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Curriculum goal:</strong> “each level should teach web development from the beginning… background words related to what you are learning… popup facts… goal is to become a senior developer.”</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>UX polish:</strong> “start menu isn’t working… animated cartoon characters on pathway select… powers related to the pathway.”</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Ship verbs:</strong> “merge and deploy” when Pages was ready — explicit, so the agent could squash-merge.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What I could have prompted better</h3>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Acceptance criteria.</strong> Not “advanced graphics” — “60fps canvas, no monochrome boards, clouds visible, music on first Play.”</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Scope gates.</strong> Match-3 + facts first. Raids and chibis after the loop feels good on a phone width.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>DOM contracts.</strong> “Class cards must receive clicks; do not rebuild them every frame.” That would have caught the start-menu bug earlier.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Seed the curriculum.</strong> Paste a one-page outline of 20 topics myself. Let the agent fill facts and cloud words.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Folder structure</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The profile repo keeps three copies of the cabinet on purpose: authoring, GitHub Pages, and a WordPress plugin sample.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="snippet"><code class="language-bash">matthummel-pa/
+├── game/                      # source of truth for the player
+│   ├── index.html
+│   ├── git-blocks.js          # ~3.9k lines: engine + UI + curriculum
+│   ├── git-blocks.css
+│   └── audio/stack-sprint.{ogg,wav}
+├── docs/                      # GitHub Pages root (mirrors game/)
+│   ├── index.html
+│   ├── git-blocks.js
+│   ├── git-blocks.css
+│   └── audio/
+├── samples/git-blocks/        # WP plugin sample
+│   ├── git-blocks.php
+│   ├── assets/{js,css,audio}/
+│   └── templates/player.php
+├── tests/test_git_blocks.js   # Node unit tests for the engine
+└── assets/blog/git-blocks/    # screenshots for this post</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p><code>docs/</code> is the Pages deploy target (<code>main</code> / <code>/docs</code>). When the game changes, the agent syncs <code>game/</code> → <code>docs/</code> → <code>samples/</code> so the live player and the plugin sample do not drift.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Code the AI actually put out</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The engine is one IIFE that exports both browser UI and Node-testable helpers. Curriculum is data, not hard-coded strings in the render loop.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Lesson data (Intern → Senior)</h3>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="snippet"><code class="language-js">const CURRICULUM = [
+  {
+    id: "html-bones",
+    title: "HTML bones",
+    track: "Junior",
+    rank: "Intern",
+    skill: {
+      id: "markup",
+      name: "Markup Adept",
+      icon: "</>",
+      blurb: "Structure the page with semantic HTML.",
+    },
+    clouds: ["<!DOCTYPE>", "<html>", "<head>", "<body>", "semantic"],
+    facts: [
+      "HTML is the skeleton of every webpage — tags describe meaning, not looks.",
+      "Prefer semantic tags like <main> and <nav> over endless <div> soup.",
+    ],
+  },
+  // …css-paint, layout-lab, … leadership, senior
+];</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:media-text {"mediaPosition":"right","mediaType":"image","mediaWidth":42} -->
+<div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile" style="grid-template-columns:auto 42%">
+<div class="wp-block-media-text__content">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Facts on every clear</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Matching does not only score. It queues a <code>pendingFact</code> the UI consumes into a modal — lesson number, rank track, cloud chips, and the fact text.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That single product rule (“teach on clear”) came from my prompt. The payload shape and modal chrome came from the agent.</p>
+<!-- /wp:paragraph -->
+</div>
+<figure class="wp-block-media-text__media"><img src="https://cdn.jsdelivr.net/gh/matthummel-pa/matthummel-pa@main/assets/blog/git-blocks/05-match-clear.jpg" alt="Match-3 board after clearing web-dev logo gems"/></figure>
+</div>
+<!-- /wp:media-text -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Pathway powers</h3>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="snippet"><code class="language-js">power: {
+  id: "ui-burst",
+  name: "Style Nova",
+  blurb: "Mage spell — detonate one affinity gem type across the board.",
+},
+character: {
+  glyph: "⚛",
+  title: "Mage",
+  idle: "float",
+  silhouette: "mage",
+  colors: ["#61dafb", "#5b8cff", "#b6f0ff"],
+},</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>Frontend Mage clears an affinity gem type. Backend Sentinel’s Query Storm adds moves and doubles the next cascade. WordPress Artisan’s Hook Cascade reshuffles and refills tools. Full-Stack Ranger’s Polyglot Pulse turns combo into a LOC surge. Same mana bar, different fantasy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">The start-menu bug (worth remembering)</h3>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="snippet"><code class="language-css">.overlay { pointer-events: none; }
+.overlay.is-clickable,
+.overlay.is-class-select { pointer-events: auto; }</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>Class cards lived inside a non-interactive overlay, and the UI rebuilt those cards every animation frame. Clicks never stuck. The fix was boring CSS plus “build the menu once per session.” Most “AI broke my UI” stories are contracts like this.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How I kept it honest</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Unit tests</strong> in Node for matches, curriculum, facts, pathway powers (<code>tests/test_git_blocks.js</code>).</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Walkthrough artifacts</strong> — screenshots and short MP4s from Cloud Agent demos before merge.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Draft PRs</strong>, then squash-merge to <code>main</code> so Pages picked up <code>docs/</code>.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>jsDelivr purge</strong> when matthummel.com loads game assets from <code>@main</code> (the WP page HTML still needs a separate refresh — noted for later).</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://cdn.jsdelivr.net/gh/matthummel-pa/matthummel-pa@main/assets/blog/git-blocks/04-lesson-intro.jpg" alt="Lesson intro modal for HTML bones with Intern to Senior progress"/><figcaption class="wp-element-caption">Lesson briefing — skill unlock, preview fact, lesson-tied word chips.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Fun details I did not plan</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li>Score is “lines of code,” not points. It reads better on a developer profile.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Cloud words are lesson vocabulary, so the board atmosphere changes as you rank up.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Chibis are pure SVG + CSS — no sprite sheets, so the agent could iterate without asset pipelines.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Original theme music lives as <code>stack-sprint.ogg</code> / <code>.wav</code> next to the player.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"faq-list","layout":{"type":"default"}} -->
+<div class="wp-block-group faq-list">
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Did AI write the whole game unsupervised?</summary><!-- wp:paragraph -->
+<p>No. Cursor Cloud agents wrote most of the code and tests. I set the genre, curriculum goal, and merge decisions. I also rejected paths that felt like another Tetris clone.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Is Git Blocks a WordPress plugin?</summary><!-- wp:paragraph -->
+<p>There is a sample plugin under <code>samples/git-blocks/</code> for embedding the cabinet. The primary play URL is GitHub Pages from <code>docs/</code>. The matthummel.com <code>/git-blocks/</code> page can load assets from jsDelivr <code>@main</code>.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Would I build a client game this way?</summary><!-- wp:paragraph -->
+<p>I would use the same prompt discipline and tests. I would not promise a one-day RPG pivot on a shop deadline without a scoped milestone list and a human design pass first.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Where should I start if I copy this approach?</summary><!-- wp:paragraph -->
+<p>Pick one core loop. Write failing tests for it. Prompt the agent against those tests. Add curriculum or cosmetics only after the loop feels good on a phone-width screen.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph -->
+<p>If you want this kind of AI-assisted build — with review still on the human — for a WordPress shop site or a small web app, <a href="/contact/">say hello</a>. Or just <a href="https://matthummel-pa.github.io/matthummel-pa/">play Git Blocks</a> and try to graduate Senior.</p>
+<!-- /wp:paragraph -->
