@@ -258,6 +258,83 @@ canvas[data-board] {
   color: #9fb4ce;
 }
 
+.concept-note {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--muted);
+  border-left: 2px solid var(--accent);
+  padding-left: 8px;
+}
+
+.dev-clouds {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.page,
+.git-blocks-embed .page {
+  position: relative;
+  z-index: 1;
+}
+
+.dev-cloud {
+  position: absolute;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  color: rgba(232, 240, 250, 0.55);
+  white-space: nowrap;
+  text-shadow: 0 0 18px rgba(79, 143, 212, 0.25);
+  will-change: transform;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.dev-cloud[data-lang="css"] { color: rgba(94, 200, 216, 0.55); }
+.dev-cloud[data-lang="php"] { color: rgba(139, 124, 224, 0.55); }
+.dev-cloud[data-lang="wp"] { color: rgba(79, 143, 212, 0.55); }
+.dev-cloud[data-lang="react"] { color: rgba(94, 211, 180, 0.55); }
+
+.pattern-drift .dev-cloud { animation-name: cloud-drift; }
+.pattern-rise .dev-cloud { animation-name: cloud-rise; }
+.pattern-cross .dev-cloud { animation-name: cloud-cross; }
+.pattern-orbit .dev-cloud { animation-name: cloud-orbit; }
+.pattern-sway .dev-cloud { animation-name: cloud-sway; }
+.pattern-scan .dev-cloud { animation-name: cloud-scan; }
+
+@keyframes cloud-drift {
+  from { transform: translate3d(-8vw, 0, 0); }
+  to { transform: translate3d(12vw, -2vh, 0); }
+}
+@keyframes cloud-rise {
+  from { transform: translate3d(0, 10vh, 0); }
+  to { transform: translate3d(3vw, -14vh, 0); }
+}
+@keyframes cloud-cross {
+  0% { transform: translate3d(-6vw, 4vh, 0); }
+  50% { transform: translate3d(8vw, -6vh, 0); }
+  100% { transform: translate3d(-4vw, 2vh, 0); }
+}
+@keyframes cloud-orbit {
+  0% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(6vw, -5vh, 0) rotate(8deg); }
+  100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+}
+@keyframes cloud-sway {
+  0%, 100% { transform: translate3d(-3vw, 0, 0); }
+  50% { transform: translate3d(5vw, 3vh, 0); }
+}
+@keyframes cloud-scan {
+  from { transform: translate3d(-10vw, 0, 0) skewX(-4deg); }
+  to { transform: translate3d(14vw, 0, 0) skewX(4deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dev-cloud { animation: none !important; }
+}
+
 .player-dock {
   margin-top: auto;
   display: flex;

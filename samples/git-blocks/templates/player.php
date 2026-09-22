@@ -15,6 +15,7 @@ if (! defined('ABSPATH')) {
 }
 ?>
 <div class="<?php echo esc_attr($git_blocks_layout_class); ?>">
+	<div class="dev-clouds pattern-drift" data-dev-clouds aria-hidden="true"></div>
 	<main class="page">
 		<p class="page-kicker"><?php esc_html_e('Mini player · Git Blocks', 'git-blocks'); ?></p>
 		<h1><?php esc_html_e('Git Blocks', 'git-blocks'); ?></h1>
@@ -73,7 +74,7 @@ if (! defined('ABSPATH')) {
 						</section>
 
 						<section class="customize-pane" data-pane="music" hidden>
-							<p class="customize-hint"><?php esc_html_e('Open-source / generated loops. Attribution shows under the picker.', 'git-blocks'); ?></p>
+							<p class="customize-hint"><?php esc_html_e('Free / open-source loops (mostly generated in-browser). Shuffle discovers a fresh random set.', 'git-blocks'); ?></p>
 							<label class="field">
 								<span><?php esc_html_e('Background music', 'git-blocks'); ?></span>
 								<select data-music-track></select>
@@ -87,9 +88,19 @@ if (! defined('ABSPATH')) {
 								<span><?php esc_html_e('Music volume', 'git-blocks'); ?></span>
 								<input type="range" data-music-volume min="0" max="100" value="35" />
 							</label>
-							<div class="row-actions">
+							<div class="row-actions wrap">
+								<button type="button" data-music-discover><?php esc_html_e('Find free tracks', 'git-blocks'); ?></button>
+								<button type="button" class="ghost" data-music-preview><?php esc_html_e('Preview', 'git-blocks'); ?></button>
 								<button type="button" data-music-apply><?php esc_html_e('Play track', 'git-blocks'); ?></button>
 								<button type="button" class="ghost" data-music-stop><?php esc_html_e('Stop', 'git-blocks'); ?></button>
+							</div>
+							<p class="customize-hint"><?php esc_html_e('Preview game SFX', 'git-blocks'); ?></p>
+							<div class="row-actions wrap sfx-row">
+								<button type="button" class="ghost" data-sfx-preview="move"><?php esc_html_e('Move', 'git-blocks'); ?></button>
+								<button type="button" class="ghost" data-sfx-preview="rotate"><?php esc_html_e('Rotate', 'git-blocks'); ?></button>
+								<button type="button" class="ghost" data-sfx-preview="drop"><?php esc_html_e('Drop', 'git-blocks'); ?></button>
+								<button type="button" class="ghost" data-sfx-preview="clear"><?php esc_html_e('Clear', 'git-blocks'); ?></button>
+								<button type="button" class="ghost" data-sfx-preview="start"><?php esc_html_e('Start', 'git-blocks'); ?></button>
 							</div>
 						</section>
 
@@ -138,6 +149,7 @@ if (! defined('ABSPATH')) {
 						<div class="tray"><span><?php esc_html_e('Next', 'git-blocks'); ?></span><div data-next></div></div>
 					</div>
 					<p class="message" data-message><?php esc_html_e('Starting level 1…', 'git-blocks'); ?></p>
+					<p class="concept-note"><?php esc_html_e('Concept game for fun — not production software. Pieces auto-fall; each level gets harder.', 'git-blocks'); ?></p>
 					<div class="player-dock">
 						<span class="controls-label"><?php esc_html_e('Controls', 'git-blocks'); ?></span>
 						<div class="pad" role="group" aria-label="<?php esc_attr_e('Game controls', 'git-blocks'); ?>">
