@@ -109,6 +109,8 @@ test("play queues a lesson intro briefing for the current level", () => {
   assert.equal(intro.start, true);
   assert.equal(intro.title, "HTML bones");
   assert.equal(intro.rank, "Intern");
+  assert.ok(intro.goal >= 100);
+  assert.ok(intro.pathway);
   assert.ok(intro.clouds && intro.clouds.some((w) => /html|DOCTYPE|semantic/i.test(w)));
   assert.ok(intro.facts && intro.facts[0]);
   assert.equal(game.consumeLessonIntro(), null);

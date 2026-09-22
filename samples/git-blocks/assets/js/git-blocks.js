@@ -1215,8 +1215,8 @@
           state.shuffles = Math.min(3, state.shuffles + 1);
           state.levelFlash = now();
           const lesson = currentLesson();
-          state.message = `Lesson ${state.level}: ${lesson.title} (${lesson.rank})`;
-          pushLog(`lesson → ${lesson.title}`);
+          state.message = `Quest ${state.level}: ${lesson.title} (${lesson.rank})`;
+          pushLog(`quest → ${lesson.title}`);
           grantLessonSkill(state.level);
           state.pendingLessonIntro = {
             title: lesson.title,
@@ -1227,6 +1227,9 @@
             facts: (lesson.facts || []).slice(0, 1),
             level: state.level,
             total: pathLen(),
+            goal: state.goal,
+            moves: state.moves,
+            pathway: pathwayFor(state.pathwayId).name,
             at: now(),
           };
           sounds.push("level");
@@ -1485,8 +1488,11 @@
       }
       state.status = "playing";
       const lesson = currentLesson();
-      const label = state.phase === "endgame" ? "Raid" : "Lesson";
-      state.message = `${label}: ${lesson.title} — write ${state.goal} LOC to advance.`;
+      const label = state.phase === "endgame" ? "Raid" : "Quest";
+      state.message =
+        state.phase === "endgame"
+          ? `${label}: ${lesson.title} — write ${state.goal} LOC to advance.`
+          : `New quest: ${lesson.title} — write ${state.goal} LOC.`;
       state.levelFlash = now();
       grantLessonSkill(state.level);
       if (state.phase !== "endgame") {
@@ -1499,6 +1505,9 @@
           facts: (lesson.facts || []).slice(0, 1),
           level: state.level,
           total: pathLen(),
+          goal: state.goal,
+          moves: state.moves,
+          pathway: pathwayFor(state.pathwayId).name,
           at: now(),
           start: true,
         };
@@ -2735,63 +2744,90 @@
       let card = root.querySelector("[data-lesson-intro]");
       if (!card) {
         card = document.createElement("div");
-        card.className = "lesson-intro";
+        card.className = "lesson-intro quest-frame";
         card.setAttribute("data-lesson-intro", "");
         card.setAttribute("role", "dialog");
         card.setAttribute("aria-modal", "true");
-        card.setAttribute("aria-label", "Lesson briefing");
+        card.setAttribute("aria-label", "Available quest");
         const boardWrap = root.querySelector(".board-wrap") || root;
         boardWrap.appendChild(card);
       }
+      card.className = "lesson-intro quest-frame";
       const total = intro.total || CURRICULUM.length;
       const step = intro.level || 1;
       const pct = Math.round((step / Math.max(1, total)) * 100);
-      card.innerHTML = "";
-      const eyebrow = document.createElement("p");
-      eyebrow.className = "lesson-intro-eyebrow";
-      eyebrow.textContent = intro.start
-        ? "Your path to Senior Developer begins"
-        : `Level up · Lesson ${step}/${total}`;
-      const title = document.createElement("h3");
-      title.textContent = intro.title || "Next lesson";
-      const rank = document.createElement("p");
-      rank.className = "lesson-intro-rank";
-      rank.textContent = `${intro.rank || "Intern"} → Senior Developer · ${intro.track || "Path"}`;
-      const track = document.createElement("div");
-      track.className = "fact-path-track";
-      track.innerHTML = `<span style="width:${pct}%"></span>`;
-      const skill = document.createElement("p");
-      skill.className = "lesson-intro-skill";
-      skill.textContent = intro.skill
-        ? `Skill: ${intro.skill.icon || "★"} ${intro.skill.name} — ${intro.skill.blurb || ""}`
-        : "Match gems to learn this lesson.";
-      const preview = document.createElement("p");
-      preview.className = "lesson-intro-fact";
-      preview.textContent =
+      const goal = intro.goal || 600;
+      const moves = intro.moves != null ? intro.moves : "—";
+      const giver = intro.pathway || "Path Mentor";
+      const lore =
         (intro.facts && intro.facts[0]) ||
-        "Clear matching logo gems — each clear teaches a web-dev fact for this lesson.";
-      const clouds = document.createElement("div");
-      clouds.className = "fact-cloud-chips";
+        "Clear matching logo gems — each clear teaches a web-dev fact for this quest.";
+      const skillLine = intro.skill
+        ? `${intro.skill.icon || "★"} ${intro.skill.name}`
+        : "Pathway skill";
+      const skillBlurb = (intro.skill && intro.skill.blurb) || "Master this chapter of the craft.";
+
+      card.innerHTML = `
+        <div class="quest-bang" aria-hidden="true">!</div>
+        <header class="quest-header">
+          <p class="quest-availability">${intro.start ? "Available Quest" : "Quest Complete — Next Chapter"}</p>
+          <h3 class="quest-title">${intro.title || "Untitled Quest"}</h3>
+          <p class="quest-zone">${intro.track || "Path"} · ${intro.rank || "Intern"} · Chapter ${step}/${total}</p>
+        </header>
+        <div class="quest-scroll">
+          <p class="quest-giver"><span>Quest giver</span> ${giver}</p>
+          <p class="quest-desc">${lore}</p>
+          <p class="quest-desc muted">${skillBlurb} Walk the path toward <strong>Senior Developer</strong>.</p>
+          <h4 class="quest-section">Objectives</h4>
+          <ul class="quest-objectives">
+            <li><span class="quest-check" aria-hidden="true"></span> Write <strong>${goal} LOC</strong> by matching logo gems</li>
+            <li><span class="quest-check" aria-hidden="true"></span> Survive on <strong>${moves} moves</strong> (or earn more)</li>
+            <li><span class="quest-check" aria-hidden="true"></span> Study the lore — every clear reveals a web-dev fact</li>
+            <li><span class="quest-check" aria-hidden="true"></span> Claim skill reward: <strong>${skillLine}</strong></li>
+          </ul>
+          <h4 class="quest-section">Rewards</h4>
+          <div class="quest-rewards">
+            <div class="quest-reward-item">
+              <em>Skill</em>
+              <strong>${skillLine}</strong>
+            </div>
+            <div class="quest-reward-item">
+              <em>Rank track</em>
+              <strong>${intro.rank || "Intern"} → Senior</strong>
+            </div>
+            <div class="quest-reward-item">
+              <em>Chapter</em>
+              <strong>${step} / ${total}</strong>
+            </div>
+          </div>
+          <div class="quest-progress" aria-hidden="true"><span style="width:${pct}%"></span></div>
+          <div class="fact-cloud-chips quest-chips"></div>
+        </div>
+        <footer class="quest-actions">
+          <button type="button" class="quest-decline" data-quest-decline>Decline</button>
+          <button type="button" class="quest-accept" data-quest-accept>${
+            intro.start ? "Accept Quest" : "Continue Quest"
+          }</button>
+        </footer>
+      `;
+      const chips = card.querySelector(".quest-chips");
       (intro.clouds || []).forEach((word) => {
         const chip = document.createElement("span");
         chip.textContent = word;
-        clouds.appendChild(chip);
+        chips.appendChild(chip);
       });
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "lesson-intro-go";
-      btn.textContent = intro.start ? "Start matching" : "Continue learning";
       const dismiss = () => {
         card.classList.remove("is-visible");
         backdrop.classList.remove("is-visible");
       };
-      btn.addEventListener("click", dismiss);
+      card.querySelector("[data-quest-accept]").addEventListener("click", dismiss);
+      card.querySelector("[data-quest-decline]").addEventListener("click", dismiss);
       backdrop.onclick = dismiss;
-      card.append(eyebrow, title, rank, track, skill, preview, clouds, btn);
       backdrop.classList.add("is-visible");
       card.classList.add("is-visible");
       window.clearTimeout(showLessonIntro._timer);
-      showLessonIntro._timer = window.setTimeout(dismiss, 9000);
+      // WoW-style: stay open until Accept — soft timeout as safety net only
+      showLessonIntro._timer = window.setTimeout(dismiss, 45000);
     }
 
     function showSkillUnlock(skill) {
@@ -3372,12 +3408,12 @@
         } else if (showLevelBanner && snap.status === "playing") {
           overlayTitle.textContent =
             snap.phase === "endgame"
-              ? `Endgame raid · ${snap.lessonRank || "Boss"}`
-              : `Lesson ${snap.level}/${snap.curriculumLength || CURRICULUM.length}`;
+              ? `Raid · ${snap.lessonRank || "Boss"}`
+              : `Quest ${snap.level}/${snap.curriculumLength || CURRICULUM.length}`;
           overlayBody.textContent =
             snap.phase === "endgame"
               ? `${snap.lessonTitle}. ${(snap.lessonSkill && snap.lessonSkill.blurb) || "Keep matching to clear the raid."}`
-              : `${snap.lessonTitle} (${snap.lessonRank}). Cloud words match this lesson — every clear pops a web-dev fact on your path to Senior Developer.`;
+              : `${snap.lessonTitle} — accept the quest, write LOC, claim your skill on the path to Senior Developer.`;
           if (playBtn) playBtn.hidden = true;
         } else if (snap.status === "ready") {
           overlayTitle.textContent = snap.pathway ? snap.pathway.name : "Git Blocks";
