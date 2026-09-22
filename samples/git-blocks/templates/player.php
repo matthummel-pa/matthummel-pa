@@ -73,8 +73,8 @@ if (! defined('ABSPATH')) {
 					<ul class="commit-log" data-commit-log aria-label="<?php esc_attr_e('Match log', 'git-blocks'); ?>"></ul>
 					<div class="badge-row" data-badges aria-label="<?php esc_attr_e('Achievements', 'git-blocks'); ?>"></div>
 					<div class="player-dock">
-						<span class="controls-label"><?php esc_html_e('Path to senior · then raids', 'git-blocks'); ?></span>
-						<p class="keys" data-keys-help><?php esc_html_e('Pick class · match affinity · fill mana · cast power · H hint', 'git-blocks'); ?></p>
+						<span class="controls-label"><?php esc_html_e('Path to Senior Developer', 'git-blocks'); ?></span>
+						<p class="keys" data-keys-help><?php esc_html_e('Match gems · learn a fact each clear · graduate Senior · then raids', 'git-blocks'); ?></p>
 					</div>
 				</aside>
 				<div class="customize-panel" data-customize-panel hidden>
