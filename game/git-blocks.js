@@ -320,8 +320,8 @@
       clouds: ["flex", "grid", "jsx", "hooks", "a11y", "pixels", "cascade", "viewport", "component", "UI"],
       power: {
         id: "ui-burst",
-        name: "UI Burst",
-        blurb: "Spend mana to shatter a random affinity gem type on the board.",
+        name: "Style Nova",
+        blurb: "Mage spell — detonate one affinity gem type across the board.",
       },
       character: {
         glyph: "⚛",
@@ -367,7 +367,7 @@
       power: {
         id: "query-storm",
         name: "Query Storm",
-        blurb: "Spend mana for +4 moves and a double-LOC next cascade.",
+        blurb: "Sentinel protocol — +4 moves and double LOC on the next cascade.",
       },
       character: {
         glyph: "{}",
@@ -410,7 +410,7 @@
       power: {
         id: "hook-cascade",
         name: "Hook Cascade",
-        blurb: "Spend mana to refill hints/shuffles and reshuffle the board.",
+        blurb: "Artisan craft — fire every hook: reshuffle and refill hints & shuffles.",
       },
       character: {
         glyph: "W",
@@ -453,7 +453,7 @@
       power: {
         id: "polyglot-pulse",
         name: "Polyglot Pulse",
-        blurb: "Spend mana for a LOC surge equal to your current combo streak.",
+        blurb: "Ranger surge — convert your combo into a burst of shipped LOC.",
       },
       character: {
         glyph: "◆",
@@ -467,6 +467,123 @@
   ];
 
   const PATHWAY_BY_ID = Object.fromEntries(PATHWAY_CLASSES.map((p) => [p.id, p]));
+
+  /**
+   * Cartoon chibi heroes for pathway select + sidebar. Pure SVG so every class
+   * animates like a little RPG sprite without external assets.
+   */
+  function cartoonCharacterMarkup(silhouette, colors, idle) {
+    const c = colors || ["#4f8fd4", "#0d2e57", "#9ec8ef"];
+    const primary = c[0];
+    const secondary = c[1] || c[0];
+    const accent = c[2] || "#fff6c8";
+    const kind = silhouette || "ranger";
+    const motion = idle || "float";
+
+    const faces = {
+      mage: `
+        <g class="chibi-hat">
+          <path d="M20 26 C18 10 32 4 40 14 C46 8 54 16 48 26 Z" fill="${secondary}"/>
+          <circle cx="42" cy="12" r="3.2" fill="${accent}"/>
+          <path d="M22 26 H48 L46 30 H24 Z" fill="${primary}"/>
+        </g>
+        <g class="chibi-staff">
+          <rect x="52" y="28" width="3" height="34" rx="1.5" fill="${accent}"/>
+          <circle cx="53.5" cy="26" r="4.5" fill="${primary}" stroke="#fff" stroke-width="1"/>
+          <path d="M51 24 L56 24 L53.5 20 Z" fill="${accent}"/>
+        </g>
+        <ellipse class="chibi-cape" cx="34" cy="52" rx="14" ry="10" fill="${secondary}" opacity="0.85"/>
+        <circle class="chibi-head" cx="34" cy="34" r="10" fill="#ffd7b5"/>
+        <g class="chibi-eyes"><circle cx="30.5" cy="33" r="1.4" fill="#1a1a2e"/><circle cx="37.5" cy="33" r="1.4" fill="#1a1a2e"/></g>
+        <path class="chibi-smile" d="M31 38 Q34 41 37 38" fill="none" stroke="#c47a5a" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M26 44 Q34 48 42 44 L40 62 H28 Z" fill="${primary}"/>
+        <g class="chibi-arms">
+          <path d="M26 48 Q18 52 16 58" fill="none" stroke="#ffd7b5" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M42 48 Q50 50 53 34" fill="none" stroke="#ffd7b5" stroke-width="3.2" stroke-linecap="round"/>
+        </g>
+        <g class="chibi-boots"><ellipse cx="30" cy="64" rx="4" ry="2.2" fill="#1a1a2e"/><ellipse cx="38" cy="64" rx="4" ry="2.2" fill="#1a1a2e"/></g>
+      `,
+      sentinel: `
+        <ellipse class="chibi-cape" cx="34" cy="50" rx="15" ry="11" fill="${secondary}" opacity="0.55"/>
+        <g class="chibi-shield">
+          <path d="M10 36 L18 34 L20 54 L10 56 Z" fill="${accent}" stroke="${primary}" stroke-width="1.5"/>
+          <text x="12.5" y="48" font-size="7" fill="${primary}" font-family="IBM Plex Mono,monospace">{ }</text>
+        </g>
+        <circle class="chibi-head" cx="36" cy="30" r="10" fill="#ffd7b5"/>
+        <path d="M26 26 Q36 18 46 26 L44 30 H28 Z" fill="${primary}"/>
+        <g class="chibi-eyes"><circle cx="32.5" cy="30" r="1.4" fill="#1a1a2e"/><circle cx="39.5" cy="30" r="1.4" fill="#1a1a2e"/></g>
+        <path class="chibi-smile" d="M33 35 Q36 37.5 39 35" fill="none" stroke="#c47a5a" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M26 40 Q36 44 46 40 L44 62 H28 Z" fill="${primary}"/>
+        <rect x="28" y="46" width="16" height="8" rx="2" fill="${accent}" opacity="0.9"/>
+        <g class="chibi-arms">
+          <path d="M26 46 Q16 48 14 42" fill="none" stroke="#ffd7b5" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M46 46 Q54 50 56 56" fill="none" stroke="#ffd7b5" stroke-width="3.2" stroke-linecap="round"/>
+        </g>
+        <g class="chibi-boots"><ellipse cx="31" cy="64" rx="4.2" ry="2.2" fill="#1a1a2e"/><ellipse cx="41" cy="64" rx="4.2" ry="2.2" fill="#1a1a2e"/></g>
+      `,
+      artisan: `
+        <ellipse class="chibi-cape" cx="34" cy="52" rx="13" ry="9" fill="${secondary}" opacity="0.5"/>
+        <g class="chibi-tool">
+          <rect x="50" y="34" width="3" height="22" rx="1" fill="#c9a227"/>
+          <path d="M48 34 H56 L53 28 Z" fill="${accent}"/>
+        </g>
+        <circle class="chibi-head" cx="34" cy="32" r="10" fill="#ffd7b5"/>
+        <path d="M24 30 Q34 22 44 30" fill="none" stroke="#3a2a1a" stroke-width="3" stroke-linecap="round"/>
+        <g class="chibi-eyes"><circle cx="30.5" cy="32" r="1.4" fill="#1a1a2e"/><circle cx="37.5" cy="32" r="1.4" fill="#1a1a2e"/></g>
+        <path class="chibi-smile" d="M31 37 Q34 39.5 37 37" fill="none" stroke="#c47a5a" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M25 42 Q34 46 43 42 L41 62 H27 Z" fill="${primary}"/>
+        <circle cx="34" cy="52" r="6" fill="#fff" opacity="0.92"/>
+        <text x="30.2" y="55.2" font-size="9" font-weight="700" fill="${primary}" font-family="IBM Plex Sans,sans-serif">W</text>
+        <g class="chibi-arms">
+          <path d="M25 48 Q18 54 16 58" fill="none" stroke="#ffd7b5" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M43 48 Q50 50 52 36" fill="none" stroke="#ffd7b5" stroke-width="3.2" stroke-linecap="round"/>
+        </g>
+        <g class="chibi-boots"><ellipse cx="30" cy="64" rx="4" ry="2.2" fill="#1a1a2e"/><ellipse cx="38" cy="64" rx="4" ry="2.2" fill="#1a1a2e"/></g>
+      `,
+      ranger: `
+        <ellipse class="chibi-cape" cx="34" cy="50" rx="14" ry="11" fill="${secondary}" opacity="0.75"/>
+        <circle class="chibi-head" cx="34" cy="30" r="10" fill="#ffd7b5"/>
+        <path d="M24 28 Q34 18 44 28 L42 32 H26 Z" fill="${primary}"/>
+        <g class="chibi-eyes"><circle cx="30.5" cy="30" r="1.4" fill="#1a1a2e"/><circle cx="37.5" cy="30" r="1.4" fill="#1a1a2e"/></g>
+        <path class="chibi-smile" d="M31 35 Q34 38 37 35" fill="none" stroke="#c47a5a" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M26 40 Q34 45 42 40 L44 50 L34 58 L24 50 Z" fill="${accent}"/>
+        <path d="M28 50 L34 62 L40 50" fill="${primary}"/>
+        <g class="chibi-arms">
+          <path d="M26 46 Q16 44 14 38" fill="none" stroke="#ffd7b5" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M42 46 Q52 48 54 54" fill="none" stroke="#ffd7b5" stroke-width="3.2" stroke-linecap="round"/>
+        </g>
+        <g class="chibi-boots"><ellipse cx="30" cy="64" rx="4" ry="2.2" fill="#1a1a2e"/><ellipse cx="38" cy="64" rx="4" ry="2.2" fill="#1a1a2e"/></g>
+        <g class="chibi-spark"><circle cx="14" cy="36" r="2" fill="${primary}"/><circle cx="54" cy="42" r="1.6" fill="${accent}"/></g>
+      `,
+      classic: `
+        <ellipse class="chibi-cape" cx="34" cy="52" rx="13" ry="9" fill="${secondary}" opacity="0.45"/>
+        <circle class="chibi-head" cx="34" cy="32" r="10" fill="#ffd7b5"/>
+        <path d="M24 30 H44 L42 36 H26 Z" fill="${primary}"/>
+        <g class="chibi-eyes"><circle cx="30.5" cy="33" r="1.4" fill="#1a1a2e"/><circle cx="37.5" cy="33" r="1.4" fill="#1a1a2e"/></g>
+        <path class="chibi-smile" d="M31 38 Q34 40.5 37 38" fill="none" stroke="#c47a5a" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M26 42 Q34 47 42 42 L40 62 H28 Z" fill="${secondary}"/>
+        <path d="M30 48 L34 40 L38 48 Z" fill="${accent}"/>
+        <g class="chibi-arms">
+          <path d="M26 48 Q18 52 20 58" fill="none" stroke="#ffd7b5" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M42 48 Q50 52 48 58" fill="none" stroke="#ffd7b5" stroke-width="3.2" stroke-linecap="round"/>
+        </g>
+        <g class="chibi-boots"><ellipse cx="30" cy="64" rx="4" ry="2.2" fill="#1a1a2e"/><ellipse cx="38" cy="64" rx="4" ry="2.2" fill="#1a1a2e"/></g>
+      `,
+    };
+
+    const body = faces[kind] || faces.ranger;
+    return `
+      <span class="chibi chibi-${kind} idle-${motion}" aria-hidden="true">
+        <span class="chibi-shadow"></span>
+        <svg class="chibi-svg" viewBox="0 0 68 72" width="68" height="72" focusable="false">
+          ${body}
+        </svg>
+        <span class="chibi-sparkle s1"></span>
+        <span class="chibi-sparkle s2"></span>
+        <span class="chibi-sparkle s3"></span>
+      </span>
+    `;
+  }
 
   /** Post-senior raids — harder LOC goals, fewer moves, boss flavor. */
   const ENDGAME_CHALLENGES = [
@@ -920,7 +1037,7 @@
         ? `Endgame raid — ${lessonFor(1, initialPathway, "endgame", opts.challengeIndex || 0).title}`
         : initialPathway
           ? `Pathway locked — ${pathwayFor(initialPathway).name}. Ready to write LOC.`
-          : "Choose your pathway class to begin the gem-drop RPG.",
+          : "Pick a pathway hero to begin.",
       selected: null,
       hint: null,
       levelFlash: 0,
@@ -1441,7 +1558,7 @@
       state.status = keepPath ? "ready" : "class-select";
       state.message = keepPath
         ? `${pathwayFor(keepPath).name} — ready for a new career run.`
-        : "Choose your pathway class to begin the gem-drop RPG.";
+        : "Pick a pathway hero to begin.";
       state.selected = null;
       state.hint = null;
       state.levelFlash = 0;
@@ -1475,7 +1592,7 @@
       state.commitLog = [];
       state.fx = [];
       state.status = "class-select";
-      state.message = "Choose your pathway class to begin the gem-drop RPG.";
+      state.message = "Pick a pathway hero to begin.";
       state.selected = null;
       state.hint = null;
       state.busy = false;
@@ -2755,11 +2872,15 @@
       const path = snap.pathway;
       if (!path) {
         hero.hidden = true;
+        hero.dataset.sig = "";
         return;
       }
       hero.hidden = false;
       const char = path.character || {};
       const pulsing = snap.characterPulse && Date.now() - snap.characterPulse < 700;
+      const signature = `${path.id}:${char.silhouette}:${pulsing ? "1" : "0"}`;
+      if (hero.dataset.sig === signature) return;
+      hero.dataset.sig = signature;
       hero.innerHTML = "";
       hero.className = `hero-panel hero-${char.silhouette || "ranger"} idle-${char.idle || "float"}${
         pulsing ? " is-pulsing" : ""
@@ -2767,17 +2888,14 @@
       const figure = document.createElement("div");
       figure.className = "hero-figure";
       figure.setAttribute("aria-hidden", "true");
-      figure.innerHTML = `
-        <span class="hero-aura"></span>
-        <span class="hero-body"><span class="hero-glyph">${char.glyph || "◆"}</span></span>
-        <span class="hero-base"></span>
-      `;
+      figure.innerHTML = cartoonCharacterMarkup(char.silhouette, char.colors, char.idle);
       const meta = document.createElement("div");
       meta.className = "hero-meta";
       meta.innerHTML = `
         <strong>${path.name}</strong>
         <span>${path.role}</span>
         <span class="hero-power">${(path.power && path.power.name) || "Class power"}</span>
+        <span class="hero-power-blurb">${(path.power && path.power.blurb) || ""}</span>
       `;
       hero.appendChild(figure);
       hero.appendChild(meta);
@@ -2846,6 +2964,7 @@
         if (host) {
           host.hidden = true;
           host.replaceChildren();
+          delete host.dataset.built;
         }
         return;
       }
@@ -2858,56 +2977,69 @@
         else if (overlay) overlay.appendChild(host);
       }
       host.hidden = false;
+      // Rebuild only once per class-select session — recreating every frame
+      // killed clicks and reset animations (broken start menu).
+      if (host.dataset.built === "1") return;
+      host.dataset.built = "1";
       host.replaceChildren();
+
+      const pickPath = (pathwayId, label) => {
+        if (!game.choosePathway(pathwayId)) return;
+        const path = pathwayFor(pathwayId);
+        applyPathwayTheme(path);
+        syncLessonClouds(1, pathwayId, "path", 0);
+        beep("start");
+        announce(label || `${path.name} chosen`);
+        handlePlay();
+      };
+
       const classic = document.createElement("button");
       classic.type = "button";
       classic.className = "class-card class-classic";
       classic.style.setProperty("--card-accent", "#4f8fd4");
       classic.innerHTML = `
-        <span class="class-card-figure idle-float">
-          <span class="hero-aura"></span>
-          <span class="hero-glyph">◇</span>
+        <span class="class-card-figure">
+          ${cartoonCharacterMarkup("classic", ["#4f8fd4", "#0d2e57", "#e7c35a"], "float")}
         </span>
-        <strong>Classic learning path</strong>
-        <em>Intern → Senior Developer</em>
-        <span class="class-card-blurb">20 lessons from HTML bones to senior craft. Background words and facts follow each lesson.</span>
-        <span class="class-card-gems">Start as Intern · full curriculum</span>
+        <span class="class-card-copy">
+          <strong>Classic learning path</strong>
+          <em>Intern → Senior Developer</em>
+          <span class="class-card-blurb">20 lessons from HTML bones to senior craft. Background words and facts follow each lesson.</span>
+          <span class="class-card-gems">Power · Polyglot Pulse · full curriculum</span>
+        </span>
       `;
-      classic.addEventListener("click", () => {
-        if (!game.choosePathway("fullstack")) return;
-        const path = pathwayFor("fullstack");
-        applyPathwayTheme(path);
-        syncLessonClouds(1, "fullstack", "path", 0);
-        beep("start");
-        announce("Classic path — Intern to Senior");
-        handlePlay();
+      classic.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        pickPath("fullstack", "Classic path — Intern to Senior");
       });
       host.appendChild(classic);
+
       PATHWAY_CLASSES.forEach((path) => {
         const card = document.createElement("button");
         card.type = "button";
         card.className = `class-card class-${path.id}`;
         card.style.setProperty("--card-accent", path.accent);
+        const char = path.character || {};
         card.innerHTML = `
-          <span class="class-card-figure idle-${path.character.idle}">
-            <span class="hero-aura"></span>
-            <span class="hero-glyph">${path.character.glyph}</span>
+          <span class="class-card-figure">
+            ${cartoonCharacterMarkup(char.silhouette, char.colors, char.idle)}
           </span>
-          <strong>${path.name}</strong>
-          <em>${path.role}</em>
-          <span class="class-card-blurb">${path.blurb}</span>
-          <span class="class-card-gems">${path.affinity
-            .slice(0, 5)
-            .map((id) => (META[id] && META[id].label) || id)
-            .join(" · ")}</span>
+          <span class="class-card-copy">
+            <strong>${path.name}</strong>
+            <em>${path.role}</em>
+            <span class="class-card-blurb">${path.blurb}</span>
+            <span class="class-card-power">${(path.power && path.power.name) || "Power"} — ${(path.power && path.power.blurb) || ""}</span>
+            <span class="class-card-gems">${path.affinity
+              .slice(0, 5)
+              .map((id) => (META[id] && META[id].label) || id)
+              .join(" · ")}</span>
+          </span>
         `;
-        card.addEventListener("click", () => {
-          if (!game.choosePathway(path.id)) return;
-          applyPathwayTheme(path);
-          syncLessonClouds(1, path.id, "path", 0);
-          beep("start");
-          announce(`${path.name} chosen`);
-          handlePlay();
+        card.addEventListener("click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          pickPath(path.id, `${path.name} chosen`);
         });
         host.appendChild(card);
       });
@@ -3222,7 +3354,7 @@
         overlay.hidden = !show;
         overlay.classList.toggle(
           "is-clickable",
-          !customizing && snap.status !== "playing" && snap.status !== "class-select"
+          !customizing && snap.status !== "playing"
         );
         overlay.classList.toggle("is-class-select", snap.status === "class-select");
         if (overlayLevel) {
@@ -3233,9 +3365,9 @@
               : snap.lessonTitle || snap.sprint || `Lesson ${snap.level}`;
         }
         if (snap.status === "class-select") {
-          overlayTitle.textContent = "Path to Senior Developer";
+          overlayTitle.textContent = "Choose your pathway";
           overlayBody.textContent =
-            "Start with Classic (Intern → Senior, 20 lessons) or pick a specialty class. Background words and every clear’s fact follow the lesson you’re learning.";
+            "Pick a class to begin. Each hero has a unique power on the path to Senior Developer.";
           if (playBtn) playBtn.hidden = true;
         } else if (showLevelBanner && snap.status === "playing") {
           overlayTitle.textContent =
@@ -3748,6 +3880,7 @@
     META,
     CURRICULUM,
     PATHWAY_CLASSES,
+    cartoonCharacterMarkup,
     ENDGAME_CHALLENGES,
     ACHIEVEMENTS,
     BG_PRESETS,

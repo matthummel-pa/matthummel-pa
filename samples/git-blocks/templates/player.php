@@ -39,8 +39,8 @@ if (! defined('ABSPATH')) {
 					<div class="overlay is-clickable" data-overlay>
 						<div>
 							<p class="overlay-level" data-overlay-level hidden><?php esc_html_e('Lesson 1', 'git-blocks'); ?></p>
-							<h2 data-overlay-title><?php esc_html_e('Path to Senior Developer', 'git-blocks'); ?></h2>
-							<p data-overlay-body><?php esc_html_e('Start with Classic (Intern → Senior, 20 lessons) or pick a specialty class. Background words and every clear’s fact follow the lesson you’re learning.', 'git-blocks'); ?></p>
+							<h2 data-overlay-title><?php esc_html_e('Choose your pathway', 'git-blocks'); ?></h2>
+							<p data-overlay-body><?php esc_html_e('Pick a class to begin. Each hero has a unique power on the path to Senior Developer.', 'git-blocks'); ?></p>
 							<button type="button" data-play hidden><?php esc_html_e('Start learning', 'git-blocks'); ?></button>
 						</div>
 					</div>
@@ -63,7 +63,7 @@ if (! defined('ABSPATH')) {
 					<div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="<?php esc_attr_e('Lesson LOC goal', 'git-blocks'); ?>">
 						<span data-progress></span>
 					</div>
-					<p class="message" data-message><?php esc_html_e('Choose a pathway class to begin.', 'git-blocks'); ?></p>
+					<p class="message" data-message><?php esc_html_e('Pick a pathway hero to begin.', 'git-blocks'); ?></p>
 					<div class="power-row">
 						<button type="button" class="ghost" data-hint><?php esc_html_e('Hint (2)', 'git-blocks'); ?></button>
 						<button type="button" class="ghost" data-shuffle><?php esc_html_e('Shuffle (2)', 'git-blocks'); ?></button>
