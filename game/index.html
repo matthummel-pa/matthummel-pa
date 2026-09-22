@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Git Blocks — Matt Hummel</title>
-  <meta name="description" content="Git Blocks — gem-drop RPG. Pick a pathway class, match logo gems, write LOC, unlock skills, clear senior endgame raids." />
+  <title>Branchborne Gem Quest — Matt Hummel</title>
+  <meta name="description" content="Branchborne Gem Quest — Bejeweled-style match-3 with Gems of War flavor, WoW-like side quests, and a tech trophy case. Play to Senior / class Expert." />
   <link rel="canonical" href="https://matthummel.com/git-blocks/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,14 +14,15 @@
 <body>
   <main class="page">
     <p class="page-kicker">Mini player · matthummel.com</p>
-    <h1>Git Blocks</h1>
-    <p class="page-lead">Match shiny web-dev gems, learn from Intern to Senior Developer, and clear endgame raids.</p>
+    <h1>Branchborne Gem Quest</h1>
+    <p class="page-lead">Match tech gems like Bejeweled, clear live side quests, collect trophies, and graduate Senior — then class Expert raids.</p>
 
-    <section class="player" data-git-blocks aria-label="Git Blocks gem matching game">
+    <section class="player" data-git-blocks aria-label="Branchborne Gem Quest matching game">
       <div class="player-chrome">
         <div class="traffic" aria-hidden="true"><span></span><span></span><span></span></div>
-        <div class="player-title">Git Blocks</div>
+        <div class="player-title">Branchborne Gem Quest</div>
         <div class="player-actions">
+          <button type="button" class="ghost" data-trophies>Trophies</button>
           <button type="button" class="ghost" data-customize>Customize</button>
           <button type="button" class="ghost" data-share>Share</button>
           <button type="button" class="ghost" data-pause>Pause</button>
@@ -30,34 +31,37 @@
       </div>
 
       <div class="player-screen">
-        <div class="board-wrap">
-          <div class="dev-clouds pattern-drift" data-dev-clouds aria-hidden="true"></div>
-          <canvas data-board width="480" height="480" tabindex="0" role="application" aria-label="Git Blocks gem board. Click a gem, then an adjacent gem to swap. Drag between neighbors also works."></canvas>
-          <div class="overlay is-clickable" data-overlay>
-            <div>
-              <p class="overlay-level" data-overlay-level hidden>Lesson 1</p>
-              <h2 data-overlay-title>Choose your pathway</h2>
-              <p data-overlay-body>Pick a class to begin. Each hero has a unique power on the path to Senior Developer.</p>
-              <button type="button" data-play hidden>Start learning</button>
+        <div class="board-column">
+          <div class="board-wrap">
+            <div class="dev-clouds pattern-drift" data-dev-clouds aria-hidden="true"></div>
+            <canvas data-board width="480" height="480" tabindex="0" role="application" aria-label="Branchborne gem board. Click a gem, then an adjacent gem to swap. Drag between neighbors also works."></canvas>
+            <div class="overlay is-clickable" data-overlay>
+              <div>
+                <p class="overlay-level" data-overlay-level hidden>Quest 1</p>
+                <h2 data-overlay-title>Choose your pathway</h2>
+                <p data-overlay-body>Pick a class. Match gems continuously — side quests and tips appear on the right as you play to Senior / Expert.</p>
+                <button type="button" data-play hidden>Start questing</button>
+              </div>
             </div>
           </div>
+          <aside class="quest-rail" data-quest-rail aria-label="Live side quests"></aside>
         </div>
         <aside class="side">
           <div class="stats-row">
             <div class="stat"><span>Lines of code</span><strong data-score>0</strong></div>
             <div class="stat"><span>Cleared</span><strong data-lines>0</strong></div>
-            <div class="stat"><span>Lesson</span><strong data-level>1</strong></div>
+            <div class="stat"><span>Quest</span><strong data-level>1</strong></div>
             <div class="stat"><span>Best LOC</span><strong data-high>0</strong></div>
           </div>
           <div class="stats-row compact">
-            <div class="stat"><span>Moves</span><strong data-moves>32</strong></div>
+            <div class="stat"><span>Moves</span><strong data-moves>48</strong></div>
             <div class="stat"><span>Combo</span><strong data-combo>0</strong></div>
             <div class="stat"><span>Goal</span><strong data-goal>0/600 LOC</strong></div>
           </div>
           <p class="sprint-name" data-sprint>Pick a pathway class</p>
-          <p class="rank-line" data-rank>Gem-drop RPG</p>
-          <p class="path-progress" data-path-progress>Path to Senior Developer</p>
-          <div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Lesson LOC goal">
+          <p class="rank-line" data-rank>Branchborne Gem Quest</p>
+          <p class="path-progress" data-path-progress>Path to Senior / class Expert</p>
+          <div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Quest LOC goal">
             <span data-progress></span>
           </div>
           <p class="message" data-message>Pick a pathway hero to begin.</p>
@@ -69,10 +73,11 @@
           <div class="gem-legend" data-gem-legend aria-label="Gem logos"></div>
           <ul class="commit-log" data-commit-log aria-label="Match log"></ul>
           <div class="badge-row" data-badges aria-label="Achievements"></div>
+          <div class="trophy-board" data-trophy-board hidden aria-label="Trophy and loot case"></div>
           <div class="player-dock">
-            <span class="controls-label">Path to Senior Developer</span>
+            <span class="controls-label">Continuous match · side quests · trophies</span>
             <p class="keys" data-keys-help>
-              Match gems · learn a fact each clear · graduate Senior · then raids
+              Break gems · quests auto-level on the right · collect tech trophies
             </p>
           </div>
         </aside>
