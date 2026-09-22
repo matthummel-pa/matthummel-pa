@@ -911,6 +911,7 @@
       skills: {},
       lastFact: null,
       pendingFact: null,
+      pendingLessonIntro: null,
       skillUnlock: null,
       commitLog: [],
       fx: [],
@@ -1054,8 +1055,12 @@
           lesson: lesson.title,
           track: lesson.track,
           rank: lesson.rank,
+          skill: lesson.skill,
+          clouds: (lesson.clouds || []).slice(0, 6),
           loc,
           chain: wave.chain,
+          level: state.level,
+          total: pathLen(),
           at: now(),
         };
         state.fx.push({
@@ -1096,6 +1101,17 @@
           state.message = `Lesson ${state.level}: ${lesson.title} (${lesson.rank})`;
           pushLog(`lesson → ${lesson.title}`);
           grantLessonSkill(state.level);
+          state.pendingLessonIntro = {
+            title: lesson.title,
+            track: lesson.track,
+            rank: lesson.rank,
+            skill: lesson.skill,
+            clouds: (lesson.clouds || []).slice(0, 8),
+            facts: (lesson.facts || []).slice(0, 1),
+            level: state.level,
+            total: pathLen(),
+            at: now(),
+          };
           sounds.push("level");
           state.board = fillBoardNoMatches(random, state.level, state.pathwayId);
           leveled = true;
@@ -1356,6 +1372,20 @@
       state.message = `${label}: ${lesson.title} — write ${state.goal} LOC to advance.`;
       state.levelFlash = now();
       grantLessonSkill(state.level);
+      if (state.phase !== "endgame") {
+        state.pendingLessonIntro = {
+          title: lesson.title,
+          track: lesson.track,
+          rank: lesson.rank,
+          skill: lesson.skill,
+          clouds: (lesson.clouds || []).slice(0, 8),
+          facts: (lesson.facts || []).slice(0, 1),
+          level: state.level,
+          total: pathLen(),
+          at: now(),
+          start: true,
+        };
+      }
     }
 
     function pause() {
@@ -1404,6 +1434,7 @@
       state.skills = {};
       state.lastFact = null;
       state.pendingFact = null;
+      state.pendingLessonIntro = null;
       state.skillUnlock = null;
       state.commitLog = [];
       state.fx = [];
@@ -1461,6 +1492,12 @@
       const fact = state.pendingFact;
       state.pendingFact = null;
       return fact;
+    }
+
+    function consumeLessonIntro() {
+      const intro = state.pendingLessonIntro;
+      state.pendingLessonIntro = null;
+      return intro;
     }
 
     function consumeSkillUnlock() {
@@ -1556,6 +1593,7 @@
       shuffle: doShuffle,
       consumeFx,
       consumeFact,
+      consumeLessonIntro,
       consumeSkillUnlock,
       snapshot,
       findMatches: () => findMatches(state.board),
@@ -2491,20 +2529,39 @@
 
     function showFactToast(payload) {
       if (!payload) return;
+      let backdrop = root.querySelector("[data-fact-backdrop]");
+      if (!backdrop) {
+        backdrop = document.createElement("div");
+        backdrop.className = "fact-backdrop";
+        backdrop.setAttribute("data-fact-backdrop", "");
+        const boardWrap = root.querySelector(".board-wrap") || root;
+        boardWrap.appendChild(backdrop);
+        backdrop.addEventListener("click", () => {
+          backdrop.classList.remove("is-visible");
+          const t = root.querySelector("[data-fact-toast]");
+          if (t) t.classList.remove("is-visible");
+        });
+      }
       let toast = root.querySelector("[data-fact-toast]");
       if (!toast) {
         toast = document.createElement("div");
         toast.className = "fact-toast";
         toast.setAttribute("data-fact-toast", "");
         toast.setAttribute("role", "dialog");
+        toast.setAttribute("aria-modal", "true");
         toast.setAttribute("aria-label", "Web development fact");
         const boardWrap = root.querySelector(".board-wrap") || root;
         boardWrap.appendChild(toast);
-        toast.addEventListener("click", () => toast.classList.remove("is-visible"));
+        toast.addEventListener("click", (event) => {
+          event.stopPropagation();
+          toast.classList.remove("is-visible");
+          backdrop.classList.remove("is-visible");
+        });
       }
       const snap = game.snapshot();
-      const total = snap.curriculumLength || CURRICULUM.length;
-      const step = Math.min(snap.level, total);
+      const total = payload.total || snap.curriculumLength || CURRICULUM.length;
+      const step = Math.min(payload.level || snap.level, total);
+      const pct = Math.round((step / Math.max(1, total)) * 100);
       toast.innerHTML = "";
       const title = document.createElement("p");
       title.className = "fact-title";
@@ -2516,17 +2573,108 @@
       } · +${payload.loc || 0} LOC`;
       const rank = document.createElement("p");
       rank.className = "fact-rank";
-      rank.textContent = `${payload.rank || snap.lessonRank || "Learner"} → Senior Developer`;
+      rank.textContent = `${payload.rank || snap.lessonRank || "Intern"} → Senior Developer`;
+      const track = document.createElement("div");
+      track.className = "fact-path-track";
+      track.innerHTML = `<span style="width:${pct}%"></span>`;
       const body = document.createElement("p");
       body.className = "fact-body";
       body.textContent = payload.fact || "";
+      if (payload.clouds && payload.clouds.length) {
+        const chips = document.createElement("div");
+        chips.className = "fact-cloud-chips";
+        payload.clouds.forEach((word) => {
+          const chip = document.createElement("span");
+          chip.textContent = word;
+          chips.appendChild(chip);
+        });
+        toast.append(title, kicker, rank, track, body, chips);
+      } else {
+        toast.append(title, kicker, rank, track, body);
+      }
       const hint = document.createElement("p");
       hint.className = "fact-dismiss";
-      hint.textContent = "Tap to dismiss";
-      toast.append(title, kicker, rank, body, hint);
+      hint.textContent = "Tap to dismiss · keep matching to learn more";
+      toast.appendChild(hint);
+      backdrop.classList.add("is-visible");
       toast.classList.add("is-visible");
       window.clearTimeout(showFactToast._timer);
-      showFactToast._timer = window.setTimeout(() => toast.classList.remove("is-visible"), 5600);
+      showFactToast._timer = window.setTimeout(() => {
+        toast.classList.remove("is-visible");
+        backdrop.classList.remove("is-visible");
+      }, 7000);
+    }
+
+    function showLessonIntro(intro) {
+      if (!intro) return;
+      let backdrop = root.querySelector("[data-lesson-backdrop]");
+      if (!backdrop) {
+        backdrop = document.createElement("div");
+        backdrop.className = "lesson-backdrop";
+        backdrop.setAttribute("data-lesson-backdrop", "");
+        const boardWrap = root.querySelector(".board-wrap") || root;
+        boardWrap.appendChild(backdrop);
+      }
+      let card = root.querySelector("[data-lesson-intro]");
+      if (!card) {
+        card = document.createElement("div");
+        card.className = "lesson-intro";
+        card.setAttribute("data-lesson-intro", "");
+        card.setAttribute("role", "dialog");
+        card.setAttribute("aria-modal", "true");
+        card.setAttribute("aria-label", "Lesson briefing");
+        const boardWrap = root.querySelector(".board-wrap") || root;
+        boardWrap.appendChild(card);
+      }
+      const total = intro.total || CURRICULUM.length;
+      const step = intro.level || 1;
+      const pct = Math.round((step / Math.max(1, total)) * 100);
+      card.innerHTML = "";
+      const eyebrow = document.createElement("p");
+      eyebrow.className = "lesson-intro-eyebrow";
+      eyebrow.textContent = intro.start
+        ? "Your path to Senior Developer begins"
+        : `Level up · Lesson ${step}/${total}`;
+      const title = document.createElement("h3");
+      title.textContent = intro.title || "Next lesson";
+      const rank = document.createElement("p");
+      rank.className = "lesson-intro-rank";
+      rank.textContent = `${intro.rank || "Intern"} → Senior Developer · ${intro.track || "Path"}`;
+      const track = document.createElement("div");
+      track.className = "fact-path-track";
+      track.innerHTML = `<span style="width:${pct}%"></span>`;
+      const skill = document.createElement("p");
+      skill.className = "lesson-intro-skill";
+      skill.textContent = intro.skill
+        ? `Skill: ${intro.skill.icon || "★"} ${intro.skill.name} — ${intro.skill.blurb || ""}`
+        : "Match gems to learn this lesson.";
+      const preview = document.createElement("p");
+      preview.className = "lesson-intro-fact";
+      preview.textContent =
+        (intro.facts && intro.facts[0]) ||
+        "Clear matching logo gems — each clear teaches a web-dev fact for this lesson.";
+      const clouds = document.createElement("div");
+      clouds.className = "fact-cloud-chips";
+      (intro.clouds || []).forEach((word) => {
+        const chip = document.createElement("span");
+        chip.textContent = word;
+        clouds.appendChild(chip);
+      });
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "lesson-intro-go";
+      btn.textContent = intro.start ? "Start matching" : "Continue learning";
+      const dismiss = () => {
+        card.classList.remove("is-visible");
+        backdrop.classList.remove("is-visible");
+      };
+      btn.addEventListener("click", dismiss);
+      backdrop.onclick = dismiss;
+      card.append(eyebrow, title, rank, track, skill, preview, clouds, btn);
+      backdrop.classList.add("is-visible");
+      card.classList.add("is-visible");
+      window.clearTimeout(showLessonIntro._timer);
+      showLessonIntro._timer = window.setTimeout(dismiss, 9000);
     }
 
     function showSkillUnlock(skill) {
@@ -2711,6 +2859,30 @@
       }
       host.hidden = false;
       host.replaceChildren();
+      const classic = document.createElement("button");
+      classic.type = "button";
+      classic.className = "class-card class-classic";
+      classic.style.setProperty("--card-accent", "#4f8fd4");
+      classic.innerHTML = `
+        <span class="class-card-figure idle-float">
+          <span class="hero-aura"></span>
+          <span class="hero-glyph">◇</span>
+        </span>
+        <strong>Classic learning path</strong>
+        <em>Intern → Senior Developer</em>
+        <span class="class-card-blurb">20 lessons from HTML bones to senior craft. Background words and facts follow each lesson.</span>
+        <span class="class-card-gems">Start as Intern · full curriculum</span>
+      `;
+      classic.addEventListener("click", () => {
+        if (!game.choosePathway("fullstack")) return;
+        const path = pathwayFor("fullstack");
+        applyPathwayTheme(path);
+        syncLessonClouds(1, "fullstack", "path", 0);
+        beep("start");
+        announce("Classic path — Intern to Senior");
+        handlePlay();
+      });
+      host.appendChild(classic);
       PATHWAY_CLASSES.forEach((path) => {
         const card = document.createElement("button");
         card.type = "button";
@@ -2982,6 +3154,8 @@
 
       const fact = typeof game.consumeFact === "function" ? game.consumeFact() : null;
       if (fact) showFactToast(fact);
+      const intro = typeof game.consumeLessonIntro === "function" ? game.consumeLessonIntro() : null;
+      if (intro) showLessonIntro(intro);
       const skill = typeof game.consumeSkillUnlock === "function" ? game.consumeSkillUnlock() : null;
       if (skill) {
         showSkillUnlock(skill);
@@ -3059,9 +3233,9 @@
               : snap.lessonTitle || snap.sprint || `Lesson ${snap.level}`;
         }
         if (snap.status === "class-select") {
-          overlayTitle.textContent = "Choose your pathway class";
+          overlayTitle.textContent = "Path to Senior Developer";
           overlayBody.textContent =
-            "Each class is a web-dev career path — affinity gems, unique clouds, and a class power fuel your gem-drop RPG.";
+            "Start with Classic (Intern → Senior, 20 lessons) or pick a specialty class. Background words and every clear’s fact follow the lesson you’re learning.";
           if (playBtn) playBtn.hidden = true;
         } else if (showLevelBanner && snap.status === "playing") {
           overlayTitle.textContent =
