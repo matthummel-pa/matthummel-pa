@@ -15,13 +15,13 @@ Copy-ready WordPress plugin that embeds the **Git Blocks** tetris-style cabinet 
 Optional attributes:
 
 ```
-[git_blocks layout="viewport" autostart="true" share_url="https://example.com/git-blocks/"]
+[git_blocks layout="viewport" autostart="false" share_url="https://example.com/git-blocks/"]
 ```
 
 | Attribute   | Default    | Notes                                      |
 |------------|------------|--------------------------------------------|
 | `layout`   | `viewport` | `viewport` fills the embed; `card` reserved |
-| `autostart`| `true`     | Auto-starts level 1                        |
+| `autostart`| `false`    | Set `true` to auto-start level 1           |
 | `share_url`| current URL| Base URL used by the Share tab             |
 
 ## Pack for a sample repo

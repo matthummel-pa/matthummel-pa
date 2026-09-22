@@ -701,7 +701,9 @@
       if (state.status === 'over') reset();
       state.status = 'playing';
       state.message = `Sprint ${state.level}: ${sprintName(state.level)} — match 4+ or fill a row.`;
-      state.lastTick = now();
+      // Keep lastTick null so the RAF clock in tick() can sync (Date.now ≠ performance.now).
+      state.lastTick = null;
+      state.lockAt = 0;
       state.levelFlash = now();
       if (!state.active) spawn();
     }
@@ -715,7 +717,8 @@
     function resume() {
       if (state.status !== 'paused') return;
       state.status = 'playing';
-      state.lastTick = now();
+      state.lastTick = null;
+      state.lockAt = 0;
       state.message = 'Back on the main branch.';
     }
 
@@ -1011,7 +1014,23 @@
     };
   })();
 
-  // Free / open catalog: generated loops + CC0 remote samples (CORS-friendly where possible).
+  function resolveGameAsset(relativePath) {
+    if (typeof document === 'undefined') return relativePath;
+    const el =
+      (typeof document.currentScript !== 'undefined' && document.currentScript) ||
+      document.querySelector('script[src*="git-blocks.js"]');
+    if (!el || !el.src) return relativePath;
+    try {
+      const base = el.src.replace(/[^/]+$/, '');
+      // WordPress packs JS under assets/js/ — audio lives in assets/audio/.
+      if (/\/js\/$/i.test(base)) return new URL(`../${relativePath}`, base).href;
+      return new URL(relativePath, base).href;
+    } catch (_err) {
+      return relativePath;
+    }
+  }
+
+  // Free / open catalog: original theme file + generated loops + CC0 remote samples.
   const OPEN_SOURCE_POOL = [
     { id: 'chip', label: 'Chip commit', kind: 'generated', style: 'chip', credit: 'Procedural chip loop — MIT, in-browser.' },
     { id: 'pad', label: 'Soft backlog pad', kind: 'generated', style: 'pad', credit: 'Procedural pad loop — MIT, in-browser.' },
@@ -1028,8 +1047,17 @@
     },
   ];
 
+  const THEME_TRACK = {
+    id: 'stack-sprint',
+    label: 'Stack sprint theme',
+    kind: 'url',
+    url: resolveGameAsset('audio/stack-sprint.ogg'),
+    credit: 'Original chiptune — generated for Git Blocks (MIT). Auto-plays when a sprint starts.',
+  };
+
   const MUSIC_TRACKS_BASE = [
     { id: 'off', label: 'Music off', kind: 'off', credit: 'Silence — focus mode.' },
+    THEME_TRACK,
     { id: 'custom', label: 'Custom open-source URL…', kind: 'custom', credit: 'Paste a CC0 / CC-BY MP3 or OGG URL you have rights to stream.' },
   ];
 
@@ -1055,7 +1083,10 @@
       label: `${track.label} · free`,
       discovered: true,
     }));
-    MUSIC_TRACKS = MUSIC_TRACKS_BASE.slice(0, 1).concat(picked, MUSIC_TRACKS_BASE.slice(1));
+    // Keep theme + off + custom pinned; shuffle fills the middle.
+    MUSIC_TRACKS = [MUSIC_TRACKS_BASE[0], THEME_TRACK].concat(picked, MUSIC_TRACKS_BASE.slice(2));
+    // Refresh theme URL in case script path resolved after first load.
+    THEME_TRACK.url = resolveGameAsset('audio/stack-sprint.ogg');
     return MUSIC_TRACKS;
   }
 
@@ -1065,7 +1096,8 @@
     return {
       bindings: JSON.parse(JSON.stringify(DEFAULT_BINDINGS)),
       background: { mode: 'preset', presetId: 'navy', css: BG_PRESETS[0].css, image: '' },
-      music: { trackId: 'off', customUrl: '', volume: 0.35 },
+      music: { trackId: 'stack-sprint', customUrl: '', volume: 0.38 },
+      graphics: 'advanced',
     };
   }
 
@@ -1082,6 +1114,7 @@
         },
         background: Object.assign({}, base.background, parsed.background || {}),
         music: Object.assign({}, base.music, parsed.music || {}),
+        graphics: parsed.graphics === 'simple' ? 'simple' : 'advanced',
       };
     } catch (_err) {
       return base;
@@ -1132,37 +1165,79 @@
     ctx.closePath();
   }
 
-  function drawCell(ctx, x, y, size, color, ghost, pulse) {
-    const pad = Math.max(1, Math.floor(size * 0.08));
+  function drawCell(ctx, x, y, size, color, ghost, pulse, advanced) {
+    const pad = Math.max(1, Math.floor(size * (advanced ? 0.06 : 0.08)));
     const glow = pulse ? 0.35 + pulse * 0.45 : 0;
+    const useAdvanced = advanced !== false;
     ctx.save();
+    if (useAdvanced && !ghost) {
+      // drop shadow for depth
+      ctx.fillStyle = 'rgba(0,0,0,0.35)';
+      roundedRect(ctx, x + pad + 1, y + pad + 2, size - pad * 2, size - pad * 2, size * 0.16);
+      ctx.fill();
+    }
     if (!ghost && glow > 0) {
       ctx.shadowColor = color;
-      ctx.shadowBlur = size * (0.35 + glow);
+      ctx.shadowBlur = size * (useAdvanced ? 0.45 + glow : 0.35 + glow);
     }
-    ctx.globalAlpha = ghost ? 0.28 : 1;
+    ctx.globalAlpha = ghost ? (useAdvanced ? 0.22 : 0.28) : 1;
     roundedRect(ctx, x + pad, y + pad, size - pad * 2, size - pad * 2, size * 0.18);
-    ctx.fillStyle = color;
-    ctx.fill();
+    if (ghost && useAdvanced) {
+      ctx.strokeStyle = color;
+      ctx.lineWidth = Math.max(1, size * 0.06);
+      ctx.setLineDash([Math.max(2, size * 0.12), Math.max(2, size * 0.1)]);
+      ctx.stroke();
+      ctx.setLineDash([]);
+    } else {
+      ctx.fillStyle = color;
+      ctx.fill();
+    }
     if (!ghost) {
       ctx.shadowBlur = 0;
-      const g = ctx.createLinearGradient(x, y, x, y + size);
-      g.addColorStop(0, 'rgba(255,255,255,0.28)');
-      g.addColorStop(0.45, 'rgba(255,255,255,0.06)');
-      g.addColorStop(1, 'rgba(0,0,0,0.22)');
+      const g = ctx.createLinearGradient(x, y, x + (useAdvanced ? size * 0.35 : 0), y + size);
+      g.addColorStop(0, useAdvanced ? 'rgba(255,255,255,0.42)' : 'rgba(255,255,255,0.28)');
+      g.addColorStop(0.4, 'rgba(255,255,255,0.08)');
+      g.addColorStop(1, useAdvanced ? 'rgba(0,0,0,0.35)' : 'rgba(0,0,0,0.22)');
       ctx.fillStyle = g;
       roundedRect(ctx, x + pad, y + pad, size - pad * 2, size - pad * 2, size * 0.18);
       ctx.fill();
-      ctx.fillStyle = 'rgba(255,255,255,0.22)';
-      roundedRect(
-        ctx,
-        x + pad + 2,
-        y + pad + 2,
-        (size - pad * 2) * 0.42,
-        (size - pad * 2) * 0.28,
-        3
-      );
-      ctx.fill();
+      if (useAdvanced) {
+        // specular chip + inner rim
+        ctx.fillStyle = 'rgba(255,255,255,0.34)';
+        roundedRect(
+          ctx,
+          x + pad + 2,
+          y + pad + 2,
+          (size - pad * 2) * 0.48,
+          (size - pad * 2) * 0.22,
+          3
+        );
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(255,255,255,0.18)';
+        ctx.lineWidth = 1;
+        roundedRect(ctx, x + pad + 0.5, y + pad + 0.5, size - pad * 2 - 1, size - pad * 2 - 1, size * 0.16);
+        ctx.stroke();
+        // tiny commit glyph
+        ctx.fillStyle = 'rgba(7,17,31,0.28)';
+        const cx = x + size * 0.5;
+        const cy = y + size * 0.58;
+        const r = size * 0.1;
+        ctx.beginPath();
+        ctx.arc(cx, cy, r, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillRect(cx - size * 0.03, cy - size * 0.22, size * 0.06, size * 0.18);
+      } else {
+        ctx.fillStyle = 'rgba(255,255,255,0.22)';
+        roundedRect(
+          ctx,
+          x + pad + 2,
+          y + pad + 2,
+          (size - pad * 2) * 0.42,
+          (size - pad * 2) * 0.28,
+          3
+        );
+        ctx.fill();
+      }
     }
     ctx.restore();
   }
@@ -1495,19 +1570,23 @@
 
   function mountDevClouds(host, pattern) {
     if (!host) return;
-    const tokens = WordGenerator.generateCloud(24);
+    const tokens = WordGenerator.generateCloud(28);
     host.className = `dev-clouds pattern-${pattern || 'drift'}`;
+    host.setAttribute('data-dev-clouds', '');
+    host.setAttribute('aria-hidden', 'true');
     host.replaceChildren();
-    tokens.forEach((token) => {
+    tokens.forEach((token, index) => {
       const span = document.createElement('span');
       span.className = 'dev-cloud';
       span.textContent = token.text;
-      span.style.left = `${4 + Math.random() * 90}%`;
-      span.style.top = `${6 + Math.random() * 84}%`;
+      const col = index % 7;
+      const row = Math.floor(index / 7);
+      span.style.left = `${4 + col * 13 + Math.random() * 6}%`;
+      span.style.top = `${8 + row * 18 + Math.random() * 8}%`;
       span.style.animationDelay = `${(-Math.random() * 18).toFixed(2)}s`;
-      span.style.animationDuration = `${14 + Math.random() * 18}s`;
-      span.style.fontSize = `${0.7 + Math.random() * 0.85}rem`;
-      span.style.opacity = String(0.18 + Math.random() * 0.35);
+      span.style.animationDuration = `${12 + Math.random() * 16}s`;
+      span.style.fontSize = `${0.65 + Math.random() * 0.75}rem`;
+      span.style.opacity = String(0.22 + Math.random() * 0.4);
       span.dataset.lang = token.lang || 'dev';
       host.appendChild(span);
     });
@@ -1521,6 +1600,21 @@
       el.textContent = token.text;
       el.dataset.lang = token.lang || 'dev';
     });
+  }
+
+  function ensureDevCloudHost(rootEl) {
+    if (!rootEl || !rootEl.querySelector) return document.querySelector('[data-dev-clouds]');
+    let host = rootEl.querySelector('[data-dev-clouds]');
+    if (host) return host;
+    const boardWrap = rootEl.querySelector('.board-wrap');
+    if (boardWrap) {
+      host = document.createElement('div');
+      host.setAttribute('data-dev-clouds', '');
+      host.setAttribute('aria-hidden', 'true');
+      boardWrap.insertBefore(host, boardWrap.firstChild);
+      return host;
+    }
+    return document.querySelector('[data-dev-clouds]');
   }
 
   function applyBackground(bg, rootEl) {
@@ -1544,7 +1638,7 @@
         embed.style.setProperty('--gb-backdrop', value);
         embed.dataset.gbPattern = pattern;
       }
-      const clouds = rootEl.querySelector('[data-dev-clouds]') || document.querySelector('[data-dev-clouds]');
+      const clouds = ensureDevCloudHost(rootEl);
       mountDevClouds(clouds, pattern);
     }
   }
@@ -1555,7 +1649,8 @@
       shareUrl:
         cfg.shareUrl ||
         (typeof location !== 'undefined' ? `${location.origin}${location.pathname}` : 'https://matthummel.com/git-blocks/'),
-      autoStart: cfg.autoStart !== false,
+      // Wait for Start sprint — do not auto-begin.
+      autoStart: cfg.autoStart === true,
       layout: cfg.layout || 'viewport',
     };
   }
@@ -1765,14 +1860,42 @@
         ctx.translate((Math.random() - 0.5) * 5, (Math.random() - 0.5) * 4);
       }
 
-      // atmospheric board backdrop
-      const bg = ctx.createLinearGradient(0, 0, 0, ROWS * cell);
-      bg.addColorStop(0, '#0a1528');
-      bg.addColorStop(1, '#07111f');
-      ctx.fillStyle = bg;
-      ctx.fillRect(0, 0, COLS * cell, ROWS * cell);
+      // atmospheric board backdrop — translucent so floating clouds stay visible
+      const advancedGfx = prefs.graphics !== 'simple';
+      if (advancedGfx) {
+        const bg = ctx.createLinearGradient(0, 0, 0, ROWS * cell);
+        bg.addColorStop(0, 'rgba(10, 21, 40, 0.55)');
+        bg.addColorStop(0.55, 'rgba(7, 17, 31, 0.62)');
+        bg.addColorStop(1, 'rgba(5, 12, 22, 0.72)');
+        ctx.fillStyle = bg;
+        ctx.fillRect(0, 0, COLS * cell, ROWS * cell);
+        // vignette
+        const vig = ctx.createRadialGradient(
+          (COLS * cell) / 2,
+          (ROWS * cell) / 2,
+          cell * 2,
+          (COLS * cell) / 2,
+          (ROWS * cell) / 2,
+          Math.max(COLS, ROWS) * cell * 0.72
+        );
+        vig.addColorStop(0, 'rgba(0,0,0,0)');
+        vig.addColorStop(1, 'rgba(0,0,0,0.35)');
+        ctx.fillStyle = vig;
+        ctx.fillRect(0, 0, COLS * cell, ROWS * cell);
+        // scanlines
+        ctx.fillStyle = 'rgba(255,255,255,0.018)';
+        for (let y = 0; y < ROWS * cell; y += 3) {
+          ctx.fillRect(0, y, COLS * cell, 1);
+        }
+      } else {
+        const bg = ctx.createLinearGradient(0, 0, 0, ROWS * cell);
+        bg.addColorStop(0, '#0a1528');
+        bg.addColorStop(1, '#07111f');
+        ctx.fillStyle = bg;
+        ctx.fillRect(0, 0, COLS * cell, ROWS * cell);
+      }
 
-      ctx.strokeStyle = 'rgba(207,217,230,0.07)';
+      ctx.strokeStyle = advancedGfx ? 'rgba(207,217,230,0.1)' : 'rgba(207,217,230,0.07)';
       for (let x = 0; x <= COLS; x += 1) {
         ctx.beginPath();
         ctx.moveTo(x * cell + 0.5, 0);
@@ -1797,17 +1920,21 @@
         row.forEach((kind, x) => {
           if (!kind) return;
           const pulse = flashMap[`${x},${y}`] || 0;
-          drawCell(ctx, x * cell, y * cell, cell, META[kind].color, false, pulse);
+          drawCell(ctx, x * cell, y * cell, cell, META[kind].color, false, pulse, advancedGfx);
         });
       });
       if (snap.ghost && snap.active) {
         pieceCells(snap.ghost).forEach(({ x, y }) => {
-          if (y >= 0) drawCell(ctx, x * cell, y * cell, cell, META[snap.active.kind].color, true, 0);
+          if (y >= 0) {
+            drawCell(ctx, x * cell, y * cell, cell, META[snap.active.kind].color, true, 0, advancedGfx);
+          }
         });
       }
       if (snap.active) {
         pieceCells(snap.active).forEach(({ x, y }) => {
-          if (y >= 0) drawCell(ctx, x * cell, y * cell, cell, META[snap.active.kind].color, false, 0.15);
+          if (y >= 0) {
+            drawCell(ctx, x * cell, y * cell, cell, META[snap.active.kind].color, false, 0.2, advancedGfx);
+          }
         });
       }
 
@@ -1872,7 +1999,7 @@
       const logEl = root.querySelector('[data-commit-log]');
       if (logEl) {
         logEl.replaceChildren();
-        (snap.commitLog || []).slice(0, 5).forEach((line) => {
+        (snap.commitLog || []).slice(0, 3).forEach((line) => {
           const li = document.createElement('li');
           li.textContent = line;
           logEl.appendChild(li);
@@ -1910,7 +2037,7 @@
         } else if (snap.status === 'ready') {
           overlayTitle.textContent = 'Git Blocks';
           overlayBody.textContent =
-            'Not Tetris — stack commits, squash 4+ matching clusters, fill rows to deploy. Cascades chain for big scores.';
+            'Pieces fall on a timer — squash 4+ matching clusters or fill a row to deploy. Cascades chain for big scores.';
           if (playBtn) {
             playBtn.hidden = false;
             playBtn.textContent = 'Start sprint';
@@ -1972,6 +2099,13 @@
         game.play();
         beep('start');
         announce(`Level ${game.snapshot().level} started`);
+        // Unlock audio on the user gesture and start theme / selected track.
+        if (prefs.music.trackId === 'off') {
+          prefs.music.trackId = 'stack-sprint';
+          savePrefs(prefs);
+          renderMusicUi();
+        }
+        playSelectedMusic();
       }
       canvas.focus({ preventScroll: true });
     }
@@ -2282,6 +2416,20 @@
         imgField.dataset.bound = '1';
         imgField.value = prefs.background.image || '';
       }
+      const gfx = root.querySelector('[data-graphics]');
+      if (gfx && !gfx.dataset.bound) {
+        gfx.dataset.bound = '1';
+        gfx.value = prefs.graphics === 'simple' ? 'simple' : 'advanced';
+        gfx.addEventListener('change', () => {
+          prefs.graphics = gfx.value === 'simple' ? 'simple' : 'advanced';
+          savePrefs(prefs);
+          root.classList.toggle('gfx-simple', prefs.graphics === 'simple');
+          draw();
+        });
+      } else if (gfx) {
+        gfx.value = prefs.graphics === 'simple' ? 'simple' : 'advanced';
+      }
+      root.classList.toggle('gfx-simple', prefs.graphics === 'simple');
     }
 
     function refillMusicSelect() {
@@ -2343,12 +2491,13 @@
     }
 
     function playSelectedMusic() {
-      const track = MUSIC_TRACKS.find((t) => t.id === prefs.music.trackId) || MUSIC_TRACKS[0];
+      THEME_TRACK.url = resolveGameAsset('audio/stack-sprint.ogg');
+      const track = MUSIC_TRACKS.find((t) => t.id === prefs.music.trackId) || THEME_TRACK;
       music.setVolume(prefs.music.volume || 0.35);
       if (track.kind === 'off') music.stop();
       else if (track.kind === 'generated') music.playGenerated(track.style);
-      else if (track.kind === 'url') music.playUrl(track.url || prefs.music.customUrl);
-      else if (track.kind === 'custom') music.playUrl(prefs.music.customUrl);
+      else if (track.kind === 'url') music.playUrl(track.url || prefs.music.customUrl || THEME_TRACK.url);
+      else if (track.kind === 'custom') music.playUrl(prefs.music.customUrl || THEME_TRACK.url);
     }
 
     function previewSelectedMusic() {
@@ -2606,7 +2755,6 @@
       autoStarted = true;
       window.setTimeout(() => {
         if (game.status === 'ready') handlePlay();
-        if (prefs.music.trackId && prefs.music.trackId !== 'off') playSelectedMusic();
       }, prefersReducedMotion() ? 200 : 700);
     }
 
