@@ -2673,7 +2673,10 @@
     function paintClassSelect(snap) {
       let host = root.querySelector("[data-class-select]");
       if (snap.status !== "class-select") {
-        if (host) host.hidden = true;
+        if (host) {
+          host.hidden = true;
+          host.replaceChildren();
+        }
         return;
       }
       if (!host) {

@@ -861,6 +861,10 @@ button:disabled {
   overflow: auto;
 }
 
+.overlay:not(.is-class-select) .class-select {
+  display: none !important;
+}
+
 .class-select {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
