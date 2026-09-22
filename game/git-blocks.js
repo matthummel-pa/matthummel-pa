@@ -2315,9 +2315,12 @@
     if (!rootDoc) return;
     const lesson = lessonFor(level || 1, pathwayId, phase, challengeIndex);
     const path = pathwayId ? pathwayFor(pathwayId) : null;
-    const pool = (lesson.clouds || []).concat((path && path.clouds) || []).slice();
+    // Keep floating words on the current lesson — do not mix in pathway flavor words.
+    const lessonClouds = (lesson.clouds || []).slice();
+    const pathClouds = (path && path.clouds) || [];
+    const pool = (lessonClouds.length ? lessonClouds : pathClouds).slice();
     if (!pool.length) return;
-    rootDoc.querySelectorAll("[data-dev-clouds] .dev-cloud").forEach((el, i) => {
+    rootDoc.querySelectorAll("[data-dev-clouds] .dev-cloud").forEach((el) => {
       el.textContent = pool[Math.floor(Math.random() * pool.length)];
       el.dataset.lang = path ? path.id : "lesson";
       if (path && path.accent) el.style.color = path.accent;
