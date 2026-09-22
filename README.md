@@ -181,11 +181,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1195 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1198 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,195 contributions in 90 days · 1,234 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,198 contributions in 90 days · 1,237 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -195,12 +195,12 @@ Pushes, pull requests, and the rest of the public trail. Open a row to jump into
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #215](https://github.com/matthummel-pa/matthummel-theme/pull/215) — Projects listing: even grid, catalog shots, single blue checks | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2m |
-| | ✅ [Merged PR #20](https://github.com/matthummel-pa/matthummel-pa/pull/20) — Git Blocks: harder levels, free music, floating dev clouds | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 14m |
-| | ✅ [Merged PR #19](https://github.com/matthummel-pa/matthummel-pa/pull/19) — Git Blocks viewport layout and reliable rotation | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 32m |
-| | ✅ [Merged PR #214](https://github.com/matthummel-pa/matthummel-theme/pull/214) — Project pages: TOCguide data, like/star, notes, contact | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 45m |
+| | ✅ [Merged PR #21](https://github.com/matthummel-pa/matthummel-pa/pull/21) — feat(git-blocks): cascade squash puzzle with FX and sound | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | just now |
+| | ✅ [Merged PR #215](https://github.com/matthummel-pa/matthummel-theme/pull/215) — Projects listing: even grid, catalog shots, single blue checks | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2m |
+| | ✅ [Merged PR #20](https://github.com/matthummel-pa/matthummel-pa/pull/20) — Git Blocks: harder levels, free music, floating dev clouds | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 34m |
+| | ✅ [Merged PR #19](https://github.com/matthummel-pa/matthummel-pa/pull/19) — Git Blocks viewport layout and reliable rotation | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 51m |
+| | ✅ [Merged PR #214](https://github.com/matthummel-pa/matthummel-theme/pull/214) — Project pages: TOCguide data, like/star, notes, contact | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
 | | ✅ [Merged PR #18](https://github.com/matthummel-pa/matthummel-pa/pull/18) — Point Git Blocks play links to matthummel.com/git-blocks | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 1h |
-| | ✅ [Merged PR #17](https://github.com/matthummel-pa/matthummel-pa/pull/17) — Enable GitHub Pages for Git Blocks | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 1h |
 | | 🚀 [Commit](https://github.com/matthummel-pa/tocguide/commit/56fcf25aab042b62623e32b73bc9ca412b253bd0) — Update links and CI badge in README.md | [`tocguide`](https://github.com/matthummel-pa/tocguide) | 11h |
 | | ⭐ [Starred](https://github.com/matthummel-pa/wp-walkridge) — matthummel-pa/wp-walkridge | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 3d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/wp-walkridge/commit/b4ec3e661e42d51c3ecfe26483e6ff5712060fb6) — Merge pull request #4 from matthummel-pa/cursor/theme-release-z… | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 3d |
@@ -214,10 +214,10 @@ Pushes, pull requests, and the rest of the public trail. Open a row to jump into
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 2m |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 3m |
 | **[wp-acreline](https://github.com/matthummel-pa/wp-acreline)** — Acreline is a WordPress theme for farms, land, and historic homes — searchable listings… | PHP · ★0 | 2h |
 | **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★1 | 5h |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 9h |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 10h |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
