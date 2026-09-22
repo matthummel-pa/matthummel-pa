@@ -192,3 +192,4 @@ test("wordpress plugin sample packs the cabinet", () => {
   assert.ok(pluginEngine.BG_PRESETS.length >= 4);
   assert.ok(pluginEngine.MUSIC_TRACKS.length >= 3);
 });
+
