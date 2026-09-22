@@ -112,7 +112,7 @@ class ReadmeContractTests(unittest.TestCase):
 
     def test_game_player_present(self) -> None:
         self.assertIn("Git Blocks", self.text)
-        self.assertIn("matthummel-pa.github.io/matthummel-pa", self.text)
+        self.assertIn("matthummel.com/git-blocks", self.text)
         self.assertIn("git-blocks-player.svg", self.text)
 
     def test_dev_to_handle(self) -> None:
