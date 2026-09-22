@@ -114,6 +114,27 @@ test("play queues a lesson intro briefing for the current level", () => {
   assert.equal(game.consumeLessonIntro(), null);
 });
 
+test("pathway powers are class-themed and characters render", () => {
+  const byId = Object.fromEntries(engine.PATHWAY_CLASSES.map((p) => [p.id, p]));
+  assert.equal(byId.frontend.power.id, "ui-burst");
+  assert.match(byId.frontend.power.name, /Style Nova|Burst|Nova/i);
+  assert.equal(byId.backend.power.id, "query-storm");
+  assert.equal(byId.wordpress.power.id, "hook-cascade");
+  assert.equal(byId.fullstack.power.id, "polyglot-pulse");
+  engine.PATHWAY_CLASSES.forEach((path) => {
+    assert.ok(path.character && path.character.silhouette);
+    const html = engine.cartoonCharacterMarkup(
+      path.character.silhouette,
+      path.character.colors,
+      path.character.idle
+    );
+    assert.match(html, /chibi-svg/);
+    assert.match(html, new RegExp(`chibi-${path.character.silhouette}`));
+  });
+  const classic = engine.cartoonCharacterMarkup("classic", ["#4f8fd4", "#0d2e57", "#e7c35a"], "float");
+  assert.match(classic, /chibi-classic/);
+});
+
 test("class select is required before play without pathwayId", () => {
   const game = engine.createGame({ random: () => 0.3 });
   assert.equal(game.status, "class-select");

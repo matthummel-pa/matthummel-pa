@@ -39,8 +39,8 @@ if (! defined('ABSPATH')) {
 					<div class="overlay is-clickable" data-overlay>
 						<div>
 							<p class="overlay-level" data-overlay-level hidden><?php esc_html_e('Lesson 1', 'git-blocks'); ?></p>
-							<h2 data-overlay-title><?php esc_html_e('Path to Senior Developer', 'git-blocks'); ?></h2>
-							<p data-overlay-body><?php esc_html_e('Start with Classic (Intern → Senior, 20 lessons) or pick a specialty class. Background words and every clear’s fact follow the lesson you’re learning.', 'git-blocks'); ?></p>
+							<h2 data-overlay-title><?php esc_html_e('Choose your pathway', 'git-blocks'); ?></h2>
+							<p data-overlay-body><?php esc_html_e('Pick a class to begin. Each hero has a unique power on the path to Senior Developer.', 'git-blocks'); ?></p>
 							<button type="button" data-play hidden><?php esc_html_e('Start learning', 'git-blocks'); ?></button>
 						</div>
 					</div>
