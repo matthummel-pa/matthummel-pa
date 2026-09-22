@@ -79,7 +79,7 @@ final class Plugin {
 			array(
 				'layout'    => 'viewport', // viewport | card
 				'share_url' => '',
-				'autostart' => 'true',
+				'autostart' => 'false',
 			),
 			is_array($atts) ? $atts : array(),
 			'git_blocks'

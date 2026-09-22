@@ -15,11 +15,10 @@ if (! defined('ABSPATH')) {
 }
 ?>
 <div class="<?php echo esc_attr($git_blocks_layout_class); ?>">
-	<div class="dev-clouds pattern-drift" data-dev-clouds aria-hidden="true"></div>
 	<main class="page">
 		<p class="page-kicker"><?php esc_html_e('Mini player · Git Blocks', 'git-blocks'); ?></p>
 		<h1><?php esc_html_e('Git Blocks', 'git-blocks'); ?></h1>
-		<p class="page-lead"><?php esc_html_e('Not Tetris — squash 4+ matching commits, deploy full rows, cascade the pipeline.', 'git-blocks'); ?></p>
+		<p class="page-lead"><?php esc_html_e('Stack commit pieces, squash clusters of 4+ matching kinds, fill rows to deploy, and ride cascade pipelines.', 'git-blocks'); ?></p>
 
 		<section class="player" data-git-blocks aria-label="<?php esc_attr_e('Git Blocks game player', 'git-blocks'); ?>">
 			<div class="player-chrome">
@@ -35,13 +34,14 @@ if (! defined('ABSPATH')) {
 
 			<div class="player-screen">
 				<div class="board-wrap">
+					<div class="dev-clouds pattern-drift" data-dev-clouds aria-hidden="true"></div>
 					<canvas data-board width="240" height="480" tabindex="0" role="application" aria-label="<?php esc_attr_e('Git Blocks board. Scroll moves, right-click rotates, drag sideways.', 'git-blocks'); ?>"></canvas>
 					<div class="overlay is-clickable" data-overlay>
 						<div>
 							<p class="overlay-level" data-overlay-level hidden><?php esc_html_e('Level 1', 'git-blocks'); ?></p>
 							<h2 data-overlay-title><?php esc_html_e('Git Blocks', 'git-blocks'); ?></h2>
-							<p data-overlay-body><?php esc_html_e('Stack commits. Clear lines. Don\'t let the backlog reach production.', 'git-blocks'); ?></p>
-							<button type="button" data-play><?php esc_html_e('Play', 'git-blocks'); ?></button>
+							<p data-overlay-body><?php esc_html_e('Pieces fall on a timer — squash matching clusters · deploy full rows · don\'t let the backlog hit production.', 'git-blocks'); ?></p>
+							<button type="button" data-play><?php esc_html_e('Start sprint', 'git-blocks'); ?></button>
 						</div>
 					</div>
 				</div>
@@ -62,26 +62,25 @@ if (! defined('ABSPATH')) {
 						<div class="tray"><span><?php esc_html_e('Stash', 'git-blocks'); ?></span><div data-hold></div></div>
 						<div class="tray"><span><?php esc_html_e('Queue', 'git-blocks'); ?></span><div data-next></div></div>
 					</div>
-					<p class="message" data-message><?php esc_html_e('Sprint ready — match 4+ or fill a row.', 'git-blocks'); ?></p>
+					<p class="message" data-message><?php esc_html_e('Press Start sprint — pieces fall like Tetris.', 'git-blocks'); ?></p>
 					<div class="power-row">
 						<button type="button" class="ghost" data-git-clean><?php esc_html_e('git clean (1)', 'git-blocks'); ?></button>
 						<button type="button" class="ghost" data-force-push><?php esc_html_e('force-push (1)', 'git-blocks'); ?></button>
 					</div>
 					<ul class="commit-log" data-commit-log aria-label="<?php esc_attr_e('Commit log', 'git-blocks'); ?>"></ul>
 					<div class="badge-row" data-badges aria-label="<?php esc_attr_e('Achievements', 'git-blocks'); ?>"></div>
-					<p class="concept-note"><?php esc_html_e('Match 4+ same commits to squash. Fill a full row to deploy. Cascades chain for pipeline combos.', 'git-blocks'); ?></p>
 					<div class="player-dock">
 						<span class="controls-label"><?php esc_html_e('Controls', 'git-blocks'); ?></span>
 						<div class="pad" role="group" aria-label="<?php esc_attr_e('Game controls', 'git-blocks'); ?>">
-							<button type="button" data-move="left" aria-label="<?php esc_attr_e('Move left', 'git-blocks'); ?>"><?php esc_html_e('Left', 'git-blocks'); ?></button>
-							<button type="button" data-move="rotate" aria-label="<?php esc_attr_e('Rotate clockwise', 'git-blocks'); ?>"><?php esc_html_e('Rotate', 'git-blocks'); ?></button>
-							<button type="button" data-move="right" aria-label="<?php esc_attr_e('Move right', 'git-blocks'); ?>"><?php esc_html_e('Right', 'git-blocks'); ?></button>
-							<button type="button" data-move="down" aria-label="<?php esc_attr_e('Soft drop', 'git-blocks'); ?>"><?php esc_html_e('Down', 'git-blocks'); ?></button>
+							<button type="button" data-move="left" aria-label="<?php esc_attr_e('Move left', 'git-blocks'); ?>">←</button>
+							<button type="button" data-move="rotate" aria-label="<?php esc_attr_e('Rotate clockwise', 'git-blocks'); ?>">↻</button>
+							<button type="button" data-move="right" aria-label="<?php esc_attr_e('Move right', 'git-blocks'); ?>">→</button>
+							<button type="button" data-move="down" aria-label="<?php esc_attr_e('Soft drop', 'git-blocks'); ?>">↓</button>
 							<button type="button" class="ghost" data-move="hold"><?php esc_html_e('Hold', 'git-blocks'); ?></button>
 							<button type="button" data-move="rotate-ccw" aria-label="<?php esc_attr_e('Rotate counter-clockwise', 'git-blocks'); ?>">↺</button>
 							<button type="button" data-move="drop"><?php esc_html_e('Hard drop', 'git-blocks'); ?></button>
 						</div>
-						<p class="keys" data-keys-help><?php esc_html_e('Scroll moves · right-click rotates · drag sideways · Customize to remap', 'git-blocks'); ?></p>
+						<p class="keys" data-keys-help><?php esc_html_e('Arrows move · ↑ rotate · Space hard drop · Customize for more', 'git-blocks'); ?></p>
 					</div>
 				</aside>
 				<div class="customize-panel" data-customize-panel hidden>
@@ -99,6 +98,13 @@ if (! defined('ABSPATH')) {
 					<section class="customize-pane is-active" data-pane="look">
 						<p class="customize-hint"><?php esc_html_e('Pick a CSS backdrop, paste a gradient, or load a custom image URL.', 'git-blocks'); ?></p>
 						<div class="bg-presets" data-bg-presets></div>
+						<label class="field inline">
+							<span><?php esc_html_e('Graphics', 'git-blocks'); ?></span>
+							<select data-graphics>
+								<option value="advanced"><?php esc_html_e('Advanced', 'git-blocks'); ?></option>
+								<option value="simple"><?php esc_html_e('Simple', 'git-blocks'); ?></option>
+							</select>
+						</label>
 						<label class="field">
 							<span><?php esc_html_e('Custom CSS background', 'git-blocks'); ?></span>
 							<textarea data-bg-css rows="3" placeholder="linear-gradient(135deg, #0b1220, #0d2e57)"></textarea>

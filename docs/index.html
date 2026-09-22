@@ -5,18 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Git Blocks — Matt Hummel</title>
   <meta name="description" content="Git Blocks — a developer cascade puzzle. Squash matching commits, deploy full rows, clear the backlog." />
-  <link rel="canonical" href="https://matthummel-pa.github.io/matthummel-pa/" />
+  <link rel="canonical" href="https://matthummel.com/git-blocks/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./git-blocks.css" />
 </head>
 <body>
-  <div class="dev-clouds pattern-drift" data-dev-clouds aria-hidden="true"></div>
   <main class="page">
-    <p class="page-kicker">Mini player · GitHub Pages</p>
+    <p class="page-kicker">Mini player · matthummel.com</p>
     <h1>Git Blocks</h1>
-    <p class="page-lead">A developer puzzle cabinet — not Tetris. Stack commit pieces, squash clusters of 4+ matching kinds, fill rows to deploy, and ride cascade pipelines.</p>
+    <p class="page-lead">A developer puzzle cabinet — stack commit pieces, squash clusters of 4+ matching kinds, fill rows to deploy, and ride cascade pipelines.</p>
 
     <section class="player" data-git-blocks aria-label="Git Blocks game player">
       <div class="player-chrome">
@@ -32,6 +31,7 @@
 
       <div class="player-screen">
         <div class="board-wrap">
+          <div class="dev-clouds pattern-drift" data-dev-clouds aria-hidden="true"></div>
           <canvas data-board width="240" height="480" tabindex="0" role="application" aria-label="Git Blocks board. Scroll moves the piece, right-click rotates, drag sideways. Open Customize to remap."></canvas>
           <div class="overlay is-clickable" data-overlay>
             <div>
@@ -59,27 +59,26 @@
             <div class="tray"><span>Stash</span><div data-hold></div></div>
             <div class="tray"><span>Queue</span><div data-next></div></div>
           </div>
-          <p class="message" data-message>Sprint ready — match 4+ or fill a row.</p>
+          <p class="message" data-message>Press Start sprint — pieces fall like Tetris.</p>
           <div class="power-row">
             <button type="button" class="ghost" data-git-clean>git clean (1)</button>
             <button type="button" class="ghost" data-force-push>force-push (1)</button>
           </div>
           <ul class="commit-log" data-commit-log aria-label="Commit log"></ul>
           <div class="badge-row" data-badges aria-label="Achievements"></div>
-          <p class="concept-note">Match 4+ same commits to squash. Fill a full row to deploy. Cascades chain for pipeline combos.</p>
           <div class="player-dock">
             <span class="controls-label">Controls</span>
             <div class="pad" role="group" aria-label="Game controls">
-              <button type="button" data-move="left" aria-label="Move left">Left</button>
-              <button type="button" data-move="rotate" aria-label="Rotate clockwise">Rotate</button>
-              <button type="button" data-move="right" aria-label="Move right">Right</button>
-              <button type="button" data-move="down" aria-label="Soft drop">Down</button>
+              <button type="button" data-move="left" aria-label="Move left">←</button>
+              <button type="button" data-move="rotate" aria-label="Rotate clockwise">↻</button>
+              <button type="button" data-move="right" aria-label="Move right">→</button>
+              <button type="button" data-move="down" aria-label="Soft drop">↓</button>
               <button type="button" class="ghost" data-move="hold">Hold</button>
               <button type="button" data-move="rotate-ccw" aria-label="Rotate counter-clockwise">↺</button>
               <button type="button" data-move="drop">Hard drop</button>
             </div>
             <p class="keys" data-keys-help>
-              Scroll moves · right-click rotates · drag · git clean / force-push · Customize
+              Arrows move · ↑ rotate · Space hard drop · Customize for more
             </p>
           </div>
         </aside>
@@ -98,6 +97,13 @@
           <section class="customize-pane is-active" data-pane="look">
             <p class="customize-hint">Pick a CSS backdrop, paste a gradient, or load a custom image URL.</p>
             <div class="bg-presets" data-bg-presets></div>
+            <label class="field inline">
+              <span>Graphics</span>
+              <select data-graphics>
+                <option value="advanced">Advanced</option>
+                <option value="simple">Simple</option>
+              </select>
+            </label>
             <label class="field">
               <span>Custom CSS background</span>
               <textarea data-bg-css rows="3" placeholder="linear-gradient(135deg, #0b1220, #0d2e57)"></textarea>

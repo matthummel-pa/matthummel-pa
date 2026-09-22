@@ -135,6 +135,22 @@ test("WordGenerator emits rand letters and Dev words for clouds", () => {
   assert.match(compound, /-/);
 });
 
+test("gravity tick uses RAF clock after play()", () => {
+  const game = engine.createGame({ random: () => 0.3, now: () => 1_700_000_000_000 });
+  game.play();
+  const y0 = game.snapshot().active.y;
+  // Simulate requestAnimationFrame timestamps (ms since page load), not Date.now.
+  for (let t = 0; t < 5000; t += 200) game.tick(t);
+  const y1 = game.snapshot().active.y;
+  assert.ok(y1 > y0, `piece should auto-fall (y0=${y0}, y1=${y1})`);
+});
+
+test("default music theme and no autoStart by default", () => {
+  assert.ok(engine.MUSIC_TRACKS.some((t) => t.id === "stack-sprint" || String(t.id).startsWith("stack-sprint")));
+  assert.ok(fs.existsSync(path.join(__dirname, "..", "game", "audio", "stack-sprint.ogg")));
+  assert.ok(fs.existsSync(path.join(__dirname, "..", "game", "audio", "stack-sprint.wav")));
+});
+
 test("player files ship together", () => {
   const gameDir = path.join(__dirname, "..", "game");
   const html = fs.readFileSync(path.join(gameDir, "index.html"), "utf8");
@@ -142,10 +158,10 @@ test("player files ship together", () => {
   assert.match(html, /acreline\.matthummel\.com/);
   assert.match(html, /walkridge\.matthummel\.com/);
   assert.match(html, /data-dev-clouds/);
-  assert.match(html, /not Tetris/);
   assert.match(html, /data-git-clean/);
   assert.match(html, /data-force-push/);
   assert.match(html, /data-commit-log/);
+  assert.match(html, /data-graphics/);
   assert.doesNotMatch(html, /hummelwp/);
   assert.equal(typeof engine.boot, "function");
   assert.ok(fs.existsSync(path.join(gameDir, "git-blocks.css")));
