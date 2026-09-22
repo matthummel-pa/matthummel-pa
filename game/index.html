@@ -29,43 +29,48 @@
 
       <div class="player-screen">
         <div class="board-wrap">
-          <canvas data-board width="240" height="480" tabindex="0" role="application" aria-label="Git Blocks board. Arrow keys move, space hard-drops, C holds."></canvas>
-          <div class="overlay" data-overlay>
+          <canvas data-board width="240" height="480" tabindex="0" role="application" aria-label="Git Blocks board. Arrow keys move, up rotates, space hard-drops, C holds."></canvas>
+          <div class="overlay is-clickable" data-overlay>
             <div>
+              <p class="overlay-level" data-overlay-level hidden>Level 1</p>
               <h2 data-overlay-title>Git Blocks</h2>
-              <p data-overlay-body>Stack commits. Clear lines. Don’t let the backlog reach production.</p>
+              <p data-overlay-body>Stack commits. Clear lines. Don't let the backlog reach production.</p>
               <button type="button" data-play>Play</button>
             </div>
           </div>
         </div>
         <aside class="side">
-          <div class="stat"><span>Score</span><strong data-score>0</strong></div>
-          <div class="stat"><span>Lines</span><strong data-lines>0</strong></div>
-          <div class="stat"><span>Level</span><strong data-level>1</strong></div>
-          <div class="stat"><span>Best</span><strong data-high>0</strong></div>
+          <div class="stats-row">
+            <div class="stat"><span>Score</span><strong data-score>0</strong></div>
+            <div class="stat"><span>Lines</span><strong data-lines>0</strong></div>
+            <div class="stat"><span>Level</span><strong data-level>1</strong></div>
+            <div class="stat"><span>Best</span><strong data-high>0</strong></div>
+          </div>
           <div class="trays">
             <div class="tray"><span>Hold</span><div data-hold></div></div>
             <div class="tray"><span>Next</span><div data-next></div></div>
           </div>
+          <p class="message" data-message>Starting level 1…</p>
+          <div class="player-dock">
+            <span class="controls-label">Controls</span>
+            <div class="pad" role="group" aria-label="Game controls">
+              <button type="button" data-move="left" aria-label="Move left">Left</button>
+              <button type="button" data-move="rotate" aria-label="Rotate clockwise">Rotate</button>
+              <button type="button" data-move="right" aria-label="Move right">Right</button>
+              <button type="button" data-move="down" aria-label="Soft drop">Down</button>
+              <button type="button" class="ghost" data-move="hold">Hold</button>
+              <button type="button" data-move="rotate-ccw" aria-label="Rotate counter-clockwise">↺</button>
+              <button type="button" data-move="drop">Hard drop</button>
+            </div>
+            <p class="keys">
+              <kbd>←</kbd> <kbd>→</kbd> move · <kbd>↑</kbd> / <kbd>X</kbd> rotate · <kbd>Z</kbd> ↺ ·
+              <kbd>↓</kbd> soft · <kbd>space</kbd> drop · <kbd>C</kbd> hold
+            </p>
+          </div>
         </aside>
-      </div>
-      <p class="message" data-message>Press play to start committing.</p>
-      <div class="player-dock">
-        <div class="pad" role="group" aria-label="Game controls">
-          <button type="button" data-move="left" aria-label="Move left">Left</button>
-          <button type="button" data-move="rotate" aria-label="Rotate">Rotate</button>
-          <button type="button" data-move="right" aria-label="Move right">Right</button>
-          <button type="button" data-move="down" aria-label="Soft drop">Down</button>
-          <button type="button" data-move="drop">Hard drop</button>
-          <button type="button" class="ghost" data-move="hold">Hold</button>
-        </div>
       </div>
     </section>
 
-    <p class="keys">
-      <kbd>←</kbd> <kbd>→</kbd> move · <kbd>↑</kbd> rotate · <kbd>↓</kbd> soft drop ·
-      <kbd>space</kbd> hard drop · <kbd>C</kbd> hold · <kbd>P</kbd> pause · <kbd>M</kbd> mute
-    </p>
     <p class="page-note">GitHub READMEs cannot run JavaScript, so this cabinet lives here. High score stays in this browser.</p>
     <p class="links">
       <a href="https://github.com/matthummel-pa">GitHub</a>

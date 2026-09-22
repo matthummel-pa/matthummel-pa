@@ -66,21 +66,42 @@
     3: { points: 500, message: "refactor: smaller pieces" },
     4: { points: 800, message: "chore: ship the whole stack" },
   };
-  const KICKS = [0, -1, 1, -2, 2];
+  // SRS-lite kicks: try in place, then nudge on X/Y so wall/floor spins succeed.
+  const KICKS = [
+    [0, 0],
+    [-1, 0],
+    [1, 0],
+    [0, -1],
+    [-2, 0],
+    [2, 0],
+    [0, 1],
+    [-1, -1],
+    [1, -1],
+    [-1, 1],
+    [1, 1],
+    [-2, -1],
+    [2, -1],
+    [0, -2],
+  ];
 
   function cloneMatrix(matrix) {
     return matrix.map((row) => row.slice());
   }
 
   function rotate(matrix, dir) {
-    const n = matrix.length;
-    const next = Array.from({ length: n }, () => Array(n).fill(0));
-    for (let y = 0; y < n; y += 1) {
-      for (let x = 0; x < n; x += 1) {
+    const rows = matrix.length;
+    const cols = matrix[0].length;
+    const size = Math.max(rows, cols);
+    const square = Array.from({ length: size }, (_, y) =>
+      Array.from({ length: size }, (_, x) => (matrix[y] && matrix[y][x] ? 1 : 0))
+    );
+    const next = Array.from({ length: size }, () => Array(size).fill(0));
+    for (let y = 0; y < size; y += 1) {
+      for (let x = 0; x < size; x += 1) {
         if (dir >= 0) {
-          next[x][n - 1 - y] = matrix[y][x];
+          next[x][size - 1 - y] = square[y][x];
         } else {
-          next[n - 1 - x][y] = matrix[y][x];
+          next[size - 1 - x][y] = square[y][x];
         }
       }
     }
@@ -120,6 +141,7 @@
       matrix: cloneMatrix(SHAPES[kind]),
       x: spawnX(kind),
       y: kind === "I" ? -1 : 0,
+      rotation: 0,
     };
   }
 
@@ -139,7 +161,8 @@
   }
 
   function gravityMs(level, reducedMotion) {
-    const base = Math.max(120, 900 - (level - 1) * 80);
+    const clamped = Math.max(1, Math.min(level, 15));
+    const base = Math.max(80, 1000 - (clamped - 1) * 70);
     return reducedMotion ? base + 220 : base;
   }
 
@@ -169,10 +192,11 @@
       level: 1,
       combo: 0,
       status: "ready",
-      message: "Press play to start committing.",
+      message: "Starting level 1…",
       dropMs: gravityMs(1, Boolean(options.reducedMotion)),
       lastTick: 0,
       lockAt: 0,
+      levelFlash: 0,
       reducedMotion: Boolean(options.reducedMotion),
     };
 
@@ -215,12 +239,23 @@
 
     function tryRotate(dir) {
       if (!state.active || state.status !== "playing") return false;
-      if (state.active.kind === "O") return true;
+      // O looks the same after rotation; treat as success so controls feel responsive.
+      if (state.active.kind === "O") {
+        state.lockAt = 0;
+        return true;
+      }
       const rotated = rotate(state.active.matrix, dir);
-      for (const kick of KICKS) {
-        const next = { ...state.active, matrix: rotated, x: state.active.x + kick };
+      for (const [kx, ky] of KICKS) {
+        const next = {
+          ...state.active,
+          matrix: rotated,
+          x: state.active.x + kx,
+          y: state.active.y + ky,
+          rotation: ((state.active.rotation || 0) + (dir >= 0 ? 1 : 3)) % 4,
+        };
         if (!collides(state.board, next)) {
           state.active = next;
+          state.lockAt = 0;
           return true;
         }
       }
@@ -239,10 +274,16 @@
       if (result.cleared) {
         state.combo += 1;
         state.lines += result.cleared;
-        state.level = 1 + Math.floor(state.lines / 10);
+        const nextLevel = 1 + Math.floor(state.lines / 10);
+        if (nextLevel > state.level) {
+          state.level = nextLevel;
+          state.levelFlash = now();
+          state.message = `Level ${state.level} — gravity up.`;
+        } else {
+          state.message = CLEARS[result.cleared].message;
+        }
         state.dropMs = gravityMs(state.level, state.reducedMotion);
         state.score += scoreForClears(result.cleared, state.level, state.combo);
-        state.message = CLEARS[result.cleared].message;
       } else {
         state.combo = 0;
       }
@@ -298,7 +339,7 @@
       state.lastTick = ts;
       if (!tryMove(0, 1)) {
         if (!state.lockAt) state.lockAt = ts;
-        if (ts - state.lockAt >= 450) lockPiece();
+        if (ts - state.lockAt >= 500) lockPiece();
       }
     }
 
@@ -306,8 +347,9 @@
       if (state.status === "playing") return;
       if (state.status === "over") reset();
       state.status = "playing";
-      state.message = "Drop commits. Clear the backlog.";
+      state.message = `Level ${state.level} — drop commits.`;
       state.lastTick = now();
+      state.levelFlash = now();
       if (!state.active) spawn();
     }
 
@@ -335,10 +377,11 @@
       state.level = 1;
       state.combo = 0;
       state.status = "ready";
-      state.message = "Press play to start committing.";
+      state.message = "Starting level 1…";
       state.dropMs = gravityMs(1, state.reducedMotion);
       state.lastTick = 0;
       state.lockAt = 0;
+      state.levelFlash = 0;
       bag = [];
       fillQueue();
     }
@@ -358,6 +401,8 @@
         combo: state.combo,
         status: state.status,
         message: state.message,
+        levelFlash: state.levelFlash,
+        dropMs: state.dropMs,
       };
     }
 
@@ -425,12 +470,13 @@
     ctx.restore();
   }
 
-  function boot(root) {
+  function boot(root, options = {}) {
     if (!root || typeof document === "undefined") return null;
     const canvas = root.querySelector("[data-board]");
     const overlay = root.querySelector("[data-overlay]");
     const overlayTitle = root.querySelector("[data-overlay-title]");
     const overlayBody = root.querySelector("[data-overlay-body]");
+    const overlayLevel = root.querySelector("[data-overlay-level]");
     const playBtn = root.querySelector("[data-play]");
     const messageEl = root.querySelector("[data-message]");
     const scoreEl = root.querySelector("[data-score]");
@@ -445,6 +491,7 @@
     if (!canvas) return null;
 
     const storageKey = "git-blocks-high-score";
+    const autoStart = options.autoStart !== false;
     let high = 0;
     try {
       high = Number(localStorage.getItem(storageKey) || 0);
@@ -457,22 +504,28 @@
     let muted = false;
     let audioCtx = null;
     let raf = 0;
+    let lastLevelShown = 1;
+    let autoStarted = false;
 
     function beep(kind) {
       if (muted || typeof AudioContext === "undefined") return;
-      audioCtx = audioCtx || new AudioContext();
-      const osc = audioCtx.createOscillator();
-      const gain = audioCtx.createGain();
-      const now = audioCtx.currentTime;
-      const tones = { move: 420, rotate: 560, drop: 220, clear: 740, start: 640 };
-      osc.frequency.value = tones[kind] || 440;
-      osc.type = kind === "clear" ? "triangle" : "square";
-      gain.gain.setValueAtTime(0.05, now);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
-      osc.connect(gain);
-      gain.connect(audioCtx.destination);
-      osc.start(now);
-      osc.stop(now + 0.12);
+      try {
+        audioCtx = audioCtx || new AudioContext();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        const t = audioCtx.currentTime;
+        const tones = { move: 420, rotate: 560, drop: 220, clear: 740, start: 640 };
+        osc.frequency.value = tones[kind] || 440;
+        osc.type = kind === "clear" ? "triangle" : "square";
+        gain.gain.setValueAtTime(0.05, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.12);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(t);
+        osc.stop(t + 0.12);
+      } catch (_err) {
+        /* ignore audio failures */
+      }
     }
 
     function miniCanvas(kind) {
@@ -514,8 +567,9 @@
 
     function sizeCanvas() {
       const wrap = canvas.parentElement;
-      const cssWidth = Math.max(180, Math.min(wrap.clientWidth, 360));
-      const cell = Math.floor(cssWidth / COLS);
+      const availW = Math.max(120, wrap.clientWidth - 8);
+      const availH = Math.max(160, wrap.clientHeight - 8);
+      const cell = Math.max(8, Math.min(Math.floor(availW / COLS), Math.floor(availH / ROWS)));
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       canvas.width = COLS * cell * dpr;
       canvas.height = ROWS * cell * dpr;
@@ -565,22 +619,51 @@
       if (messageEl) messageEl.textContent = snap.message;
       paintMini(holdEl, [snap.hold]);
       paintMini(nextEl, snap.queue);
+
+      const flashAge = snap.levelFlash ? Date.now() - snap.levelFlash : 9999;
+      const showLevelBanner = snap.status === "playing" && flashAge < 900;
       if (overlay && overlayTitle && overlayBody) {
-        const show = snap.status !== "playing";
+        const show = snap.status !== "playing" || showLevelBanner;
         overlay.hidden = !show;
-        if (snap.status === "ready") {
+        overlay.classList.toggle("is-clickable", snap.status !== "playing");
+        if (overlayLevel) {
+          overlayLevel.hidden = !showLevelBanner && snap.status === "playing";
+          overlayLevel.textContent = `Level ${snap.level}`;
+        }
+        if (showLevelBanner && snap.status === "playing") {
+          overlayTitle.textContent = "Gravity up";
+          overlayBody.textContent = "Keep clearing. Levels auto-advance every 10 lines.";
+          if (playBtn) playBtn.hidden = true;
+        } else if (snap.status === "ready") {
           overlayTitle.textContent = "Git Blocks";
-          overlayBody.textContent = "Stack commits. Clear lines. Don’t let the backlog reach production.";
-          if (playBtn) playBtn.textContent = "Play";
+          overlayBody.textContent = "Stack commits. Clear lines. Don't let the backlog reach production.";
+          if (playBtn) {
+            playBtn.hidden = false;
+            playBtn.textContent = "Play";
+          }
+          if (overlayLevel) {
+            overlayLevel.hidden = false;
+            overlayLevel.textContent = "Level 1";
+          }
         } else if (snap.status === "paused") {
           overlayTitle.textContent = "Paused";
           overlayBody.textContent = snap.message;
-          if (playBtn) playBtn.textContent = "Resume";
+          if (playBtn) {
+            playBtn.hidden = false;
+            playBtn.textContent = "Resume";
+          }
         } else if (snap.status === "over") {
           overlayTitle.textContent = "Merge conflict";
-          overlayBody.textContent = `Score ${snap.score}. Press play to rebase.`;
-          if (playBtn) playBtn.textContent = "Rebase";
+          overlayBody.textContent = `Score ${snap.score}. Press play or R to rebase.`;
+          if (playBtn) {
+            playBtn.hidden = false;
+            playBtn.textContent = "Rebase";
+          }
         }
+      }
+      if (snap.level !== lastLevelShown && snap.status === "playing") {
+        lastLevelShown = snap.level;
+        announce(`Level ${snap.level}`);
       }
       if (pauseBtn) {
         pauseBtn.textContent = snap.status === "paused" ? "Resume" : "Pause";
@@ -618,9 +701,9 @@
       } else {
         game.play();
         beep("start");
-        announce("Git Blocks started");
+        announce(`Level ${game.snapshot().level} started`);
       }
-      canvas.focus();
+      canvas.focus({ preventScroll: true });
     }
 
     function handlePause() {
@@ -632,24 +715,39 @@
       }
     }
 
+    function applyMove(move) {
+      if (game.status !== "playing") {
+        if (move === "rotate" || move === "rotate-ccw" || move === "drop") handlePlay();
+        return;
+      }
+      if (move === "left") {
+        if (game.tryMove(-1, 0)) beep("move");
+      }
+      if (move === "right") {
+        if (game.tryMove(1, 0)) beep("move");
+      }
+      if (move === "down") {
+        if (!game.softDrop()) beep("drop");
+      }
+      if (move === "rotate") {
+        if (game.tryRotate(1)) beep("rotate");
+      }
+      if (move === "rotate-ccw") {
+        if (game.tryRotate(-1)) beep("rotate");
+      }
+      if (move === "drop") {
+        game.hardDrop();
+        beep("drop");
+      }
+      if (move === "hold") game.hold();
+      draw();
+    }
+
     root.querySelectorAll("[data-move]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const move = btn.getAttribute("data-move");
-        if (move === "left") game.tryMove(-1, 0);
-        if (move === "right") game.tryMove(1, 0);
-        if (move === "down") {
-          if (!game.softDrop()) beep("drop");
-        }
-        if (move === "rotate") {
-          game.tryRotate(1);
-          beep("rotate");
-        }
-        if (move === "drop") {
-          game.hardDrop();
-          beep("drop");
-        }
-        if (move === "hold") game.hold();
-        draw();
+      btn.addEventListener("click", (event) => {
+        event.preventDefault();
+        applyMove(btn.getAttribute("data-move"));
+        canvas.focus({ preventScroll: true });
       });
     });
 
@@ -663,49 +761,63 @@
       });
     }
 
+    function isEditableTarget(target) {
+      if (!target || !target.tagName) return false;
+      const tag = target.tagName;
+      if (["INPUT", "TEXTAREA", "SELECT"].includes(tag)) return true;
+      return Boolean(target.isContentEditable);
+    }
+
     function onKey(event) {
-      const keys = ["ArrowLeft", "ArrowRight", "ArrowDown", "ArrowUp", " ", "w", "a", "s", "d", "z", "x", "c", "p", "m", "r"];
-      if (!keys.includes(event.key) && event.key !== "Shift") return;
-      if (["ArrowLeft", "ArrowRight", "ArrowDown", "ArrowUp", " "].includes(event.key)) {
+      if (isEditableTarget(event.target)) return;
+      const key = event.key;
+      const code = event.code;
+      const gameKeys = new Set([
+        "ArrowLeft", "ArrowRight", "ArrowDown", "ArrowUp", " ", "Enter",
+        "w", "a", "s", "d", "W", "A", "S", "D",
+        "z", "x", "c", "Z", "X", "C",
+        "p", "P", "m", "M", "r", "R",
+      ]);
+      if (!gameKeys.has(key) && !["Space", "ShiftLeft", "ShiftRight"].includes(code)) return;
+
+      if (
+        ["ArrowLeft", "ArrowRight", "ArrowDown", "ArrowUp", " ", "Enter"].includes(key) ||
+        ["KeyW", "KeyA", "KeyS", "KeyD", "KeyZ", "KeyX", "KeyC", "Space"].includes(code)
+      ) {
         event.preventDefault();
       }
-      if (event.key === "p") {
+
+      if (key === "p" || key === "P") {
         handlePause();
         return;
       }
-      if (event.key === "m") {
+      if (key === "m" || key === "M") {
         if (muteBtn) muteBtn.click();
         return;
       }
-      if (event.key === "r" && game.status === "over") {
+      if ((key === "r" || key === "R") && game.status === "over") {
         handlePlay();
         return;
       }
       if (game.status !== "playing") {
-        if (event.key === " " || event.key === "Enter") handlePlay();
+        if (key === " " || key === "Enter" || key === "ArrowUp") handlePlay();
         return;
       }
-      if (event.key === "ArrowLeft" || event.key === "a") game.tryMove(-1, 0);
-      if (event.key === "ArrowRight" || event.key === "d") game.tryMove(1, 0);
-      if (event.key === "ArrowDown" || event.key === "s") game.softDrop();
-      if (event.key === "ArrowUp" || event.key === "x" || event.key === "w") {
-        game.tryRotate(1);
-        beep("rotate");
+
+      if (key === "ArrowLeft" || key === "a" || key === "A") applyMove("left");
+      else if (key === "ArrowRight" || key === "d" || key === "D") applyMove("right");
+      else if (key === "ArrowDown" || key === "s" || key === "S") applyMove("down");
+      else if (key === "ArrowUp" || key === "x" || key === "X" || key === "w" || key === "W") {
+        applyMove("rotate");
+      } else if (key === "z" || key === "Z") applyMove("rotate-ccw");
+      else if (key === " ") applyMove("drop");
+      else if (key === "c" || key === "C" || code === "ShiftLeft" || code === "ShiftRight") {
+        applyMove("hold");
       }
-      if (event.key === "z") game.tryRotate(-1);
-      if (event.key === " ") {
-        game.hardDrop();
-        beep("drop");
-      }
-      if (event.key === "c" || event.key === "Shift") game.hold();
-      draw();
     }
 
     canvas.addEventListener("keydown", onKey);
-    window.addEventListener("keydown", (event) => {
-      if (event.target && ["INPUT", "TEXTAREA"].includes(event.target.tagName)) return;
-      onKey(event);
-    });
+    window.addEventListener("keydown", onKey, { capture: true });
 
     let touchStart = null;
     canvas.addEventListener("touchstart", (event) => {
@@ -724,22 +836,27 @@
         return;
       }
       if (Math.abs(dx) < 24 && Math.abs(dy) < 24 && dt < 250) {
-        game.tryRotate(1);
-        beep("rotate");
+        applyMove("rotate");
       } else if (Math.abs(dx) > Math.abs(dy)) {
-        game.tryMove(dx > 0 ? 1 : -1, 0);
+        applyMove(dx > 0 ? "right" : "left");
       } else if (dy > 0) {
-        game.softDrop();
+        applyMove("down");
       } else {
-        game.hardDrop();
-        beep("drop");
+        applyMove("drop");
       }
-      draw();
     }, { passive: true });
 
     window.addEventListener("resize", draw);
     startLoop();
     draw();
+
+    if (autoStart && !autoStarted) {
+      autoStarted = true;
+      window.setTimeout(() => {
+        if (game.status === "ready") handlePlay();
+      }, prefersReducedMotion() ? 200 : 700);
+    }
+
     return game;
   }
 
@@ -756,6 +873,7 @@
     SHAPES,
     META,
     CLEARS,
+    KICKS,
     rotate,
     collides,
     clearLines,
