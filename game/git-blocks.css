@@ -873,6 +873,20 @@ button:disabled {
   text-align: left;
 }
 
+.class-classic {
+  grid-column: 1 / -1;
+  background: linear-gradient(
+    160deg,
+    rgba(12, 28, 48, 0.96),
+    color-mix(in srgb, #4f8fd4 22%, transparent)
+  );
+  border-width: 1.5px;
+}
+
+.class-classic .class-card-blurb {
+  max-width: 52ch;
+}
+
 .class-card {
   display: flex;
   flex-direction: column;
@@ -991,8 +1005,26 @@ button:disabled {
   font-weight: 700;
 }
 
+.fact-backdrop,
+.lesson-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 11;
+  background: rgba(4, 10, 20, 0.55);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.28s ease;
+}
+
+.fact-backdrop.is-visible,
+.lesson-backdrop.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .fact-toast,
-.skill-unlock {
+.skill-unlock,
+.lesson-intro {
   position: absolute;
   left: 50%;
   z-index: 12;
@@ -1011,12 +1043,31 @@ button:disabled {
 
 .fact-toast {
   bottom: 22px;
+  top: auto;
   cursor: pointer;
   pointer-events: none;
+  max-height: min(70%, 420px);
+  overflow: auto;
 }
 
 .fact-toast.is-visible {
   pointer-events: auto;
+}
+
+.lesson-intro {
+  top: 50%;
+  bottom: auto;
+  transform: translate(-50%, calc(-50% + 10px)) scale(0.98);
+  width: min(460px, calc(100% - 28px));
+  padding: 18px 18px 16px;
+  border-color: rgba(158, 200, 239, 0.45);
+  pointer-events: none;
+}
+
+.lesson-intro.is-visible {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .skill-unlock {
@@ -1031,6 +1082,88 @@ button:disabled {
 .skill-unlock.is-visible {
   opacity: 1;
   transform: translateX(-50%) translateY(0) scale(1);
+}
+
+.fact-path-track {
+  height: 6px;
+  margin: 0 0 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.fact-path-track > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #4f8fd4, #9ec8ef);
+  transition: width 0.35s ease;
+}
+
+.fact-cloud-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 0;
+}
+
+.fact-cloud-chips > span {
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(158, 200, 239, 0.28);
+  background: rgba(79, 143, 212, 0.12);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 10px;
+  color: #b8d4ef;
+}
+
+.lesson-intro-eyebrow {
+  margin: 0 0 6px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent, #4f8fd4);
+}
+
+.lesson-intro h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #f2f7ff;
+}
+
+.lesson-intro-rank {
+  margin: 0 0 8px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  color: #9ec8ef;
+}
+
+.lesson-intro-skill,
+.lesson-intro-fact {
+  margin: 0 0 8px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #d7e3f2;
+}
+
+.lesson-intro-go {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #5a9be0, #3a6fa8);
+  color: #07111f;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lesson-intro-go:hover,
+.lesson-intro-go:focus-visible {
+  filter: brightness(1.08);
+  outline: none;
 }
 
 .fact-title {

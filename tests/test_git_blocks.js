@@ -94,7 +94,24 @@ test("each clear queues a lesson fact popup payload", () => {
   assert.ok(pending.lesson);
   assert.ok(pending.rank);
   assert.ok(pending.track);
+  assert.ok(pending.clouds && pending.clouds.length >= 3);
+  assert.ok(pending.level >= 1);
+  assert.ok(pending.total >= 15);
   assert.equal(game.consumeFact(), null);
+});
+
+test("play queues a lesson intro briefing for the current level", () => {
+  const game = seededGame();
+  assert.equal(game.consumeLessonIntro(), null);
+  game.play();
+  const intro = game.consumeLessonIntro();
+  assert.ok(intro);
+  assert.equal(intro.start, true);
+  assert.equal(intro.title, "HTML bones");
+  assert.equal(intro.rank, "Intern");
+  assert.ok(intro.clouds && intro.clouds.some((w) => /html|DOCTYPE|semantic/i.test(w)));
+  assert.ok(intro.facts && intro.facts[0]);
+  assert.equal(game.consumeLessonIntro(), null);
 });
 
 test("class select is required before play without pathwayId", () => {
