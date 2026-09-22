@@ -1,12 +1,12 @@
 name: Deploy Git Blocks
 
 on:
-  workflow_dispatch:
   push:
-    branches: [main]
+    branches: ["main"]
     paths:
       - "game/**"
       - ".github/workflows/pages.yml"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -14,24 +14,21 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: git-blocks-pages
+  cancel-in-progress: false
 
 jobs:
   deploy:
     name: Publish the mini player
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Pages must already use "GitHub Actions" as the source
-      # (Settings → Pages). Do not pass enablement:true — the
-      # GITHUB_TOKEN cannot create a Pages site in this repo.
-      - name: Configure Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload game
@@ -39,6 +36,6 @@ jobs:
         with:
           path: game
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
