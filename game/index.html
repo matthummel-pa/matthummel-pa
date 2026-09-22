@@ -22,6 +22,8 @@
         <div class="traffic" aria-hidden="true"><span></span><span></span><span></span></div>
         <div class="player-title">Git Blocks</div>
         <div class="player-actions">
+          <button type="button" class="ghost" data-customize>Customize</button>
+          <button type="button" class="ghost" data-share>Share</button>
           <button type="button" class="ghost" data-pause>Pause</button>
           <button type="button" class="ghost" data-mute aria-pressed="false">Sound on</button>
         </div>
@@ -29,13 +31,95 @@
 
       <div class="player-screen">
         <div class="board-wrap">
-          <canvas data-board width="240" height="480" tabindex="0" role="application" aria-label="Git Blocks board. Arrow keys move, up rotates, space hard-drops, C holds."></canvas>
+          <canvas data-board width="240" height="480" tabindex="0" role="application" aria-label="Git Blocks board. Scroll moves the piece, right-click rotates, drag sideways. Open Customize to remap."></canvas>
           <div class="overlay is-clickable" data-overlay>
             <div>
               <p class="overlay-level" data-overlay-level hidden>Level 1</p>
               <h2 data-overlay-title>Git Blocks</h2>
               <p data-overlay-body>Stack commits. Clear lines. Don't let the backlog reach production.</p>
               <button type="button" data-play>Play</button>
+            </div>
+          </div>
+          <div class="customize-panel" data-customize-panel hidden>
+            <div class="customize-head">
+              <h3>Customize</h3>
+              <button type="button" class="ghost" data-customize-close aria-label="Close customize">Close</button>
+            </div>
+            <div class="customize-tabs" role="tablist">
+              <button type="button" class="is-active" data-tab="look" role="tab" aria-selected="true">Look</button>
+              <button type="button" data-tab="music" role="tab" aria-selected="false">Music</button>
+              <button type="button" data-tab="controls" role="tab" aria-selected="false">Controls</button>
+              <button type="button" data-tab="share" role="tab" aria-selected="false">Share</button>
+            </div>
+
+            <section class="customize-pane is-active" data-pane="look">
+              <p class="customize-hint">Pick a CSS backdrop, paste a gradient, or load a custom image URL.</p>
+              <div class="bg-presets" data-bg-presets></div>
+              <label class="field">
+                <span>Custom CSS background</span>
+                <textarea data-bg-css rows="3" placeholder="linear-gradient(135deg, #0b1220, #0d2e57)"></textarea>
+              </label>
+              <label class="field">
+                <span>Custom image URL</span>
+                <input type="url" data-bg-image placeholder="https://…/wallpaper.jpg" />
+              </label>
+              <div class="row-actions">
+                <button type="button" data-bg-apply>Apply look</button>
+                <button type="button" class="ghost" data-bg-random>Random gradient</button>
+              </div>
+            </section>
+
+            <section class="customize-pane" data-pane="music" hidden>
+              <p class="customize-hint">Open-source / generated loops. Attribution shows under the picker.</p>
+              <label class="field">
+                <span>Background music</span>
+                <select data-music-track></select>
+              </label>
+              <p class="music-credit" data-music-credit></p>
+              <label class="field">
+                <span>Custom audio URL (CC0 / CC-BY welcome)</span>
+                <input type="url" data-music-custom placeholder="https://…/track.mp3" />
+              </label>
+              <label class="field inline">
+                <span>Music volume</span>
+                <input type="range" data-music-volume min="0" max="100" value="35" />
+              </label>
+              <div class="row-actions">
+                <button type="button" data-music-apply>Play track</button>
+                <button type="button" class="ghost" data-music-stop>Stop</button>
+              </div>
+            </section>
+
+            <section class="customize-pane" data-pane="controls" hidden>
+              <p class="customize-hint">Click a key chip, then press a new key. Mouse menus remap board gestures.</p>
+              <div class="bindings-grid" data-key-bindings></div>
+              <div class="bindings-grid mouse" data-mouse-bindings></div>
+              <div class="row-actions">
+                <button type="button" class="ghost" data-bindings-reset>Reset controls</button>
+              </div>
+            </section>
+
+            <section class="customize-pane" data-pane="share" hidden>
+              <p class="customize-hint">Share the cabinet — optionally with your current look &amp; music baked into the link.</p>
+              <label class="field">
+                <span>Share link</span>
+                <input type="text" readonly data-share-url />
+              </label>
+              <label class="field checkbox">
+                <input type="checkbox" data-share-include-prefs checked />
+                <span>Include look + music in the link</span>
+              </label>
+              <div class="row-actions wrap">
+                <button type="button" data-share-copy>Copy link</button>
+                <button type="button" class="ghost" data-share-native>System share</button>
+                <a class="button-link ghost" data-share-x target="_blank" rel="noopener">Share on X</a>
+                <a class="button-link ghost" data-share-linkedin target="_blank" rel="noopener">LinkedIn</a>
+              </div>
+              <p class="share-status" data-share-status aria-live="polite"></p>
+            </section>
+
+            <div class="customize-foot">
+              <button type="button" data-customize-close>Done</button>
             </div>
           </div>
         </div>
@@ -62,9 +146,8 @@
               <button type="button" data-move="rotate-ccw" aria-label="Rotate counter-clockwise">↺</button>
               <button type="button" data-move="drop">Hard drop</button>
             </div>
-            <p class="keys">
-              <kbd>←</kbd> <kbd>→</kbd> move · <kbd>↑</kbd> / <kbd>X</kbd> rotate · <kbd>Z</kbd> ↺ ·
-              <kbd>↓</kbd> soft · <kbd>space</kbd> drop · <kbd>C</kbd> hold
+            <p class="keys" data-keys-help>
+              Scroll moves · right-click rotates · drag sideways · Customize to remap
             </p>
           </div>
         </aside>

@@ -121,3 +121,23 @@ test("player files ship together", () => {
   assert.match(player, /GIT BLOCKS/);
   assert.doesNotMatch(player, /[\uFFFD\u0090\u0091\u0092]/);
 });
+
+test("wordpress plugin sample packs the cabinet", () => {
+  const plugin = path.join(__dirname, "..", "samples", "git-blocks");
+  assert.ok(fs.existsSync(path.join(plugin, "git-blocks.php")));
+  assert.ok(fs.existsSync(path.join(plugin, "includes", "class-git-blocks-plugin.php")));
+  assert.ok(fs.existsSync(path.join(plugin, "templates", "player.php")));
+  assert.ok(fs.existsSync(path.join(plugin, "assets", "js", "git-blocks.js")));
+  assert.ok(fs.existsSync(path.join(plugin, "assets", "css", "git-blocks.css")));
+  assert.ok(fs.existsSync(path.join(plugin, "bin", "pack.sh")));
+  const main = fs.readFileSync(path.join(plugin, "git-blocks.php"), "utf8");
+  assert.match(main, /Plugin Name:\s+Git Blocks/);
+  const tpl = fs.readFileSync(path.join(plugin, "templates", "player.php"), "utf8");
+  assert.match(tpl, /data-git-blocks/);
+  const pluginPhp = fs.readFileSync(path.join(plugin, "includes", "class-git-blocks-plugin.php"), "utf8");
+  assert.match(pluginPhp, /add_shortcode\(\s*'git_blocks'/);
+  const pluginEngine = require(path.join(plugin, "assets", "js", "git-blocks.js"));
+  assert.equal(typeof pluginEngine.boot, "function");
+  assert.ok(pluginEngine.BG_PRESETS.length >= 4);
+  assert.ok(pluginEngine.MUSIC_TRACKS.length >= 3);
+});
