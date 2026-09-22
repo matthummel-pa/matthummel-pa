@@ -181,11 +181,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1181 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1183 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,181 contributions in 90 days · 1,220 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,183 contributions in 90 days · 1,222 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -195,13 +195,13 @@ Pushes, pull requests, and the rest of the public trail. Open a row to jump into
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #17](https://github.com/matthummel-pa/matthummel-pa/pull/17) — Enable GitHub Pages for Git Blocks | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | just now |
-| | ✅ [Merged PR #16](https://github.com/matthummel-pa/matthummel-pa/pull/16) — Refresh profile README with Git Blocks and custom activity | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | just now |
-| | 🔀 [Opened PR #214](https://github.com/matthummel-pa/matthummel-theme/pull/214) — Project pages: TOCguide data, like/star, notes, contact | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 19m |
+| | ✅ [Merged PR #18](https://github.com/matthummel-pa/matthummel-pa/pull/18) — Point Git Blocks play links to matthummel.com/git-blocks | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | just now |
+| | 🔀 [Opened PR #214](https://github.com/matthummel-pa/matthummel-theme/pull/214) — Project pages: TOCguide data, like/star, notes, contact | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 12m |
+| | ✅ [Merged PR #17](https://github.com/matthummel-pa/matthummel-pa/pull/17) — Enable GitHub Pages for Git Blocks | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 19m |
+| | ✅ [Merged PR #16](https://github.com/matthummel-pa/matthummel-pa/pull/16) — Refresh profile README with Git Blocks and custom activity | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 21m |
 | | ✅ [Merged PR #80](https://github.com/matthummel-pa/wp-acreline/pull/80) — 1.5.9: public settings, color chip, readable pills, screenshots | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 1h |
 | | ✅ [Merged PR #82](https://github.com/matthummel-pa/wp-acreline/pull/82) — 1.5.8: stop Vite JS from closing the menu and hiding Home | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 2h |
-| | ✅ [Merged PR #81](https://github.com/matthummel-pa/wp-acreline/pull/81) — 1.5.6: mobile menu and listing JS fail on first tap | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/tocguide/commit/56fcf25aab042b62623e32b73bc9ca412b253bd0) — Update links and CI badge in README.md | [`tocguide`](https://github.com/matthummel-pa/tocguide) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/tocguide/commit/56fcf25aab042b62623e32b73bc9ca412b253bd0) — Update links and CI badge in README.md | [`tocguide`](https://github.com/matthummel-pa/tocguide) | 10h |
 | | ⭐ [Starred](https://github.com/matthummel-pa/wp-walkridge) — matthummel-pa/wp-walkridge | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 2d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/wp-walkridge/commit/b4ec3e661e42d51c3ecfe26483e6ff5712060fb6) — Merge pull request #4 from matthummel-pa/cursor/theme-release-z… | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 2d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/516838228c5e76a080e2a4b970b4ae150ba8b2e5) — fix(cloud): declare WordPress ports for Simple Browser forwardi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
@@ -214,7 +214,7 @@ Pushes, pull requests, and the rest of the public trail. Open a row to jump into
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 19m |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 12m |
 | **[wp-acreline](https://github.com/matthummel-pa/wp-acreline)** — Acreline is a WordPress theme for farms, land, and historic homes — searchable listings… | PHP · ★0 | 1h |
 | **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★1 | 4h |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 8h |
