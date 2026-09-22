@@ -684,6 +684,115 @@ button:disabled {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.rank-line {
+  margin: -2px 0 0;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  flex: 0 0 auto;
+}
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-height: 2.8rem;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 9px;
+  padding: 3px 7px;
+  border-radius: 999px;
+  border: 1px solid rgba(231, 195, 90, 0.45);
+  color: #f0e2a8;
+  background: rgba(61, 46, 12, 0.55);
+  white-space: nowrap;
+}
+
+.skill-chip em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.fact-toast,
+.skill-unlock {
+  position: absolute;
+  left: 50%;
+  z-index: 8;
+  transform: translateX(-50%) translateY(8px);
+  width: min(420px, calc(100% - 24px));
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(79, 143, 212, 0.45);
+  background: rgba(8, 16, 28, 0.92);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  backdrop-filter: blur(8px);
+}
+
+.fact-toast {
+  bottom: 18px;
+}
+
+.skill-unlock {
+  top: 18px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  border-color: rgba(231, 195, 90, 0.5);
+}
+
+.fact-toast.is-visible,
+.skill-unlock.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.fact-kicker {
+  margin: 0 0 4px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.fact-body,
+.skill-unlock p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #d7e3f2;
+}
+
+.skill-unlock strong {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 13px;
+  color: #f0e2a8;
+}
+
+.skill-unlock-icon {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e7c35a, #8b6914);
+  color: #1a1204;
+  font-weight: 800;
+  font-size: 14px;
+}
 .power-row {
   display: flex;
   flex-wrap: nowrap;

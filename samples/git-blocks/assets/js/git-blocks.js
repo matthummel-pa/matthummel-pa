@@ -34,47 +34,296 @@
   const GEM_IDS = GEMS.map((g) => g.id);
   const META = Object.fromEntries(GEMS.map((g) => [g.id, g]));
 
-  const SPRINT_NAMES = [
-    "v0.1 scaffold",
-    "alpha spike",
-    "beta polish",
-    "RC hardening",
-    "GA launch",
-    "hotfix train",
-    "perf pass",
-    "a11y sprint",
-    "CI green week",
-    "docs drive",
-    "debt burn-down",
-    "ship-it Friday",
-    "on-call mode",
-    "feature freeze",
-    "postmortem",
-    "scale-up",
-    "edge-case hunt",
-    "type-strict",
-    "zero-bug",
-    "legendary",
+  /**
+   * Learning path: beginner → senior developer.
+   * Each level unlocks an RPG-style skill, themed cloud words, and lesson facts.
+   */
+  const CURRICULUM = [
+    {
+      id: "html-bones",
+      title: "HTML bones",
+      track: "Junior",
+      rank: "Intern",
+      skill: { id: "markup", name: "Markup Adept", icon: "</>", blurb: "Structure the page with semantic HTML." },
+      clouds: ["<!DOCTYPE>", "<html>", "<head>", "<body>", "<h1>", "<p>", "<a>", "semantic", "alt text", "section"],
+      facts: [
+        "HTML is the skeleton of every webpage — tags describe meaning, not looks.",
+        "Prefer semantic tags like <main> and <nav> over endless <div> soup.",
+        "Every image needs an alt attribute so assistive tech can describe it.",
+      ],
+    },
+    {
+      id: "css-paint",
+      title: "CSS paint",
+      track: "Junior",
+      rank: "Apprentice",
+      skill: { id: "styling", name: "Style Caster", icon: "#", blurb: "Paint the UI with selectors and the cascade." },
+      clouds: ["color", "font-size", "margin", "padding", "border", "class", "id", "cascade", ":hover", "specificity"],
+      facts: [
+        "CSS stands for Cascading Style Sheets — later rules can override earlier ones.",
+        "Classes (.btn) are reusable; IDs (#hero) should be unique on a page.",
+        "The box model is content → padding → border → margin.",
+      ],
+    },
+    {
+      id: "layout-lab",
+      title: "Layout lab",
+      track: "Junior",
+      rank: "Apprentice",
+      skill: { id: "layout", name: "Flex Sensei", icon: "▦", blurb: "Arrange space with Flexbox and Grid." },
+      clouds: ["display:flex", "justify-content", "align-items", "gap", "grid", "fr", "minmax()", "auto-fit", "container", "position"],
+      facts: [
+        "Flexbox is one-dimensional (row or column); Grid is two-dimensional.",
+        "gap replaces most margin hacks between siblings.",
+        "Use fr units in Grid to share leftover space fairly.",
+      ],
+    },
+    {
+      id: "responsive",
+      title: "Responsive craft",
+      track: "Junior",
+      rank: "Padawan",
+      skill: { id: "responsive", name: "Viewport Ranger", icon: "⧉", blurb: "Design fluid layouts for every screen." },
+      clouds: ["@media", "min-width", "clamp()", "rem", "vw", "mobile-first", "breakpoint", "fluid", "srcset", "aspect-ratio"],
+      facts: [
+        "Mobile-first CSS starts simple, then adds @media for larger screens.",
+        "rem sizes scale with the root font size — friendlier for a11y.",
+        "clamp(min, preferred, max) is a one-line fluid type trick.",
+      ],
+    },
+    {
+      id: "js-spark",
+      title: "JS spark",
+      track: "Junior",
+      rank: "Padawan",
+      skill: { id: "js-basics", name: "Script Starter", icon: "JS", blurb: "Speak the language of the browser." },
+      clouds: ["const", "let", "function", "=>", "array", "object", "if/else", "for", "typeof", "truthy"],
+      facts: [
+        "Prefer const; use let when a value must change. Avoid var in modern code.",
+        "=== checks value and type; == can coerce unexpectedly.",
+        "Arrays and objects are reference types — copying needs care.",
+      ],
+    },
+    {
+      id: "dom-events",
+      title: "DOM & events",
+      track: "Junior",
+      rank: "Contributor",
+      skill: { id: "dom", name: "DOM Whisperer", icon: "⚡", blurb: "Listen, update, and react to the page." },
+      clouds: ["querySelector", "addEventListener", "click", "preventDefault", "dataset", "classList", "textContent", "createElement", "bubbling", "delegation"],
+      facts: [
+        "The DOM is the live tree the browser builds from your HTML.",
+        "Event delegation: listen on a parent, handle many children.",
+        "prefer textContent over innerHTML when inserting plain text.",
+      ],
+    },
+    {
+      id: "git-flow",
+      title: "Git flow",
+      track: "Junior",
+      rank: "Contributor",
+      skill: { id: "git", name: "Commit Keeper", icon: "⌥", blurb: "Version history without fear." },
+      clouds: ["git init", "git status", "git add", "git commit", "branch", "merge", "pull", "push", "diff", "PR"],
+      facts: [
+        "Commits are snapshots — write messages that explain why, not only what.",
+        "Branches let you experiment without breaking main.",
+        "A pull request is a reviewable proposal to merge your work.",
+      ],
+    },
+    {
+      id: "tooling",
+      title: "Tooling & npm",
+      track: "Mid",
+      rank: "Engineer",
+      skill: { id: "tooling", name: "Package Pilot", icon: "npm", blurb: "Install, script, and ship with confidence." },
+      clouds: ["package.json", "npm install", "npx", "scripts", "devDep", "lockfile", "vite", "bundler", "lint", "format"],
+      facts: [
+        "package.json lists dependencies and npm scripts for your project.",
+        "Lockfiles keep installs reproducible across machines.",
+        "Separate dependencies (runtime) from devDependencies (build/test).",
+      ],
+    },
+    {
+      id: "a11y",
+      title: "Accessibility",
+      track: "Mid",
+      rank: "Engineer",
+      skill: { id: "a11y", name: "A11y Guardian", icon: "♿", blurb: "Build for every human, not every mouse." },
+      clouds: ["aria-label", "role", "focus", "tabindex", "contrast", "screen reader", "keyboard", "landmark", "WCAG", "skip link"],
+      facts: [
+        "If it works with keyboard alone, you’re halfway to solid a11y.",
+        "Color contrast isn’t decoration — it’s readability.",
+        "ARIA should enhance semantics, not replace good HTML.",
+      ],
+    },
+    {
+      id: "typescript",
+      title: "TypeScript",
+      track: "Mid",
+      rank: "Engineer",
+      skill: { id: "types", name: "Type Warden", icon: "TS", blurb: "Catch bugs before they ship." },
+      clouds: ["interface", "type", "generic", "union", "optional?", "strict", "unknown", "as const", "enum", "infer"],
+      facts: [
+        "TypeScript adds static types that erase to plain JavaScript at build time.",
+        "Start with strict mode — it teaches better habits early.",
+        "unknown is safer than any when you truly don’t know yet.",
+      ],
+    },
+    {
+      id: "react-ui",
+      title: "React components",
+      track: "Mid",
+      rank: "Builder",
+      skill: { id: "react", name: "Component Crafter", icon: "⚛", blurb: "Compose UI from reusable pieces." },
+      clouds: ["JSX", "props", "component", "children", "key", "Fragment", "composition", "pure", "render", "tree"],
+      facts: [
+        "Components are functions that return UI descriptions (JSX).",
+        "Props flow down; events bubble intent back up.",
+        "Stable keys help React reconcile lists without thrashing.",
+      ],
+    },
+    {
+      id: "hooks-state",
+      title: "State & hooks",
+      track: "Mid",
+      rank: "Builder",
+      skill: { id: "hooks", name: "State Alchemist", icon: "Σ", blurb: "Manage change without losing clarity." },
+      clouds: ["useState", "useEffect", "useRef", "useMemo", "dependency", "stale closure", "derived state", "reducer", "context", "batching"],
+      facts: [
+        "useState holds values that should re-render the UI when they change.",
+        "useEffect runs after paint — declare every dependency you read.",
+        "Prefer deriving values over mirroring props into state.",
+      ],
+    },
+    {
+      id: "php-wp",
+      title: "PHP & WordPress",
+      track: "Mid",
+      rank: "Specialist",
+      skill: { id: "wordpress", name: "CMS Artisan", icon: "W", blurb: "Server-render and extend WordPress safely." },
+      clouds: ["<?php", "functions.php", "hook", "add_action", "WP_Query", "the_content", "template", "nonce", "sanitize", "escape"],
+      facts: [
+        "WordPress plugins hang behavior on hooks (actions & filters).",
+        "Escape on output, sanitize on input — never trust raw request data.",
+        "Themes control presentation; plugins should own features.",
+      ],
+    },
+    {
+      id: "apis",
+      title: "APIs & data",
+      track: "Mid",
+      rank: "Specialist",
+      skill: { id: "api", name: "Fetch Ranger", icon: "{}", blurb: "Talk to services over HTTP with care." },
+      clouds: ["fetch", "JSON", "REST", "GET", "POST", "status", "async/await", "CORS", "GraphQL", "cache"],
+      facts: [
+        "HTTP status codes tell stories: 2xx ok, 4xx your fault, 5xx theirs.",
+        "async/await is syntactic sugar over Promises — still handle errors.",
+        "Never put secrets in frontend code; the browser is public.",
+      ],
+    },
+    {
+      id: "testing",
+      title: "Testing craft",
+      track: "Senior track",
+      rank: "Lead-path",
+      skill: { id: "testing", name: "Spec Sentinel", icon: "✓", blurb: "Prove behavior before users find bugs." },
+      clouds: ["unit test", "integration", "e2e", "assert", "mock", "fixture", "coverage", "regression", "CI", "TDD"],
+      facts: [
+        "Tests document intent — write the name like a sentence.",
+        "Mock at boundaries; don’t mock the thing you’re testing.",
+        "A red test that fails for the right reason is a gift.",
+      ],
+    },
+    {
+      id: "performance",
+      title: "Performance",
+      track: "Senior track",
+      rank: "Lead-path",
+      skill: { id: "perf", name: "Perf Pathfinder", icon: "⏱", blurb: "Ship fast experiences on slow networks." },
+      clouds: ["LCP", "CLS", "INP", "lazy-load", "code-split", "cache", "CDN", "bundle size", "waterfall", "profile"],
+      facts: [
+        "Core Web Vitals measure real user experience, not just lab scores.",
+        "The fastest request is the one you never make.",
+        "Measure before optimizing — profiles beat hunches.",
+      ],
+    },
+    {
+      id: "security",
+      title: "Web security",
+      track: "Senior track",
+      rank: "Guardian",
+      skill: { id: "security", name: "Threat Shield", icon: "⌁", blurb: "Defend users from the obvious attacks." },
+      clouds: ["XSS", "CSRF", "HTTPS", "CSP", "auth", "hash", "salt", "JWT", "owasp", "escape"],
+      facts: [
+        "XSS injects hostile scripts — treat all user input as untrusted.",
+        "HTTPS encrypts traffic so eavesdroppers can’t casually read it.",
+        "Least privilege: accounts and tokens should only do what they need.",
+      ],
+    },
+    {
+      id: "architecture",
+      title: "Architecture",
+      track: "Senior",
+      rank: "Architect",
+      skill: { id: "architecture", name: "System Cartographer", icon: "⬡", blurb: "Design boundaries that survive change." },
+      clouds: ["module", "boundary", "coupling", "cohesion", "ADR", "event", "queue", "idempotent", "SLA", "observability"],
+      facts: [
+        "Good architecture makes the common change easy and the rare change possible.",
+        "Coupling is the cost of a shortcut you’ll pay later.",
+        "Write ADRs for decisions your future team will debate.",
+      ],
+    },
+    {
+      id: "leadership",
+      title: "Tech leadership",
+      track: "Senior",
+      rank: "Staff-path",
+      skill: { id: "leadership", name: "Mentor Beacon", icon: "★", blurb: "Raise the team’s ceiling, not just your own." },
+      clouds: ["code review", "RFC", "pairing", "mentorship", "roadmap", "tradeoff", "scope", "comms", "incident", "retro"],
+      facts: [
+        "Senior means multiplying others — reviews, docs, and calm incidents.",
+        "Say the tradeoff out loud: speed, quality, or scope — pick two for now.",
+        "Retros without blame turn outages into institutional memory.",
+      ],
+    },
+    {
+      id: "senior",
+      title: "Senior developer",
+      track: "Senior",
+      rank: "Senior Dev",
+      skill: { id: "senior", name: "Senior Sigil", icon: "◆", blurb: "You ship judgment, not just features." },
+      clouds: ["ownership", "clarity", "judgment", "impact", "craft", "reliability", "empathy", "systems", "legacy", "ship"],
+      facts: [
+        "A senior developer reduces ambiguity for everyone around them.",
+        "You optimize for long-term leverage: tools, people, and platforms.",
+        "Graduation unlocked — keep learning; the web never stands still.",
+      ],
+    },
   ];
 
   const ACHIEVEMENTS = [
-    { id: "first-match", label: "First match", test: (s) => s.matches >= 1 },
+    { id: "first-match", label: "First commit", test: (s) => s.matches >= 1 },
     { id: "cascade-3", label: "Cascade ×3", test: (s) => s.maxChain >= 3 },
     { id: "combo-5", label: "Combo ×5", test: (s) => s.maxCombo >= 5 },
-    { id: "clear-50", label: "50 gems", test: (s) => s.cleared >= 50 },
-    { id: "sprint-5", label: "Sprint 5", test: (s) => s.level >= 5 },
+    { id: "loc-500", label: "500 LOC", test: (s) => s.linesOfCode >= 500 },
+    { id: "lesson-5", label: "Lesson 5", test: (s) => s.level >= 5 },
     { id: "four-line", label: "Quad match", test: (s) => s.quads >= 1 },
-    { id: "shuffle", label: "Reshuffle", test: (s) => s.shufflesUsed >= 1 },
-    { id: "hint-pro", label: "Hint used", test: (s) => s.hintsUsed >= 1 },
+    { id: "skill-3", label: "3 skills", test: (s) => Object.keys(s.skills || {}).length >= 3 },
+    { id: "senior-path", label: "Senior path", test: (s) => s.level >= CURRICULUM.length },
   ];
 
+  function lessonFor(level) {
+    const idx = Math.max(0, Math.min(CURRICULUM.length - 1, (level || 1) - 1));
+    return CURRICULUM[idx];
+  }
+
   function sprintName(level) {
-    const idx = Math.max(0, Math.min(SPRINT_NAMES.length - 1, (level || 1) - 1));
-    return SPRINT_NAMES[idx];
+    return lessonFor(level).title;
   }
 
   function goalForLevel(level) {
-    return 800 + (Math.max(1, level) - 1) * 450;
+    // Lines-of-code goals grow with seniority.
+    return 600 + (Math.max(1, level) - 1) * 350;
   }
 
   function movesForLevel(level) {
@@ -82,8 +331,15 @@
   }
 
   function gemKindsForLevel(level) {
-    // Unlock variety gradually: 6 → 10
     return Math.min(GEM_IDS.length, 5 + Math.min(5, Math.floor((level - 1) / 2) + 1));
+  }
+
+  function pickFact(level, random) {
+    const lesson = lessonFor(level);
+    const facts = lesson.facts || [];
+    if (!facts.length) return "Keep shipping — every match writes more of your story.";
+    const rnd = random || Math.random;
+    return facts[Math.floor(rnd() * facts.length)];
   }
 
   function pickGemId(random, level) {
@@ -305,7 +561,8 @@
   }
 
   function scoreMatch(cellCount, chain, level) {
-    const base = cellCount * 40;
+    // Each matched gem ≈ lines of code written toward the lesson goal.
+    const base = cellCount * 28;
     const chainBonus = 1 + (chain - 1) * 0.55;
     return Math.round(base * chainBonus * (1 + (level - 1) * 0.08));
   }
@@ -316,7 +573,8 @@
     const now = opts.now || (() => Date.now());
     const state = {
       board: fillBoardNoMatches(random, 1),
-      score: 0,
+      linesOfCode: 0,
+      score: 0, // alias kept for older callers / high-score storage
       level: 1,
       levelScore: 0,
       goal: goalForLevel(1),
@@ -332,15 +590,34 @@
       hintsUsed: 0,
       shufflesUsed: 0,
       achievements: {},
+      skills: {},
+      lastFact: null,
+      pendingFact: null,
+      skillUnlock: null,
       commitLog: [],
       fx: [],
       status: "ready",
-      message: "Swap adjacent gems — match 3+ of the same logo.",
+      message: "Lesson 1 — HTML bones. Swap gems to write your first lines of code.",
       selected: null,
       hint: null,
       levelFlash: 0,
       busy: false,
     };
+
+    // Unlock lesson 1 skill at start of play path
+    function grantLessonSkill(level) {
+      const lesson = lessonFor(level);
+      if (!lesson.skill) return null;
+      if (state.skills[lesson.skill.id]) return null;
+      state.skills[lesson.skill.id] = {
+        ...lesson.skill,
+        level,
+        unlockedAt: now(),
+      };
+      state.skillUnlock = { ...state.skills[lesson.skill.id], lesson: lesson.title };
+      pushLog(`skill unlocked: ${lesson.skill.name}`);
+      return state.skills[lesson.skill.id];
+    }
 
     function pushLog(entry) {
       state.commitLog.unshift(entry);
@@ -363,23 +640,35 @@
     function applyWaves(waves) {
       if (!waves.length) {
         state.combo = 0;
-        return { sounds: [] };
+        return { sounds: [], fact: null };
       }
       const sounds = [];
+      let fact = null;
       waves.forEach((wave) => {
         state.combo += 1;
         state.maxCombo = Math.max(state.maxCombo, state.combo);
         state.maxChain = Math.max(state.maxChain, wave.chain);
         state.matches += 1;
         state.cleared += wave.cells.length;
-        const pts = scoreMatch(wave.cells.length, wave.chain, state.level);
-        state.score += pts;
-        state.levelScore += pts;
+        const loc = scoreMatch(wave.cells.length, wave.chain, state.level);
+        state.linesOfCode += loc;
+        state.score = state.linesOfCode;
+        state.levelScore += loc;
         wave.groups.forEach((g) => {
           if (g.cells.length >= 4) state.quads += 1;
         });
         const label = (META[wave.cells[0] && wave.cells[0].kind] || {}).label || "gem";
-        pushLog(`match ${label} ×${wave.cells.length} · chain ${wave.chain} · +${pts}`);
+        pushLog(`+${loc} LOC · ${label} ×${wave.cells.length} · chain ${wave.chain}`);
+        fact = pickFact(state.level, random);
+        state.lastFact = fact;
+        state.pendingFact = {
+          fact,
+          lesson: lessonFor(state.level).title,
+          track: lessonFor(state.level).track,
+          loc,
+          chain: wave.chain,
+          at: now(),
+        };
         state.fx.push({
           id: `match-${now()}-${wave.chain}`,
           at: now(),
@@ -387,30 +676,42 @@
           chain: wave.chain,
           cells: wave.cells,
           falls: wave.falls || [],
+          fact,
         });
         sounds.push(wave.chain >= 3 ? "deploy" : wave.cells.length >= 4 ? "squash" : "clear");
       });
       state.message =
         waves.length > 1
-          ? `Cascade ×${waves.length} — pipeline humming.`
-          : `Matched ${waves[0].cells.length} gems.`;
+          ? `Cascade ×${waves.length} — ${state.pendingFact ? state.pendingFact.loc : 0}+ LOC shipped.`
+          : `Wrote code — ${waves[0].cells.length} gems cleared.`;
+      let leveled = false;
       if (state.levelScore >= state.goal) {
-        state.level += 1;
-        state.levelScore = 0;
-        state.goal = goalForLevel(state.level);
-        state.moves += Math.min(8, 4 + Math.floor(state.level / 3));
-        state.hints = Math.min(3, state.hints + 1);
-        state.shuffles = Math.min(3, state.shuffles + 1);
-        state.levelFlash = now();
-        state.message = `Sprint ${state.level}: ${sprintName(state.level)}`;
-        pushLog(`sprint → ${sprintName(state.level)}`);
-        sounds.push("level");
-        // Refill board for new gem variety
-        state.board = fillBoardNoMatches(random, state.level);
+        if (state.level >= CURRICULUM.length) {
+          state.status = "over";
+          state.message = "Senior developer unlocked — you finished the path.";
+          grantLessonSkill(state.level);
+          sounds.push("level");
+          leveled = true;
+        } else {
+          state.level += 1;
+          state.levelScore = 0;
+          state.goal = goalForLevel(state.level);
+          state.moves += Math.min(8, 4 + Math.floor(state.level / 3));
+          state.hints = Math.min(3, state.hints + 1);
+          state.shuffles = Math.min(3, state.shuffles + 1);
+          state.levelFlash = now();
+          const lesson = lessonFor(state.level);
+          state.message = `Lesson ${state.level}: ${lesson.title} (${lesson.rank})`;
+          pushLog(`lesson → ${lesson.title}`);
+          grantLessonSkill(state.level);
+          sounds.push("level");
+          state.board = fillBoardNoMatches(random, state.level);
+          leveled = true;
+        }
       }
       const badges = unlockAchievements();
       if (badges.length) sounds.push("badge");
-      return { sounds, badges };
+      return { sounds, badges, fact, leveled };
     }
 
     function afterResolveCheck() {
@@ -509,8 +810,10 @@
       if (state.status === "playing") return;
       if (state.status === "over") reset();
       state.status = "playing";
-      state.message = `Sprint ${state.level}: ${sprintName(state.level)} — match 3+ logos.`;
+      const lesson = lessonFor(state.level);
+      state.message = `Lesson ${state.level}: ${lesson.title} — write ${state.goal} LOC to advance.`;
       state.levelFlash = now();
+      grantLessonSkill(state.level);
     }
 
     function pause() {
@@ -527,6 +830,7 @@
 
     function reset() {
       state.board = fillBoardNoMatches(random, 1);
+      state.linesOfCode = 0;
       state.score = 0;
       state.level = 1;
       state.levelScore = 0;
@@ -543,10 +847,14 @@
       state.hintsUsed = 0;
       state.shufflesUsed = 0;
       state.achievements = {};
+      state.skills = {};
+      state.lastFact = null;
+      state.pendingFact = null;
+      state.skillUnlock = null;
       state.commitLog = [];
       state.fx = [];
       state.status = "ready";
-      state.message = "Swap adjacent gems — match 3+ of the same logo.";
+      state.message = "Lesson 1 — HTML bones. Swap gems to write your first lines of code.";
       state.selected = null;
       state.hint = null;
       state.levelFlash = 0;
@@ -559,10 +867,24 @@
       return fresh;
     }
 
+    function consumeFact() {
+      const fact = state.pendingFact;
+      state.pendingFact = null;
+      return fact;
+    }
+
+    function consumeSkillUnlock() {
+      const skill = state.skillUnlock;
+      state.skillUnlock = null;
+      return skill;
+    }
+
     function snapshot() {
+      const lesson = lessonFor(state.level);
       return {
         board: cloneBoard(state.board),
-        score: state.score,
+        linesOfCode: state.linesOfCode,
+        score: state.linesOfCode,
         level: state.level,
         levelScore: state.levelScore,
         goal: state.goal,
@@ -575,7 +897,15 @@
         quads: state.quads,
         hints: state.hints,
         shuffles: state.shuffles,
-        sprint: sprintName(state.level),
+        sprint: lesson.title,
+        lessonTitle: lesson.title,
+        lessonTrack: lesson.track,
+        lessonRank: lesson.rank,
+        lessonSkill: lesson.skill,
+        skills: Object.values(state.skills),
+        lastFact: state.lastFact,
+        pendingFact: state.pendingFact,
+        skillUnlock: state.skillUnlock,
         commitLog: state.commitLog.slice(),
         achievements: Object.keys(state.achievements),
         status: state.status,
@@ -586,6 +916,7 @@
           : null,
         levelFlash: state.levelFlash,
         busy: state.busy,
+        curriculumLength: CURRICULUM.length,
       };
     }
 
@@ -602,13 +933,18 @@
       hint: doHint,
       shuffle: doShuffle,
       consumeFx,
+      consumeFact,
+      consumeSkillUnlock,
       snapshot,
       findMatches: () => findMatches(state.board),
       get status() {
         return state.status;
       },
       get score() {
-        return state.score;
+        return state.linesOfCode;
+      },
+      get linesOfCode() {
+        return state.linesOfCode;
       },
     };
   }
@@ -1309,9 +1645,23 @@
     return "orbit";
   }
 
-  function mountDevClouds(host, pattern) {
+  function mountDevClouds(host, pattern, level) {
     if (!host) return;
-    const tokens = WordGenerator.generateCloud(28);
+    const lesson = lessonFor(level || 1);
+    const themed = (lesson.clouds || []).map((text) => ({
+      text,
+      lang: lesson.id.includes("css") || lesson.id.includes("layout") || lesson.id.includes("responsive")
+        ? "css"
+        : lesson.id.includes("php") || lesson.id.includes("wp")
+          ? "wp"
+          : lesson.id.includes("react") || lesson.id.includes("hooks")
+            ? "react"
+            : lesson.id.includes("js") || lesson.id.includes("dom") || lesson.id.includes("typescript")
+              ? "dev"
+              : "dev",
+    }));
+    const filler = WordGenerator.generateCloud(Math.max(8, 28 - themed.length));
+    const tokens = themed.concat(filler).slice(0, 28);
     host.className = `dev-clouds pattern-${pattern || "drift"}`;
     host.setAttribute("data-dev-clouds", "");
     host.setAttribute("aria-hidden", "true");
@@ -1333,13 +1683,20 @@
     });
   }
 
-  function refreshDevCloudText(doc) {
+  function refreshDevCloudText(doc, level) {
     const rootDoc = doc || (typeof document !== "undefined" ? document : null);
     if (!rootDoc) return;
-    rootDoc.querySelectorAll("[data-dev-clouds] .dev-cloud").forEach((el) => {
-      const token = WordGenerator.nextCloudToken();
-      el.textContent = token.text;
-      el.dataset.lang = token.lang || "dev";
+    const lesson = lessonFor(level || 1);
+    const pool = (lesson.clouds || []).slice();
+    rootDoc.querySelectorAll("[data-dev-clouds] .dev-cloud").forEach((el, i) => {
+      if (pool.length && Math.random() < 0.65) {
+        el.textContent = pool[i % pool.length];
+        el.dataset.lang = "dev";
+      } else {
+        const token = WordGenerator.nextCloudToken();
+        el.textContent = token.text;
+        el.dataset.lang = token.lang || "dev";
+      }
     });
   }
 
@@ -1379,7 +1736,7 @@
         embed.style.setProperty("--gb-backdrop", value);
         embed.dataset.gbPattern = pattern;
       }
-      mountDevClouds(ensureDevCloudHost(rootEl), pattern);
+      mountDevClouds(ensureDevCloudHost(rootEl), pattern, (rootEl && rootEl._gbLevel) || 1);
     }
   }
 
@@ -1471,9 +1828,10 @@
     applyBackground(prefs.background, root);
     music.setVolume(prefs.music.volume || 0.35);
     root.classList.toggle("gfx-simple", prefs.graphics === "simple");
+    root._gbLevel = 1;
 
     if (!prefersReducedMotion()) {
-      window.setInterval(() => refreshDevCloudText(root.ownerDocument), 4200);
+      window.setInterval(() => refreshDevCloudText(root.ownerDocument, root._gbLevel || 1), 4200);
     }
 
     function beep(kind) {
@@ -1483,6 +1841,76 @@
 
     function announce(text) {
       if (liveEl) liveEl.textContent = text;
+    }
+
+    function showFactToast(payload) {
+      if (!payload) return;
+      let toast = root.querySelector("[data-fact-toast]");
+      if (!toast) {
+        toast = document.createElement("div");
+        toast.className = "fact-toast";
+        toast.setAttribute("data-fact-toast", "");
+        toast.setAttribute("role", "status");
+        const boardWrap = root.querySelector(".board-wrap") || root;
+        boardWrap.appendChild(toast);
+      }
+      toast.innerHTML = "";
+      const kicker = document.createElement("p");
+      kicker.className = "fact-kicker";
+      kicker.textContent = `${payload.track || "Lesson"} · ${payload.lesson || ""} · +${payload.loc || 0} LOC`;
+      const body = document.createElement("p");
+      body.className = "fact-body";
+      body.textContent = payload.fact || "";
+      toast.append(kicker, body);
+      toast.classList.add("is-visible");
+      window.clearTimeout(showFactToast._timer);
+      showFactToast._timer = window.setTimeout(() => toast.classList.remove("is-visible"), 4200);
+    }
+
+    function showSkillUnlock(skill) {
+      if (!skill) return;
+      let banner = root.querySelector("[data-skill-unlock]");
+      if (!banner) {
+        banner = document.createElement("div");
+        banner.className = "skill-unlock";
+        banner.setAttribute("data-skill-unlock", "");
+        banner.setAttribute("role", "status");
+        const boardWrap = root.querySelector(".board-wrap") || root;
+        boardWrap.appendChild(banner);
+      }
+      banner.innerHTML = "";
+      const icon = document.createElement("span");
+      icon.className = "skill-unlock-icon";
+      icon.textContent = skill.icon || "★";
+      const copy = document.createElement("div");
+      const title = document.createElement("strong");
+      title.textContent = `Skill unlocked — ${skill.name}`;
+      const blurb = document.createElement("p");
+      blurb.textContent = skill.blurb || skill.lesson || "";
+      copy.append(title, blurb);
+      banner.append(icon, copy);
+      banner.classList.add("is-visible");
+      window.clearTimeout(showSkillUnlock._timer);
+      showSkillUnlock._timer = window.setTimeout(() => banner.classList.remove("is-visible"), 3800);
+    }
+
+    function paintSkills(skills) {
+      const host = root.querySelector("[data-skills]");
+      if (!host) return;
+      host.replaceChildren();
+      (skills || []).forEach((skill) => {
+        const chip = document.createElement("span");
+        chip.className = "skill-chip";
+        chip.title = skill.blurb || skill.name;
+        chip.innerHTML = `<em>${skill.icon || "★"}</em> ${skill.name}`;
+        host.appendChild(chip);
+      });
+    }
+
+    function syncLessonClouds(level) {
+      root._gbLevel = level || 1;
+      const pattern = patternForBackground(prefs.background);
+      mountDevClouds(ensureDevCloudHost(root), pattern, root._gbLevel);
     }
 
     function spawnBurst(cells, cellSize) {
@@ -1650,19 +2078,35 @@
       }
 
       // HUD fields
-      if (scoreEl) scoreEl.textContent = String(snap.score);
+      if (scoreEl) scoreEl.textContent = String(snap.linesOfCode != null ? snap.linesOfCode : snap.score);
       if (linesEl) linesEl.textContent = String(snap.cleared);
       if (levelEl) levelEl.textContent = String(snap.level);
-      if (highEl) highEl.textContent = String(Math.max(high, snap.score));
+      if (highEl) highEl.textContent = String(Math.max(high, snap.linesOfCode != null ? snap.linesOfCode : snap.score));
       if (messageEl) messageEl.textContent = snap.message;
       const comboEl = root.querySelector("[data-combo]");
       const movesEl = root.querySelector("[data-moves]");
       const goalEl = root.querySelector("[data-goal]");
       const sprintEl = root.querySelector("[data-sprint]");
+      const rankEl = root.querySelector("[data-rank]");
       if (comboEl) comboEl.textContent = String(snap.combo);
       if (movesEl) movesEl.textContent = String(snap.moves);
-      if (goalEl) goalEl.textContent = `${snap.levelScore}/${snap.goal}`;
-      if (sprintEl) sprintEl.textContent = snap.sprint || "";
+      if (goalEl) goalEl.textContent = `${snap.levelScore}/${snap.goal} LOC`;
+      if (sprintEl) {
+        sprintEl.textContent = snap.lessonTitle
+          ? `L${snap.level} · ${snap.lessonTitle}`
+          : snap.sprint || "";
+      }
+      if (rankEl) rankEl.textContent = snap.lessonRank ? `${snap.lessonTrack} · ${snap.lessonRank}` : "";
+
+      const fact = typeof game.consumeFact === "function" ? game.consumeFact() : null;
+      if (fact) showFactToast(fact);
+      const skill = typeof game.consumeSkillUnlock === "function" ? game.consumeSkillUnlock() : null;
+      if (skill) {
+        showSkillUnlock(skill);
+        beep("badge");
+      }
+      paintSkills(snap.skills);
+      if (root._gbLevel !== snap.level) syncLessonClouds(snap.level);
 
       const hintBtn = root.querySelector("[data-hint]");
       const shuffleBtn = root.querySelector("[data-shuffle]");
@@ -1706,7 +2150,7 @@
       }
 
       const flashAge = snap.levelFlash ? Date.now() - snap.levelFlash : 9999;
-      const showLevelBanner = snap.status === "playing" && flashAge < 900;
+      const showLevelBanner = snap.status === "playing" && flashAge < 1100;
       const customizing = panel && !panel.hidden;
       if (overlay && overlayTitle && overlayBody) {
         const show = !customizing && (snap.status !== "playing" || showLevelBanner);
@@ -1714,19 +2158,21 @@
         overlay.classList.toggle("is-clickable", !customizing && snap.status !== "playing");
         if (overlayLevel) {
           overlayLevel.hidden = !(showLevelBanner || snap.status === "ready");
-          overlayLevel.textContent = snap.sprint || `Sprint ${snap.level}`;
+          overlayLevel.textContent = snap.lessonTitle || snap.sprint || `Lesson ${snap.level}`;
         }
         if (showLevelBanner && snap.status === "playing") {
-          overlayTitle.textContent = "New sprint";
-          overlayBody.textContent = `${snap.sprint}. More logo gems unlock — keep matching 3+.`;
+          overlayTitle.textContent = `Skill path · ${snap.lessonRank || "Next"}`;
+          overlayBody.textContent = `${snap.lessonTitle}. ${
+            (snap.lessonSkill && snap.lessonSkill.blurb) || "Keep matching to write more lines of code."
+          }`;
           if (playBtn) playBtn.hidden = true;
         } else if (snap.status === "ready") {
           overlayTitle.textContent = "Git Blocks";
           overlayBody.textContent =
-            "Jewel-style match-3 — swap adjacent web-dev logo gems. Match 3+ in a row or column. Cascades chain for big scores.";
+            "Learn web development from HTML to senior craft. Match shiny logo gems to write lines of code, unlock RPG skills, and graduate.";
           if (playBtn) {
             playBtn.hidden = false;
-            playBtn.textContent = "Start sprint";
+            playBtn.textContent = "Start learning";
           }
         } else if (snap.status === "paused") {
           overlayTitle.textContent = "Paused";
@@ -1736,19 +2182,23 @@
             playBtn.textContent = "Resume";
           }
         } else if (snap.status === "over") {
-          overlayTitle.textContent = "Sprint ended";
-          overlayBody.textContent = `Score ${snap.score} · ${snap.cleared} gems cleared · ${snap.matches} matches.`;
+          const graduated = snap.level >= (snap.curriculumLength || 20);
+          overlayTitle.textContent = graduated ? "Senior developer" : "Lesson paused";
+          overlayBody.textContent = graduated
+            ? `${snap.linesOfCode} LOC written · ${snap.skills.length} skills unlocked. You finished the path.`
+            : `${snap.linesOfCode} LOC · ${snap.cleared} gems · rebase to continue studying.`;
           if (playBtn) {
             playBtn.hidden = false;
-            playBtn.textContent = "Rebase";
+            playBtn.textContent = graduated ? "New career" : "Rebase";
           }
         }
       }
 
       if (snap.level !== lastLevelShown && snap.status === "playing") {
         lastLevelShown = snap.level;
-        announce(`Sprint ${snap.level}: ${snap.sprint}`);
+        announce(`Lesson ${snap.level}: ${snap.lessonTitle}`);
         beep("level");
+        syncLessonClouds(snap.level);
       }
       if (pauseBtn) {
         pauseBtn.textContent = snap.status === "paused" ? "Resume" : "Pause";
@@ -2182,12 +2632,15 @@
     GEMS,
     GEM_IDS,
     META,
+    CURRICULUM,
     ACHIEVEMENTS,
     BG_PRESETS,
     MUSIC_TRACKS,
     DEV_CLOUD_WORDS,
     WordGenerator,
+    lessonFor,
     sprintName,
+    pickFact,
     goalForLevel,
     movesForLevel,
     findMatches,

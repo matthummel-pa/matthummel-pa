@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Git Blocks — Matt Hummel</title>
-  <meta name="description" content="Git Blocks — a jewel-style match-3 of shiny web-dev logo gems. Swap, match 3+, cascade the pipeline." />
+  <meta name="description" content="Git Blocks — learn web development from HTML to senior craft. Match shiny logo gems, write lines of code, unlock RPG skills." />
   <link rel="canonical" href="https://matthummel.com/git-blocks/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +15,7 @@
   <main class="page">
     <p class="page-kicker">Mini player · matthummel.com</p>
     <h1>Git Blocks</h1>
-    <p class="page-lead">Jewel-style match-3 — swap adjacent web-dev logo gems, match 3+, and ride cascade pipelines.</p>
+    <p class="page-lead">Match logo gems to write lines of code — learn web development from the beginning to senior developer.</p>
 
     <section class="player" data-git-blocks aria-label="Git Blocks gem matching game">
       <div class="player-chrome">
@@ -35,41 +35,43 @@
           <canvas data-board width="480" height="480" tabindex="0" role="application" aria-label="Git Blocks gem board. Click a gem, then an adjacent gem to swap. Drag between neighbors also works."></canvas>
           <div class="overlay is-clickable" data-overlay>
             <div>
-              <p class="overlay-level" data-overlay-level hidden>Level 1</p>
+              <p class="overlay-level" data-overlay-level hidden>Lesson 1</p>
               <h2 data-overlay-title>Git Blocks</h2>
-              <p data-overlay-body>Swap adjacent web-dev logo gems. Match 3+ in a row or column. Cascades chain for big scores.</p>
-              <button type="button" data-play>Start sprint</button>
+              <p data-overlay-body>Learn web development from HTML to senior craft. Match gems to write lines of code and unlock skills.</p>
+              <button type="button" data-play>Start learning</button>
             </div>
           </div>
         </div>
         <aside class="side">
           <div class="stats-row">
-            <div class="stat"><span>Score</span><strong data-score>0</strong></div>
+            <div class="stat"><span>Lines of code</span><strong data-score>0</strong></div>
             <div class="stat"><span>Cleared</span><strong data-lines>0</strong></div>
-            <div class="stat"><span>Sprint</span><strong data-level>1</strong></div>
-            <div class="stat"><span>Best</span><strong data-high>0</strong></div>
+            <div class="stat"><span>Lesson</span><strong data-level>1</strong></div>
+            <div class="stat"><span>Best LOC</span><strong data-high>0</strong></div>
           </div>
           <div class="stats-row compact">
             <div class="stat"><span>Moves</span><strong data-moves>32</strong></div>
             <div class="stat"><span>Combo</span><strong data-combo>0</strong></div>
-            <div class="stat"><span>Goal</span><strong data-goal>0/800</strong></div>
+            <div class="stat"><span>Goal</span><strong data-goal>0/600 LOC</strong></div>
           </div>
-          <p class="sprint-name" data-sprint>v0.1 scaffold</p>
-          <div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Sprint goal">
+          <p class="sprint-name" data-sprint>L1 · HTML bones</p>
+          <p class="rank-line" data-rank>Junior · Intern</p>
+          <div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Lesson LOC goal">
             <span data-progress></span>
           </div>
-          <p class="message" data-message>Swap adjacent gems — match 3+ logos.</p>
+          <p class="message" data-message>Match gems to write lines of code and learn.</p>
           <div class="power-row">
             <button type="button" class="ghost" data-hint>Hint (2)</button>
             <button type="button" class="ghost" data-shuffle>Shuffle (2)</button>
           </div>
+          <div class="skills-row" data-skills aria-label="Unlocked skills"></div>
           <div class="gem-legend" data-gem-legend aria-label="Gem logos"></div>
           <ul class="commit-log" data-commit-log aria-label="Match log"></ul>
           <div class="badge-row" data-badges aria-label="Achievements"></div>
           <div class="player-dock">
-            <span class="controls-label">How to play</span>
+            <span class="controls-label">Path to senior</span>
             <p class="keys" data-keys-help>
-              Click a gem, then an adjacent gem to swap · or drag between neighbors · H hint · match 3+
+              Match 3+ · write LOC · unlock skills · click/drag to swap · H hint
             </p>
           </div>
         </aside>
@@ -165,7 +167,7 @@
       </div>
     </section>
 
-    <p class="page-note">GitHub READMEs cannot run JavaScript, so this cabinet lives here. High score stays in this browser.</p>
+    <p class="page-note">GitHub READMEs cannot run JavaScript, so this cabinet lives here. Best LOC stays in this browser.</p>
     <p class="links">
       <a href="https://github.com/matthummel-pa">GitHub</a>
       <a href="https://matthummel.com">matthummel.com</a>

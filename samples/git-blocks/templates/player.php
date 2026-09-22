@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 	<main class="page">
 		<p class="page-kicker"><?php esc_html_e('Mini player · Git Blocks', 'git-blocks'); ?></p>
 		<h1><?php esc_html_e('Git Blocks', 'git-blocks'); ?></h1>
-		<p class="page-lead"><?php esc_html_e('Jewel-style match-3 — swap adjacent web-dev logo gems, match 3+, and ride cascade pipelines.', 'git-blocks'); ?></p>
+		<p class="page-lead"><?php esc_html_e('Match logo gems to write lines of code — learn web development from the beginning to senior developer.', 'git-blocks'); ?></p>
 
 		<section class="player" data-git-blocks aria-label="<?php esc_attr_e('Git Blocks gem matching game', 'git-blocks'); ?>">
 			<div class="player-chrome">
@@ -38,40 +38,42 @@ if (! defined('ABSPATH')) {
 					<canvas data-board width="480" height="480" tabindex="0" role="application" aria-label="<?php esc_attr_e('Git Blocks gem board. Click a gem, then an adjacent gem to swap.', 'git-blocks'); ?>"></canvas>
 					<div class="overlay is-clickable" data-overlay>
 						<div>
-							<p class="overlay-level" data-overlay-level hidden><?php esc_html_e('Level 1', 'git-blocks'); ?></p>
+							<p class="overlay-level" data-overlay-level hidden><?php esc_html_e('Lesson 1', 'git-blocks'); ?></p>
 							<h2 data-overlay-title><?php esc_html_e('Git Blocks', 'git-blocks'); ?></h2>
-							<p data-overlay-body><?php esc_html_e('Swap adjacent web-dev logo gems. Match 3+ in a row or column. Cascades chain for big scores.', 'git-blocks'); ?></p>
-							<button type="button" data-play><?php esc_html_e('Start sprint', 'git-blocks'); ?></button>
+							<p data-overlay-body><?php esc_html_e('Learn web development from HTML to senior craft. Match gems to write lines of code and unlock skills.', 'git-blocks'); ?></p>
+							<button type="button" data-play><?php esc_html_e('Start learning', 'git-blocks'); ?></button>
 						</div>
 					</div>
 				</div>
 				<aside class="side">
 					<div class="stats-row">
-						<div class="stat"><span><?php esc_html_e('Score', 'git-blocks'); ?></span><strong data-score>0</strong></div>
+						<div class="stat"><span><?php esc_html_e('Lines of code', 'git-blocks'); ?></span><strong data-score>0</strong></div>
 						<div class="stat"><span><?php esc_html_e('Cleared', 'git-blocks'); ?></span><strong data-lines>0</strong></div>
-						<div class="stat"><span><?php esc_html_e('Sprint', 'git-blocks'); ?></span><strong data-level>1</strong></div>
-						<div class="stat"><span><?php esc_html_e('Best', 'git-blocks'); ?></span><strong data-high>0</strong></div>
+						<div class="stat"><span><?php esc_html_e('Lesson', 'git-blocks'); ?></span><strong data-level>1</strong></div>
+						<div class="stat"><span><?php esc_html_e('Best LOC', 'git-blocks'); ?></span><strong data-high>0</strong></div>
 					</div>
 					<div class="stats-row compact">
 						<div class="stat"><span><?php esc_html_e('Moves', 'git-blocks'); ?></span><strong data-moves>32</strong></div>
 						<div class="stat"><span><?php esc_html_e('Combo', 'git-blocks'); ?></span><strong data-combo>0</strong></div>
-						<div class="stat"><span><?php esc_html_e('Goal', 'git-blocks'); ?></span><strong data-goal>0/800</strong></div>
+						<div class="stat"><span><?php esc_html_e('Goal', 'git-blocks'); ?></span><strong data-goal>0/600 LOC</strong></div>
 					</div>
-					<p class="sprint-name" data-sprint>v0.1 scaffold</p>
-					<div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="<?php esc_attr_e('Sprint goal', 'git-blocks'); ?>">
+					<p class="sprint-name" data-sprint>L1 · HTML bones</p>
+					<p class="rank-line" data-rank>Junior · Intern</p>
+					<div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="<?php esc_attr_e('Lesson LOC goal', 'git-blocks'); ?>">
 						<span data-progress></span>
 					</div>
-					<p class="message" data-message><?php esc_html_e('Swap adjacent gems — match 3+ logos.', 'git-blocks'); ?></p>
+					<p class="message" data-message><?php esc_html_e('Match gems to write lines of code and learn.', 'git-blocks'); ?></p>
 					<div class="power-row">
 						<button type="button" class="ghost" data-hint><?php esc_html_e('Hint (2)', 'git-blocks'); ?></button>
 						<button type="button" class="ghost" data-shuffle><?php esc_html_e('Shuffle (2)', 'git-blocks'); ?></button>
 					</div>
+					<div class="skills-row" data-skills aria-label="<?php esc_attr_e('Unlocked skills', 'git-blocks'); ?>"></div>
 					<div class="gem-legend" data-gem-legend aria-label="<?php esc_attr_e('Gem logos', 'git-blocks'); ?>"></div>
 					<ul class="commit-log" data-commit-log aria-label="<?php esc_attr_e('Match log', 'git-blocks'); ?>"></ul>
 					<div class="badge-row" data-badges aria-label="<?php esc_attr_e('Achievements', 'git-blocks'); ?>"></div>
 					<div class="player-dock">
-						<span class="controls-label"><?php esc_html_e('How to play', 'git-blocks'); ?></span>
-						<p class="keys" data-keys-help><?php esc_html_e('Click a gem, then an adjacent gem to swap · or drag between neighbors · H hint · match 3+', 'git-blocks'); ?></p>
+						<span class="controls-label"><?php esc_html_e('Path to senior', 'git-blocks'); ?></span>
+						<p class="keys" data-keys-help><?php esc_html_e('Match 3+ · write LOC · unlock skills · click/drag to swap · H hint', 'git-blocks'); ?></p>
 					</div>
 				</aside>
 				<div class="customize-panel" data-customize-panel hidden>

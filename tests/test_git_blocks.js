@@ -15,6 +15,44 @@ test("ships ten web-dev logo gems", () => {
   });
 });
 
+test("curriculum runs beginner to senior with skills and facts", () => {
+  assert.ok(engine.CURRICULUM.length >= 15);
+  assert.equal(engine.lessonFor(1).id, "html-bones");
+  assert.equal(engine.lessonFor(engine.CURRICULUM.length).id, "senior");
+  engine.CURRICULUM.forEach((lesson) => {
+    assert.ok(lesson.title);
+    assert.ok(lesson.skill && lesson.skill.name);
+    assert.ok(lesson.clouds.length >= 5);
+    assert.ok(lesson.facts.length >= 2);
+  });
+  const fact = engine.pickFact(1, () => 0);
+  assert.match(fact, /HTML|html|skeleton|semantic|alt/i);
+});
+
+test("matches award lines of code not abstract score", () => {
+  let i = 0;
+  const game = engine.createGame({
+    random: () => {
+      i += 1;
+      return (i % 97) / 97;
+    },
+  });
+  game.play();
+  let hint = engine.findHint(game.snapshot().board);
+  for (let n = 0; n < 8 && !hint; n += 1) {
+    game.shuffle(true);
+    hint = engine.findHint(game.snapshot().board);
+  }
+  assert.ok(hint);
+  const result = game.trySwap(hint.a, hint.b);
+  assert.equal(result.ok, true);
+  const snap = game.snapshot();
+  assert.ok(snap.linesOfCode > 0);
+  assert.equal(snap.score, snap.linesOfCode);
+  assert.ok(snap.skills.length >= 1);
+  assert.ok(snap.pendingFact || snap.lastFact);
+});
+
 test("findMatches detects horizontal and vertical runs of three+", () => {
   const board = Array.from({ length: engine.ROWS }, () => Array(engine.COLS).fill("css"));
   // break into mostly unique except one row and column
@@ -133,7 +171,9 @@ test("player files ship match-3 cabinet", () => {
   assert.match(html, /data-gem-legend/);
   assert.match(html, /data-hint/);
   assert.match(html, /data-shuffle/);
-  assert.match(html, /Jewel-style match-3|jewel-style match-3/i);
+  assert.match(html, /data-skills/);
+  assert.match(html, /Lines of code/);
+  assert.match(html, /Start learning|senior/i);
   assert.doesNotMatch(html, /Hard drop/);
   assert.equal(typeof engine.boot, "function");
   assert.ok(fs.existsSync(path.join(gameDir, "audio", "stack-sprint.ogg")));
