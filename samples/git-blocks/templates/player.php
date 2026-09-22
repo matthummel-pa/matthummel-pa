@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 	<main class="page">
 		<p class="page-kicker"><?php esc_html_e('Mini player · Git Blocks', 'git-blocks'); ?></p>
 		<h1><?php esc_html_e('Git Blocks', 'git-blocks'); ?></h1>
-		<p class="page-lead"><?php esc_html_e('Match logo gems to write lines of code — learn web development from the beginning to senior developer.', 'git-blocks'); ?></p>
+		<p class="page-lead"><?php esc_html_e('Gem-drop RPG — pick a pathway class, write lines of code, graduate to senior, then clear endgame raids.', 'git-blocks'); ?></p>
 
 		<section class="player" data-git-blocks aria-label="<?php esc_attr_e('Git Blocks gem matching game', 'git-blocks'); ?>">
 			<div class="player-chrome">
@@ -39,9 +39,9 @@ if (! defined('ABSPATH')) {
 					<div class="overlay is-clickable" data-overlay>
 						<div>
 							<p class="overlay-level" data-overlay-level hidden><?php esc_html_e('Lesson 1', 'git-blocks'); ?></p>
-							<h2 data-overlay-title><?php esc_html_e('Git Blocks', 'git-blocks'); ?></h2>
-							<p data-overlay-body><?php esc_html_e('Learn web development from HTML to senior craft. Match gems to write lines of code and unlock skills.', 'git-blocks'); ?></p>
-							<button type="button" data-play><?php esc_html_e('Start learning', 'git-blocks'); ?></button>
+							<h2 data-overlay-title><?php esc_html_e('Choose your pathway class', 'git-blocks'); ?></h2>
+							<p data-overlay-body><?php esc_html_e('Each class is a web-dev career path with affinity gems, themed clouds, and a class power — then fight endgame raids after senior.', 'git-blocks'); ?></p>
+							<button type="button" data-play hidden><?php esc_html_e('Start learning', 'git-blocks'); ?></button>
 						</div>
 					</div>
 				</div>
@@ -57,12 +57,12 @@ if (! defined('ABSPATH')) {
 						<div class="stat"><span><?php esc_html_e('Combo', 'git-blocks'); ?></span><strong data-combo>0</strong></div>
 						<div class="stat"><span><?php esc_html_e('Goal', 'git-blocks'); ?></span><strong data-goal>0/600 LOC</strong></div>
 					</div>
-					<p class="sprint-name" data-sprint>L1 · HTML bones</p>
-					<p class="rank-line" data-rank>Junior · Intern</p>
+					<p class="sprint-name" data-sprint>Pick a pathway class</p>
+					<p class="rank-line" data-rank>Gem-drop RPG</p>
 					<div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="<?php esc_attr_e('Lesson LOC goal', 'git-blocks'); ?>">
 						<span data-progress></span>
 					</div>
-					<p class="message" data-message><?php esc_html_e('Match gems to write lines of code and learn.', 'git-blocks'); ?></p>
+					<p class="message" data-message><?php esc_html_e('Choose a pathway class to begin.', 'git-blocks'); ?></p>
 					<div class="power-row">
 						<button type="button" class="ghost" data-hint><?php esc_html_e('Hint (2)', 'git-blocks'); ?></button>
 						<button type="button" class="ghost" data-shuffle><?php esc_html_e('Shuffle (2)', 'git-blocks'); ?></button>
@@ -72,8 +72,8 @@ if (! defined('ABSPATH')) {
 					<ul class="commit-log" data-commit-log aria-label="<?php esc_attr_e('Match log', 'git-blocks'); ?>"></ul>
 					<div class="badge-row" data-badges aria-label="<?php esc_attr_e('Achievements', 'git-blocks'); ?>"></div>
 					<div class="player-dock">
-						<span class="controls-label"><?php esc_html_e('Path to senior', 'git-blocks'); ?></span>
-						<p class="keys" data-keys-help><?php esc_html_e('Match 3+ · write LOC · unlock skills · click/drag to swap · H hint', 'git-blocks'); ?></p>
+						<span class="controls-label"><?php esc_html_e('Path to senior · then raids', 'git-blocks'); ?></span>
+						<p class="keys" data-keys-help><?php esc_html_e('Pick class · match affinity · fill mana · cast power · H hint', 'git-blocks'); ?></p>
 					</div>
 				</aside>
 				<div class="customize-panel" data-customize-panel hidden>

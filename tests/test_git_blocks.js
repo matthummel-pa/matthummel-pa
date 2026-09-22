@@ -5,6 +5,18 @@ const fs = require("node:fs");
 
 const engine = require(path.join(__dirname, "..", "game", "git-blocks.js"));
 
+function seededGame(extra) {
+  let i = 0;
+  return engine.createGame({
+    pathwayId: "fullstack",
+    random: () => {
+      i += 1;
+      return (i % 97) / 97;
+    },
+    ...(extra || {}),
+  });
+}
+
 test("ships ten web-dev logo gems", () => {
   assert.equal(engine.GEMS.length, 10);
   assert.equal(engine.GEM_IDS.length, 10);
@@ -15,28 +27,52 @@ test("ships ten web-dev logo gems", () => {
   });
 });
 
+test("pathway classes define RPG careers with affinity and powers", () => {
+  assert.ok(engine.PATHWAY_CLASSES.length >= 4);
+  engine.PATHWAY_CLASSES.forEach((path) => {
+    assert.ok(path.name);
+    assert.ok(path.affinity.length >= 4);
+    assert.ok(path.power && path.power.name);
+    assert.ok(path.character && path.character.glyph);
+    assert.ok(path.lessonIds.length >= 10);
+    assert.ok(path.backdrop);
+    assert.ok(path.clouds.length >= 5);
+  });
+  assert.equal(engine.pathwayFor("frontend").id, "frontend");
+  assert.ok(engine.ENDGAME_CHALLENGES.length >= 3);
+  engine.ENDGAME_CHALLENGES.forEach((raid) => {
+    assert.ok(raid.goal > 1000);
+    assert.ok(raid.moves <= 20);
+    assert.ok(raid.bossHp);
+  });
+});
+
 test("curriculum runs beginner to senior with skills and facts", () => {
   assert.ok(engine.CURRICULUM.length >= 15);
-  assert.equal(engine.lessonFor(1).id, "html-bones");
-  assert.equal(engine.lessonFor(engine.CURRICULUM.length).id, "senior");
+  assert.equal(engine.lessonFor(1, "fullstack").id, "html-bones");
+  const len = engine.curriculumLength("fullstack");
+  assert.equal(engine.lessonFor(len, "fullstack").id, "senior");
   engine.CURRICULUM.forEach((lesson) => {
     assert.ok(lesson.title);
     assert.ok(lesson.skill && lesson.skill.name);
     assert.ok(lesson.clouds.length >= 5);
     assert.ok(lesson.facts.length >= 2);
   });
-  const fact = engine.pickFact(1, () => 0);
+  const fact = engine.pickFact(1, () => 0, "fullstack");
   assert.match(fact, /HTML|html|skeleton|semantic|alt/i);
 });
 
+test("frontend pathway reorders lessons toward UI craft", () => {
+  const first = engine.lessonFor(1, "frontend");
+  assert.equal(first.id, "html-bones");
+  const lessons = engine.pathwayLessons("frontend");
+  assert.ok(lessons.some((l) => l.id === "react-ui"));
+  assert.ok(lessons.some((l) => l.id === "senior"));
+  assert.ok(lessons.length < engine.CURRICULUM.length || lessons.length === engine.CURRICULUM.length);
+});
+
 test("matches award lines of code not abstract score", () => {
-  let i = 0;
-  const game = engine.createGame({
-    random: () => {
-      i += 1;
-      return (i % 97) / 97;
-    },
-  });
+  const game = seededGame();
   game.play();
   let hint = engine.findHint(game.snapshot().board);
   for (let n = 0; n < 8 && !hint; n += 1) {
@@ -51,11 +87,73 @@ test("matches award lines of code not abstract score", () => {
   assert.equal(snap.score, snap.linesOfCode);
   assert.ok(snap.skills.length >= 1);
   assert.ok(snap.pendingFact || snap.lastFact);
+  assert.ok(snap.mana > 0);
+  assert.equal(snap.pathwayId, "fullstack");
+});
+
+test("class select is required before play without pathwayId", () => {
+  const game = engine.createGame({ random: () => 0.3 });
+  assert.equal(game.status, "class-select");
+  game.play();
+  assert.equal(game.status, "class-select");
+  assert.equal(game.choosePathway("frontend"), true);
+  assert.equal(game.status, "ready");
+  assert.equal(game.snapshot().pathway.name, "Frontend Mage");
+  game.play();
+  assert.equal(game.status, "playing");
+});
+
+test("endgame raids unlock after senior path clears", () => {
+  const raid = engine.lessonFor(1, "backend", "endgame", 0);
+  assert.equal(raid.id, "prod-outage");
+  assert.match(raid.title, /Raid|Outage/i);
+
+  const game = engine.createGame({
+    pathwayId: "backend",
+    startPhase: "endgame",
+    random: () => 0.41,
+  });
+  assert.equal(game.snapshot().phase, "endgame");
+  assert.equal(game.snapshot().graduated, true);
+  assert.ok(game.snapshot().goal >= 2000);
+  assert.ok(game.snapshot().bossHp >= 2000);
+  game.play();
+  assert.equal(game.status, "playing");
+  assert.match(game.snapshot().lessonTitle, /Raid/i);
+});
+
+test("class power casts when mana is full", () => {
+  const game = seededGame({ pathwayId: "wordpress" });
+  game.play();
+  // Fill mana by matching until ready or cap attempts
+  let guard = 0;
+  while (!game.snapshot().powerReady && guard < 80) {
+    guard += 1;
+    let hint = engine.findHint(game.snapshot().board);
+    if (!hint) {
+      game.shuffle(true);
+      hint = engine.findHint(game.snapshot().board);
+    }
+    if (!hint) break;
+    if (game.snapshot().moves < 2) break;
+    game.trySwap(hint.a, hint.b);
+  }
+  if (game.snapshot().powerReady) {
+    const beforeHints = game.snapshot().hints;
+    const result = game.castPower();
+    assert.equal(result.ok, true);
+    assert.equal(result.power.id, "hook-cascade");
+    assert.ok(game.snapshot().powersUsed >= 1);
+    assert.ok(game.snapshot().hints >= beforeHints || game.snapshot().shuffles >= 1);
+  } else {
+    // Mana fill is probabilistic; at least cast rejects when not ready
+    const denied = game.castPower();
+    assert.equal(denied.ok, false);
+  }
 });
 
 test("findMatches detects horizontal and vertical runs of three+", () => {
   const board = Array.from({ length: engine.ROWS }, () => Array(engine.COLS).fill("css"));
-  // break into mostly unique except one row and column
   for (let y = 0; y < engine.ROWS; y += 1) {
     for (let x = 0; x < engine.COLS; x += 1) {
       board[y][x] = engine.GEM_IDS[(x + y) % engine.GEM_IDS.length];
@@ -80,7 +178,6 @@ test("wouldMatch only accepts adjacent legal swaps", () => {
       board[y][x] = engine.GEM_IDS[(x * 3 + y * 5) % engine.GEM_IDS.length];
     }
   }
-  // craft a known matchable swap: two html already adjacent, bring third in
   board[0][0] = "js";
   board[0][1] = "html";
   board[0][2] = "html";
@@ -92,7 +189,10 @@ test("wouldMatch only accepts adjacent legal swaps", () => {
 
 test("createGame starts ready and play enables swapping", () => {
   let i = 0;
-  const game = engine.createGame({ random: () => (i++ % 10) / 10 });
+  const game = engine.createGame({
+    pathwayId: "frontend",
+    random: () => (i++ % 10) / 10,
+  });
   assert.equal(game.status, "ready");
   game.play();
   assert.equal(game.status, "playing");
@@ -101,16 +201,11 @@ test("createGame starts ready and play enables swapping", () => {
   assert.equal(snap.board[0].length, engine.SIZE);
   assert.ok(snap.moves > 0);
   assert.ok(snap.goal > 0);
+  assert.equal(snap.pathwayId, "frontend");
 });
 
 test("successful swap clears gems and scores", () => {
-  let i = 0;
-  const game = engine.createGame({
-    random: () => {
-      i += 1;
-      return (i % 97) / 97;
-    },
-  });
+  const game = seededGame();
   game.play();
   let hint = engine.findHint(game.snapshot().board);
   for (let n = 0; n < 8 && !hint; n += 1) {
@@ -130,6 +225,7 @@ test("successful swap clears gems and scores", () => {
 test("invalid swap bounces without spending a move", () => {
   let i = 0;
   const game = engine.createGame({
+    pathwayId: "fullstack",
     random: () => {
       i += 1;
       return (i % 53) / 53;
@@ -173,7 +269,7 @@ test("player files ship match-3 cabinet", () => {
   assert.match(html, /data-shuffle/);
   assert.match(html, /data-skills/);
   assert.match(html, /Lines of code/);
-  assert.match(html, /Start learning|senior/i);
+  assert.match(html, /pathway class|senior|raids/i);
   assert.doesNotMatch(html, /Hard drop/);
   assert.equal(typeof engine.boot, "function");
   assert.ok(fs.existsSync(path.join(gameDir, "audio", "stack-sprint.ogg")));

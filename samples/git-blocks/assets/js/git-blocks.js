@@ -1,6 +1,6 @@
 /**
- * Git Blocks — Jewel Quest–style match-3 cabinet for Matt's GitHub profile.
- * Swap adjacent web-dev logo gems. Match 3+ in a row or column. Cascades score big.
+ * Git Blocks — gem-drop RPG (Gems of War–style) for Matt's GitHub profile.
+ * Pick a pathway class, match logo gems to write LOC, unlock skills, then face endgame raids.
  * Works in the browser (canvas player) and in Node (engine unit tests).
  */
 (function (root, factory) {
@@ -301,6 +301,241 @@
     },
   ];
 
+  /**
+   * Pathway classes — Gems of War–style heroes. Each biases gems, clouds, curriculum, and powers.
+   */
+  const PATHWAY_CLASSES = [
+    {
+      id: "frontend",
+      name: "Frontend Mage",
+      role: "UI spellcaster",
+      blurb: "Paint interfaces, tame the DOM, and ship delightful client craft.",
+      accent: "#61dafb",
+      secondary: "#264de4",
+      ink: "#07111f",
+      backdrop:
+        "radial-gradient(900px 420px at 12% -10%, rgba(97,218,251,0.28), transparent 55%), radial-gradient(700px 380px at 100% 0%, rgba(38,77,228,0.45), transparent 50%), #071428",
+      pattern: "orbit",
+      affinity: ["html", "css", "js", "ts", "react"],
+      clouds: ["flex", "grid", "jsx", "hooks", "a11y", "pixels", "cascade", "viewport", "component", "UI"],
+      power: {
+        id: "ui-burst",
+        name: "UI Burst",
+        blurb: "Spend mana to shatter a random affinity gem type on the board.",
+      },
+      character: {
+        glyph: "⚛",
+        title: "Mage",
+        idle: "float",
+        silhouette: "mage",
+        colors: ["#61dafb", "#5b8cff", "#b6f0ff"],
+      },
+      lessonIds: [
+        "html-bones",
+        "css-paint",
+        "layout-lab",
+        "responsive",
+        "js-spark",
+        "dom-events",
+        "a11y",
+        "typescript",
+        "react-ui",
+        "hooks-state",
+        "tooling",
+        "git-flow",
+        "testing",
+        "performance",
+        "security",
+        "architecture",
+        "leadership",
+        "senior",
+      ],
+    },
+    {
+      id: "backend",
+      name: "Backend Sentinel",
+      role: "Server guardian",
+      blurb: "APIs, Node, PHP, and data contracts — hold the line behind the request.",
+      accent: "#339933",
+      secondary: "#777bb4",
+      ink: "#06140c",
+      backdrop:
+        "radial-gradient(880px 400px at 8% -8%, rgba(51,153,51,0.3), transparent 55%), radial-gradient(640px 360px at 100% 8%, rgba(119,123,180,0.4), transparent 48%), #06140c",
+      pattern: "drift",
+      affinity: ["node", "php", "js", "ts", "npm", "git"],
+      clouds: ["async", "REST", "JSON", "queue", "SQL", "auth", "schema", "cache", "worker", "API"],
+      power: {
+        id: "query-storm",
+        name: "Query Storm",
+        blurb: "Spend mana for +4 moves and a double-LOC next cascade.",
+      },
+      character: {
+        glyph: "{}",
+        title: "Sentinel",
+        idle: "pulse",
+        silhouette: "sentinel",
+        colors: ["#339933", "#6dcf6d", "#777bb4"],
+      },
+      lessonIds: [
+        "js-spark",
+        "git-flow",
+        "tooling",
+        "php-wp",
+        "apis",
+        "typescript",
+        "testing",
+        "security",
+        "performance",
+        "architecture",
+        "html-bones",
+        "dom-events",
+        "a11y",
+        "leadership",
+        "senior",
+      ],
+    },
+    {
+      id: "wordpress",
+      name: "WordPress Artisan",
+      role: "CMS craftsperson",
+      blurb: "Themes, hooks, and safe PHP — sculpt the content platform.",
+      accent: "#21759b",
+      secondary: "#e34c26",
+      ink: "#071820",
+      backdrop:
+        "radial-gradient(900px 420px at 10% -6%, rgba(33,117,155,0.35), transparent 55%), radial-gradient(680px 340px at 95% 0%, rgba(227,76,38,0.28), transparent 50%), #071820",
+      pattern: "sway",
+      affinity: ["wp", "php", "html", "css", "js", "git"],
+      clouds: ["hook", "filter", "theme", "plugin", "WP_Query", "nonce", "escape", "block", "template", "CMS"],
+      power: {
+        id: "hook-cascade",
+        name: "Hook Cascade",
+        blurb: "Spend mana to refill hints/shuffles and reshuffle the board.",
+      },
+      character: {
+        glyph: "W",
+        title: "Artisan",
+        idle: "bob",
+        silhouette: "artisan",
+        colors: ["#21759b", "#4fa8ce", "#e34c26"],
+      },
+      lessonIds: [
+        "html-bones",
+        "css-paint",
+        "php-wp",
+        "js-spark",
+        "dom-events",
+        "git-flow",
+        "a11y",
+        "apis",
+        "security",
+        "tooling",
+        "testing",
+        "performance",
+        "architecture",
+        "leadership",
+        "senior",
+      ],
+    },
+    {
+      id: "fullstack",
+      name: "Full-Stack Ranger",
+      role: "Polyglot scout",
+      blurb: "Cross the whole stack — every gem is a tool in your kit.",
+      accent: "#f0db4f",
+      secondary: "#f05032",
+      ink: "#141008",
+      backdrop:
+        "radial-gradient(920px 430px at 14% -10%, rgba(240,219,79,0.22), transparent 55%), radial-gradient(700px 360px at 100% 0%, rgba(240,80,50,0.32), transparent 48%), #141008",
+      pattern: "drift",
+      affinity: ["html", "css", "js", "node", "git", "react", "php", "npm"],
+      clouds: ["ship", "PR", "fullstack", "deploy", "feature", "debug", "scope", "tradeoff", "release", "craft"],
+      power: {
+        id: "polyglot-pulse",
+        name: "Polyglot Pulse",
+        blurb: "Spend mana for a LOC surge equal to your current combo streak.",
+      },
+      character: {
+        glyph: "◆",
+        title: "Ranger",
+        idle: "stride",
+        silhouette: "ranger",
+        colors: ["#f0db4f", "#f05032", "#339933"],
+      },
+      lessonIds: CURRICULUM.map((l) => l.id),
+    },
+  ];
+
+  const PATHWAY_BY_ID = Object.fromEntries(PATHWAY_CLASSES.map((p) => [p.id, p]));
+
+  /** Post-senior raids — harder LOC goals, fewer moves, boss flavor. */
+  const ENDGAME_CHALLENGES = [
+    {
+      id: "prod-outage",
+      title: "Raid: Production Outage",
+      track: "Endgame",
+      rank: "On-call",
+      skill: { id: "oncall", name: "Incident Commander", icon: "🚨", blurb: "Stabilize prod under pressure." },
+      clouds: ["P0", "rollback", "hotifix", "pager", "SLO", "mitigate", "runbook", "status page"],
+      facts: [
+        "Stop the bleeding first — mitigate, then root-cause.",
+        "Communicate early: users forgive outages faster than silence.",
+        "A good rollback beats a heroic half-fix.",
+      ],
+      goal: 2200,
+      moves: 18,
+      bossHp: 2200,
+    },
+    {
+      id: "legacy-refactor",
+      title: "Raid: Legacy Refactor",
+      track: "Endgame",
+      rank: "Archaeologist",
+      skill: { id: "legacy", name: "Code Archaeologist", icon: "⛏", blurb: "Rewrite without breaking the living system." },
+      clouds: ["legacy", "strangler", "compat", "migrate", "debt", "shim", "feature flag", "parity"],
+      facts: [
+        "Leave the campsite cleaner — small safe steps beat big rewrites.",
+        "Characterization tests lock behavior before you touch it.",
+        "Feature flags let you ship dark and light up gradually.",
+      ],
+      goal: 2600,
+      moves: 16,
+      bossHp: 2600,
+    },
+    {
+      id: "black-friday",
+      title: "Raid: Traffic Spike",
+      track: "Endgame",
+      rank: "Scale Lead",
+      skill: { id: "scale", name: "Scale Whisperer", icon: "📈", blurb: "Survive the surge without melting the stack." },
+      clouds: ["CDN", "cache", "queue", "autoscale", "rate-limit", "load", "failover", "capacity"],
+      facts: [
+        "Cache what you can; queue what you must; shed what you cannot.",
+        "Load tests before the sale beat apologies after it.",
+        "Graceful degradation keeps the money path alive.",
+      ],
+      goal: 3000,
+      moves: 14,
+      bossHp: 3000,
+    },
+    {
+      id: "security-siege",
+      title: "Raid: Security Siege",
+      track: "Endgame",
+      rank: "Guardian",
+      skill: { id: "siege", name: "Siege Breaker", icon: "🛡", blurb: "Hold the perimeter against hostile input." },
+      clouds: ["XSS", "CSRF", "CSP", "pentest", "threat model", "patch", "secrets", "zero-trust"],
+      facts: [
+        "Assume breach — limit blast radius with least privilege.",
+        "Patch windows matter more than perfect detection.",
+        "Secrets in the client are already public.",
+      ],
+      goal: 3400,
+      moves: 12,
+      bossHp: 3400,
+    },
+  ];
+
   const ACHIEVEMENTS = [
     { id: "first-match", label: "First commit", test: (s) => s.matches >= 1 },
     { id: "cascade-3", label: "Cascade ×3", test: (s) => s.maxChain >= 3 },
@@ -309,24 +544,57 @@
     { id: "lesson-5", label: "Lesson 5", test: (s) => s.level >= 5 },
     { id: "four-line", label: "Quad match", test: (s) => s.quads >= 1 },
     { id: "skill-3", label: "3 skills", test: (s) => Object.keys(s.skills || {}).length >= 3 },
-    { id: "senior-path", label: "Senior path", test: (s) => s.level >= CURRICULUM.length },
+    { id: "senior-path", label: "Senior path", test: (s) => s.phase === "endgame" || s.graduated },
+    { id: "mana-cast", label: "First cast", test: (s) => s.powersUsed >= 1 },
+    { id: "raid-clear", label: "Raid clear", test: (s) => s.challengesCleared >= 1 },
+    { id: "endgame-hero", label: "Endgame hero", test: (s) => s.challengesCleared >= ENDGAME_CHALLENGES.length },
   ];
 
-  function lessonFor(level) {
-    const idx = Math.max(0, Math.min(CURRICULUM.length - 1, (level || 1) - 1));
-    return CURRICULUM[idx];
+  const LESSON_BY_ID = Object.fromEntries(CURRICULUM.map((l) => [l.id, l]));
+
+  function pathwayFor(id) {
+    return PATHWAY_BY_ID[id] || PATHWAY_CLASSES[PATHWAY_CLASSES.length - 1];
   }
 
-  function sprintName(level) {
-    return lessonFor(level).title;
+  function pathwayLessons(pathwayId) {
+    const path = pathwayFor(pathwayId);
+    const lessons = (path.lessonIds || [])
+      .map((lid) => LESSON_BY_ID[lid])
+      .filter(Boolean);
+    return lessons.length ? lessons : CURRICULUM.slice();
   }
 
-  function goalForLevel(level) {
-    // Lines-of-code goals grow with seniority.
+  function lessonFor(level, pathwayId, phase, challengeIndex) {
+    if (phase === "endgame") {
+      const idx = Math.max(0, Math.min(ENDGAME_CHALLENGES.length - 1, challengeIndex || 0));
+      return ENDGAME_CHALLENGES[idx];
+    }
+    const lessons = pathwayLessons(pathwayId);
+    const idx = Math.max(0, Math.min(lessons.length - 1, (level || 1) - 1));
+    return lessons[idx];
+  }
+
+  function sprintName(level, pathwayId) {
+    return lessonFor(level, pathwayId).title;
+  }
+
+  function curriculumLength(pathwayId) {
+    return pathwayLessons(pathwayId).length;
+  }
+
+  function goalForLevel(level, pathwayId, phase, challengeIndex) {
+    if (phase === "endgame") {
+      const challenge = lessonFor(level, pathwayId, "endgame", challengeIndex);
+      return challenge.goal || 2200;
+    }
     return 600 + (Math.max(1, level) - 1) * 350;
   }
 
-  function movesForLevel(level) {
+  function movesForLevel(level, pathwayId, phase, challengeIndex) {
+    if (phase === "endgame") {
+      const challenge = lessonFor(level, pathwayId, "endgame", challengeIndex);
+      return challenge.moves || 16;
+    }
     return Math.max(18, 32 - Math.min(12, level - 1));
   }
 
@@ -334,17 +602,30 @@
     return Math.min(GEM_IDS.length, 5 + Math.min(5, Math.floor((level - 1) / 2) + 1));
   }
 
-  function pickFact(level, random) {
-    const lesson = lessonFor(level);
+  function pickFact(level, random, pathwayId, phase, challengeIndex) {
+    const lesson = lessonFor(level, pathwayId, phase, challengeIndex);
     const facts = lesson.facts || [];
     if (!facts.length) return "Keep shipping — every match writes more of your story.";
     const rnd = random || Math.random;
     return facts[Math.floor(rnd() * facts.length)];
   }
 
-  function pickGemId(random, level) {
+  function pickGemId(random, level, pathwayId) {
     const n = gemKindsForLevel(level || 1);
-    return GEM_IDS[Math.floor(random() * n)];
+    const base = GEM_IDS.slice(0, n);
+    const path = pathwayId ? pathwayFor(pathwayId) : null;
+    const affinity = (path && path.affinity) || [];
+    if (!affinity.length) {
+      return base[Math.floor(random() * base.length)];
+    }
+    const pool = [];
+    base.forEach((id) => {
+      pool.push(id);
+      if (affinity.includes(id)) {
+        pool.push(id, id);
+      }
+    });
+    return pool[Math.floor(random() * pool.length)];
   }
 
   function emptyBoard() {
@@ -426,7 +707,7 @@
     return findMatches(board).cells.length > 0;
   }
 
-  function applyGravity(board, random, level) {
+  function applyGravity(board, random, level, pathwayId) {
     const next = emptyBoard();
     const falls = [];
     for (let x = 0; x < COLS; x += 1) {
@@ -439,7 +720,7 @@
         }
       }
       while (write >= 0) {
-        const kind = pickGemId(random, level);
+        const kind = pickGemId(random, level, pathwayId);
         next[write][x] = kind;
         falls.push({ kind, from: { x, y: write - ROWS }, to: { x, y: write }, spawn: true });
         write -= 1;
@@ -456,7 +737,7 @@
     return next;
   }
 
-  function resolveBoard(board, random, level) {
+  function resolveBoard(board, random, level, pathwayId) {
     let working = cloneBoard(board);
     const waves = [];
     let chain = 0;
@@ -465,7 +746,7 @@
       if (!found.cells.length) break;
       chain += 1;
       working = clearCells(working, found.cells);
-      const grav = applyGravity(working, random, level);
+      const grav = applyGravity(working, random, level, pathwayId);
       working = grav.board;
       waves.push({
         chain,
@@ -473,7 +754,6 @@
         groups: found.groups,
         falls: grav.falls,
       });
-      // Safety: avoid infinite loops on pathological boards
       if (chain > 40) break;
     }
     return { board: working, waves, chain };
@@ -512,10 +792,23 @@
     return Boolean(findHint(board));
   }
 
-  function fillBoardNoMatches(random, level) {
-    const board = emptyBoard();
+  function weightedGemPool(level, pathwayId, random) {
     const n = gemKindsForLevel(level || 1);
-    const pool = GEM_IDS.slice(0, n);
+    const base = GEM_IDS.slice(0, n);
+    const path = pathwayId ? pathwayFor(pathwayId) : null;
+    const affinity = (path && path.affinity) || [];
+    if (!affinity.length) return base.slice();
+    const pool = [];
+    base.forEach((id) => {
+      pool.push(id);
+      if (affinity.includes(id)) pool.push(id, id);
+    });
+    return shuffleArray(pool, random || Math.random);
+  }
+
+  function fillBoardNoMatches(random, level, pathwayId) {
+    const board = emptyBoard();
+    const pool = Array.from(new Set(weightedGemPool(level, pathwayId, random)));
     for (let y = 0; y < ROWS; y += 1) {
       for (let x = 0; x < COLS; x += 1) {
         const order = shuffleArray(pool, random);
@@ -530,7 +823,6 @@
         if (!placed) board[y][x] = order[0];
       }
     }
-    // Reshuffle until playable and match-free
     let tries = 0;
     while ((boardHasMatch(board) || !hasValidMoves(board)) && tries < 50) {
       for (let y = 0; y < ROWS; y += 1) {
@@ -560,25 +852,51 @@
     return false;
   }
 
-  function scoreMatch(cellCount, chain, level) {
-    // Each matched gem ≈ lines of code written toward the lesson goal.
+  function scoreMatch(cellCount, chain, level, affinityHits) {
     const base = cellCount * 28;
     const chainBonus = 1 + (chain - 1) * 0.55;
-    return Math.round(base * chainBonus * (1 + (level - 1) * 0.08));
+    const affinityBonus = 1 + Math.min(0.45, (affinityHits || 0) * 0.08);
+    return Math.round(base * chainBonus * (1 + (level - 1) * 0.08) * affinityBonus);
   }
 
   function createGame(options) {
     const opts = options || {};
     const random = opts.random || Math.random;
     const now = opts.now || (() => Date.now());
+    const initialPathway = opts.pathwayId && PATHWAY_BY_ID[opts.pathwayId] ? opts.pathwayId : null;
+    const startInEndgame = opts.startPhase === "endgame" && initialPathway;
     const state = {
-      board: fillBoardNoMatches(random, 1),
+      pathwayId: initialPathway,
+      phase: startInEndgame ? "endgame" : "path",
+      challengeIndex: startInEndgame ? opts.challengeIndex || 0 : 0,
+      challengesCleared: 0,
+      graduated: !!startInEndgame,
+      mana: 0,
+      manaMax: 100,
+      powerReady: false,
+      powersUsed: 0,
+      locMultiplier: 1,
+      bossHp: startInEndgame
+        ? (lessonFor(1, initialPathway, "endgame", opts.challengeIndex || 0).bossHp ||
+            lessonFor(1, initialPathway, "endgame", opts.challengeIndex || 0).goal)
+        : 0,
+      board: fillBoardNoMatches(random, 1, initialPathway),
       linesOfCode: 0,
-      score: 0, // alias kept for older callers / high-score storage
-      level: 1,
+      score: 0,
+      level: startInEndgame ? curriculumLength(initialPathway) : 1,
       levelScore: 0,
-      goal: goalForLevel(1),
-      moves: movesForLevel(1),
+      goal: goalForLevel(
+        1,
+        initialPathway,
+        startInEndgame ? "endgame" : "path",
+        startInEndgame ? opts.challengeIndex || 0 : 0
+      ),
+      moves: movesForLevel(
+        1,
+        initialPathway,
+        startInEndgame ? "endgame" : "path",
+        startInEndgame ? opts.challengeIndex || 0 : 0
+      ),
       matches: 0,
       cleared: 0,
       combo: 0,
@@ -596,17 +914,29 @@
       skillUnlock: null,
       commitLog: [],
       fx: [],
-      status: "ready",
-      message: "Lesson 1 — HTML bones. Swap gems to write your first lines of code.",
+      status: initialPathway ? "ready" : "class-select",
+      message: startInEndgame
+        ? `Endgame raid — ${lessonFor(1, initialPathway, "endgame", opts.challengeIndex || 0).title}`
+        : initialPathway
+          ? `Pathway locked — ${pathwayFor(initialPathway).name}. Ready to write LOC.`
+          : "Choose your pathway class to begin the gem-drop RPG.",
       selected: null,
       hint: null,
       levelFlash: 0,
       busy: false,
+      characterPulse: 0,
     };
 
-    // Unlock lesson 1 skill at start of play path
+    function currentLesson() {
+      return lessonFor(state.level, state.pathwayId, state.phase, state.challengeIndex);
+    }
+
+    function pathLen() {
+      return curriculumLength(state.pathwayId);
+    }
+
     function grantLessonSkill(level) {
-      const lesson = lessonFor(level);
+      const lesson = currentLesson();
       if (!lesson.skill) return null;
       if (state.skills[lesson.skill.id]) return null;
       state.skills[lesson.skill.id] = {
@@ -637,6 +967,54 @@
       return unlocked;
     }
 
+    function addMana(amount) {
+      state.mana = Math.min(state.manaMax, state.mana + amount);
+      state.powerReady = state.mana >= state.manaMax;
+    }
+
+    function enterEndgame() {
+      state.phase = "endgame";
+      state.graduated = true;
+      state.challengeIndex = 0;
+      state.levelScore = 0;
+      const challenge = currentLesson();
+      state.goal = challenge.goal;
+      state.bossHp = challenge.bossHp || challenge.goal;
+      state.moves = challenge.moves;
+      state.hints = Math.min(3, state.hints + 1);
+      state.shuffles = Math.min(3, state.shuffles + 1);
+      state.levelFlash = now();
+      state.message = `Senior unlocked — ${challenge.title} awaits.`;
+      pushLog(`endgame → ${challenge.title}`);
+      grantLessonSkill(state.level);
+      state.board = fillBoardNoMatches(random, state.level, state.pathwayId);
+      state.characterPulse = now();
+    }
+
+    function advanceChallenge() {
+      state.challengesCleared += 1;
+      if (state.challengeIndex >= ENDGAME_CHALLENGES.length - 1) {
+        state.status = "over";
+        state.message = "All raids cleared — legendary senior status.";
+        unlockAchievements();
+        return true;
+      }
+      state.challengeIndex += 1;
+      state.levelScore = 0;
+      const challenge = currentLesson();
+      state.goal = challenge.goal;
+      state.bossHp = challenge.bossHp || challenge.goal;
+      state.moves = challenge.moves;
+      state.hints = Math.min(3, state.hints + 1);
+      state.shuffles = Math.min(3, state.shuffles + 1);
+      state.levelFlash = now();
+      state.message = `Raid cleared — next: ${challenge.title}`;
+      pushLog(`raid → ${challenge.title}`);
+      grantLessonSkill(state.level);
+      state.board = fillBoardNoMatches(random, state.level, state.pathwayId);
+      return false;
+    }
+
     function applyWaves(waves) {
       if (!waves.length) {
         state.combo = 0;
@@ -644,27 +1022,37 @@
       }
       const sounds = [];
       let fact = null;
+      const path = pathwayFor(state.pathwayId);
+      const affinity = path.affinity || [];
       waves.forEach((wave) => {
         state.combo += 1;
         state.maxCombo = Math.max(state.maxCombo, state.combo);
         state.maxChain = Math.max(state.maxChain, wave.chain);
         state.matches += 1;
         state.cleared += wave.cells.length;
-        const loc = scoreMatch(wave.cells.length, wave.chain, state.level);
+        const affinityHits = wave.cells.filter((c) => affinity.includes(c.kind)).length;
+        addMana(6 + affinityHits * 4 + (wave.chain - 1) * 3);
+        let loc = scoreMatch(wave.cells.length, wave.chain, state.level, affinityHits);
+        loc = Math.round(loc * (state.locMultiplier || 1));
+        if (state.locMultiplier > 1) state.locMultiplier = 1;
         state.linesOfCode += loc;
         state.score = state.linesOfCode;
         state.levelScore += loc;
+        if (state.phase === "endgame") {
+          state.bossHp = Math.max(0, (state.bossHp || state.goal) - loc);
+        }
         wave.groups.forEach((g) => {
           if (g.cells.length >= 4) state.quads += 1;
         });
         const label = (META[wave.cells[0] && wave.cells[0].kind] || {}).label || "gem";
         pushLog(`+${loc} LOC · ${label} ×${wave.cells.length} · chain ${wave.chain}`);
-        fact = pickFact(state.level, random);
+        fact = pickFact(state.level, random, state.pathwayId, state.phase, state.challengeIndex);
         state.lastFact = fact;
+        const lesson = currentLesson();
         state.pendingFact = {
           fact,
-          lesson: lessonFor(state.level).title,
-          track: lessonFor(state.level).track,
+          lesson: lesson.title,
+          track: lesson.track,
           loc,
           chain: wave.chain,
           at: now(),
@@ -678,6 +1066,7 @@
           falls: wave.falls || [],
           fact,
         });
+        state.characterPulse = now();
         sounds.push(wave.chain >= 3 ? "deploy" : wave.cells.length >= 4 ? "squash" : "clear");
       });
       state.message =
@@ -686,26 +1075,28 @@
           : `Wrote code — ${waves[0].cells.length} gems cleared.`;
       let leveled = false;
       if (state.levelScore >= state.goal) {
-        if (state.level >= CURRICULUM.length) {
-          state.status = "over";
-          state.message = "Senior developer unlocked — you finished the path.";
-          grantLessonSkill(state.level);
+        if (state.phase === "endgame") {
+          const done = advanceChallenge();
+          sounds.push("level");
+          leveled = !done;
+        } else if (state.level >= pathLen()) {
+          enterEndgame();
           sounds.push("level");
           leveled = true;
         } else {
           state.level += 1;
           state.levelScore = 0;
-          state.goal = goalForLevel(state.level);
+          state.goal = goalForLevel(state.level, state.pathwayId);
           state.moves += Math.min(8, 4 + Math.floor(state.level / 3));
           state.hints = Math.min(3, state.hints + 1);
           state.shuffles = Math.min(3, state.shuffles + 1);
           state.levelFlash = now();
-          const lesson = lessonFor(state.level);
+          const lesson = currentLesson();
           state.message = `Lesson ${state.level}: ${lesson.title} (${lesson.rank})`;
           pushLog(`lesson → ${lesson.title}`);
           grantLessonSkill(state.level);
           sounds.push("level");
-          state.board = fillBoardNoMatches(random, state.level);
+          state.board = fillBoardNoMatches(random, state.level, state.pathwayId);
           leveled = true;
         }
       }
@@ -748,7 +1139,7 @@
       state.selected = null;
       state.hint = null;
       state.busy = true;
-      const resolved = resolveBoard(state.board, random, state.level);
+      const resolved = resolveBoard(state.board, random, state.level, state.pathwayId);
       state.board = resolved.board;
       const outcome = applyWaves(resolved.waves);
       state.busy = false;
@@ -796,7 +1187,7 @@
         state.shuffles -= 1;
         state.shufflesUsed += 1;
       }
-      state.board = fillBoardNoMatches(random, state.level);
+      state.board = fillBoardNoMatches(random, state.level, state.pathwayId);
       state.selected = null;
       state.hint = null;
       state.message = "Board reshuffled.";
@@ -806,12 +1197,162 @@
       return true;
     }
 
+    function castPower() {
+      if (state.status !== "playing" || !state.powerReady || state.busy) {
+        return { ok: false };
+      }
+      const path = pathwayFor(state.pathwayId);
+      const power = path.power;
+      state.mana = 0;
+      state.powerReady = false;
+      state.powersUsed += 1;
+      state.characterPulse = now();
+      const sounds = ["deploy"];
+      let waves = [];
+
+      if (power.id === "ui-burst") {
+        const affinity = path.affinity || [];
+        const counts = {};
+        for (let y = 0; y < ROWS; y += 1) {
+          for (let x = 0; x < COLS; x += 1) {
+            const kind = state.board[y][x];
+            if (affinity.includes(kind)) counts[kind] = (counts[kind] || 0) + 1;
+          }
+        }
+        const kinds = Object.keys(counts);
+        if (kinds.length) {
+          const target = kinds[Math.floor(random() * kinds.length)];
+          const cells = [];
+          for (let y = 0; y < ROWS; y += 1) {
+            for (let x = 0; x < COLS; x += 1) {
+              if (state.board[y][x] === target) cells.push({ x, y, kind: target });
+            }
+          }
+          state.board = clearCells(state.board, cells);
+          const grav = applyGravity(state.board, random, state.level, state.pathwayId);
+          state.board = grav.board;
+          const resolved = resolveBoard(state.board, random, state.level, state.pathwayId);
+          state.board = resolved.board;
+          const fakeWave = {
+            chain: 1,
+            cells,
+            groups: [{ kind: target, cells, axis: "power" }],
+            falls: grav.falls,
+          };
+          waves = [fakeWave].concat(resolved.waves);
+          const outcome = applyWaves(waves);
+          afterResolveCheck();
+          pushLog(`cast ${power.name} — cleared ${target}`);
+          unlockAchievements();
+          return { ok: true, power, sounds: sounds.concat(outcome.sounds || []) };
+        }
+      } else if (power.id === "query-storm") {
+        state.moves += 4;
+        state.locMultiplier = 2;
+        state.message = `${power.name} — +4 moves, next cascade deals double LOC.`;
+        pushLog(`cast ${power.name}`);
+      } else if (power.id === "hook-cascade") {
+        state.hints = Math.min(3, state.hints + 2);
+        state.shuffles = Math.min(3, state.shuffles + 2);
+        doShuffle(true);
+        state.message = `${power.name} — board reshuffled, tools refilled.`;
+        pushLog(`cast ${power.name}`);
+      } else if (power.id === "polyglot-pulse") {
+        const surge = Math.max(120, state.combo * 90 + 180);
+        state.linesOfCode += surge;
+        state.score = state.linesOfCode;
+        state.levelScore += surge;
+        if (state.phase === "endgame") {
+          state.bossHp = Math.max(0, (state.bossHp || state.goal) - surge);
+        }
+        state.message = `${power.name} — +${surge} LOC surge.`;
+        pushLog(`cast ${power.name} · +${surge} LOC`);
+        if (state.levelScore >= state.goal) {
+          if (state.phase === "endgame") {
+            advanceChallenge();
+            sounds.push("level");
+          } else if (state.level >= pathLen()) {
+            enterEndgame();
+            sounds.push("level");
+          } else {
+            state.level += 1;
+            state.levelScore = 0;
+            state.goal = goalForLevel(state.level, state.pathwayId);
+            state.levelFlash = now();
+            grantLessonSkill(state.level);
+            state.board = fillBoardNoMatches(random, state.level, state.pathwayId);
+            sounds.push("level");
+          }
+        }
+      }
+
+      state.fx.push({ id: `power-${now()}`, at: now(), type: "power", power: power.id });
+      unlockAchievements();
+      return { ok: true, power, sounds };
+    }
+
+    function choosePathway(pathwayId) {
+      if (!PATHWAY_BY_ID[pathwayId]) return false;
+      state.pathwayId = pathwayId;
+      state.phase = "path";
+      state.challengeIndex = 0;
+      state.challengesCleared = 0;
+      state.graduated = false;
+      state.mana = 0;
+      state.powerReady = false;
+      state.powersUsed = 0;
+      state.locMultiplier = 1;
+      state.bossHp = 0;
+      state.level = 1;
+      state.levelScore = 0;
+      state.goal = goalForLevel(1, pathwayId);
+      state.moves = movesForLevel(1, pathwayId);
+      state.board = fillBoardNoMatches(random, 1, pathwayId);
+      state.hints = 2;
+      state.shuffles = 2;
+      state.skills = {};
+      state.achievements = {};
+      state.commitLog = [];
+      state.linesOfCode = 0;
+      state.score = 0;
+      state.matches = 0;
+      state.cleared = 0;
+      state.combo = 0;
+      state.status = "ready";
+      const path = pathwayFor(pathwayId);
+      state.message = `${path.name} selected — ${path.blurb}`;
+      state.levelFlash = now();
+      state.characterPulse = now();
+      pushLog(`class → ${path.name}`);
+      return true;
+    }
+
     function play() {
       if (state.status === "playing") return;
-      if (state.status === "over") reset();
+      if (state.status === "class-select") return;
+      if (state.status === "over") {
+        if (state.graduated && state.challengesCleared >= ENDGAME_CHALLENGES.length) {
+          reset();
+          return;
+        }
+        // Retry current lesson/raid without wiping pathway
+        state.status = "playing";
+        state.levelScore = 0;
+        state.moves = movesForLevel(state.level, state.pathwayId, state.phase, state.challengeIndex);
+        state.goal = goalForLevel(state.level, state.pathwayId, state.phase, state.challengeIndex);
+        if (state.phase === "endgame") {
+          const challenge = currentLesson();
+          state.bossHp = challenge.bossHp || challenge.goal;
+        }
+        state.board = fillBoardNoMatches(random, state.level, state.pathwayId);
+        state.message = `Retry — ${currentLesson().title}`;
+        state.levelFlash = now();
+        return;
+      }
       state.status = "playing";
-      const lesson = lessonFor(state.level);
-      state.message = `Lesson ${state.level}: ${lesson.title} — write ${state.goal} LOC to advance.`;
+      const lesson = currentLesson();
+      const label = state.phase === "endgame" ? "Raid" : "Lesson";
+      state.message = `${label}: ${lesson.title} — write ${state.goal} LOC to advance.`;
       state.levelFlash = now();
       grantLessonSkill(state.level);
     }
@@ -829,13 +1370,25 @@
     }
 
     function reset() {
-      state.board = fillBoardNoMatches(random, 1);
+      const keepPath = state.pathwayId;
+      state.pathwayId = keepPath;
+      state.phase = "path";
+      state.challengeIndex = 0;
+      state.challengesCleared = 0;
+      state.graduated = false;
+      state.mana = 0;
+      state.manaMax = 100;
+      state.powerReady = false;
+      state.powersUsed = 0;
+      state.locMultiplier = 1;
+      state.bossHp = 0;
+      state.board = fillBoardNoMatches(random, 1, keepPath);
       state.linesOfCode = 0;
       state.score = 0;
       state.level = 1;
       state.levelScore = 0;
-      state.goal = goalForLevel(1);
-      state.moves = movesForLevel(1);
+      state.goal = goalForLevel(1, keepPath);
+      state.moves = movesForLevel(1, keepPath);
       state.matches = 0;
       state.cleared = 0;
       state.combo = 0;
@@ -853,12 +1406,48 @@
       state.skillUnlock = null;
       state.commitLog = [];
       state.fx = [];
-      state.status = "ready";
-      state.message = "Lesson 1 — HTML bones. Swap gems to write your first lines of code.";
+      state.status = keepPath ? "ready" : "class-select";
+      state.message = keepPath
+        ? `${pathwayFor(keepPath).name} — ready for a new career run.`
+        : "Choose your pathway class to begin the gem-drop RPG.";
       state.selected = null;
       state.hint = null;
       state.levelFlash = 0;
       state.busy = false;
+      state.characterPulse = 0;
+    }
+
+    function reopenClassSelect() {
+      state.pathwayId = null;
+      state.phase = "path";
+      state.challengeIndex = 0;
+      state.challengesCleared = 0;
+      state.graduated = false;
+      state.mana = 0;
+      state.powerReady = false;
+      state.powersUsed = 0;
+      state.locMultiplier = 1;
+      state.bossHp = 0;
+      state.board = fillBoardNoMatches(random, 1, null);
+      state.linesOfCode = 0;
+      state.score = 0;
+      state.level = 1;
+      state.levelScore = 0;
+      state.goal = goalForLevel(1);
+      state.moves = movesForLevel(1);
+      state.matches = 0;
+      state.cleared = 0;
+      state.combo = 0;
+      state.skills = {};
+      state.achievements = {};
+      state.commitLog = [];
+      state.fx = [];
+      state.status = "class-select";
+      state.message = "Choose your pathway class to begin the gem-drop RPG.";
+      state.selected = null;
+      state.hint = null;
+      state.busy = false;
+      state.characterPulse = 0;
     }
 
     function consumeFx() {
@@ -880,7 +1469,8 @@
     }
 
     function snapshot() {
-      const lesson = lessonFor(state.level);
+      const lesson = currentLesson();
+      const path = state.pathwayId ? pathwayFor(state.pathwayId) : null;
       return {
         board: cloneBoard(state.board),
         linesOfCode: state.linesOfCode,
@@ -916,7 +1506,35 @@
           : null,
         levelFlash: state.levelFlash,
         busy: state.busy,
-        curriculumLength: CURRICULUM.length,
+        curriculumLength: pathLen(),
+        pathwayId: state.pathwayId,
+        pathway: path
+          ? {
+              id: path.id,
+              name: path.name,
+              role: path.role,
+              blurb: path.blurb,
+              accent: path.accent,
+              secondary: path.secondary,
+              power: path.power,
+              character: path.character,
+              affinity: path.affinity.slice(),
+              pattern: path.pattern,
+              backdrop: path.backdrop,
+              clouds: path.clouds.slice(),
+            }
+          : null,
+        phase: state.phase,
+        challengeIndex: state.challengeIndex,
+        challengesCleared: state.challengesCleared,
+        graduated: state.graduated,
+        mana: state.mana,
+        manaMax: state.manaMax,
+        powerReady: state.powerReady,
+        powersUsed: state.powersUsed,
+        bossHp: state.bossHp,
+        characterPulse: state.characterPulse,
+        endgameLength: ENDGAME_CHALLENGES.length,
       };
     }
 
@@ -928,6 +1546,9 @@
       pause,
       resume,
       reset,
+      reopenClassSelect,
+      choosePathway,
+      castPower,
       selectCell,
       trySwap,
       hint: doHint,
@@ -945,6 +1566,9 @@
       },
       get linesOfCode() {
         return state.linesOfCode;
+      },
+      get pathwayId() {
+        return state.pathwayId;
       },
     };
   }
@@ -1645,24 +2269,19 @@
     return "orbit";
   }
 
-  function mountDevClouds(host, pattern, level) {
+  function mountDevClouds(host, pattern, level, pathwayId, phase, challengeIndex) {
     if (!host) return;
-    const lesson = lessonFor(level || 1);
-    const themed = (lesson.clouds || []).map((text) => ({
+    const lesson = lessonFor(level || 1, pathwayId, phase, challengeIndex);
+    const path = pathwayId ? pathwayFor(pathwayId) : null;
+    const pathClouds = (path && path.clouds) || [];
+    const lessonClouds = lesson.clouds || [];
+    const themed = pathClouds.concat(lessonClouds).map((text) => ({
       text,
-      lang: lesson.id.includes("css") || lesson.id.includes("layout") || lesson.id.includes("responsive")
-        ? "css"
-        : lesson.id.includes("php") || lesson.id.includes("wp")
-          ? "wp"
-          : lesson.id.includes("react") || lesson.id.includes("hooks")
-            ? "react"
-            : lesson.id.includes("js") || lesson.id.includes("dom") || lesson.id.includes("typescript")
-              ? "dev"
-              : "dev",
+      lang: path ? path.id : "dev",
     }));
-    const filler = WordGenerator.generateCloud(Math.max(8, 28 - themed.length));
+    const filler = WordGenerator.generateCloud(Math.max(6, 28 - themed.length));
     const tokens = themed.concat(filler).slice(0, 28);
-    host.className = `dev-clouds pattern-${pattern || "drift"}`;
+    host.className = `dev-clouds pattern-${pattern || (path && path.pattern) || "drift"}`;
     host.setAttribute("data-dev-clouds", "");
     host.setAttribute("aria-hidden", "true");
     host.replaceChildren();
@@ -1679,19 +2298,22 @@
       span.style.fontSize = `${0.65 + Math.random() * 0.75}rem`;
       span.style.opacity = String(0.22 + Math.random() * 0.4);
       span.dataset.lang = token.lang || "dev";
+      if (path && path.accent) span.style.color = path.accent;
       host.appendChild(span);
     });
   }
 
-  function refreshDevCloudText(doc, level) {
+  function refreshDevCloudText(doc, level, pathwayId, phase, challengeIndex) {
     const rootDoc = doc || (typeof document !== "undefined" ? document : null);
     if (!rootDoc) return;
-    const lesson = lessonFor(level || 1);
-    const pool = (lesson.clouds || []).slice();
+    const lesson = lessonFor(level || 1, pathwayId, phase, challengeIndex);
+    const path = pathwayId ? pathwayFor(pathwayId) : null;
+    const pool = ((path && path.clouds) || []).concat(lesson.clouds || []).slice();
     rootDoc.querySelectorAll("[data-dev-clouds] .dev-cloud").forEach((el, i) => {
-      if (pool.length && Math.random() < 0.65) {
+      if (pool.length && Math.random() < 0.7) {
         el.textContent = pool[i % pool.length];
-        el.dataset.lang = "dev";
+        el.dataset.lang = path ? path.id : "dev";
+        if (path && path.accent) el.style.color = path.accent;
       } else {
         const token = WordGenerator.nextCloudToken();
         el.textContent = token.text;
@@ -1736,7 +2358,14 @@
         embed.style.setProperty("--gb-backdrop", value);
         embed.dataset.gbPattern = pattern;
       }
-      mountDevClouds(ensureDevCloudHost(rootEl), pattern, (rootEl && rootEl._gbLevel) || 1);
+      mountDevClouds(
+        ensureDevCloudHost(rootEl),
+        pattern,
+        (rootEl && rootEl._gbLevel) || 1,
+        rootEl && rootEl._gbPathway,
+        rootEl && rootEl._gbPhase,
+        rootEl && rootEl._gbChallenge
+      );
     }
   }
 
@@ -1829,9 +2458,20 @@
     music.setVolume(prefs.music.volume || 0.35);
     root.classList.toggle("gfx-simple", prefs.graphics === "simple");
     root._gbLevel = 1;
+    root._gbPathway = null;
+    root._gbPhase = "path";
+    root._gbChallenge = 0;
 
     if (!prefersReducedMotion()) {
-      window.setInterval(() => refreshDevCloudText(root.ownerDocument, root._gbLevel || 1), 4200);
+      window.setInterval(() => {
+        refreshDevCloudText(
+          root.ownerDocument,
+          root._gbLevel || 1,
+          root._gbPathway,
+          root._gbPhase,
+          root._gbChallenge
+        );
+      }, 4200);
     }
 
     function beep(kind) {
@@ -1907,10 +2547,190 @@
       });
     }
 
-    function syncLessonClouds(level) {
+    function applyPathwayTheme(pathway) {
+      if (!pathway) {
+        root.removeAttribute("data-pathway");
+        root.style.removeProperty("--pathway-accent");
+        root.style.removeProperty("--pathway-secondary");
+        return;
+      }
+      root.setAttribute("data-pathway", pathway.id);
+      root.style.setProperty("--pathway-accent", pathway.accent);
+      root.style.setProperty("--pathway-secondary", pathway.secondary || pathway.accent);
+      document.documentElement.style.setProperty("--gb-backdrop", pathway.backdrop);
+      document.documentElement.dataset.gbPattern = pathway.pattern || "drift";
+      const embed = root.closest(".git-blocks-embed");
+      if (embed) {
+        embed.style.setProperty("--gb-backdrop", pathway.backdrop);
+        embed.dataset.gbPattern = pathway.pattern || "drift";
+      }
+    }
+
+    function ensureHeroPanel() {
+      let hero = root.querySelector("[data-hero]");
+      if (hero) return hero;
+      const side = root.querySelector(".side");
+      if (!side) return null;
+      hero = document.createElement("div");
+      hero.className = "hero-panel";
+      hero.setAttribute("data-hero", "");
+      const insertBefore = side.querySelector(".stats-row") || side.firstChild;
+      side.insertBefore(hero, insertBefore);
+      return hero;
+    }
+
+    function paintHero(snap) {
+      const hero = ensureHeroPanel();
+      if (!hero) return;
+      const path = snap.pathway;
+      if (!path) {
+        hero.hidden = true;
+        return;
+      }
+      hero.hidden = false;
+      const char = path.character || {};
+      const pulsing = snap.characterPulse && Date.now() - snap.characterPulse < 700;
+      hero.innerHTML = "";
+      hero.className = `hero-panel hero-${char.silhouette || "ranger"} idle-${char.idle || "float"}${
+        pulsing ? " is-pulsing" : ""
+      }`;
+      const figure = document.createElement("div");
+      figure.className = "hero-figure";
+      figure.setAttribute("aria-hidden", "true");
+      figure.innerHTML = `
+        <span class="hero-aura"></span>
+        <span class="hero-body"><span class="hero-glyph">${char.glyph || "◆"}</span></span>
+        <span class="hero-base"></span>
+      `;
+      const meta = document.createElement("div");
+      meta.className = "hero-meta";
+      meta.innerHTML = `
+        <strong>${path.name}</strong>
+        <span>${path.role}</span>
+        <span class="hero-power">${(path.power && path.power.name) || "Class power"}</span>
+      `;
+      hero.appendChild(figure);
+      hero.appendChild(meta);
+    }
+
+    function paintMana(snap) {
+      let row = root.querySelector("[data-mana-row]");
+      if (!row) {
+        const side = root.querySelector(".side");
+        if (!side) return;
+        row = document.createElement("div");
+        row.className = "mana-row";
+        row.setAttribute("data-mana-row", "");
+        row.innerHTML = `
+          <div class="mana-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Class mana">
+            <span data-mana-fill></span>
+          </div>
+          <button type="button" class="ghost" data-cast-power disabled>Cast power</button>
+        `;
+        const powerRow = side.querySelector(".power-row");
+        if (powerRow) side.insertBefore(row, powerRow);
+        else side.appendChild(row);
+        const castBtn = row.querySelector("[data-cast-power]");
+        if (castBtn) {
+          castBtn.addEventListener("click", () => {
+            const result = game.castPower();
+            if (result && result.ok) {
+              (result.sounds || []).forEach((s) => beep(s));
+              announce((result.power && result.power.name) || "Power cast");
+            }
+          });
+        }
+      }
+      const fill = row.querySelector("[data-mana-fill]");
+      const castBtn = row.querySelector("[data-cast-power]");
+      const pct = Math.max(0, Math.min(100, Math.round(((snap.mana || 0) / Math.max(1, snap.manaMax || 100)) * 100)));
+      if (fill) fill.style.width = `${pct}%`;
+      const bar = row.querySelector(".mana-bar");
+      if (bar) bar.setAttribute("aria-valuenow", String(pct));
+      if (castBtn) {
+        const powerName = (snap.pathway && snap.pathway.power && snap.pathway.power.name) || "Cast power";
+        castBtn.textContent = snap.powerReady ? `Cast ${powerName}` : `${powerName} (${pct}%)`;
+        castBtn.disabled = snap.status !== "playing" || !snap.powerReady;
+        castBtn.classList.toggle("is-ready", !!snap.powerReady);
+      }
+      let boss = root.querySelector("[data-boss-row]");
+      if (snap.phase === "endgame") {
+        if (!boss) {
+          boss = document.createElement("div");
+          boss.className = "boss-row";
+          boss.setAttribute("data-boss-row", "");
+          boss.innerHTML = `<span>Raid HP</span><strong data-boss-hp>0</strong>`;
+          row.after(boss);
+        }
+        boss.hidden = false;
+        const hpEl = boss.querySelector("[data-boss-hp]");
+        if (hpEl) hpEl.textContent = String(Math.max(0, snap.bossHp || 0));
+      } else if (boss) {
+        boss.hidden = true;
+      }
+    }
+
+    function paintClassSelect(snap) {
+      let host = root.querySelector("[data-class-select]");
+      if (snap.status !== "class-select") {
+        if (host) host.hidden = true;
+        return;
+      }
+      if (!host) {
+        host = document.createElement("div");
+        host.className = "class-select";
+        host.setAttribute("data-class-select", "");
+        const overlayInner = overlay && overlay.querySelector("div");
+        if (overlayInner) overlayInner.appendChild(host);
+        else if (overlay) overlay.appendChild(host);
+      }
+      host.hidden = false;
+      host.replaceChildren();
+      PATHWAY_CLASSES.forEach((path) => {
+        const card = document.createElement("button");
+        card.type = "button";
+        card.className = `class-card class-${path.id}`;
+        card.style.setProperty("--card-accent", path.accent);
+        card.innerHTML = `
+          <span class="class-card-figure idle-${path.character.idle}">
+            <span class="hero-aura"></span>
+            <span class="hero-glyph">${path.character.glyph}</span>
+          </span>
+          <strong>${path.name}</strong>
+          <em>${path.role}</em>
+          <span class="class-card-blurb">${path.blurb}</span>
+          <span class="class-card-gems">${path.affinity
+            .slice(0, 5)
+            .map((id) => (META[id] && META[id].label) || id)
+            .join(" · ")}</span>
+        `;
+        card.addEventListener("click", () => {
+          if (!game.choosePathway(path.id)) return;
+          applyPathwayTheme(path);
+          syncLessonClouds(1, path.id, "path", 0);
+          beep("start");
+          announce(`${path.name} chosen`);
+          handlePlay();
+        });
+        host.appendChild(card);
+      });
+    }
+
+    function syncLessonClouds(level, pathwayId, phase, challengeIndex) {
       root._gbLevel = level || 1;
-      const pattern = patternForBackground(prefs.background);
-      mountDevClouds(ensureDevCloudHost(root), pattern, root._gbLevel);
+      root._gbPathway = pathwayId || root._gbPathway;
+      root._gbPhase = phase || root._gbPhase || "path";
+      root._gbChallenge = challengeIndex != null ? challengeIndex : root._gbChallenge || 0;
+      const path = root._gbPathway ? pathwayFor(root._gbPathway) : null;
+      const pattern = (path && path.pattern) || patternForBackground(prefs.background);
+      mountDevClouds(
+        ensureDevCloudHost(root),
+        pattern,
+        root._gbLevel,
+        root._gbPathway,
+        root._gbPhase,
+        root._gbChallenge
+      );
     }
 
     function spawnBurst(cells, cellSize) {
@@ -1961,14 +2781,17 @@
       return cell;
     }
 
-    function paintLegend() {
+    function paintLegend(snap) {
       const host = root.querySelector("[data-gem-legend]");
-      if (!host || host.dataset.ready) return;
-      host.dataset.ready = "1";
+      if (!host) return;
+      const affinity = (snap && snap.pathway && snap.pathway.affinity) || [];
+      const key = affinity.join(",") + "|" + ((snap && snap.pathwayId) || "");
+      if (host.dataset.ready === key) return;
+      host.dataset.ready = key;
       host.replaceChildren();
       GEMS.forEach((gem) => {
         const item = document.createElement("div");
-        item.className = "gem-legend-item";
+        item.className = "gem-legend-item" + (affinity.includes(gem.id) ? " is-affinity" : "");
         const c = document.createElement("canvas");
         c.width = 36;
         c.height = 36;
@@ -2090,13 +2913,34 @@
       const rankEl = root.querySelector("[data-rank]");
       if (comboEl) comboEl.textContent = String(snap.combo);
       if (movesEl) movesEl.textContent = String(snap.moves);
-      if (goalEl) goalEl.textContent = `${snap.levelScore}/${snap.goal} LOC`;
-      if (sprintEl) {
-        sprintEl.textContent = snap.lessonTitle
-          ? `L${snap.level} · ${snap.lessonTitle}`
-          : snap.sprint || "";
+      if (goalEl) {
+        goalEl.textContent =
+          snap.phase === "endgame"
+            ? `Raid ${snap.levelScore}/${snap.goal}`
+            : `${snap.levelScore}/${snap.goal} LOC`;
       }
-      if (rankEl) rankEl.textContent = snap.lessonRank ? `${snap.lessonTrack} · ${snap.lessonRank}` : "";
+      if (sprintEl) {
+        if (snap.pathway) {
+          sprintEl.textContent =
+            snap.phase === "endgame"
+              ? `Raid ${snap.challengeIndex + 1} · ${snap.lessonTitle}`
+              : `L${snap.level} · ${snap.lessonTitle}`;
+        } else {
+          sprintEl.textContent = snap.lessonTitle ? `L${snap.level} · ${snap.lessonTitle}` : snap.sprint || "";
+        }
+      }
+      if (rankEl) {
+        rankEl.textContent = snap.pathway
+          ? `${snap.pathway.name} · ${snap.lessonRank || snap.lessonTrack || ""}`
+          : snap.lessonRank
+            ? `${snap.lessonTrack} · ${snap.lessonRank}`
+            : "";
+      }
+
+      paintHero(snap);
+      paintMana(snap);
+      paintClassSelect(snap);
+      if (snap.pathway) applyPathwayTheme(snap.pathway);
 
       const fact = typeof game.consumeFact === "function" ? game.consumeFact() : null;
       if (fact) showFactToast(fact);
@@ -2106,7 +2950,14 @@
         beep("badge");
       }
       paintSkills(snap.skills);
-      if (root._gbLevel !== snap.level) syncLessonClouds(snap.level);
+      if (
+        root._gbLevel !== snap.level ||
+        root._gbPathway !== snap.pathwayId ||
+        root._gbPhase !== snap.phase ||
+        root._gbChallenge !== snap.challengeIndex
+      ) {
+        syncLessonClouds(snap.level, snap.pathwayId, snap.phase, snap.challengeIndex);
+      }
 
       const hintBtn = root.querySelector("[data-hint]");
       const shuffleBtn = root.querySelector("[data-shuffle]");
@@ -2140,7 +2991,7 @@
         });
       }
 
-      paintLegend();
+      paintLegend(snap);
 
       const progress = root.querySelector("[data-progress]");
       if (progress) {
@@ -2153,23 +3004,41 @@
       const showLevelBanner = snap.status === "playing" && flashAge < 1100;
       const customizing = panel && !panel.hidden;
       if (overlay && overlayTitle && overlayBody) {
-        const show = !customizing && (snap.status !== "playing" || showLevelBanner);
+        const show =
+          !customizing &&
+          (snap.status === "class-select" || snap.status !== "playing" || showLevelBanner);
         overlay.hidden = !show;
-        overlay.classList.toggle("is-clickable", !customizing && snap.status !== "playing");
+        overlay.classList.toggle(
+          "is-clickable",
+          !customizing && snap.status !== "playing" && snap.status !== "class-select"
+        );
+        overlay.classList.toggle("is-class-select", snap.status === "class-select");
         if (overlayLevel) {
           overlayLevel.hidden = !(showLevelBanner || snap.status === "ready");
-          overlayLevel.textContent = snap.lessonTitle || snap.sprint || `Lesson ${snap.level}`;
+          overlayLevel.textContent =
+            snap.phase === "endgame"
+              ? snap.lessonTitle
+              : snap.lessonTitle || snap.sprint || `Lesson ${snap.level}`;
         }
-        if (showLevelBanner && snap.status === "playing") {
-          overlayTitle.textContent = `Skill path · ${snap.lessonRank || "Next"}`;
+        if (snap.status === "class-select") {
+          overlayTitle.textContent = "Choose your pathway class";
+          overlayBody.textContent =
+            "Each class is a web-dev career path — affinity gems, unique clouds, and a class power fuel your gem-drop RPG.";
+          if (playBtn) playBtn.hidden = true;
+        } else if (showLevelBanner && snap.status === "playing") {
+          overlayTitle.textContent =
+            snap.phase === "endgame"
+              ? `Endgame raid · ${snap.lessonRank || "Boss"}`
+              : `Skill path · ${snap.lessonRank || "Next"}`;
           overlayBody.textContent = `${snap.lessonTitle}. ${
             (snap.lessonSkill && snap.lessonSkill.blurb) || "Keep matching to write more lines of code."
           }`;
           if (playBtn) playBtn.hidden = true;
         } else if (snap.status === "ready") {
-          overlayTitle.textContent = "Git Blocks";
-          overlayBody.textContent =
-            "Learn web development from HTML to senior craft. Match shiny logo gems to write lines of code, unlock RPG skills, and graduate.";
+          overlayTitle.textContent = snap.pathway ? snap.pathway.name : "Git Blocks";
+          overlayBody.textContent = snap.pathway
+            ? `${snap.pathway.blurb} Match affinity gems to fill mana and cast ${snap.pathway.power.name}.`
+            : "Learn web development from HTML to senior craft. Match shiny logo gems to write lines of code, unlock RPG skills, and graduate.";
           if (playBtn) {
             playBtn.hidden = false;
             playBtn.textContent = "Start learning";
@@ -2182,27 +3051,41 @@
             playBtn.textContent = "Resume";
           }
         } else if (snap.status === "over") {
-          const graduated = snap.level >= (snap.curriculumLength || 20);
-          overlayTitle.textContent = graduated ? "Senior developer" : "Lesson paused";
-          overlayBody.textContent = graduated
-            ? `${snap.linesOfCode} LOC written · ${snap.skills.length} skills unlocked. You finished the path.`
-            : `${snap.linesOfCode} LOC · ${snap.cleared} gems · rebase to continue studying.`;
+          const clearedAll =
+            snap.graduated && snap.challengesCleared >= (snap.endgameLength || 4);
+          overlayTitle.textContent = clearedAll
+            ? "Legendary senior"
+            : snap.graduated
+              ? "Raid failed"
+              : "Lesson paused";
+          overlayBody.textContent = clearedAll
+            ? `${snap.linesOfCode} LOC · ${snap.skills.length} skills · all endgame raids cleared as ${
+                (snap.pathway && snap.pathway.name) || "a senior"
+              }.`
+            : snap.graduated
+              ? `${snap.linesOfCode} LOC — rebase to retry this raid.`
+              : `${snap.linesOfCode} LOC · ${snap.cleared} gems · rebase to continue studying.`;
           if (playBtn) {
             playBtn.hidden = false;
-            playBtn.textContent = graduated ? "New career" : "Rebase";
+            playBtn.textContent = clearedAll ? "New career" : "Rebase";
           }
         }
       }
 
       if (snap.level !== lastLevelShown && snap.status === "playing") {
         lastLevelShown = snap.level;
-        announce(`Lesson ${snap.level}: ${snap.lessonTitle}`);
+        announce(
+          snap.phase === "endgame"
+            ? `Raid: ${snap.lessonTitle}`
+            : `Lesson ${snap.level}: ${snap.lessonTitle}`
+        );
         beep("level");
-        syncLessonClouds(snap.level);
+        syncLessonClouds(snap.level, snap.pathwayId, snap.phase, snap.challengeIndex);
       }
       if (pauseBtn) {
         pauseBtn.textContent = snap.status === "paused" ? "Resume" : "Pause";
-        pauseBtn.disabled = snap.status === "ready" || snap.status === "over";
+        pauseBtn.disabled =
+          snap.status === "ready" || snap.status === "over" || snap.status === "class-select";
       }
     }
 
@@ -2236,11 +3119,28 @@
     }
 
     function handlePlay() {
-      if (game.status === "paused") game.resume();
-      else {
+      if (game.status === "class-select") return;
+      if (game.status === "paused") {
+        game.resume();
+      } else if (
+        game.status === "over" &&
+        playBtn &&
+        /new career/i.test(playBtn.textContent || "")
+      ) {
+        game.reopenClassSelect();
+        applyPathwayTheme(null);
+        syncLessonClouds(1, null, "path", 0);
+        beep("start");
+        announce("Choose a new pathway class");
+      } else {
         game.play();
         beep("start");
-        announce(`Sprint ${game.snapshot().level} started`);
+        const snap = game.snapshot();
+        announce(
+          snap.phase === "endgame"
+            ? `Raid started: ${snap.lessonTitle}`
+            : `${(snap.pathway && snap.pathway.name) || "Lesson"} · L${snap.level}`
+        );
         if (prefs.music.trackId === "off") {
           prefs.music.trackId = "stack-sprint";
           savePrefs(prefs);
@@ -2272,6 +3172,7 @@
 
     function onPointerDown(event) {
       if (event.button !== 0) return;
+      if (game.status === "class-select") return;
       if (game.status !== "playing") {
         handlePlay();
         return;
@@ -2633,11 +3534,16 @@
     GEM_IDS,
     META,
     CURRICULUM,
+    PATHWAY_CLASSES,
+    ENDGAME_CHALLENGES,
     ACHIEVEMENTS,
     BG_PRESETS,
     MUSIC_TRACKS,
     DEV_CLOUD_WORDS,
     WordGenerator,
+    pathwayFor,
+    pathwayLessons,
+    curriculumLength,
     lessonFor,
     sprintName,
     pickFact,

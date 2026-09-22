@@ -688,10 +688,276 @@ button:disabled {
 .rank-line {
   margin: -2px 0 0;
   font-size: 10px;
-  color: var(--muted);
+  color: var(--pathway-accent, var(--muted));
   letter-spacing: 0.04em;
   text-transform: uppercase;
   flex: 0 0 auto;
+}
+
+.hero-panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 6px;
+  padding: 8px 8px 6px;
+  border: 1px solid rgba(79, 143, 212, 0.28);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(8, 16, 28, 0.75), rgba(13, 46, 87, 0.35));
+  flex: 0 0 auto;
+}
+
+.hero-figure {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  flex: 0 0 auto;
+}
+
+.hero-aura {
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--pathway-accent, #4f8fd4) 0%, transparent 70%);
+  opacity: 0.55;
+  animation: hero-aura 2.8s ease-in-out infinite;
+}
+
+.hero-body {
+  position: absolute;
+  inset: 8px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(160deg, var(--pathway-secondary, #0d2e57), var(--pathway-accent, #4f8fd4));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+  color: #07111f;
+  font-weight: 800;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.hero-base {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 2px;
+  height: 6px;
+  border-radius: 99px;
+  background: rgba(0, 0, 0, 0.35);
+  filter: blur(1px);
+}
+
+.hero-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.hero-meta strong {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.hero-meta span {
+  font-size: 10px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hero-power {
+  color: var(--pathway-accent, #e7c35a) !important;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+.idle-float .hero-body { animation: hero-float 2.6s ease-in-out infinite; }
+.idle-pulse .hero-body { animation: hero-pulse 1.8s ease-in-out infinite; }
+.idle-bob .hero-body { animation: hero-bob 2.2s ease-in-out infinite; }
+.idle-stride .hero-body { animation: hero-stride 2.4s ease-in-out infinite; }
+
+.hero-panel.is-pulsing .hero-body {
+  transform: scale(1.08);
+  filter: brightness(1.2);
+}
+
+@keyframes hero-aura {
+  0%, 100% { transform: scale(0.92); opacity: 0.4; }
+  50% { transform: scale(1.08); opacity: 0.7; }
+}
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes hero-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+@keyframes hero-bob {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-3px) rotate(2deg); }
+}
+@keyframes hero-stride {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+}
+
+.mana-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+  align-items: center;
+  margin: 0 0 6px;
+  flex: 0 0 auto;
+}
+
+.mana-bar {
+  height: 8px;
+  border-radius: 99px;
+  background: rgba(7, 17, 31, 0.75);
+  border: 1px solid rgba(79, 143, 212, 0.35);
+  overflow: hidden;
+}
+
+.mana-bar [data-mana-fill] {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--pathway-secondary, #264de4), var(--pathway-accent, #61dafb));
+  transition: width 0.25s ease;
+}
+
+[data-cast-power].is-ready {
+  border-color: var(--pathway-accent, #e7c35a);
+  color: #f0e2a8;
+  box-shadow: 0 0 0 1px rgba(231, 195, 90, 0.35);
+}
+
+.boss-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 6px;
+  font-size: 11px;
+  color: #f0a8a8;
+  flex: 0 0 auto;
+}
+
+.boss-row strong {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  color: #ffc9c9;
+}
+
+.gem-legend-item.is-affinity {
+  outline: 1px solid var(--pathway-accent, #e7c35a);
+  outline-offset: 1px;
+  border-radius: 8px;
+}
+
+.overlay.is-class-select > div {
+  width: min(920px, calc(100% - 24px));
+  max-height: calc(100% - 24px);
+  overflow: auto;
+}
+
+.class-select {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+  text-align: left;
+}
+
+.class-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid color-mix(in srgb, var(--card-accent, #4f8fd4) 55%, transparent);
+  background: linear-gradient(160deg, rgba(8, 16, 28, 0.92), color-mix(in srgb, var(--card-accent, #4f8fd4) 18%, transparent));
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+  text-align: left;
+}
+
+.class-card:hover,
+.class-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--card-accent, #4f8fd4);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  outline: none;
+}
+
+.class-card-figure {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 4px;
+}
+
+.class-card-figure .hero-aura {
+  inset: 0;
+}
+
+.class-card-figure .hero-glyph {
+  position: relative;
+  z-index: 1;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--card-accent, #4f8fd4);
+  color: #07111f;
+  font-weight: 800;
+}
+
+.class-card strong {
+  font-size: 14px;
+}
+
+.class-card em {
+  font-style: normal;
+  font-size: 11px;
+  color: var(--card-accent, var(--accent));
+}
+
+.class-card-blurb {
+  font-size: 11px;
+  line-height: 1.35;
+  color: #c5d3e4;
+}
+
+.class-card-gems {
+  margin-top: 4px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 10px;
+  color: #9eb0c5;
+}
+
+.player[data-pathway="frontend"] .player-chrome {
+  border-bottom-color: rgba(97, 218, 251, 0.35);
+}
+.player[data-pathway="backend"] .player-chrome {
+  border-bottom-color: rgba(51, 153, 51, 0.4);
+}
+.player[data-pathway="wordpress"] .player-chrome {
+  border-bottom-color: rgba(33, 117, 155, 0.45);
+}
+.player[data-pathway="fullstack"] .player-chrome {
+  border-bottom-color: rgba(240, 219, 79, 0.35);
+}
+
+@media (max-width: 720px) {
+  .class-select {
+    grid-template-columns: 1fr;
+  }
+  .hero-panel { max-width: 100%; }
 }
 
 .skills-row {
