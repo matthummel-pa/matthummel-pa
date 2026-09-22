@@ -26,16 +26,16 @@ I ship Sage 11 themes, small plugins, and the APIs around them — then hand the
 ---
 
 <a id="play"></a>
-## Git Blocks
+## Branchborne Gem Quest
 
 GitHub READMEs cannot run JavaScript, so the cabinet lives on matthummel.com. Click the player — pieces are commits, branches, hotfixes, and reviews. Clear a line, ship the backlog.
 
 <div align="center">
   <a href="https://matthummel-pa.github.io/matthummel-pa/">
-    <img src="./assets/git-blocks-player.svg" alt="Play Git Blocks, a tetris-style commit game" width="720" />
+    <img src="./assets/git-blocks-player.svg" alt="Play Branchborne Gem Quest, a Bejeweled-style tech gem RPG" width="720" />
   </a>
   <br />
-  <a href="https://matthummel-pa.github.io/matthummel-pa/"><img src="https://img.shields.io/badge/▶_Play_Git_Blocks-0D2E57?style=for-the-badge" alt="Play Git Blocks" /></a>
+  <a href="https://matthummel-pa.github.io/matthummel-pa/"><img src="https://img.shields.io/badge/▶_Play_Branchborne-0D2E57?style=for-the-badge" alt="Play Branchborne Gem Quest" /></a>
 </div>
 
 <p align="center"><sub><kbd>←</kbd> <kbd>→</kbd> move · <kbd>↑</kbd> rotate · <kbd>space</kbd> hard drop · <kbd>C</kbd> hold · high score stays in your browser</sub></p>
@@ -265,6 +265,6 @@ Latest from [matthummel.com/blog](https://matthummel.com/blog/):
 - 🦋 **Bluesky:** [@matthummel](https://bsky.app/profile/matthummel.bsky.social)
 - 👽 **Reddit:** [u/matt-hummel](https://www.reddit.com/user/matt-hummel)
 - 📡 **RSS:** [matthummel.com/feed](https://matthummel.com/feed/)
-- 🎮 **Git Blocks:** [Play the cabinet](https://matthummel.com/git-blocks/)
+- 🎮 **Branchborne Gem Quest:** [Play the cabinet](https://matthummel.com/git-blocks/)
 
 <sub>WordPress developer · full-stack PHP — open for work. PRs welcome; puns tolerated.</sub>

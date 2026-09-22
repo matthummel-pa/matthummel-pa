@@ -1,6 +1,6 @@
 /**
- * Git Blocks — gem-drop RPG (Gems of War–style) for Matt's GitHub profile.
- * Pick a pathway class, match logo gems to write LOC, unlock skills, then face endgame raids.
+ * Branchborne Gem Quest — Bejeweled-style match-3 with Gems of War flavor and WoW-like side quests.
+ * Match tech gems, complete pathway quests to Senior / class Expert, collect trophies & loot.
  * Works in the browser (canvas player) and in Node (engine unit tests).
  */
 (function (root, factory) {
@@ -9,6 +9,7 @@
     module.exports = api;
   }
   root.GitBlocks = api;
+  root.Branchborne = api;
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   "use strict";
 
@@ -16,19 +17,24 @@
   const COLS = SIZE;
   const ROWS = SIZE;
   const MATCH_MIN = 3;
+  const GAME_TITLE = "Branchborne Gem Quest";
 
-  /** Ten shiny web-dev logo gems (stylized marks — not official trademarks). */
+  /** Shiny tech logo gems (stylized marks — not official trademarks). */
   const GEMS = [
     { id: "html", label: "HTML", color: "#e34c26", accent: "#ff7a4d", ink: "#ffffff", mark: "html" },
     { id: "css", label: "CSS", color: "#264de4", accent: "#5b8cff", ink: "#ffffff", mark: "css" },
     { id: "js", label: "JS", color: "#f0db4f", accent: "#fff3a0", ink: "#1a1a1a", mark: "js" },
     { id: "ts", label: "TS", color: "#3178c6", accent: "#6aa8e8", ink: "#ffffff", mark: "ts" },
     { id: "react", label: "React", color: "#61dafb", accent: "#b6f0ff", ink: "#0b1220", mark: "react" },
+    { id: "vue", label: "Vue", color: "#42b883", accent: "#7ee2b0", ink: "#0b1220", mark: "vue" },
     { id: "php", label: "PHP", color: "#777bb4", accent: "#a8abe0", ink: "#ffffff", mark: "php" },
     { id: "wp", label: "WP", color: "#21759b", accent: "#4fa8ce", ink: "#ffffff", mark: "wp" },
     { id: "git", label: "Git", color: "#f05032", accent: "#ff8a6e", ink: "#ffffff", mark: "git" },
     { id: "node", label: "Node", color: "#339933", accent: "#6dcf6d", ink: "#ffffff", mark: "node" },
     { id: "npm", label: "npm", color: "#cb3837", accent: "#f06a68", ink: "#ffffff", mark: "npm" },
+    { id: "python", label: "Py", color: "#3776ab", accent: "#ffd343", ink: "#ffffff", mark: "python" },
+    { id: "docker", label: "Dock", color: "#2496ed", accent: "#7ec8ff", ink: "#ffffff", mark: "docker" },
+    { id: "sql", label: "SQL", color: "#e38c00", accent: "#ffc45c", ink: "#1a1a1a", mark: "sql" },
   ];
 
   const GEM_IDS = GEMS.map((g) => g.id);
@@ -316,7 +322,7 @@
       backdrop:
         "radial-gradient(900px 420px at 12% -10%, rgba(97,218,251,0.28), transparent 55%), radial-gradient(700px 380px at 100% 0%, rgba(38,77,228,0.45), transparent 50%), #071428",
       pattern: "orbit",
-      affinity: ["html", "css", "js", "ts", "react"],
+      affinity: ["html", "css", "js", "ts", "react", "vue"],
       clouds: ["flex", "grid", "jsx", "hooks", "a11y", "pixels", "cascade", "viewport", "component", "UI"],
       power: {
         id: "ui-burst",
@@ -362,7 +368,7 @@
       backdrop:
         "radial-gradient(880px 400px at 8% -8%, rgba(51,153,51,0.3), transparent 55%), radial-gradient(640px 360px at 100% 8%, rgba(119,123,180,0.4), transparent 48%), #06140c",
       pattern: "drift",
-      affinity: ["node", "php", "js", "ts", "npm", "git"],
+      affinity: ["node", "php", "js", "ts", "npm", "git", "python", "docker", "sql"],
       clouds: ["async", "REST", "JSON", "queue", "SQL", "auth", "schema", "cache", "worker", "API"],
       power: {
         id: "query-storm",
@@ -405,7 +411,7 @@
       backdrop:
         "radial-gradient(900px 420px at 10% -6%, rgba(33,117,155,0.35), transparent 55%), radial-gradient(680px 340px at 95% 0%, rgba(227,76,38,0.28), transparent 50%), #071820",
       pattern: "sway",
-      affinity: ["wp", "php", "html", "css", "js", "git"],
+      affinity: ["wp", "php", "html", "css", "js", "git", "sql"],
       clouds: ["hook", "filter", "theme", "plugin", "WP_Query", "nonce", "escape", "block", "template", "CMS"],
       power: {
         id: "hook-cascade",
@@ -448,7 +454,7 @@
       backdrop:
         "radial-gradient(920px 430px at 14% -10%, rgba(240,219,79,0.22), transparent 55%), radial-gradient(700px 360px at 100% 0%, rgba(240,80,50,0.32), transparent 48%), #141008",
       pattern: "drift",
-      affinity: ["html", "css", "js", "node", "git", "react", "php", "npm"],
+      affinity: ["html", "css", "js", "node", "git", "react", "php", "npm", "vue", "python", "docker"],
       clouds: ["ship", "PR", "fullstack", "deploy", "feature", "debug", "scope", "tradeoff", "release", "craft"],
       power: {
         id: "polyglot-pulse",
@@ -665,6 +671,37 @@
     { id: "mana-cast", label: "First cast", test: (s) => s.powersUsed >= 1 },
     { id: "raid-clear", label: "Raid clear", test: (s) => s.challengesCleared >= 1 },
     { id: "endgame-hero", label: "Endgame hero", test: (s) => s.challengesCleared >= ENDGAME_CHALLENGES.length },
+    { id: "trophy-hunter", label: "Trophy hunter", test: (s) => Object.keys(s.trophies || {}).length >= 5 },
+    { id: "loot-hoard", label: "Loot hoard", test: (s) => Object.keys(s.items || {}).length >= 6 },
+    { id: "class-expert", label: "Class expert", test: (s) => s.classExpert },
+  ];
+
+  /** Trophy case — tech / web relics earned on the path. */
+  const TROPHIES = [
+    { id: "rubber-duck", name: "Rubber Duck", icon: "🦆", blurb: "Debugged out loud.", test: (s) => s.matches >= 3 },
+    { id: "green-check", name: "Green Check", icon: "✓", blurb: "CI passed in spirit.", test: (s) => s.matches >= 10 },
+    { id: "lighthouse", name: "Lighthouse 100", icon: "💡", blurb: "Perf path lit.", test: (s) => s.level >= 4 },
+    { id: "a11y-medal", name: "A11y Medal", icon: "♿", blurb: "Inclusive craft.", test: (s) => s.level >= 6 },
+    { id: "pr-stamp", name: "PR Stamp", icon: "📑", blurb: "Review-ready.", test: (s) => s.quads >= 2 },
+    { id: "ship-bottle", name: "Ship in a Bottle", icon: "🚢", blurb: "Deploy calm.", test: (s) => s.maxChain >= 4 },
+    { id: "type-shield", name: "Type Shield", icon: "🛡", blurb: "Strict mode forever.", test: (s) => s.level >= 8 },
+    { id: "senior-crest", name: "Senior Crest", icon: "◆", blurb: "Path graduate.", test: (s) => s.graduated },
+    { id: "raid-banner", name: "Raid Banner", icon: "🏳", blurb: "First raid cleared.", test: (s) => s.challengesCleared >= 1 },
+    { id: "expert-sigil", name: "Expert Sigil", icon: "♛", blurb: "Class mastery.", test: (s) => s.classExpert },
+  ];
+
+  /** Collectible tech loot for the item board. */
+  const LOOT_ITEMS = [
+    { id: "mechanical-kb", name: "Mech Keyboard", icon: "⌨", blurb: "Clicky commits.", test: (s) => s.cleared >= 30 },
+    { id: "dual-monitor", name: "Dual Monitor", icon: "🖥", blurb: "More surface area.", test: (s) => s.linesOfCode >= 800 },
+    { id: "coffee-mug", name: "Deploy Mug", icon: "☕", blurb: "Fuel for refactors.", test: (s) => s.matches >= 5 },
+    { id: "usb-stick", name: "USB Stick", icon: "💾", blurb: "Offline backup vibes.", test: (s) => s.maxCombo >= 4 },
+    { id: "api-keycard", name: "API Keycard", icon: "🔑", blurb: "Auth secured.", test: (s) => s.level >= 7 },
+    { id: "docker-whale", name: "Container Whale", icon: "🐳", blurb: "Ship anywhere.", test: (s) => s.level >= 9 },
+    { id: "graphql-orb", name: "GraphQL Orb", icon: "◈", blurb: "Ask for exactly what you need.", test: (s) => s.powersUsed >= 2 },
+    { id: "cdn-feather", name: "CDN Feather", icon: "🪶", blurb: "Edge-delivered.", test: (s) => s.linesOfCode >= 2000 },
+    { id: "obs-totem", name: "Observability Totem", icon: "📡", blurb: "Metrics that matter.", test: (s) => s.challengesCleared >= 2 },
+    { id: "legacy-amulet", name: "Legacy Amulet", icon: "🕯", blurb: "Refactor without fear.", test: (s) => s.classExpert },
   ];
 
   const LESSON_BY_ID = Object.fromEntries(CURRICULUM.map((l) => [l.id, l]));
@@ -712,11 +749,40 @@
       const challenge = lessonFor(level, pathwayId, "endgame", challengeIndex);
       return challenge.moves || 16;
     }
-    return Math.max(18, 32 - Math.min(12, level - 1));
+    // Continuous Bejeweled-style path: generous move pool that refills on quest clears.
+    return Math.max(28, 48 - Math.min(10, level - 1));
+  }
+
+  function questTipFor(lesson, random) {
+    const facts = (lesson && lesson.facts) || [];
+    if (!facts.length) return "Match three or more identical tech gems. Cascades write more LOC.";
+    const rnd = random || Math.random;
+    return facts[Math.floor(rnd() * facts.length)];
+  }
+
+  function buildSideQuest(state, lesson, opts) {
+    const o = opts || {};
+    return {
+      id: `${lesson.id || "quest"}-${state.level}-${state.phase}`,
+      title: lesson.title,
+      track: lesson.track,
+      rank: lesson.rank,
+      skill: lesson.skill,
+      tip: o.tip || questTipFor(lesson, o.random),
+      goal: state.goal,
+      progress: state.levelScore,
+      level: state.level,
+      total: o.total || curriculumLength(state.pathwayId),
+      phase: state.phase,
+      pathway: pathwayFor(state.pathwayId).name,
+      bang: o.fresh ? true : false,
+      at: Date.now(),
+    };
   }
 
   function gemKindsForLevel(level) {
-    return Math.min(GEM_IDS.length, 5 + Math.min(5, Math.floor((level - 1) / 2) + 1));
+    // Bejeweled-style: start with fewer colors, unlock more variants as you climb.
+    return Math.min(GEM_IDS.length, 6 + Math.min(8, Math.floor((level - 1) / 2)));
   }
 
   function pickFact(level, random, pathwayId, phase, challengeIndex) {
@@ -1026,9 +1092,16 @@
       shufflesUsed: 0,
       achievements: {},
       skills: {},
+      trophies: {},
+      items: {},
+      classExpert: false,
       lastFact: null,
       pendingFact: null,
       pendingLessonIntro: null,
+      activeQuest: null,
+      questPulse: 0,
+      pendingTrophy: null,
+      pendingLoot: null,
       skillUnlock: null,
       commitLog: [],
       fx: [],
@@ -1085,6 +1158,39 @@
       return unlocked;
     }
 
+    function unlockTrophiesAndLoot() {
+      const gained = { trophies: [], items: [] };
+      TROPHIES.forEach((t) => {
+        if (state.trophies[t.id]) return;
+        if (t.test(state)) {
+          state.trophies[t.id] = { ...t, at: now() };
+          gained.trophies.push(t);
+          state.pendingTrophy = t;
+          pushLog(`trophy: ${t.name}`);
+        }
+      });
+      LOOT_ITEMS.forEach((item) => {
+        if (state.items[item.id]) return;
+        if (item.test(state)) {
+          state.items[item.id] = { ...item, at: now() };
+          gained.items.push(item);
+          state.pendingLoot = item;
+          pushLog(`loot: ${item.name}`);
+        }
+      });
+      return gained;
+    }
+
+    function syncActiveQuest(fresh) {
+      const lesson = currentLesson();
+      state.activeQuest = buildSideQuest(state, lesson, {
+        fresh: Boolean(fresh),
+        random,
+        total: state.phase === "endgame" ? ENDGAME_CHALLENGES.length : pathLen(),
+      });
+      if (fresh) state.questPulse = now();
+    }
+
     function addMana(amount) {
       state.mana = Math.min(state.manaMax, state.mana + amount);
       state.powerReady = state.mana >= state.manaMax;
@@ -1098,23 +1204,28 @@
       const challenge = currentLesson();
       state.goal = challenge.goal;
       state.bossHp = challenge.bossHp || challenge.goal;
-      state.moves = challenge.moves;
+      state.moves = Math.max(state.moves, challenge.moves);
       state.hints = Math.min(3, state.hints + 1);
       state.shuffles = Math.min(3, state.shuffles + 1);
       state.levelFlash = now();
-      state.message = `Senior unlocked — ${challenge.title} awaits.`;
+      state.message = `Senior unlocked — side quest: ${challenge.title}`;
       pushLog(`endgame → ${challenge.title}`);
       grantLessonSkill(state.level);
-      state.board = fillBoardNoMatches(random, state.level, state.pathwayId);
+      // Keep the board rolling — Bejeweled continuous cascade, no wipe.
+      syncActiveQuest(true);
       state.characterPulse = now();
+      unlockTrophiesAndLoot();
     }
 
     function advanceChallenge() {
       state.challengesCleared += 1;
       if (state.challengeIndex >= ENDGAME_CHALLENGES.length - 1) {
+        state.classExpert = true;
         state.status = "over";
-        state.message = "All raids cleared — legendary senior status.";
+        state.message = "Class Expert — every raid cleared. Open the trophy case.";
         unlockAchievements();
+        unlockTrophiesAndLoot();
+        syncActiveQuest(false);
         return true;
       }
       state.challengeIndex += 1;
@@ -1122,14 +1233,15 @@
       const challenge = currentLesson();
       state.goal = challenge.goal;
       state.bossHp = challenge.bossHp || challenge.goal;
-      state.moves = challenge.moves;
+      state.moves = Math.max(state.moves, challenge.moves + 4);
       state.hints = Math.min(3, state.hints + 1);
       state.shuffles = Math.min(3, state.shuffles + 1);
       state.levelFlash = now();
-      state.message = `Raid cleared — next: ${challenge.title}`;
+      state.message = `Raid cleared — next side quest: ${challenge.title}`;
       pushLog(`raid → ${challenge.title}`);
       grantLessonSkill(state.level);
-      state.board = fillBoardNoMatches(random, state.level, state.pathwayId);
+      syncActiveQuest(true);
+      unlockTrophiesAndLoot();
       return false;
     }
 
@@ -1156,6 +1268,8 @@
         state.linesOfCode += loc;
         state.score = state.linesOfCode;
         state.levelScore += loc;
+        // Bejeweled energy: successful clears refund / bank moves.
+        state.moves += 1 + Math.min(3, wave.chain - 1);
         if (state.phase === "endgame") {
           state.bossHp = Math.max(0, (state.bossHp || state.goal) - loc);
         }
@@ -1188,14 +1302,19 @@
           cells: wave.cells,
           falls: wave.falls || [],
           fact,
+          shatter: true,
         });
         state.characterPulse = now();
         sounds.push(wave.chain >= 3 ? "deploy" : wave.cells.length >= 4 ? "squash" : "clear");
       });
+      if (state.activeQuest) {
+        state.activeQuest.progress = state.levelScore;
+        state.activeQuest.tip = state.pendingFact ? state.pendingFact.fact : state.activeQuest.tip;
+      }
       state.message =
         waves.length > 1
           ? `Cascade ×${waves.length} — ${state.pendingFact ? state.pendingFact.loc : 0}+ LOC shipped.`
-          : `Wrote code — ${waves[0].cells.length} gems cleared.`;
+          : `Gem break — ${waves[0].cells.length} cleared.`;
       let leveled = false;
       if (state.levelScore >= state.goal) {
         if (state.phase === "endgame") {
@@ -1210,36 +1329,26 @@
           state.level += 1;
           state.levelScore = 0;
           state.goal = goalForLevel(state.level, state.pathwayId);
-          state.moves += Math.min(8, 4 + Math.floor(state.level / 3));
+          state.moves += Math.min(12, 6 + Math.floor(state.level / 2));
           state.hints = Math.min(3, state.hints + 1);
           state.shuffles = Math.min(3, state.shuffles + 1);
           state.levelFlash = now();
           const lesson = currentLesson();
-          state.message = `Quest ${state.level}: ${lesson.title} (${lesson.rank})`;
+          state.message = `Quest complete — next: ${lesson.title}`;
           pushLog(`quest → ${lesson.title}`);
           grantLessonSkill(state.level);
-          state.pendingLessonIntro = {
-            title: lesson.title,
-            track: lesson.track,
-            rank: lesson.rank,
-            skill: lesson.skill,
-            clouds: (lesson.clouds || []).slice(0, 8),
-            facts: (lesson.facts || []).slice(0, 1),
-            level: state.level,
-            total: pathLen(),
-            goal: state.goal,
-            moves: state.moves,
-            pathway: pathwayFor(state.pathwayId).name,
-            at: now(),
-          };
+          // Continuous board — no wipe. Side quest updates with a fresh tip.
+          syncActiveQuest(true);
           sounds.push("level");
-          state.board = fillBoardNoMatches(random, state.level, state.pathwayId);
           leveled = true;
         }
+      } else {
+        syncActiveQuest(false);
       }
       const badges = unlockAchievements();
-      if (badges.length) sounds.push("badge");
-      return { sounds, badges, fact, leveled };
+      const loot = unlockTrophiesAndLoot();
+      if (badges.length || loot.trophies.length || loot.items.length) sounds.push("badge");
+      return { sounds, badges, fact, leveled, loot };
     }
 
     function afterResolveCheck() {
@@ -1247,16 +1356,21 @@
         if (state.shuffles > 0) {
           state.message = "No moves — auto-shuffling the board.";
           doShuffle(true);
-        } else if (state.moves <= 0) {
-          state.status = "over";
-          state.message = "No moves left — rebase to try again.";
         } else {
-          state.message = "No moves — use Shuffle or keep hunting.";
+          // Soft rescue for continuous play instead of hard game-over.
+          state.board = fillBoardNoMatches(random, state.level, state.pathwayId);
+          state.moves += 8;
+          state.message = "Board refreshed — keep matching toward Senior.";
         }
       }
-      if (state.moves <= 0 && state.status === "playing" && state.levelScore < state.goal) {
-        state.status = "over";
-        state.message = "Out of moves — rebase to try again.";
+      if (state.moves <= 0 && state.status === "playing") {
+        if (state.phase === "path") {
+          state.moves = 12;
+          state.message = "Move bank refilled — finish the side quest.";
+        } else if (state.levelScore < state.goal) {
+          state.status = "over";
+          state.message = "Out of moves on this raid — try again.";
+        }
       }
     }
 
@@ -1488,30 +1602,15 @@
       }
       state.status = "playing";
       const lesson = currentLesson();
-      const label = state.phase === "endgame" ? "Raid" : "Quest";
+      const label = state.phase === "endgame" ? "Raid quest" : "Side quest";
       state.message =
         state.phase === "endgame"
-          ? `${label}: ${lesson.title} — write ${state.goal} LOC to advance.`
-          : `New quest: ${lesson.title} — write ${state.goal} LOC.`;
+          ? `${label}: ${lesson.title} — write ${state.goal} LOC.`
+          : `${label} live: ${lesson.title} — match gems to auto-advance.`;
       state.levelFlash = now();
       grantLessonSkill(state.level);
-      if (state.phase !== "endgame") {
-        state.pendingLessonIntro = {
-          title: lesson.title,
-          track: lesson.track,
-          rank: lesson.rank,
-          skill: lesson.skill,
-          clouds: (lesson.clouds || []).slice(0, 8),
-          facts: (lesson.facts || []).slice(0, 1),
-          level: state.level,
-          total: pathLen(),
-          goal: state.goal,
-          moves: state.moves,
-          pathway: pathwayFor(state.pathwayId).name,
-          at: now(),
-          start: true,
-        };
-      }
+      syncActiveQuest(true);
+      unlockTrophiesAndLoot();
     }
 
     function pause() {
@@ -1558,9 +1657,16 @@
       state.shufflesUsed = 0;
       state.achievements = {};
       state.skills = {};
+      state.trophies = {};
+      state.items = {};
+      state.classExpert = false;
       state.lastFact = null;
       state.pendingFact = null;
       state.pendingLessonIntro = null;
+      state.activeQuest = null;
+      state.questPulse = 0;
+      state.pendingTrophy = null;
+      state.pendingLoot = null;
       state.skillUnlock = null;
       state.commitLog = [];
       state.fx = [];
@@ -1621,9 +1727,9 @@
     }
 
     function consumeLessonIntro() {
-      const intro = state.pendingLessonIntro;
+      // Lesson modals retired — quests live in the side rail.
       state.pendingLessonIntro = null;
-      return intro;
+      return null;
     }
 
     function consumeSkillUnlock() {
@@ -1699,7 +1805,39 @@
         bossHp: state.bossHp,
         characterPulse: state.characterPulse,
         endgameLength: ENDGAME_CHALLENGES.length,
+        activeQuest: state.activeQuest ? { ...state.activeQuest } : null,
+        questPulse: state.questPulse,
+        trophies: Object.values(state.trophies || {}),
+        items: Object.values(state.items || {}),
+        classExpert: Boolean(state.classExpert),
+        trophyCatalog: TROPHIES.map((t) => ({
+          id: t.id,
+          name: t.name,
+          icon: t.icon,
+          blurb: t.blurb,
+          owned: Boolean(state.trophies[t.id]),
+        })),
+        itemCatalog: LOOT_ITEMS.map((t) => ({
+          id: t.id,
+          name: t.name,
+          icon: t.icon,
+          blurb: t.blurb,
+          owned: Boolean(state.items[t.id]),
+        })),
+        gameTitle: GAME_TITLE,
       };
+    }
+
+    function consumeTrophy() {
+      const t = state.pendingTrophy;
+      state.pendingTrophy = null;
+      return t;
+    }
+
+    function consumeLoot() {
+      const t = state.pendingLoot;
+      state.pendingLoot = null;
+      return t;
     }
 
     return {
@@ -1721,6 +1859,8 @@
       consumeFact,
       consumeLessonIntro,
       consumeSkillUnlock,
+      consumeTrophy,
+      consumeLoot,
       snapshot,
       findMatches: () => findMatches(state.board),
       get status() {
@@ -2084,6 +2224,35 @@
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.fillText("npm", cx, cy + 1);
+    } else if (mark === "vue") {
+      ctx.beginPath();
+      ctx.moveTo(cx, cy + s * 0.95);
+      ctx.lineTo(cx - s * 1.05, cy - s * 0.85);
+      ctx.lineTo(cx - s * 0.35, cy - s * 0.85);
+      ctx.lineTo(cx, cy - s * 0.05);
+      ctx.lineTo(cx + s * 0.35, cy - s * 0.85);
+      ctx.lineTo(cx + s * 1.05, cy - s * 0.85);
+      ctx.closePath();
+      ctx.stroke();
+    } else if (mark === "python") {
+      ctx.font = `800 ${Math.floor(size * 0.28)}px "IBM Plex Sans", sans-serif`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("Py", cx, cy + 1);
+    } else if (mark === "docker") {
+      roundedRect(ctx, cx - s * 0.9, cy - s * 0.15, s * 1.8, s * 0.85, 3);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(cx - s * 0.55, cy - s * 0.15);
+      ctx.lineTo(cx - s * 0.55, cy - s * 0.55);
+      ctx.lineTo(cx + s * 0.55, cy - s * 0.55);
+      ctx.lineTo(cx + s * 0.55, cy - s * 0.15);
+      ctx.stroke();
+    } else if (mark === "sql") {
+      ctx.font = `800 ${Math.floor(size * 0.26)}px "IBM Plex Sans", sans-serif`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("SQL", cx, cy + 1);
     }
   }
 
@@ -3102,15 +3271,32 @@
       if (prefersReducedMotion()) return;
       cells.forEach((cell) => {
         const color = (META[cell.kind] && META[cell.kind].accent) || "#8ec8ff";
-        for (let i = 0; i < 10; i += 1) {
+        const base = (META[cell.kind] && META[cell.kind].color) || "#4f8fd4";
+        // Bejeweled-style shatter: more shards + sparkle ring
+        for (let i = 0; i < 18; i += 1) {
+          const ang = (Math.PI * 2 * i) / 18 + Math.random() * 0.2;
+          const speed = 3.5 + Math.random() * 5.5;
           particles.push({
             x: (cell.x + 0.5) * cellSize,
             y: (cell.y + 0.5) * cellSize,
-            vx: (Math.random() - 0.5) * 6,
-            vy: (Math.random() - 0.8) * 6,
+            vx: Math.cos(ang) * speed,
+            vy: Math.sin(ang) * speed - 1.2,
             life: 1,
-            color,
-            size: 2 + Math.random() * 3.5,
+            color: i % 2 ? color : base,
+            size: 2 + Math.random() * 4.5,
+            glow: true,
+          });
+        }
+        for (let i = 0; i < 6; i += 1) {
+          particles.push({
+            x: (cell.x + 0.5) * cellSize,
+            y: (cell.y + 0.5) * cellSize,
+            vx: (Math.random() - 0.5) * 2,
+            vy: (Math.random() - 0.5) * 2,
+            life: 0.85,
+            color: "#ffffff",
+            size: 1.5 + Math.random() * 2,
+            glow: true,
           });
         }
       });
@@ -3119,9 +3305,16 @@
     function ingestFx(fxList, cellSize) {
       fxList.forEach((fx) => {
         if (fx.type === "match" && fx.cells) {
-          flashCells = fx.cells.map((c) => ({ ...c, until: Date.now() + 320 }));
+          flashCells = fx.cells.map((c) => ({ ...c, until: Date.now() + 420 }));
           spawnBurst(fx.cells, cellSize);
           anims.push({ type: "pulse", at: Date.now(), cells: fx.cells });
+          anims.push({
+            type: "shockwave",
+            at: Date.now(),
+            x: fx.cells.reduce((s, c) => s + c.x, 0) / fx.cells.length,
+            y: fx.cells.reduce((s, c) => s + c.y, 0) / fx.cells.length,
+            chain: fx.chain || 1,
+          });
         }
         if (fx.type === "bounce") {
           anims.push({ type: "bounce", at: Date.now(), a: fx.a, b: fx.b });
@@ -3144,6 +3337,96 @@
       canvas.style.height = `${ROWS * cell}px`;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       return cell;
+    }
+
+    function showLootToast(entry, kind) {
+      if (!entry) return;
+      let toast = root.querySelector("[data-loot-toast]");
+      if (!toast) {
+        toast = document.createElement("div");
+        toast.className = "loot-toast";
+        toast.setAttribute("data-loot-toast", "");
+        toast.setAttribute("role", "status");
+        const boardWrap = root.querySelector(".board-wrap") || root;
+        boardWrap.appendChild(toast);
+      }
+      toast.className = `loot-toast is-visible is-${kind || "loot"}`;
+      toast.innerHTML = `<span class="loot-toast-icon">${entry.icon || "★"}</span><div><strong>${
+        kind === "trophy" ? "Trophy earned" : "Item found"
+      }</strong><p>${entry.name}</p><em>${entry.blurb || ""}</em></div>`;
+      window.clearTimeout(showLootToast._timer);
+      showLootToast._timer = window.setTimeout(() => toast.classList.remove("is-visible"), 4200);
+    }
+
+    function paintQuestRail(snap) {
+      const rail = root.querySelector("[data-quest-rail]");
+      if (!rail) return;
+      const q = snap.activeQuest;
+      if (!q) {
+        rail.innerHTML = `
+          <div class="quest-rail-empty">
+            <p class="quest-bang-sm">!</p>
+            <p>Pick a pathway class to open live side quests.</p>
+          </div>`;
+        rail.classList.remove("has-quest", "is-pulse");
+        return;
+      }
+      const pct = Math.min(100, Math.round((q.progress / Math.max(1, q.goal)) * 100));
+      const skillLine = q.skill ? `${q.skill.icon || "★"} ${q.skill.name}` : "Pathway skill";
+      rail.classList.add("has-quest");
+      if (q.bang || (snap.questPulse && Date.now() - snap.questPulse < 1800)) {
+        rail.classList.add("is-pulse");
+      } else {
+        rail.classList.remove("is-pulse");
+      }
+      rail.innerHTML = `
+        <div class="side-quest-card">
+          <div class="side-quest-bang" aria-hidden="true">!</div>
+          <p class="side-quest-kicker">${q.phase === "endgame" ? "Raid Quest" : "Available Quest"}</p>
+          <h3 class="side-quest-title">${q.title}</h3>
+          <p class="side-quest-meta">${q.pathway} · ${q.rank || ""} · ${q.level}/${q.total}</p>
+          <p class="side-quest-tip"><strong>Dev tip</strong> ${q.tip || ""}</p>
+          <div class="side-quest-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}">
+            <span style="width:${pct}%"></span>
+          </div>
+          <p class="side-quest-goal">${q.progress}/${q.goal} LOC · Reward: ${skillLine}</p>
+        </div>`;
+    }
+
+    function paintTrophyBoard(snap) {
+      const board = root.querySelector("[data-trophy-board]");
+      if (!board) return;
+      const trophies = snap.trophyCatalog || [];
+      const items = snap.itemCatalog || [];
+      const ownedT = trophies.filter((t) => t.owned).length;
+      const ownedI = items.filter((t) => t.owned).length;
+      if (board.dataset.sig === `${ownedT}-${ownedI}-${trophies.length}`) return;
+      board.dataset.sig = `${ownedT}-${ownedI}-${trophies.length}`;
+      const makeGrid = (list, label) => {
+        const wrap = document.createElement("div");
+        wrap.className = "trophy-section";
+        const h = document.createElement("h4");
+        h.textContent = `${label} (${list.filter((x) => x.owned).length}/${list.length})`;
+        const grid = document.createElement("div");
+        grid.className = "trophy-grid";
+        list.forEach((t) => {
+          const cell = document.createElement("button");
+          cell.type = "button";
+          cell.className = "trophy-cell" + (t.owned ? " is-owned" : " is-locked");
+          cell.title = t.owned ? `${t.name} — ${t.blurb}` : `Locked: ${t.name}`;
+          cell.innerHTML = `<span aria-hidden="true">${t.owned ? t.icon : "?"}</span><em>${t.name}</em>`;
+          grid.appendChild(cell);
+        });
+        wrap.append(h, grid);
+        return wrap;
+      };
+      board.replaceChildren();
+      const head = document.createElement("div");
+      head.className = "trophy-board-head";
+      head.innerHTML = `<strong>Trophy &amp; loot case</strong><span>${
+        snap.classExpert ? "Class Expert" : snap.graduated ? "Senior graduate" : "Collect as you quest"
+      }</span>`;
+      board.append(head, makeGrid(trophies, "Trophies"), makeGrid(items, "Items"));
     }
 
     function paintLegend(snap) {
@@ -3246,23 +3529,52 @@
         });
       });
 
-      // particles
+      // particles + shatter glow
       for (let i = particles.length - 1; i >= 0; i -= 1) {
         const p = particles[i];
         p.x += p.vx;
         p.y += p.vy;
-        p.vy += 0.14;
-        p.life -= 0.028;
+        p.vy += 0.16;
+        p.life -= 0.022;
         if (p.life <= 0) {
           particles.splice(i, 1);
           continue;
         }
         ctx.globalAlpha = Math.max(0, p.life);
+        if (p.glow && advancedGfx) {
+          ctx.shadowColor = p.color;
+          ctx.shadowBlur = 8;
+        }
         ctx.fillStyle = p.color;
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size * p.life, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, p.size * (0.6 + p.life * 0.6), 0, Math.PI * 2);
         ctx.fill();
+        ctx.shadowBlur = 0;
         ctx.globalAlpha = 1;
+      }
+
+      // Bejeweled / GoW shockwave rings
+      for (let i = anims.length - 1; i >= 0; i -= 1) {
+        const a = anims[i];
+        if (a.type !== "shockwave") continue;
+        const age = (nowTs - a.at) / 480;
+        if (age >= 1) {
+          anims.splice(i, 1);
+          continue;
+        }
+        const cx = (a.x + 0.5) * cell;
+        const cy = (a.y + 0.5) * cell;
+        const radius = cell * (0.4 + age * (1.8 + (a.chain || 1) * 0.25));
+        ctx.strokeStyle = `rgba(255,255,255,${(1 - age) * 0.55})`;
+        ctx.lineWidth = 2 + (1 - age) * 3;
+        ctx.beginPath();
+        ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.strokeStyle = `rgba(143, 211, 255,${(1 - age) * 0.35})`;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.arc(cx, cy, radius * 0.72, 0, Math.PI * 2);
+        ctx.stroke();
       }
 
       // HUD fields
@@ -3321,9 +3633,14 @@
       if (snap.pathway) applyPathwayTheme(snap.pathway);
 
       const fact = typeof game.consumeFact === "function" ? game.consumeFact() : null;
+      // Soft tip toast only — no blocking lesson modal before each level.
       if (fact) showFactToast(fact);
-      const intro = typeof game.consumeLessonIntro === "function" ? game.consumeLessonIntro() : null;
-      if (intro) showLessonIntro(intro);
+      paintQuestRail(snap);
+      paintTrophyBoard(snap);
+      const trophy = typeof game.consumeTrophy === "function" ? game.consumeTrophy() : null;
+      if (trophy) showLootToast(trophy, "trophy");
+      const loot = typeof game.consumeLoot === "function" ? game.consumeLoot() : null;
+      if (loot) showLootToast(loot, "loot");
       const skill = typeof game.consumeSkillUnlock === "function" ? game.consumeSkillUnlock() : null;
       if (skill) {
         showSkillUnlock(skill);
@@ -3768,7 +4085,7 @@
       if (field) field.value = buildShareUrl();
       const x = root.querySelector("[data-share-x]");
       const li = root.querySelector("[data-share-linkedin]");
-      const text = encodeURIComponent("Play Git Blocks — match shiny web-dev logo gems.");
+      const text = encodeURIComponent("Play Branchborne Gem Quest — Bejeweled-style tech gems with live side quests.");
       const url = encodeURIComponent(buildShareUrl());
       if (x) x.href = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
       if (li) li.href = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
@@ -3787,6 +4104,18 @@
     }
     if (customizeBtn) customizeBtn.addEventListener("click", () => openCustomize("look"));
     if (shareBtn) shareBtn.addEventListener("click", () => openCustomize("share"));
+    const trophiesBtn = root.querySelector("[data-trophies]");
+    if (trophiesBtn) {
+      trophiesBtn.addEventListener("click", () => {
+        const board = root.querySelector("[data-trophy-board]");
+        if (!board) return;
+        const open = board.hasAttribute("hidden");
+        if (open) board.removeAttribute("hidden");
+        else board.setAttribute("hidden", "");
+        trophiesBtn.classList.toggle("is-active", open);
+        paintTrophyBoard(game.snapshot());
+      });
+    }
     root.querySelectorAll("[data-customize-close]").forEach((btn) => btn.addEventListener("click", closeCustomize));
     root.querySelectorAll("[data-tab]").forEach((btn) => {
       btn.addEventListener("click", () => switchTab(btn.getAttribute("data-tab")));
@@ -3911,11 +4240,14 @@
     ROWS,
     SIZE,
     MATCH_MIN,
+    GAME_TITLE,
     GEMS,
     GEM_IDS,
     META,
     CURRICULUM,
     PATHWAY_CLASSES,
+    TROPHIES,
+    LOOT_ITEMS,
     cartoonCharacterMarkup,
     ENDGAME_CHALLENGES,
     ACHIEVEMENTS,

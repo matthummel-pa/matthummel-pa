@@ -17,10 +17,11 @@ function seededGame(extra) {
   });
 }
 
-test("ships ten web-dev logo gems", () => {
-  assert.equal(engine.GEMS.length, 10);
-  assert.equal(engine.GEM_IDS.length, 10);
-  ["html", "css", "js", "ts", "react", "php", "wp", "git", "node", "npm"].forEach((id) => {
+test("ships expanded tech logo gems for Branchborne", () => {
+  assert.equal(engine.GAME_TITLE, "Branchborne Gem Quest");
+  assert.ok(engine.GEMS.length >= 14);
+  assert.equal(engine.GEM_IDS.length, engine.GEMS.length);
+  ["html", "css", "js", "ts", "react", "vue", "php", "wp", "git", "node", "npm", "python", "docker", "sql"].forEach((id) => {
     assert.ok(engine.META[id], `missing gem ${id}`);
     assert.ok(engine.META[id].color);
     assert.ok(engine.META[id].mark);
@@ -100,20 +101,36 @@ test("each clear queues a lesson fact popup payload", () => {
   assert.equal(game.consumeFact(), null);
 });
 
-test("play queues a lesson intro briefing for the current level", () => {
+test("play opens a live side quest instead of a blocking lesson modal", () => {
   const game = seededGame();
   assert.equal(game.consumeLessonIntro(), null);
   game.play();
-  const intro = game.consumeLessonIntro();
-  assert.ok(intro);
-  assert.equal(intro.start, true);
-  assert.equal(intro.title, "HTML bones");
-  assert.equal(intro.rank, "Intern");
-  assert.ok(intro.goal >= 100);
-  assert.ok(intro.pathway);
-  assert.ok(intro.clouds && intro.clouds.some((w) => /html|DOCTYPE|semantic/i.test(w)));
-  assert.ok(intro.facts && intro.facts[0]);
   assert.equal(game.consumeLessonIntro(), null);
+  const snap = game.snapshot();
+  assert.ok(snap.activeQuest);
+  assert.equal(snap.activeQuest.title, "HTML bones");
+  assert.equal(snap.activeQuest.rank, "Intern");
+  assert.ok(snap.activeQuest.goal >= 100);
+  assert.ok(snap.activeQuest.tip && snap.activeQuest.tip.length > 10);
+  assert.ok(snap.trophyCatalog.length >= 8);
+  assert.ok(snap.itemCatalog.length >= 8);
+});
+
+test("trophies and loot catalogs unlock from play progress", () => {
+  assert.ok(engine.TROPHIES.length >= 8);
+  assert.ok(engine.LOOT_ITEMS.length >= 8);
+  const game = seededGame();
+  game.play();
+  let hint = engine.findHint(game.snapshot().board);
+  for (let n = 0; n < 6 && !hint; n += 1) {
+    game.shuffle(true);
+    hint = engine.findHint(game.snapshot().board);
+  }
+  assert.ok(hint);
+  game.trySwap(hint.a, hint.b);
+  const snap = game.snapshot();
+  assert.ok(snap.trophies.length >= 1);
+  assert.ok(snap.items.length >= 1);
 });
 
 test("pathway powers are class-themed and characters render", () => {
@@ -315,7 +332,9 @@ test("player files ship match-3 cabinet", () => {
   assert.match(html, /data-shuffle/);
   assert.match(html, /data-skills/);
   assert.match(html, /Lines of code/);
-  assert.match(html, /pathway class|senior|raids/i);
+  assert.match(html, /pathway|senior|quest|trophies/i);
+  assert.match(html, /data-quest-rail/);
+  assert.match(html, /data-trophy-board/);
   assert.doesNotMatch(html, /Hard drop/);
   assert.equal(typeof engine.boot, "function");
   assert.ok(fs.existsSync(path.join(gameDir, "audio", "stack-sprint.ogg")));
@@ -337,6 +356,6 @@ test("wordpress plugin sample packs the cabinet", () => {
   assert.ok(fs.existsSync(path.join(plugin, "assets", "js", "git-blocks.js")));
   assert.ok(fs.existsSync(path.join(plugin, "assets", "css", "git-blocks.css")));
   const pluginEngine = require(path.join(plugin, "assets", "js", "git-blocks.js"));
-  assert.equal(pluginEngine.GEMS.length, 10);
+  assert.ok(pluginEngine.GEMS.length >= 14);
   assert.equal(typeof pluginEngine.createGame, "function");
 });

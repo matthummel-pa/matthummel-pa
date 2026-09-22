@@ -135,10 +135,18 @@ body {
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  grid-template-columns: minmax(0, 1.35fr) minmax(200px, 280px);
   gap: 0;
   padding: 0;
   position: relative;
+}
+
+.board-column {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(168px, 220px);
+  border-right: 1px solid var(--line);
 }
 
 .player.is-customizing .board-wrap {
@@ -150,12 +158,245 @@ body {
   background:
     radial-gradient(120% 80% at 50% 0%, rgba(79, 143, 212, 0.12), transparent 55%),
     rgba(7, 17, 31, 0.42);
-  border-right: 1px solid var(--line);
+  border-right: 1px solid rgba(36, 48, 65, 0.85);
   min-height: 0;
   display: grid;
   place-items: center;
   overflow: hidden;
   cursor: pointer;
+  /* Shift board slightly left for quest rail breathing room */
+  transform: translateX(-6px);
+}
+
+.quest-rail {
+  min-height: 0;
+  overflow: auto;
+  padding: 12px 10px;
+  background:
+    linear-gradient(180deg, rgba(28, 22, 12, 0.55), rgba(12, 16, 24, 0.72)),
+    rgba(10, 14, 22, 0.9);
+  border-left: 1px solid rgba(196, 156, 72, 0.28);
+}
+
+.quest-rail.is-pulse .side-quest-card {
+  animation: quest-pulse 0.9s ease;
+}
+
+@keyframes quest-pulse {
+  0% { transform: translateY(6px); opacity: 0.4; box-shadow: 0 0 0 rgba(196, 156, 72, 0); }
+  40% { transform: translateY(0); opacity: 1; box-shadow: 0 0 24px rgba(196, 156, 72, 0.35); }
+  100% { box-shadow: 0 0 0 rgba(196, 156, 72, 0); }
+}
+
+.side-quest-card {
+  position: relative;
+  border: 1px solid rgba(196, 156, 72, 0.55);
+  background:
+    linear-gradient(180deg, rgba(48, 36, 18, 0.92), rgba(22, 18, 12, 0.96));
+  border-radius: 4px;
+  padding: 14px 12px 12px;
+  box-shadow: inset 0 0 0 1px rgba(255, 220, 140, 0.08);
+}
+
+.side-quest-bang {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 22px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #1a1208;
+  background: linear-gradient(180deg, #f0d078, #c49c48);
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 50% 100%, 0 78%);
+}
+
+.side-quest-kicker {
+  margin: 6px 0 4px;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e8c56a;
+}
+
+.side-quest-title {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: #fff4d4;
+}
+
+.side-quest-meta,
+.side-quest-goal {
+  margin: 0 0 8px;
+  font-size: 0.72rem;
+  color: #cbb892;
+}
+
+.side-quest-tip {
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: #f3e7c8;
+}
+
+.side-quest-tip strong {
+  display: block;
+  color: #e8c56a;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.side-quest-progress {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.side-quest-progress > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #c49c48, #f0d078);
+}
+
+.quest-rail-empty {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.82rem;
+  padding: 24px 8px;
+}
+
+.quest-bang-sm {
+  width: 28px;
+  height: 34px;
+  margin: 0 auto 10px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #1a1208;
+  background: linear-gradient(180deg, #f0d078, #c49c48);
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 50% 100%, 0 78%);
+}
+
+.trophy-board {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(7, 17, 31, 0.55);
+  max-height: 220px;
+  overflow: auto;
+}
+
+.trophy-board-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+  margin-bottom: 8px;
+  font-size: 0.78rem;
+}
+
+.trophy-board-head span {
+  color: var(--muted);
+}
+
+.trophy-section h4 {
+  margin: 8px 0 6px;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.trophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.trophy-cell {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--paper);
+  border-radius: 8px;
+  padding: 8px 4px;
+  font-size: 0.62rem;
+  line-height: 1.2;
+  cursor: default;
+}
+
+.trophy-cell span {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+
+.trophy-cell.is-locked {
+  opacity: 0.4;
+  filter: grayscale(1);
+}
+
+.trophy-cell.is-owned {
+  border-color: rgba(196, 156, 72, 0.55);
+  box-shadow: inset 0 0 0 1px rgba(240, 208, 120, 0.12);
+}
+
+.loot-toast {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 6;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  max-width: min(280px, 90%);
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(12, 18, 28, 0.92);
+  border: 1px solid rgba(196, 156, 72, 0.5);
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.loot-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.loot-toast-icon {
+  font-size: 1.4rem;
+}
+
+.loot-toast strong {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #e8c56a;
+}
+
+.loot-toast p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+}
+
+.loot-toast em {
+  font-style: normal;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.player.is-customizing .board-wrap {
+  pointer-events: none;
 }
 
 canvas[data-board] {
@@ -1714,13 +1955,24 @@ button:disabled {
 
   .player-screen {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(52vh, 1fr) auto;
+    grid-template-rows: minmax(58vh, 1fr) auto;
+  }
+
+  .board-column {
+    grid-template-columns: minmax(0, 1fr) minmax(140px, 180px);
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
   }
 
   .board-wrap {
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
     min-height: 52vh;
+    transform: translateX(-2px);
+  }
+
+  .quest-rail {
+    max-height: 58vh;
   }
 
   .side {

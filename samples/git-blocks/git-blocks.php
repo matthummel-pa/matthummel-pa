@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Git Blocks
+ * Plugin Name:       Branchborne Gem Quest
  * Plugin URI:        https://matthummel.com/git-blocks/
  * Description:       Embeddable tetris-style Git Blocks cabinet — shortcode sample for portfolios and demos.
  * Version:           1.0.0
