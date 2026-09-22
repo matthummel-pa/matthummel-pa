@@ -63,7 +63,7 @@ if (! defined('ABSPATH')) {
 					<div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="<?php esc_attr_e('Lesson LOC goal', 'git-blocks'); ?>">
 						<span data-progress></span>
 					</div>
-					<p class="message" data-message><?php esc_html_e('Choose a pathway class to begin.', 'git-blocks'); ?></p>
+					<p class="message" data-message><?php esc_html_e('Pick a pathway hero to begin.', 'git-blocks'); ?></p>
 					<div class="power-row">
 						<button type="button" class="ghost" data-hint><?php esc_html_e('Hint (2)', 'git-blocks'); ?></button>
 						<button type="button" class="ghost" data-shuffle><?php esc_html_e('Shuffle (2)', 'git-blocks'); ?></button>

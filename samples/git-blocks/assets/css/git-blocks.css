@@ -955,6 +955,10 @@ button:disabled {
   border-radius: 8px;
 }
 
+.overlay.is-class-select [data-play] {
+  display: none !important;
+}
+
 .overlay.is-class-select {
   align-items: stretch;
   padding: 12px;

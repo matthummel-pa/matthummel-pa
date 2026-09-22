@@ -1037,7 +1037,7 @@
         ? `Endgame raid — ${lessonFor(1, initialPathway, "endgame", opts.challengeIndex || 0).title}`
         : initialPathway
           ? `Pathway locked — ${pathwayFor(initialPathway).name}. Ready to write LOC.`
-          : "Choose your pathway class to begin the gem-drop RPG.",
+          : "Pick a pathway hero to begin.",
       selected: null,
       hint: null,
       levelFlash: 0,
@@ -1558,7 +1558,7 @@
       state.status = keepPath ? "ready" : "class-select";
       state.message = keepPath
         ? `${pathwayFor(keepPath).name} — ready for a new career run.`
-        : "Choose your pathway class to begin the gem-drop RPG.";
+        : "Pick a pathway hero to begin.";
       state.selected = null;
       state.hint = null;
       state.levelFlash = 0;
@@ -1592,7 +1592,7 @@
       state.commitLog = [];
       state.fx = [];
       state.status = "class-select";
-      state.message = "Choose your pathway class to begin the gem-drop RPG.";
+      state.message = "Pick a pathway hero to begin.";
       state.selected = null;
       state.hint = null;
       state.busy = false;
