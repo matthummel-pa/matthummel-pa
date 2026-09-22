@@ -181,11 +181,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1175 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1179 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,175 contributions in 90 days · 1,214 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,179 contributions in 90 days · 1,218 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -195,12 +195,12 @@ Pushes, pull requests, and the rest of the public trail. Open a row to jump into
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #80](https://github.com/matthummel-pa/wp-acreline/pull/80) — 1.5.9: public settings, color chip, readable pills, screenshots | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 29m |
-| | ✅ [Merged PR #82](https://github.com/matthummel-pa/wp-acreline/pull/82) — 1.5.8: stop Vite JS from closing the menu and hiding Home | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 1h |
+| | ✅ [Merged PR #16](https://github.com/matthummel-pa/matthummel-pa/pull/16) — Refresh profile README with Git Blocks and custom activity | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | just now |
+| | 🔀 [Opened PR #214](https://github.com/matthummel-pa/matthummel-theme/pull/214) — Project pages: TOCguide data, like/star, notes, contact | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18m |
+| | ✅ [Merged PR #80](https://github.com/matthummel-pa/wp-acreline/pull/80) — 1.5.9: public settings, color chip, readable pills, screenshots | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 1h |
+| | ✅ [Merged PR #82](https://github.com/matthummel-pa/wp-acreline/pull/82) — 1.5.8: stop Vite JS from closing the menu and hiding Home | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 2h |
 | | ✅ [Merged PR #81](https://github.com/matthummel-pa/wp-acreline/pull/81) — 1.5.6: mobile menu and listing JS fail on first tap | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 3h |
-| | ❎ [Closed PR #15](https://github.com/matthummel-pa/wp-walkridge/pull/15) — README: Walkridge 1.7.2 current, portfolio not theme shop | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 3h |
-| | ✅ [Merged PR #78](https://github.com/matthummel-pa/wp-acreline/pull/78) — 1.5.5: restore the Gutenberg color picker | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 4h |
-| | ✅ [Merged PR #14](https://github.com/matthummel-pa/wp-walkridge/pull/14) — Marketing README, full support docs, and store screenshots | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 6h |
+| | ❎ [Closed PR #15](https://github.com/matthummel-pa/wp-walkridge/pull/15) — README: Walkridge 1.7.2 current, portfolio not theme shop | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 4h |
 | | 🚀 [Commit](https://github.com/matthummel-pa/tocguide/commit/56fcf25aab042b62623e32b73bc9ca412b253bd0) — Update links and CI badge in README.md | [`tocguide`](https://github.com/matthummel-pa/tocguide) | 9h |
 | | ⭐ [Starred](https://github.com/matthummel-pa/wp-walkridge) — matthummel-pa/wp-walkridge | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 2d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/wp-walkridge/commit/b4ec3e661e42d51c3ecfe26483e6ff5712060fb6) — Merge pull request #4 from matthummel-pa/cursor/theme-release-z… | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 2d |
@@ -214,10 +214,10 @@ Pushes, pull requests, and the rest of the public trail. Open a row to jump into
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[wp-acreline](https://github.com/matthummel-pa/wp-acreline)** — Acreline is a WordPress theme for farms, land, and historic homes — searchable listings… | PHP · ★0 | 29m |
-| **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★1 | 3h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 18m |
+| **[wp-acreline](https://github.com/matthummel-pa/wp-acreline)** — Acreline is a WordPress theme for farms, land, and historic homes — searchable listings… | PHP · ★0 | 1h |
+| **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★1 | 4h |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 8h |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 3d |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
