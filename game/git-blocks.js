@@ -52,20 +52,52 @@
     ],
   };
   const META = {
-    I: { label: "commit", color: "#5ec8d8" },
-    O: { label: "stash", color: "#e7c35a" },
-    T: { label: "merge", color: "#8b7ce0" },
-    S: { label: "star", color: "#3d8b6e" },
-    Z: { label: "hotfix", color: "#d45d5d" },
-    J: { label: "branch", color: "#4f8fd4" },
-    L: { label: "review", color: "#e08a4a" },
+    I: { label: "commit", color: "#5ec8d8", tip: "Long commit — clear four lines" },
+    O: { label: "stash", color: "#e7c35a", tip: "Stash square — park it for later" },
+    T: { label: "merge", color: "#8b7ce0", tip: "Merge T — spin into tight gaps" },
+    S: { label: "star", color: "#3d8b6e", tip: "Star S — offset pair" },
+    Z: { label: "hotfix", color: "#d45d5d", tip: "Hotfix Z — urgent zigzag" },
+    J: { label: "branch", color: "#4f8fd4", tip: "Branch J — hook left" },
+    L: { label: "review", color: "#e08a4a", tip: "Review L — hook right" },
   };
   const CLEARS = {
-    1: { points: 100, message: "feat: land a clean commit" },
-    2: { points: 300, message: "fix: unstick the merge" },
-    3: { points: 500, message: "refactor: smaller pieces" },
-    4: { points: 800, message: "chore: ship the whole stack" },
+    1: { points: 100, message: "feat: land a clean commit", label: "commit" },
+    2: { points: 300, message: "fix: unstick the merge", label: "fix" },
+    3: { points: 500, message: "refactor: smaller pieces", label: "refactor" },
+    4: { points: 800, message: "chore: ship the whole stack", label: "deploy" },
   };
+  const SPRINT_NAMES = [
+    "v0.1 scaffold",
+    "alpha spike",
+    "beta polish",
+    "RC hardening",
+    "GA launch",
+    "hotfix train",
+    "perf pass",
+    "a11y sprint",
+    "CI green week",
+    "docs drive",
+    "debt burn-down",
+    "ship-it Friday",
+    "on-call mode",
+    "feature freeze",
+    "postmortem",
+    "scale-up",
+    "edge-case hunt",
+    "type-strict",
+    "zero-bug",
+    "legendary",
+  ];
+  const ACHIEVEMENTS = [
+    { id: "first-commit", label: "First commit", test: (s) => s.lines >= 1 },
+    { id: "ship-it", label: "Ship a deploy", test: (s) => s.deploys >= 1 },
+    { id: "squash-king", label: "Squash merge", test: (s) => s.squashes >= 1 },
+    { id: "combo-3", label: "Pipeline ×3", test: (s) => s.maxCombo >= 3 },
+    { id: "green-ci", label: "Green CI", test: (s) => s.perfectClears >= 1 },
+    { id: "cascade", label: "Cascade hero", test: (s) => s.maxChain >= 3 },
+    { id: "sprint-5", label: "Sprint 5", test: (s) => s.level >= 5 },
+    { id: "force-push", label: "Force push", test: (s) => s.forcePushes >= 1 },
+  ];
   // SRS-lite kicks: try in place, then nudge on X/Y so wall/floor spins succeed.
   const KICKS = [
     [0, 0],
@@ -154,15 +186,152 @@
     return { board: kept, cleared };
   }
 
-  function scoreForClears(cleared, level, combo) {
-    const base = (CLEARS[cleared] || { points: 0 }).points;
-    const comboBonus = cleared ? combo * 50 * level : 0;
-    return base * level + comboBonus;
+  function boardIsEmpty(board) {
+    return board.every((row) => row.every((cell) => cell == null));
   }
 
-  // Classic-style gravity: starts leisurely, ramps hard each level.
+  function applyColumnGravity(board) {
+    const next = emptyBoard();
+    for (let x = 0; x < COLS; x += 1) {
+      let write = ROWS - 1;
+      for (let y = ROWS - 1; y >= 0; y -= 1) {
+        if (board[y][x]) {
+          next[write][x] = board[y][x];
+          write -= 1;
+        }
+      }
+    }
+    return next;
+  }
+
+  function findSquashGroups(board, minSize) {
+    const need = minSize || 4;
+    const visited = Array.from({ length: ROWS }, () => Array(COLS).fill(false));
+    const groups = [];
+    for (let y = 0; y < ROWS; y += 1) {
+      for (let x = 0; x < COLS; x += 1) {
+        if (!board[y][x] || visited[y][x]) continue;
+        const kind = board[y][x];
+        const cells = [];
+        const stack = [[x, y]];
+        visited[y][x] = true;
+        while (stack.length) {
+          const cur = stack.pop();
+          const cx = cur[0];
+          const cy = cur[1];
+          cells.push({ x: cx, y: cy });
+          const neighbors = [
+            [cx + 1, cy],
+            [cx - 1, cy],
+            [cx, cy + 1],
+            [cx, cy - 1],
+          ];
+          for (let i = 0; i < neighbors.length; i += 1) {
+            const nx = neighbors[i][0];
+            const ny = neighbors[i][1];
+            if (nx < 0 || ny < 0 || nx >= COLS || ny >= ROWS) continue;
+            if (visited[ny][nx] || board[ny][nx] !== kind) continue;
+            visited[ny][nx] = true;
+            stack.push([nx, ny]);
+          }
+        }
+        if (cells.length >= need) groups.push({ kind, cells });
+      }
+    }
+    return groups;
+  }
+
+  function resolveStep(board) {
+    const mark = Array.from({ length: ROWS }, () => Array(COLS).fill(false));
+    const events = [];
+    const deployRows = [];
+    for (let y = 0; y < ROWS; y += 1) {
+      if (board[y].every((cell) => cell != null)) {
+        deployRows.push(y);
+        for (let x = 0; x < COLS; x += 1) mark[y][x] = true;
+      }
+    }
+    if (deployRows.length) events.push({ type: 'deploy', rows: deployRows.slice(), cells: deployRows.length * COLS });
+    const groups = findSquashGroups(board, 4);
+    groups.forEach((group) => {
+      let fresh = 0;
+      group.cells.forEach(({ x, y }) => {
+        if (!mark[y][x]) {
+          mark[y][x] = true;
+          fresh += 1;
+        }
+      });
+      if (fresh > 0) {
+        events.push({ type: 'squash', kind: group.kind, cells: group.cells.slice(), count: group.cells.length });
+      }
+    });
+    if (!events.length) return { board, events, changed: false, clearedCells: [] };
+    const clearedCells = [];
+    const stripped = board.map((row, y) =>
+      row.map((cell, x) => {
+        if (mark[y][x]) {
+          clearedCells.push({ x, y, kind: cell });
+          return null;
+        }
+        return cell;
+      })
+    );
+    return {
+      board: applyColumnGravity(stripped),
+      events,
+      changed: true,
+      clearedCells,
+    };
+  }
+
+  function resolveCascades(board) {
+    let working = board.map((row) => row.slice());
+    const waves = [];
+    let chain = 0;
+    while (chain < 24) {
+      const step = resolveStep(working);
+      if (!step.changed) break;
+      chain += 1;
+      waves.push({
+        chain,
+        events: step.events,
+        clearedCells: step.clearedCells,
+        board: step.board.map((row) => row.slice()),
+      });
+      working = step.board;
+    }
+    return { board: working, waves, chain };
+  }
+
+  function scoreForClears(cleared, level, combo, extras) {
+    const extra = extras || {};
+    const base = (CLEARS[cleared] || { points: 0 }).points;
+    const comboBonus = cleared ? combo * 50 * level : 0;
+    let total = base * level + comboBonus;
+    if (extra.backToBack && cleared >= 4) total = Math.round(total * 1.5);
+    if (extra.perfectClear) total += 1200 * level;
+    return total;
+  }
+
+  function scoreForSquash(count, level, chain, combo) {
+    return Math.round(count * 35 * level * (1 + (chain - 1) * 0.45) * (1 + combo * 0.15));
+  }
+
+  function sprintName(level) {
+    const idx = Math.max(0, Math.min(SPRINT_NAMES.length - 1, (level || 1) - 1));
+    return SPRINT_NAMES[idx];
+  }
+
+  function makeGarbageRow(random, kind) {
+    const rnd = random || Math.random;
+    const gap = Math.floor(rnd() * COLS);
+    const fill = kind || 'Z';
+    return Array.from({ length: COLS }, (_, x) => (x === gap ? null : fill));
+  }
+
+  // Gravity ramps each sprint — still familiar, but clears are cascade-based.
   const GRAVITY_TABLE_MS = [
-    900, 780, 660, 540, 440, 360, 290, 240, 195, 160, 130, 105, 88, 74, 62, 52, 44, 38, 32, 28,
+    920, 800, 680, 560, 460, 380, 310, 255, 210, 175, 145, 120, 100, 85, 72, 60, 50, 42, 36, 30,
   ];
 
   function gravityMs(level, reducedMotion) {
@@ -190,9 +359,10 @@
     return bag;
   }
 
-  function createGame(options = {}) {
-    const random = options.random || Math.random;
-    const now = options.now || (() => Date.now());
+  function createGame(options) {
+    const opts = options || {};
+    const random = opts.random || Math.random;
+    const now = opts.now || (() => Date.now());
     let bag = [];
     const state = {
       board: emptyBoard(),
@@ -204,14 +374,46 @@
       lines: 0,
       level: 1,
       combo: 0,
-      status: "ready",
-      message: "Starting level 1…",
-      dropMs: gravityMs(1, Boolean(options.reducedMotion)),
+      maxCombo: 0,
+      maxChain: 0,
+      deploys: 0,
+      squashes: 0,
+      perfectClears: 0,
+      forcePushes: 0,
+      debtCleared: 0,
+      backToBack: false,
+      backToBackCount: 0,
+      achievements: {},
+      commitLog: [],
+      fx: [],
+      status: 'ready',
+      message: 'Sprint ready — stack commits, squash matches, ship deploys.',
+      dropMs: gravityMs(1, Boolean(opts.reducedMotion)),
       lastTick: null,
       lockAt: 0,
       levelFlash: 0,
-      reducedMotion: Boolean(options.reducedMotion),
+      reducedMotion: Boolean(opts.reducedMotion),
+      cleanCharges: 1,
+      pushCharges: 1,
     };
+
+    function pushLog(entry) {
+      state.commitLog.unshift(entry);
+      if (state.commitLog.length > 8) state.commitLog.length = 8;
+    }
+
+    function unlockAchievements() {
+      const unlocked = [];
+      ACHIEVEMENTS.forEach((ach) => {
+        if (state.achievements[ach.id]) return;
+        if (ach.test(state)) {
+          state.achievements[ach.id] = true;
+          unlocked.push(ach);
+          pushLog(`badge: ${ach.label}`);
+        }
+      });
+      return unlocked;
+    }
 
     function fillQueue() {
       while (state.queue.length < 5) {
@@ -220,25 +422,26 @@
       }
     }
 
-    function spawn(opts = {}) {
+    function spawn(spawnOpts) {
+      const so = spawnOpts || {};
       fillQueue();
       const kind = state.queue.shift();
       fillQueue();
       const piece = makePiece(kind);
       if (collides(state.board, piece)) {
-        state.status = "over";
+        state.status = 'over';
         state.active = piece;
-        state.message = "Merge conflict. Press R to rebase.";
+        state.message = 'Merge conflict — backlog hit production. Press R to rebase.';
         return false;
       }
       state.active = piece;
-      if (!opts.keepHoldUsed) state.holdUsed = false;
+      if (!so.keepHoldUsed) state.holdUsed = false;
       state.lockAt = 0;
       return true;
     }
 
     function tryMove(dx, dy) {
-      if (!state.active || state.status !== "playing") return false;
+      if (!state.active || state.status !== 'playing') return false;
       const next = {
         ...state.active,
         x: state.active.x + dx,
@@ -251,14 +454,15 @@
     }
 
     function tryRotate(dir) {
-      if (!state.active || state.status !== "playing") return false;
-      // O looks the same after rotation; treat as success so controls feel responsive.
-      if (state.active.kind === "O") {
+      if (!state.active || state.status !== 'playing') return false;
+      if (state.active.kind === 'O') {
         state.lockAt = 0;
         return true;
       }
       const rotated = rotate(state.active.matrix, dir);
-      for (const [kx, ky] of KICKS) {
+      for (let i = 0; i < KICKS.length; i += 1) {
+        const kx = KICKS[i][0];
+        const ky = KICKS[i][1];
         const next = {
           ...state.active,
           matrix: rotated,
@@ -275,38 +479,120 @@
       return false;
     }
 
+    function applyResolve(result) {
+      if (!result.waves.length) {
+        state.combo = 0;
+        state.backToBack = false;
+        return { sounds: ['lock'], badges: [] };
+      }
+      state.combo += 1;
+      state.maxCombo = Math.max(state.maxCombo, state.combo);
+      state.maxChain = Math.max(state.maxChain, result.chain);
+      const sounds = [];
+      let deployRows = 0;
+      let squashCells = 0;
+      let difficult = false;
+      result.waves.forEach((wave) => {
+        state.fx.push({
+          id: `wave-${now()}-${wave.chain}`,
+          at: now(),
+          chain: wave.chain,
+          events: wave.events,
+          cells: wave.clearedCells,
+        });
+        wave.events.forEach((ev) => {
+          if (ev.type === 'deploy') {
+            deployRows += ev.rows.length;
+            state.deploys += 1;
+            difficult = ev.rows.length >= 4 || difficult;
+            sounds.push(ev.rows.length >= 4 ? 'deploy' : 'clear');
+            pushLog((CLEARS[Math.min(4, ev.rows.length)] || CLEARS[1]).message);
+          } else if (ev.type === 'squash') {
+            squashCells += ev.count;
+            state.squashes += 1;
+            sounds.push('squash');
+            const label = (META[ev.kind] && META[ev.kind].label) || 'commit';
+            pushLog(`squash: ${label} ×${ev.count} (chain ${wave.chain})`);
+          }
+        });
+        wave.events.forEach((ev) => {
+          if (ev.type === 'deploy') {
+            const n = Math.min(4, ev.rows.length);
+            const b2b = state.backToBack && n >= 4;
+            state.score += scoreForClears(n, state.level, state.combo, {
+              backToBack: b2b,
+            });
+            if (b2b) state.backToBackCount += 1;
+          } else if (ev.type === 'squash') {
+            state.score += scoreForSquash(ev.count, state.level, wave.chain, state.combo);
+          }
+        });
+      });
+      state.lines += deployRows + Math.floor(squashCells / 4);
+      if (boardIsEmpty(result.board)) {
+        state.perfectClears += 1;
+        state.score += 1200 * state.level;
+        pushLog('ci: pipeline green — perfect clear');
+        sounds.push('perfect');
+        state.fx.push({ id: `ci-${now()}`, at: now(), type: 'ci-scan' });
+      }
+      state.backToBack = difficult;
+      const nextLevel = 1 + Math.floor(state.lines / linesPerLevel());
+      if (nextLevel > state.level) {
+        state.level = nextLevel;
+        state.dropMs = gravityMs(state.level, state.reducedMotion);
+        state.levelFlash = now();
+        state.cleanCharges = Math.min(2, state.cleanCharges + 1);
+        state.pushCharges = Math.min(2, state.pushCharges + 1);
+        state.message = `Sprint ${state.level}: ${sprintName(state.level)}`;
+        pushLog(`sprint → ${sprintName(state.level)}`);
+        sounds.push('level');
+        // inject light tech-debt at higher sprints
+        if (state.level >= 3 && random() < 0.55) {
+          state.board = result.board;
+          injectDebt(1);
+          result.board = state.board;
+          pushLog('debt: tech debt floated up from staging');
+        }
+      } else if (deployRows) {
+        state.message = (CLEARS[Math.min(4, deployRows)] || CLEARS[1]).message;
+      } else {
+        state.message = `Squash cascade ×${result.chain}`;
+      }
+      state.dropMs = gravityMs(state.level, state.reducedMotion);
+      const badges = unlockAchievements();
+      if (badges.length) sounds.push('badge');
+      return { sounds, badges };
+    }
+
+    function injectDebt(rows) {
+      const n = rows || 1;
+      for (let i = 0; i < n; i += 1) {
+        // shift up — lose top if overflow
+        for (let y = 0; y < ROWS - 1; y += 1) {
+          state.board[y] = state.board[y + 1].slice();
+        }
+        state.board[ROWS - 1] = makeGarbageRow(random, 'Z');
+      }
+    }
+
     function lockPiece() {
-      if (!state.active) return;
+      if (!state.active) return { sounds: [] };
       pieceCells(state.active).forEach(({ x, y }) => {
         if (y >= 0 && y < ROWS && x >= 0 && x < COLS) {
           state.board[y][x] = state.active.kind;
         }
       });
-      const result = clearLines(state.board);
+      state.active = null;
+      const result = resolveCascades(state.board);
       state.board = result.board;
-      if (result.cleared) {
-        state.combo += 1;
-        state.lines += result.cleared;
-        const nextLevel = 1 + Math.floor(state.lines / linesPerLevel());
-        if (nextLevel > state.level) {
-          const prevDrop = state.dropMs;
-          state.level = nextLevel;
-          state.dropMs = gravityMs(state.level, state.reducedMotion);
-          state.levelFlash = now();
-          state.message = `Level ${state.level} — gravity ${prevDrop}→${state.dropMs}ms`;
-        } else {
-          state.message = CLEARS[result.cleared].message;
-          state.dropMs = gravityMs(state.level, state.reducedMotion);
-        }
-        state.score += scoreForClears(result.cleared, state.level, state.combo);
-      } else {
-        state.combo = 0;
-      }
+      const outcome = applyResolve(result);
       spawn();
+      return outcome;
     }
 
     function hardDrop() {
-      if (!state.active || state.status !== "playing") return 0;
+      if (!state.active || state.status !== 'playing') return 0;
       let dropped = 0;
       while (tryMove(0, 1)) dropped += 1;
       state.score += dropped * 2;
@@ -321,7 +607,7 @@
     }
 
     function hold() {
-      if (!state.active || state.holdUsed || state.status !== "playing") return false;
+      if (!state.active || state.holdUsed || state.status !== 'playing') return false;
       const current = state.active.kind;
       if (state.hold) {
         const swapped = makePiece(state.hold);
@@ -332,6 +618,58 @@
       }
       state.hold = current;
       state.holdUsed = true;
+      state.message = 'Stashed on the shelf.';
+      return true;
+    }
+
+    function gitClean() {
+      if (state.status !== 'playing' || state.cleanCharges < 1) return false;
+      // remove bottom-most garbage-ish incomplete row with most fills
+      let bestY = -1;
+      let bestFill = 0;
+      for (let y = ROWS - 1; y >= 0; y -= 1) {
+        const fill = state.board[y].filter(Boolean).length;
+        if (fill > 0 && fill < COLS && fill >= bestFill) {
+          bestFill = fill;
+          bestY = y;
+        }
+      }
+      if (bestY < 0) return false;
+      state.board[bestY] = Array(COLS).fill(null);
+      state.board = applyColumnGravity(state.board);
+      state.cleanCharges -= 1;
+      state.debtCleared += bestFill;
+      state.score += 40 * state.level;
+      pushLog('git clean — swept a messy row');
+      state.message = 'git clean — working tree tidied.';
+      state.fx.push({ id: `clean-${now()}`, at: now(), type: 'clean', y: bestY });
+      unlockAchievements();
+      return true;
+    }
+
+    function forcePush() {
+      if (state.status !== 'playing' || state.pushCharges < 1) return false;
+      // clear the fullest incomplete row as a panic deploy
+      let bestY = -1;
+      let bestFill = 0;
+      for (let y = 0; y < ROWS; y += 1) {
+        const fill = state.board[y].filter(Boolean).length;
+        if (fill > 0 && fill < COLS && fill > bestFill) {
+          bestFill = fill;
+          bestY = y;
+        }
+      }
+      if (bestY < 0) return false;
+      state.board[bestY] = Array(COLS).fill(null);
+      state.board = applyColumnGravity(state.board);
+      const result = resolveCascades(state.board);
+      state.board = result.board;
+      state.pushCharges -= 1;
+      state.forcePushes += 1;
+      state.score += 90 * state.level;
+      pushLog('force-push — rewrote history (carefully)');
+      applyResolve(result);
+      state.message = 'force-push — history rewritten.';
       return true;
     }
 
@@ -348,7 +686,7 @@
     }
 
     function tick(ts) {
-      if (state.status !== "playing" || !state.active) return;
+      if (state.status !== 'playing' || !state.active) return;
       if (state.lastTick == null) state.lastTick = ts;
       if (ts - state.lastTick < state.dropMs) return;
       state.lastTick = ts;
@@ -359,26 +697,26 @@
     }
 
     function play() {
-      if (state.status === "playing") return;
-      if (state.status === "over") reset();
-      state.status = "playing";
-      state.message = `Level ${state.level} — drop commits.`;
+      if (state.status === 'playing') return;
+      if (state.status === 'over') reset();
+      state.status = 'playing';
+      state.message = `Sprint ${state.level}: ${sprintName(state.level)} — match 4+ or fill a row.`;
       state.lastTick = now();
       state.levelFlash = now();
       if (!state.active) spawn();
     }
 
     function pause() {
-      if (state.status !== "playing") return;
-      state.status = "paused";
-      state.message = "Working tree paused.";
+      if (state.status !== 'playing') return;
+      state.status = 'paused';
+      state.message = 'Working tree paused.';
     }
 
     function resume() {
-      if (state.status !== "paused") return;
-      state.status = "playing";
+      if (state.status !== 'paused') return;
+      state.status = 'playing';
       state.lastTick = now();
-      state.message = "Back on the main branch.";
+      state.message = 'Back on the main branch.';
     }
 
     function reset() {
@@ -391,14 +729,34 @@
       state.lines = 0;
       state.level = 1;
       state.combo = 0;
-      state.status = "ready";
-      state.message = "Starting level 1…";
+      state.maxCombo = 0;
+      state.maxChain = 0;
+      state.deploys = 0;
+      state.squashes = 0;
+      state.perfectClears = 0;
+      state.forcePushes = 0;
+      state.debtCleared = 0;
+      state.backToBack = false;
+      state.backToBackCount = 0;
+      state.achievements = {};
+      state.commitLog = [];
+      state.fx = [];
+      state.status = 'ready';
+      state.message = 'Sprint ready — stack commits, squash matches, ship deploys.';
       state.dropMs = gravityMs(1, state.reducedMotion);
       state.lastTick = null;
       state.lockAt = 0;
       state.levelFlash = 0;
+      state.cleanCharges = 1;
+      state.pushCharges = 1;
       bag = [];
       fillQueue();
+    }
+
+    function consumeFx() {
+      const fresh = state.fx.slice();
+      state.fx = [];
+      return fresh;
     }
 
     function snapshot() {
@@ -409,11 +767,20 @@
           : null,
         ghost: ghost(),
         hold: state.hold,
-        queue: state.queue.slice(0, 3),
+        queue: state.queue.slice(0, 4),
         score: state.score,
         lines: state.lines,
         level: state.level,
         combo: state.combo,
+        maxCombo: state.maxCombo,
+        maxChain: state.maxChain,
+        deploys: state.deploys,
+        squashes: state.squashes,
+        sprint: sprintName(state.level),
+        cleanCharges: state.cleanCharges,
+        pushCharges: state.pushCharges,
+        commitLog: state.commitLog.slice(),
+        achievements: Object.keys(state.achievements),
         status: state.status,
         message: state.message,
         levelFlash: state.levelFlash,
@@ -435,6 +802,9 @@
       hardDrop,
       softDrop,
       hold,
+      gitClean,
+      forcePush,
+      consumeFx,
       snapshot,
       get status() {
         return state.status;
@@ -554,6 +924,92 @@
     react: ['useState', 'useEffect', 'JSX', 'props', 'memo', 'Suspense', 'useRef', 'Fragment', 'hooks', 'Server Component'],
     general: ['git merge', 'CI', 'API', 'GraphQL', 'TypeScript', 'PR', 'lint', 'deploy', 'a11y', 'Core Web Vitals'],
   };
+
+  /**
+   * WordGenerator — random letter clusters + Dev-related tokens for floating clouds.
+   */
+  const WordGenerator = (function createWordGenerator() {
+    const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    const DIGITS = '0123456789';
+    const LANGS = ['css', 'php', 'wordpress', 'react', 'general'];
+    const PREFIXES = ['git', 'npm', 'wp', 'css', 'js', 'ts', 'api', 'ci', 'dev', 'web', 'db', 'ux'];
+    const SUFFIXES = ['fix', 'ship', 'merge', 'build', 'lint', 'test', 'hook', 'sync', 'diff', 'push', 'pull', 'pack'];
+
+    function pick(list, random) {
+      const rnd = random || Math.random;
+      return list[Math.floor(rnd() * list.length)];
+    }
+
+    function randomLetters(len, random) {
+      const rnd = random || Math.random;
+      const n = Math.max(1, Math.min(12, len || 2 + Math.floor(rnd() * 4)));
+      let out = '';
+      for (let i = 0; i < n; i += 1) {
+        const pool = i === 0 ? LETTERS : rnd() > 0.35 ? LOWER : LETTERS;
+        out += pool[Math.floor(rnd() * pool.length)];
+      }
+      return out;
+    }
+
+    function randomHexToken(random) {
+      const rnd = random || Math.random;
+      const n = 3 + Math.floor(rnd() * 4);
+      let out = '#';
+      for (let i = 0; i < n; i += 1) out += '0123456789abcdef'[Math.floor(rnd() * 16)];
+      return out;
+    }
+
+    function randomDevCompound(random) {
+      const rnd = random || Math.random;
+      return `${pick(PREFIXES, rnd)}-${pick(SUFFIXES, rnd)}`;
+    }
+
+    function randomDevWord(random) {
+      const rnd = random || Math.random;
+      const lang = pick(LANGS, rnd);
+      const pool = DEV_CLOUD_WORDS[lang] || DEV_CLOUD_WORDS.general;
+      return { text: pick(pool, rnd), lang: lang === 'wordpress' ? 'wp' : lang === 'general' ? 'dev' : lang };
+    }
+
+    function nextCloudToken(random) {
+      const rnd = random || Math.random;
+      const roll = rnd();
+      if (roll < 0.28) {
+        return { text: randomLetters(2 + Math.floor(rnd() * 5), rnd), lang: 'dev' };
+      }
+      if (roll < 0.4) {
+        return { text: randomHexToken(rnd), lang: 'css' };
+      }
+      if (roll < 0.52) {
+        return { text: randomDevCompound(rnd), lang: 'dev' };
+      }
+      if (roll < 0.6) {
+        const a = LETTERS[Math.floor(rnd() * 26)];
+        const b = DIGITS[Math.floor(rnd() * 10)];
+        return { text: `${a}${b}${randomLetters(2, rnd)}`, lang: 'dev' };
+      }
+      return randomDevWord(rnd);
+    }
+
+    function generateCloud(count, random) {
+      const rnd = random || Math.random;
+      const n = Math.max(8, count || 22);
+      const tokens = [];
+      for (let i = 0; i < n; i += 1) tokens.push(nextCloudToken(rnd));
+      return tokens;
+    }
+
+    return {
+      LETTERS,
+      randomLetters,
+      randomHexToken,
+      randomDevCompound,
+      randomDevWord,
+      nextCloudToken,
+      generateCloud,
+    };
+  })();
 
   // Free / open catalog: generated loops + CC0 remote samples (CORS-friendly where possible).
   const OPEN_SOURCE_POOL = [
@@ -676,15 +1132,28 @@
     ctx.closePath();
   }
 
-  function drawCell(ctx, x, y, size, color, ghost) {
+  function drawCell(ctx, x, y, size, color, ghost, pulse) {
     const pad = Math.max(1, Math.floor(size * 0.08));
+    const glow = pulse ? 0.35 + pulse * 0.45 : 0;
     ctx.save();
+    if (!ghost && glow > 0) {
+      ctx.shadowColor = color;
+      ctx.shadowBlur = size * (0.35 + glow);
+    }
     ctx.globalAlpha = ghost ? 0.28 : 1;
     roundedRect(ctx, x + pad, y + pad, size - pad * 2, size - pad * 2, size * 0.18);
     ctx.fillStyle = color;
     ctx.fill();
     if (!ghost) {
-      ctx.fillStyle = 'rgba(255,255,255,0.18)';
+      ctx.shadowBlur = 0;
+      const g = ctx.createLinearGradient(x, y, x, y + size);
+      g.addColorStop(0, 'rgba(255,255,255,0.28)');
+      g.addColorStop(0.45, 'rgba(255,255,255,0.06)');
+      g.addColorStop(1, 'rgba(0,0,0,0.22)');
+      ctx.fillStyle = g;
+      roundedRect(ctx, x + pad, y + pad, size - pad * 2, size - pad * 2, size * 0.18);
+      ctx.fill();
+      ctx.fillStyle = 'rgba(255,255,255,0.22)';
       roundedRect(
         ctx,
         x + pad + 2,
@@ -696,6 +1165,95 @@
       ctx.fill();
     }
     ctx.restore();
+  }
+
+  function createSfxEngine() {
+    let audioCtx = null;
+    function ctx() {
+      if (typeof AudioContext === 'undefined') return null;
+      audioCtx = audioCtx || new AudioContext();
+      return audioCtx;
+    }
+    function tone(freq, dur, type, gainVal, slide) {
+      const ac = ctx();
+      if (!ac) return;
+      const osc = ac.createOscillator();
+      const gain = ac.createGain();
+      const t = ac.currentTime;
+      osc.type = type || 'square';
+      osc.frequency.setValueAtTime(freq, t);
+      if (slide) osc.frequency.exponentialRampToValueAtTime(Math.max(40, slide), t + dur);
+      gain.gain.setValueAtTime(gainVal || 0.05, t);
+      gain.gain.exponentialRampToValueAtTime(0.001, t + dur);
+      osc.connect(gain);
+      gain.connect(ac.destination);
+      osc.start(t);
+      osc.stop(t + dur + 0.02);
+    }
+    function noiseBurst(dur, gainVal) {
+      const ac = ctx();
+      if (!ac) return;
+      const len = Math.floor(ac.sampleRate * dur);
+      const buffer = ac.createBuffer(1, len, ac.sampleRate);
+      const data = buffer.getChannelData(0);
+      for (let i = 0; i < len; i += 1) data[i] = (Math.random() * 2 - 1) * (1 - i / len);
+      const src = ac.createBufferSource();
+      const gain = ac.createGain();
+      const filter = ac.createBiquadFilter();
+      filter.type = 'bandpass';
+      filter.frequency.value = 1200;
+      src.buffer = buffer;
+      gain.gain.setValueAtTime(gainVal || 0.04, ac.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + dur);
+      src.connect(filter);
+      filter.connect(gain);
+      gain.connect(ac.destination);
+      src.start();
+    }
+    function play(kind) {
+      try {
+        if (kind === 'move') tone(420, 0.06, 'square', 0.03);
+        else if (kind === 'rotate') {
+          tone(560, 0.07, 'triangle', 0.04);
+          tone(720, 0.08, 'triangle', 0.025, 900);
+        } else if (kind === 'drop' || kind === 'lock') {
+          tone(180, 0.1, 'sawtooth', 0.04, 90);
+          noiseBurst(0.08, 0.03);
+        } else if (kind === 'clear') {
+          tone(520, 0.1, 'triangle', 0.05);
+          tone(780, 0.14, 'triangle', 0.04, 980);
+        } else if (kind === 'squash') {
+          tone(360, 0.09, 'square', 0.045, 280);
+          tone(640, 0.12, 'triangle', 0.04);
+          noiseBurst(0.1, 0.035);
+        } else if (kind === 'deploy') {
+          [523, 659, 784, 1046].forEach((f, i) => {
+            setTimeout(() => tone(f, 0.16, 'triangle', 0.05), i * 70);
+          });
+          noiseBurst(0.18, 0.04);
+        } else if (kind === 'perfect') {
+          [523, 659, 784, 988, 1174].forEach((f, i) => {
+            setTimeout(() => tone(f, 0.18, 'sine', 0.045), i * 55);
+          });
+        } else if (kind === 'level') {
+          tone(440, 0.12, 'square', 0.04);
+          setTimeout(() => tone(660, 0.16, 'square', 0.045), 90);
+          setTimeout(() => tone(880, 0.2, 'triangle', 0.05), 180);
+        } else if (kind === 'badge') {
+          tone(880, 0.1, 'sine', 0.04);
+          setTimeout(() => tone(1320, 0.14, 'sine', 0.035), 80);
+        } else if (kind === 'start') {
+          tone(392, 0.1, 'triangle', 0.04);
+          setTimeout(() => tone(523, 0.14, 'triangle', 0.045), 90);
+        } else if (kind === 'clean') {
+          tone(700, 0.1, 'sine', 0.035, 1100);
+          noiseBurst(0.12, 0.03);
+        } else tone(440, 0.08, 'square', 0.03);
+      } catch (_err) {
+        /* ignore */
+      }
+    }
+    return { play, ctx };
   }
 
   function createMusicEngine() {
@@ -937,21 +1495,31 @@
 
   function mountDevClouds(host, pattern) {
     if (!host) return;
-    const words = shuffleArray(flatDevWords()).slice(0, 22);
+    const tokens = WordGenerator.generateCloud(24);
     host.className = `dev-clouds pattern-${pattern || 'drift'}`;
     host.replaceChildren();
-    words.forEach((word, i) => {
+    tokens.forEach((token) => {
       const span = document.createElement('span');
       span.className = 'dev-cloud';
-      span.textContent = word;
+      span.textContent = token.text;
       span.style.left = `${4 + Math.random() * 90}%`;
       span.style.top = `${6 + Math.random() * 84}%`;
       span.style.animationDelay = `${(-Math.random() * 18).toFixed(2)}s`;
       span.style.animationDuration = `${14 + Math.random() * 18}s`;
       span.style.fontSize = `${0.7 + Math.random() * 0.85}rem`;
       span.style.opacity = String(0.18 + Math.random() * 0.35);
-      span.dataset.lang = i % 5 === 0 ? 'css' : i % 5 === 1 ? 'php' : i % 5 === 2 ? 'wp' : i % 5 === 3 ? 'react' : 'dev';
+      span.dataset.lang = token.lang || 'dev';
       host.appendChild(span);
+    });
+  }
+
+  function refreshDevCloudText(doc) {
+    const rootDoc = doc || (typeof document !== 'undefined' ? document : null);
+    if (!rootDoc) return;
+    rootDoc.querySelectorAll('[data-dev-clouds] .dev-cloud').forEach((el) => {
+      const token = WordGenerator.nextCloudToken();
+      el.textContent = token.text;
+      el.dataset.lang = token.lang || 'dev';
     });
   }
 
@@ -1059,8 +1627,8 @@
     const game = createGame({ reducedMotion: prefersReducedMotion() });
     const ctx = canvas.getContext('2d');
     const music = createMusicEngine();
+    const sfx = createSfxEngine();
     let muted = false;
-    let sfxCtx = null;
     let raf = 0;
     let lastLevelShown = 1;
     let autoStarted = false;
@@ -1068,38 +1636,59 @@
     let wheelAcc = 0;
     let dragState = null;
     let lastClickAt = 0;
+    const particles = [];
+    let shakeUntil = 0;
+    let ciScan = null;
+    let flashCells = [];
 
     applyBackground(prefs.background, root);
     music.setVolume(prefs.music.volume || 0.35);
 
     if (!prefersReducedMotion()) {
       window.setInterval(() => {
-        root.ownerDocument.querySelectorAll('[data-dev-clouds] .dev-cloud').forEach((el) => {
-          const pool = flatDevWords();
-          el.textContent = pool[Math.floor(Math.random() * pool.length)];
-        });
+        refreshDevCloudText(root.ownerDocument);
       }, 4200);
     }
 
     function beep(kind) {
-      if (muted || typeof AudioContext === 'undefined') return;
-      try {
-        sfxCtx = sfxCtx || new AudioContext();
-        const osc = sfxCtx.createOscillator();
-        const gain = sfxCtx.createGain();
-        const t = sfxCtx.currentTime;
-        const tones = { move: 420, rotate: 560, drop: 220, clear: 740, start: 640 };
-        osc.frequency.value = tones[kind] || 440;
-        osc.type = kind === 'clear' ? 'triangle' : 'square';
-        gain.gain.setValueAtTime(0.05, t);
-        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.12);
-        osc.connect(gain);
-        gain.connect(sfxCtx.destination);
-        osc.start(t);
-        osc.stop(t + 0.12);
-      } catch (_err) {
-        /* ignore */
-      }
+      if (muted) return;
+      sfx.play(kind);
+    }
+
+    function spawnParticles(cells, cellSize) {
+      if (prefersReducedMotion()) return;
+      cells.forEach((cell) => {
+        const color = (META[cell.kind] && META[cell.kind].color) || '#8ec8ff';
+        for (let i = 0; i < 5; i += 1) {
+          particles.push({
+            x: (cell.x + 0.5) * cellSize,
+            y: (cell.y + 0.5) * cellSize,
+            vx: (Math.random() - 0.5) * 4.5,
+            vy: (Math.random() - 0.8) * 5.5,
+            life: 1,
+            color,
+            size: 2 + Math.random() * 3,
+          });
+        }
+      });
+    }
+
+    function ingestFx(fxList, cellSize) {
+      fxList.forEach((fx) => {
+        if (fx.cells && fx.cells.length) {
+          spawnParticles(fx.cells, cellSize);
+          flashCells = fx.cells.map((c) => ({ ...c, until: Date.now() + 280 }));
+          shakeUntil = Date.now() + 160;
+        }
+        if (fx.type === 'ci-scan' || (fx.events && fx.events.some((e) => e.type === 'deploy'))) {
+          ciScan = { y: 0, until: Date.now() + 700 };
+        }
+        if (fx.events) {
+          fx.events.forEach((ev) => {
+            if (ev.type === 'deploy' && ev.rows && ev.rows.length >= 4) shakeUntil = Date.now() + 280;
+          });
+        }
+      });
     }
 
     function miniCanvas(kind) {
@@ -1155,10 +1744,35 @@
 
     function draw() {
       const cell = sizeCanvas();
+      const fx = typeof game.consumeFx === 'function' ? game.consumeFx() : [];
+      if (fx.length) {
+        ingestFx(fx, cell);
+        fx.forEach((item) => {
+          if (item.type === 'ci-scan') beep('perfect');
+          if (item.type === 'clean') beep('clean');
+          (item.events || []).forEach((ev) => {
+            if (ev.type === 'deploy') beep(ev.rows && ev.rows.length >= 4 ? 'deploy' : 'clear');
+            if (ev.type === 'squash') beep('squash');
+          });
+          if (item.chain >= 3) beep('level');
+        });
+      }
+
       const snap = game.snapshot();
-      ctx.fillStyle = '#07111f';
+      const shaking = Date.now() < shakeUntil && !prefersReducedMotion();
+      ctx.save();
+      if (shaking) {
+        ctx.translate((Math.random() - 0.5) * 5, (Math.random() - 0.5) * 4);
+      }
+
+      // atmospheric board backdrop
+      const bg = ctx.createLinearGradient(0, 0, 0, ROWS * cell);
+      bg.addColorStop(0, '#0a1528');
+      bg.addColorStop(1, '#07111f');
+      ctx.fillStyle = bg;
       ctx.fillRect(0, 0, COLS * cell, ROWS * cell);
-      ctx.strokeStyle = 'rgba(207,217,230,0.08)';
+
+      ctx.strokeStyle = 'rgba(207,217,230,0.07)';
       for (let x = 0; x <= COLS; x += 1) {
         ctx.beginPath();
         ctx.moveTo(x * cell + 0.5, 0);
@@ -1171,50 +1785,135 @@
         ctx.lineTo(COLS * cell, y * cell + 0.5);
         ctx.stroke();
       }
+
+      const nowTs = Date.now();
+      flashCells = flashCells.filter((c) => c.until > nowTs);
+      const flashMap = {};
+      flashCells.forEach((c) => {
+        flashMap[`${c.x},${c.y}`] = (c.until - nowTs) / 280;
+      });
+
       snap.board.forEach((row, y) => {
         row.forEach((kind, x) => {
-          if (kind) drawCell(ctx, x * cell, y * cell, cell, META[kind].color, false);
+          if (!kind) return;
+          const pulse = flashMap[`${x},${y}`] || 0;
+          drawCell(ctx, x * cell, y * cell, cell, META[kind].color, false, pulse);
         });
       });
       if (snap.ghost && snap.active) {
         pieceCells(snap.ghost).forEach(({ x, y }) => {
-          if (y >= 0) drawCell(ctx, x * cell, y * cell, cell, META[snap.active.kind].color, true);
+          if (y >= 0) drawCell(ctx, x * cell, y * cell, cell, META[snap.active.kind].color, true, 0);
         });
       }
       if (snap.active) {
         pieceCells(snap.active).forEach(({ x, y }) => {
-          if (y >= 0) drawCell(ctx, x * cell, y * cell, cell, META[snap.active.kind].color, false);
+          if (y >= 0) drawCell(ctx, x * cell, y * cell, cell, META[snap.active.kind].color, false, 0.15);
         });
       }
+
+      // CI scan sweep
+      if (ciScan && nowTs < ciScan.until && !prefersReducedMotion()) {
+        const t = 1 - (ciScan.until - nowTs) / 700;
+        const y = t * ROWS * cell;
+        const grad = ctx.createLinearGradient(0, y - 18, 0, y + 18);
+        grad.addColorStop(0, 'rgba(94,200,216,0)');
+        grad.addColorStop(0.5, 'rgba(94,200,216,0.45)');
+        grad.addColorStop(1, 'rgba(94,200,216,0)');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, y - 18, COLS * cell, 36);
+      } else {
+        ciScan = null;
+      }
+
+      // particles
+      for (let i = particles.length - 1; i >= 0; i -= 1) {
+        const p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.12;
+        p.life -= 0.03;
+        if (p.life <= 0) {
+          particles.splice(i, 1);
+          continue;
+        }
+        ctx.globalAlpha = Math.max(0, p.life);
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size * p.life, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+      }
+
+      ctx.restore();
+
       if (scoreEl) scoreEl.textContent = String(snap.score);
       if (linesEl) linesEl.textContent = String(snap.lines);
       if (levelEl) levelEl.textContent = String(snap.level);
       if (highEl) highEl.textContent = String(Math.max(high, snap.score));
       if (messageEl) messageEl.textContent = snap.message;
+      const comboEl = root.querySelector('[data-combo]');
+      const deployEl = root.querySelector('[data-deploys]');
+      const squashEl = root.querySelector('[data-squashes]');
+      const sprintEl = root.querySelector('[data-sprint]');
+      if (comboEl) comboEl.textContent = String(snap.combo);
+      if (deployEl) deployEl.textContent = String(snap.deploys);
+      if (squashEl) squashEl.textContent = String(snap.squashes);
+      if (sprintEl) sprintEl.textContent = snap.sprint || '';
+      const cleanBtn = root.querySelector('[data-git-clean]');
+      const pushBtn = root.querySelector('[data-force-push]');
+      if (cleanBtn) {
+        cleanBtn.disabled = snap.status !== 'playing' || snap.cleanCharges < 1;
+        cleanBtn.textContent = `git clean (${snap.cleanCharges})`;
+      }
+      if (pushBtn) {
+        pushBtn.disabled = snap.status !== 'playing' || snap.pushCharges < 1;
+        pushBtn.textContent = `force-push (${snap.pushCharges})`;
+      }
+      const logEl = root.querySelector('[data-commit-log]');
+      if (logEl) {
+        logEl.replaceChildren();
+        (snap.commitLog || []).slice(0, 5).forEach((line) => {
+          const li = document.createElement('li');
+          li.textContent = line;
+          logEl.appendChild(li);
+        });
+      }
+      const badgeEl = root.querySelector('[data-badges]');
+      if (badgeEl) {
+        badgeEl.replaceChildren();
+        (snap.achievements || []).forEach((id) => {
+          const ach = ACHIEVEMENTS.find((a) => a.id === id);
+          const span = document.createElement('span');
+          span.className = 'badge-chip';
+          span.textContent = ach ? ach.label : id;
+          badgeEl.appendChild(span);
+        });
+      }
       paintMini(holdEl, [snap.hold]);
       paintMini(nextEl, snap.queue);
 
       const flashAge = snap.levelFlash ? Date.now() - snap.levelFlash : 9999;
       const showLevelBanner = snap.status === 'playing' && flashAge < 900;
+      const customizing = panel && !panel.hidden;
       if (overlay && overlayTitle && overlayBody) {
-        const show = snap.status !== 'playing' || showLevelBanner;
+        const show = !customizing && (snap.status !== 'playing' || showLevelBanner);
         overlay.hidden = !show;
-        overlay.classList.toggle('is-clickable', snap.status !== 'playing');
+        overlay.classList.toggle('is-clickable', !customizing && snap.status !== 'playing');
         if (overlayLevel) {
           overlayLevel.hidden = !(showLevelBanner || snap.status === 'ready');
-          overlayLevel.textContent = `Level ${snap.level}`;
+          overlayLevel.textContent = snap.sprint || `Sprint ${snap.level}`;
         }
         if (showLevelBanner && snap.status === 'playing') {
-          overlayTitle.textContent = 'Gravity up';
-          overlayBody.textContent = `Level ${snap.level}. Pieces fall faster every 8 lines — concept game for fun.`;
+          overlayTitle.textContent = 'New sprint';
+          overlayBody.textContent = `${snap.sprint}. Gravity rises — keep matching clusters of 4+ or fill rows to deploy.`;
           if (playBtn) playBtn.hidden = true;
         } else if (snap.status === 'ready') {
           overlayTitle.textContent = 'Git Blocks';
           overlayBody.textContent =
-            "Concept game for fun — not a real job simulator. Stack commits, clear lines, don't ship the backlog.";
+            'Not Tetris — stack commits, squash 4+ matching clusters, fill rows to deploy. Cascades chain for big scores.';
           if (playBtn) {
             playBtn.hidden = false;
-            playBtn.textContent = 'Play';
+            playBtn.textContent = 'Start sprint';
           }
         } else if (snap.status === 'paused') {
           overlayTitle.textContent = 'Paused';
@@ -1225,7 +1924,7 @@
           }
         } else if (snap.status === 'over') {
           overlayTitle.textContent = 'Merge conflict';
-          overlayBody.textContent = `Score ${snap.score}. Press play or R to rebase.`;
+          overlayBody.textContent = `Score ${snap.score} · ${snap.deploys} deploys · ${snap.squashes} squashes. Rebase to try again.`;
           if (playBtn) {
             playBtn.hidden = false;
             playBtn.textContent = 'Rebase';
@@ -1234,7 +1933,8 @@
       }
       if (snap.level !== lastLevelShown && snap.status === 'playing') {
         lastLevelShown = snap.level;
-        announce(`Level ${snap.level}`);
+        announce(`Sprint ${snap.level}: ${snap.sprint}`);
+        beep('level');
       }
       if (pauseBtn) {
         pauseBtn.textContent = snap.status === 'paused' ? 'Resume' : 'Pause';
@@ -1292,15 +1992,17 @@
       if (move === 'left' && game.tryMove(-1, 0)) beep('move');
       if (move === 'right' && game.tryMove(1, 0)) beep('move');
       if (move === 'down') {
-        if (!game.softDrop()) beep('drop');
+        if (!game.softDrop()) beep('lock');
       }
       if (move === 'rotate' && game.tryRotate(1)) beep('rotate');
       if (move === 'rotate-ccw' && game.tryRotate(-1)) beep('rotate');
       if (move === 'drop') {
         game.hardDrop();
-        beep('drop');
+        beep('lock');
       }
       if (move === 'hold') game.hold();
+      if (move === 'clean' && game.gitClean && game.gitClean()) beep('clean');
+      if (move === 'push' && game.forcePush && game.forcePush()) beep('deploy');
       draw();
     }
 
@@ -1344,8 +2046,10 @@
       }
 
       if (isEditableTarget(event.target)) return;
-      if (panel && !panel.hidden && event.key === 'Escape') {
-        closeCustomize();
+      if (panel && !panel.hidden) {
+        if (event.key === 'Escape') {
+          closeCustomize();
+        }
         return;
       }
 
@@ -1687,19 +2391,30 @@
     function openCustomize(tab) {
       if (!panel) return;
       panel.hidden = false;
+      panel.removeAttribute('hidden');
+      root.classList.add('is-customizing');
+      if (overlay) {
+        overlay.hidden = true;
+        overlay.classList.remove('is-clickable');
+      }
       if (game.status === 'playing') game.pause();
       renderBgPresets();
       renderMusicUi();
       renderBindingsUi();
       refreshShareUi();
       if (tab) switchTab(tab);
+      const firstTab = panel.querySelector(`[data-tab="${tab || 'look'}"]`);
+      if (firstTab && typeof firstTab.focus === 'function') firstTab.focus({ preventScroll: true });
     }
 
     function closeCustomize() {
       if (!panel) return;
       panel.hidden = true;
+      panel.setAttribute('hidden', '');
+      root.classList.remove('is-customizing');
       listeningAction = null;
       if (game.status === 'paused') game.resume();
+      draw();
       canvas.focus({ preventScroll: true });
     }
 
@@ -1735,6 +2450,11 @@
       });
     }
     if (customizeBtn) customizeBtn.addEventListener('click', () => openCustomize('look'));
+    const cleanBtnWire = root.querySelector('[data-git-clean]');
+    const pushBtnWire = root.querySelector('[data-force-push]');
+    if (cleanBtnWire) cleanBtnWire.addEventListener('click', () => applyMove('clean'));
+    if (pushBtnWire) pushBtnWire.addEventListener('click', () => applyMove('push'));
+
     if (shareBtn) shareBtn.addEventListener('click', () => openCustomize('share'));
     root.querySelectorAll('[data-customize-close]').forEach((btn) => {
       btn.addEventListener('click', closeCustomize);
@@ -1910,6 +2630,7 @@
     BG_PRESETS,
     MUSIC_TRACKS,
     DEV_CLOUD_WORDS,
+    WordGenerator,
     DEFAULT_BINDINGS,
     gravityMs,
     lockDelayMs,
@@ -1917,9 +2638,16 @@
     rotate,
     collides,
     clearLines,
+    findSquashGroups,
+    resolveCascades,
+    applyColumnGravity,
     scoreForClears,
+    scoreForSquash,
+    sprintName,
+    ACHIEVEMENTS,
     makePiece,
     createGame,
+    createSfxEngine,
     boot,
   };
 });
