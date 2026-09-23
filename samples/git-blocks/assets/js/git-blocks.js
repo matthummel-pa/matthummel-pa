@@ -2822,82 +2822,17 @@
       if (liveEl) liveEl.textContent = text;
     }
 
-    function showFactToast(payload) {
-      if (!payload) return;
-      let backdrop = root.querySelector("[data-fact-backdrop]");
-      if (!backdrop) {
-        backdrop = document.createElement("div");
-        backdrop.className = "fact-backdrop";
-        backdrop.setAttribute("data-fact-backdrop", "");
-        const boardWrap = root.querySelector(".board-wrap") || root;
-        boardWrap.appendChild(backdrop);
-        backdrop.addEventListener("click", () => {
-          backdrop.classList.remove("is-visible");
-          const t = root.querySelector("[data-fact-toast]");
-          if (t) t.classList.remove("is-visible");
-        });
-      }
-      let toast = root.querySelector("[data-fact-toast]");
-      if (!toast) {
-        toast = document.createElement("div");
-        toast.className = "fact-toast";
-        toast.setAttribute("data-fact-toast", "");
-        toast.setAttribute("role", "dialog");
-        toast.setAttribute("aria-modal", "true");
-        toast.setAttribute("aria-label", "Web development fact");
-        const boardWrap = root.querySelector(".board-wrap") || root;
-        boardWrap.appendChild(toast);
-        toast.addEventListener("click", (event) => {
-          event.stopPropagation();
-          toast.classList.remove("is-visible");
-          backdrop.classList.remove("is-visible");
-        });
-      }
-      const snap = game.snapshot();
-      const total = payload.total || snap.curriculumLength || CURRICULUM.length;
-      const step = Math.min(payload.level || snap.level, total);
-      const pct = Math.round((step / Math.max(1, total)) * 100);
-      toast.innerHTML = "";
-      const title = document.createElement("p");
-      title.className = "fact-title";
-      title.textContent = "Web Dev Fact";
-      const kicker = document.createElement("p");
-      kicker.className = "fact-kicker";
-      kicker.textContent = `Lesson ${step}/${total} · ${payload.track || "Path"} · ${
-        payload.lesson || ""
-      } · +${payload.loc || 0} LOC`;
-      const rank = document.createElement("p");
-      rank.className = "fact-rank";
-      rank.textContent = `${payload.rank || snap.lessonRank || "Intern"} → Senior Developer`;
-      const track = document.createElement("div");
-      track.className = "fact-path-track";
-      track.innerHTML = `<span style="width:${pct}%"></span>`;
-      const body = document.createElement("p");
-      body.className = "fact-body";
-      body.textContent = payload.fact || "";
-      if (payload.clouds && payload.clouds.length) {
-        const chips = document.createElement("div");
-        chips.className = "fact-cloud-chips";
-        payload.clouds.forEach((word) => {
-          const chip = document.createElement("span");
-          chip.textContent = word;
-          chips.appendChild(chip);
-        });
-        toast.append(title, kicker, rank, track, body, chips);
-      } else {
-        toast.append(title, kicker, rank, track, body);
-      }
-      const hint = document.createElement("p");
-      hint.className = "fact-dismiss";
-      hint.textContent = "Tap to dismiss · keep matching to learn more";
-      toast.appendChild(hint);
-      backdrop.classList.add("is-visible");
-      toast.classList.add("is-visible");
+    function dismissFactOverlay() {
+      const backdrop = root.querySelector("[data-fact-backdrop]");
+      const toast = root.querySelector("[data-fact-toast]");
+      if (backdrop) backdrop.classList.remove("is-visible");
+      if (toast) toast.classList.remove("is-visible");
       window.clearTimeout(showFactToast._timer);
-      showFactToast._timer = window.setTimeout(() => {
-        toast.classList.remove("is-visible");
-        backdrop.classList.remove("is-visible");
-      }, 7000);
+    }
+
+    function showFactToast() {
+      // Retired: web-dev facts only appear as the quest-column tip.
+      dismissFactOverlay();
     }
 
     function showLessonIntro(intro) {
@@ -3393,15 +3328,61 @@
         </div>`;
     }
 
-    function paintTrophyBoard(snap) {
-      const board = root.querySelector("[data-trophy-board]");
-      if (!board) return;
+    function paintTrophyBoard(snap, force) {
+      let panel = root.querySelector("[data-trophy-case]");
+      if (!panel) {
+        panel = document.createElement("div");
+        panel.className = "trophy-case";
+        panel.setAttribute("data-trophy-case", "");
+        panel.setAttribute("hidden", "");
+        panel.setAttribute("role", "dialog");
+        panel.setAttribute("aria-modal", "true");
+        panel.setAttribute("aria-label", "Trophy and loot case");
+        root.appendChild(panel);
+      }
+      let host = panel.querySelector("[data-trophy-board-inner]");
+      if (!host) {
+        panel.replaceChildren();
+        const scrim = document.createElement("button");
+        scrim.type = "button";
+        scrim.className = "trophy-case-scrim";
+        scrim.setAttribute("data-trophy-scrim", "");
+        scrim.setAttribute("aria-label", "Close trophy case");
+        scrim.addEventListener("click", () => closeTrophyCase());
+        const sheet = document.createElement("div");
+        sheet.className = "trophy-case-sheet";
+        sheet.setAttribute("data-trophy-sheet", "");
+        host = document.createElement("div");
+        host.className = "trophy-case-body";
+        host.setAttribute("data-trophy-board-inner", "");
+        const head = document.createElement("div");
+        head.className = "trophy-case-head";
+        head.innerHTML = `<div><strong>Trophy &amp; loot case</strong><p data-trophy-status></p></div>`;
+        const close = document.createElement("button");
+        close.type = "button";
+        close.className = "ghost";
+        close.setAttribute("data-trophy-close", "");
+        close.textContent = "Close";
+        close.addEventListener("click", () => closeTrophyCase());
+        head.appendChild(close);
+        sheet.append(head, host);
+        panel.append(scrim, sheet);
+      }
       const trophies = snap.trophyCatalog || [];
       const items = snap.itemCatalog || [];
       const ownedT = trophies.filter((t) => t.owned).length;
       const ownedI = items.filter((t) => t.owned).length;
-      if (board.dataset.sig === `${ownedT}-${ownedI}-${trophies.length}`) return;
-      board.dataset.sig = `${ownedT}-${ownedI}-${trophies.length}`;
+      const sig = `${ownedT}-${ownedI}-${trophies.length}-${items.length}`;
+      if (!force && host.dataset.sig === sig) return;
+      host.dataset.sig = sig;
+      const status = panel.querySelector("[data-trophy-status]");
+      if (status) {
+        status.textContent = snap.classExpert
+          ? "Class Expert — full case unlocked when earned."
+          : snap.graduated
+            ? `Senior graduate · ${ownedT}/${trophies.length} trophies · ${ownedI}/${items.length} items`
+            : `${ownedT}/${trophies.length} trophies · ${ownedI}/${items.length} items earned`;
+      }
       const makeGrid = (list, label) => {
         const wrap = document.createElement("div");
         wrap.className = "trophy-section";
@@ -3410,23 +3391,51 @@
         const grid = document.createElement("div");
         grid.className = "trophy-grid";
         list.forEach((t) => {
-          const cell = document.createElement("button");
-          cell.type = "button";
+          const cell = document.createElement("div");
           cell.className = "trophy-cell" + (t.owned ? " is-owned" : " is-locked");
           cell.title = t.owned ? `${t.name} — ${t.blurb}` : `Locked: ${t.name}`;
-          cell.innerHTML = `<span aria-hidden="true">${t.owned ? t.icon : "?"}</span><em>${t.name}</em>`;
+          cell.innerHTML = `<span aria-hidden="true">${t.owned ? t.icon : "?"}</span><em>${t.name}</em>${
+            t.owned ? `<small>${t.blurb || ""}</small>` : "<small>Keep questing</small>"
+          }`;
           grid.appendChild(cell);
         });
         wrap.append(h, grid);
         return wrap;
       };
-      board.replaceChildren();
-      const head = document.createElement("div");
-      head.className = "trophy-board-head";
-      head.innerHTML = `<strong>Trophy &amp; loot case</strong><span>${
-        snap.classExpert ? "Class Expert" : snap.graduated ? "Senior graduate" : "Collect as you quest"
-      }</span>`;
-      board.append(head, makeGrid(trophies, "Trophies"), makeGrid(items, "Items"));
+      host.replaceChildren(makeGrid(trophies, "Trophies"), makeGrid(items, "Items"));
+    }
+
+    function openTrophyCase() {
+      root._gbTrophyOpen = true;
+      paintTrophyBoard(game.snapshot(), true);
+      const panel = root.querySelector("[data-trophy-case]");
+      if (!panel) return;
+      panel.removeAttribute("hidden");
+      panel.classList.add("is-open");
+      root.classList.add("is-trophy-open");
+      const btn = root.querySelector("[data-trophies]");
+      if (btn) {
+        btn.classList.add("is-active");
+        btn.setAttribute("aria-pressed", "true");
+      }
+      const closeBtn = panel.querySelector("[data-trophy-close]");
+      if (closeBtn) closeBtn.focus();
+    }
+
+    function closeTrophyCase() {
+      root._gbTrophyOpen = false;
+      const panel = root.querySelector("[data-trophy-case]");
+      if (panel) {
+        panel.setAttribute("hidden", "");
+        panel.classList.remove("is-open");
+      }
+      root.classList.remove("is-trophy-open");
+      const btn = root.querySelector("[data-trophies]");
+      if (btn) {
+        btn.classList.remove("is-active");
+        btn.setAttribute("aria-pressed", "false");
+        btn.focus();
+      }
     }
 
     function paintLegend(snap) {
@@ -3633,14 +3642,25 @@
       if (snap.pathway) applyPathwayTheme(snap.pathway);
 
       const fact = typeof game.consumeFact === "function" ? game.consumeFact() : null;
-      // Soft tip toast only — no blocking lesson modal before each level.
-      if (fact) showFactToast(fact);
+      // Facts live only in the side quest column (dev tip) — no board overlay.
+      if (fact) {
+        dismissFactOverlay();
+        if (snap.activeQuest) {
+          snap.activeQuest.tip = fact.fact || snap.activeQuest.tip;
+        }
+      }
       paintQuestRail(snap);
-      paintTrophyBoard(snap);
+      if (root._gbTrophyOpen) paintTrophyBoard(snap, true);
       const trophy = typeof game.consumeTrophy === "function" ? game.consumeTrophy() : null;
-      if (trophy) showLootToast(trophy, "trophy");
+      if (trophy) {
+        showLootToast(trophy, "trophy");
+        if (root._gbTrophyOpen) paintTrophyBoard(game.snapshot(), true);
+      }
       const loot = typeof game.consumeLoot === "function" ? game.consumeLoot() : null;
-      if (loot) showLootToast(loot, "loot");
+      if (loot) {
+        showLootToast(loot, "loot");
+        if (root._gbTrophyOpen) paintTrophyBoard(game.snapshot(), true);
+      }
       const skill = typeof game.consumeSkillUnlock === "function" ? game.consumeSkillUnlock() : null;
       if (skill) {
         showSkillUnlock(skill);
@@ -3913,6 +3933,13 @@
     }
 
     function onKey(event) {
+      if (root._gbTrophyOpen) {
+        if (event.key === "Escape") {
+          event.preventDefault();
+          closeTrophyCase();
+        }
+        return;
+      }
       if (panel && !panel.hidden) {
         if (event.key === "Escape") closeCustomize();
         return;
@@ -4106,16 +4133,15 @@
     if (shareBtn) shareBtn.addEventListener("click", () => openCustomize("share"));
     const trophiesBtn = root.querySelector("[data-trophies]");
     if (trophiesBtn) {
+      trophiesBtn.setAttribute("aria-pressed", "false");
       trophiesBtn.addEventListener("click", () => {
-        const board = root.querySelector("[data-trophy-board]");
-        if (!board) return;
-        const open = board.hasAttribute("hidden");
-        if (open) board.removeAttribute("hidden");
-        else board.setAttribute("hidden", "");
-        trophiesBtn.classList.toggle("is-active", open);
-        paintTrophyBoard(game.snapshot());
+        if (root._gbTrophyOpen) closeTrophyCase();
+        else openTrophyCase();
       });
     }
+    // Legacy inline board no longer used as the primary viewer
+    const legacyBoard = root.querySelector("[data-trophy-board]");
+    if (legacyBoard) legacyBoard.setAttribute("hidden", "");
     root.querySelectorAll("[data-customize-close]").forEach((btn) => btn.addEventListener("click", closeCustomize));
     root.querySelectorAll("[data-tab]").forEach((btn) => {
       btn.addEventListener("click", () => switchTab(btn.getAttribute("data-tab")));
