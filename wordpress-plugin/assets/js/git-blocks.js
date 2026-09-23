@@ -1828,6 +1828,35 @@
       };
     }
 
+    function applyCloudSave(save) {
+      if (!save || typeof save !== "object") return false;
+      const trophies = save.trophies && typeof save.trophies === "object" ? save.trophies : {};
+      const items = save.items && typeof save.items === "object" ? save.items : {};
+      Object.keys(trophies).forEach((id) => {
+        if (!state.trophies[id]) state.trophies[id] = trophies[id] || { id, at: Date.now() };
+      });
+      Object.keys(items).forEach((id) => {
+        if (!state.items[id]) state.items[id] = items[id] || { id, at: Date.now() };
+      });
+      if (typeof save.high_score === "number" && save.high_score > state.score) {
+        // high score is tracked outside createGame in boot(); stash on state for UI sync
+        state.cloudHighScore = save.high_score;
+      }
+      if (save.pathway_id && !state.pathwayId) {
+        // do not auto-lock pathway mid-class-select unless empty
+      }
+      return true;
+    }
+
+    function exportCloudSave() {
+      return {
+        highScore: state.score,
+        pathwayId: state.pathwayId || null,
+        trophies: { ...(state.trophies || {}) },
+        items: { ...(state.items || {}) },
+      };
+    }
+
     function consumeTrophy() {
       const t = state.pendingTrophy;
       state.pendingTrophy = null;
@@ -1859,6 +1888,8 @@
       consumeFact,
       consumeLessonIntro,
       consumeSkillUnlock,
+      applyCloudSave,
+      exportCloudSave,
       consumeTrophy,
       consumeLoot,
       snapshot,
@@ -3655,11 +3686,13 @@
       if (trophy) {
         showLootToast(trophy, "trophy");
         if (root._gbTrophyOpen) paintTrophyBoard(game.snapshot(), true);
+        root.dispatchEvent(new CustomEvent("branchborne:progress", { detail: { kind: "trophy", trophy } }));
       }
       const loot = typeof game.consumeLoot === "function" ? game.consumeLoot() : null;
       if (loot) {
         showLootToast(loot, "loot");
         if (root._gbTrophyOpen) paintTrophyBoard(game.snapshot(), true);
+        root.dispatchEvent(new CustomEvent("branchborne:progress", { detail: { kind: "loot", loot } }));
       }
       const skill = typeof game.consumeSkillUnlock === "function" ? game.consumeSkillUnlock() : null;
       if (skill) {

@@ -1,8 +1,8 @@
 {
   "name": "branchborne-gem-quest-game",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
-  "description": "Branchborne Gem Quest — Bejeweled-style tech gem RPG with side quests, trophies, and a WordPress embed.",
+  "description": "Branchborne Gem Quest — Bejeweled-style tech gem RPG with side quests, Supabase trophy cloud saves, and Netlify hosting.",
   "license": "MIT",
   "author": "Matt Hummel <https://matthummel.com>",
   "repository": {
@@ -17,18 +17,24 @@
     "match-3",
     "bejeweled",
     "canvas-game",
-    "web-development",
+    "netlify",
+    "supabase",
     "wordpress-plugin",
-    "educational-game",
     "javascript"
   ],
   "engines": {
     "node": ">=20"
   },
   "scripts": {
-    "start": "npx --yes serve play -l 8765",
+    "start": "npx --yes netlify-cli dev",
     "test": "node --test tests/test_engine.js",
+    "sync:docs": "rm -rf docs && mkdir -p docs && cp -a play/. docs/ && touch docs/.nojekyll",
     "sync:plugin": "cp play/git-blocks.js wordpress-plugin/assets/js/git-blocks.js && cp play/git-blocks.css wordpress-plugin/assets/css/git-blocks.css",
-    "pack:wp": "bash wordpress-plugin/bin/pack.sh"
+    "pack:wp": "bash wordpress-plugin/bin/pack.sh",
+    "deploy": "npm run sync:docs && npx --yes netlify-cli deploy --prod"
+  },
+  "dependencies": {
+    "@netlify/functions": "^3.0.0",
+    "@supabase/supabase-js": "^2.49.1"
   }
 }

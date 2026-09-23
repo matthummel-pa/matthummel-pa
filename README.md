@@ -67,6 +67,43 @@ npm start
 
 ---
 
+
+## Cloud trophies (Supabase) + Netlify app
+
+Branchborne deploys as a **Netlify** static app (`play/`) with a Function at `/api/trophies` that upserts progress into Supabase table `branchborne_players`.
+
+| Piece | Detail |
+|-------|--------|
+| Host | Netlify (`netlify.toml` → publish `play/`) |
+| API | `GET/POST /api/trophies` (`netlify/functions/trophies.ts`) |
+| DB | Supabase `public.branchborne_players` (UUID `player_id`, trophies/items JSON) |
+| Client | `play/cloud-trophies.js` — anonymous player id in `localStorage` |
+
+### Env vars (Netlify)
+
+```
+SUPABASE_URL=https://YOUR_PROJECT.supabase.co
+SUPABASE_ANON_KEY=your_anon_or_publishable_key
+```
+
+### Local
+
+```bash
+npm install
+cp .env.example .env   # or export the vars
+npx netlify dev        # http://localhost:8888 — Functions + play/
+```
+
+### Deploy
+
+```bash
+npx netlify login
+npx netlify init       # create site: branchborne-gem-quest
+npx netlify env:set SUPABASE_URL "..."
+npx netlify env:set SUPABASE_ANON_KEY "..."
+npm run deploy
+```
+
 ## Repo map
 
 ```
