@@ -5,7 +5,7 @@
 Match tech gems, clear live side quests, collect trophies & loot, and climb from Intern to Senior — then class Expert raids.
 
 <p align="center">
-  <a href="https://matthummel-pa.github.io/matthummel-pa/"><img src="https://img.shields.io/badge/▶_Play_live-0D2E57?style=for-the-badge" alt="Play Branchborne Gem Quest" /></a>
+  <a href="https://matthummel-pa.github.io/branchborne-gem-quest-game/"><img src="https://img.shields.io/badge/▶_Play_live-0D2E57?style=for-the-badge" alt="Play Branchborne Gem Quest" /></a>
   <a href="#wordpress-plugin"><img src="https://img.shields.io/badge/WordPress_plugin-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress plugin" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-2C5A95?style=for-the-badge" alt="MIT License" /></a>
 </p>
@@ -54,7 +54,7 @@ Built as a zero-framework canvas engine so it embeds anywhere: static Pages, Wor
 
 | Mode | Where |
 |------|--------|
-| **Live demo** | [matthummel-pa.github.io/matthummel-pa](https://matthummel-pa.github.io/matthummel-pa/) |
+| **Live demo** | [matthummel-pa.github.io/matthummel-pa](https://matthummel-pa.github.io/branchborne-gem-quest-game/) |
 | **Local standalone** | Open `play/index.html` or `npm start` |
 | **WordPress** | Install `wordpress-plugin/` → shortcode `[git_blocks]` |
 
