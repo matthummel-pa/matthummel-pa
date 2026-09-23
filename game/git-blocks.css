@@ -80,6 +80,7 @@ body {
 }
 
 .player {
+  position: relative;
   flex: 1;
   min-height: 0;
   display: flex;
@@ -284,13 +285,78 @@ body {
 }
 
 .trophy-board {
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: rgba(7, 17, 31, 0.55);
-  max-height: 220px;
+  display: none !important;
+}
+
+.trophy-case {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.trophy-case.is-open,
+.trophy-case:not([hidden]) {
+  display: flex;
+}
+
+.trophy-case[hidden] {
+  display: none !important;
+}
+
+.trophy-case-scrim {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background: rgba(4, 10, 20, 0.72);
+  backdrop-filter: blur(4px);
+}
+
+.trophy-case-sheet {
+  position: relative;
+  z-index: 1;
+  width: min(720px, 100%);
+  max-height: min(86vh, 640px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(196, 156, 72, 0.45);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(18, 28, 44, 0.98), rgba(8, 14, 26, 0.96));
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+}
+
+.trophy-case-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.trophy-case-head strong {
+  display: block;
+  font-size: 1rem;
+  color: #f0d078;
+}
+
+.trophy-case-head p {
+  margin: 4px 0 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.trophy-case-body {
+  padding: 10px 14px 16px;
   overflow: auto;
+  flex: 1;
 }
 
 .trophy-board-head {
@@ -316,8 +382,8 @@ body {
 
 .trophy-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 6px;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 8px;
 }
 
 .trophy-cell {
@@ -326,16 +392,30 @@ body {
   background: rgba(255, 255, 255, 0.03);
   color: var(--paper);
   border-radius: 8px;
-  padding: 8px 4px;
-  font-size: 0.62rem;
-  line-height: 1.2;
+  padding: 10px 6px;
+  font-size: 0.68rem;
+  line-height: 1.25;
   cursor: default;
+  text-align: center;
 }
 
 .trophy-cell span {
   display: block;
-  font-size: 1.1rem;
-  margin-bottom: 2px;
+  font-size: 1.35rem;
+  margin-bottom: 4px;
+}
+
+.trophy-cell em {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.trophy-cell small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.62rem;
 }
 
 .trophy-cell.is-locked {
@@ -1433,6 +1513,13 @@ button:disabled {
 }
 
 .fact-toast,
+.fact-backdrop {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
 .skill-unlock,
 .lesson-intro {
   position: absolute;
@@ -1451,17 +1538,10 @@ button:disabled {
   backdrop-filter: blur(10px);
 }
 
-.fact-toast {
-  bottom: 22px;
-  top: auto;
-  cursor: pointer;
-  pointer-events: none;
-  max-height: min(70%, 420px);
-  overflow: auto;
-}
-
+.fact-toast,
 .fact-toast.is-visible {
-  pointer-events: auto;
+  display: none !important;
+  pointer-events: none !important;
 }
 
 .lesson-intro {
@@ -1764,7 +1844,6 @@ button:disabled {
   border-color: rgba(231, 195, 90, 0.5);
 }
 
-.fact-toast.is-visible,
 .skill-unlock.is-visible {
   opacity: 1;
   transform: translateX(-50%) translateY(0) scale(1);

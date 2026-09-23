@@ -340,6 +340,22 @@ test("player files ship match-3 cabinet", () => {
   assert.ok(fs.existsSync(path.join(gameDir, "audio", "stack-sprint.ogg")));
 });
 
+test("trophy catalog ships and facts stay off the board overlay", () => {
+  const game = seededGame();
+  const snap = game.snapshot();
+  assert.ok(Array.isArray(snap.trophyCatalog));
+  assert.ok(snap.trophyCatalog.length >= 5);
+  assert.ok(snap.trophyCatalog.every((t) => t.id && t.name && typeof t.owned === "boolean"));
+  assert.ok(Array.isArray(snap.itemCatalog));
+  const src = fs.readFileSync(path.join(__dirname, "..", "game", "git-blocks.js"), "utf8");
+  assert.match(src, /openTrophyCase/);
+  assert.match(src, /data-trophy-case/);
+  assert.match(src, /Retired: web-dev facts only appear as the quest-column tip/);
+  const css = fs.readFileSync(path.join(__dirname, "..", "game", "git-blocks.css"), "utf8");
+  assert.match(css, /\.trophy-case/);
+  assert.match(css, /\.fact-toast[\s\S]*display:\s*none\s*!important/);
+});
+
 test("docs/ mirrors game for branch-based GitHub Pages", () => {
   const docsDir = path.join(__dirname, "..", "docs");
   const html = fs.readFileSync(path.join(docsDir, "index.html"), "utf8");
