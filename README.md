@@ -28,7 +28,7 @@ I ship Sage 11 themes, small plugins, and the APIs around them — then hand the
 <a id="play"></a>
 ## Branchborne Gem Quest
 
-GitHub READMEs cannot run JavaScript, so the cabinet lives on matthummel.com. Click the player — pieces are commits, branches, hotfixes, and reviews. Clear a line, ship the backlog.
+Bejeweled-style tech gems, live side quests, trophies — Intern → Senior → class Expert. Play on Pages; collaborate in the dedicated game repo.
 
 <div align="center">
   <a href="https://matthummel-pa.github.io/matthummel-pa/">
@@ -36,9 +36,10 @@ GitHub READMEs cannot run JavaScript, so the cabinet lives on matthummel.com. Cl
   </a>
   <br />
   <a href="https://matthummel-pa.github.io/matthummel-pa/"><img src="https://img.shields.io/badge/▶_Play_Branchborne-0D2E57?style=for-the-badge" alt="Play Branchborne Gem Quest" /></a>
+  <a href="https://github.com/matthummel-pa/branchborne-gem-quest-game"><img src="https://img.shields.io/badge/Game_repo-181717?style=for-the-badge&logo=github" alt="Branchborne Gem Quest game repository" /></a>
 </div>
 
-<p align="center"><sub><kbd>←</kbd> <kbd>→</kbd> move · <kbd>↑</kbd> rotate · <kbd>space</kbd> hard drop · <kbd>C</kbd> hold · high score stays in your browser</sub></p>
+<p align="center"><sub>Match gems · side quests · trophies · <a href="https://github.com/matthummel-pa/branchborne-gem-quest-game">open for collaborators</a></sub></p>
 
 ---
 
