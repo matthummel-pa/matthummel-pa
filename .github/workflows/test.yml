@@ -1,0 +1,22 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  engine:
+    name: Engine tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run tests
+        run: npm test
+      - name: Plugin assets stay in sync with play/
+        run: |
+          cmp -s play/git-blocks.js wordpress-plugin/assets/js/git-blocks.js
+          cmp -s play/git-blocks.css wordpress-plugin/assets/css/git-blocks.css

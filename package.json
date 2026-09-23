@@ -1,0 +1,34 @@
+{
+  "name": "branchborne-gem-quest-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Branchborne Gem Quest — Bejeweled-style tech gem RPG with side quests, trophies, and a WordPress embed.",
+  "license": "MIT",
+  "author": "Matt Hummel <https://matthummel.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthummel-pa/branchborne-gem-quest-game.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matthummel-pa/branchborne-gem-quest-game/issues"
+  },
+  "homepage": "https://github.com/matthummel-pa/branchborne-gem-quest-game#readme",
+  "keywords": [
+    "match-3",
+    "bejeweled",
+    "canvas-game",
+    "web-development",
+    "wordpress-plugin",
+    "educational-game",
+    "javascript"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "npx --yes serve play -l 8765",
+    "test": "node --test tests/test_engine.js",
+    "sync:plugin": "cp play/git-blocks.js wordpress-plugin/assets/js/git-blocks.js && cp play/git-blocks.css wordpress-plugin/assets/css/git-blocks.css",
+    "pack:wp": "bash wordpress-plugin/bin/pack.sh"
+  }
+}
