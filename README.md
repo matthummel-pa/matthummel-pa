@@ -28,18 +28,29 @@ I ship Sage 11 themes, small plugins, and the APIs around them — then hand the
 <a id="play"></a>
 ## Branchborne Gem Quest
 
-Bejeweled-style tech gems, live side quests, trophies — Intern → Senior → class Expert. Play on Pages; collaborate in the dedicated game repo.
+Bejeweled-style match-3 with a web-dev twist — tech gems, pathway heroes, live side quests, and a trophy case. Climb Intern → Senior, then take class Expert raids. Open source and looking for collaborators.
 
 <div align="center">
-  <a href="https://matthummel-pa.github.io/matthummel-pa/">
-    <img src="./assets/git-blocks-player.svg" alt="Play Branchborne Gem Quest, a Bejeweled-style tech gem RPG" width="720" />
+  <a href="https://gregarious-custard-70cf58.netlify.app/">
+    <img src="./assets/branchborne-gem-quest.jpg" alt="Branchborne Gem Quest — fantasy match-3 board of glowing tech gems in an enchanted forest" width="720" />
   </a>
   <br />
-  <a href="https://matthummel-pa.github.io/matthummel-pa/"><img src="https://img.shields.io/badge/▶_Play_Branchborne-0D2E57?style=for-the-badge" alt="Play Branchborne Gem Quest" /></a>
-  <a href="https://github.com/matthummel-pa/branchborne-gem-quest-game"><img src="https://img.shields.io/badge/Game_repo-181717?style=for-the-badge&logo=github" alt="Branchborne Gem Quest game repository" /></a>
+  <a href="https://gregarious-custard-70cf58.netlify.app/"><img src="https://img.shields.io/badge/▶_Play_live-0D2E57?style=for-the-badge" alt="Play Branchborne Gem Quest" /></a>
+  <a href="https://github.com/matthummel-pa/branchborne-gem-quest-game"><img src="https://img.shields.io/badge/Game_repo-181717?style=for-the-badge&logo=github" alt="branchborne-gem-quest-game on GitHub" /></a>
 </div>
 
-<p align="center"><sub>Match gems · side quests · trophies · <a href="https://github.com/matthummel-pa/branchborne-gem-quest-game">open for collaborators</a></sub></p>
+**Highlights**
+- Continuous Bejeweled-style cascades (HTML, CSS, JS, React, Git, Node, and more)
+- Pathway classes: Frontend Mage, Backend Sentinel, WordPress Artisan, Full-Stack Ranger
+- Live side-quest rail with Dev tips — Intern → Senior → Expert endgame
+- Trophy & loot case; cloud saves via Supabase on the Netlify app
+- Vanilla JS canvas engine + WordPress shortcode embed in the game repo
+
+<p align="center"><sub>
+  <a href="https://gregarious-custard-70cf58.netlify.app/">Play</a> ·
+  <a href="https://github.com/matthummel-pa/branchborne-gem-quest-game">github.com/matthummel-pa/branchborne-gem-quest-game</a> ·
+  <a href="https://matthummel-pa.github.io/matthummel-pa/">Pages mirror</a>
+</sub></p>
 
 ---
 
@@ -266,6 +277,6 @@ Latest from [matthummel.com/blog](https://matthummel.com/blog/):
 - 🦋 **Bluesky:** [@matthummel](https://bsky.app/profile/matthummel.bsky.social)
 - 👽 **Reddit:** [u/matt-hummel](https://www.reddit.com/user/matt-hummel)
 - 📡 **RSS:** [matthummel.com/feed](https://matthummel.com/feed/)
-- 🎮 **Branchborne Gem Quest:** [Play the cabinet](https://matthummel.com/git-blocks/)
+- 🎮 **Branchborne Gem Quest:** [Play live](https://gregarious-custard-70cf58.netlify.app/) · [Game repo](https://github.com/matthummel-pa/branchborne-gem-quest-game)
 
 <sub>WordPress developer · full-stack PHP — open for work. PRs welcome; puns tolerated.</sub>
