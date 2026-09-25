@@ -149,7 +149,7 @@ Seventeen years of in-house web work (higher-ed marketing, then SharePoint / Pow
     "dev": "cursor . && coffee --watch",
     "build": "ship accessible WordPress platforms",
     "test": "a11y + Core Web Vitals + 'can the shop edit it?'",
-    "play": "open https://matthummel.com/git-blocks/",
+    "play": "open https://gregarious-custard-70cf58.netlify.app/",
     "deploy": "you own the keys"
   },
   "dependencies": {
