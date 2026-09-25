@@ -1,0 +1,31 @@
+name: Publish Branchborne game repo
+
+# One-shot / on-demand publisher for https://github.com/matthummel-pa/branchborne-gem-quest-game
+# Requires repo secret BRANCHBORNE_PUSH_TOKEN (classic PAT with repo scope on the game repo),
+# OR grant the Cursor GitHub App write access to that repo and push from the agent instead.
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout export branch
+        uses: actions/checkout@v4
+        with:
+          ref: export/branchborne-gem-quest-game
+          fetch-depth: 0
+
+      - name: Push to game repository
+        env:
+          TOKEN: ${{ secrets.BRANCHBORNE_PUSH_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::Add repository secret BRANCHBORNE_PUSH_TOKEN (PAT with repo access to branchborne-gem-quest-game), then re-run."
+            exit 1
+          fi
+          git remote remove game 2>/dev/null || true
+          git remote add game "https://x-access-token:${TOKEN}@github.com/matthummel-pa/branchborne-gem-quest-game.git"
+          git push --force game HEAD:main
+          echo "Published. Enable Pages → GitHub Actions on the game repo."
+          echo "Hit page: https://matthummel-pa.github.io/branchborne-gem-quest-game/"

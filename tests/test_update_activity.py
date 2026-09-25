@@ -111,9 +111,10 @@ class ReadmeContractTests(unittest.TestCase):
             self.assertIn(marker, self.text)
 
     def test_game_player_present(self) -> None:
-        self.assertIn("Git Blocks", self.text)
-        self.assertIn("matthummel.com/git-blocks", self.text)
-        self.assertIn("git-blocks-player.svg", self.text)
+        self.assertIn("Branchborne Gem Quest", self.text)
+        self.assertIn("gregarious-custard-70cf58.netlify.app", self.text)
+        self.assertIn("branchborne-gem-quest-game", self.text)
+        self.assertIn("branchborne-gem-quest.jpg", self.text)
 
     def test_dev_to_handle(self) -> None:
         self.assertIn("dev.to/matthummeldev", self.text)

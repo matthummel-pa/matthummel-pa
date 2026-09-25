@@ -366,12 +366,10 @@ test("docs/ mirrors game for branch-based GitHub Pages", () => {
   assert.ok(fs.existsSync(path.join(docsDir, ".nojekyll")));
 });
 
-test("wordpress plugin sample packs the cabinet", () => {
-  const plugin = path.join(__dirname, "..", "samples", "git-blocks");
-  assert.ok(fs.existsSync(path.join(plugin, "git-blocks.php")));
-  assert.ok(fs.existsSync(path.join(plugin, "assets", "js", "git-blocks.js")));
-  assert.ok(fs.existsSync(path.join(plugin, "assets", "css", "git-blocks.css")));
-  const pluginEngine = require(path.join(plugin, "assets", "js", "git-blocks.js"));
-  assert.ok(pluginEngine.GEMS.length >= 14);
-  assert.equal(typeof pluginEngine.createGame, "function");
+test("wordpress plugin sample moved to branchborne-gem-quest-game", () => {
+  const pointer = path.join(__dirname, "..", "samples", "git-blocks", "README.md");
+  assert.ok(fs.existsSync(pointer));
+  const text = fs.readFileSync(pointer, "utf8");
+  assert.match(text, /branchborne-gem-quest-game/);
+  assert.match(text, /Moved/i);
 });
