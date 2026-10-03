@@ -1,4 +1,4 @@
-name: Update README activity
+name: Update README (activity, projects, journal, skills)
 
 on:
   schedule:
@@ -10,6 +10,7 @@ on:
     branches: [main]
     paths-ignore:
       - "README.md"
+      - "assets/skills.svg"
       - ".github/workflows/update-readme-activity.yml"
 
 permissions:
@@ -35,9 +36,12 @@ jobs:
           ACTIVITY_MAX_LINES: "12"
         run: python3 .github/scripts/update-activity.py
 
+      - name: Update projects, journal, and skills banner from matthummel.com
+        run: python3 .github/scripts/update-site.py
+
       - name: Commit & push if changed
         run: |
-          git add README.md assets/activity-heatmap.svg
+          git add README.md assets/activity-heatmap.svg assets/skills.svg
           if git diff --cached --quiet; then
             echo "No README or heatmap changes."
             exit 0
