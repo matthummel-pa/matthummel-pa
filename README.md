@@ -3,7 +3,7 @@
 # Hi, I'm Matt Hummel
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=2C5A95&center=true&vCenter=true&width=720&lines=WordPress+themes%2C+plugins%2C+and+platforms;Sage+11+%C2%B7+PHP+8.3+%C2%B7+Gutenberg;Acreline+%2B+WalkRidge+live+on+subdomains;Open+for+freelance%2C+contract%2C+or+full-time;AI-assisted.+Human-reviewed." alt="WordPress themes, plugins, and platforms" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=2C5A95&center=true&vCenter=true&width=720&lines=WordPress+themes%2C+plugins%2C+and+platforms;Sage+11+%C2%B7+PHP+8.3+%C2%B7+Gutenberg;Cobble+%26+Candle%2C+Acreline+%2B+WalkRidge+live+on+subdomains;Open+for+freelance%2C+contract%2C+or+full-time;AI-assisted.+Human-reviewed." alt="WordPress themes, plugins, and platforms" />
 </a>
 
 **WordPress developer · full-stack PHP · Gettysburg, PA**
@@ -62,12 +62,21 @@ Portfolio samples I built in public — not client sites. Project write-ups live
 <table>
   <tr>
     <td width="50%" align="center" valign="top">
+      <a href="https://matthummel.com/projects/cobbleandcandle/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/cobbleandcandle/featured.webp" alt="Cobble & Candle WordPress theme for restaurants, taverns and inns" width="360" /></a><br />
+      <strong><a href="https://matthummel.com/projects/cobbleandcandle/">Cobble &amp; Candle</a></strong><br />
+      <sub>Sage 11 block theme · Restaurants, taverns &amp; inns · New</sub><br />
+      Live “open now” hours, diet-filtered menus, table and room bookings with Airbnb sync, setup wizard. Coming to the shop.<br />
+      <a href="https://matthummel.com/projects/cobbleandcandle/">Story</a> · <a href="https://cobbleandcandle.matthummel.com/">Live demo</a> · <a href="https://github.com/matthummel-pa/wp-cobbleandcandle">GitHub</a>
+    </td>
+    <td width="50%" align="center" valign="top">
       <a href="https://matthummel.com/projects/acreline/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/acreline/featured.webp" alt="Acreline WordPress real estate theme" width="360" /></a><br />
       <strong><a href="https://matthummel.com/projects/acreline/">Acreline</a></strong><br />
       <sub>Sage 11 theme · Real estate · GPL</sub><br />
       Listings, map, agents, showing requests, 21 Gutenberg blocks, setup wizard.<br />
       <a href="https://matthummel.com/projects/acreline/">Story</a> · <a href="https://acreline.matthummel.com/">Live demo</a> · <a href="https://github.com/matthummel-pa/wp-acreline">GitHub</a>
     </td>
+  </tr>
+  <tr>
     <td width="50%" align="center" valign="top">
       <a href="https://matthummel.com/projects/walkridge/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/walkridge/featured.webp" alt="WalkRidge WordPress tour theme" width="360" /></a><br />
       <strong><a href="https://matthummel.com/projects/walkridge/">WalkRidge</a></strong><br />
@@ -75,8 +84,6 @@ Portfolio samples I built in public — not client sites. Project write-ups live
       Tours, guides, and checkout. Concept demo uses 555 numbers and @walkridge.test.<br />
       <a href="https://matthummel.com/projects/walkridge/">Story</a> · <a href="https://walkridge.matthummel.com/">Live demo</a> · <a href="https://github.com/matthummel-pa/wp-walkridge">GitHub</a>
     </td>
-  </tr>
-  <tr>
     <td width="50%" align="center" valign="top">
       <a href="https://matthummel.com/projects/tocguide/"><img src="https://raw.githubusercontent.com/matthummel-pa/matthummel-theme/main/resources/images/products/tocflow/featured.webp" alt="TOCGuide WordPress table of contents plugin" width="360" /></a><br />
       <strong><a href="https://matthummel.com/projects/tocguide/">TOCGuide</a></strong><br />
@@ -84,7 +91,9 @@ Portfolio samples I built in public — not client sites. Project write-ups live
       Server-rendered TOC block. Zero config, accessible, SEO-friendly.<br />
       <a href="https://matthummel.com/projects/tocguide/">Story</a> · <a href="https://matthummel-pa.github.io/tocguide/">Live demo</a> · <a href="https://github.com/matthummel-pa/tocguide">GitHub</a>
     </td>
-    <td width="50%" align="center" valign="top">
+  </tr>
+  <tr>
+    <td colspan="2" align="center" valign="top">
       <a href="https://matthummel.com/"><img src="https://matthummel.com/wp-content/uploads/2026/09/profile-photo.jpeg" alt="Matt Hummel" width="160" /></a><br />
       <strong><a href="https://github.com/matthummel-pa/matthummel-theme">matthummel-theme</a></strong><br />
       <sub>Sage 11 · This site · Blade + Tailwind v4 + Vite</sub><br />
