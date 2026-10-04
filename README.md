@@ -95,7 +95,7 @@ The four newest on [matthummel.com/projects](https://matthummel.com/projects/), 
     <td width="300" valign="top"><a href="https://matthummel.com/projects/tocguide/"><img src="https://matthummel.com/wp-content/themes/matthummel/resources/images/products/tocguide/featured.webp" alt="TOCguide block — outline from post headings" width="280" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/projects/tocguide/">TOCguide</a></strong><br />
-      <sub>WordPress plugin · The table of contents that reads with your reader. · v1.5.0</sub><br />
+      <sub>WordPress plugin · The table of contents that reads with your… · v1.5.0</sub><br />
       TOCguide is a WordPress plugin that builds a table of contents from the headings in a post. The outline is in the first HTML. An optional Reading Guide adds section previews, read time, and study tools — no accounts…<br />
       <sub>Free download &nbsp;·&nbsp; 1.5.0 TOCguide identity &nbsp;·&nbsp; Server rendered</sub><br />
       <a href="https://matthummel.com/projects/tocguide/">Project page</a> · <a href="https://matthummel-pa.github.io/tocguide/">Live demo</a> · <a href="https://github.com/matthummel-pa/tocguide">GitHub</a>

@@ -126,6 +126,8 @@ class SkillsTests(unittest.TestCase):
         self.assertEqual(svg.count('class="track track-'), 2)
         self.assertIn('fill="#E34F26"', svg)
         self.assertIn(">CS<", svg)  # text fallback when no glyph
+        self.assertTrue(self.mod.is_dark_hex("181717"))
+        self.assertFalse(self.mod.is_dark_hex("F7DF1E"))
         self.assertTrue(svg.startswith("<svg"))
 
     def test_groups_cover_code_page_stack(self) -> None:

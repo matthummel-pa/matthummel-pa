@@ -34,7 +34,7 @@ POSTS_END = "<!--END_SECTION:posts-->"
 PROJECT_LIMIT = 4
 POST_LIMIT = 5
 
-MAX_GLYPH_BYTES = 12_000
+MAX_GLYPH_BYTES = 20_000
 NAVY = "#0d2e57"
 BLUE = "#2c5a95"
 
@@ -42,7 +42,7 @@ BLUE = "#2c5a95"
 # (label, simple-icons slug, brand hex). Bedrock, Sage, and Trellis share the Roots mark.
 SKILL_GROUPS: list[tuple[str, list[tuple[str, str, str]]]] = [
     (
-        "Roots stack",
+        "Roots",
         [
             ("WordPress", "wordpress", "21759B"),
             ("Sage", "roots", "525DDC"),
@@ -53,7 +53,7 @@ SKILL_GROUPS: list[tuple[str, list[tuple[str, str, str]]]] = [
         ],
     ),
     (
-        "Languages & UI",
+        "Languages",
         [
             ("PHP", "php", "777BB4"),
             ("JavaScript", "javascript", "F7DF1E"),
@@ -80,7 +80,7 @@ SKILL_GROUPS: list[tuple[str, list[tuple[str, str, str]]]] = [
         ],
     ),
     (
-        "Power Platform & more",
+        "Power Platform",
         [
             ("Power Apps", "powerapps", "742774"),
             ("Power Automate", "powerautomate", "0066FF"),
@@ -233,7 +233,7 @@ def render_projects(projects: list[dict[str, Any]]) -> str:
         return "_Projects are on the way — see [matthummel.com/projects](https://matthummel.com/projects/)._"
     rows = []
     for p in projects:
-        meta = " · ".join(x for x in [p.get("kind", ""), p.get("tagline", "")] if x)
+        meta = " · ".join(x for x in [p.get("kind", ""), clip(p.get("tagline", ""), 48)] if x)
         if p.get("version"):
             meta = f"{meta} · v{p['version']}" if meta else f"v{p['version']}"
         links = [f'<a href="{esc(p["url"])}">Project page</a>']
@@ -353,12 +353,21 @@ def fetch_icon_path(fetch: Fetcher, slug: str) -> str:
     return path if len(path) <= MAX_GLYPH_BYTES else ""
 
 
+def is_dark_hex(color: str) -> bool:
+    """True for brand colours too dark to read on the dark tile (they get the text colour instead)."""
+    try:
+        r, g, b = (int(color[i : i + 2], 16) for i in (0, 2, 4))
+    except (ValueError, IndexError):
+        return False
+    return (0.2126 * r + 0.7152 * g + 0.0722 * b) < 60
+
+
 def skills_svg(groups: list[tuple[str, list[tuple[str, str, str, str]]]]) -> str:
     """Two marquee rows of stack tiles. Rows scroll in opposite directions; stops under reduced motion.
 
     groups: (group label, [(label, slug, hex, path)]).
     """
-    tile_w, tile_h, gap = 118, 64, 12
+    tile_w, tile_h, gap = 156, 64, 12
     width = 880
     rows: list[list[tuple[str, str, str, str, str]]] = [[], []]
     for i, (group, items) in enumerate(groups):
@@ -366,8 +375,9 @@ def skills_svg(groups: list[tuple[str, list[tuple[str, str, str, str]]]]) -> str
             rows[i % 2].append((group, label, slug, color, path))
 
     def tile(x: int, y: int, label: str, color: str, path: str, group: str) -> str:
+        fill = f"#{color}" if not is_dark_hex(color) else "var(--ink)"
         icon = (
-            f'<g transform="translate({x + 14},{y + 14}) scale(1.15)"><path fill="#{color}" class="ico" d="{path}"/></g>'
+            f'<g transform="translate({x + 14},{y + 14}) scale(1.15)"><path fill="{fill}" class="ico" d="{path}"/></g>'
             if path
             else f'<text x="{x + 28}" y="{y + 36}" class="mono" text-anchor="middle">{esc(label[:2])}</text>'
         )
