@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="146" height="40" viewBox="0 0 146 40" role="img" aria-label="LinkedIn">
+  <style>
+    :root { --bg: transparent; --ink: #0f1c2e; --muted: #5b6b7f; --navy: #0d2e57; --onnavy: #ffffff; --blue: #2c5a95; --sky: #4f8fd4; --line: #d7e0ea; --chip: #f1f5fa; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #e6edf3; --muted: #9aa7b8; --navy: #7fb2ff; --onnavy: #0b1220; --blue: #93c5fd; --sky: #bfdbfe; --line: #30363d; --chip: #161b22; } }
+
+    .b { fill: var(--chip); stroke: var(--line); stroke-width: 1.25; }
+    .l { font: 650 15px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif; fill: var(--ink); letter-spacing: -.005em; }
+  </style>
+  <rect class="b" x="0.75" y="0.75" width="144.5" height="38.5" rx="19.25"/>
+  <g transform="translate(16,11) scale(0.75)"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z" fill="var(--ink)"/></g>
+  <text class="l" x="42" y="25">LinkedIn</text>
+</svg>

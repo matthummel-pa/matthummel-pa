@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="135" height="40" viewBox="0 0 135 40" role="img" aria-label="Hire me">
+  <style>
+    :root { --bg: transparent; --ink: #0f1c2e; --muted: #5b6b7f; --navy: #0d2e57; --onnavy: #ffffff; --blue: #2c5a95; --sky: #4f8fd4; --line: #d7e0ea; --chip: #f1f5fa; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #e6edf3; --muted: #9aa7b8; --navy: #7fb2ff; --onnavy: #0b1220; --blue: #93c5fd; --sky: #bfdbfe; --line: #30363d; --chip: #161b22; } }
+
+    .b { fill: var(--navy); stroke: var(--navy); stroke-width: 1.25; }
+    .l { font: 650 15px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif; fill: var(--onnavy); letter-spacing: -.005em; }
+  </style>
+  <rect class="b" x="0.75" y="0.75" width="133.5" height="38.5" rx="19.25"/>
+  <g transform="translate(16,11) scale(0.75)"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.5l8 5 8-5V6H4zm16 3-8 5-8-5v9h16V9z" fill="var(--onnavy)"/></g>
+  <text class="l" x="42" y="25">Hire me</text>
+</svg>
