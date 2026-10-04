@@ -21,7 +21,7 @@ I build WordPress platforms shops can run themselves — Bedrock, Sage, and Trel
 <img src="https://img.shields.io/badge/Roots-Bedrock_%C2%B7_Sage_11_%C2%B7_Trellis-525DDC?style=flat-square" alt="Roots: Bedrock, Sage 11, Trellis" />
 <img src="https://img.shields.io/badge/Power_Platform-Apps_%C2%B7_Automate-742774?style=flat-square" alt="Power Apps and Power Automate" />
 <img src="https://img.shields.io/badge/Timezone-America/New_York-0F172A?style=flat-square" alt="America/New_York" />
-<img src="https://komarev.com/ghpvc/?username=matthummel-pa&style=flat-square&color=2C5A95" alt="Profile views" />
+<img src="https://visitor-badge.laobi.icu/badge?page_id=matthummel-pa.matthummel-pa&left_text=Profile%20views&left_color=%230f172a&right_color=%232c5a95" alt="Profile views" />
 
 <sub><a href="#build">What I build</a> · <a href="#stack">Stack</a> · <a href="#projects">Latest projects</a> · <a href="#writing">Journal</a> · <a href="#oss">Open source</a> · <a href="#play">Branchborne</a> · <a href="#activity">Activity</a> · <a href="#devs">How I work</a> · <a href="#hire">Hire</a> · <a href="#connect">Connect</a></sub>
 
