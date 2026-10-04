@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1348 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1356 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,348 contributions in 90 days · 1,449 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,356 contributions in 90 days · 1,457 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #40](https://github.com/matthummel-pa/matthummel-pa/pull/40) — docs(readme): left-aligned header with custom hero and button g… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 2m |
-| | ✅ [Merged PR #39](https://github.com/matthummel-pa/matthummel-pa/pull/39) — docs(readme): profile-views counter that GitHub's image proxy c… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 13m |
-| | ✅ [Merged PR #38](https://github.com/matthummel-pa/matthummel-pa/pull/38) — docs(readme): Roots-stack profile with live projects, journal, … | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 21m |
-| | ✅ [Merged PR #246](https://github.com/matthummel-pa/matthummel-theme/pull/246) — feat(social): share cards with Generate / Post / Share / Copy i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/8dceffae7d46585a41e7d2d5bf746ef37e7e537a) — docs(readme): left-aligned header with custom hero and button g… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 5m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/1330d40483c1391310bb931bfe225e2bf35a1c91) — docs(readme): profile-views counter that GitHub's image proxy c… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 13m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/de34f2538c08517e76ee8f6abdc0f92370cc7712) — docs(readme): Roots-stack profile with live projects, journal, … | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 21m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ab0a6a220d97ee0293c60eff3e3c87363e43ebdf) — feat(social): share cards with Generate / Post / Share / Copy i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21m |
-| | ✅ [Merged PR #37](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/37) — feat: hero fits above the fold; wider headline and intro | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 10h |
-| | ✅ [Merged PR #36](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/36) — fix: mobile drawer links work again; demo-bar switchers no long… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 10h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle/commit/0821cb9c7c58f887310b8f5e0c6c5d770cedbbf5) — fix: mobile drawer links work again; demo-bar switchers no long… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 10h |
+| | ✅ [Merged PR #38](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/38) — docs: README as a technical write-up, old README archived | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 4m |
+| | ✅ [Merged PR #19](https://github.com/matthummel-pa/wp-walkridge/pull/19) — docs(readme): technical README for buyers, developers, and hiri… | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 23m |
+| | ✅ [Merged PR #93](https://github.com/matthummel-pa/wp-acreline/pull/93) — docs(readme): technical README for buyers, developers, and hiri… | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 23m |
+| | ✅ [Merged PR #247](https://github.com/matthummel-pa/matthummel-theme/pull/247) — docs(readme): technical-writer README for developers and hiring… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 41m |
+| | ✅ [Merged PR #40](https://github.com/matthummel-pa/matthummel-pa/pull/40) — docs(readme): left-aligned header with custom hero and button g… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 1h |
+| | ✅ [Merged PR #39](https://github.com/matthummel-pa/matthummel-pa/pull/39) — docs(readme): profile-views counter that GitHub's image proxy c… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 1h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle/commit/dfc3a0c88d0ceb1210c7df0e7b7030cd64549e1c) — docs: rewrite README as a technical write-up; archive the marke… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 4m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-walkridge/commit/5accb26f3660dac168e9b14346b4d6886c45a53a) — docs(readme): technical README for buyers, developers, and hiri… | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 23m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline/commit/a1d92cef7e2cb94d830eb9ac3b7a7db21343d247) — docs(readme): technical README for buyers, developers, and hiri… | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 23m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6216c12f08f51395bcd5e579cdaa28dce3512128) — docs(readme): technical-writer README for developers and hiring… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 41m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/8dceffae7d46585a41e7d2d5bf746ef37e7e537a) — docs(readme): left-aligned header with custom hero and button g… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 1h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,10 +240,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 21m |
-| **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 10h |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 33h |
-| **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★1 | 35h |
+| **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 4m |
+| **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★1 | 23m |
+| **[wp-acreline](https://github.com/matthummel-pa/wp-acreline)** — Acreline is a WordPress theme for farms, land, and historic homes — searchable listings… | PHP · ★0 | 23m |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 41m |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
