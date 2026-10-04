@@ -210,21 +210,40 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="Public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1348 public contributions in the last 90 days" />
   </a>
 </p>
+
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,348 contributions in 90 days · 1,449 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
 
 <!--START_SECTION:activity-->
-_Refreshing…_
+| | Shipped | Repo | When |
+| --- | --- | --- | --- |
+| | ✅ [Merged PR #40](https://github.com/matthummel-pa/matthummel-pa/pull/40) — docs(readme): left-aligned header with custom hero and button g… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 2m |
+| | ✅ [Merged PR #39](https://github.com/matthummel-pa/matthummel-pa/pull/39) — docs(readme): profile-views counter that GitHub's image proxy c… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 13m |
+| | ✅ [Merged PR #38](https://github.com/matthummel-pa/matthummel-pa/pull/38) — docs(readme): Roots-stack profile with live projects, journal, … | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 21m |
+| | ✅ [Merged PR #246](https://github.com/matthummel-pa/matthummel-theme/pull/246) — feat(social): share cards with Generate / Post / Share / Copy i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/8dceffae7d46585a41e7d2d5bf746ef37e7e537a) — docs(readme): left-aligned header with custom hero and button g… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 5m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/1330d40483c1391310bb931bfe225e2bf35a1c91) — docs(readme): profile-views counter that GitHub's image proxy c… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 13m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/de34f2538c08517e76ee8f6abdc0f92370cc7712) — docs(readme): Roots-stack profile with live projects, journal, … | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 21m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ab0a6a220d97ee0293c60eff3e3c87363e43ebdf) — feat(social): share cards with Generate / Post / Share / Copy i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21m |
+| | ✅ [Merged PR #37](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/37) — feat: hero fits above the fold; wider headline and intro | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 10h |
+| | ✅ [Merged PR #36](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/36) — fix: mobile drawer links work again; demo-bar switchers no long… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 10h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle/commit/0821cb9c7c58f887310b8f5e0c6c5d770cedbbf5) — fix: mobile drawer links work again; demo-bar switchers no long… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 10h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
 
 <!--START_SECTION:pushed-->
-_Refreshing…_
+| Repo | Stack | Last push |
+| --- | --- | --- |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 21m |
+| **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 10h |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 33h |
+| **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★1 | 35h |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
