@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="40" viewBox="0 0 190 40" role="img" aria-label="Write a note">
+  <style>
+    :root { --bg: transparent; --ink: #0f1c2e; --muted: #5b6b7f; --navy: #0d2e57; --onnavy: #ffffff; --blue: #2c5a95; --sky: #4f8fd4; --line: #d7e0ea; --chip: #f1f5fa; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #e6edf3; --muted: #9aa7b8; --navy: #7fb2ff; --onnavy: #0b1220; --blue: #93c5fd; --sky: #bfdbfe; --line: #30363d; --chip: #161b22; } }
+
+    .b { fill: var(--chip); stroke: var(--line); stroke-width: 1.25; }
+    .l { font: 650 15px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif; fill: var(--ink); letter-spacing: -.005em; }
+  </style>
+  <rect class="b" x="0.75" y="0.75" width="188.5" height="38.5" rx="19.25"/>
+  <g transform="translate(16,11) scale(0.75)"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4 12.5-12.5z" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text class="l" x="42" y="25">Write a note</text>
+</svg>

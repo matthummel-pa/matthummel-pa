@@ -1,31 +1,12 @@
-<div align="center">
+<a href="https://matthummel.com/"><img src="./assets/ui/hero.svg" width="900" alt="Matt Hummel — full-stack web developer. Custom WordPress on the Roots stack (Bedrock, Sage 11, Trellis) and Microsoft Power Platform. Gettysburg, PA, remote anywhere." /></a>
 
-# Hi, I'm Matt Hummel
+<a href="https://matthummel.com/hire/"><img src="./assets/ui/btn-hire.svg" height="40" alt="Hire me" /></a>&nbsp;
+<a href="https://matthummel.com/contact/"><img src="./assets/ui/btn-note.svg" height="40" alt="Write a note" /></a>&nbsp;
+<a href="https://matthummel.com/projects/"><img src="./assets/ui/btn-projects.svg" height="40" alt="Projects" /></a>&nbsp;
+<a href="https://matthummel.com/code/"><img src="./assets/ui/btn-code.svg" height="40" alt="Code and repos" /></a>&nbsp;
+<a href="https://www.linkedin.com/in/matt-hummel-pa"><img src="./assets/ui/btn-linkedin.svg" height="40" alt="LinkedIn" /></a>
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=2C5A95&center=true&vCenter=true&width=760&lines=Full-stack+web+developer;Custom+WordPress+on+the+Roots+stack+%E2%80%94+Bedrock+%C2%B7+Sage+%C2%B7+Trellis;Microsoft+Power+Platform+%E2%80%94+Power+Apps+%C2%B7+Power+Automate;PHP+%C2%B7+JavaScript+%C2%B7+Tailwind+CSS+%C2%B7+Docker+%C2%B7+Composer;Open+for+freelance%2C+contract%2C+or+full-time" alt="Full-stack web developer — custom WordPress on the Roots stack and Microsoft Power Platform" />
-</a>
-
-**Full-stack web developer · custom WordPress on the Roots stack · Microsoft Power Platform · Gettysburg, PA**
-
-I build WordPress platforms shops can run themselves — Bedrock, Sage, and Trellis under the hood, Core Gutenberg on top — and Power Apps / Power Automate solutions for teams that live in Microsoft 365. Remote anywhere. Open for freelance, contract, or full-time.
-
-<a href="https://matthummel.com/hire/"><img src="https://img.shields.io/badge/Hire_me-2C5A95?style=for-the-badge" alt="Hire me" /></a>
-<a href="https://matthummel.com/contact/"><img src="https://img.shields.io/badge/Write_a_note-0F172A?style=for-the-badge" alt="Write a note" /></a>
-<a href="https://matthummel.com/projects/"><img src="https://img.shields.io/badge/Projects-0F172A?style=for-the-badge" alt="Projects" /></a>
-<a href="https://matthummel.com/code/"><img src="https://img.shields.io/badge/Code_%26_repos-0F172A?style=for-the-badge" alt="Code and repos" /></a>
-<a href="https://www.linkedin.com/in/matt-hummel-pa"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-
-<img src="https://img.shields.io/badge/Open_for_work-2C5A95?style=flat-square" alt="Open for work" />
-<img src="https://img.shields.io/badge/PHP-8.3-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP 8.3" />
-<img src="https://img.shields.io/badge/Roots-Bedrock_%C2%B7_Sage_11_%C2%B7_Trellis-525DDC?style=flat-square" alt="Roots: Bedrock, Sage 11, Trellis" />
-<img src="https://img.shields.io/badge/Power_Platform-Apps_%C2%B7_Automate-742774?style=flat-square" alt="Power Apps and Power Automate" />
-<img src="https://img.shields.io/badge/Timezone-America/New_York-0F172A?style=flat-square" alt="America/New_York" />
-<img src="https://visitor-badge.laobi.icu/badge?page_id=matthummel-pa.matthummel-pa&left_text=Profile%20views&left_color=%230f172a&right_color=%232c5a95" alt="Profile views" />
-
-<sub><a href="#build">What I build</a> · <a href="#stack">Stack</a> · <a href="#projects">Latest projects</a> · <a href="#writing">Journal</a> · <a href="#oss">Open source</a> · <a href="#play">Branchborne</a> · <a href="#activity">Activity</a> · <a href="#devs">How I work</a> · <a href="#hire">Hire</a> · <a href="#connect">Connect</a></sub>
-
-</div>
+<sub><a href="#build">What I build</a> · <a href="#stack">Stack</a> · <a href="#projects">Latest projects</a> · <a href="#writing">Journal</a> · <a href="#oss">Open source</a> · <a href="#play">Branchborne</a> · <a href="#activity">Activity</a> · <a href="#devs">How I work</a> · <a href="#hire">Hire</a> · <a href="#connect">Connect</a> &nbsp;·&nbsp; <img src="https://visitor-badge.laobi.icu/badge?page_id=matthummel-pa.matthummel-pa&left_text=Profile%20views&left_color=%230f172a&right_color=%232c5a95" alt="Profile views" align="absmiddle" /></sub>
 
 ---
 
