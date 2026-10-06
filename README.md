@@ -222,9 +222,9 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #3](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/3) — fix: cart count on cart page and gift shop photo ratio (1.4.1) | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 7h |
-| | ✅ [Merged PR #2](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/2) — feat: online gift shop on WooCommerce with pickup checkout (1.4… | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 12h |
-| | 🔀 [Opened PR #1](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/1) — feat(theme): Daylight style — café & brunch | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 14h |
+| | ✅ [Merged PR #3](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/3) — fix: cart count on cart page and gift shop photo ratio (1.4.1) | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 14h |
+| | ✅ [Merged PR #2](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/2) — feat: online gift shop on WooCommerce with pickup checkout (1.4… | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 20h |
+| | 🔀 [Opened PR #1](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/1) — feat(theme): Daylight style — café & brunch | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 22h |
 | | ✅ [Merged PR #38](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/38) — docs: README as a technical write-up, old README archived | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 2d |
 | | ✅ [Merged PR #19](https://github.com/matthummel-pa/wp-walkridge/pull/19) — docs(readme): technical README for buyers, developers, and hiri… | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 2d |
 | | ✅ [Merged PR #93](https://github.com/matthummel-pa/wp-acreline/pull/93) — docs(readme): technical README for buyers, developers, and hiri… | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 2d |
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 7h |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 24h |
+| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 14h |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 31h |
 | **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 2d |
 | **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★1 | 2d |
 <!--END_SECTION:pushed-->
