@@ -222,8 +222,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #248](https://github.com/matthummel-pa/matthummel-theme/pull/248) — feat(projects): larger cards and a wider project page (3.6.48) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 12h |
-| | ✅ [Merged PR #3](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/3) — fix: cart count on cart page and gift shop photo ratio (1.4.1) | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 30h |
+| | 🔀 [Opened PR #248](https://github.com/matthummel-pa/matthummel-theme/pull/248) — feat(projects): larger cards and a wider project page (3.6.48) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
+| | ✅ [Merged PR #3](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/3) — fix: cart count on cart page and gift shop photo ratio (1.4.1) | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 1d |
 | | ✅ [Merged PR #2](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/2) — feat: online gift shop on WooCommerce with pickup checkout (1.4… | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 1d |
 | | 🔀 [Opened PR #1](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/1) — feat(theme): Daylight style — café & brunch | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 1d |
 | | ✅ [Merged PR #38](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/38) — docs: README as a technical write-up, old README archived | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 3d |
@@ -240,9 +240,9 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 12h |
-| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 30h |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 1d |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 21h |
+| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 1d |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2d |
 | **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 3d |
 <!--END_SECTION:pushed-->
 
