@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-1-3-security-release/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-security-update-checklist-1-768x512.png" alt="What’s New in WordPress 7.1.3: Security Fixes Explained" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/wordpress-7-1-3-security-release/">What’s New in WordPress 7.1.3: Security Fixes Explained</a></strong><br />
+      <sub>Oct 8, 2026</sub><br />
+      WordPress 7.1.3 closes seven security holes and fixes four bugs. Here’s what each change means, which sites it touches, and what to do next.<br />
+      <a href="https://matthummel.com/wordpress-7-1-3-security-release/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/cobble-candle-a-wordpress-theme-for-inns-and-taverns/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-theme-for-inns-and-restaraunts-768x432.jpg" alt="Cobble &amp; Candle: A WordPress Theme for Inns and Taverns" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/cobble-candle-a-wordpress-theme-for-inns-and-taverns/">Cobble &amp; Candle: A WordPress Theme for Inns and Taverns</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Sep 26, 2026</sub><br />
       WordPress 7.2 plans a stable Table of Contents block with server-side rendering. What is planned, why saved headings went stale, and how I plan to keep TOCguide compatible.<br />
       <a href="https://matthummel.com/wordpress-table-of-contents-block/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/self-taught-wordpress-developer/"><img src="https://matthummel.com/wp-content/uploads/2026/09/Self-taught-WordPress-developer-workspace-illustration-768x403.jpg" alt="Self-taught WordPress developer workspace illustration with a block editor window, code panel, and learning checklist" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/self-taught-wordpress-developer/">How I Became a Self-Taught WordPress Developer (17 Years, No Bootcamp)</a></strong><br />
-      <sub>Sep 25, 2026</sub><br />
-      I’m a self-taught WordPress developer with about 17 years of in-house web work: Dreamweaver and ASP, Germanna webmaster work on WP Engine, higher-ed marketing web, and a return from Power…<br />
-      <a href="https://matthummel.com/self-taught-wordpress-developer/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -222,16 +222,16 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #248](https://github.com/matthummel-pa/matthummel-theme/pull/248) — feat(projects): larger cards and a wider project page (3.6.48) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 31h |
+| | 🔀 [Opened PR #248](https://github.com/matthummel-pa/matthummel-theme/pull/248) — feat(projects): larger cards and a wider project page (3.6.48) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 | | ✅ [Merged PR #3](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/3) — fix: cart count on cart page and gift shop photo ratio (1.4.1) | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 2d |
 | | ✅ [Merged PR #2](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/2) — feat: online gift shop on WooCommerce with pickup checkout (1.4… | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 2d |
 | | 🔀 [Opened PR #1](https://github.com/matthummel-pa/wpdemo-dobbinhouse/pull/1) — feat(theme): Daylight style — café & brunch | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 2d |
-| | ✅ [Merged PR #38](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/38) — docs: README as a technical write-up, old README archived | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 3d |
-| | ✅ [Merged PR #19](https://github.com/matthummel-pa/wp-walkridge/pull/19) — docs(readme): technical README for buyers, developers, and hiri… | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 3d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle/commit/dfc3a0c88d0ceb1210c7df0e7b7030cd64549e1c) — docs: rewrite README as a technical write-up; archive the marke… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 3d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-walkridge/commit/5accb26f3660dac168e9b14346b4d6886c45a53a) — docs(readme): technical README for buyers, developers, and hiri… | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 3d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline/commit/a1d92cef7e2cb94d830eb9ac3b7a7db21343d247) — docs(readme): technical README for buyers, developers, and hiri… | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 3d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6216c12f08f51395bcd5e579cdaa28dce3512128) — docs(readme): technical-writer README for developers and hiring… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
+| | ✅ [Merged PR #38](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/38) — docs: README as a technical write-up, old README archived | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 4d |
+| | ✅ [Merged PR #19](https://github.com/matthummel-pa/wp-walkridge/pull/19) — docs(readme): technical README for buyers, developers, and hiri… | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 4d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle/commit/dfc3a0c88d0ceb1210c7df0e7b7030cd64549e1c) — docs: rewrite README as a technical write-up; archive the marke… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 4d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-walkridge/commit/5accb26f3660dac168e9b14346b4d6886c45a53a) — docs(readme): technical README for buyers, developers, and hiri… | [`wp-walkridge`](https://github.com/matthummel-pa/wp-walkridge) | 4d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline/commit/a1d92cef7e2cb94d830eb9ac3b7a7db21343d247) — docs(readme): technical README for buyers, developers, and hiri… | [`wp-acreline`](https://github.com/matthummel-pa/wp-acreline) | 4d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6216c12f08f51395bcd5e579cdaa28dce3512128) — docs(readme): technical-writer README for developers and hiring… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/8dceffae7d46585a41e7d2d5bf746ef37e7e537a) — docs(readme): left-aligned header with custom hero and button g… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 4d |
 <!--END_SECTION:activity-->
 
@@ -240,10 +240,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 31h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 1d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2d |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2d |
-| **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 3d |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 3d |
+| **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 4d |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
