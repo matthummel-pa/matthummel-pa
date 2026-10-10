@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/acreline-wordpress-real-estate-theme-for-agents-and-brokers/"><img src="https://matthummel.com/wp-content/uploads/2026/10/white-farmhouse-with-green-shutters-surrounded-by-green-fiel-768x622.jpg" alt="White farmhouse with green shutters surrounded by green fields, a listing photo for a WordPress real estate theme" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/acreline-wordpress-real-estate-theme-for-agents-and-brokers/">Acreline: A WordPress Theme for Real Estate Agents and Brokers</a></strong><br />
+      <sub>Oct 10, 2026</sub><br />
+      Acreline is a WordPress real estate theme that helps agents and brokers show listings, book more showings and capture leads. See the demo and get in touch.<br />
+      <a href="https://matthummel.com/acreline-wordpress-real-estate-theme-for-agents-and-brokers/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-1-3-security-release/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-security-update-checklist-1-768x512.png" alt="What’s New in WordPress 7.1.3: Security Fixes Explained" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/wordpress-7-1-3-security-release/">What’s New in WordPress 7.1.3: Security Fixes Explained</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Sep 30, 2026</sub><br />
       Overlay plugins can’t fix headings, labels, focus, contrast, alt text, or link text. What the FTC and DOJ said, a 30-minute keyboard and screen reader check, and where accessibility fits…<br />
       <a href="https://matthummel.com/wordpress-accessibility-plugin/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-table-of-contents-block/"><img src="https://matthummel.com/wp-content/uploads/2026/09/WordPress-table-of-contents-block-illustration-1-768x432.jpg" alt="WordPress table of contents block illustration: an On this page panel linking to the What&#x27;s planned, Server rendering, and TOCguide headings in a post, with a small 7.2 tag" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/wordpress-table-of-contents-block/">The WordPress Table of Contents Block Is Coming to Core: What It Means for TOCguide</a></strong><br />
-      <sub>Sep 26, 2026</sub><br />
-      WordPress 7.2 plans a stable Table of Contents block with server-side rendering. What is planned, why saved headings went stale, and how I plan to keep TOCguide compatible.<br />
-      <a href="https://matthummel.com/wordpress-table-of-contents-block/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1413 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1422 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,413 contributions in 90 days · 1,514 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,422 contributions in 90 days · 1,523 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #254](https://github.com/matthummel-pa/matthummel-theme/pull/254) — Add n8n pipeline status endpoint, run history and plan-only runs | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #253](https://github.com/matthummel-pa/matthummel-theme/pull/253) — Label the n8n counter "Number of editorial posts to create" | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #252](https://github.com/matthummel-pa/matthummel-theme/pull/252) — Add draft counter to n8n workflow buttons | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | ✅ [Merged PR #251](https://github.com/matthummel-pa/matthummel-theme/pull/251) — feat(hummel-ops): n8n visual guide, workflow status and diagrams | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #250](https://github.com/matthummel-pa/matthummel-theme/pull/250) — feat(admin): connection guides and setup links on Integrations … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #249](https://github.com/matthummel-pa/matthummel-theme/pull/249) — feat(social): Social & AI settings screen, provider routing, bu… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b2e05e14087e712862365d1f8616f7af93c886ee) — feat(admin): connection guides and setup links on Integrations … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9615f496fb814947a8590245ebf86786098e4c34) — feat(social): Social & AI settings screen, provider routing, bu… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wpdemo-dobbinhouse/commit/3f79f425d71e50242e78a1121810a562acca54da) — fix: cart count on cart page and gift shop photo ratio (1.4.1) … | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 3d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wpdemo-dobbinhouse/commit/33be5474465325d89f90568626d8f2d70040b3d0) — feat: online gift shop on WooCommerce with pickup checkout (1.4… | [`wpdemo-dobbinhouse`](https://github.com/matthummel-pa/wpdemo-dobbinhouse) | 4d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle/commit/dfc3a0c88d0ceb1210c7df0e7b7030cd64549e1c) — docs: rewrite README as a technical write-up; archive the marke… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 5d |
+| | ✅ [Merged PR #225](https://github.com/matthummel-pa/matthummel-theme/pull/225) — Stop the newsletter upgrade from taking the site down | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #248](https://github.com/matthummel-pa/matthummel-theme/pull/248) — feat(projects): larger cards and a wider project page (3.6.48) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #256](https://github.com/matthummel-pa/matthummel-theme/pull/256) — Tasks app: priorities, in-progress, Notion sync and a modern de… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #255](https://github.com/matthummel-pa/matthummel-theme/pull/255) — Pipeline runs: progress bars, step boxes and green completion | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6a76f249a3df1a1c54068fc3b9c9f0aa3ed8ec89) — Tasks app: priority, type, in-progress, done view, filters and … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/3d3d06c466bdcffa066ee3128a90982b0586a9cb) — Show pipeline run progress as step bars with green completion b… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #254](https://github.com/matthummel-pa/matthummel-theme/pull/254) — Add n8n pipeline status endpoint, run history and plan-only runs | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
+| | ✅ [Merged PR #253](https://github.com/matthummel-pa/matthummel-theme/pull/253) — Label the n8n counter "Number of editorial posts to create" | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/1ee2f8c0e45ba526ce11d9d96ebb25b503d71da2) — Add draft counter to n8n workflow buttons (#252) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/01583e1508e8867b0bf76e3895d0e916d043ac22) — feat(hummel-ops): n8n visual guide, workflow status and diagram… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b2e05e14087e712862365d1f8616f7af93c886ee) — feat(admin): connection guides and setup links on Integrations … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 1h |
-| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3d |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 56m |
+| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 4d |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 4d |
 | **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 5d |
 <!--END_SECTION:pushed-->
