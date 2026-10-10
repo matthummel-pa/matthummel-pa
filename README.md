@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1450 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1466 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,450 contributions in 90 days · 1,551 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,466 contributions in 90 days · 1,567 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #270](https://github.com/matthummel-pa/matthummel-theme/pull/270) — fix(header): exact header height for the sticky page nav | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #269](https://github.com/matthummel-pa/matthummel-theme/pull/269) — feat(design): project cards match post cards, purple hover, rou… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #268](https://github.com/matthummel-pa/matthummel-theme/pull/268) — feat(design): subtler, higher-contrast lime button hover | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #267](https://github.com/matthummel-pa/matthummel-theme/pull/267) — copy(hero): human hero copy defaults across pages | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #266](https://github.com/matthummel-pa/matthummel-theme/pull/266) — feat(design): linked card titles, animated gradient underline, … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #265](https://github.com/matthummel-pa/matthummel-theme/pull/265) — feat(design): listing polish, gradient card titles, three-colum… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/17a0122fdf7f31602fed3434497c786cf949c7cb) — feat(design): project cards match post cards, purple hover, rou… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/8b3293e156649b089ef0d73bd4fe0a7ff507993b) — feat(design): linked card titles, gradient underline, gradient … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ff89ff4e30f3aa9bfaca4fb4d0ea1006f25743e1) — feat(design): listing polish, gradient card titles, three-colum… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/24ff2745d8659bba2b363069562da64d6d87ac1f) — feat(design): accent last words, purplish lime-edged cards, foo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/3c9116590410146ddd7df97d95d42461ac12d95f) — feat(design): lime primary buttons and open-for-work marks with… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #278](https://github.com/matthummel-pa/matthummel-theme/pull/278) — fix(sidebar): button colors; FAQ open keeps the card surface | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #277](https://github.com/matthummel-pa/matthummel-theme/pull/277) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #276](https://github.com/matthummel-pa/matthummel-theme/pull/276) — fix(nav): dark header under the admin bar; light button hovers;… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #275](https://github.com/matthummel-pa/matthummel-theme/pull/275) — feat(cards): 400×400 list-view image panel; drop dead GitHub ba… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #274](https://github.com/matthummel-pa/matthummel-theme/pull/274) — feat(css): dark-mode button and link hover polish; drop dead co… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #273](https://github.com/matthummel-pa/matthummel-theme/pull/273) — chore(css): drop the html.mh-dark block from code-page.css | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/769763dd5b764ff14afa5f120ff2e4395765ae60) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9a95d69556b9bb064a5f94c30e1950262aa8e81b) — fix(nav): dark header under the admin bar; light button hovers;… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7ac4d587900f5c4066224eac6b4109709ae40318) — feat(cards): 400×400 list-view image panel; drop dead GitHub ba… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/161dd3d642b1b6a5d021adb2c0d3cdb97d133794) — feat(css): dark-mode lime buttons hover purple, text links hove… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0b7e04e99c84173efbb73ea2d79339ba9cbc34b6) — fix(about): dark surfaces for the Code section, reveal fallback… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
