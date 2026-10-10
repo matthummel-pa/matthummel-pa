@@ -115,7 +115,16 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/acreline-wordpress-real-estate-theme-for-agents-and-brokers/"><img src="https://matthummel.com/wp-content/uploads/2026/10/white-farmhouse-with-green-shutters-surrounded-by-green-fiel-768x622.jpg" alt="White farmhouse with green shutters surrounded by green fields, a listing photo for a WordPress real estate theme" width="220" /></a></td>
+    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-mcp-adapter/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-mcp-adapter-featured-768x512.png" alt="WordPress MCP Adapter diagram: Claude Code over STDIO and Cursor over HTTP connect through the MCP Adapter default server to a WordPress site&#x27;s abilities." width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/wordpress-mcp-adapter/">WordPress MCP Adapter: Connect Claude Code and Cursor to Your Site</a></strong><br />
+      <sub>Oct 10, 2026</sub><br />
+      Install the WordPress MCP Adapter, expose an ability with mcp.public, and connect Claude Code or Cursor through an Application Password. Includes the default endpoint and the safety checks…<br />
+      <a href="https://matthummel.com/wordpress-mcp-adapter/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/acreline-wordpress-real-estate-theme-for-agents-and-brokers/"><img src="https://matthummel.com/wp-content/uploads/2026/10/acreline-home-page-listing-search-768x365.jpg" alt="Acreline WordPress real estate theme home page with a search bar to filter homes by type, price, acreage and area" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/acreline-wordpress-real-estate-theme-for-agents-and-brokers/">Acreline: A WordPress Theme for Real Estate Agents and Brokers</a></strong><br />
       <sub>Oct 10, 2026</sub><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Sep 30, 2026</sub><br />
       My AI workflow for WordPress development on a Mac: which AI tool writes, which one reviews, how a change moves from branch to release, and what I check.<br />
       <a href="https://matthummel.com/ai-workflow-for-wordpress-development/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-accessibility-plugin/"><img src="https://matthummel.com/wp-content/uploads/2026/09/WordPress-accessibility-plugin-alternative-illustration-1-768x432.jpg" alt="Illustration for a post on why a WordPress accessibility plugin isn&#x27;t enough: a form with a keyboard focus ring on the Email field, a Tab key, a checklist of headings, labels, focus, contrast, and alt text, and a crossed-out overlay widget icon" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/wordpress-accessibility-plugin/">A WordPress accessibility plugin won’t make your site accessible. Here’s what does.</a></strong><br />
-      <sub>Sep 30, 2026</sub><br />
-      Overlay plugins can’t fix headings, labels, focus, contrast, alt text, or link text. What the FTC and DOJ said, a 30-minute keyboard and screen reader check, and where accessibility fits…<br />
-      <a href="https://matthummel.com/wordpress-accessibility-plugin/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1422 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1450 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,422 contributions in 90 days · 1,523 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,450 contributions in 90 days · 1,551 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #225](https://github.com/matthummel-pa/matthummel-theme/pull/225) — Stop the newsletter upgrade from taking the site down | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #248](https://github.com/matthummel-pa/matthummel-theme/pull/248) — feat(projects): larger cards and a wider project page (3.6.48) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #256](https://github.com/matthummel-pa/matthummel-theme/pull/256) — Tasks app: priorities, in-progress, Notion sync and a modern de… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #255](https://github.com/matthummel-pa/matthummel-theme/pull/255) — Pipeline runs: progress bars, step boxes and green completion | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6a76f249a3df1a1c54068fc3b9c9f0aa3ed8ec89) — Tasks app: priority, type, in-progress, done view, filters and … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/3d3d06c466bdcffa066ee3128a90982b0586a9cb) — Show pipeline run progress as step bars with green completion b… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #254](https://github.com/matthummel-pa/matthummel-theme/pull/254) — Add n8n pipeline status endpoint, run history and plan-only runs | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | ✅ [Merged PR #253](https://github.com/matthummel-pa/matthummel-theme/pull/253) — Label the n8n counter "Number of editorial posts to create" | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/1ee2f8c0e45ba526ce11d9d96ebb25b503d71da2) — Add draft counter to n8n workflow buttons (#252) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/01583e1508e8867b0bf76e3895d0e916d043ac22) — feat(hummel-ops): n8n visual guide, workflow status and diagram… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b2e05e14087e712862365d1f8616f7af93c886ee) — feat(admin): connection guides and setup links on Integrations … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | ✅ [Merged PR #270](https://github.com/matthummel-pa/matthummel-theme/pull/270) — fix(header): exact header height for the sticky page nav | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #269](https://github.com/matthummel-pa/matthummel-theme/pull/269) — feat(design): project cards match post cards, purple hover, rou… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #268](https://github.com/matthummel-pa/matthummel-theme/pull/268) — feat(design): subtler, higher-contrast lime button hover | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #267](https://github.com/matthummel-pa/matthummel-theme/pull/267) — copy(hero): human hero copy defaults across pages | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #266](https://github.com/matthummel-pa/matthummel-theme/pull/266) — feat(design): linked card titles, animated gradient underline, … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #265](https://github.com/matthummel-pa/matthummel-theme/pull/265) — feat(design): listing polish, gradient card titles, three-colum… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/17a0122fdf7f31602fed3434497c786cf949c7cb) — feat(design): project cards match post cards, purple hover, rou… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/8b3293e156649b089ef0d73bd4fe0a7ff507993b) — feat(design): linked card titles, gradient underline, gradient … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ff89ff4e30f3aa9bfaca4fb4d0ea1006f25743e1) — feat(design): listing polish, gradient card titles, three-colum… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/24ff2745d8659bba2b363069562da64d6d87ac1f) — feat(design): accent last words, purplish lime-edged cards, foo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/3c9116590410146ddd7df97d95d42461ac12d95f) — feat(design): lime primary buttons and open-for-work marks with… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,10 +240,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 56m |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 1h |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 4d |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 4d |
-| **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 5d |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 5d |
+| **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 6d |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
