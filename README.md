@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1464 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1467 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,464 contributions in 90 days · 1,567 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,467 contributions in 90 days · 1,570 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #278](https://github.com/matthummel-pa/matthummel-theme/pull/278) — fix(sidebar): button colors; FAQ open keeps the card surface | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
-| | ✅ [Merged PR #277](https://github.com/matthummel-pa/matthummel-theme/pull/277) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
-| | ✅ [Merged PR #276](https://github.com/matthummel-pa/matthummel-theme/pull/276) — fix(nav): dark header under the admin bar; light button hovers;… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
-| | ✅ [Merged PR #275](https://github.com/matthummel-pa/matthummel-theme/pull/275) — feat(cards): 400×400 list-view image panel; drop dead GitHub ba… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
-| | ✅ [Merged PR #274](https://github.com/matthummel-pa/matthummel-theme/pull/274) — feat(css): dark-mode button and link hover polish; drop dead co… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
-| | ✅ [Merged PR #273](https://github.com/matthummel-pa/matthummel-theme/pull/273) — chore(css): drop the html.mh-dark block from code-page.css | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/769763dd5b764ff14afa5f120ff2e4395765ae60) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9a95d69556b9bb064a5f94c30e1950262aa8e81b) — fix(nav): dark header under the admin bar; light button hovers;… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7ac4d587900f5c4066224eac6b4109709ae40318) — feat(cards): 400×400 list-view image panel; drop dead GitHub ba… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/161dd3d642b1b6a5d021adb2c0d3cdb97d133794) — feat(css): dark-mode lime buttons hover purple, text links hove… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0b7e04e99c84173efbb73ea2d79339ba9cbc34b6) — fix(about): dark surfaces for the Code section, reveal fallback… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/d30a42324465230f21e8ef2f14110279406d1523) — Revise README for AI Dev Standards & Playbook | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/f9afa79d35efc1ff04b12056ceaa272f0d811886) — Initial commit | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4h |
+| | ✅ [Merged PR #278](https://github.com/matthummel-pa/matthummel-theme/pull/278) — fix(sidebar): button colors; FAQ open keeps the card surface | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 27h |
+| | ✅ [Merged PR #277](https://github.com/matthummel-pa/matthummel-theme/pull/277) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
+| | ✅ [Merged PR #276](https://github.com/matthummel-pa/matthummel-theme/pull/276) — fix(nav): dark header under the admin bar; light button hovers;… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
+| | ✅ [Merged PR #275](https://github.com/matthummel-pa/matthummel-theme/pull/275) — feat(cards): 400×400 list-view image panel; drop dead GitHub ba… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 29h |
+| | ✅ [Merged PR #274](https://github.com/matthummel-pa/matthummel-theme/pull/274) — feat(css): dark-mode button and link hover polish; drop dead co… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 29h |
+| | ✅ [Merged PR #273](https://github.com/matthummel-pa/matthummel-theme/pull/273) — chore(css): drop the html.mh-dark block from code-page.css | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 29h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/769763dd5b764ff14afa5f120ff2e4395765ae60) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9a95d69556b9bb064a5f94c30e1950262aa8e81b) — fix(nav): dark header under the admin bar; light button hovers;… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7ac4d587900f5c4066224eac6b4109709ae40318) — feat(cards): 400×400 list-view image panel; drop dead GitHub ba… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 29h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,10 +240,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 22h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Public work from Gettysburg. | Code · ★0 | 4h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 27h |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 5d |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 6d |
-| **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 7d |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
