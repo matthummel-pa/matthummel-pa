@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-mcp-adapter-connect-claude-code-and-cursor-to-your-site/"><img src="https://matthummel.com/wp-content/uploads/2026/10/https3A2F2Fmatthummel.com2Fwp-content2Fuploads2F20262F102Fwordpress-mcp-adapter-featured-768x323.webp" alt="WordPress MCP Adapter: Connect Claude Code and Cursor to Your Site" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/wordpress-mcp-adapter-connect-claude-code-and-cursor-to-your-site/">WordPress MCP Adapter: Connect Claude Code and Cursor to Your Site</a></strong><br />
+      <sub>Oct 10, 2026</sub><br />
+      The WordPress MCP Adapter lets AI tools like Claude Code and Cursor find and run actions on your…<br />
+      <a href="https://matthummel.com/wordpress-mcp-adapter-connect-claude-code-and-cursor-to-your-site/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/wordpress-mcp-adapter/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-mcp-adapter-featured-768x512.png" alt="WordPress MCP Adapter diagram: Claude Code over STDIO and Cursor over HTTP connect through the MCP Adapter default server to a WordPress site&#x27;s abilities." width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/wordpress-mcp-adapter/">WordPress MCP Adapter: Connect Claude Code and Cursor to Your Site</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Oct 3, 2026</sub><br />
       Cobble &amp; Candle is a WordPress block theme I built for restaurants, taverns and inns. It handles menus, live opening hours, table bookings and rooms to stay, with no page builder. Here is…<br />
       <a href="https://matthummel.com/cobble-candle-a-wordpress-theme-for-inns-and-taverns/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/ai-workflow-for-wordpress-development/"><img src="https://matthummel.com/wp-content/uploads/2026/09/AI-workflow-for-WordPress-development-768x403.jpg" alt="AI workflow for WordPress development illustration: a code editor with functions.php open, an AI chat panel with write and review steps, and a Git branch merging through a pull request" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/ai-workflow-for-wordpress-development/">My AI Workflow for WordPress Development on a Mac (Cursor, Claude Code, Grok Bot &amp; ChatGPT)</a></strong><br />
-      <sub>Sep 30, 2026</sub><br />
-      My AI workflow for WordPress development on a Mac: which AI tool writes, which one reviews, how a change moves from branch to release, and what I check.<br />
-      <a href="https://matthummel.com/ai-workflow-for-wordpress-development/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1466 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1464 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,466 contributions in 90 days · 1,567 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,464 contributions in 90 days · 1,567 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #278](https://github.com/matthummel-pa/matthummel-theme/pull/278) — fix(sidebar): button colors; FAQ open keeps the card surface | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | ✅ [Merged PR #277](https://github.com/matthummel-pa/matthummel-theme/pull/277) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | ✅ [Merged PR #276](https://github.com/matthummel-pa/matthummel-theme/pull/276) — fix(nav): dark header under the admin bar; light button hovers;… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | ✅ [Merged PR #275](https://github.com/matthummel-pa/matthummel-theme/pull/275) — feat(cards): 400×400 list-view image panel; drop dead GitHub ba… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | ✅ [Merged PR #274](https://github.com/matthummel-pa/matthummel-theme/pull/274) — feat(css): dark-mode button and link hover polish; drop dead co… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | ✅ [Merged PR #273](https://github.com/matthummel-pa/matthummel-theme/pull/273) — chore(css): drop the html.mh-dark block from code-page.css | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/769763dd5b764ff14afa5f120ff2e4395765ae60) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9a95d69556b9bb064a5f94c30e1950262aa8e81b) — fix(nav): dark header under the admin bar; light button hovers;… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7ac4d587900f5c4066224eac6b4109709ae40318) — feat(cards): 400×400 list-view image panel; drop dead GitHub ba… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/161dd3d642b1b6a5d021adb2c0d3cdb97d133794) — feat(css): dark-mode lime buttons hover purple, text links hove… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0b7e04e99c84173efbb73ea2d79339ba9cbc34b6) — fix(about): dark surfaces for the Code section, reveal fallback… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | ✅ [Merged PR #278](https://github.com/matthummel-pa/matthummel-theme/pull/278) — fix(sidebar): button colors; FAQ open keeps the card surface | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
+| | ✅ [Merged PR #277](https://github.com/matthummel-pa/matthummel-theme/pull/277) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
+| | ✅ [Merged PR #276](https://github.com/matthummel-pa/matthummel-theme/pull/276) — fix(nav): dark header under the admin bar; light button hovers;… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
+| | ✅ [Merged PR #275](https://github.com/matthummel-pa/matthummel-theme/pull/275) — feat(cards): 400×400 list-view image panel; drop dead GitHub ba… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
+| | ✅ [Merged PR #274](https://github.com/matthummel-pa/matthummel-theme/pull/274) — feat(css): dark-mode button and link hover polish; drop dead co… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
+| | ✅ [Merged PR #273](https://github.com/matthummel-pa/matthummel-theme/pull/273) — chore(css): drop the html.mh-dark block from code-page.css | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/769763dd5b764ff14afa5f120ff2e4395765ae60) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9a95d69556b9bb064a5f94c30e1950262aa8e81b) — fix(nav): dark header under the admin bar; light button hovers;… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7ac4d587900f5c4066224eac6b4109709ae40318) — feat(cards): 400×400 list-view image panel; drop dead GitHub ba… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/161dd3d642b1b6a5d021adb2c0d3cdb97d133794) — feat(css): dark-mode lime buttons hover purple, text links hove… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0b7e04e99c84173efbb73ea2d79339ba9cbc34b6) — fix(about): dark surfaces for the Code section, reveal fallback… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,10 +240,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 9h |
-| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 4d |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 15h |
+| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 5d |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 5d |
-| **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 6d |
+| **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 7d |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
