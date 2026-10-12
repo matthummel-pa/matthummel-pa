@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1470 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1474 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,470 contributions in 90 days · 1,573 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,474 contributions in 90 days · 1,577 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ❎ [Closed PR #279](https://github.com/matthummel-pa/matthummel-theme/pull/279) — fix: footer links that exist; DEV.to import no longer duplicate… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #1](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/1) — feat: playbook v1.0.0 — rules, skills, commands, templates, aut… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/0b391f7fee828d735b94f211fd64ce67cc6001a3) — feat: playbook v1.0.0 — rules, skills, commands, templates, aut… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/d30a42324465230f21e8ef2f14110279406d1523) — Revise README for AI Dev Standards & Playbook | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 12h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/f9afa79d35efc1ff04b12056ceaa272f0d811886) — Initial commit | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 12h |
-| | ✅ [Merged PR #278](https://github.com/matthummel-pa/matthummel-theme/pull/278) — fix(sidebar): button colors; FAQ open keeps the card surface | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 35h |
-| | ✅ [Merged PR #277](https://github.com/matthummel-pa/matthummel-theme/pull/277) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 35h |
-| | ✅ [Merged PR #276](https://github.com/matthummel-pa/matthummel-theme/pull/276) — fix(nav): dark header under the admin bar; light button hovers;… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
-| | ✅ [Merged PR #275](https://github.com/matthummel-pa/matthummel-theme/pull/275) — feat(cards): 400×400 list-view image panel; drop dead GitHub ba… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/769763dd5b764ff14afa5f120ff2e4395765ae60) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 35h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9a95d69556b9bb064a5f94c30e1950262aa8e81b) — fix(nav): dark header under the admin bar; light button hovers;… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
+| | ✅ [Merged PR #280](https://github.com/matthummel-pa/matthummel-theme/pull/280) — fix(a11y): contrast pass, one grid gap scale, target sizes | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #281](https://github.com/matthummel-pa/matthummel-theme/pull/281) — fix(a11y): dark cards on one lime recipe; hover and focus contr… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #282](https://github.com/matthummel-pa/matthummel-theme/pull/282) — fix(seo): Article schema only on posts and projects; related th… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ❎ [Closed PR #279](https://github.com/matthummel-pa/matthummel-theme/pull/279) — fix: footer links that exist; DEV.to import no longer duplicate… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/892eba4f2eb4ce9b3be36e0eaac52e463a8fd4a4) — fix(a11y): contrast pass, grid gap scale, dark card recipe, aud… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #1](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/1) — feat: playbook v1.0.0 — rules, skills, commands, templates, aut… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 11h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/0b391f7fee828d735b94f211fd64ce67cc6001a3) — feat: playbook v1.0.0 — rules, skills, commands, templates, aut… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 11h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/d30a42324465230f21e8ef2f14110279406d1523) — Revise README for AI Dev Standards & Playbook | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 19h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/f9afa79d35efc1ff04b12056ceaa272f0d811886) — Initial commit | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 19h |
+| | ✅ [Merged PR #278](https://github.com/matthummel-pa/matthummel-theme/pull/278) — fix(sidebar): button colors; FAQ open keeps the card surface | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/769763dd5b764ff14afa5f120ff2e4395765ae60) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,10 +240,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 1h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Public work from Gettysburg. | Shell · ★0 | 3h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 5h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Public work from Gettysburg. | Shell · ★0 | 11h |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 6d |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 6d |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 7d |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
