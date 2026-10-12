@@ -115,15 +115,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-mcp-adapter-connect-claude-code-and-cursor-to-your-site/"><img src="https://matthummel.com/wp-content/uploads/2026/10/https3A2F2Fmatthummel.com2Fwp-content2Fuploads2F20262F102Fwordpress-mcp-adapter-featured-1-768x323.webp" alt="WordPress MCP Adapter: Connect Claude Code and Cursor to Your Site" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/wordpress-mcp-adapter-connect-claude-code-and-cursor-to-your-site/">WordPress MCP Adapter: Connect Claude Code and Cursor to Your Site</a></strong><br />
-      <sub>Oct 10, 2026</sub><br />
-      The WordPress MCP Adapter lets AI tools like Claude Code and Cursor find and run actions on your…<br />
-      <a href="https://matthummel.com/wordpress-mcp-adapter-connect-claude-code-and-cursor-to-your-site/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/wordpress-mcp-adapter/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-mcp-adapter-featured-768x512.png" alt="WordPress MCP Adapter diagram: Claude Code over STDIO and Cursor over HTTP connect through the MCP Adapter default server to a WordPress site&#x27;s abilities." width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/wordpress-mcp-adapter/">WordPress MCP Adapter: Connect Claude Code and Cursor to Your Site</a></strong><br />
@@ -157,6 +148,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Oct 3, 2026</sub><br />
       Cobble &amp; Candle is a WordPress block theme I built for restaurants, taverns and inns. It handles menus, live opening hours, table bookings and rooms to stay, with no page builder. Here is…<br />
       <a href="https://matthummel.com/cobble-candle-a-wordpress-theme-for-inns-and-taverns/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/ai-workflow-for-wordpress-development/"><img src="https://matthummel.com/wp-content/uploads/2026/09/AI-workflow-for-WordPress-development-768x403.jpg" alt="AI workflow for WordPress development illustration: a code editor with functions.php open, an AI chat panel with write and review steps, and a Git branch merging through a pull request" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/ai-workflow-for-wordpress-development/">My AI Workflow for WordPress Development on a Mac (Cursor, Claude Code, Grok Bot &amp; ChatGPT)</a></strong><br />
+      <sub>Sep 30, 2026</sub><br />
+      My AI workflow for WordPress development on a Mac: which AI tool writes, which one reviews, how a change moves from branch to release, and what I check.<br />
+      <a href="https://matthummel.com/ai-workflow-for-wordpress-development/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1474 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1476 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,474 contributions in 90 days · 1,577 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,476 contributions in 90 days · 1,579 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #280](https://github.com/matthummel-pa/matthummel-theme/pull/280) — fix(a11y): contrast pass, one grid gap scale, target sizes | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #281](https://github.com/matthummel-pa/matthummel-theme/pull/281) — fix(a11y): dark cards on one lime recipe; hover and focus contr… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #282](https://github.com/matthummel-pa/matthummel-theme/pull/282) — fix(seo): Article schema only on posts and projects; related th… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ❎ [Closed PR #279](https://github.com/matthummel-pa/matthummel-theme/pull/279) — fix: footer links that exist; DEV.to import no longer duplicate… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/892eba4f2eb4ce9b3be36e0eaac52e463a8fd4a4) — fix(a11y): contrast pass, grid gap scale, dark card recipe, aud… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #1](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/1) — feat: playbook v1.0.0 — rules, skills, commands, templates, aut… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 11h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/0b391f7fee828d735b94f211fd64ce67cc6001a3) — feat: playbook v1.0.0 — rules, skills, commands, templates, aut… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 11h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/d30a42324465230f21e8ef2f14110279406d1523) — Revise README for AI Dev Standards & Playbook | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 19h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/f9afa79d35efc1ff04b12056ceaa272f0d811886) — Initial commit | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 19h |
-| | ✅ [Merged PR #278](https://github.com/matthummel-pa/matthummel-theme/pull/278) — fix(sidebar): button colors; FAQ open keeps the card surface | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/769763dd5b764ff14afa5f120ff2e4395765ae60) — chore(css): one sub-nav block; grid cards share the post-card r… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
+| | ✅ [Merged PR #283](https://github.com/matthummel-pa/matthummel-theme/pull/283) — feat: site polish — type, cards, in-page filters, About, Resour… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/aa89eb0b7f33b8b78cbc778d19e77257d8d822f6) — feat: site polish and page copy for target phrases (3.6.62, 3.6… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #280](https://github.com/matthummel-pa/matthummel-theme/pull/280) — fix(a11y): contrast pass, one grid gap scale, target sizes | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
+| | ✅ [Merged PR #281](https://github.com/matthummel-pa/matthummel-theme/pull/281) — fix(a11y): dark cards on one lime recipe; hover and focus contr… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
+| | ✅ [Merged PR #282](https://github.com/matthummel-pa/matthummel-theme/pull/282) — fix(seo): Article schema only on posts and projects; related th… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
+| | ❎ [Closed PR #279](https://github.com/matthummel-pa/matthummel-theme/pull/279) — fix: footer links that exist; DEV.to import no longer duplicate… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/892eba4f2eb4ce9b3be36e0eaac52e463a8fd4a4) — fix(a11y): contrast pass, grid gap scale, dark card recipe, aud… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
+| | ✅ [Merged PR #1](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/1) — feat: playbook v1.0.0 — rules, skills, commands, templates, aut… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 21h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/0b391f7fee828d735b94f211fd64ce67cc6001a3) — feat: playbook v1.0.0 — rules, skills, commands, templates, aut… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 21h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/d30a42324465230f21e8ef2f14110279406d1523) — Revise README for AI Dev Standards & Playbook | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 29h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/f9afa79d35efc1ff04b12056ceaa272f0d811886) — Initial commit | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 29h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -241,7 +241,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 | Repo | Stack | Last push |
 | --- | --- | --- |
 | **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 5h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Public work from Gettysburg. | Shell · ★0 | 11h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Public work from Gettysburg. | Shell · ★0 | 21h |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 6d |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 7d |
 <!--END_SECTION:pushed-->
