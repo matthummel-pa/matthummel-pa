@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1476 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1499 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,476 contributions in 90 days · 1,579 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,499 contributions in 90 days · 1,602 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #283](https://github.com/matthummel-pa/matthummel-theme/pull/283) — feat: site polish — type, cards, in-page filters, About, Resour… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/aa89eb0b7f33b8b78cbc778d19e77257d8d822f6) — feat: site polish and page copy for target phrases (3.6.62, 3.6… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #280](https://github.com/matthummel-pa/matthummel-theme/pull/280) — fix(a11y): contrast pass, one grid gap scale, target sizes | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
-| | ✅ [Merged PR #281](https://github.com/matthummel-pa/matthummel-theme/pull/281) — fix(a11y): dark cards on one lime recipe; hover and focus contr… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
-| | ✅ [Merged PR #282](https://github.com/matthummel-pa/matthummel-theme/pull/282) — fix(seo): Article schema only on posts and projects; related th… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
-| | ❎ [Closed PR #279](https://github.com/matthummel-pa/matthummel-theme/pull/279) — fix: footer links that exist; DEV.to import no longer duplicate… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/892eba4f2eb4ce9b3be36e0eaac52e463a8fd4a4) — fix(a11y): contrast pass, grid gap scale, dark card recipe, aud… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
-| | ✅ [Merged PR #1](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/1) — feat: playbook v1.0.0 — rules, skills, commands, templates, aut… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 21h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/0b391f7fee828d735b94f211fd64ce67cc6001a3) — feat: playbook v1.0.0 — rules, skills, commands, templates, aut… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 21h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/d30a42324465230f21e8ef2f14110279406d1523) — Revise README for AI Dev Standards & Playbook | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 29h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/f9afa79d35efc1ff04b12056ceaa272f0d811886) — Initial commit | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 29h |
+| | ✅ [Merged PR #284](https://github.com/matthummel-pa/matthummel-theme/pull/284) — feat(blocks): page blocks foundation (3.7.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23m |
+| | ✅ [Merged PR #285](https://github.com/matthummel-pa/matthummel-theme/pull/285) — feat(blocks): Home is a block page (3.7.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23m |
+| | ✅ [Merged PR #286](https://github.com/matthummel-pa/matthummel-theme/pull/286) — feat(blocks): About is a block page (3.7.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23m |
+| | ✅ [Merged PR #287](https://github.com/matthummel-pa/matthummel-theme/pull/287) — feat(blocks): Projects is a block page (3.7.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24m |
+| | ✅ [Merged PR #288](https://github.com/matthummel-pa/matthummel-theme/pull/288) — feat(blocks): Journal intro and list are blocks (3.7.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24m |
+| | ✅ [Merged PR #289](https://github.com/matthummel-pa/matthummel-theme/pull/289) — feat(blocks): Resources is a block page (3.7.5) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/31d5c78dfbe75b51ab8fdb98a66c3c8c869411a3) — Merge pull request #284 from matthummel-pa/feat/blocks-foundati… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a1fb8eed140742abf6ac89d2c92fe4a2a005e0a9) — Merge pull request #285 from matthummel-pa/feat/blocks-home | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4cef301776f18fce67ebffa9edc8546bd1fef566) — Merge pull request #286 from matthummel-pa/feat/blocks-about | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/82034bc457d419346234a1e138dea98d43b1e9ad) — Merge pull request #287 from matthummel-pa/feat/blocks-projects | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/99615dfaf5c1f35c536ae49d5830d659f96a6e52) — Merge pull request #288 from matthummel-pa/feat/blocks-journal | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24m |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,9 +240,9 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 5h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Public work from Gettysburg. | Shell · ★0 | 21h |
-| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 6d |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 23m |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Public work from Gettysburg. | Shell · ★0 | 27h |
+| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 7d |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 7d |
 <!--END_SECTION:pushed-->
 
