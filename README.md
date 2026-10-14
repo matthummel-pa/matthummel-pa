@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/website-basics-for-new-developers-and-business-owners-2/"><img src="https://matthummel.com/wp-content/uploads/2026/10/https3A2F2Fmatthummel.com2Fwp-content2Fuploads2F20262F102Fwebsite-basics-featured-768x323.webp" alt="Website Basics for New Developers and Business Owners" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/website-basics-for-new-developers-and-business-owners-2/">Website Basics for New Developers and Business Owners</a></strong><br />
+      <sub>Oct 13, 2026</sub><br />
+      The website basics are the same whether you build sites or own one: where a site lives and how it…<br />
+      <a href="https://matthummel.com/website-basics-for-new-developers-and-business-owners-2/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/website-basics-for-new-developers-and-business-owners/"><img src="https://matthummel.com/wp-content/uploads/2026/10/website-basics-featured-768x512.webp" alt="Website basics diagram: a domain and DNS point to hosting, which holds the files and database, with a staging copy for testing updates, backups, and owner accounts." width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/website-basics-for-new-developers-and-business-owners/">Website Basics for New Developers and Business Owners</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Oct 8, 2026</sub><br />
       WordPress 7.1.3 closes seven security holes and fixes four bugs. Here’s what each change means, which sites it touches, and what to do next.<br />
       <a href="https://matthummel.com/wordpress-7-1-3-security-release/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/cobble-candle-a-wordpress-theme-for-inns-and-taverns/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-theme-for-inns-and-restaraunts-768x432.jpg" alt="Cobble &amp; Candle: A WordPress Theme for Inns and Taverns" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/cobble-candle-a-wordpress-theme-for-inns-and-taverns/">Cobble &amp; Candle: A WordPress Theme for Inns and Taverns</a></strong><br />
-      <sub>Oct 3, 2026</sub><br />
-      Cobble &amp; Candle is a WordPress block theme I built for restaurants, taverns and inns. It handles menus, live opening hours, table bookings and rooms to stay, with no page builder. Here is…<br />
-      <a href="https://matthummel.com/cobble-candle-a-wordpress-theme-for-inns-and-taverns/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #292](https://github.com/matthummel-pa/matthummel-theme/pull/292) — MH SEO 1.2.0: tabbed SEO box with meters, previews, and new fie… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 27h |
-| | 🔀 [Opened PR #291](https://github.com/matthummel-pa/matthummel-theme/pull/291) — content(resources): Hostinger, Claude, n8n; drop SiteGround and… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 29h |
-| | ✅ [Merged PR #284](https://github.com/matthummel-pa/matthummel-theme/pull/284) — feat(blocks): page blocks foundation (3.7.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 30h |
-| | ✅ [Merged PR #285](https://github.com/matthummel-pa/matthummel-theme/pull/285) — feat(blocks): Home is a block page (3.7.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 30h |
-| | ✅ [Merged PR #286](https://github.com/matthummel-pa/matthummel-theme/pull/286) — feat(blocks): About is a block page (3.7.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 30h |
-| | ✅ [Merged PR #287](https://github.com/matthummel-pa/matthummel-theme/pull/287) — feat(blocks): Projects is a block page (3.7.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 30h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/cf33baf1f95b7c0a7cd6b7619514907140e60f0c) — Merge pull request #292 from matthummel-pa/feat/mh-seo-meta-box | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 27h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/412ba8b46327f298f229337896ebed1a415cc94d) — MH SEO 1.2.0: tabbed SEO box with meters, previews, and new fie… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 27h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/31d5c78dfbe75b51ab8fdb98a66c3c8c869411a3) — Merge pull request #284 from matthummel-pa/feat/blocks-foundati… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 30h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a1fb8eed140742abf6ac89d2c92fe4a2a005e0a9) — Merge pull request #285 from matthummel-pa/feat/blocks-home | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 30h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4cef301776f18fce67ebffa9edc8546bd1fef566) — Merge pull request #286 from matthummel-pa/feat/blocks-about | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 30h |
+| | ✅ [Merged PR #292](https://github.com/matthummel-pa/matthummel-theme/pull/292) — MH SEO 1.2.0: tabbed SEO box with meters, previews, and new fie… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 33h |
+| | 🔀 [Opened PR #291](https://github.com/matthummel-pa/matthummel-theme/pull/291) — content(resources): Hostinger, Claude, n8n; drop SiteGround and… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 35h |
+| | ✅ [Merged PR #284](https://github.com/matthummel-pa/matthummel-theme/pull/284) — feat(blocks): page blocks foundation (3.7.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
+| | ✅ [Merged PR #285](https://github.com/matthummel-pa/matthummel-theme/pull/285) — feat(blocks): Home is a block page (3.7.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
+| | ✅ [Merged PR #286](https://github.com/matthummel-pa/matthummel-theme/pull/286) — feat(blocks): About is a block page (3.7.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
+| | ✅ [Merged PR #287](https://github.com/matthummel-pa/matthummel-theme/pull/287) — feat(blocks): Projects is a block page (3.7.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/cf33baf1f95b7c0a7cd6b7619514907140e60f0c) — Merge pull request #292 from matthummel-pa/feat/mh-seo-meta-box | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 33h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/412ba8b46327f298f229337896ebed1a415cc94d) — MH SEO 1.2.0: tabbed SEO box with meters, previews, and new fie… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 33h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/31d5c78dfbe75b51ab8fdb98a66c3c8c869411a3) — Merge pull request #284 from matthummel-pa/feat/blocks-foundati… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a1fb8eed140742abf6ac89d2c92fe4a2a005e0a9) — Merge pull request #285 from matthummel-pa/feat/blocks-home | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4cef301776f18fce67ebffa9edc8546bd1fef566) — Merge pull request #286 from matthummel-pa/feat/blocks-about | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 27h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 33h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Public work from Gettysburg. | Shell · ★0 | 2d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 8d |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 9d |
