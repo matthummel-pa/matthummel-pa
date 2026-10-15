@@ -115,12 +115,12 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/website-basics-for-new-developers-and-business-owners-2/"><img src="https://matthummel.com/wp-content/uploads/2026/10/https3A2F2Fmatthummel.com2Fwp-content2Fuploads2F20262F102Fwebsite-basics-featured-768x323.webp" alt="Website Basics for New Developers and Business Owners" width="220" /></a></td>
+    <td width="240" valign="top"><a href="https://matthummel.com/claude-code-playbook-wordpress/"><img src="https://matthummel.com/wp-content/uploads/2026/10/dark-navy-graphic-reading-one-playbook-every-project-with-ch-768x403.webp" alt="Dark navy graphic reading &quot;One playbook. Every project.&quot; with chips for rules, skills, /pb:ship and Auto-synced, and a code window showing the playbook core rule file" width="220" /></a></td>
     <td valign="top">
-      <strong><a href="https://matthummel.com/website-basics-for-new-developers-and-business-owners-2/">Website Basics for New Developers and Business Owners</a></strong><br />
-      <sub>Oct 13, 2026</sub><br />
-      The website basics are the same whether you build sites or own one: where a site lives and how it…<br />
-      <a href="https://matthummel.com/website-basics-for-new-developers-and-business-owners-2/">Read the post →</a>
+      <strong><a href="https://matthummel.com/claude-code-playbook-wordpress/">Why I Built a Claude Code Playbook for WordPress</a></strong><br />
+      <sub>Oct 15, 2026</sub><br />
+      How one public repo of rules, skills and commands keeps Claude Code consistent across every WordPress project I work on, and syncs to every machine on merge.<br />
+      <a href="https://matthummel.com/claude-code-playbook-wordpress/">Read the post →</a>
     </td>
   </tr>
   <tr>
@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1508 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1511 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,508 contributions in 90 days · 1,611 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,511 contributions in 90 days · 1,614 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,18 +222,18 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #3](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/3) — docs: rewrite README and add GitHub Pages docs site | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4m |
-| | 🏷️ [Released](https://github.com/matthummel-pa/ai-dev-standards-playbook/releases/tag/v1.0.0) — v1.0.0 | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 5m |
-| | ✅ [Merged PR #2](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/2) — feat(skills): add doc-references skill and allow WebFetch on re… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 30m |
-| | ⭐ [Starred](https://github.com/wpbones/WPBones) — wpbones/WPBones | [`WPBones`](https://github.com/wpbones/WPBones) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/a9816cf70742ad218dfef1530b64a585754694ab) — Add GitHub Actions workflow for static site deployment | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 7m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/34975c4eba559194e11ecec25fcaf71504b09e24) — feat(skills): add doc-references skill and allow WebFetch on re… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 38m |
-| | ✅ [Merged PR #292](https://github.com/matthummel-pa/matthummel-theme/pull/292) — MH SEO 1.2.0: tabbed SEO box with meters, previews, and new fie… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
-| | 🔀 [Opened PR #291](https://github.com/matthummel-pa/matthummel-theme/pull/291) — content(resources): Hostinger, Claude, n8n; drop SiteGround and… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
-| | ✅ [Merged PR #284](https://github.com/matthummel-pa/matthummel-theme/pull/284) — feat(blocks): page blocks foundation (3.7.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | ✅ [Merged PR #285](https://github.com/matthummel-pa/matthummel-theme/pull/285) — feat(blocks): Home is a block page (3.7.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/cf33baf1f95b7c0a7cd6b7619514907140e60f0c) — Merge pull request #292 from matthummel-pa/feat/mh-seo-meta-box | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/412ba8b46327f298f229337896ebed1a415cc94d) — MH SEO 1.2.0: tabbed SEO box with meters, previews, and new fie… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
+| | 🔀 [Opened PR #5](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/5) — feat(docs): Voiceover Booth with live coaching, plus voice-over… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 2h |
+| | ✅ [Merged PR #4](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/4) — docs(readme): banner, badges, section nav, mermaid diagrams, fo… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 5h |
+| | ✅ [Merged PR #3](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/3) — docs: rewrite README and add GitHub Pages docs site | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 5h |
+| | 🏷️ [Released](https://github.com/matthummel-pa/ai-dev-standards-playbook/releases/tag/v1.0.0) — v1.0.0 | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 5h |
+| | ✅ [Merged PR #2](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/2) — feat(skills): add doc-references skill and allow WebFetch on re… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 6h |
+| | ⭐ [Starred](https://github.com/wpbones/WPBones) — wpbones/WPBones | [`WPBones`](https://github.com/wpbones/WPBones) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/a9816cf70742ad218dfef1530b64a585754694ab) — Add GitHub Actions workflow for static site deployment | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 6h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/34975c4eba559194e11ecec25fcaf71504b09e24) — feat(skills): add doc-references skill and allow WebFetch on re… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 6h |
+| | ✅ [Merged PR #292](https://github.com/matthummel-pa/matthummel-theme/pull/292) — MH SEO 1.2.0: tabbed SEO box with meters, previews, and new fie… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
+| | 🔀 [Opened PR #291](https://github.com/matthummel-pa/matthummel-theme/pull/291) — content(resources): Hostinger, Claude, n8n; drop SiteGround and… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/cf33baf1f95b7c0a7cd6b7619514907140e60f0c) — Merge pull request #292 from matthummel-pa/feat/mh-seo-meta-box | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/412ba8b46327f298f229337896ebed1a415cc94d) — MH SEO 1.2.0: tabbed SEO box with meters, previews, and new fie… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -241,8 +241,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 4m |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 1d |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 2h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 2d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 9d |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 9d |
 <!--END_SECTION:pushed-->
