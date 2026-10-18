@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/254845033fc923610566ff55287f3b607a6af0c6) — Merge branch 'fix/content-audit-oct16': content audit fixes (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/270c666965e8e53dadf7f752990f62e5b4ac234a) — fix: archives, sitemap, project pages from the second audit pass | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/bb617cdf572a4211b1bc84654d844d7c5b56e04e) — fix: content audit fixes (3.7.8) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 29h |
-| | 🔀 [Opened PR #293](https://github.com/matthummel-pa/matthummel-theme/pull/293) — Fix review findings: escaping, security, a11y, and version drift | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 31h |
-| | 🔀 [Opened PR #5](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/5) — feat(docs): Voiceover Booth with live coaching, plus voice-over… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 2d |
-| | ✅ [Merged PR #4](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/4) — docs(readme): banner, badges, section nav, mermaid diagrams, fo… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 2d |
-| | ✅ [Merged PR #3](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/3) — docs: rewrite README and add GitHub Pages docs site | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 2d |
-| | 🏷️ [Released](https://github.com/matthummel-pa/ai-dev-standards-playbook/releases/tag/v1.0.0) — v1.0.0 | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 2d |
-| | ✅ [Merged PR #2](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/2) — feat(skills): add doc-references skill and allow WebFetch on re… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 2d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/254845033fc923610566ff55287f3b607a6af0c6) — Merge branch 'fix/content-audit-oct16': content audit fixes (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 33h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/270c666965e8e53dadf7f752990f62e5b4ac234a) — fix: archives, sitemap, project pages from the second audit pass | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 33h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/bb617cdf572a4211b1bc84654d844d7c5b56e04e) — fix: content audit fixes (3.7.8) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 34h |
+| | 🔀 [Opened PR #293](https://github.com/matthummel-pa/matthummel-theme/pull/293) — Fix review findings: escaping, security, a11y, and version drift | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 35h |
+| | 🔀 [Opened PR #5](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/5) — feat(docs): Voiceover Booth with live coaching, plus voice-over… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
+| | ✅ [Merged PR #4](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/4) — docs(readme): banner, badges, section nav, mermaid diagrams, fo… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
+| | ✅ [Merged PR #3](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/3) — docs: rewrite README and add GitHub Pages docs site | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
+| | 🏷️ [Released](https://github.com/matthummel-pa/ai-dev-standards-playbook/releases/tag/v1.0.0) — v1.0.0 | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
+| | ✅ [Merged PR #2](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/2) — feat(skills): add doc-references skill and allow WebFetch on re… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
 | | ⭐ [Starred](https://github.com/wpbones/WPBones) — wpbones/WPBones | [`WPBones`](https://github.com/wpbones/WPBones) | 3d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/a9816cf70742ad218dfef1530b64a585754694ab) — Add GitHub Actions workflow for static site deployment | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 2d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/a9816cf70742ad218dfef1530b64a585754694ab) — Add GitHub Actions workflow for static site deployment | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/34975c4eba559194e11ecec25fcaf71504b09e24) — feat(skills): add doc-references skill and allow WebFetch on re… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
 <!--END_SECTION:activity-->
 
@@ -241,8 +241,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 28h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 2d |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 33h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 3d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 12d |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 12d |
 <!--END_SECTION:pushed-->
