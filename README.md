@@ -230,10 +230,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 | | ✅ [Merged PR #4](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/4) — docs(readme): banner, badges, section nav, mermaid diagrams, fo… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
 | | ✅ [Merged PR #3](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/3) — docs: rewrite README and add GitHub Pages docs site | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
 | | 🏷️ [Released](https://github.com/matthummel-pa/ai-dev-standards-playbook/releases/tag/v1.0.0) — v1.0.0 | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
-| | ✅ [Merged PR #2](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/2) — feat(skills): add doc-references skill and allow WebFetch on re… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
-| | ⭐ [Starred](https://github.com/wpbones/WPBones) — wpbones/WPBones | [`WPBones`](https://github.com/wpbones/WPBones) | 3d |
+| | ✅ [Merged PR #2](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/2) — feat(skills): add doc-references skill and allow WebFetch on re… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
+| | ⭐ [Starred](https://github.com/wpbones/WPBones) — wpbones/WPBones | [`WPBones`](https://github.com/wpbones/WPBones) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/a9816cf70742ad218dfef1530b64a585754694ab) — Add GitHub Actions workflow for static site deployment | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/34975c4eba559194e11ecec25fcaf71504b09e24) — feat(skills): add doc-references skill and allow WebFetch on re… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/34975c4eba559194e11ecec25fcaf71504b09e24) — feat(skills): add doc-references skill and allow WebFetch on re… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -243,7 +243,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 | --- | --- | --- |
 | **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 2d |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 3d |
-| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 12d |
+| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 13d |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 13d |
 <!--END_SECTION:pushed-->
 
