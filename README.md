@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-7-2-release-preview-768x403.webp" alt="WordPress 7.2 release preview graphic: ships December 8, 2026, with Ipsum, Notes suggestion mode, Secrets API, and form styles on the roadmap" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/wordpress-7-2/">WordPress 7.2: Release Date, Features, and What to Test</a></strong><br />
+      <sub>Oct 19, 2026</sub><br />
+      WordPress 7.2 is set for December 8, 2026. See the beta schedule, the new Ipsum theme, Notes suggestion mode, the Secrets API, and how to test it.<br />
+      <a href="https://matthummel.com/wordpress-7-2/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/claude-code-playbook-wordpress/"><img src="https://matthummel.com/wp-content/uploads/2026/10/dark-navy-graphic-reading-one-playbook-every-project-with-ch-768x403.webp" alt="Dark navy graphic reading &quot;One playbook. Every project.&quot; with chips for rules, skills, /pb:ship and Auto-synced, and a code window showing the playbook core rule file" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/claude-code-playbook-wordpress/">Why I Built a Claude Code Playbook for WordPress</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Oct 10, 2026</sub><br />
       Acreline is a WordPress real estate theme that helps agents and brokers show listings, book more showings and capture leads. See the demo and get in touch.<br />
       <a href="https://matthummel.com/acreline-wordpress-real-estate-theme-for-agents-and-brokers/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-1-3-security-release/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-security-update-checklist-1-768x512.png" alt="What’s New in WordPress 7.1.3: Security Fixes Explained" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/wordpress-7-1-3-security-release/">What’s New in WordPress 7.1.3: Security Fixes Explained</a></strong><br />
-      <sub>Oct 8, 2026</sub><br />
-      WordPress 7.1.3 closes seven security holes and fixes four bugs. Here’s what each change means, which sites it touches, and what to do next.<br />
-      <a href="https://matthummel.com/wordpress-7-1-3-security-release/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -222,13 +222,13 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #294](https://github.com/matthummel-pa/matthummel-theme/pull/294) — Core blocks: one look in light and dark, editor canvas matches … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/551f214cf8087390caa46c79478c98da45a3afd3) — Merge branch 'feature/blocks-one-look': core blocks one look, e… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/8b4cdbc98baa1ae61b27e985803bae0b0e663bff) — Editor dark mode: menu follows storage events, choice survives … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7c0717c83b1557a666811957bbef94b76d5ac77c) — Core blocks: one look in light and dark, editor canvas matches … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/254845033fc923610566ff55287f3b607a6af0c6) — Merge branch 'fix/content-audit-oct16': content audit fixes (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/270c666965e8e53dadf7f752990f62e5b4ac234a) — fix: archives, sitemap, project pages from the second audit pass | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | 🔀 [Opened PR #293](https://github.com/matthummel-pa/matthummel-theme/pull/293) — Fix review findings: escaping, security, a11y, and version drift | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
+| | ✅ [Merged PR #294](https://github.com/matthummel-pa/matthummel-theme/pull/294) — Core blocks: one look in light and dark, editor canvas matches … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/551f214cf8087390caa46c79478c98da45a3afd3) — Merge branch 'feature/blocks-one-look': core blocks one look, e… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/8b4cdbc98baa1ae61b27e985803bae0b0e663bff) — Editor dark mode: menu follows storage events, choice survives … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7c0717c83b1557a666811957bbef94b76d5ac77c) — Core blocks: one look in light and dark, editor canvas matches … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/254845033fc923610566ff55287f3b607a6af0c6) — Merge branch 'fix/content-audit-oct16': content audit fixes (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/270c666965e8e53dadf7f752990f62e5b4ac234a) — fix: archives, sitemap, project pages from the second audit pass | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
+| | 🔀 [Opened PR #293](https://github.com/matthummel-pa/matthummel-theme/pull/293) — Fix review findings: escaping, security, a11y, and version drift | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
 | | 🔀 [Opened PR #5](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/5) — feat(docs): Voiceover Booth with live coaching, plus voice-over… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
 | | ✅ [Merged PR #4](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/4) — docs(readme): banner, badges, section nav, mermaid diagrams, fo… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
 | | ✅ [Merged PR #3](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/3) — docs: rewrite README and add GitHub Pages docs site | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
@@ -241,7 +241,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 1h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 7h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 4d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 13d |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2w |
