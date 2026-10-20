@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1524 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1535 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,524 contributions in 90 days · 1,627 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,535 contributions in 90 days · 1,638 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,18 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #296](https://github.com/matthummel-pa/matthummel-theme/pull/296) — Fix footer critical error and retire the theme newsletter for H… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | ✅ [Merged PR #295](https://github.com/matthummel-pa/matthummel-theme/pull/295) — feat(footer): footer columns become widget areas (3.7.11) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
-| | ✅ [Merged PR #294](https://github.com/matthummel-pa/matthummel-theme/pull/294) — Core blocks: one look in light and dark, editor canvas matches … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 26h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/68c23979f85f01387aaf45e10a530aa752a840fe) — Release watch: rundown and banner blocks in the theme (3.7.10) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/551f214cf8087390caa46c79478c98da45a3afd3) — Merge branch 'feature/blocks-one-look': core blocks one look, e… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 27h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/8b4cdbc98baa1ae61b27e985803bae0b0e663bff) — Editor dark mode: menu follows storage events, choice survives … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 27h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7c0717c83b1557a666811957bbef94b76d5ac77c) — Core blocks: one look in light and dark, editor canvas matches … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 27h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/254845033fc923610566ff55287f3b607a6af0c6) — Merge branch 'fix/content-audit-oct16': content audit fixes (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
-| | 🔀 [Opened PR #293](https://github.com/matthummel-pa/matthummel-theme/pull/293) — Fix review findings: escaping, security, a11y, and version drift | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
-| | 🔀 [Opened PR #5](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/5) — feat(docs): Voiceover Booth with live coaching, plus voice-over… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 5d |
-| | ✅ [Merged PR #4](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/4) — docs(readme): banner, badges, section nav, mermaid diagrams, fo… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 5d |
-| | 🏷️ [Released](https://github.com/matthummel-pa/ai-dev-standards-playbook/releases/tag/v1.0.0) — v1.0.0 | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 5d |
+| | ✅ [Merged PR #302](https://github.com/matthummel-pa/matthummel-theme/pull/302) — fix(footer): Reach field group sets its own stacked layout (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #301](https://github.com/matthummel-pa/matthummel-theme/pull/301) — docs(changelog): drop stray diff3 marker left by the 3.7.13 mer… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #300](https://github.com/matthummel-pa/matthummel-theme/pull/300) — feat(footer): Reach classic form on the site recipe; widget hea… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #299](https://github.com/matthummel-pa/matthummel-theme/pull/299) — fix(footer): block-form @php for dynamic_sidebar so the footer … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #298](https://github.com/matthummel-pa/matthummel-theme/pull/298) — revert: 3.7.12 footer Reach form — front end fatals after insta… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #297](https://github.com/matthummel-pa/matthummel-theme/pull/297) — fix(footer): Reach classic form on the site recipe; widget head… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/819a34d43d81854ae2997dfb096e25fc9700e158) — fix(footer): Reach field group sets its own stacked layout (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/142a0afa7fb0e64b53fbe9aab142101f357f66ce) — feat(footer): Reach classic form on the site recipe; widget hea… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0026990e5fbe6f0e4fa0e1e0ed5c46116d21e9f1) — fix(footer): block-form @php for dynamic_sidebar so the footer … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/84f83e3e6dba4cca66d14a1a5be4e51bb62670fc) — revert: 3.7.12 footer Reach form (#297) — front end fatals afte… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/aec4ed92814d791221d583b740fdb552c68c2683) — fix(footer): Reach classic form on the site recipe; widget head… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -241,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 9h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 2h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 5d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2w |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2w |
