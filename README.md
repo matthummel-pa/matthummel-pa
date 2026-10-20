@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #302](https://github.com/matthummel-pa/matthummel-theme/pull/302) — fix(footer): Reach field group sets its own stacked layout (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #301](https://github.com/matthummel-pa/matthummel-theme/pull/301) — docs(changelog): drop stray diff3 marker left by the 3.7.13 mer… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #300](https://github.com/matthummel-pa/matthummel-theme/pull/300) — feat(footer): Reach classic form on the site recipe; widget hea… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #299](https://github.com/matthummel-pa/matthummel-theme/pull/299) — fix(footer): block-form @php for dynamic_sidebar so the footer … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #298](https://github.com/matthummel-pa/matthummel-theme/pull/298) — revert: 3.7.12 footer Reach form — front end fatals after insta… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #297](https://github.com/matthummel-pa/matthummel-theme/pull/297) — fix(footer): Reach classic form on the site recipe; widget head… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/819a34d43d81854ae2997dfb096e25fc9700e158) — fix(footer): Reach field group sets its own stacked layout (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/142a0afa7fb0e64b53fbe9aab142101f357f66ce) — feat(footer): Reach classic form on the site recipe; widget hea… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0026990e5fbe6f0e4fa0e1e0ed5c46116d21e9f1) — fix(footer): block-form @php for dynamic_sidebar so the footer … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/84f83e3e6dba4cca66d14a1a5be4e51bb62670fc) — revert: 3.7.12 footer Reach form (#297) — front end fatals afte… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/aec4ed92814d791221d583b740fdb552c68c2683) — fix(footer): Reach classic form on the site recipe; widget head… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #302](https://github.com/matthummel-pa/matthummel-theme/pull/302) — fix(footer): Reach field group sets its own stacked layout (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #301](https://github.com/matthummel-pa/matthummel-theme/pull/301) — docs(changelog): drop stray diff3 marker left by the 3.7.13 mer… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #300](https://github.com/matthummel-pa/matthummel-theme/pull/300) — feat(footer): Reach classic form on the site recipe; widget hea… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #299](https://github.com/matthummel-pa/matthummel-theme/pull/299) — fix(footer): block-form @php for dynamic_sidebar so the footer … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #298](https://github.com/matthummel-pa/matthummel-theme/pull/298) — revert: 3.7.12 footer Reach form — front end fatals after insta… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #297](https://github.com/matthummel-pa/matthummel-theme/pull/297) — fix(footer): Reach classic form on the site recipe; widget head… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/819a34d43d81854ae2997dfb096e25fc9700e158) — fix(footer): Reach field group sets its own stacked layout (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/142a0afa7fb0e64b53fbe9aab142101f357f66ce) — feat(footer): Reach classic form on the site recipe; widget hea… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0026990e5fbe6f0e4fa0e1e0ed5c46116d21e9f1) — fix(footer): block-form @php for dynamic_sidebar so the footer … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/84f83e3e6dba4cca66d14a1a5be4e51bb62670fc) — revert: 3.7.12 footer Reach form (#297) — front end fatals afte… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/aec4ed92814d791221d583b740fdb552c68c2683) — fix(footer): Reach classic form on the site recipe; widget head… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 2h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 5h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 5d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2w |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2w |
