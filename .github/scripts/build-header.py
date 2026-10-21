@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
-"""Build the README header graphics: a left-aligned hero and link buttons.
+"""Build the README header graphics: the hero panel and the link buttons.
 
 GitHub strips CSS from README markup, so typography and button styling live in
 SVGs under assets/ui/. Each button is its own SVG wrapped in a link in the README.
-Colors follow prefers-color-scheme inside the SVG; the hero cycles the role lines
-with a CSS animation that stops under prefers-reduced-motion.
+
+The look mirrors matthummel.com (theme 3.7.x):
+- Hero: the home-page panel (white card, blue-500 top rule, 18px radius), navy
+  kicker pill, blue-900 Inter 900 name, slate role and lede, blue-50 pills.
+- Buttons: the nav "Get updates" pill — navy fill, blue→cyan→lime ring, 999px,
+  ink type, cyan icon. Secondary buttons keep the ring on a page-surface fill.
+Colors follow prefers-color-scheme inside the SVG (html.mh-dark values); the hero
+cycles the role lines with a CSS animation that stops under prefers-reduced-motion.
 
 Run once after editing: python3 .github/scripts/build-header.py
 """
@@ -17,16 +23,23 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "assets" / "ui"
 
-NAVY = "#0d2e57"
-BLUE = "#2c5a95"
-SKY = "#4f8fd4"
-INK = "#0f1c2e"
-MUTED = "#5b6b7f"
+# Site tokens (resources/css/theme-tokens.css, studio.css, site-extras.css).
+BLUE_500 = "#1d6fe0"
+BLUE_900 = "#071a33"
+BLUE_800 = "#0b2a52"
+BLUE_700 = "#1444a8"
+GRAY_700 = "#2f3a4d"
+HU_NAVY = "#0a1a33"
+HU_INK = "#f1f5fb"
+HU_BLUE = "#3b82f6"
+HU_CYAN = "#22d3ee"
+HU_LIME = "#a3e635"
 
-FONT = '-apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif'
-MONO = 'ui-monospace, SFMono-Regular, Menlo, Consolas, monospace'
+FONT = 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+BODY = '"IBM Plex Sans", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
 
 NAME = "Matt Hummel"
+KICKER = "I build sites your team can run"
 ROLES = [
     "Full-stack web developer",
     "Custom WordPress on the Roots stack",
@@ -47,32 +60,58 @@ ICONS = {
     "github": "M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 6.7 18 7 18 7c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z",
 }
 
-STYLE_VARS = """
-    :root { --bg: transparent; --ink: %(ink)s; --muted: %(muted)s; --navy: %(navy)s; --onnavy: #ffffff; --blue: %(blue)s; --sky: %(sky)s; --line: #d7e0ea; --chip: #f1f5fa; }
-    @media (prefers-color-scheme: dark) { :root { --ink: #e6edf3; --muted: #9aa7b8; --navy: #7fb2ff; --onnavy: #0b1220; --blue: #93c5fd; --sky: #bfdbfe; --line: #30363d; --chip: #161b22; } }
-""" % {"ink": INK, "muted": MUTED, "navy": NAVY, "blue": BLUE, "sky": SKY}
+# Light = site default; dark = html.mh-dark values from studio.css.
+STYLE_VARS = f"""
+    :root {{
+      --panel: #ffffff; --panel-line: rgba(7, 26, 51, .10); --accent: {BLUE_500};
+      --kick-bg: {BLUE_800}; --kick-ink: #ffffff;
+      --name: {BLUE_900}; --role: {GRAY_700}; --lede: {GRAY_700};
+      --pill: #eef4fc; --pill-line: #dbe9fa; --pill-ink: {BLUE_800};
+      --btn-surface: #ffffff; --btn-surface-ink: {HU_NAVY};
+    }}
+    @media (prefers-color-scheme: dark) {{ :root {{
+      --panel: #141c28; --panel-line: #243041; --accent: {HU_BLUE};
+      --kick-bg: {BLUE_700}; --kick-ink: #ffffff;
+      --name: #ffffff; --role: #c5d0de; --lede: #c5d0de;
+      --pill: #172233; --pill-line: #243041; --pill-ink: #93c5fd;
+      --btn-surface: #111a28; --btn-surface-ink: {HU_INK};
+    }} }}
+"""
+
+# The brand ring every site button wears: blue → cyan → lime.
+RING_GRADIENT = (
+    f'<linearGradient id="ring" x1="0" x2="1" y1="0" y2="0">'
+    f'<stop offset="0" stop-color="{HU_BLUE}"/><stop offset=".52" stop-color="{HU_CYAN}"/>'
+    f'<stop offset="1" stop-color="{HU_LIME}"/></linearGradient>'
+)
 
 
 def hero_svg() -> str:
-    width, height = 900, 232
+    width, height = 900, 284
+    pad = 32
     n = len(ROLES)
     per = 3.2
     total = per * n
+
     lines = []
     for i, role in enumerate(ROLES):
         lines.append(
-            f'<text class="role" style="animation-delay:{i * per:.1f}s" x="0" y="96">{html.escape(role)}</text>'
+            f'<text class="role" style="animation-delay:{i * per:.1f}s" x="{pad}" y="160">{html.escape(role)}</text>'
         )
+
     chips = []
-    x = 0
+    x = pad
     for label in META:
-        w = 10 * len(label) + 26
+        w = 10 * len(label) + 30
         chips.append(
-            f'<g transform="translate({x},176)"><rect width="{w}" height="30" rx="15" class="chip"/>'
+            f'<g transform="translate({x},232)"><rect width="{w}" height="30" rx="15" class="pill"/>'
             f'<circle cx="15" cy="15" r="3.5" class="dot"/>'
-            f'<text x="26" y="20" class="chipt">{html.escape(label)}</text></g>'
+            f'<text x="26" y="19.5" class="pillt">{html.escape(label)}</text></g>'
         )
         x += w + 10
+
+    kick_w = round(7.4 * len(KICKER) + 34)
+
     keyframes = (
         "@keyframes cycle {"
         f" 0%, {100 / total * 0.3:.2f}% {{ opacity: 0; transform: translateY(8px); }}"
@@ -81,50 +120,67 @@ def hero_svg() -> str:
     )
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{html.escape(NAME)} — {html.escape(ROLES[0])}. {html.escape(TAGLINE)}">
   <style>{STYLE_VARS}
-    .hi {{ font: 600 15px/1 {FONT}; fill: var(--blue); letter-spacing: .14em; text-transform: uppercase; }}
-    .name {{ font: 800 52px/1 {FONT}; fill: var(--ink); letter-spacing: -.035em; }}
-    .role {{ font: 600 22px/1 {FONT}; fill: var(--navy); letter-spacing: -.01em; opacity: 0; animation: cycle {total:.1f}s ease-in-out infinite; transform-origin: 0 0; }}
-    .tag {{ font: 400 16px/1.5 {FONT}; fill: var(--muted); }}
-    .chip {{ fill: var(--chip); stroke: var(--line); }}
-    .dot {{ fill: var(--sky); }}
-    .chipt {{ font: 600 13px/1 {FONT}; fill: var(--ink); }}
-    .bar {{ fill: url(#g); }}
+    .panel {{ fill: var(--panel); stroke: var(--panel-line); stroke-width: 1; }}
+    .accent {{ fill: var(--accent); }}
+    .kick {{ fill: var(--kick-bg); }}
+    .kickt {{ font: 700 12px/1 {FONT}; fill: var(--kick-ink); letter-spacing: .06em; text-transform: uppercase; }}
+    .name {{ font: 900 54px/1 {FONT}; fill: var(--name); letter-spacing: -.05em; }}
+    .role {{ font: 700 21px/1 {FONT}; fill: var(--role); letter-spacing: -.01em; opacity: 0; animation: cycle {total:.1f}s ease-in-out infinite; transform-origin: 0 0; }}
+    .lede {{ font: 400 16px/1.5 {BODY}; fill: var(--lede); }}
+    .pill {{ fill: var(--pill); stroke: var(--pill-line); stroke-width: 1.5; }}
+    .dot {{ fill: {HU_CYAN}; }}
+    .pillt {{ font: 700 13px/1 {FONT}; fill: var(--pill-ink); }}
+    .rule {{ fill: url(#ring); }}
     {keyframes}
     @media (prefers-reduced-motion: reduce) {{ .role {{ animation: none; opacity: 0; }} .role:first-of-type {{ opacity: 1; }} }}
   </style>
-  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="{NAVY}"/><stop offset="1" stop-color="{SKY}"/></linearGradient></defs>
-  <text class="hi" x="0" y="18">Hi, I’m</text>
-  <text class="name" x="-3" y="66">{html.escape(NAME)}</text>
-  <rect class="bar" x="0" y="76" width="64" height="4" rx="2"/>
+  <defs>
+    {RING_GRADIENT}
+    <clipPath id="panel-clip"><rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="18"/></clipPath>
+  </defs>
+  <!-- Panel: the home-hero card with its 4px top rule -->
+  <rect class="panel" x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="18"/>
+  <rect class="accent" x="0" y="0" width="{width}" height="4" clip-path="url(#panel-clip)"/>
+  <!-- Kicker pill -->
+  <g transform="translate({pad},28)"><rect class="kick" width="{kick_w}" height="28" rx="14"/><text class="kickt" x="15" y="18.5">{html.escape(KICKER)}</text></g>
+  <text class="name" x="{pad - 3}" y="118">{html.escape(NAME)}</text>
+  <rect class="rule" x="{pad}" y="129" width="72" height="4" rx="2"/>
   {''.join(lines)}
-  <text class="tag" x="0" y="130">{html.escape(TAGLINE_LINES[0])}</text>
-  <text class="tag" x="0" y="154">{html.escape(TAGLINE_LINES[1])}</text>
+  <text class="lede" x="{pad}" y="192">{html.escape(TAGLINE_LINES[0])}</text>
+  <text class="lede" x="{pad}" y="214">{html.escape(TAGLINE_LINES[1])}</text>
   {''.join(chips)}
 </svg>
 '''
 
 
 def button_svg(label: str, icon: str, primary: bool) -> str:
-    w = 11 * len(label) + 58
-    h = 40
-    fill = "var(--navy)" if primary else "var(--chip)"
-    text = "var(--onnavy)" if primary else "var(--ink)"
-    stroke = "var(--navy)" if primary else "var(--line)"
+    # 3px of air on every side for the cyan halo (box-shadow 0 0 0 3px on the site).
+    halo = 3
+    pill_h = 40
+    w = 11 * len(label) + 58 + halo * 2
+    h = pill_h + halo * 2
+    fill = HU_NAVY if primary else "var(--btn-surface)"
+    text = HU_INK if primary else "var(--btn-surface-ink)"
+    halo_alpha = ".10" if primary else ".08"
     path = ICONS[icon]
     stroke_icon = icon in ("pen", "code", "grid")
     icon_svg = (
-        f'<path d="{path}" fill="none" stroke="{text}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'
+        f'<path d="{path}" fill="none" stroke="{HU_CYAN}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'
         if stroke_icon
-        else f'<path d="{path}" fill="{text}"/>'
+        else f'<path d="{path}" fill="{HU_CYAN}"/>'
     )
+    inset = halo + 0.75  # ring stroke is 1.5px, centered on the edge
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{html.escape(label)}">
   <style>{STYLE_VARS}
-    .b {{ fill: {fill}; stroke: {stroke}; stroke-width: 1.25; }}
-    .l {{ font: 650 15px/1 {FONT}; fill: {text}; letter-spacing: -.005em; }}
+    .halo {{ fill: none; stroke: {HU_CYAN}; stroke-opacity: {halo_alpha}; stroke-width: 3; }}
+    .b {{ fill: {fill}; stroke: url(#ring); stroke-width: 1.5; }}
+    .l {{ font: 700 15px/1 {FONT}; fill: {text}; letter-spacing: .02em; }}
   </style>
-  <rect class="b" x="0.75" y="0.75" width="{w - 1.5}" height="{h - 1.5}" rx="{(h - 1.5) / 2}"/>
-  <g transform="translate(16,11) scale(0.75)">{icon_svg}</g>
-  <text class="l" x="42" y="25">{html.escape(label)}</text>
+  <defs>{RING_GRADIENT}</defs>
+  <rect class="halo" x="{halo - 1.5}" y="{halo - 1.5}" width="{w - (halo - 1.5) * 2}" height="{h - (halo - 1.5) * 2}" rx="{(h - (halo - 1.5) * 2) / 2}"/>
+  <rect class="b" x="{inset}" y="{inset}" width="{w - inset * 2}" height="{h - inset * 2}" rx="{(h - inset * 2) / 2}"/>
+  <g transform="translate({16 + halo},{11 + halo}) scale(0.75)">{icon_svg}</g>
+  <text class="l" x="{42 + halo}" y="{25 + halo}">{html.escape(label)}</text>
 </svg>
 '''
 

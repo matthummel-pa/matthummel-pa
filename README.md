@@ -1,12 +1,12 @@
 <a href="https://matthummel.com/"><img src="./assets/ui/hero.svg" width="900" alt="Matt Hummel — full-stack web developer. Custom WordPress on the Roots stack (Bedrock, Sage 11, Trellis) and Microsoft Power Platform. Gettysburg, PA, remote anywhere." /></a>
 
-<a href="https://matthummel.com/hire/"><img src="./assets/ui/btn-hire.svg" height="40" alt="Hire me" /></a>&nbsp;
-<a href="https://matthummel.com/contact/"><img src="./assets/ui/btn-note.svg" height="40" alt="Write a note" /></a>&nbsp;
-<a href="https://matthummel.com/projects/"><img src="./assets/ui/btn-projects.svg" height="40" alt="Projects" /></a>&nbsp;
-<a href="https://matthummel.com/code/"><img src="./assets/ui/btn-code.svg" height="40" alt="Code and repos" /></a>&nbsp;
-<a href="https://www.linkedin.com/in/matt-hummel-pa"><img src="./assets/ui/btn-linkedin.svg" height="40" alt="LinkedIn" /></a>
+<a href="https://matthummel.com/hire/"><img src="./assets/ui/btn-hire.svg" height="46" alt="Hire me" /></a>&nbsp;
+<a href="https://matthummel.com/contact/"><img src="./assets/ui/btn-note.svg" height="46" alt="Write a note" /></a>&nbsp;
+<a href="https://matthummel.com/projects/"><img src="./assets/ui/btn-projects.svg" height="46" alt="Projects" /></a>&nbsp;
+<a href="https://matthummel.com/code/"><img src="./assets/ui/btn-code.svg" height="46" alt="Code and repos" /></a>&nbsp;
+<a href="https://www.linkedin.com/in/matt-hummel-pa"><img src="./assets/ui/btn-linkedin.svg" height="46" alt="LinkedIn" /></a>
 
-<sub><a href="#build">What I build</a> · <a href="#stack">Stack</a> · <a href="#projects">Latest projects</a> · <a href="#writing">Journal</a> · <a href="#oss">Open source</a> · <a href="#play">Branchborne</a> · <a href="#activity">Activity</a> · <a href="#devs">How I work</a> · <a href="#hire">Hire</a> · <a href="#connect">Connect</a> &nbsp;·&nbsp; <img src="https://visitor-badge.laobi.icu/badge?page_id=matthummel-pa.matthummel-pa&left_text=Profile%20views&left_color=%230f172a&right_color=%232c5a95" alt="Profile views" align="absmiddle" /></sub>
+<sub><a href="#build">What I build</a> · <a href="#stack">Stack</a> · <a href="#projects">Latest projects</a> · <a href="#writing">Journal</a> · <a href="#oss">Open source</a> · <a href="#play">Branchborne</a> · <a href="#activity">Activity</a> · <a href="#devs">How I work</a> · <a href="#hire">Hire</a> · <a href="#connect">Connect</a> &nbsp;·&nbsp; <img src="https://visitor-badge.laobi.icu/badge?page_id=matthummel-pa.matthummel-pa&left_text=Profile%20views&left_color=%230a1a33&right_color=%231d6fe0" alt="Profile views" align="absmiddle" /></sub>
 
 ---
 
