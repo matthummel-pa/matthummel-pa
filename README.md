@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1557 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1561 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,557 contributions in 90 days · 1,660 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,561 contributions in 90 days · 1,664 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #314](https://github.com/matthummel-pa/matthummel-theme/pull/314) — style: move Additional CSS into the theme; hero wave breathes (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #313](https://github.com/matthummel-pa/matthummel-theme/pull/313) — style(glass): subtle translucent chrome in the iOS spirit (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | ✅ [Merged PR #312](https://github.com/matthummel-pa/matthummel-theme/pull/312) — style(faq): accordions become brand-recipe cards with more room… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #311](https://github.com/matthummel-pa/matthummel-theme/pull/311) — feat(footer): footer sentence in Matt's voice (3.7.22) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #310](https://github.com/matthummel-pa/matthummel-theme/pull/310) — feat(footer): drop the Get updates pill from the brand column (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #309](https://github.com/matthummel-pa/matthummel-theme/pull/309) — style(footer): Reach Subscribe button matches the Get updates p… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c819c0a4d940d66d15b3822f01ab79828ec8ea5f) — style(glass): subtle translucent chrome in the iOS spirit (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ad999cbe57652d0847df8cd30502c3497c0300ae) — style(faq): accordions become brand-recipe cards with more room… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/aae4522d5605a1f539044df167eba6d83ea9cc83) — feat(footer): drop the Get updates pill from the brand column (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2d492af04237174ec47ae936469179f75d01acbc) — style(footer): Reach Subscribe button matches the Get updates p… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/e400dd893c8d05417c194cda3ec9beb2669581dd) — style(social): social icons share the Get updates CTA look (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #317](https://github.com/matthummel-pa/matthummel-theme/pull/317) — style(hero): page heroes get more air; copy capped at 42rem (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4m |
+| | ✅ [Merged PR #316](https://github.com/matthummel-pa/matthummel-theme/pull/316) — style(buttons): every button wears the nav Get updates pill (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7m |
+| | ✅ [Merged PR #315](https://github.com/matthummel-pa/matthummel-theme/pull/315) — style(faq): help card no longer sticky; illustration sits above… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8m |
+| | ✅ [Merged PR #314](https://github.com/matthummel-pa/matthummel-theme/pull/314) — style: Additional CSS into the theme, breathing hero wave, anim… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 47m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/3e249a8ed24f32af793585e1f3819217c0f518d4) — style(hero): page heroes get more air; copy capped at 42rem (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/eae368ce06a5382d2b6c4bffeb29a733ee6b6675) — style(buttons): every button wears the nav Get updates pill (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/e0c8b2c6c9af09943724b2fc3bc699d38422c539) — style(faq): help card no longer sticky; illustration sits above… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a91b7d7aa5f7db4a5d049d669352b3c6f2ccd38a) — style: Additional CSS into the theme, breathing hero wave, anim… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 47m |
+| | ✅ [Merged PR #313](https://github.com/matthummel-pa/matthummel-theme/pull/313) — style(glass): subtle translucent chrome in the iOS spirit (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | ✅ [Merged PR #312](https://github.com/matthummel-pa/matthummel-theme/pull/312) — style(faq): accordions become brand-recipe cards with more room… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c819c0a4d940d66d15b3822f01ab79828ec8ea5f) — style(glass): subtle translucent chrome in the iOS spirit (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 2h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 6m |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 6d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2w |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2w |
