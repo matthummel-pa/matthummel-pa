@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1535 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1548 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,535 contributions in 90 days · 1,638 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,548 contributions in 90 days · 1,651 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #302](https://github.com/matthummel-pa/matthummel-theme/pull/302) — fix(footer): Reach field group sets its own stacked layout (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #301](https://github.com/matthummel-pa/matthummel-theme/pull/301) — docs(changelog): drop stray diff3 marker left by the 3.7.13 mer… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #300](https://github.com/matthummel-pa/matthummel-theme/pull/300) — feat(footer): Reach classic form on the site recipe; widget hea… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #299](https://github.com/matthummel-pa/matthummel-theme/pull/299) — fix(footer): block-form @php for dynamic_sidebar so the footer … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #298](https://github.com/matthummel-pa/matthummel-theme/pull/298) — revert: 3.7.12 footer Reach form — front end fatals after insta… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #297](https://github.com/matthummel-pa/matthummel-theme/pull/297) — fix(footer): Reach classic form on the site recipe; widget head… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/819a34d43d81854ae2997dfb096e25fc9700e158) — fix(footer): Reach field group sets its own stacked layout (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/142a0afa7fb0e64b53fbe9aab142101f357f66ce) — feat(footer): Reach classic form on the site recipe; widget hea… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0026990e5fbe6f0e4fa0e1e0ed5c46116d21e9f1) — fix(footer): block-form @php for dynamic_sidebar so the footer … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/84f83e3e6dba4cca66d14a1a5be4e51bb62670fc) — revert: 3.7.12 footer Reach form (#297) — front end fatals afte… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/aec4ed92814d791221d583b740fdb552c68c2683) — fix(footer): Reach classic form on the site recipe; widget head… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #309](https://github.com/matthummel-pa/matthummel-theme/pull/309) — style(footer): Reach Subscribe button matches the Get updates p… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1m |
+| | ✅ [Merged PR #308](https://github.com/matthummel-pa/matthummel-theme/pull/308) — style(social): social icons share the Get updates CTA look (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13m |
+| | ✅ [Merged PR #307](https://github.com/matthummel-pa/matthummel-theme/pull/307) — feat(header): Get updates CTA with brand ring and preview panel… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28m |
+| | ✅ [Merged PR #306](https://github.com/matthummel-pa/matthummel-theme/pull/306) — feat(header): Available now pill links to Get updates (3.7.17) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 47m |
+| | ✅ [Merged PR #305](https://github.com/matthummel-pa/matthummel-theme/pull/305) — docs(privacy): name Hostinger Reach as the email service behind… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 55m |
+| | ✅ [Merged PR #304](https://github.com/matthummel-pa/matthummel-theme/pull/304) — feat(newsletter): Hostinger Reach is the newsletter; remove the… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2d492af04237174ec47ae936469179f75d01acbc) — style(footer): Reach Subscribe button matches the Get updates p… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/e400dd893c8d05417c194cda3ec9beb2669581dd) — style(social): social icons share the Get updates CTA look (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/f286e1095da6808e402181c1570a279a6dedc031) — feat(header): Get updates CTA with brand ring and preview panel… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/da6d6c34e0ee4cc081a2897d0550d25685ad7c17) — docs(privacy): name Hostinger Reach as the email service behind… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 55m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a0ebe249f176109af404cff49ba8f4ada443ba7e) — feat(newsletter): Hostinger Reach is the newsletter; remove the… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 5h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★1 | 1m |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 5d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2w |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2w |
