@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1572 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1578 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,572 contributions in 90 days · 1,675 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,578 contributions in 90 days · 1,681 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #320](https://github.com/matthummel-pa/matthummel-theme/pull/320) — style(about): section line art, readable copy, side-by-side FAQ… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/12174d8e9ddc58302036d58c40b623a30b38cf94) — fix(code): VS Code label, one platforms shelf, right repo types… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/38b3bd03f0efb145aac441771b73d552b3614202) — style(header): hero and buttons match the matthummel.com 3.7.x … | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 19m |
-| | ✅ [Merged PR #318](https://github.com/matthummel-pa/matthummel-theme/pull/318) — style(newsletter): tighter heading and blurb, perks row under t… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #319](https://github.com/matthummel-pa/matthummel-theme/pull/319) — fix(seo): ProfilePage on About, FAQPage from Questions blocks, … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ad70c9411b302e418fd1a2f9b25021a15f2a0610) — style(about): section line art, readable copy, side-by-side FAQ… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/828d8ef24509d9549ad3e0cb867d2c557dccff0e) — style(newsletter): tighter heading and blurb, perks row under t… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #316](https://github.com/matthummel-pa/matthummel-theme/pull/316) — style(buttons): every button wears the nav Get updates pill (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | ✅ [Merged PR #317](https://github.com/matthummel-pa/matthummel-theme/pull/317) — style(hero): page heroes get more air; copy capped at 42rem (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | ✅ [Merged PR #315](https://github.com/matthummel-pa/matthummel-theme/pull/315) — style(faq): help card no longer sticky; illustration sits above… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b9026c4c7925796923bb67930b28cb639986a23f) — fix(seo): ProfilePage on About, FAQPage from Questions blocks, … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🔀 [Opened PR #323](https://github.com/matthummel-pa/matthummel-theme/pull/323) — feat(resume): dates as calendar chips on the timeline, drop lis… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #322](https://github.com/matthummel-pa/matthummel-theme/pull/322) — feat(about): profile photo under the Story drawing (3.7.34) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #321](https://github.com/matthummel-pa/matthummel-theme/pull/321) — feat(about): bigger, animated inline section drawings (3.7.33) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #320](https://github.com/matthummel-pa/matthummel-theme/pull/320) — style(about): section line art, readable copy, side-by-side FAQ… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/31ef1443ab2e06528e4a440a32158968ec6174b9) — Merge pull request #322 from matthummel-pa/feat/about-portrait-… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7e3f6edab0963d1be23975f909c35d0404d343a8) — Merge pull request #321 from matthummel-pa/feat/about-animated-… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/12174d8e9ddc58302036d58c40b623a30b38cf94) — fix(code): VS Code label, one platforms shelf, right repo types… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/38b3bd03f0efb145aac441771b73d552b3614202) — style(header): hero and buttons match the matthummel.com 3.7.x … | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 4h |
+| | ✅ [Merged PR #318](https://github.com/matthummel-pa/matthummel-theme/pull/318) — style(newsletter): tighter heading and blurb, perks row under t… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | ✅ [Merged PR #319](https://github.com/matthummel-pa/matthummel-theme/pull/319) — fix(seo): ProfilePage on About, FAQPage from Questions blocks, … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ad70c9411b302e418fd1a2f9b25021a15f2a0610) — style(about): section line art, readable copy, side-by-side FAQ… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 11m |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 1h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 6d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2w |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2w |
