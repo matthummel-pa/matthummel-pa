@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1593 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1596 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,593 contributions in 90 days · 1,696 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,596 contributions in 90 days · 1,699 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #327](https://github.com/matthummel-pa/matthummel-theme/pull/327) — fix(a11y,seo): site audit — light-mode focus rings, thank-you n… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #326](https://github.com/matthummel-pa/matthummel-theme/pull/326) — docs: cache purge in the staging one-liner works on staging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #325](https://github.com/matthummel-pa/matthummel-theme/pull/325) — fix: restore changelog and bump to 3.7.36 after stale merges | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #291](https://github.com/matthummel-pa/matthummel-theme/pull/291) — content(resources): Hostinger, Claude, n8n; drop SiteGround and… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #293](https://github.com/matthummel-pa/matthummel-theme/pull/293) — Fix review findings: escaping, security, a11y, and version drift | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #296](https://github.com/matthummel-pa/matthummel-theme/pull/296) — Fix footer critical error and retire the theme newsletter for H… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9084e9a635baf44672b5ff4ae84d90617cc60b79) — docs: purge step in the staging one-liner falls back to wp cach… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c6dd27c5e6678dc8e2f3a2cc7ec6d747b0c069d6) — content(resources): Hostinger, Claude, n8n; drop SiteGround and… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b320e4294fd39c798e8101b392bddd2727ddc252) — Fix footer critical error and retire the theme newsletter for H… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/d2b32e904ec96ea75296491e4f50200f90d553a3) — feat(resume): dates as calendar chips on the timeline, drop lis… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/f0376b7dd1b341df98f860c47984aa4bb05810d4) — Merge pull request #324 from matthummel-pa/docs/ssh-deploy-notes | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #328](https://github.com/matthummel-pa/matthummel-theme/pull/328) — fix(a11y): admin-bar aware header state and anchor padding (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 57m |
+| | ✅ [Merged PR #327](https://github.com/matthummel-pa/matthummel-theme/pull/327) — fix(a11y,seo): site audit — light-mode focus rings, thank-you n… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4e409b51019e7f8dfb979e00190433a78088b358) — fix(a11y): admin-bar aware header state and anchor padding (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 57m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4bcdc680fd19724495f5fc81cf82fe740a2d8bfc) — fix(a11y,seo): site audit — light-mode focus rings, thank-you n… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #326](https://github.com/matthummel-pa/matthummel-theme/pull/326) — docs: cache purge in the staging one-liner works on staging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #325](https://github.com/matthummel-pa/matthummel-theme/pull/325) — fix: restore changelog and bump to 3.7.36 after stale merges | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #291](https://github.com/matthummel-pa/matthummel-theme/pull/291) — content(resources): Hostinger, Claude, n8n; drop SiteGround and… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | ✅ [Merged PR #293](https://github.com/matthummel-pa/matthummel-theme/pull/293) — Fix review findings: escaping, security, a11y, and version drift | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9084e9a635baf44672b5ff4ae84d90617cc60b79) — docs: purge step in the staging one-liner falls back to wp cach… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c6dd27c5e6678dc8e2f3a2cc7ec6d747b0c069d6) — content(resources): Hostinger, Claude, n8n; drop SiteGround and… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b320e4294fd39c798e8101b392bddd2727ddc252) — Fix footer critical error and retire the theme newsletter for H… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 1h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 57m |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 7d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2w |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2w |
