@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2-beta-1/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-7-2-beta-1-what-changed-768x403.webp" alt="WordPress 7.2 Beta 1 graphic, out October 20, 2026: test the Secrets API, NO_BACKSLASH_ESCAPES change, separate admin asset loading and DataForm block inspector before the December 8 final release" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/wordpress-7-2-beta-1/">WordPress 7.2 Beta 1: What Changed for Developers</a></strong><br />
+      <sub>Oct 23, 2026</sub><br />
+      WordPress 7.2 Beta 1 landed October 20, 2026. It’s a testing release, not an update for live sites. Here’s what’s new and what developers should check before the December 8 final release.<br />
+      <a href="https://matthummel.com/wordpress-7-2-beta-1/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-7-2-release-preview-768x403.webp" alt="WordPress 7.2 release preview graphic: ships December 8, 2026, with Ipsum, Notes suggestion mode, Secrets API, and form styles on the roadmap" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/wordpress-7-2/">WordPress 7.2: Release Date, Features, and What to Test</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Oct 10, 2026</sub><br />
       Install the WordPress MCP Adapter, expose an ability with mcp.public, and connect Claude Code or Cursor through an Application Password. Includes the default endpoint and the safety checks…<br />
       <a href="https://matthummel.com/wordpress-mcp-adapter/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/acreline-wordpress-real-estate-theme-for-agents-and-brokers/"><img src="https://matthummel.com/wp-content/uploads/2026/10/acreline-home-page-listing-search-768x365.jpg" alt="Acreline WordPress real estate theme home page with a search bar to filter homes by type, price, acreage and area" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/acreline-wordpress-real-estate-theme-for-agents-and-brokers/">Acreline: A WordPress Theme for Real Estate Agents and Brokers</a></strong><br />
-      <sub>Oct 10, 2026</sub><br />
-      Acreline is a WordPress real estate theme that helps agents and brokers show listings, book more showings and capture leads. See the demo and get in touch.<br />
-      <a href="https://matthummel.com/acreline-wordpress-real-estate-theme-for-agents-and-brokers/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1596 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1608 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,596 contributions in 90 days · 1,699 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,608 contributions in 90 days · 1,711 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #328](https://github.com/matthummel-pa/matthummel-theme/pull/328) — fix(a11y): admin-bar aware header state and anchor padding (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 57m |
-| | ✅ [Merged PR #327](https://github.com/matthummel-pa/matthummel-theme/pull/327) — fix(a11y,seo): site audit — light-mode focus rings, thank-you n… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4e409b51019e7f8dfb979e00190433a78088b358) — fix(a11y): admin-bar aware header state and anchor padding (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 57m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4bcdc680fd19724495f5fc81cf82fe740a2d8bfc) — fix(a11y,seo): site audit — light-mode focus rings, thank-you n… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #326](https://github.com/matthummel-pa/matthummel-theme/pull/326) — docs: cache purge in the staging one-liner works on staging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
-| | ✅ [Merged PR #325](https://github.com/matthummel-pa/matthummel-theme/pull/325) — fix: restore changelog and bump to 3.7.36 after stale merges | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
-| | ✅ [Merged PR #291](https://github.com/matthummel-pa/matthummel-theme/pull/291) — content(resources): Hostinger, Claude, n8n; drop SiteGround and… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | ✅ [Merged PR #293](https://github.com/matthummel-pa/matthummel-theme/pull/293) — Fix review findings: escaping, security, a11y, and version drift | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9084e9a635baf44672b5ff4ae84d90617cc60b79) — docs: purge step in the staging one-liner falls back to wp cach… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c6dd27c5e6678dc8e2f3a2cc7ec6d747b0c069d6) — content(resources): Hostinger, Claude, n8n; drop SiteGround and… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b320e4294fd39c798e8101b392bddd2727ddc252) — Fix footer critical error and retire the theme newsletter for H… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | ✅ [Merged PR #335](https://github.com/matthummel-pa/matthummel-theme/pull/335) — style(journal): cap card excerpts at three lines (3.7.45) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17m |
+| | ✅ [Merged PR #333](https://github.com/matthummel-pa/matthummel-theme/pull/333) — fix(journal): one gap above the card title (3.7.44) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 20m |
+| | ❎ [Closed PR #334](https://github.com/matthummel-pa/matthummel-theme/pull/334) — style(journal): cap card excerpts at three lines (3.7.45) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21m |
+| | ✅ [Merged PR #332](https://github.com/matthummel-pa/matthummel-theme/pull/332) — style(journal): card title scales with the screen (3.7.43) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 30m |
+| | ✅ [Merged PR #331](https://github.com/matthummel-pa/matthummel-theme/pull/331) — style(journal): category pills on their own row, meta line with… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 38m |
+| | ✅ [Merged PR #330](https://github.com/matthummel-pa/matthummel-theme/pull/330) — Journal cards: smaller category pills and meta line (3.7.41) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a09dc6b1fa69924a59ca5f7d029f0bebdce6f4e8) — style(journal): category pills on their own row, meta line with… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 38m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/95219177868fbd7c85a59b304b0a7eda9885d495) — style(journal): smaller category pills and meta line; new stagi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ea57a7e46570d4bf3b2be1cf146e6a7330f527cd) — feat(journal): three columns, scroll-to-load, whole feature ima… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4e409b51019e7f8dfb979e00190433a78088b358) — fix(a11y): admin-bar aware header state and anchor padding (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4bcdc680fd19724495f5fc81cf82fe740a2d8bfc) — fix(a11y,seo): site audit — light-mode focus rings, thank-you n… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 57m |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 17m |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 7d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2w |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2w |
