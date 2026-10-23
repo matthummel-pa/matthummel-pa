@@ -124,6 +124,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
     </td>
   </tr>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-72-release-date-features-and-what-to-test/"><img src="https://matthummel.com/wp-content/uploads/2026/10/https3A2F2Fmatthummel.com2Fwp-content2Fuploads2F20262F102Fwordpress-7-2-release-preview-768x323.webp" alt="WordPress 7.2: Release Date, Features, and What to Test" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/wordpress-72-release-date-features-and-what-to-test/">WordPress 7.2: Release Date, Features, and What to Test</a></strong><br />
+      <sub>Oct 23, 2026</sub><br />
+      WordPress 7.2 is scheduled to ship on December 8, 2026. Beta 1 landed October 20, and the first…<br />
+      <a href="https://matthummel.com/wordpress-72-release-date-features-and-what-to-test/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-7-2-release-preview-768x403.webp" alt="WordPress 7.2 release preview graphic: ships December 8, 2026, with Ipsum, Notes suggestion mode, Secrets API, and form styles on the roadmap" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/wordpress-7-2/">WordPress 7.2: Release Date, Features, and What to Test</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Oct 13, 2026</sub><br />
       The website basics every new developer should learn and every business owner should understand: how a site works, who owns what, backups, and staging.<br />
       <a href="https://matthummel.com/website-basics-for-new-developers-and-business-owners/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-mcp-adapter/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-mcp-adapter-featured-768x512.png" alt="WordPress MCP Adapter diagram: Claude Code over STDIO and Cursor over HTTP connect through the MCP Adapter default server to a WordPress site&#x27;s abilities." width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/wordpress-mcp-adapter/">WordPress MCP Adapter: Connect Claude Code and Cursor to Your Site</a></strong><br />
-      <sub>Oct 10, 2026</sub><br />
-      Install the WordPress MCP Adapter, expose an ability with mcp.public, and connect Claude Code or Cursor through an Application Password. Includes the default endpoint and the safety checks…<br />
-      <a href="https://matthummel.com/wordpress-mcp-adapter/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1628 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1637 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,628 contributions in 90 days · 1,731 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,637 contributions in 90 days · 1,740 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #346](https://github.com/matthummel-pa/matthummel-theme/pull/346) — style(about): drop the GitHub logo from pinned repo cards (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | ✅ [Merged PR #345](https://github.com/matthummel-pa/matthummel-theme/pull/345) — style(about): pinned repo card title area and meta panel (3.7.5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | ✅ [Merged PR #344](https://github.com/matthummel-pa/matthummel-theme/pull/344) — style(about): redesign pinned repo cards (3.7.54) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | ✅ [Merged PR #343](https://github.com/matthummel-pa/matthummel-theme/pull/343) — fix(about): footer facts on the GitHub mix panel (3.7.53) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | ✅ [Merged PR #342](https://github.com/matthummel-pa/matthummel-theme/pull/342) — feat(about): fuller GitHub section: tiles, heatmap, mix, activi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | ✅ [Merged PR #341](https://github.com/matthummel-pa/matthummel-theme/pull/341) — fix(projects): Inside-each-one type hierarchy and wider heading… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/32d941831007a5a091cc1a795869d4c42d376082) — feat(about): fuller GitHub section: tiles, heatmap, mix, activi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/feb715a9bb5fc429b8e3b97998531eef87bd5e5a) — fix(projects): Inside-each-one type hierarchy and wider heading… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a931e6787683decb67306b9e1c4a9e56261b6b64) — style(projects): Inside-each-one items in their own boxes (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/41e7f1fd45374f948d018e8816d33363be5d9c56) — fix(projects): wider gutter between the Inside-each-one text an… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6b1869f783f444a523961ffb1b5603ec3764ff0d) — style(projects): keep Inside-each-one text off the drawing, che… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
+| | 🔀 [Opened PR #352](https://github.com/matthummel-pa/matthummel-theme/pull/352) — chore(seo): remove MH SEO; Yoast SEO handles SEO (3.8.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9m |
+| | 🔀 [Opened PR #351](https://github.com/matthummel-pa/matthummel-theme/pull/351) — fix(seo): keep the Power Platform category out of search (3.7.6… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 41m |
+| | 🔀 [Opened PR #350](https://github.com/matthummel-pa/matthummel-theme/pull/350) — fix(home): keep LiteSpeed from lazy-loading the hero image (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🔀 [Opened PR #349](https://github.com/matthummel-pa/matthummel-theme/pull/349) — feat(footer): link to Services once published (3.7.59) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #348](https://github.com/matthummel-pa/matthummel-theme/pull/348) — fix(redirects): local targets keep trailing slash, query and fr… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #347](https://github.com/matthummel-pa/matthummel-theme/pull/347) — fix(redirects): CSV import skips header and bad rows instead of… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/58a5ee5ae163147224acd75ecb3343aa0bfe4e7b) — fix(redirects): keep trailing slash, query and fragment on loca… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/41de79eb19c6b11eb252676f89a7332ab72a2454) — fix(redirects): header and bad rows no longer stall the CSV imp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c0a2eae076a570638669d80f013970af1c6fd2cb) — style(about): drop the GitHub logo from pinned repo cards (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2b1d6ec81983ebf446e5087feeaeeaaad75215d1) — style(about): pinned repo card title area and meta panel (3.7.5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/67f460fe1df6ec54d26034eec84b4f6fedeafaea) — style(about): redesign pinned repo cards (3.7.54) (#344) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 9h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 18m |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 8d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2w |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2w |
