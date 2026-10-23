@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #346](https://github.com/matthummel-pa/matthummel-theme/pull/346) — style(about): drop the GitHub logo from pinned repo cards (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | ✅ [Merged PR #345](https://github.com/matthummel-pa/matthummel-theme/pull/345) — style(about): pinned repo card title area and meta panel (3.7.5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #344](https://github.com/matthummel-pa/matthummel-theme/pull/344) — style(about): redesign pinned repo cards (3.7.54) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #343](https://github.com/matthummel-pa/matthummel-theme/pull/343) — fix(about): footer facts on the GitHub mix panel (3.7.53) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #342](https://github.com/matthummel-pa/matthummel-theme/pull/342) — feat(about): fuller GitHub section: tiles, heatmap, mix, activi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #341](https://github.com/matthummel-pa/matthummel-theme/pull/341) — fix(projects): Inside-each-one type hierarchy and wider heading… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/32d941831007a5a091cc1a795869d4c42d376082) — feat(about): fuller GitHub section: tiles, heatmap, mix, activi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/feb715a9bb5fc429b8e3b97998531eef87bd5e5a) — fix(projects): Inside-each-one type hierarchy and wider heading… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a931e6787683decb67306b9e1c4a9e56261b6b64) — style(projects): Inside-each-one items in their own boxes (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/41e7f1fd45374f948d018e8816d33363be5d9c56) — fix(projects): wider gutter between the Inside-each-one text an… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6b1869f783f444a523961ffb1b5603ec3764ff0d) — style(projects): keep Inside-each-one text off the drawing, che… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🔀 [Opened PR #346](https://github.com/matthummel-pa/matthummel-theme/pull/346) — style(about): drop the GitHub logo from pinned repo cards (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | ✅ [Merged PR #345](https://github.com/matthummel-pa/matthummel-theme/pull/345) — style(about): pinned repo card title area and meta panel (3.7.5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | ✅ [Merged PR #344](https://github.com/matthummel-pa/matthummel-theme/pull/344) — style(about): redesign pinned repo cards (3.7.54) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | ✅ [Merged PR #343](https://github.com/matthummel-pa/matthummel-theme/pull/343) — fix(about): footer facts on the GitHub mix panel (3.7.53) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | ✅ [Merged PR #342](https://github.com/matthummel-pa/matthummel-theme/pull/342) — feat(about): fuller GitHub section: tiles, heatmap, mix, activi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | ✅ [Merged PR #341](https://github.com/matthummel-pa/matthummel-theme/pull/341) — fix(projects): Inside-each-one type hierarchy and wider heading… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/32d941831007a5a091cc1a795869d4c42d376082) — feat(about): fuller GitHub section: tiles, heatmap, mix, activi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/feb715a9bb5fc429b8e3b97998531eef87bd5e5a) — fix(projects): Inside-each-one type hierarchy and wider heading… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a931e6787683decb67306b9e1c4a9e56261b6b64) — style(projects): Inside-each-one items in their own boxes (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/41e7f1fd45374f948d018e8816d33363be5d9c56) — fix(projects): wider gutter between the Inside-each-one text an… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6b1869f783f444a523961ffb1b5603ec3764ff0d) — style(projects): keep Inside-each-one text off the drawing, che… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 4h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 9h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 8d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2w |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2w |
