@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/should-you-still-learn-to-code-in-2026-what-ai-changed-and-what-it-didnt/"><img src="https://matthummel.com/wp-content/uploads/2026/10/dark-navy-illustration-of-a-code-editor-card-beside-an-ai-su-768x512.jpg" alt="Dark navy illustration of a code editor card beside an AI suggestion card where one line is approved with a green check and one is flagged red, representing learning to code in 2026 by reviewing AI output" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/should-you-still-learn-to-code-in-2026-what-ai-changed-and-what-it-didnt/">Should You Still Learn to Code in 2026? What AI Changed (and What It Didn’t)</a></strong><br />
+      <sub>Oct 24, 2026</sub><br />
+      Yes, you should still learn to code in 2026. But the reason changed: AI writes the code, and it doesn’t know when it’s wrong. Here’s what the research says to focus on.<br />
+      <a href="https://matthummel.com/should-you-still-learn-to-code-in-2026-what-ai-changed-and-what-it-didnt/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2-beta-1/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-7-2-beta-1-what-changed-768x403.webp" alt="WordPress 7.2 Beta 1 graphic, out October 20, 2026: test the Secrets API, NO_BACKSLASH_ESCAPES change, separate admin asset loading and DataForm block inspector before the December 8 final release" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/wordpress-7-2-beta-1/">WordPress 7.2 Beta 1: What Changed for Developers</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Oct 15, 2026</sub><br />
       How one public repo of rules, skills and commands keeps Claude Code consistent across every WordPress project I work on, and syncs to every machine on merge.<br />
       <a href="https://matthummel.com/claude-code-playbook-wordpress/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/website-basics-for-new-developers-and-business-owners/"><img src="https://matthummel.com/wp-content/uploads/2026/10/website-basics-featured-768x512.webp" alt="Website basics diagram: a domain and DNS point to hosting, which holds the files and database, with a staging copy for testing updates, backups, and owner accounts." width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/website-basics-for-new-developers-and-business-owners/">Website Basics for New Developers and Business Owners</a></strong><br />
-      <sub>Oct 13, 2026</sub><br />
-      The website basics every new developer should learn and every business owner should understand: how a site works, who owns what, backups, and staging.<br />
-      <a href="https://matthummel.com/website-basics-for-new-developers-and-business-owners/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #352](https://github.com/matthummel-pa/matthummel-theme/pull/352) — chore(seo): remove MH SEO; Yoast SEO handles SEO (3.8.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
-| | 🔀 [Opened PR #351](https://github.com/matthummel-pa/matthummel-theme/pull/351) — fix(seo): keep the Power Platform category out of search (3.7.6… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
-| | 🔀 [Opened PR #350](https://github.com/matthummel-pa/matthummel-theme/pull/350) — fix(home): keep LiteSpeed from lazy-loading the hero image (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
-| | 🔀 [Opened PR #349](https://github.com/matthummel-pa/matthummel-theme/pull/349) — feat(footer): link to Services once published (3.7.59) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24h |
-| | ✅ [Merged PR #348](https://github.com/matthummel-pa/matthummel-theme/pull/348) — fix(redirects): local targets keep trailing slash, query and fr… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24h |
-| | ✅ [Merged PR #347](https://github.com/matthummel-pa/matthummel-theme/pull/347) — fix(redirects): CSV import skips header and bad rows instead of… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 25h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/58a5ee5ae163147224acd75ecb3343aa0bfe4e7b) — fix(redirects): keep trailing slash, query and fragment on loca… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/41de79eb19c6b11eb252676f89a7332ab72a2454) — fix(redirects): header and bad rows no longer stall the CSV imp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 25h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c0a2eae076a570638669d80f013970af1c6fd2cb) — style(about): drop the GitHub logo from pinned repo cards (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 25h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2b1d6ec81983ebf446e5087feeaeeaaad75215d1) — style(about): pinned repo card title area and meta panel (3.7.5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 35h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/67f460fe1df6ec54d26034eec84b4f6fedeafaea) — style(about): redesign pinned repo cards (3.7.54) (#344) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 35h |
+| | 🔀 [Opened PR #352](https://github.com/matthummel-pa/matthummel-theme/pull/352) — chore(seo): remove MH SEO; Yoast SEO handles SEO (3.8.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 25h |
+| | 🔀 [Opened PR #351](https://github.com/matthummel-pa/matthummel-theme/pull/351) — fix(seo): keep the Power Platform category out of search (3.7.6… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 26h |
+| | 🔀 [Opened PR #350](https://github.com/matthummel-pa/matthummel-theme/pull/350) — fix(home): keep LiteSpeed from lazy-loading the hero image (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 26h |
+| | 🔀 [Opened PR #349](https://github.com/matthummel-pa/matthummel-theme/pull/349) — feat(footer): link to Services once published (3.7.59) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 27h |
+| | ✅ [Merged PR #348](https://github.com/matthummel-pa/matthummel-theme/pull/348) — fix(redirects): local targets keep trailing slash, query and fr… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
+| | ✅ [Merged PR #347](https://github.com/matthummel-pa/matthummel-theme/pull/347) — fix(redirects): CSV import skips header and bad rows instead of… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/58a5ee5ae163147224acd75ecb3343aa0bfe4e7b) — fix(redirects): keep trailing slash, query and fragment on loca… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/41de79eb19c6b11eb252676f89a7332ab72a2454) — fix(redirects): header and bad rows no longer stall the CSV imp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c0a2eae076a570638669d80f013970af1c6fd2cb) — style(about): drop the GitHub logo from pinned repo cards (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2b1d6ec81983ebf446e5087feeaeeaaad75215d1) — style(about): pinned repo card title area and meta panel (3.7.5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/67f460fe1df6ec54d26034eec84b4f6fedeafaea) — style(about): redesign pinned repo cards (3.7.54) (#344) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 22h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 25h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 9d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2w |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2w |
