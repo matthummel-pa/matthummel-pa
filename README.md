@@ -222,10 +222,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #354](https://github.com/matthummel-pa/matthummel-theme/pull/354) — content: replace Cursor with Claude Code on site copy (3.7.59) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🔀 [Opened PR #353](https://github.com/matthummel-pa/matthummel-theme/pull/353) — chore(rules): .claude/rules is the only source; drop Cursor; st… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | 🔀 [Opened PR #6](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/6) — feat(rules): absorb personal topic rules; WCAG 2.2; drop Cursor… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 5h |
-| | 🔀 [Opened PR #352](https://github.com/matthummel-pa/matthummel-theme/pull/352) — chore(seo): remove MH SEO; Rank Math handles SEO (3.8.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🔀 [Opened PR #354](https://github.com/matthummel-pa/matthummel-theme/pull/354) — content: replace Cursor with Claude Code on site copy (3.7.59) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🔀 [Opened PR #353](https://github.com/matthummel-pa/matthummel-theme/pull/353) — chore(rules): .claude/rules is the only source; drop Cursor; st… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🔀 [Opened PR #6](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/6) — feat(rules): absorb personal topic rules; WCAG 2.2; drop Cursor… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 10h |
+| | 🔀 [Opened PR #352](https://github.com/matthummel-pa/matthummel-theme/pull/352) — chore(seo): remove MH SEO; Rank Math handles SEO (3.8.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
 | | 🔀 [Opened PR #351](https://github.com/matthummel-pa/matthummel-theme/pull/351) — fix(seo): keep the Power Platform category out of search (3.7.6… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 | | 🔀 [Opened PR #350](https://github.com/matthummel-pa/matthummel-theme/pull/350) — fix(home): keep LiteSpeed from lazy-loading the hero image (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/58a5ee5ae163147224acd75ecb3343aa0bfe4e7b) — fix(redirects): keep trailing slash, query and fragment on loca… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 4h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 5h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 9h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 10h |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2w |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★1 | 2w |
 <!--END_SECTION:pushed-->
