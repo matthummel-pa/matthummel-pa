@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1644 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1661 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,644 contributions in 90 days · 1,747 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,661 contributions in 90 days · 1,764 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #353](https://github.com/matthummel-pa/matthummel-theme/pull/353) — chore(rules): .claude/rules is the only source; drop Cursor; st… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | 🔀 [Opened PR #354](https://github.com/matthummel-pa/matthummel-theme/pull/354) — content: replace Cursor with Claude Code on site copy (3.7.59) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | ❎ [Closed PR #351](https://github.com/matthummel-pa/matthummel-theme/pull/351) — fix(seo): keep the Power Platform category out of search (3.7.6… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | ✅ [Merged PR #352](https://github.com/matthummel-pa/matthummel-theme/pull/352) — chore(seo): remove MH SEO; Rank Math handles SEO (3.8.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | 🔀 [Opened PR #6](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/6) — feat(rules): absorb personal topic rules; WCAG 2.2; drop Cursor… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 19h |
-| | 🔀 [Opened PR #350](https://github.com/matthummel-pa/matthummel-theme/pull/350) — fix(home): keep LiteSpeed from lazy-loading the hero image (3.7… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/58a5ee5ae163147224acd75ecb3343aa0bfe4e7b) — fix(redirects): keep trailing slash, query and fragment on loca… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/41de79eb19c6b11eb252676f89a7332ab72a2454) — fix(redirects): header and bad rows no longer stall the CSV imp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c0a2eae076a570638669d80f013970af1c6fd2cb) — style(about): drop the GitHub logo from pinned repo cards (3.7.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2b1d6ec81983ebf446e5087feeaeeaaad75215d1) — style(about): pinned repo card title area and meta panel (3.7.5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/67f460fe1df6ec54d26034eec84b4f6fedeafaea) — style(about): redesign pinned repo cards (3.7.54) (#344) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
+| | ✅ [Merged PR #362](https://github.com/matthummel-pa/matthummel-theme/pull/362) — style(home): two-column layout for the hiring FAQ (3.8.9) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #361](https://github.com/matthummel-pa/matthummel-theme/pull/361) — style(hero): MCP replaces Vite in the collage background words,… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #360](https://github.com/matthummel-pa/matthummel-theme/pull/360) — style(hero): Vite replaces SEO in the collage background words … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #359](https://github.com/matthummel-pa/matthummel-theme/pull/359) — content(footer): Planned with Claude Code instead of Cursor AI … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #358](https://github.com/matthummel-pa/matthummel-theme/pull/358) — style(hero): gradient heading; WordPress watermark to bottom ce… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #357](https://github.com/matthummel-pa/matthummel-theme/pull/357) — style(hero): quieter Code collage cards; bring back the dot wav… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/5fa4a362da2e9fd317b96af1a5ebab7ac98e8e97) — style(hero): MCP replaces Vite in the collage background words,… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/fe872427778fd3714cdadb5229a3e2a9ae8bdec2) — style(hero): Vite replaces SEO in the collage background words … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7e57f40e2cf2ae0f6d64cdd9273da6c3c2f75ab4) — content(footer): "Planned with Claude Code" instead of Cursor A… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/d99830669c611dccc5d521281876ee58ee401062) — style(hero): gradient heading; WordPress watermark to bottom ce… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4ce68fa18beedc0ff30a949fde9c117c400b7284) — style(hero): quieter Code collage cards; bring back the dot wav… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 8h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 19h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 1h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 25h |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2w |
 | **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | 2w |
 <!--END_SECTION:pushed-->
