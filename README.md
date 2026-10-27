@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1665 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1672 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,665 contributions in 90 days · 1,768 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,672 contributions in 90 days · 1,775 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,18 +222,18 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #41](https://github.com/matthummel-pa/matthummel-pa/pull/41) — content: WordPress-first profile, dark site-style header, Power… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 5m |
-| | ⭐ [Starred](https://github.com/https-deeplearning-ai/deeplearning-ai) — https-deeplearning-ai/deeplearning-ai | [`deeplearning-ai`](https://github.com/https-deeplearning-ai/deeplearning-ai) | 19m |
-| | ⭐ [Starred](https://github.com/https-deeplearning-ai/sc-agent-skills-files) — https-deeplearning-ai/sc-agent-skills-files | [`sc-agent-skills-files`](https://github.com/https-deeplearning-ai/sc-agent-skills-files) | 19m |
-| | 🔀 [Opened PR #39](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/39) — feat(patterns): B&B rooms page, policies, stay & dine, area gui… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/7353dbae4b3e335dfcb81578aa4c0893bcab5b19) — content: WordPress-first profile, dark site-style header, Power… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 6m |
-| | ✅ [Merged PR #362](https://github.com/matthummel-pa/matthummel-theme/pull/362) — style(home): two-column layout for the hiring FAQ (3.8.9) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
-| | ✅ [Merged PR #361](https://github.com/matthummel-pa/matthummel-theme/pull/361) — style(hero): MCP replaces Vite in the collage background words,… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
-| | ✅ [Merged PR #360](https://github.com/matthummel-pa/matthummel-theme/pull/360) — style(hero): Vite replaces SEO in the collage background words … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
-| | ✅ [Merged PR #359](https://github.com/matthummel-pa/matthummel-theme/pull/359) — content(footer): Planned with Claude Code instead of Cursor AI … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/5fa4a362da2e9fd317b96af1a5ebab7ac98e8e97) — style(hero): MCP replaces Vite in the collage background words,… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/fe872427778fd3714cdadb5229a3e2a9ae8bdec2) — style(hero): Vite replaces SEO in the collage background words … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7e57f40e2cf2ae0f6d64cdd9273da6c3c2f75ab4) — content(footer): "Planned with Claude Code" instead of Cursor A… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
+| | 🔀 [Opened PR #41](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/41) — feat: add Freemius SDK for license activation and updates | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 8m |
+| | ✅ [Merged PR #40](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/40) — feat: Freemius licensing + release workflow, security hardening… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 29m |
+| | ✅ [Merged PR #39](https://github.com/matthummel-pa/wp-cobbleandcandle/pull/39) — feat(patterns): B&B rooms page, policies, stay & dine, area gui… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 39m |
+| | 🔀 [Opened PR #6](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/6) — feat(rules): absorb personal topic rules; WCAG 2.2; drop Cursor… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 2h |
+| | 🔀 [Opened PR #7](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/7) — feat(sage): sage-project skill, /pb:new-theme and /pb:dev (1.4.… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 2h |
+| | 🔀 [Opened PR #363](https://github.com/matthummel-pa/matthummel-theme/pull/363) — fix(vite): load tailwind.config.js on Windows | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ⭐ [Starred](https://github.com/https-deeplearning-ai/deeplearning-ai) — https-deeplearning-ai/deeplearning-ai | [`deeplearning-ai`](https://github.com/https-deeplearning-ai/deeplearning-ai) | 3h |
+| | ⭐ [Starred](https://github.com/https-deeplearning-ai/sc-agent-skills-files) — https-deeplearning-ai/sc-agent-skills-files | [`sc-agent-skills-files`](https://github.com/https-deeplearning-ai/sc-agent-skills-files) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle/commit/0c954269d2f5e9d03d8fc6403cf8bbba377c0792) — feat: Freemius licensing + release workflow, security hardening… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 34m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle/commit/f6a0b7fa72c609cd9ebf0edeabd29419b902df10) — feat(patterns): B&B rooms page, policies, stay & dine, area gui… | [`wp-cobbleandcandle`](https://github.com/matthummel-pa/wp-cobbleandcandle) | 39m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/7353dbae4b3e335dfcb81578aa4c0893bcab5b19) — content: WordPress-first profile, dark site-style header, Power… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/8c20e6e2d6451f938ac08a596b3bc0ed4da2928a) — style(home): two-column layout for the hiring FAQ (3.8.9) (#362) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -241,9 +241,9 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 2h |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 21h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 1d |
+| **[wp-cobbleandcandle](https://github.com/matthummel-pa/wp-cobbleandcandle)** — Cobble & Candle: Sage 11 WordPress block theme for restaurants, taverns, and inns — liv… | PHP · ★0 | 18m |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 2h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 3h |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3w |
 <!--END_SECTION:pushed-->
 
