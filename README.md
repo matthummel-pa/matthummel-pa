@@ -1,10 +1,10 @@
 <a href="https://matthummel.com/"><img src="./assets/ui/hero.svg?v=2026-10-26" width="900" alt="Matt Hummel — WordPress developer. Fast, accessible WordPress sites, themes, and plugins on the Roots stack (Bedrock, Sage 11, Trellis). Gettysburg, PA, remote anywhere." /></a>
 
-<a href="https://matthummel.com/hire/"><img src="./assets/ui/btn-hire.svg?v=2026-10-26" height="46" alt="Hire me" /></a>&nbsp;
-<a href="https://matthummel.com/contact/"><img src="./assets/ui/btn-note.svg?v=2026-10-26" height="46" alt="Write a note" /></a>&nbsp;
-<a href="https://matthummel.com/projects/"><img src="./assets/ui/btn-projects.svg?v=2026-10-26" height="46" alt="Projects" /></a>&nbsp;
-<a href="https://matthummel.com/code/"><img src="./assets/ui/btn-code.svg?v=2026-10-26" height="46" alt="Code and repos" /></a>&nbsp;
-<a href="https://www.linkedin.com/in/matt-hummel-pa"><img src="./assets/ui/btn-linkedin.svg?v=2026-10-26" height="46" alt="LinkedIn" /></a>
+<a href="https://matthummel.com/hire/"><img src="./assets/ui/btn-hire.svg?v=2026-10-26b" height="38" alt="Hire me" /></a>&nbsp;
+<a href="https://matthummel.com/contact/"><img src="./assets/ui/btn-note.svg?v=2026-10-26b" height="38" alt="Write a note" /></a>&nbsp;
+<a href="https://matthummel.com/projects/"><img src="./assets/ui/btn-projects.svg?v=2026-10-26b" height="38" alt="Projects" /></a>&nbsp;
+<a href="https://matthummel.com/code/"><img src="./assets/ui/btn-code.svg?v=2026-10-26b" height="38" alt="Code and repos" /></a>&nbsp;
+<a href="https://www.linkedin.com/in/matt-hummel-pa"><img src="./assets/ui/btn-linkedin.svg?v=2026-10-26b" height="38" alt="LinkedIn" /></a>
 
 <sub><a href="#build">What I build</a> · <a href="#stack">Stack</a> · <a href="#projects">Latest projects</a> · <a href="#writing">Journal</a> · <a href="#oss">Open source</a> · <a href="#play">Branchborne</a> · <a href="#activity">Activity</a> · <a href="#devs">How I work</a> · <a href="#hire">Hire</a> · <a href="#connect">Connect</a> &nbsp;·&nbsp; <img src="https://visitor-badge.laobi.icu/badge?page_id=matthummel-pa.matthummel-pa&left_text=Profile%20views&left_color=%230a1a33&right_color=%231d6fe0" alt="Profile views" align="absmiddle" /></sub>
 

@@ -207,8 +207,9 @@ def hero_svg() -> str:
 def button_svg(label: str, icon: str, primary: bool) -> str:
     # 3px of air on every side for the cyan halo (box-shadow 0 0 0 3px on the site).
     halo = 3
-    pill_h = 40
-    w = 11 * len(label) + 58 + halo * 2
+    # Compact: five buttons must sit on one line under the 900px hero (~660px total).
+    pill_h = 32
+    w = 8 * len(label) + 46 + halo * 2
     h = pill_h + halo * 2
     fill = HU_NAVY if primary else "var(--btn-surface)"
     text = HU_INK if primary else "var(--btn-surface-ink)"
@@ -225,13 +226,13 @@ def button_svg(label: str, icon: str, primary: bool) -> str:
   <style>{STYLE_VARS}
     .halo {{ fill: none; stroke: {HU_CYAN}; stroke-opacity: {halo_alpha}; stroke-width: 3; }}
     .b {{ fill: {fill}; stroke: url(#ring); stroke-width: 1.5; }}
-    .l {{ font: 700 15px/1 {FONT}; fill: {text}; letter-spacing: .02em; }}
+    .l {{ font: 700 13px/1 {FONT}; fill: {text}; letter-spacing: .02em; }}
   </style>
   <defs>{RING_GRADIENT}</defs>
   <rect class="halo" x="{halo - 1.5}" y="{halo - 1.5}" width="{w - (halo - 1.5) * 2}" height="{h - (halo - 1.5) * 2}" rx="{(h - (halo - 1.5) * 2) / 2}"/>
   <rect class="b" x="{inset}" y="{inset}" width="{w - inset * 2}" height="{h - inset * 2}" rx="{(h - inset * 2) / 2}"/>
-  <g transform="translate({16 + halo},{11 + halo}) scale(0.75)">{icon_svg}</g>
-  <text class="l" x="{42 + halo}" y="{25 + halo}">{html.escape(label)}</text>
+  <g transform="translate({13 + halo},{9 + halo}) scale(0.6)">{icon_svg}</g>
+  <text class="l" x="{33 + halo}" y="{20.5 + halo}">{html.escape(label)}</text>
 </svg>
 '''
 
