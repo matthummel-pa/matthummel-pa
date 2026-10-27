@@ -1,47 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="284" viewBox="0 0 900 284" role="img" aria-label="Matt Hummel — Full-stack web developer. I build WordPress platforms shops can run themselves, and Power Apps and flows for teams that live in Microsoft 365.">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="Matt Hummel — WordPress developer. I build fast, accessible WordPress sites, themes, and plugins for shops, inns, tours, real estate agents, and agencies.">
   <style>
-    :root {
-      --panel: #ffffff; --panel-line: rgba(7, 26, 51, .10); --accent: #1d6fe0;
-      --kick-bg: #0b2a52; --kick-ink: #ffffff;
-      --name: #071a33; --role: #2f3a4d; --lede: #2f3a4d;
-      --pill: #eef4fc; --pill-line: #dbe9fa; --pill-ink: #0b2a52;
-      --btn-surface: #ffffff; --btn-surface-ink: #0a1a33;
-    }
-    @media (prefers-color-scheme: dark) { :root {
-      --panel: #141c28; --panel-line: #243041; --accent: #3b82f6;
-      --kick-bg: #1444a8; --kick-ink: #ffffff;
-      --name: #ffffff; --role: #c5d0de; --lede: #c5d0de;
-      --pill: #172233; --pill-line: #243041; --pill-ink: #93c5fd;
-      --btn-surface: #111a28; --btn-surface-ink: #f1f5fb;
-    } }
-
-    .panel { fill: var(--panel); stroke: var(--panel-line); stroke-width: 1; }
-    .accent { fill: var(--accent); }
-    .kick { fill: var(--kick-bg); }
-    .kickt { font: 700 12px/1 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--kick-ink); letter-spacing: .06em; text-transform: uppercase; }
-    .name { font: 900 54px/1 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--name); letter-spacing: -.05em; }
-    .role { font: 700 21px/1 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--role); letter-spacing: -.01em; opacity: 0; animation: cycle 16.0s ease-in-out infinite; transform-origin: 0 0; }
-    .lede { font: 400 16px/1.5 "IBM Plex Sans", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--lede); }
-    .pill { fill: var(--pill); stroke: var(--pill-line); stroke-width: 1.5; }
+    .kick { fill: rgba(255, 255, 255, .08); stroke: rgba(255, 255, 255, .35); stroke-width: 1; }
+    .kickt { font: 700 12px/1 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #ffffff; letter-spacing: .08em; text-transform: uppercase; }
+    .name { font: 900 58px/1 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: url(#head); letter-spacing: -.045em; }
+    .role { font: 500 15px/1 ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; fill: #67e8f9; letter-spacing: .26em; text-transform: uppercase; opacity: 0; animation: cycle 16.0s ease-in-out infinite; transform-origin: 0 0; }
+    .role-rule { fill: url(#rolerule); }
+    .lede { font: 400 17px/1.5 "IBM Plex Sans", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #c9d9ef; }
+    .pill { fill: rgba(10, 26, 51, .94); stroke: rgba(143, 189, 240, .22); stroke-width: 1; }
     .dot { fill: #22d3ee; }
-    .pillt { font: 700 13px/1 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--pill-ink); }
-    .rule { fill: url(#ring); }
+    .pillt { font: 700 13px/1 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #93c5fd; }
+    .brand-rule { fill: url(#ring); }
     @keyframes cycle { 0%, 1.88% { opacity: 0; transform: translateY(8px); } 5.62%, 16.88% { opacity: 1; transform: translateY(0); } 20.00%, 100% { opacity: 0; transform: translateY(-8px); } }
     @media (prefers-reduced-motion: reduce) { .role { animation: none; opacity: 0; } .role:first-of-type { opacity: 1; } }
   </style>
   <defs>
     <linearGradient id="ring" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#3b82f6"/><stop offset=".52" stop-color="#22d3ee"/><stop offset="1" stop-color="#a3e635"/></linearGradient>
-    <clipPath id="panel-clip"><rect x="0.5" y="0.5" width="899" height="283" rx="18"/></clipPath>
+    <!-- Hero background: linear-gradient(160deg, blue-800, blue-900 60%, #040b18) -->
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1a33"/><stop offset=".6" stop-color="#050d1c"/><stop offset="1" stop-color="#040b18"/>
+    </linearGradient>
+    <!-- Soft glows: blue at top-left, teal at bottom-right (same as the site's collage hero) -->
+    <radialGradient id="glow-blue" cx="0" cy="0" r="1" gradientUnits="objectBoundingBox" gradientTransform="translate(.1 .12) scale(.45 .55)">
+      <stop offset="0" stop-color="#1d6fe0" stop-opacity=".28"/><stop offset=".7" stop-color="#1d6fe0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-teal" cx="0" cy="0" r="1" gradientUnits="objectBoundingBox" gradientTransform="translate(.92 .9) scale(.45 .55)">
+      <stop offset="0" stop-color="#0e8a7c" stop-opacity=".22"/><stop offset=".7" stop-color="#0e8a7c" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Name: the brand blue → cyan → lime heading gradient -->
+    <linearGradient id="head" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#60a5fa"/><stop offset=".55" stop-color="#22d3ee"/><stop offset="1" stop-color="#bef264"/>
+    </linearGradient>
+    <linearGradient id="rolerule" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#67e8f9" stop-opacity="0"/><stop offset="1" stop-color="#67e8f9"/>
+    </linearGradient>
+    <!-- 22px dot grid from .h-collage__grid -->
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#8cb4ff" fill-opacity=".11"/></pattern>
+    <clipPath id="panel-clip"><rect x="0" y="0" width="900" height="300" rx="18"/></clipPath>
   </defs>
-  <!-- Panel: the home-hero card with its 4px top rule -->
-  <rect class="panel" x="0.5" y="0.5" width="899" height="283" rx="18"/>
-  <rect class="accent" x="0" y="0" width="900" height="4" clip-path="url(#panel-clip)"/>
+  <g clip-path="url(#panel-clip)">
+    <rect x="0" y="0" width="900" height="300" fill="url(#sky)"/>
+    <rect x="0" y="0" width="900" height="300" fill="url(#dots)"/>
+    <rect x="0" y="0" width="900" height="300" fill="url(#glow-blue)"/>
+    <rect x="0" y="0" width="900" height="300" fill="url(#glow-teal)"/>
+    <!-- 4px brand rule along the bottom edge, like .post-hero::after -->
+    <rect class="brand-rule" x="0" y="296" width="900" height="4"/>
+  </g>
   <!-- Kicker pill -->
-  <g transform="translate(32,28)"><rect class="kick" width="263" height="28" rx="14"/><text class="kickt" x="15" y="18.5">I build sites your team can run</text></g>
-  <text class="name" x="29" y="118">Matt Hummel</text>
-  <rect class="rule" x="32" y="129" width="72" height="4" rx="2"/>
-  <text class="role" style="animation-delay:0.0s" x="32" y="160">Full-stack web developer</text><text class="role" style="animation-delay:3.2s" x="32" y="160">Custom WordPress on the Roots stack</text><text class="role" style="animation-delay:6.4s" x="32" y="160">Bedrock · Sage 11 · Trellis · Tailwind CSS</text><text class="role" style="animation-delay:9.6s" x="32" y="160">Microsoft Power Platform — Power Apps · Power Automate</text><text class="role" style="animation-delay:12.8s" x="32" y="160">Open for freelance, contract, or full-time</text>
-  <text class="lede" x="32" y="192">I build WordPress platforms shops can run themselves,</text>
-  <text class="lede" x="32" y="214">and Power Apps and flows for teams that live in Microsoft 365.</text>
-  <g transform="translate(32,232)"><rect width="170" height="30" rx="15" class="pill"/><circle cx="15" cy="15" r="3.5" class="dot"/><text x="26" y="19.5" class="pillt">Gettysburg, PA</text></g><g transform="translate(212,232)"><rect width="180" height="30" rx="15" class="pill"/><circle cx="15" cy="15" r="3.5" class="dot"/><text x="26" y="19.5" class="pillt">Remote anywhere</text></g><g transform="translate(402,232)"><rect width="190" height="30" rx="15" class="pill"/><circle cx="15" cy="15" r="3.5" class="dot"/><text x="26" y="19.5" class="pillt">America/New_York</text></g><g transform="translate(602,232)"><rect width="100" height="30" rx="15" class="pill"/><circle cx="15" cy="15" r="3.5" class="dot"/><text x="26" y="19.5" class="pillt">PHP 8.3</text></g>
+  <g transform="translate(36,30)"><rect class="kick" x=".5" y=".5" width="277" height="28" rx="14"/><circle class="dot" cx="16" cy="14.5" r="3.5"/><text class="kickt" x="28" y="19">I build sites your team can run</text></g>
+  <text class="name" x="33" y="124">Matt Hummel</text>
+  <rect class="role-rule" x="36" y="160" width="36" height="2" rx="1"/>
+  <text class="role" style="animation-delay:0.0s" x="86" y="166">WordPress developer</text><text class="role" style="animation-delay:3.2s" x="86" y="166">Themes · Plugins · Web apps</text><text class="role" style="animation-delay:6.4s" x="86" y="166">Roots stack · Sage 11 · Tailwind CSS v4</text><text class="role" style="animation-delay:9.6s" x="86" y="166">Fast · Accessible · Editable by the shop</text><text class="role" style="animation-delay:12.8s" x="86" y="166">Open for freelance, contract, or full-time</text>
+  <text class="lede" x="36" y="202">I build fast, accessible WordPress sites, themes, and plugins</text>
+  <text class="lede" x="36" y="226">for shops, inns, tours, real estate agents, and agencies.</text>
+  <g transform="translate(36,244)"><rect width="170" height="30" rx="15" class="pill"/><circle cx="15" cy="15" r="3.5" class="dot"/><text x="26" y="19.5" class="pillt">Gettysburg, PA</text></g><g transform="translate(216,244)"><rect width="180" height="30" rx="15" class="pill"/><circle cx="15" cy="15" r="3.5" class="dot"/><text x="26" y="19.5" class="pillt">Remote anywhere</text></g><g transform="translate(406,244)"><rect width="190" height="30" rx="15" class="pill"/><circle cx="15" cy="15" r="3.5" class="dot"/><text x="26" y="19.5" class="pillt">America/New_York</text></g><g transform="translate(606,244)"><rect width="100" height="30" rx="15" class="pill"/><circle cx="15" cy="15" r="3.5" class="dot"/><text x="26" y="19.5" class="pillt">PHP 8.3</text></g>
 </svg>

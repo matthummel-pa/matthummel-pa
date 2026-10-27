@@ -5,9 +5,11 @@ landing page; two scripts keep it current from GitHub Actions.
 
 ## Profile overview (apply to every edit)
 
-- **Role focus:** Full-stack web developer specializing in custom WordPress on the Roots stack
-  (Bedrock, Sage, Trellis) and Microsoft Power Platform solutions.
-- **Core stack:** PHP, JavaScript, Tailwind CSS, Docker, Composer, Power Apps, Power Automate.
+- **Role focus:** WordPress developer. Custom WordPress on the Roots stack (Bedrock, Sage 11,
+  Trellis): themes, plugins, and the web apps and automations around them.
+- **Core stack:** PHP 8.3, JavaScript/TypeScript, Tailwind CSS v4, Vite, Docker, Composer, n8n.
+- **Retired:** Microsoft Power Platform (Power Apps, Power Automate, SharePoint, Dataverse). Do
+  not add it back anywhere in this profile — not in copy, alt text, topics, or the skills banner.
 - Voice: plain, direct, first person. No fake metrics, testimonials, or hype.
 - Work shown is sample work built in public unless it says otherwise. Client and employer work
   stays private.
@@ -29,7 +31,7 @@ Run locally: `python3 .github/scripts/update-site.py` and `python3 -m unittest d
 ## Repository documentation standards (every matthummel-pa repo)
 
 - **Short description:** one crisp sentence that says what it is and who it is for.
-- **Topics:** use `wordpress`, `roots-sage`, `php`, `powerplatform` where they apply, plus the
+- **Topics:** use `wordpress`, `roots-sage`, `php` where they apply, plus the
   product kind (`wordpress-theme`, `wordpress-plugin`, `gutenberg`, `tailwindcss`).
 - **README:** setup instructions, stack components, usage, and a visual or architectural
   overview (screenshot, diagram, or a short structure tree).

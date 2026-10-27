@@ -1,4 +1,4 @@
-<a href="https://matthummel.com/"><img src="./assets/ui/hero.svg" width="900" alt="Matt Hummel — full-stack web developer. Custom WordPress on the Roots stack (Bedrock, Sage 11, Trellis) and Microsoft Power Platform. Gettysburg, PA, remote anywhere." /></a>
+<a href="https://matthummel.com/"><img src="./assets/ui/hero.svg" width="900" alt="Matt Hummel — WordPress developer. Fast, accessible WordPress sites, themes, and plugins on the Roots stack (Bedrock, Sage 11, Trellis). Gettysburg, PA, remote anywhere." /></a>
 
 <a href="https://matthummel.com/hire/"><img src="./assets/ui/btn-hire.svg" height="46" alt="Hire me" /></a>&nbsp;
 <a href="https://matthummel.com/contact/"><img src="./assets/ui/btn-note.svg" height="46" alt="Write a note" /></a>&nbsp;
@@ -26,9 +26,9 @@
       Small plugins that do one job: bookings, SEO head output, table of contents, newsletter. Standard hooks, PHPDoc, an uninstall that uninstalls. CI builds the release zip; the site pulls it.
     </td>
     <td width="33%" valign="top">
-      <strong>Microsoft Power Platform</strong><br />
-      <sub>Power Apps · Power Automate · SharePoint · Dataverse</sub><br /><br />
-      Canvas apps and flows for teams that already live in Microsoft 365 — from years of in-house federal agency work (walkthrough under NDA). Delegation-safe queries, named formulas, flows that fail loudly.
+      <strong>Web apps &amp; automation</strong><br />
+      <sub>n8n · REST APIs · Supabase · Netlify · GitHub Actions</sub><br /><br />
+      Small web apps and automations that sit beside WordPress: n8n workflows that post, sync, and notify; REST integrations; a Supabase-backed tool when a site needs an app. One admin for the shop, not five.
     </td>
   </tr>
 </table>
@@ -38,7 +38,7 @@
 
 <p align="center">
   <a href="https://matthummel.com/code/#skills">
-    <img src="./assets/skills.svg" width="880" alt="Animated banner of the stack: Roots (WordPress, Sage, Bedrock, Trellis, Gutenberg, WooCommerce), languages and UI (PHP, JavaScript, TypeScript, HTML, CSS, Tailwind CSS, Sass, React, Next.js, Vite), tooling (Composer, Node.js, Docker, Git, GitHub Actions, VS Code, Laravel), Power Platform and more (Power Apps, Power Automate, n8n, Supabase, Netlify)" />
+    <img src="./assets/skills.svg" width="880" alt="Animated banner of the stack: Roots (WordPress, Sage, Bedrock, Trellis, Gutenberg, WooCommerce), languages and UI (PHP, JavaScript, TypeScript, HTML, CSS, Tailwind CSS, Sass, React, Next.js, Vite), tooling (Composer, Node.js, Docker, Git, GitHub Actions, VS Code, Laravel), automation and apps (n8n, Supabase, Netlify)" />
   </a>
 </p>
 
@@ -49,7 +49,7 @@
 | **Tailwind CSS v4** | Design tokens in CSS, utilities in Blade, no bloat shipped. |
 | **Docker** | Reproducible local WordPress and CI; the same containers for every project. |
 | **Composer** | Bedrock-style WordPress: core, plugins, and the theme are dependencies, not uploads. |
-| **Power Apps · Power Automate** | Canvas apps and flows on SharePoint and Dataverse for Microsoft 365 teams. |
+| **n8n · Supabase · Netlify** | Automations and small apps around the site: workflows that post and sync, a database and auth when a site needs an app, static hosting for demos. |
 
 <sub>Groups mirror <a href="https://matthummel.com/code/">matthummel.com/code</a>. The banner is an SVG this repo rebuilds on a schedule — glyphs from simple-icons, animation off when your OS asks for reduced motion.</sub>
 
@@ -110,7 +110,7 @@ The four newest on [matthummel.com/projects](https://matthummel.com/projects/), 
 <a id="writing"></a>
 ## Latest from the journal
 
-Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — WordPress, the Roots stack, Power Platform, and how I actually work.
+Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — WordPress, the Roots stack, web development, and how I actually work.
 
 <!--START_SECTION:posts-->
 <table>
@@ -179,7 +179,7 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 | [matthummel-theme](https://github.com/matthummel-pa/matthummel-theme) | The theme behind matthummel.com, including the live GitHub board and the social-share editor box. | Sage 11 · Blade · Tailwind v4 · Vite |
 | [branchborne-gem-quest-game](https://github.com/matthummel-pa/branchborne-gem-quest-game) | Match-3 with a web-dev twist (below). | Vanilla JS canvas · Supabase · Netlify |
 
-<sub>Every repo follows the same rules: a one-sentence description, topics like <code>wordpress</code> · <code>roots-sage</code> · <code>php</code> · <code>powerplatform</code>, a README with setup, stack, usage, and a visual overview, conventional commits that say <em>why</em>, and a <code>.gitignore</code> that keeps <code>.env</code>, <code>wp-config.php</code>, dumps, and build output out.</sub>
+<sub>Every repo follows the same rules: a one-sentence description, topics like <code>wordpress</code> · <code>roots-sage</code> · <code>php</code> · <code>gutenberg</code>, a README with setup, stack, usage, and a visual overview, conventional commits that say <em>why</em>, and a <code>.gitignore</code> that keeps <code>.env</code>, <code>wp-config.php</code>, dumps, and build output out.</sub>
 
 <a id="play"></a>
 ## Branchborne Gem Quest
@@ -253,15 +253,15 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <a id="devs"></a>
 ## How I work
 
-Seventeen years of in-house web work (higher-ed marketing, then SharePoint / Power Platform for federal teams). Public GitHub is the trail I started in 2025 — most production code still lives behind employer walls.
+Seventeen years of in-house web work (higher-ed marketing sites, then internal web apps and workflow tools for large teams). Now WordPress full-time. Public GitHub is the trail I started in 2025 — most earlier production code still lives behind employer walls.
 
 | | The useful version |
 | --- | --- |
 | **Day job shape** | I write PHP, Blade, and just enough JS/TS. I am not a designer — I will refer one. |
 | **Happy path** | Bedrock + Sage 11 + Trellis, Acorn, Blade, Tailwind v4, Vite, PHP 8.3, WordPress 6.6+, Core Gutenberg (no page builder). |
 | **Plugins** | One job each. PHPDoc, standard hooks, uninstall that actually uninstalls. |
-| **Power Platform** | Delegation-safe queries, named formulas, flows with error branches. SharePoint or Dataverse, whichever the team already has. |
-| **AI** | Cursor + Claude scaffold. I still read, click, and test every line that ships. |
+| **Automation** | n8n for the glue: publish, sync, notify. Every workflow has an error branch and a log the client can read. |
+| **AI** | Claude Code scaffolds. I still read, click, and test every line that ships. |
 | **PRs I like** | Small, named after the change, conventional commits (`feat`, `fix`, `docs`). Tell me how you tried it. |
 | **PRs I bounce** | Drive-by refactors, page-builder add-ons, and "while I was here" diffs. |
 | **Handoff** | Domain, hosting, repo, and database in the client's name. Short admin notes in plain English. |
@@ -290,11 +290,11 @@ Seventeen years of in-house web work (higher-ed marketing, then SharePoint / Pow
   "name": "matt-hummel",
   "version": "17.0.0",
   "private": false,
-  "description": "Full-stack web developer · Roots-stack WordPress · Power Platform · open for work",
+  "description": "WordPress developer · Roots stack · themes, plugins, and web apps · open for work",
   "homepage": "https://matthummel.com",
   "main": "WordPress + Roots (Bedrock · Sage 11 · Trellis)",
   "scripts": {
-    "dev": "cursor . && coffee --watch",
+    "dev": "code . && coffee --watch",
     "build": "ship accessible WordPress platforms",
     "test": "a11y + Core Web Vitals + 'can the shop edit it?'",
     "play": "open https://gregarious-custard-70cf58.netlify.app/",
@@ -308,13 +308,13 @@ Seventeen years of in-house web work (higher-ed marketing, then SharePoint / Pow
     "php": "8.3",
     "tailwindcss": "^4",
     "docker": "*",
-    "power-platform": "canvas + flows",
+    "n8n": "glue",
     "curiosity": "*",
     "patience": "^∞"
   },
   "devDependencies": {
     "claude": "coworker",
-    "cursor": "pair-programmer",
+    "claude-code": "pair-programmer",
     "bad-pun-generator": "optional"
   },
   "engines": {
@@ -322,7 +322,7 @@ Seventeen years of in-house web work (higher-ed marketing, then SharePoint / Pow
     "coffee": "required",
     "timezone": "America/New_York"
   },
-  "keywords": ["wordpress", "roots-sage", "php", "powerplatform", "gettysburg", "a11y", "open-for-work"],
+  "keywords": ["wordpress", "roots-sage", "php", "gutenberg", "gettysburg", "a11y", "open-for-work"],
   "license": "MIT-and-kindness"
 }
 ```
@@ -332,7 +332,7 @@ Seventeen years of in-house web work (higher-ed marketing, then SharePoint / Pow
 <a id="hire"></a>
 ## Open for work
 
-**Freelance · contract · full-time · agency overflow.** Custom WordPress on the Roots stack, plugins and integrations, and Power Platform solutions. Based in Gettysburg, PA. Remote anywhere. I usually reply within one business day (ET).
+**Freelance · contract · full-time · agency overflow.** Custom WordPress on the Roots stack, plugins and integrations, and the web apps and automations around them. Based in Gettysburg, PA. Remote anywhere. I usually reply within one business day (ET).
 
 **[Hire me](https://matthummel.com/hire/)** · **[Write a note](https://matthummel.com/contact/)** · **[LinkedIn](https://www.linkedin.com/in/matt-hummel-pa)**
 
@@ -368,4 +368,4 @@ Seventeen years of in-house web work (higher-ed marketing, then SharePoint / Pow
 - 📡 **RSS:** [matthummel.com/feed](https://matthummel.com/feed/)
 - 🎮 **Branchborne Gem Quest:** [Play live](https://gregarious-custard-70cf58.netlify.app/) · [Game repo](https://github.com/matthummel-pa/branchborne-gem-quest-game)
 
-<sub>Full-stack web developer · Roots-stack WordPress · Power Platform — open for work. PRs welcome; puns tolerated.</sub>
+<sub>WordPress developer · Roots stack · themes, plugins, and web apps — open for work. PRs welcome; puns tolerated.</sub>

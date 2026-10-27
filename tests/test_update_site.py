@@ -132,8 +132,11 @@ class SkillsTests(unittest.TestCase):
 
     def test_groups_cover_code_page_stack(self) -> None:
         labels = {label for _g, items in self.mod.SKILL_GROUPS for label, *_ in items}
-        for needed in ("HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Sass", "Vite", "PHP", "WordPress", "Sage", "Bedrock", "Trellis", "Docker", "Composer", "Node.js", "Laravel", "Git", "VS Code", "Power Apps", "Power Automate", "n8n"):
+        for needed in ("HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Sass", "Vite", "PHP", "WordPress", "Sage", "Bedrock", "Trellis", "Docker", "Composer", "Node.js", "Laravel", "Git", "VS Code", "n8n", "Supabase", "Netlify"):
             self.assertIn(needed, labels)
+        # Power Platform was retired from the profile in Oct 2026; keep it out of the banner.
+        for retired in ("Power Apps", "Power Automate"):
+            self.assertNotIn(retired, labels)
 
 
 class SectionTests(unittest.TestCase):

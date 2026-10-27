@@ -3,7 +3,7 @@
 
 Pulls the newest projects from matthummel.com/projects/, the latest journal
 posts from the WordPress REST API, and draws the animated skills banner
-(assets/skills.svg) from the stack on matthummel.com/code/ plus the Roots stack and Power Platform.
+(assets/skills.svg) from the stack on matthummel.com/code/ plus the Roots stack and the automation tools.
 
 Each block fails soft: if the site is unreachable the existing README text
 for that block is left alone and the script says so.
@@ -38,7 +38,7 @@ MAX_GLYPH_BYTES = 20_000
 NAVY = "#0d2e57"
 BLUE = "#2c5a95"
 
-# Stack groups for the banner: the matthummel.com/code groups plus the Roots stack and Power Platform
+# Stack groups for the banner: the matthummel.com/code groups plus the Roots stack and automation tools
 # (label, simple-icons slug, brand hex). Bedrock, Sage, and Trellis share the Roots mark.
 SKILL_GROUPS: list[tuple[str, list[tuple[str, str, str]]]] = [
     (
@@ -80,10 +80,8 @@ SKILL_GROUPS: list[tuple[str, list[tuple[str, str, str]]]] = [
         ],
     ),
     (
-        "Power Platform",
+        "Automation",
         [
-            ("Power Apps", "powerapps", "742774"),
-            ("Power Automate", "powerautomate", "0066FF"),
             ("n8n", "n8n", "EA4B71"),
             ("Supabase", "supabase", "3FCF8E"),
             ("Netlify", "netlify", "00C7B7"),
