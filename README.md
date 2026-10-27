@@ -1,10 +1,10 @@
-<a href="https://matthummel.com/"><img src="./assets/ui/hero.svg" width="900" alt="Matt Hummel — WordPress developer. Fast, accessible WordPress sites, themes, and plugins on the Roots stack (Bedrock, Sage 11, Trellis). Gettysburg, PA, remote anywhere." /></a>
+<a href="https://matthummel.com/"><img src="./assets/ui/hero.svg?v=2026-10-26" width="900" alt="Matt Hummel — WordPress developer. Fast, accessible WordPress sites, themes, and plugins on the Roots stack (Bedrock, Sage 11, Trellis). Gettysburg, PA, remote anywhere." /></a>
 
-<a href="https://matthummel.com/hire/"><img src="./assets/ui/btn-hire.svg" height="46" alt="Hire me" /></a>&nbsp;
-<a href="https://matthummel.com/contact/"><img src="./assets/ui/btn-note.svg" height="46" alt="Write a note" /></a>&nbsp;
-<a href="https://matthummel.com/projects/"><img src="./assets/ui/btn-projects.svg" height="46" alt="Projects" /></a>&nbsp;
-<a href="https://matthummel.com/code/"><img src="./assets/ui/btn-code.svg" height="46" alt="Code and repos" /></a>&nbsp;
-<a href="https://www.linkedin.com/in/matt-hummel-pa"><img src="./assets/ui/btn-linkedin.svg" height="46" alt="LinkedIn" /></a>
+<a href="https://matthummel.com/hire/"><img src="./assets/ui/btn-hire.svg?v=2026-10-26" height="46" alt="Hire me" /></a>&nbsp;
+<a href="https://matthummel.com/contact/"><img src="./assets/ui/btn-note.svg?v=2026-10-26" height="46" alt="Write a note" /></a>&nbsp;
+<a href="https://matthummel.com/projects/"><img src="./assets/ui/btn-projects.svg?v=2026-10-26" height="46" alt="Projects" /></a>&nbsp;
+<a href="https://matthummel.com/code/"><img src="./assets/ui/btn-code.svg?v=2026-10-26" height="46" alt="Code and repos" /></a>&nbsp;
+<a href="https://www.linkedin.com/in/matt-hummel-pa"><img src="./assets/ui/btn-linkedin.svg?v=2026-10-26" height="46" alt="LinkedIn" /></a>
 
 <sub><a href="#build">What I build</a> · <a href="#stack">Stack</a> · <a href="#projects">Latest projects</a> · <a href="#writing">Journal</a> · <a href="#oss">Open source</a> · <a href="#play">Branchborne</a> · <a href="#activity">Activity</a> · <a href="#devs">How I work</a> · <a href="#hire">Hire</a> · <a href="#connect">Connect</a> &nbsp;·&nbsp; <img src="https://visitor-badge.laobi.icu/badge?page_id=matthummel-pa.matthummel-pa&left_text=Profile%20views&left_color=%230a1a33&right_color=%231d6fe0" alt="Profile views" align="absmiddle" /></sub>
 
@@ -38,7 +38,7 @@
 
 <p align="center">
   <a href="https://matthummel.com/code/#skills">
-    <img src="./assets/skills.svg" width="880" alt="Animated banner of the stack: Roots (WordPress, Sage, Bedrock, Trellis, Gutenberg, WooCommerce), languages and UI (PHP, JavaScript, TypeScript, HTML, CSS, Tailwind CSS, Sass, React, Next.js, Vite), tooling (Composer, Node.js, Docker, Git, GitHub Actions, VS Code, Laravel), automation and apps (n8n, Supabase, Netlify)" />
+    <img src="./assets/skills.svg?v=2026-10-26" width="880" alt="Animated banner of the stack: Roots (WordPress, Sage, Bedrock, Trellis, Gutenberg, WooCommerce), languages and UI (PHP, JavaScript, TypeScript, HTML, CSS, Tailwind CSS, Sass, React, Next.js, Vite), tooling (Composer, Node.js, Docker, Git, GitHub Actions, VS Code, Laravel), automation and apps (n8n, Supabase, Netlify)" />
   </a>
 </p>
 
