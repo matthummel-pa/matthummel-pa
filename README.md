@@ -222,16 +222,16 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/481500f403c1fbbf11168cd91e85a01a5d2c2ee7) — docs: add Patterns guide; cover license, demo switchers and lim… | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/11e4e9eaa8acb7644da4f6c048082604906a9076) — docs: initial Cobble & Candle documentation | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 2h |
-| | 🔀 [Opened PR #363](https://github.com/matthummel-pa/matthummel-theme/pull/363) — fix(vite): load tailwind.config.js on Windows | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
-| | ✅ [Merged PR #6](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/6) — feat(rules): absorb personal topic rules; WCAG 2.2; drop Cursor… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 7h |
-| | ❎ [Closed PR #7](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/7) — feat(sage): sage-project skill, /pb:new-theme and /pb:dev (1.4.… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 7h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/6d5321fbb11c24d94f7cce3ff1e511f12d2175ed) — feat(rules): absorb personal topic rules; WCAG 2.2; drop Cursor… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 7h |
-| | ✅ [Merged PR #41](https://github.com/matthummel-pa/matthummel-pa/pull/41) — content: WordPress-first profile, dark site-style header, Power… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 31h |
-| | ⭐ [Starred](https://github.com/https-deeplearning-ai/deeplearning-ai) — https-deeplearning-ai/deeplearning-ai | [`deeplearning-ai`](https://github.com/https-deeplearning-ai/deeplearning-ai) | 31h |
-| | ⭐ [Starred](https://github.com/https-deeplearning-ai/sc-agent-skills-files) — https-deeplearning-ai/sc-agent-skills-files | [`sc-agent-skills-files`](https://github.com/https-deeplearning-ai/sc-agent-skills-files) | 31h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/7353dbae4b3e335dfcb81578aa4c0893bcab5b19) — content: WordPress-first profile, dark site-style header, Power… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 31h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/481500f403c1fbbf11168cd91e85a01a5d2c2ee7) — docs: add Patterns guide; cover license, demo switchers and lim… | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/11e4e9eaa8acb7644da4f6c048082604906a9076) — docs: initial Cobble & Candle documentation | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 9h |
+| | 🔀 [Opened PR #363](https://github.com/matthummel-pa/matthummel-theme/pull/363) — fix(vite): load tailwind.config.js on Windows | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 14h |
+| | ✅ [Merged PR #6](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/6) — feat(rules): absorb personal topic rules; WCAG 2.2; drop Cursor… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 15h |
+| | ❎ [Closed PR #7](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/7) — feat(sage): sage-project skill, /pb:new-theme and /pb:dev (1.4.… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 15h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/6d5321fbb11c24d94f7cce3ff1e511f12d2175ed) — feat(rules): absorb personal topic rules; WCAG 2.2; drop Cursor… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 15h |
+| | ✅ [Merged PR #41](https://github.com/matthummel-pa/matthummel-pa/pull/41) — content: WordPress-first profile, dark site-style header, Power… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 1d |
+| | ⭐ [Starred](https://github.com/https-deeplearning-ai/deeplearning-ai) — https-deeplearning-ai/deeplearning-ai | [`deeplearning-ai`](https://github.com/https-deeplearning-ai/deeplearning-ai) | 1d |
+| | ⭐ [Starred](https://github.com/https-deeplearning-ai/sc-agent-skills-files) — https-deeplearning-ai/sc-agent-skills-files | [`sc-agent-skills-files`](https://github.com/https-deeplearning-ai/sc-agent-skills-files) | 1d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-pa/commit/7353dbae4b3e335dfcb81578aa4c0893bcab5b19) — content: WordPress-first profile, dark site-style header, Power… | [`matthummel-pa`](https://github.com/matthummel-pa/matthummel-pa) | 1d |
 | | ✅ [Merged PR #362](https://github.com/matthummel-pa/matthummel-theme/pull/362) — style(home): two-column layout for the hiring FAQ (3.8.9) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
 | | ✅ [Merged PR #361](https://github.com/matthummel-pa/matthummel-theme/pull/361) — style(hero): MCP replaces Vite in the collage background words,… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
 <!--END_SECTION:activity-->
@@ -241,9 +241,9 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 1h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 7h |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 30h |
+| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 9h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 15h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 1d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3w |
 <!--END_SECTION:pushed-->
 
