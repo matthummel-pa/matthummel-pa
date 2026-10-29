@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1607 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1640 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,607 contributions in 90 days · 1,710 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,640 contributions in 90 days · 1,743 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,18 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #370](https://github.com/matthummel-pa/matthummel-theme/pull/370) — fix(shop): show How buying works and Questions on the shop page… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | just now |
-| | ✅ [Merged PR #369](https://github.com/matthummel-pa/matthummel-theme/pull/369) — feat(shop): add Shop template for /shop/, /themes/ and /plugins… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6m |
-| | ✅ [Merged PR #368](https://github.com/matthummel-pa/matthummel-theme/pull/368) — fix(shop): rename plugin permalink filter that clashed with the… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | ✅ [Merged PR #367](https://github.com/matthummel-pa/matthummel-theme/pull/367) — feat(shop): move product pages to /themes/ and /plugins/, add f… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2dfd5fd7e322dab4bb2f5a9882891f5ee00228d5) — fix(shop): show How buying works and Questions on the shop page… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4e420117dd19cd9088e8c5a4363d469af7cd2ab0) — feat(shop): add Shop template for /shop/, /themes/ and /plugins… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7m |
-| | ✅ [Merged PR #366](https://github.com/matthummel-pa/matthummel-theme/pull/366) — fix(projects): show saved docs links in the Specs list (3.9.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #365](https://github.com/matthummel-pa/matthummel-theme/pull/365) — feat(shop): refresh Cobble & Candle copy once on theme update (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/67dd5909a0a382a5aa6b1ee0f85d5e2fc3ccdbcf) — fix(shop): rename the plugin permalink filter that clashed with… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4c84f8041c58dbc5c01c0b7de3306f3d3556b495) — feat(shop): move product pages to /themes/ and /plugins/, add f… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/f6cbfadd869bef97ff620445e20c792560cb52fa) — feat(shop): refresh Cobble & Candle copy once on theme update (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ⭐ [Starred](https://github.com/https-deeplearning-ai/deeplearning-ai) — https-deeplearning-ai/deeplearning-ai | [`deeplearning-ai`](https://github.com/https-deeplearning-ai/deeplearning-ai) | 1d |
+| | ✅ [Merged PR #387](https://github.com/matthummel-pa/matthummel-theme/pull/387) — feat(shop): vertical cards in two columns, tabs above the cards… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #386](https://github.com/matthummel-pa/matthummel-theme/pull/386) — feat(shop): horizontal product cards, vertical on phones (3.17.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #385](https://github.com/matthummel-pa/matthummel-theme/pull/385) — fix(shop): category pills under the product title (3.16.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #384](https://github.com/matthummel-pa/matthummel-theme/pull/384) — feat(shop): roomier cards and quality stats (3.16.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #382](https://github.com/matthummel-pa/matthummel-theme/pull/382) — feat(design): gradient headings across the whole site (3.16.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ❎ [Closed PR #383](https://github.com/matthummel-pa/matthummel-theme/pull/383) — feat(shop): roomier cards and quality stats (3.15.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/090750e0bf9b8062c7b0e35b40fb9195caf3e1a7) — feat(shop): vertical cards in two columns, tabs above the cards… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/00acb50199bcd7d0ca97cb9726d7fe55a5887005) — fix(shop): restore gradient heading text, tidy steps and docs l… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/25d026cf4b3b2e0eafe54208767114aaee02db68) — feat(shop): design pass for the shop pages: gradients, cards, c… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/8884982856fef8096cbdd9194193731601573175) — feat(shop): better layout, copy, SEO and accessibility for the … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7bfe6ebedfd99192e4a1785ae86d56c5021de793) — docs: describe the Freemius shop and drop the WooCommerce docs … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -241,9 +240,9 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 1m |
-| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 18h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 24h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 2h |
+| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 24h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 30h |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3w |
 <!--END_SECTION:pushed-->
 
