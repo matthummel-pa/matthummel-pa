@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1600 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1607 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,600 contributions in 90 days · 1,703 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,607 contributions in 90 days · 1,710 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #367](https://github.com/matthummel-pa/matthummel-theme/pull/367) — feat(shop): move product pages to /themes/ and /plugins/, add f… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2m |
-| | ✅ [Merged PR #366](https://github.com/matthummel-pa/matthummel-theme/pull/366) — fix(projects): show saved docs links in the Specs list (3.9.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 35m |
-| | ✅ [Merged PR #365](https://github.com/matthummel-pa/matthummel-theme/pull/365) — feat(shop): refresh Cobble & Candle copy once on theme update (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 44m |
-| | ✅ [Merged PR #364](https://github.com/matthummel-pa/matthummel-theme/pull/364) — feat(shop): sell Cobble & Candle through Freemius checkout, add… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/f6cbfadd869bef97ff620445e20c792560cb52fa) — feat(shop): refresh Cobble & Candle copy once on theme update (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 48m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ea25f9accfd6e7ad143065f204f60240eecef413) — feat(shop): sell Cobble & Candle through Freemius checkout, add… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/481500f403c1fbbf11168cd91e85a01a5d2c2ee7) — docs: add Patterns guide; cover license, demo switchers and lim… | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 14h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/11e4e9eaa8acb7644da4f6c048082604906a9076) — docs: initial Cobble & Candle documentation | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 14h |
-| | 🔀 [Opened PR #363](https://github.com/matthummel-pa/matthummel-theme/pull/363) — fix(vite): load tailwind.config.js on Windows | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 19h |
-| | ✅ [Merged PR #6](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/6) — feat(rules): absorb personal topic rules; WCAG 2.2; drop Cursor… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 20h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/6d5321fbb11c24d94f7cce3ff1e511f12d2175ed) — feat(rules): absorb personal topic rules; WCAG 2.2; drop Cursor… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 20h |
+| | ✅ [Merged PR #370](https://github.com/matthummel-pa/matthummel-theme/pull/370) — fix(shop): show How buying works and Questions on the shop page… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | just now |
+| | ✅ [Merged PR #369](https://github.com/matthummel-pa/matthummel-theme/pull/369) — feat(shop): add Shop template for /shop/, /themes/ and /plugins… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6m |
+| | ✅ [Merged PR #368](https://github.com/matthummel-pa/matthummel-theme/pull/368) — fix(shop): rename plugin permalink filter that clashed with the… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #367](https://github.com/matthummel-pa/matthummel-theme/pull/367) — feat(shop): move product pages to /themes/ and /plugins/, add f… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2dfd5fd7e322dab4bb2f5a9882891f5ee00228d5) — fix(shop): show How buying works and Questions on the shop page… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4e420117dd19cd9088e8c5a4363d469af7cd2ab0) — feat(shop): add Shop template for /shop/, /themes/ and /plugins… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7m |
+| | ✅ [Merged PR #366](https://github.com/matthummel-pa/matthummel-theme/pull/366) — fix(projects): show saved docs links in the Specs list (3.9.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | ✅ [Merged PR #365](https://github.com/matthummel-pa/matthummel-theme/pull/365) — feat(shop): refresh Cobble & Candle copy once on theme update (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/67dd5909a0a382a5aa6b1ee0f85d5e2fc3ccdbcf) — fix(shop): rename the plugin permalink filter that clashed with… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4c84f8041c58dbc5c01c0b7de3306f3d3556b495) — feat(shop): move product pages to /themes/ and /plugins/, add f… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/f6cbfadd869bef97ff620445e20c792560cb52fa) — feat(shop): refresh Cobble & Candle copy once on theme update (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
 | | ⭐ [Starred](https://github.com/https-deeplearning-ai/deeplearning-ai) — https-deeplearning-ai/deeplearning-ai | [`deeplearning-ai`](https://github.com/https-deeplearning-ai/deeplearning-ai) | 1d |
 <!--END_SECTION:activity-->
 
@@ -241,9 +241,9 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 6m |
-| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 14h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 20h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 1m |
+| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 18h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 24h |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3w |
 <!--END_SECTION:pushed-->
 
