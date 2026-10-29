@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #387](https://github.com/matthummel-pa/matthummel-theme/pull/387) — feat(shop): vertical cards in two columns, tabs above the cards… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #386](https://github.com/matthummel-pa/matthummel-theme/pull/386) — feat(shop): horizontal product cards, vertical on phones (3.17.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #385](https://github.com/matthummel-pa/matthummel-theme/pull/385) — fix(shop): category pills under the product title (3.16.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #384](https://github.com/matthummel-pa/matthummel-theme/pull/384) — feat(shop): roomier cards and quality stats (3.16.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #382](https://github.com/matthummel-pa/matthummel-theme/pull/382) — feat(design): gradient headings across the whole site (3.16.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ❎ [Closed PR #383](https://github.com/matthummel-pa/matthummel-theme/pull/383) — feat(shop): roomier cards and quality stats (3.15.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/090750e0bf9b8062c7b0e35b40fb9195caf3e1a7) — feat(shop): vertical cards in two columns, tabs above the cards… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/00acb50199bcd7d0ca97cb9726d7fe55a5887005) — fix(shop): restore gradient heading text, tidy steps and docs l… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/25d026cf4b3b2e0eafe54208767114aaee02db68) — feat(shop): design pass for the shop pages: gradients, cards, c… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/8884982856fef8096cbdd9194193731601573175) — feat(shop): better layout, copy, SEO and accessibility for the … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7bfe6ebedfd99192e4a1785ae86d56c5021de793) — docs: describe the Freemius shop and drop the WooCommerce docs … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #387](https://github.com/matthummel-pa/matthummel-theme/pull/387) — feat(shop): vertical cards in two columns, tabs above the cards… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | ✅ [Merged PR #386](https://github.com/matthummel-pa/matthummel-theme/pull/386) — feat(shop): horizontal product cards, vertical on phones (3.17.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | ✅ [Merged PR #385](https://github.com/matthummel-pa/matthummel-theme/pull/385) — fix(shop): category pills under the product title (3.16.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | ✅ [Merged PR #384](https://github.com/matthummel-pa/matthummel-theme/pull/384) — feat(shop): roomier cards and quality stats (3.16.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | ✅ [Merged PR #382](https://github.com/matthummel-pa/matthummel-theme/pull/382) — feat(design): gradient headings across the whole site (3.16.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | ❎ [Closed PR #383](https://github.com/matthummel-pa/matthummel-theme/pull/383) — feat(shop): roomier cards and quality stats (3.15.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/090750e0bf9b8062c7b0e35b40fb9195caf3e1a7) — feat(shop): vertical cards in two columns, tabs above the cards… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/00acb50199bcd7d0ca97cb9726d7fe55a5887005) — fix(shop): restore gradient heading text, tidy steps and docs l… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/25d026cf4b3b2e0eafe54208767114aaee02db68) — feat(shop): design pass for the shop pages: gradients, cards, c… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/8884982856fef8096cbdd9194193731601573175) — feat(shop): better layout, copy, SEO and accessibility for the … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7bfe6ebedfd99192e4a1785ae86d56c5021de793) — docs: describe the Freemius shop and drop the WooCommerce docs … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,9 +240,9 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 2h |
-| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 24h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 30h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 9h |
+| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 31h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 1d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3w |
 <!--END_SECTION:pushed-->
 
