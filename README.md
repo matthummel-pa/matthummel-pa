@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #8](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/8) — feat(sage): sage-project skill, /pb:new-theme and /pb:dev (1.4.… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | just now |
-| | ✅ [Merged PR #392](https://github.com/matthummel-pa/matthummel-theme/pull/392) — fix(shop): catalog refresh so the 3.17.5 edits reach Acreline a… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11m |
-| | ✅ [Merged PR #391](https://github.com/matthummel-pa/matthummel-theme/pull/391) — fix(shop): Acreline FAQ matches Coming soon, add a story link (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 43m |
-| | ✅ [Merged PR #390](https://github.com/matthummel-pa/matthummel-theme/pull/390) — copy(shop): plainer default copy on the shop pages (3.17.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 53m |
-| | ✅ [Merged PR #389](https://github.com/matthummel-pa/matthummel-theme/pull/389) — fix(about): GitHub panel titles are H3, not H4 (3.17.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #388](https://github.com/matthummel-pa/matthummel-theme/pull/388) — fix(shop): drop the duplicate TOCguide docs link (3.17.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/81d63dc974348ae26bacb360ab2ee812e728ae14) — fix(shop): one-time catalog refresh so the 3.17.5 edits reach A… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/fd8ba83e6b1ce7d168c184bd3a36d36f21191f4b) — fix(shop): Acreline FAQ matches Coming soon, add a story link (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 44m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/5a5a48f4e526edbe0554ec863ece91b5ced875e8) — fix(about): GitHub panel titles are H3, not H4, under the secti… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/3609bcd3f9b302c5e95ed230fa97553eae06cce5) — chore(rules): .claude/rules is the only source; drop Cursor; st… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/090750e0bf9b8062c7b0e35b40fb9195caf3e1a7) — feat(shop): vertical cards in two columns, tabs above the cards… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
+| | 🔀 [Opened PR #8](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/8) — feat(sage): sage-project skill, /pb:new-theme and /pb:dev (1.4.… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3h |
+| | ✅ [Merged PR #392](https://github.com/matthummel-pa/matthummel-theme/pull/392) — fix(shop): catalog refresh so the 3.17.5 edits reach Acreline a… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | ✅ [Merged PR #391](https://github.com/matthummel-pa/matthummel-theme/pull/391) — fix(shop): Acreline FAQ matches Coming soon, add a story link (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #390](https://github.com/matthummel-pa/matthummel-theme/pull/390) — copy(shop): plainer default copy on the shop pages (3.17.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #389](https://github.com/matthummel-pa/matthummel-theme/pull/389) — fix(about): GitHub panel titles are H3, not H4 (3.17.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #388](https://github.com/matthummel-pa/matthummel-theme/pull/388) — fix(shop): drop the duplicate TOCguide docs link (3.17.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/81d63dc974348ae26bacb360ab2ee812e728ae14) — fix(shop): one-time catalog refresh so the 3.17.5 edits reach A… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/fd8ba83e6b1ce7d168c184bd3a36d36f21191f4b) — fix(shop): Acreline FAQ matches Coming soon, add a story link (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/5a5a48f4e526edbe0554ec863ece91b5ced875e8) — fix(about): GitHub panel titles are H3, not H4, under the secti… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/3609bcd3f9b302c5e95ed230fa97553eae06cce5) — chore(rules): .claude/rules is the only source; drop Cursor; st… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/090750e0bf9b8062c7b0e35b40fb9195caf3e1a7) — feat(shop): vertical cards in two columns, tabs above the cards… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 20h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 1m |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 15m |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 3h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 4h |
 | **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 1d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3w |
 <!--END_SECTION:pushed-->
