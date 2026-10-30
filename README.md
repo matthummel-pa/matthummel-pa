@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1698 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1709 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,698 contributions in 90 days · 1,801 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,709 contributions in 90 days · 1,812 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #413](https://github.com/matthummel-pa/matthummel-theme/pull/413) — fix(a11y): shop page accessibility and layout pass (3.21.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7m |
-| | ✅ [Merged PR #414](https://github.com/matthummel-pa/matthummel-theme/pull/414) — feat(home): featured-theme hero background and a latest-themes … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 32m |
-| | ✅ [Merged PR #412](https://github.com/matthummel-pa/matthummel-theme/pull/412) — fix(design): remove the drifting dot wash (3.20.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #411](https://github.com/matthummel-pa/matthummel-theme/pull/411) — fix(a11y): calmer resting frame when animations are paused (3.2… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #410](https://github.com/matthummel-pa/matthummel-theme/pull/410) — feat(a11y): pause animations button in the header (3.20.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #409](https://github.com/matthummel-pa/matthummel-theme/pull/409) — fix(a11y): give the shop trust list a group role (3.19.8) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4b378c38220adb1c90369ee7fed7f26c9f0a35b7) — feat(home): featured-theme hero background and a latest-themes … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 32m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/24e26dc41b713dd0423fd382a20c4d9f9c79c51c) — fix(a11y): calmer resting frame when animations are paused (3.2… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/01dcfac6dbd0ed514e1554422e6a79ed63ebef72) — fix(a11y): fixes from an axe pass on staging (3.19.7) (#408) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9b13543d04af8c0579716b5f09fa99d0084e4a48) — fix(a11y): footer list links meet the 24px target size (3.19.6)… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/55936d2bec3233dc34f65d8aa42ebce9451c53f4) — fix(product): keep hero copy clear of the screenshot (3.19.5) (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | ✅ [Merged PR #420](https://github.com/matthummel-pa/matthummel-theme/pull/420) — fix(a11y): dark meta and share buttons in light-mode post heade… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 59m |
+| | ✅ [Merged PR #419](https://github.com/matthummel-pa/matthummel-theme/pull/419) — feat(design): pale light-mode headers with dark text and nav (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ❎ [Closed PR #418](https://github.com/matthummel-pa/matthummel-theme/pull/418) — fix(a11y): Home hero gradient is navy in light mode (3.21.5) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🔀 [Opened PR #415](https://github.com/matthummel-pa/matthummel-theme/pull/415) — fix(ui): remove the pause button and the bar under hero titles … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #417](https://github.com/matthummel-pa/matthummel-theme/pull/417) — fix(a11y): header fits on phones, card links reach 24px (3.21.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #416](https://github.com/matthummel-pa/matthummel-theme/pull/416) — feat(home): show coming soon themes in the latest-themes block … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/629d261cde306c148c3421be9d85c70f73807842) — feat(design): pale light-mode headers with dark text and nav (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7eaaed41dcff3192e274150ef531cf133024adc2) — feat(home): show coming soon themes in the latest-themes block … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/17b7403ccd3c243f63e44ed5e50def7473d478c8) — fix(a11y): shop page accessibility and layout pass (3.21.1) (#4… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4b378c38220adb1c90369ee7fed7f26c9f0a35b7) — feat(home): featured-theme hero background and a latest-themes … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/424ce2d7d41016ad43a1ba662f9b65325119ba04) — fix(design): remove the drifting dot wash (3.20.2) (#412) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 8m |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 13h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 59m |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 17h |
 | **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 2d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3w |
 <!--END_SECTION:pushed-->
