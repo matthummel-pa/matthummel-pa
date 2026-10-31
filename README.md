@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #450](https://github.com/matthummel-pa/matthummel-theme/pull/450) — feat(ui): one card system, journal read-more cards, round-icon … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10m |
-| | ✅ [Merged PR #449](https://github.com/matthummel-pa/matthummel-theme/pull/449) — feat(header): remove the arrow next to Get updates and its prev… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11m |
-| | ✅ [Merged PR #448](https://github.com/matthummel-pa/matthummel-theme/pull/448) — fix(layout): pages start below the fixed header (3.32.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 12m |
-| | ✅ [Merged PR #447](https://github.com/matthummel-pa/matthummel-theme/pull/447) — feat(header): remove the pause and play button (3.31.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #446](https://github.com/matthummel-pa/matthummel-theme/pull/446) — fix(a11y): section links clear the sticky header and page bar o… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #445](https://github.com/matthummel-pa/matthummel-theme/pull/445) — feat(ui): redesign the On this page bar (3.31.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6a826966242ce63fe42eab1590e074085fab8b52) — feat(ui): one card system, journal read-more cards, round-icon … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/93ea3d8eba4cedaa6e7f8f2528a69f569997d935) — feat(header): remove the arrow next to Get updates and its prev… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7bf74d80b312e97444c5cf6234cfe076ec4e0c20) — fix(a11y): section links clear the sticky header and page bar o… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/d26393fce3122d14f41474785e4f6590ed4572d8) — feat(shop): prices use the heading gradient (3.30.0) (#444) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/105b2c86387f1fc8f0213806ab87d8fc62e4cde4) — fix(a11y): long links, italic runs and inline code wrap on phon… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #450](https://github.com/matthummel-pa/matthummel-theme/pull/450) — feat(ui): one card system, journal read-more cards, round-icon … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #449](https://github.com/matthummel-pa/matthummel-theme/pull/449) — feat(header): remove the arrow next to Get updates and its prev… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #448](https://github.com/matthummel-pa/matthummel-theme/pull/448) — fix(layout): pages start below the fixed header (3.32.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #447](https://github.com/matthummel-pa/matthummel-theme/pull/447) — feat(header): remove the pause and play button (3.31.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | ✅ [Merged PR #446](https://github.com/matthummel-pa/matthummel-theme/pull/446) — fix(a11y): section links clear the sticky header and page bar o… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #445](https://github.com/matthummel-pa/matthummel-theme/pull/445) — feat(ui): redesign the On this page bar (3.31.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6a826966242ce63fe42eab1590e074085fab8b52) — feat(ui): one card system, journal read-more cards, round-icon … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/93ea3d8eba4cedaa6e7f8f2528a69f569997d935) — feat(header): remove the arrow next to Get updates and its prev… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7bf74d80b312e97444c5cf6234cfe076ec4e0c20) — fix(a11y): section links clear the sticky header and page bar o… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/d26393fce3122d14f41474785e4f6590ed4572d8) — feat(shop): prices use the heading gradient (3.30.0) (#444) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/105b2c86387f1fc8f0213806ab87d8fc62e4cde4) — fix(a11y): long links, italic runs and inline code wrap on phon… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 10m |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 35h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 3h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 1d |
 | **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 3d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3w |
 <!--END_SECTION:pushed-->
