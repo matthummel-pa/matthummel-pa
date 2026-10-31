@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1709 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1721 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,709 contributions in 90 days · 1,812 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,721 contributions in 90 days · 1,824 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #420](https://github.com/matthummel-pa/matthummel-theme/pull/420) — fix(a11y): dark meta and share buttons in light-mode post heade… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 59m |
-| | ✅ [Merged PR #419](https://github.com/matthummel-pa/matthummel-theme/pull/419) — feat(design): pale light-mode headers with dark text and nav (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ❎ [Closed PR #418](https://github.com/matthummel-pa/matthummel-theme/pull/418) — fix(a11y): Home hero gradient is navy in light mode (3.21.5) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | 🔀 [Opened PR #415](https://github.com/matthummel-pa/matthummel-theme/pull/415) — fix(ui): remove the pause button and the bar under hero titles … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #417](https://github.com/matthummel-pa/matthummel-theme/pull/417) — fix(a11y): header fits on phones, card links reach 24px (3.21.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | ✅ [Merged PR #416](https://github.com/matthummel-pa/matthummel-theme/pull/416) — feat(home): show coming soon themes in the latest-themes block … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/629d261cde306c148c3421be9d85c70f73807842) — feat(design): pale light-mode headers with dark text and nav (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7eaaed41dcff3192e274150ef531cf133024adc2) — feat(home): show coming soon themes in the latest-themes block … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/17b7403ccd3c243f63e44ed5e50def7473d478c8) — fix(a11y): shop page accessibility and layout pass (3.21.1) (#4… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4b378c38220adb1c90369ee7fed7f26c9f0a35b7) — feat(home): featured-theme hero background and a latest-themes … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/424ce2d7d41016ad43a1ba662f9b65325119ba04) — fix(design): remove the drifting dot wash (3.20.2) (#412) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #426](https://github.com/matthummel-pa/matthummel-theme/pull/426) — fix(a11y): Home hero and footer fit at 320 to 360px (3.23.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #425](https://github.com/matthummel-pa/matthummel-theme/pull/425) — fix(design): outline buttons keep their style in light mode (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #424](https://github.com/matthummel-pa/matthummel-theme/pull/424) — feat(design): light mode charcoal buttons and neutral surfaces … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #423](https://github.com/matthummel-pa/matthummel-theme/pull/423) — fix(design): logo runs green to blue (3.22.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #422](https://github.com/matthummel-pa/matthummel-theme/pull/422) — fix(design): headings run green to blue (3.22.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #421](https://github.com/matthummel-pa/matthummel-theme/pull/421) — fix(design): navy headers again, green-to-blue headings (3.22.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0642266bf45a1acdbb94c047fafc8f64146230b2) — fix(design): outline buttons keep their style in light mode (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/13c54f86b604bf139327a42756fb5eccacaa1ec4) — feat(design): light mode charcoal buttons and neutral surfaces … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c19fd659cc6ab5a0134b3f755aa55411fb2e94e7) — fix(a11y): dark meta and share buttons in light-mode post heade… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/629d261cde306c148c3421be9d85c70f73807842) — feat(design): pale light-mode headers with dark text and nav (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/06c3f8b4af0741a9c9b20a35daa9c3bff7cf85f7) — fix(a11y): header fits on phones, card links reach 24px (3.21.3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 59m |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 17h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 3h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 23h |
 | **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 2d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3w |
 <!--END_SECTION:pushed-->
