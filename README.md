@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1818 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1830 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,818 contributions in 90 days · 1,921 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,830 contributions in 90 days · 1,933 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #475](https://github.com/matthummel-pa/matthummel-theme/pull/475) — feat(ui): card fact labels with icon chips (3.44.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #474](https://github.com/matthummel-pa/matthummel-theme/pull/474) — fix(ui): centre the stack group number (3.43.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #473](https://github.com/matthummel-pa/matthummel-theme/pull/473) — fix(ui): stack item marker and count numbers (3.43.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #472](https://github.com/matthummel-pa/matthummel-theme/pull/472) — feat(ui): the rest of the stack — icons, counts, headings (3.43… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | ✅ [Merged PR #471](https://github.com/matthummel-pa/matthummel-theme/pull/471) — fix(ui): more space around the card icon (3.42.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | ✅ [Merged PR #470](https://github.com/matthummel-pa/matthummel-theme/pull/470) — feat(ui): tools and stack in one section (3.42.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/64042d1e8e4bd794fbb84e4c1717e9067718f4c1) — feat(ui): boost the rest of the stack — icons, counts, headings… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/76c738dd3fced5ffcdc1e829821130fd97be0445) — fix(ui): bigger starters and tools headings (3.41.1) (#469) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/e3448cf8f0c44fa6b246868d601648481b2e6743) — feat(ui): starter cards match the tool cards, bigger round icon… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2f82fe66f200215d91f28257f1b28d070f8d5092) — feat(ui): resources cards full width under the text, three per … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/29e1b2dad384103365a0dd0cd06a0545b29520d7) — feat(ui): tools headings and tagline design (3.39.1) (#466) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #481](https://github.com/matthummel-pa/matthummel-theme/pull/481) — feat(ui): inner page heroes (3.47.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #480](https://github.com/matthummel-pa/matthummel-theme/pull/480) — fix(ui): GitHub panels fit a 320px screen (3.46.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #479](https://github.com/matthummel-pa/matthummel-theme/pull/479) — fix(ui): GitHub tiles fit a 320px screen (3.46.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #478](https://github.com/matthummel-pa/matthummel-theme/pull/478) — fix(blocks): card link button rule (3.46.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #477](https://github.com/matthummel-pa/matthummel-theme/pull/477) — feat(ui): arrow chips in the pill buttons (3.46.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #476](https://github.com/matthummel-pa/matthummel-theme/pull/476) — feat(ui): affiliate note links as pill buttons (3.45.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/624111ca0e6fea1faf101429d6ac9f44ef39c93c) — fix(blocks): card button link rule no longer swallows a paragra… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c6505daf81fa1bd0bc73d081f45d4008fc3ce039) — feat(ui): card fact labels with icon chips (3.44.0) (#475) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/00cfbbfc97c7e8e5db1f7817515a16a46ad6915f) — fix(ui): centre the number in the stack group circle (3.43.2) (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b91f8b79fc4fd70252cf90d262c8ff1532d064f7) — fix(ui): stack item marker and count numbers (3.43.1) (#473) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/64042d1e8e4bd794fbb84e4c1717e9067718f4c1) — feat(ui): boost the rest of the stack — icons, counts, headings… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
