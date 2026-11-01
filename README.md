@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #481](https://github.com/matthummel-pa/matthummel-theme/pull/481) — feat(ui): inner page heroes (3.47.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #480](https://github.com/matthummel-pa/matthummel-theme/pull/480) — fix(ui): GitHub panels fit a 320px screen (3.46.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | ✅ [Merged PR #479](https://github.com/matthummel-pa/matthummel-theme/pull/479) — fix(ui): GitHub tiles fit a 320px screen (3.46.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | ✅ [Merged PR #478](https://github.com/matthummel-pa/matthummel-theme/pull/478) — fix(blocks): card link button rule (3.46.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | ✅ [Merged PR #477](https://github.com/matthummel-pa/matthummel-theme/pull/477) — feat(ui): arrow chips in the pill buttons (3.46.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | ✅ [Merged PR #476](https://github.com/matthummel-pa/matthummel-theme/pull/476) — feat(ui): affiliate note links as pill buttons (3.45.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/624111ca0e6fea1faf101429d6ac9f44ef39c93c) — fix(blocks): card button link rule no longer swallows a paragra… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c6505daf81fa1bd0bc73d081f45d4008fc3ce039) — feat(ui): card fact labels with icon chips (3.44.0) (#475) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/00cfbbfc97c7e8e5db1f7817515a16a46ad6915f) — fix(ui): centre the number in the stack group circle (3.43.2) (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b91f8b79fc4fd70252cf90d262c8ff1532d064f7) — fix(ui): stack item marker and count numbers (3.43.1) (#473) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/64042d1e8e4bd794fbb84e4c1717e9067718f4c1) — feat(ui): boost the rest of the stack — icons, counts, headings… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #481](https://github.com/matthummel-pa/matthummel-theme/pull/481) — feat(ui): inner page heroes (3.47.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
+| | ✅ [Merged PR #480](https://github.com/matthummel-pa/matthummel-theme/pull/480) — fix(ui): GitHub panels fit a 320px screen (3.46.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #479](https://github.com/matthummel-pa/matthummel-theme/pull/479) — fix(ui): GitHub tiles fit a 320px screen (3.46.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #478](https://github.com/matthummel-pa/matthummel-theme/pull/478) — fix(blocks): card link button rule (3.46.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #477](https://github.com/matthummel-pa/matthummel-theme/pull/477) — feat(ui): arrow chips in the pill buttons (3.46.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #476](https://github.com/matthummel-pa/matthummel-theme/pull/476) — feat(ui): affiliate note links as pill buttons (3.45.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/624111ca0e6fea1faf101429d6ac9f44ef39c93c) — fix(blocks): card button link rule no longer swallows a paragra… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/c6505daf81fa1bd0bc73d081f45d4008fc3ce039) — feat(ui): card fact labels with icon chips (3.44.0) (#475) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/00cfbbfc97c7e8e5db1f7817515a16a46ad6915f) — fix(ui): centre the number in the stack group circle (3.43.2) (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b91f8b79fc4fd70252cf90d262c8ff1532d064f7) — fix(ui): stack item marker and count numbers (3.43.1) (#473) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/64042d1e8e4bd794fbb84e4c1717e9067718f4c1) — feat(ui): boost the rest of the stack — icons, counts, headings… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 2h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 6h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 2d |
 | **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 4d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3w |
