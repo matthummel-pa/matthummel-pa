@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1836 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1838 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,836 contributions in 90 days · 1,939 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,838 contributions in 90 days · 1,941 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #484](https://github.com/matthummel-pa/matthummel-theme/pull/484) — fix(shop): Cobble & Candle shows release 1.0.1 (3.48.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #483](https://github.com/matthummel-pa/matthummel-theme/pull/483) — fix(ui): Home review fixes (3.48.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | ✅ [Merged PR #482](https://github.com/matthummel-pa/matthummel-theme/pull/482) — feat(ui): Questions section boost (3.48.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/49386e4ee4c5be5379f56cb6f0b0d38474d6418a) — fix(ui): whole-sentence theme blurbs and matching Home buttons … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0a24e8c195a822400ab1fe9f4298039483520d70) — feat(ui): numbered questions, chips and an ask card on Home (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #481](https://github.com/matthummel-pa/matthummel-theme/pull/481) — feat(ui): inner page heroes (3.47.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 12h |
-| | ✅ [Merged PR #480](https://github.com/matthummel-pa/matthummel-theme/pull/480) — fix(ui): GitHub panels fit a 320px screen (3.46.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
-| | ✅ [Merged PR #479](https://github.com/matthummel-pa/matthummel-theme/pull/479) — fix(ui): GitHub tiles fit a 320px screen (3.46.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/624111ca0e6fea1faf101429d6ac9f44ef39c93c) — fix(blocks): card button link rule no longer swallows a paragra… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2d8ba6557669d4deff4c0c15f935ba428d1c2c2f) — feat(ui): bigger arrow chips with a hover swap (3.46.0) (#477) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 14h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ce06ae8fbbd68ce1019bfe2ab7c6d0c55085d86a) — feat(ui): affiliate note links are pill buttons (3.45.0) (#476) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 14h |
+| | ✅ [Merged PR #485](https://github.com/matthummel-pa/matthummel-theme/pull/485) — fix(shop): Cobble & Candle prices match Freemius (3.48.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11m |
+| | ✅ [Merged PR #484](https://github.com/matthummel-pa/matthummel-theme/pull/484) — fix(shop): Cobble & Candle shows release 1.0.1 (3.48.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | ✅ [Merged PR #483](https://github.com/matthummel-pa/matthummel-theme/pull/483) — fix(ui): Home review fixes (3.48.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
+| | ✅ [Merged PR #482](https://github.com/matthummel-pa/matthummel-theme/pull/482) — feat(ui): Questions section boost (3.48.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/49386e4ee4c5be5379f56cb6f0b0d38474d6418a) — fix(ui): whole-sentence theme blurbs and matching Home buttons … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0a24e8c195a822400ab1fe9f4298039483520d70) — feat(ui): numbered questions, chips and an ask card on Home (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
+| | ✅ [Merged PR #481](https://github.com/matthummel-pa/matthummel-theme/pull/481) — feat(ui): inner page heroes (3.47.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
+| | ✅ [Merged PR #480](https://github.com/matthummel-pa/matthummel-theme/pull/480) — fix(ui): GitHub panels fit a 320px screen (3.46.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/029f131dcb1f8c1e99e9ee458b015b93fef92833) — fix(ui): GitHub tiles fit a 320px screen (3.46.2) (#479) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/624111ca0e6fea1faf101429d6ac9f44ef39c93c) — fix(blocks): card button link rule no longer swallows a paragra… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2d8ba6557669d4deff4c0c15f935ba428d1c2c2f) — feat(ui): bigger arrow chips with a hover swap (3.46.0) (#477) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,9 +240,9 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 1h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 2d |
-| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 4d |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 11m |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 3d |
+| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 5d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3w |
 <!--END_SECTION:pushed-->
 
