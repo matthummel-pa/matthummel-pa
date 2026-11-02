@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1838 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1848 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,838 contributions in 90 days · 1,941 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,848 contributions in 90 days · 1,951 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #485](https://github.com/matthummel-pa/matthummel-theme/pull/485) — fix(shop): Cobble & Candle prices match Freemius (3.48.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11m |
-| | ✅ [Merged PR #484](https://github.com/matthummel-pa/matthummel-theme/pull/484) — fix(shop): Cobble & Candle shows release 1.0.1 (3.48.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
-| | ✅ [Merged PR #483](https://github.com/matthummel-pa/matthummel-theme/pull/483) — fix(ui): Home review fixes (3.48.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
-| | ✅ [Merged PR #482](https://github.com/matthummel-pa/matthummel-theme/pull/482) — feat(ui): Questions section boost (3.48.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/49386e4ee4c5be5379f56cb6f0b0d38474d6418a) — fix(ui): whole-sentence theme blurbs and matching Home buttons … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0a24e8c195a822400ab1fe9f4298039483520d70) — feat(ui): numbered questions, chips and an ask card on Home (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
-| | ✅ [Merged PR #481](https://github.com/matthummel-pa/matthummel-theme/pull/481) — feat(ui): inner page heroes (3.47.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
-| | ✅ [Merged PR #480](https://github.com/matthummel-pa/matthummel-theme/pull/480) — fix(ui): GitHub panels fit a 320px screen (3.46.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/029f131dcb1f8c1e99e9ee458b015b93fef92833) — fix(ui): GitHub tiles fit a 320px screen (3.46.2) (#479) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/624111ca0e6fea1faf101429d6ac9f44ef39c93c) — fix(blocks): card button link rule no longer swallows a paragra… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2d8ba6557669d4deff4c0c15f935ba428d1c2c2f) — feat(ui): bigger arrow chips with a hover swap (3.46.0) (#477) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
+| | ✅ [Merged PR #490](https://github.com/matthummel-pa/matthummel-theme/pull/490) — fix(marketing): GA4 events wait for gtag (3.51.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #489](https://github.com/matthummel-pa/matthummel-theme/pull/489) — feat(marketing): GA4 ecommerce events and a phone CTA bar (3.51… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #488](https://github.com/matthummel-pa/matthummel-theme/pull/488) — feat(landing): Cobble & Candle ad landing page and logo set (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
+| | ✅ [Merged PR #487](https://github.com/matthummel-pa/matthummel-theme/pull/487) — fix(footer): fallback legal links include License and Refunds (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #486](https://github.com/matthummel-pa/matthummel-theme/pull/486) — feat(legal): theme purchase terms and Freemius in the privacy p… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #485](https://github.com/matthummel-pa/matthummel-theme/pull/485) — fix(shop): Cobble & Candle prices match Freemius (3.48.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b712788fe8276067f635ae8bd98f5bcf233916e5) — feat(marketing): GA4 ecommerce events and a phone CTA bar on th… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0e4f0003978f9f74da0576fd19221f98ec75e0d3) — feat(landing): Cobble & Candle ad landing page and logo set (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/fd2b85c4823f546f2650d4c0344296264d7e2040) — fix(footer): fallback legal links include License and Refunds (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/92475337062ccc8e6f1ced5a811e7ce1250b1cc8) — feat(legal): theme purchase terms and Freemius in the privacy p… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7882f3780eeb407bd62e09babc153ddfded4c288) — fix(shop): Cobble & Candle shows release 1.0.1 (3.48.2) (#484) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 11m |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 5h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 3d |
 | **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 5d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3w |
