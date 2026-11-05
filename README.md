@@ -232,7 +232,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0e4f0003978f9f74da0576fd19221f98ec75e0d3) — feat(landing): Cobble & Candle ad landing page and logo set (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/fd2b85c4823f546f2650d4c0344296264d7e2040) — fix(footer): fallback legal links include License and Refunds (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/92475337062ccc8e6f1ced5a811e7ce1250b1cc8) — feat(legal): theme purchase terms and Freemius in the privacy p… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7882f3780eeb407bd62e09babc153ddfded4c288) — fix(shop): Cobble & Candle shows release 1.0.1 (3.48.2) (#484) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/7882f3780eeb407bd62e09babc153ddfded4c288) — fix(shop): Cobble & Candle shows release 1.0.1 (3.48.2) (#484) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
