@@ -222,14 +222,14 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #2](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/2) — docs: the theme you buy no longer has the demo switchers | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 54m |
-| | ✅ [Merged PR #1](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/1) — docs: bring the guides up to date with the theme (1.3.x) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 2h |
+| | ✅ [Merged PR #2](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/2) — docs: the theme you buy no longer has the demo switchers | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 1h |
+| | ✅ [Merged PR #1](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/1) — docs: bring the guides up to date with the theme (1.3.x) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 3h |
 | | ✅ [Merged PR #490](https://github.com/matthummel-pa/matthummel-theme/pull/490) — fix(marketing): GA4 events wait for gtag (3.51.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
 | | ✅ [Merged PR #489](https://github.com/matthummel-pa/matthummel-theme/pull/489) — feat(marketing): GA4 ecommerce events and a phone CTA bar (3.51… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
-| | ✅ [Merged PR #488](https://github.com/matthummel-pa/matthummel-theme/pull/488) — feat(landing): Cobble & Candle ad landing page and logo set (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
+| | ✅ [Merged PR #488](https://github.com/matthummel-pa/matthummel-theme/pull/488) — feat(landing): Cobble & Candle ad landing page and logo set (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | ✅ [Merged PR #487](https://github.com/matthummel-pa/matthummel-theme/pull/487) — fix(footer): fallback legal links include License and Refunds (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b712788fe8276067f635ae8bd98f5bcf233916e5) — feat(marketing): GA4 ecommerce events and a phone CTA bar on th… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0e4f0003978f9f74da0576fd19221f98ec75e0d3) — feat(landing): Cobble & Candle ad landing page and logo set (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0e4f0003978f9f74da0576fd19221f98ec75e0d3) — feat(landing): Cobble & Candle ad landing page and logo set (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/fd2b85c4823f546f2650d4c0344296264d7e2040) — fix(footer): fallback legal links include License and Refunds (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/92475337062ccc8e6f1ced5a811e7ce1250b1cc8) — feat(legal): theme purchase terms and Freemius in the privacy p… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/bfcb9baae31539b08aa2f7f051b37e5fa50dfb0c) — fix(shop): Cobble & Candle prices match Freemius (3.48.3) (#485) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 54m |
+| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 1h |
 | **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 3d |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 7d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 4w |
