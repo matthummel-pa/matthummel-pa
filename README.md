@@ -222,14 +222,14 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #495](https://github.com/matthummel-pa/matthummel-theme/pull/495) — feat(home): brand signup card under the post grid (3.55.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #494](https://github.com/matthummel-pa/matthummel-theme/pull/494) — feat(home): spinning frame on the hero theme card (3.54.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | ✅ [Merged PR #493](https://github.com/matthummel-pa/matthummel-theme/pull/493) — feat(about): spinning photo ring and card gradient (3.53.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #492](https://github.com/matthummel-pa/matthummel-theme/pull/492) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #491](https://github.com/matthummel-pa/matthummel-theme/pull/491) — style(about): card hierarchy, lime only on primary cards (3.51.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a101446fdfb9fa8399c361c390a88e37925221c5) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🔀 [Opened PR #4](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/4) — Docs for 1.5.1: licence screen and theme switching back | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 15h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/647cd84b15a213e54b888900a7f81260e48d49bd) — docs: bring the guides in line with the theme (#3) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 17h |
+| | ✅ [Merged PR #495](https://github.com/matthummel-pa/matthummel-theme/pull/495) — feat(home): brand signup card under the post grid (3.55.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #494](https://github.com/matthummel-pa/matthummel-theme/pull/494) — feat(home): spinning frame on the hero theme card (3.54.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | ✅ [Merged PR #493](https://github.com/matthummel-pa/matthummel-theme/pull/493) — feat(about): spinning photo ring and card gradient (3.53.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #492](https://github.com/matthummel-pa/matthummel-theme/pull/492) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #491](https://github.com/matthummel-pa/matthummel-theme/pull/491) — style(about): card hierarchy, lime only on primary cards (3.51.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a101446fdfb9fa8399c361c390a88e37925221c5) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🔀 [Opened PR #4](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/4) — Docs for 1.5.1: licence screen and theme switching back | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 16h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/647cd84b15a213e54b888900a7f81260e48d49bd) — docs: bring the guides in line with the theme (#3) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 18h |
 | | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/6bb92d237dd5736c966fd76e541741d90966d963) — docs: the theme you buy no longer has the demo switchers (#2) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 2d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/fd7922cb7c51208fe91be9b2e22e5f46138ccda4) — docs: bring the guides up to date with the theme (1.3.x) (#1) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 2d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/21de173f1ef59df26b8feb2a2b23c9696db2b35c) — fix(marketing): GA4 events wait for gtag (3.51.1) (#490) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 1h |
-| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 15h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 2h |
+| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 16h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 9d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 4w |
 <!--END_SECTION:pushed-->
