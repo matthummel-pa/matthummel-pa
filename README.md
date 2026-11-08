@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1855 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1862 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,855 contributions in 90 days · 1,958 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,862 contributions in 90 days · 1,965 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #4](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/4) — Docs for 1.5.1: licence screen and theme switching back | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 12h |
-| | ✅ [Merged PR #3](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/3) — docs: bring the guides in line with the theme | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 14h |
-| | ✅ [Merged PR #2](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/2) — docs: the theme you buy no longer has the demo switchers | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 2d |
-| | ✅ [Merged PR #1](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/1) — docs: bring the guides up to date with the theme (1.3.x) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 2d |
-| | ✅ [Merged PR #490](https://github.com/matthummel-pa/matthummel-theme/pull/490) — fix(marketing): GA4 events wait for gtag (3.51.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5d |
-| | ✅ [Merged PR #489](https://github.com/matthummel-pa/matthummel-theme/pull/489) — feat(marketing): GA4 ecommerce events and a phone CTA bar (3.51… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b712788fe8276067f635ae8bd98f5bcf233916e5) — feat(marketing): GA4 ecommerce events and a phone CTA bar on th… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0e4f0003978f9f74da0576fd19221f98ec75e0d3) — feat(landing): Cobble & Candle ad landing page and logo set (3.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/fd2b85c4823f546f2650d4c0344296264d7e2040) — fix(footer): fallback legal links include License and Refunds (… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/92475337062ccc8e6f1ced5a811e7ce1250b1cc8) — feat(legal): theme purchase terms and Freemius in the privacy p… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/bfcb9baae31539b08aa2f7f051b37e5fa50dfb0c) — fix(shop): Cobble & Candle prices match Freemius (3.48.3) (#485) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
+| | 🔀 [Opened PR #494](https://github.com/matthummel-pa/matthummel-theme/pull/494) — feat(home): spinning frame on the hero theme card (3.54.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | just now |
+| | ✅ [Merged PR #493](https://github.com/matthummel-pa/matthummel-theme/pull/493) — feat(about): spinning photo ring and card gradient (3.53.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8m |
+| | ✅ [Merged PR #492](https://github.com/matthummel-pa/matthummel-theme/pull/492) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18m |
+| | ✅ [Merged PR #491](https://github.com/matthummel-pa/matthummel-theme/pull/491) — style(about): card hierarchy, lime only on primary cards (3.51.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 31m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a101446fdfb9fa8399c361c390a88e37925221c5) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18m |
+| | 🔀 [Opened PR #4](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/4) — Docs for 1.5.1: licence screen and theme switching back | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 13h |
+| | ✅ [Merged PR #3](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/3) — docs: bring the guides in line with the theme | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 15h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/6bb92d237dd5736c966fd76e541741d90966d963) — docs: the theme you buy no longer has the demo switchers (#2) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 2d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/fd7922cb7c51208fe91be9b2e22e5f46138ccda4) — docs: bring the guides up to date with the theme (1.3.x) (#1) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 2d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/21de173f1ef59df26b8feb2a2b23c9696db2b35c) — fix(marketing): GA4 events wait for gtag (3.51.1) (#490) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b712788fe8276067f635ae8bd98f5bcf233916e5) — feat(marketing): GA4 ecommerce events and a phone CTA bar on th… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 12h |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 5d |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | just now |
+| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 13h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 9d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 4w |
 <!--END_SECTION:pushed-->
