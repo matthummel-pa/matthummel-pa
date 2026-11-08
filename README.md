@@ -222,8 +222,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #4](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/4) — Docs for 1.5.1: licence screen and theme switching back | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 6h |
-| | ✅ [Merged PR #3](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/3) — docs: bring the guides in line with the theme | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 8h |
+| | 🔀 [Opened PR #4](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/4) — Docs for 1.5.1: licence screen and theme switching back | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 8h |
+| | ✅ [Merged PR #3](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/3) — docs: bring the guides in line with the theme | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 10h |
 | | ✅ [Merged PR #2](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/2) — docs: the theme you buy no longer has the demo switchers | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 1d |
 | | ✅ [Merged PR #1](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/1) — docs: bring the guides up to date with the theme (1.3.x) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 1d |
 | | ✅ [Merged PR #490](https://github.com/matthummel-pa/matthummel-theme/pull/490) — fix(marketing): GA4 events wait for gtag (3.51.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5d |
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 6h |
+| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 8h |
 | **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 5d |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 9d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 4w |
