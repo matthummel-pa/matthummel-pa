@@ -66,28 +66,28 @@ The four newest on [matthummel.com/projects](https://matthummel.com/projects/), 
     <td width="300" valign="top"><a href="https://matthummel.com/projects/cobbleandcandle/"><img src="https://matthummel.com/wp-content/themes/matthummel/resources/images/products/cobbleandcandle/01-homepage.webp" alt="Home page with live “Closed · opens 5:30pm” status, location switcher and lamplit hero" width="280" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/projects/cobbleandcandle/">Cobble &amp; Candle</a></strong><br />
-      <sub>WordPress theme · Restaurant · tavern · inn · v0.1.0</sub><br />
-      Cobble &amp; Candle is a WordPress block theme for restaurants, taverns and inns. Guests see live “open now” hours, menus they can filter by diet, and book a table or a room. Owners set it up in a five-step wizard, import…<br />
+      <sub>WordPress theme · Restaurant · tavern · inn · v1.5.1</sub><br />
+      Cobble &amp; Candle is a WordPress block theme for restaurants, taverns, and inns. Guests see live “open now” hours, menus they can filter by diet, and book a table or a room. Owners set it up in a five-step wizard, import…<br />
       <sub>28 custom blocks &nbsp;·&nbsp; 4 style directions &nbsp;·&nbsp; WCAG 2.2 AA tested</sub><br />
-      <a href="https://matthummel.com/projects/cobbleandcandle/">Project page</a> · <a href="https://cobbleandcandle.matthummel.com/">Live demo</a> · <a href="https://github.com/matthummel-pa/wp-cobbleandcandle">GitHub</a>
+      <a href="https://matthummel.com/projects/cobbleandcandle/">Project page</a> · <a href="https://cobbleandcandle.matthummel.com/">Live demo</a>
     </td>
   </tr>
   <tr>
-    <td width="300" valign="top"><a href="https://matthummel.com/projects/tocguide/"><img src="https://matthummel.com/wp-content/themes/matthummel/resources/images/products/tocguide/featured.webp" alt="TOCguide block — outline from post headings" width="280" /></a></td>
+    <td width="300" valign="top"><a href="https://matthummel.com/projects/tocguide/"><img src="https://matthummel.com/wp-content/themes/matthummel/resources/images/products/tocguide/featured.webp" alt="TOCguide block: outline from post headings" width="280" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/projects/tocguide/">TOCguide</a></strong><br />
-      <sub>WordPress plugin · The table of contents that reads with your… · v1.5.0</sub><br />
-      TOCguide is a WordPress plugin that builds a table of contents from the headings in a post. The outline is in the first HTML. An optional Reading Guide adds section previews, read time, and study tools — no accounts…<br />
-      <sub>Free download &nbsp;·&nbsp; 1.5.0 TOCguide identity &nbsp;·&nbsp; Server rendered</sub><br />
+      <sub>WordPress plugin · The table of contents that reads with your… · v1.6.15</sub><br />
+      TOCguide is a WordPress plugin that builds a table of contents from the headings in a post. The outline is in the first HTML. An optional Reading Guide adds section previews, read time, and study tools. No accounts, no…<br />
+      <sub>Free download &nbsp;·&nbsp; 1.6.15 Current release &nbsp;·&nbsp; Server rendered</sub><br />
       <a href="https://matthummel.com/projects/tocguide/">Project page</a> · <a href="https://matthummel-pa.github.io/tocguide/">Live demo</a> · <a href="https://github.com/matthummel-pa/tocguide">GitHub</a>
     </td>
   </tr>
   <tr>
-    <td width="300" valign="top"><a href="https://matthummel.com/projects/walkridge/"><img src="https://matthummel.com/wp-content/themes/matthummel/resources/images/products/walkridge/01-homepage.webp" alt="WalkRidge homepage — compass mark hero, featured tour cards, and guide bios" width="280" /></a></td>
+    <td width="300" valign="top"><a href="https://matthummel.com/projects/walkridge/"><img src="https://matthummel.com/wp-content/themes/matthummel/resources/images/products/walkridge/01-homepage.webp" alt="WalkRidge homepage: compass mark hero, featured tour cards, and guide bios" width="280" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/projects/walkridge/">WalkRidge</a></strong><br />
       <sub>WordPress theme · Tours · guides · WooCommerce · v1.7.2</sub><br />
-      WalkRidge is a WordPress theme for licensed-guide tour shops. Visitors browse tours, meet guides, and book online. Operators change brand, phone, and hours in Theme Settings — no code.<br />
+      WalkRidge is a WordPress theme for licensed-guide tour shops. Visitors browse tours, meet guides, and book online. Operators change brand, phone, and hours in Theme Settings. No code.<br />
       <sub>10 Gutenberg blocks &nbsp;·&nbsp; WooCommerce tour shop &nbsp;·&nbsp; GPL theme pack</sub><br />
       <a href="https://matthummel.com/projects/walkridge/">Project page</a> · <a href="https://walkridge.matthummel.com/">Live demo</a> · <a href="https://github.com/matthummel-pa/wp-walkridge">GitHub</a>
     </td>
@@ -115,6 +115,24 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-developer-monthly-update-october-2026/"><img src="https://matthummel.com/wp-content/uploads/2026/11/wordpress-developer-monthly-update-october-2026-v2-768x403.webp" alt="Dark navy graphic reading &quot;What I worked on in October&quot; for a WordPress developer monthly update, with chips for 1 theme for sale, 8 posts and 300+ commits" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/wordpress-developer-monthly-update-october-2026/">What I Worked On in October 2026: A Theme Shop, a Site Rebuild and 300 Commits</a></strong><br />
+      <sub>Nov 8, 2026</sub><br />
+      October was the month matthummel.com became a shop. My first theme went on sale, I kept updating the site, eight posts went out, and more than 300 commits landed across four public repos.…<br />
+      <a href="https://matthummel.com/wordpress-developer-monthly-update-october-2026/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-restaurant-theme-cobble-candle-1-5/"><img src="https://matthummel.com/wp-content/uploads/2026/11/cobble-candle-1-5-wordpress-restaurant-theme-768x403.webp" alt="Dark navy graphic reading &quot;A WordPress restaurant theme, now for sale&quot; with a Cobble &amp; Candle 1.5 eyebrow and chips for 33 blocks, 4 styles and WCAG 2.2 AA tested" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/wordpress-restaurant-theme-cobble-candle-1-5/">Cobble &amp; Candle 1.5: My WordPress Restaurant Theme Is Now for Sale</a></strong><br />
+      <sub>Nov 8, 2026</sub><br />
+      I now sell WordPress themes on matthummel.com. Cobble &amp; Candle, my theme for restaurants, taverns and inns, went from version 1.0 to 1.5.1 in a month. Here is what changed, what it costs…<br />
+      <a href="https://matthummel.com/wordpress-restaurant-theme-cobble-candle-1-5/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/should-you-still-learn-to-code-in-2026-what-ai-changed-and-what-it-didnt/"><img src="https://matthummel.com/wp-content/uploads/2026/10/should-you-still-learn-to-code-in-2026-768x403.webp" alt="Should you still learn to code in 2026 graphic: short answer yes, with a checklist to learn deeply (reading code, debugging, security basics, how the web works, writing clear specs) and the rule &quot;write first, then ask AI&quot;" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/should-you-still-learn-to-code-in-2026-what-ai-changed-and-what-it-didnt/">Should You Still Learn to Code in 2026? What AI Changed (and What It Didn’t)</a></strong><br />
@@ -133,30 +151,12 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
     </td>
   </tr>
   <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-72-release-date-features-and-what-to-test/"><img src="https://matthummel.com/wp-content/uploads/2026/10/https3A2F2Fmatthummel.com2Fwp-content2Fuploads2F20262F102Fwordpress-7-2-release-preview-768x323.webp" alt="WordPress 7.2: Release Date, Features, and What to Test" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/wordpress-72-release-date-features-and-what-to-test/">WordPress 7.2: Release Date, Features, and What to Test</a></strong><br />
-      <sub>Oct 23, 2026</sub><br />
-      WordPress 7.2 is scheduled to ship on December 8, 2026. Beta 1 landed October 20, and the first…<br />
-      <a href="https://matthummel.com/wordpress-72-release-date-features-and-what-to-test/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-7-2-release-preview-768x403.webp" alt="WordPress 7.2 release preview graphic: ships December 8, 2026, with Ipsum, Notes suggestion mode, Secrets API, and form styles on the roadmap" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/wordpress-7-2/">WordPress 7.2: Release Date, Features, and What to Test</a></strong><br />
       <sub>Oct 19, 2026</sub><br />
       WordPress 7.2 is set for December 8, 2026. See the beta schedule, the new Ipsum theme, Notes suggestion mode, the Secrets API, and how to test it.<br />
       <a href="https://matthummel.com/wordpress-7-2/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/claude-code-playbook-wordpress/"><img src="https://matthummel.com/wp-content/uploads/2026/10/dark-navy-graphic-reading-one-playbook-every-project-with-ch-768x403.webp" alt="Dark navy graphic reading &quot;One playbook. Every project.&quot; with chips for rules, skills, /pb:ship and Auto-synced, and a code window showing the playbook core rule file" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/claude-code-playbook-wordpress/">Why I Built a Claude Code Playbook for WordPress</a></strong><br />
-      <sub>Oct 15, 2026</sub><br />
-      How one public repo of rules, skills and commands keeps Claude Code consistent across every WordPress project I work on, and syncs to every machine on merge.<br />
-      <a href="https://matthummel.com/claude-code-playbook-wordpress/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1862 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1865 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,862 contributions in 90 days · 1,965 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,865 contributions in 90 days · 1,968 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #494](https://github.com/matthummel-pa/matthummel-theme/pull/494) — feat(home): spinning frame on the hero theme card (3.54.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | just now |
-| | ✅ [Merged PR #493](https://github.com/matthummel-pa/matthummel-theme/pull/493) — feat(about): spinning photo ring and card gradient (3.53.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8m |
-| | ✅ [Merged PR #492](https://github.com/matthummel-pa/matthummel-theme/pull/492) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18m |
-| | ✅ [Merged PR #491](https://github.com/matthummel-pa/matthummel-theme/pull/491) — style(about): card hierarchy, lime only on primary cards (3.51.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 31m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a101446fdfb9fa8399c361c390a88e37925221c5) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18m |
-| | 🔀 [Opened PR #4](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/4) — Docs for 1.5.1: licence screen and theme switching back | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 13h |
-| | ✅ [Merged PR #3](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/3) — docs: bring the guides in line with the theme | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 15h |
+| | ✅ [Merged PR #495](https://github.com/matthummel-pa/matthummel-theme/pull/495) — feat(home): brand signup card under the post grid (3.55.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 40m |
+| | ✅ [Merged PR #494](https://github.com/matthummel-pa/matthummel-theme/pull/494) — feat(home): spinning frame on the hero theme card (3.54.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 55m |
+| | ✅ [Merged PR #493](https://github.com/matthummel-pa/matthummel-theme/pull/493) — feat(about): spinning photo ring and card gradient (3.53.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #492](https://github.com/matthummel-pa/matthummel-theme/pull/492) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #491](https://github.com/matthummel-pa/matthummel-theme/pull/491) — style(about): card hierarchy, lime only on primary cards (3.51.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a101446fdfb9fa8399c361c390a88e37925221c5) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🔀 [Opened PR #4](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/4) — Docs for 1.5.1: licence screen and theme switching back | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 14h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/647cd84b15a213e54b888900a7f81260e48d49bd) — docs: bring the guides in line with the theme (#3) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 16h |
 | | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/6bb92d237dd5736c966fd76e541741d90966d963) — docs: the theme you buy no longer has the demo switchers (#2) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 2d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/fd7922cb7c51208fe91be9b2e22e5f46138ccda4) — docs: bring the guides up to date with the theme (1.3.x) (#1) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 2d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/21de173f1ef59df26b8feb2a2b23c9696db2b35c) — fix(marketing): GA4 events wait for gtag (3.51.1) (#490) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b712788fe8276067f635ae8bd98f5bcf233916e5) — feat(marketing): GA4 ecommerce events and a phone CTA bar on th… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | just now |
-| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 13h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 40m |
+| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 14h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 9d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 4w |
 <!--END_SECTION:pushed-->
