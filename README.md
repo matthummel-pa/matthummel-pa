@@ -115,6 +115,24 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2-beta-3/"><img src="https://matthummel.com/wp-content/uploads/2026/11/wordpress-7-2-beta-3-7-1-4-768x403.webp" alt="WordPress 7.2 Beta 3 graphic, out October 28, 2026: shipped with the 7.1.4 security release, same security fixes, Beta 4 out November 3, Beta 5 due November 10, final release December 8" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/wordpress-7-2-beta-3/">WordPress 7.2 Beta 3: Shipped With the 7.1.4 Security Release</a></strong><br />
+      <sub>Nov 10, 2026</sub><br />
+      WordPress 7.2 Beta 3 came out October 28, 2026, inside the WordPress 7.1.4 security release. Here’s what 7.1.4 fixed, what to test, and the updated 7.2 schedule.<br />
+      <a href="https://matthummel.com/wordpress-7-2-beta-3/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2-beta-2/"><img src="https://matthummel.com/wp-content/uploads/2026/11/wordpress-7-2-beta-2-what-changed-768x403.webp" alt="WordPress 7.2 Beta 2 graphic, out October 27, 2026: test Abilities API required_capabilities, DataViews and DataForm in PHP, REST API flexibility and admin asset loading before the December 8 final release" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/wordpress-7-2-beta-2/">WordPress 7.2 Beta 2: What Changed for Developers</a></strong><br />
+      <sub>Nov 10, 2026</sub><br />
+      WordPress 7.2 Beta 2 came out October 27, 2026. It’s a testing release, not an update for live sites. Here’s what changed in the Abilities API, DataViews and the admin, and what to test…<br />
+      <a href="https://matthummel.com/wordpress-7-2-beta-2/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/wordpress-developer-monthly-update-october-2026/"><img src="https://matthummel.com/wp-content/uploads/2026/11/wordpress-developer-monthly-update-october-2026-v2-768x403.webp" alt="Dark navy graphic reading &quot;What I worked on in October&quot; for a WordPress developer monthly update, with chips for 1 theme for sale, 8 posts and 300+ commits" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/wordpress-developer-monthly-update-october-2026/">What I Worked On in October 2026: A Theme Shop, a Site Rebuild and 300 Commits</a></strong><br />
@@ -139,24 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Oct 24, 2026</sub><br />
       Yes, you should still learn to code in 2026. But the reason changed: AI writes the code, and it doesn’t know when it’s wrong. Here’s what the research says to focus on.<br />
       <a href="https://matthummel.com/should-you-still-learn-to-code-in-2026-what-ai-changed-and-what-it-didnt/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2-beta-1/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-7-2-beta-1-what-changed-768x403.webp" alt="WordPress 7.2 Beta 1 graphic, out October 20, 2026: test the Secrets API, NO_BACKSLASH_ESCAPES change, separate admin asset loading and DataForm block inspector before the December 8 final release" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/wordpress-7-2-beta-1/">WordPress 7.2 Beta 1: What Changed for Developers</a></strong><br />
-      <sub>Oct 23, 2026</sub><br />
-      WordPress 7.2 Beta 1 landed October 20, 2026. It’s a testing release, not an update for live sites. Here’s what’s new and what developers should check before the December 8 final release.<br />
-      <a href="https://matthummel.com/wordpress-7-2-beta-1/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2/"><img src="https://matthummel.com/wp-content/uploads/2026/10/wordpress-7-2-release-preview-768x403.webp" alt="WordPress 7.2 release preview graphic: ships December 8, 2026, with Ipsum, Notes suggestion mode, Secrets API, and form styles on the roadmap" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/wordpress-7-2/">WordPress 7.2: Release Date, Features, and What to Test</a></strong><br />
-      <sub>Oct 19, 2026</sub><br />
-      WordPress 7.2 is set for December 8, 2026. See the beta schedule, the new Ipsum theme, Notes suggestion mode, the Secrets API, and how to test it.<br />
-      <a href="https://matthummel.com/wordpress-7-2/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -222,12 +222,12 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #495](https://github.com/matthummel-pa/matthummel-theme/pull/495) — feat(home): brand signup card under the post grid (3.55.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 30h |
-| | ✅ [Merged PR #494](https://github.com/matthummel-pa/matthummel-theme/pull/494) — feat(home): spinning frame on the hero theme card (3.54.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 30h |
-| | ✅ [Merged PR #493](https://github.com/matthummel-pa/matthummel-theme/pull/493) — feat(about): spinning photo ring and card gradient (3.53.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 31h |
-| | ✅ [Merged PR #492](https://github.com/matthummel-pa/matthummel-theme/pull/492) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 31h |
-| | ✅ [Merged PR #491](https://github.com/matthummel-pa/matthummel-theme/pull/491) — style(about): card hierarchy, lime only on primary cards (3.51.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 31h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a101446fdfb9fa8399c361c390a88e37925221c5) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 31h |
+| | ✅ [Merged PR #495](https://github.com/matthummel-pa/matthummel-theme/pull/495) — feat(home): brand signup card under the post grid (3.55.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 31h |
+| | ✅ [Merged PR #494](https://github.com/matthummel-pa/matthummel-theme/pull/494) — feat(home): spinning frame on the hero theme card (3.54.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 32h |
+| | ✅ [Merged PR #493](https://github.com/matthummel-pa/matthummel-theme/pull/493) — feat(about): spinning photo ring and card gradient (3.53.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 32h |
+| | ✅ [Merged PR #492](https://github.com/matthummel-pa/matthummel-theme/pull/492) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 32h |
+| | ✅ [Merged PR #491](https://github.com/matthummel-pa/matthummel-theme/pull/491) — style(about): card hierarchy, lime only on primary cards (3.51.… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 32h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a101446fdfb9fa8399c361c390a88e37925221c5) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 32h |
 | | 🔀 [Opened PR #4](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/4) — Docs for 1.5.1: licence screen and theme switching back | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 1d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/647cd84b15a213e54b888900a7f81260e48d49bd) — docs: bring the guides in line with the theme (#3) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 1d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/6bb92d237dd5736c966fd76e541741d90966d963) — docs: the theme you buy no longer has the demo switchers (#2) | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 3d |
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 30h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 31h |
 | **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 1d |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 10d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 5w |
