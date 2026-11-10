@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2-rc1/"><img src="https://matthummel.com/wp-content/uploads/2026/11/wordpress-7-2-rc-1-field-guide-768x403.webp" alt="WordPress 7.2 RC 1 graphic, due November 17, 2026: the 7.2 field guide, hard string freeze, 7.2 branch created, RC 2 on November 24, final release December 8" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/wordpress-7-2-rc1/">WordPress 7.2 RC1: Field Guide and What to Test</a></strong><br />
+      <sub>Nov 10, 2026</sub><br />
+      WordPress 7.2 Release Candidate 1 is scheduled for November 17, 2026. Here’s what RC1 brings, including the field guide and string freeze, and what developers should test before December 8.<br />
+      <a href="https://matthummel.com/wordpress-7-2-rc1/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2-beta-3/"><img src="https://matthummel.com/wp-content/uploads/2026/11/wordpress-7-2-beta-3-7-1-4-768x403.webp" alt="WordPress 7.2 Beta 3 graphic, out October 28, 2026: shipped with the 7.1.4 security release, same security fixes, Beta 4 out November 3, Beta 5 due November 10, final release December 8" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/wordpress-7-2-beta-3/">WordPress 7.2 Beta 3: Shipped With the 7.1.4 Security Release</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Nov 8, 2026</sub><br />
       I now sell WordPress themes on matthummel.com. Cobble &amp; Candle, my theme for restaurants, taverns and inns, went from version 1.0 to 1.5.1 in a month. Here is what changed, what it costs…<br />
       <a href="https://matthummel.com/wordpress-restaurant-theme-cobble-candle-1-5/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/should-you-still-learn-to-code-in-2026-what-ai-changed-and-what-it-didnt/"><img src="https://matthummel.com/wp-content/uploads/2026/10/should-you-still-learn-to-code-in-2026-768x403.webp" alt="Should you still learn to code in 2026 graphic: short answer yes, with a checklist to learn deeply (reading code, debugging, security basics, how the web works, writing clear specs) and the rule &quot;write first, then ask AI&quot;" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/should-you-still-learn-to-code-in-2026-what-ai-changed-and-what-it-didnt/">Should You Still Learn to Code in 2026? What AI Changed (and What It Didn’t)</a></strong><br />
-      <sub>Oct 24, 2026</sub><br />
-      Yes, you should still learn to code in 2026. But the reason changed: AI writes the code, and it doesn’t know when it’s wrong. Here’s what the research says to focus on.<br />
-      <a href="https://matthummel.com/should-you-still-learn-to-code-in-2026-what-ai-changed-and-what-it-didnt/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -222,9 +222,9 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #497](https://github.com/matthummel-pa/matthummel-theme/pull/497) — Resources: tool list matches what ships, plainer copy (3.55.2–3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | ✅ [Merged PR #496](https://github.com/matthummel-pa/matthummel-theme/pull/496) — fix: Cobble & Candle product page speaks to buyers (3.55.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/507fc692a43fc721dda250e7a27e8ec21d5b8838) — Resources: tool list matches what ships, plainer copy (3.55.2–3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | ✅ [Merged PR #497](https://github.com/matthummel-pa/matthummel-theme/pull/497) — Resources: tool list matches what ships, plainer copy (3.55.2–3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
+| | ✅ [Merged PR #496](https://github.com/matthummel-pa/matthummel-theme/pull/496) — fix: Cobble & Candle product page speaks to buyers (3.55.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/507fc692a43fc721dda250e7a27e8ec21d5b8838) — Resources: tool list matches what ships, plainer copy (3.55.2–3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
 | | ✅ [Merged PR #495](https://github.com/matthummel-pa/matthummel-theme/pull/495) — feat(home): brand signup card under the post grid (3.55.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 | | ✅ [Merged PR #494](https://github.com/matthummel-pa/matthummel-theme/pull/494) — feat(home): spinning frame on the hero theme card (3.54.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 | | ✅ [Merged PR #493](https://github.com/matthummel-pa/matthummel-theme/pull/493) — feat(about): spinning photo ring and card gradient (3.53.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 9h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 10h |
 | **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 2d |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 11d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 5w |
