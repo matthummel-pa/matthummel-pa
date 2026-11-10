@@ -222,9 +222,9 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #497](https://github.com/matthummel-pa/matthummel-theme/pull/497) — Resources: tool list matches what ships, plainer copy (3.55.2–3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
-| | ✅ [Merged PR #496](https://github.com/matthummel-pa/matthummel-theme/pull/496) — fix: Cobble & Candle product page speaks to buyers (3.55.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/507fc692a43fc721dda250e7a27e8ec21d5b8838) — Resources: tool list matches what ships, plainer copy (3.55.2–3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
+| | ✅ [Merged PR #497](https://github.com/matthummel-pa/matthummel-theme/pull/497) — Resources: tool list matches what ships, plainer copy (3.55.2–3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
+| | ✅ [Merged PR #496](https://github.com/matthummel-pa/matthummel-theme/pull/496) — fix: Cobble & Candle product page speaks to buyers (3.55.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/507fc692a43fc721dda250e7a27e8ec21d5b8838) — Resources: tool list matches what ships, plainer copy (3.55.2–3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
 | | ✅ [Merged PR #495](https://github.com/matthummel-pa/matthummel-theme/pull/495) — feat(home): brand signup card under the post grid (3.55.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
 | | ✅ [Merged PR #494](https://github.com/matthummel-pa/matthummel-theme/pull/494) — feat(home): spinning frame on the hero theme card (3.54.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
 | | ✅ [Merged PR #493](https://github.com/matthummel-pa/matthummel-theme/pull/493) — feat(about): spinning photo ring and card gradient (3.53.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 16h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 17h |
 | **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 2d |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 11d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 5w |
