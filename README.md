@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1873 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1865 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,873 contributions in 90 days · 1,976 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,865 contributions in 90 days · 1,980 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #498](https://github.com/matthummel-pa/matthummel-theme/pull/498) — feat(design): page polish, green-to-blue edges and easier readi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11m |
-| | ✅ [Merged PR #5](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/5) — docs: Theme Settings reference with screenshots; catch up with … | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/1f7ed51f3461a9578fe8a5b52a13f84a5ea4608b) — feat(design): page polish, green-to-blue edges and easier readi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11m |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/20a9fc5a0f6dec28a5495fffae45b63f5f43fde6) — docs: Theme Settings reference with screenshots; catch up with … | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 1h |
-| | ✅ [Merged PR #497](https://github.com/matthummel-pa/matthummel-theme/pull/497) — Resources: tool list matches what ships, plainer copy (3.55.2–3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 20h |
-| | ✅ [Merged PR #496](https://github.com/matthummel-pa/matthummel-theme/pull/496) — fix: Cobble & Candle product page speaks to buyers (3.55.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 20h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/507fc692a43fc721dda250e7a27e8ec21d5b8838) — Resources: tool list matches what ships, plainer copy (3.55.2–3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 20h |
-| | ✅ [Merged PR #495](https://github.com/matthummel-pa/matthummel-theme/pull/495) — feat(home): brand signup card under the post grid (3.55.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | ✅ [Merged PR #494](https://github.com/matthummel-pa/matthummel-theme/pull/494) — feat(home): spinning frame on the hero theme card (3.54.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/3a5da9d4ef358bce4b128635ee441f9f503d6562) — feat(about): spinning photo ring and card gradient (3.53.0) (#4… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a101446fdfb9fa8399c361c390a88e37925221c5) — feat(about): profile photo card with gradient ring and social i… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
+| | 🔀 [Opened PR #500](https://github.com/matthummel-pa/matthummel-theme/pull/500) — feat(projects): Home-style hero, commercial video, shorter read… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3m |
+| | ✅ [Merged PR #499](https://github.com/matthummel-pa/matthummel-theme/pull/499) — feat(ui): motion pass with sliding nav indicators (3.57.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #415](https://github.com/matthummel-pa/matthummel-theme/pull/415) — fix(ui): remove the pause button and the bar under hero titles … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #498](https://github.com/matthummel-pa/matthummel-theme/pull/498) — feat(design): page polish, green-to-blue edges and easier readi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #5](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/pull/5) — docs: Theme Settings reference with screenshots; catch up with … | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a0365c91c5dd4ccda2a42e534af2a8972c227794) — fix(ui): remove the pause button and the bar under hero titles … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/1f7ed51f3461a9578fe8a5b52a13f84a5ea4608b) — feat(design): page polish, green-to-blue edges and easier readi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/20a9fc5a0f6dec28a5495fffae45b63f5f43fde6) — docs: Theme Settings reference with screenshots; catch up with … | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 3h |
+| | ✅ [Merged PR #497](https://github.com/matthummel-pa/matthummel-theme/pull/497) — Resources: tool list matches what ships, plainer copy (3.55.2–3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/507fc692a43fc721dda250e7a27e8ec21d5b8838) — Resources: tool list matches what ships, plainer copy (3.55.2–3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ef8248cafb1d05469597aa8a1ef5f35a2d316892) — fix: Cobble & Candle product page speaks to buyers (3.55.1) (#4… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 11m |
-| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 1h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 3m |
+| **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 3h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 11d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 5w |
 <!--END_SECTION:pushed-->
