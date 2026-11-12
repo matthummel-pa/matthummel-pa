@@ -222,7 +222,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #10](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/10) — Make this the Cursor playbook (1.5.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4h |
+| | 🔀 [Opened PR #10](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/10) — Make this the Cursor playbook (1.5.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 5h |
 | | ✅ [Merged PR #500](https://github.com/matthummel-pa/matthummel-theme/pull/500) — feat(projects): Home-style hero, commercial video, shorter read… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 | | ✅ [Merged PR #499](https://github.com/matthummel-pa/matthummel-theme/pull/499) — feat(ui): motion pass with sliding nav indicators (3.57.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 | | ✅ [Merged PR #415](https://github.com/matthummel-pa/matthummel-theme/pull/415) — fix(ui): remove the pause button and the bar under hero titles … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 4h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 5h |
 | **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 1d |
 | **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 1d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 5w |
