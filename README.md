@@ -222,7 +222,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #12](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/12) — Local WordPress work runs on the PC (1.6.1) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 35h |
+| | 🔀 [Opened PR #12](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/12) — Local WordPress work runs on the PC (1.6.1) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 1d |
 | | ✅ [Merged PR #11](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/11) — WordPress cloud toolchain and live SSH theme baseline (1.6.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 1d |
 | | 🔀 [Opened PR #501](https://github.com/matthummel-pa/matthummel-theme/pull/501) — Deploy matthummel.com over SSH instead of a staging zip | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 | | ✅ [Merged PR #10](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/10) — Make this the Cursor playbook (1.5.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 1d |
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 35h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 1d |
 | **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 1d |
 | **[wp-cobbleandcandle-docs](https://github.com/matthummel-pa/wp-cobbleandcandle-docs)** — Documentation and support guides for the Cobble & Candle WordPress theme | Code · ★0 | 3d |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 5w |
