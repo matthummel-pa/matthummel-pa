@@ -222,7 +222,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 5h |
+| | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 6h |
 | | 🔀 [Opened PR #12](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/12) — Local WordPress work runs on the PC (1.6.1) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
 | | ✅ [Merged PR #11](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/11) — WordPress cloud toolchain and live SSH theme baseline (1.6.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
 | | 🔀 [Opened PR #501](https://github.com/matthummel-pa/matthummel-theme/pull/501) — Deploy matthummel.com over SSH instead of a staging zip | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
@@ -233,7 +233,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2e7ecb61f54e6497bd7042d4f801f6370d72e721) — feat(projects): Home-style hero, commercial video, shorter read… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a0365c91c5dd4ccda2a42e534af2a8972c227794) — fix(ui): remove the pause button and the bar under hero titles … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/1f7ed51f3461a9578fe8a5b52a13f84a5ea4608b) — feat(design): page polish, green-to-blue edges and easier readi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/20a9fc5a0f6dec28a5495fffae45b63f5f43fde6) — docs: Theme Settings reference with screenshots; catch up with … | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 5d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/20a9fc5a0f6dec28a5495fffae45b63f5f43fde6) — docs: Theme Settings reference with screenshots; catch up with … | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 6d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -241,10 +241,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[keepary](https://github.com/matthummel-pa/keepary)** — Keepary is a personal experiment, not a commercial product. I built it as a hands-on wa… | JavaScript · ★4 | just now |
-| **[repofolio](https://github.com/matthummel-pa/repofolio)** — Turn your GitHub repos and website projects into a living portfolio for WordPress. OAut… | PHP · ★0 | just now |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | just now |
-| **[wp-acreline](https://github.com/matthummel-pa/wp-acreline)** — Acreline is a WordPress theme for farms, land, and historic homes — searchable listings… | PHP · ★0 | just now |
+| **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★2 | 58m |
+| **[keepary](https://github.com/matthummel-pa/keepary)** — Keepary is a personal experiment, not a commercial product. I built it as a hands-on wa… | JavaScript · ★4 | 1h |
+| **[repofolio](https://github.com/matthummel-pa/repofolio)** — Turn your GitHub repos and website projects into a living portfolio for WordPress. OAut… | PHP · ★0 | 1h |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | 1h |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
