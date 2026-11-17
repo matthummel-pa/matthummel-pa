@@ -222,8 +222,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 10h |
-| | 🔀 [Opened PR #12](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/12) — Local WordPress work runs on the PC (1.6.1) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 3d |
+| | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 11h |
+| | 🔀 [Opened PR #12](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/12) — Local WordPress work runs on the PC (1.6.1) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
 | | ✅ [Merged PR #11](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/11) — WordPress cloud toolchain and live SSH theme baseline (1.6.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
 | | 🔀 [Opened PR #501](https://github.com/matthummel-pa/matthummel-theme/pull/501) — Deploy matthummel.com over SSH instead of a staging zip | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | ✅ [Merged PR #10](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/10) — Make this the Cursor playbook (1.5.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
@@ -241,10 +241,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★2 | 5h |
-| **[keepary](https://github.com/matthummel-pa/keepary)** — Keepary is a personal experiment, not a commercial product. I built it as a hands-on wa… | JavaScript · ★4 | 5h |
-| **[repofolio](https://github.com/matthummel-pa/repofolio)** — Turn your GitHub repos and website projects into a living portfolio for WordPress. OAut… | PHP · ★0 | 5h |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | 5h |
+| **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★2 | 6h |
+| **[keepary](https://github.com/matthummel-pa/keepary)** — Keepary is a personal experiment, not a commercial product. I built it as a hands-on wa… | JavaScript · ★4 | 6h |
+| **[repofolio](https://github.com/matthummel-pa/repofolio)** — Turn your GitHub repos and website projects into a living portfolio for WordPress. OAut… | PHP · ★0 | 6h |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | 6h |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
