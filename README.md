@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/restaurant-website-seo-10-fixes-to-make-before-buying-ads/"><img src="https://matthummel.com/wp-content/uploads/2026/11/illustration-of-a-restaurant-website-showing-a-readable-menu-768x512.jpg" alt="Illustration of a restaurant website showing a readable menu, opening hours and reservation button beside the words Restaurant Website SEO" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/restaurant-website-seo-10-fixes-to-make-before-buying-ads/">Restaurant Website SEO: 10 Fixes to Make Before Buying Ads</a></strong><br />
+      <sub>Nov 17, 2026</sub><br />
+      Before paying for restaurant ads, fix these ten website SEO basics: menus, locations, mobile usability, structured data and booking links.<br />
+      <a href="https://matthummel.com/restaurant-website-seo-10-fixes-to-make-before-buying-ads/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/gutenberg-24-4-wordpress-editing/"><img src="https://matthummel.com/wp-content/uploads/2026/11/editorial-illustration-of-easier-wordpress-editing-in-gutenb-768x512.jpg" alt="Editorial illustration of easier WordPress editing in Gutenberg 24.4 with a simplified editor panel" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/gutenberg-24-4-wordpress-editing/">Gutenberg 24.4: WordPress Is Making Everyday Editing a Little Easier</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Nov 10, 2026</sub><br />
       WordPress 7.2 Beta 2 came out October 27, 2026. It’s a testing release, not an update for live sites. Here’s what changed in the Abilities API, DataViews and the admin, and what to test…<br />
       <a href="https://matthummel.com/wordpress-7-2-beta-2/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-developer-monthly-update-october-2026/"><img src="https://matthummel.com/wp-content/uploads/2026/11/wordpress-developer-monthly-update-october-2026-v2-768x403.webp" alt="Dark navy graphic reading &quot;What I worked on in October&quot; for a WordPress developer monthly update, with chips for 1 theme for sale, 8 posts and 300+ commits" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/wordpress-developer-monthly-update-october-2026/">What I Worked On in October 2026: A Theme Shop, a Site Rebuild and 300 Commits</a></strong><br />
-      <sub>Nov 8, 2026</sub><br />
-      October was the month matthummel.com became a shop. My first theme went on sale, I kept updating the site, eight posts went out, and more than 300 commits landed across four public repos.…<br />
-      <a href="https://matthummel.com/wordpress-developer-monthly-update-october-2026/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1799 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1801 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,799 contributions in 90 days · 2,020 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,801 contributions in 90 days · 2,022 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,18 +222,18 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 25h |
+| | ✅ [Merged PR #13](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/13) — Cursor/cursor environments 87d9 | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 43m |
+| | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 26h |
 | | 🔀 [Opened PR #12](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/12) — Local WordPress work runs on the PC (1.6.1) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
 | | ✅ [Merged PR #11](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/11) — WordPress cloud toolchain and live SSH theme baseline (1.6.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
 | | 🔀 [Opened PR #501](https://github.com/matthummel-pa/matthummel-theme/pull/501) — Deploy matthummel.com over SSH instead of a staging zip | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | ✅ [Merged PR #10](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/10) — Make this the Cursor playbook (1.5.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/20954e12d0f08dc21a14b3dc2fd0e3fc0e1a392d) — feat: add WordPress cloud toolchain and credit-saving skills (1… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
 | | ✅ [Merged PR #500](https://github.com/matthummel-pa/matthummel-theme/pull/500) — feat(projects): Home-style hero, commercial video, shorter read… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
-| | ✅ [Merged PR #499](https://github.com/matthummel-pa/matthummel-theme/pull/499) — feat(ui): motion pass with sliding nav indicators (3.57.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2e7ecb61f54e6497bd7042d4f801f6370d72e721) — feat(projects): Home-style hero, commercial video, shorter read… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/63fe5477cdae877bcb02efab504a461cfa4f6d9c) — feat(ui): motion pass with sliding nav indicators (3.57.0) (#49… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a0365c91c5dd4ccda2a42e534af2a8972c227794) — fix(ui): remove the pause button and the bar under hero titles … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/1f7ed51f3461a9578fe8a5b52a13f84a5ea4608b) — feat(design): page polish, green-to-blue edges and easier readi… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-cobbleandcandle-docs/commit/20a9fc5a0f6dec28a5495fffae45b63f5f43fde6) — docs: Theme Settings reference with screenshots; catch up with … | [`wp-cobbleandcandle-docs`](https://github.com/matthummel-pa/wp-cobbleandcandle-docs) | 6d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -241,10 +241,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★2 | 19h |
-| **[keepary](https://github.com/matthummel-pa/keepary)** — Keepary is a personal experiment, not a commercial product. I built it as a hands-on wa… | JavaScript · ★4 | 20h |
-| **[repofolio](https://github.com/matthummel-pa/repofolio)** — Turn your GitHub repos and website projects into a living portfolio for WordPress. OAut… | PHP · ★0 | 20h |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | 20h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 4m |
+| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 4m |
+| **[wp-acreline](https://github.com/matthummel-pa/wp-acreline)** — Acreline is a WordPress theme for farms, land, and historic homes — searchable listings… | PHP · ★0 | 4m |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | 5m |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
