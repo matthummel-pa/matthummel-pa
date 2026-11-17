@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/gutenberg-24-4-wordpress-editing/"><img src="https://matthummel.com/wp-content/uploads/2026/11/editorial-illustration-of-easier-wordpress-editing-in-gutenb-768x512.jpg" alt="Editorial illustration of easier WordPress editing in Gutenberg 24.4 with a simplified editor panel" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/gutenberg-24-4-wordpress-editing/">Gutenberg 24.4: WordPress Is Making Everyday Editing a Little Easier</a></strong><br />
+      <sub>Nov 17, 2026</sub><br />
+      Gutenberg 24.4 improves Notes, editor performance and content-only editing. Here’s what WordPress developers should test before relying on the changes.<br />
+      <a href="https://matthummel.com/gutenberg-24-4-wordpress-editing/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2-rc1/"><img src="https://matthummel.com/wp-content/uploads/2026/11/wordpress-7-2-rc-1-field-guide-768x403.webp" alt="WordPress 7.2 RC 1 graphic, due November 17, 2026: the 7.2 field guide, hard string freeze, 7.2 branch created, RC 2 on November 24, final release December 8" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/wordpress-7-2-rc1/">WordPress 7.2 RC1: Field Guide and What to Test</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Nov 8, 2026</sub><br />
       October was the month matthummel.com became a shop. My first theme went on sale, I kept updating the site, eight posts went out, and more than 300 commits landed across four public repos.…<br />
       <a href="https://matthummel.com/wordpress-developer-monthly-update-october-2026/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-restaurant-theme-cobble-candle-1-5/"><img src="https://matthummel.com/wp-content/uploads/2026/11/cobble-candle-1-5-wordpress-restaurant-theme-768x403.webp" alt="Dark navy graphic reading &quot;A WordPress restaurant theme, now for sale&quot; with a Cobble &amp; Candle 1.5 eyebrow and chips for 33 blocks, 4 styles and WCAG 2.2 AA tested" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/wordpress-restaurant-theme-cobble-candle-1-5/">Cobble &amp; Candle 1.5: My WordPress Restaurant Theme Is Now for Sale</a></strong><br />
-      <sub>Nov 8, 2026</sub><br />
-      I now sell WordPress themes on matthummel.com. Cobble &amp; Candle, my theme for restaurants, taverns and inns, went from version 1.0 to 1.5.1 in a month. Here is what changed, what it costs…<br />
-      <a href="https://matthummel.com/wordpress-restaurant-theme-cobble-candle-1-5/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -222,7 +222,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 11h |
+| | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 12h |
 | | 🔀 [Opened PR #12](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/12) — Local WordPress work runs on the PC (1.6.1) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
 | | ✅ [Merged PR #11](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/11) — WordPress cloud toolchain and live SSH theme baseline (1.6.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
 | | 🔀 [Opened PR #501](https://github.com/matthummel-pa/matthummel-theme/pull/501) — Deploy matthummel.com over SSH instead of a staging zip | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
@@ -241,10 +241,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★2 | 6h |
-| **[keepary](https://github.com/matthummel-pa/keepary)** — Keepary is a personal experiment, not a commercial product. I built it as a hands-on wa… | JavaScript · ★4 | 6h |
-| **[repofolio](https://github.com/matthummel-pa/repofolio)** — Turn your GitHub repos and website projects into a living portfolio for WordPress. OAut… | PHP · ★0 | 6h |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | 6h |
+| **[wp-walkridge](https://github.com/matthummel-pa/wp-walkridge)** — WalkRidge is a custom WordPress theme for walking and historical home tours. Clean perf… | PHP · ★2 | 7h |
+| **[keepary](https://github.com/matthummel-pa/keepary)** — Keepary is a personal experiment, not a commercial product. I built it as a hands-on wa… | JavaScript · ★4 | 7h |
+| **[repofolio](https://github.com/matthummel-pa/repofolio)** — Turn your GitHub repos and website projects into a living portfolio for WordPress. OAut… | PHP · ★0 | 7h |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | 7h |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
