@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1746 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1499 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,746 contributions in 90 days · 2,031 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,499 contributions in 90 days · 1,784 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,18 +222,18 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ❎ [Closed PR #505](https://github.com/matthummel-pa/matthummel-theme/pull/505) — Name logo in the illustration gradient (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #506](https://github.com/matthummel-pa/matthummel-theme/pull/506) — Brand the checkout and keep the type readable (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2336fa5779b0eb38a2b848bfd29a5ab73a9a03fc) — Brand the checkout and keep the type readable (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #504](https://github.com/matthummel-pa/matthummel-theme/pull/504) — Keep the payment recovery script from being delayed | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
-| | ✅ [Merged PR #503](https://github.com/matthummel-pa/matthummel-theme/pull/503) — Stop the payment recovery page from hanging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 12h |
-| | ✅ [Merged PR #502](https://github.com/matthummel-pa/matthummel-theme/pull/502) — Freemius checkout skin and payment recovery template | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
-| | ✅ [Merged PR #13](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/13) — Cursor/cursor environments 87d9 | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 25h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/337c29eecb0466992a1fb65a39003cea3ac996db) — Say the screenshot files are not in this repo yet. | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 12m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/d9de9c9fa2d2ac288508d76a8e5dcf32e0fb42cb) — Keep the docs README from linking screenshots that are not in t… | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 14m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/18be43d51c89603cb26ee2dd029f16118b536568) — Note where the concept demo screenshots belong. | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 15m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/491805185f4b34a7034f7c22aafcb5307615240b) — Restore the owner guide and keep the screenshot table at the to… | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 15m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/62ba6b7f6bc83092bb3c5e446ff2dbec83c0a4b5) — Show the concept demo screenshots at the top of the README. | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 15m |
+| | ❎ [Closed PR #505](https://github.com/matthummel-pa/matthummel-theme/pull/505) — Name logo in the illustration gradient (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #506](https://github.com/matthummel-pa/matthummel-theme/pull/506) — Brand the checkout and keep the type readable (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #504](https://github.com/matthummel-pa/matthummel-theme/pull/504) — Keep the payment recovery script from being delayed | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 12h |
+| | ✅ [Merged PR #503](https://github.com/matthummel-pa/matthummel-theme/pull/503) — Stop the payment recovery page from hanging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
+| | ✅ [Merged PR #502](https://github.com/matthummel-pa/matthummel-theme/pull/502) — Freemius checkout skin and payment recovery template | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 14h |
+| | ✅ [Merged PR #13](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/13) — Cursor/cursor environments 87d9 | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 26h |
 | | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 2d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/20954e12d0f08dc21a14b3dc2fd0e3fc0e1a392d) — feat: add WordPress cloud toolchain and credit-saving skills (1… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 5d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2e7ecb61f54e6497bd7042d4f801f6370d72e721) — feat(projects): Home-style hero, commercial video, shorter read… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/63fe5477cdae877bcb02efab504a461cfa4f6d9c) — feat(ui): motion pass with sliding nav indicators (3.57.0) (#49… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a0365c91c5dd4ccda2a42e534af2a8972c227794) — fix(ui): remove the pause button and the bar under hero titles … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -241,10 +241,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 2h |
-| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 24h |
-| **[wp-acreline](https://github.com/matthummel-pa/wp-acreline)** — Acreline is a WordPress theme for farms, land, and historic homes — searchable listings… | PHP · ★0 | 24h |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | 24h |
+| **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 12m |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 13m |
+| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 26h |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | 26h |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
