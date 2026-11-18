@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/337c29eecb0466992a1fb65a39003cea3ac996db) — Say the screenshot files are not in this repo yet. | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/d9de9c9fa2d2ac288508d76a8e5dcf32e0fb42cb) — Keep the docs README from linking screenshots that are not in t… | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/18be43d51c89603cb26ee2dd029f16118b536568) — Note where the concept demo screenshots belong. | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/491805185f4b34a7034f7c22aafcb5307615240b) — Restore the owner guide and keep the screenshot table at the to… | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/62ba6b7f6bc83092bb3c5e446ff2dbec83c0a4b5) — Show the concept demo screenshots at the top of the README. | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 2h |
-| | ❎ [Closed PR #505](https://github.com/matthummel-pa/matthummel-theme/pull/505) — Name logo in the illustration gradient (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #506](https://github.com/matthummel-pa/matthummel-theme/pull/506) — Brand the checkout and keep the type readable (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #504](https://github.com/matthummel-pa/matthummel-theme/pull/504) — Keep the payment recovery script from being delayed | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 14h |
-| | ✅ [Merged PR #503](https://github.com/matthummel-pa/matthummel-theme/pull/503) — Stop the payment recovery page from hanging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
-| | ✅ [Merged PR #502](https://github.com/matthummel-pa/matthummel-theme/pull/502) — Freemius checkout skin and payment recovery template | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
-| | ✅ [Merged PR #13](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/13) — Cursor/cursor environments 87d9 | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 28h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/337c29eecb0466992a1fb65a39003cea3ac996db) — Say the screenshot files are not in this repo yet. | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/d9de9c9fa2d2ac288508d76a8e5dcf32e0fb42cb) — Keep the docs README from linking screenshots that are not in t… | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/18be43d51c89603cb26ee2dd029f16118b536568) — Note where the concept demo screenshots belong. | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/491805185f4b34a7034f7c22aafcb5307615240b) — Restore the owner guide and keep the screenshot table at the to… | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-acreline-docs/commit/62ba6b7f6bc83092bb3c5e446ff2dbec83c0a4b5) — Show the concept demo screenshots at the top of the README. | [`wp-acreline-docs`](https://github.com/matthummel-pa/wp-acreline-docs) | 3h |
+| | ❎ [Closed PR #505](https://github.com/matthummel-pa/matthummel-theme/pull/505) — Name logo in the illustration gradient (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
+| | ✅ [Merged PR #506](https://github.com/matthummel-pa/matthummel-theme/pull/506) — Brand the checkout and keep the type readable (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
+| | ✅ [Merged PR #504](https://github.com/matthummel-pa/matthummel-theme/pull/504) — Keep the payment recovery script from being delayed | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
+| | ✅ [Merged PR #503](https://github.com/matthummel-pa/matthummel-theme/pull/503) — Stop the payment recovery page from hanging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
+| | ✅ [Merged PR #502](https://github.com/matthummel-pa/matthummel-theme/pull/502) — Freemius checkout skin and payment recovery template | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
+| | ✅ [Merged PR #13](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/13) — Cursor/cursor environments 87d9 | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 29h |
 | | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 2d |
 <!--END_SECTION:activity-->
 
@@ -241,10 +241,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 2h |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 2h |
-| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 28h |
-| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | 28h |
+| **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 3h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 3h |
+| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 29h |
+| **[tocguide](https://github.com/matthummel-pa/tocguide)** — Lightweight, server-rendered Table of Contents block for Gutenberg. TOCguide builds an … | PHP · ★2 | 29h |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
