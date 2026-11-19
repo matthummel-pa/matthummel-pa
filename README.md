@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/3h04/"><img src="https://matthummel.com/wp-content/uploads/2026/11/https3A2F2Fdev-to-uploads.s3.us-east-2.amazonaws.com2Fuploads2Farticles2Fd8g88vqorx2on04nqzu2-768x401.webp" alt="[Boost]" width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/3h04/">[Boost]</a></strong><br />
+      <sub>Nov 18, 2026</sub><br />
+      AI is getting better. Here is my plan to stay ahead. A software engineer’s T-shaped…<br />
+      <a href="https://matthummel.com/3h04/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/restaurant-website-seo-10-fixes-to-make-before-buying-ads/"><img src="https://matthummel.com/wp-content/uploads/2026/11/illustration-of-a-restaurant-website-showing-a-readable-menu-768x512.jpg" alt="Illustration of a restaurant website showing a readable menu, opening hours and reservation button beside the words Restaurant Website SEO" width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/restaurant-website-seo-10-fixes-to-make-before-buying-ads/">Restaurant Website SEO: 10 Fixes to Make Before Buying Ads</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Nov 10, 2026</sub><br />
       WordPress 7.2 Beta 3 came out October 28, 2026, inside the WordPress 7.1.4 security release. Here’s what 7.1.4 fixed, what to test, and the updated 7.2 schedule.<br />
       <a href="https://matthummel.com/wordpress-7-2-beta-3/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2-beta-2/"><img src="https://matthummel.com/wp-content/uploads/2026/11/wordpress-7-2-beta-2-what-changed-768x403.webp" alt="WordPress 7.2 Beta 2 graphic, out October 27, 2026: test Abilities API required_capabilities, DataViews and DataForm in PHP, REST API flexibility and admin asset loading before the December 8 final release" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/wordpress-7-2-beta-2/">WordPress 7.2 Beta 2: What Changed for Developers</a></strong><br />
-      <sub>Nov 10, 2026</sub><br />
-      WordPress 7.2 Beta 2 came out October 27, 2026. It’s a testing release, not an update for live sites. Here’s what changed in the Abilities API, DataViews and the admin, and what to test…<br />
-      <a href="https://matthummel.com/wordpress-7-2-beta-2/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #507](https://github.com/matthummel-pa/matthummel-theme/pull/507) — Add Cobble & Candle demo guidance and setup link | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/effd6beba4b47798ec89cf9feaa049de11758777) — Add the third part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/a7514e560804e07e8f687341fdcf0181cab5039e) — Add the second part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/2f8dfac5f5002e5b9e165817dd566356c82b5945) — Add the first part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/e47345b74b8e5b0d314845abd95d49eae8f73269) — Replace the placeholder screen with a real class stub while the… | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/3ce812bbb2661262a6f068ea3a8887d621715d30) — Add the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 1h |
-| | ❎ [Closed PR #505](https://github.com/matthummel-pa/matthummel-theme/pull/505) — Name logo in the illustration gradient (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | ✅ [Merged PR #506](https://github.com/matthummel-pa/matthummel-theme/pull/506) — Brand the checkout and keep the type readable (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | ✅ [Merged PR #504](https://github.com/matthummel-pa/matthummel-theme/pull/504) — Keep the payment recovery script from being delayed | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 19h |
-| | ✅ [Merged PR #503](https://github.com/matthummel-pa/matthummel-theme/pull/503) — Stop the payment recovery page from hanging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 20h |
-| | ✅ [Merged PR #502](https://github.com/matthummel-pa/matthummel-theme/pull/502) — Freemius checkout skin and payment recovery template | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
+| | ✅ [Merged PR #507](https://github.com/matthummel-pa/matthummel-theme/pull/507) — Add Cobble & Candle demo guidance and setup link | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/effd6beba4b47798ec89cf9feaa049de11758777) — Add the third part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/a7514e560804e07e8f687341fdcf0181cab5039e) — Add the second part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/2f8dfac5f5002e5b9e165817dd566356c82b5945) — Add the first part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/e47345b74b8e5b0d314845abd95d49eae8f73269) — Replace the placeholder screen with a real class stub while the… | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/3ce812bbb2661262a6f068ea3a8887d621715d30) — Add the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 2h |
+| | ❎ [Closed PR #505](https://github.com/matthummel-pa/matthummel-theme/pull/505) — Name logo in the illustration gradient (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | ✅ [Merged PR #506](https://github.com/matthummel-pa/matthummel-theme/pull/506) — Brand the checkout and keep the type readable (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | ✅ [Merged PR #504](https://github.com/matthummel-pa/matthummel-theme/pull/504) — Keep the payment recovery script from being delayed | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 20h |
+| | ✅ [Merged PR #503](https://github.com/matthummel-pa/matthummel-theme/pull/503) — Stop the payment recovery page from hanging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
+| | ✅ [Merged PR #502](https://github.com/matthummel-pa/matthummel-theme/pull/502) — Freemius checkout skin and payment recovery template | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
 | | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 2d |
 <!--END_SECTION:activity-->
 
@@ -241,10 +241,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 1h |
-| **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★0 | 1h |
-| **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 7h |
-| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 33h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 2h |
+| **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★0 | 2h |
+| **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 8h |
+| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 34h |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
