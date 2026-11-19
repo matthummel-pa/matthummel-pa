@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #507](https://github.com/matthummel-pa/matthummel-theme/pull/507) — Add Cobble & Candle demo guidance and setup link | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/effd6beba4b47798ec89cf9feaa049de11758777) — Add the third part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/a7514e560804e07e8f687341fdcf0181cab5039e) — Add the second part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/2f8dfac5f5002e5b9e165817dd566356c82b5945) — Add the first part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/e47345b74b8e5b0d314845abd95d49eae8f73269) — Replace the placeholder screen with a real class stub while the… | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 3h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/3ce812bbb2661262a6f068ea3a8887d621715d30) — Add the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 3h |
-| | ❎ [Closed PR #505](https://github.com/matthummel-pa/matthummel-theme/pull/505) — Name logo in the illustration gradient (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 12h |
-| | ✅ [Merged PR #506](https://github.com/matthummel-pa/matthummel-theme/pull/506) — Brand the checkout and keep the type readable (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 12h |
-| | ✅ [Merged PR #504](https://github.com/matthummel-pa/matthummel-theme/pull/504) — Keep the payment recovery script from being delayed | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
-| | ✅ [Merged PR #503](https://github.com/matthummel-pa/matthummel-theme/pull/503) — Stop the payment recovery page from hanging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
-| | ✅ [Merged PR #502](https://github.com/matthummel-pa/matthummel-theme/pull/502) — Freemius checkout skin and payment recovery template | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 23h |
+| | ✅ [Merged PR #507](https://github.com/matthummel-pa/matthummel-theme/pull/507) — Add Cobble & Candle demo guidance and setup link | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/effd6beba4b47798ec89cf9feaa049de11758777) — Add the third part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/a7514e560804e07e8f687341fdcf0181cab5039e) — Add the second part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/2f8dfac5f5002e5b9e165817dd566356c82b5945) — Add the first part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/e47345b74b8e5b0d314845abd95d49eae8f73269) — Replace the placeholder screen with a real class stub while the… | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/3ce812bbb2661262a6f068ea3a8887d621715d30) — Add the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 5h |
+| | ❎ [Closed PR #505](https://github.com/matthummel-pa/matthummel-theme/pull/505) — Name logo in the illustration gradient (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
+| | ✅ [Merged PR #506](https://github.com/matthummel-pa/matthummel-theme/pull/506) — Brand the checkout and keep the type readable (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
+| | ✅ [Merged PR #504](https://github.com/matthummel-pa/matthummel-theme/pull/504) — Keep the payment recovery script from being delayed | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
+| | ✅ [Merged PR #503](https://github.com/matthummel-pa/matthummel-theme/pull/503) — Stop the payment recovery page from hanging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24h |
+| | ✅ [Merged PR #502](https://github.com/matthummel-pa/matthummel-theme/pull/502) — Freemius checkout skin and payment recovery template | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 24h |
 | | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 2d |
 <!--END_SECTION:activity-->
 
@@ -241,10 +241,10 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 3h |
-| **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★1 | 3h |
-| **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 9h |
-| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 35h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 4h |
+| **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★1 | 4h |
+| **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 10h |
+| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 1d |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
