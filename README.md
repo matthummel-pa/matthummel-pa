@@ -233,7 +233,6 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 | | ✅ [Merged PR #504](https://github.com/matthummel-pa/matthummel-theme/pull/504) — Keep the payment recovery script from being delayed | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
 | | ✅ [Merged PR #503](https://github.com/matthummel-pa/matthummel-theme/pull/503) — Stop the payment recovery page from hanging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
 | | ✅ [Merged PR #502](https://github.com/matthummel-pa/matthummel-theme/pull/502) — Freemius checkout skin and payment recovery template | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2d |
-| | ⭐ [Starred](https://github.com/WordPress/agent-skills) — WordPress/agent-skills | [`agent-skills`](https://github.com/WordPress/agent-skills) | 4d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -244,7 +243,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 | **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 1d |
 | **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★1 | 1d |
 | **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 1d |
-| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2d |
+| **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 3d |
 <!--END_SECTION:pushed-->
 
 <p align="center"><sub>Full calendar, badges, and repo cards: <a href="https://matthummel.com/code/">matthummel.com/code</a></sub></p>
