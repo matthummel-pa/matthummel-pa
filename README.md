@@ -115,21 +115,21 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-block-themes-vs-page-builders-which-fits-your-business/"><img src="https://matthummel.com/wp-content/uploads/2026/11/block-themes-vs-page-builders-editorial-illustration-showing-768x512.jpg" alt="Block Themes vs. Page Builders. Editorial illustration showing two distinct editor panels, native content blocks and visual layout controls." width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/wordpress-block-themes-vs-page-builders-which-fits-your-business/">WordPress Block Themes vs. Page Builders: Which Fits Your Business?</a></strong><br />
+      <sub>Nov 20, 2026</sub><br />
+      Compare WordPress block themes and page builders, then test the edits your team will make after launch.<br />
+      <a href="https://matthummel.com/wordpress-block-themes-vs-page-builders-which-fits-your-business/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/why-is-my-wordpress-site-slow-seven-problems-to-check-first/"><img src="https://matthummel.com/wp-content/uploads/2026/11/wordpress-speed-checks-153c7e29-768x403.png" alt="Find the slowdown. Seven checks for a slow WordPress site." width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/why-is-my-wordpress-site-slow-seven-problems-to-check-first/">Why Is My WordPress Site Slow? Seven Problems to Check First</a></strong><br />
       <sub>Nov 19, 2026</sub><br />
       Find what’s slowing down your WordPress site with seven checks and a repeatable mobile test.<br />
       <a href="https://matthummel.com/why-is-my-wordpress-site-slow-seven-problems-to-check-first/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/3h04/"><img src="https://matthummel.com/wp-content/uploads/2026/11/https3A2F2Fdev-to-uploads.s3.us-east-2.amazonaws.com2Fuploads2Farticles2Fd8g88vqorx2on04nqzu2-768x401.webp" alt="[Boost]" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/3h04/">[Boost]</a></strong><br />
-      <sub>Nov 18, 2026</sub><br />
-      AI is getting better. Here is my plan to stay ahead. A software engineer’s T-shaped…<br />
-      <a href="https://matthummel.com/3h04/">Read the post →</a>
     </td>
   </tr>
   <tr>
@@ -222,14 +222,14 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #507](https://github.com/matthummel-pa/matthummel-theme/pull/507) — Add Cobble & Candle demo guidance and setup link | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 25h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/effd6beba4b47798ec89cf9feaa049de11758777) — Add the third part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 25h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/a7514e560804e07e8f687341fdcf0181cab5039e) — Add the second part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 25h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/2f8dfac5f5002e5b9e165817dd566356c82b5945) — Add the first part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 25h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/e47345b74b8e5b0d314845abd95d49eae8f73269) — Replace the placeholder screen with a real class stub while the… | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 25h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/3ce812bbb2661262a6f068ea3a8887d621715d30) — Add the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 25h |
-| | ❎ [Closed PR #505](https://github.com/matthummel-pa/matthummel-theme/pull/505) — Name logo in the illustration gradient (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 34h |
-| | ✅ [Merged PR #506](https://github.com/matthummel-pa/matthummel-theme/pull/506) — Brand the checkout and keep the type readable (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 34h |
+| | ✅ [Merged PR #507](https://github.com/matthummel-pa/matthummel-theme/pull/507) — Add Cobble & Candle demo guidance and setup link | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 26h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/effd6beba4b47798ec89cf9feaa049de11758777) — Add the third part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 26h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/a7514e560804e07e8f687341fdcf0181cab5039e) — Add the second part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 26h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/2f8dfac5f5002e5b9e165817dd566356c82b5945) — Add the first part of the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 26h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/e47345b74b8e5b0d314845abd95d49eae8f73269) — Replace the placeholder screen with a real class stub while the… | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 26h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/wp-theme-desk/commit/3ce812bbb2661262a6f068ea3a8887d621715d30) — Add the ticket screen. | [`wp-theme-desk`](https://github.com/matthummel-pa/wp-theme-desk) | 26h |
+| | ❎ [Closed PR #505](https://github.com/matthummel-pa/matthummel-theme/pull/505) — Name logo in the illustration gradient (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 35h |
+| | ✅ [Merged PR #506](https://github.com/matthummel-pa/matthummel-theme/pull/506) — Brand the checkout and keep the type readable (3.58.4) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 35h |
 | | ✅ [Merged PR #504](https://github.com/matthummel-pa/matthummel-theme/pull/504) — Keep the payment recovery script from being delayed | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 | | ✅ [Merged PR #503](https://github.com/matthummel-pa/matthummel-theme/pull/503) — Stop the payment recovery page from hanging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 | | ✅ [Merged PR #502](https://github.com/matthummel-pa/matthummel-theme/pull/502) — Freemius checkout skin and payment recovery template | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
@@ -241,9 +241,9 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 25h |
-| **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★1 | 25h |
-| **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 31h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 26h |
+| **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★1 | 26h |
+| **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 32h |
 | **[wpdemo-dobbinhouse](https://github.com/matthummel-pa/wpdemo-dobbinhouse)** — Public work from Gettysburg. | PHP · ★0 | 2d |
 <!--END_SECTION:pushed-->
 
