@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/how-to-review-ai-generated-wordpress-code-before-it-goes-live/"><img src="https://matthummel.com/wp-content/uploads/2026/11/ai-wordpress-code-review-06b53b4d-768x403.png" alt="Review AI-generated WordPress code. A practical checklist before launch." width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/how-to-review-ai-generated-wordpress-code-before-it-goes-live/">How to Review AI-Generated WordPress Code Before It Goes Live</a></strong><br />
+      <sub>Nov 21, 2026</sub><br />
+      Review AI-generated WordPress code with practical checks for permissions, data handling, accessibility and staging tests.<br />
+      <a href="https://matthummel.com/how-to-review-ai-generated-wordpress-code-before-it-goes-live/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/wordpress-block-themes-vs-page-builders-which-fits-your-business/"><img src="https://matthummel.com/wp-content/uploads/2026/11/block-themes-vs-page-builders-editorial-illustration-showing-768x512.jpg" alt="Block Themes vs. Page Builders. Editorial illustration showing two distinct editor panels, native content blocks and visual layout controls." width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/wordpress-block-themes-vs-page-builders-which-fits-your-business/">WordPress Block Themes vs. Page Builders: Which Fits Your Business?</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Nov 17, 2026</sub><br />
       Gutenberg 24.4 improves Notes, editor performance and content-only editing. Here’s what WordPress developers should test before relying on the changes.<br />
       <a href="https://matthummel.com/gutenberg-24-4-wordpress-editing/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/wordpress-7-2-rc1/"><img src="https://matthummel.com/wp-content/uploads/2026/11/wordpress-7-2-rc-1-field-guide-768x403.webp" alt="WordPress 7.2 RC 1 graphic, due November 17, 2026: the 7.2 field guide, hard string freeze, 7.2 branch created, RC 2 on November 24, final release December 8" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/wordpress-7-2-rc1/">WordPress 7.2 RC1: Field Guide and What to Test</a></strong><br />
-      <sub>Nov 10, 2026</sub><br />
-      WordPress 7.2 Release Candidate 1 is scheduled for November 17, 2026. Here’s what RC1 brings, including the field guide and string freeze, and what developers should test before December 8.<br />
-      <a href="https://matthummel.com/wordpress-7-2-rc1/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #512](https://github.com/matthummel-pa/matthummel-theme/pull/512) — chore: add Mailchimp rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
-| | ✅ [Merged PR #511](https://github.com/matthummel-pa/matthummel-theme/pull/511) — docs(install): page copy lives in the block editor | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | ✅ [Merged PR #510](https://github.com/matthummel-pa/matthummel-theme/pull/510) — refactor(journal): move related posts query into a helper | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | ✅ [Merged PR #509](https://github.com/matthummel-pa/matthummel-theme/pull/509) — chore(ci): keep growth/scripts out of the zip, queue deploys | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
-| | ✅ [Merged PR #508](https://github.com/matthummel-pa/matthummel-theme/pull/508) — Keep the payment recovery page out of search (3.58.5) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | ✅ [Merged PR #10](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/10) — Make this the Cursor playbook (1.5.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 10h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/abdc2cf146596b297a47f2dc644c9a54d26bf9ac) — refactor(journal): move related posts query into mh_related_jou… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/3d356bc5e3b03ee45a27ce920572c3ebed9bb62b) — docs(readme): sync with the repo after the 1.7.0 cleanup (#16) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 10h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/d83445b25b1bd135551151f60b7022f5d9fca4b6) — feat!: remove Cursor support, back to Claude Code only (1.7.0) … | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 10h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/97aaf5f7cdf1e704707e00b7f8376a395f322fb8) — chore: playbook cleanup (1.6.3) (#14) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 11h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/516cf88c11ac31056a8fc5acd5cb10bba0ad7578) — docs(doc-references): add Freemius Help Center (1.4.1) (#9) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 11h |
+| | 🔀 [Opened PR #512](https://github.com/matthummel-pa/matthummel-theme/pull/512) — chore: add Mailchimp rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
+| | ✅ [Merged PR #511](https://github.com/matthummel-pa/matthummel-theme/pull/511) — docs(install): page copy lives in the block editor | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
+| | ✅ [Merged PR #510](https://github.com/matthummel-pa/matthummel-theme/pull/510) — refactor(journal): move related posts query into a helper | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
+| | ✅ [Merged PR #509](https://github.com/matthummel-pa/matthummel-theme/pull/509) — chore(ci): keep growth/scripts out of the zip, queue deploys | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
+| | ✅ [Merged PR #508](https://github.com/matthummel-pa/matthummel-theme/pull/508) — Keep the payment recovery page out of search (3.58.5) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | ✅ [Merged PR #10](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/10) — Make this the Cursor playbook (1.5.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 11h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/abdc2cf146596b297a47f2dc644c9a54d26bf9ac) — refactor(journal): move related posts query into mh_related_jou… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/3d356bc5e3b03ee45a27ce920572c3ebed9bb62b) — docs(readme): sync with the repo after the 1.7.0 cleanup (#16) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 11h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/d83445b25b1bd135551151f60b7022f5d9fca4b6) — feat!: remove Cursor support, back to Claude Code only (1.7.0) … | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 11h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/97aaf5f7cdf1e704707e00b7f8376a395f322fb8) — chore: playbook cleanup (1.6.3) (#14) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 12h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/516cf88c11ac31056a8fc5acd5cb10bba0ad7578) — docs(doc-references): add Freemius Help Center (1.4.1) (#9) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 12h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 5h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 10h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 6h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 11h |
 | **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★1 | 2d |
 | **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 2d |
 <!--END_SECTION:pushed-->
