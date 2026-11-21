@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1510 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1515 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,510 contributions in 90 days · 1,813 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,515 contributions in 90 days · 1,818 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #512](https://github.com/matthummel-pa/matthummel-theme/pull/512) — chore: add Mailchimp rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7m |
+| | 🔀 [Opened PR #512](https://github.com/matthummel-pa/matthummel-theme/pull/512) — chore: add Mailchimp rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2m |
+| | 🔀 [Opened PR #515](https://github.com/matthummel-pa/matthummel-theme/pull/515) — chore(ci): add the PHPStan job back | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28m |
+| | ✅ [Merged PR #514](https://github.com/matthummel-pa/matthummel-theme/pull/514) — chore(phpstan): regenerate the baseline | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28m |
+| | ✅ [Merged PR #513](https://github.com/matthummel-pa/matthummel-theme/pull/513) — fix(ui): service card buttons wrap instead of overflowing | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 39m |
 | | ✅ [Merged PR #511](https://github.com/matthummel-pa/matthummel-theme/pull/511) — docs(install): page copy lives in the block editor | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
 | | ✅ [Merged PR #510](https://github.com/matthummel-pa/matthummel-theme/pull/510) — refactor(journal): move related posts query into a helper | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
-| | ✅ [Merged PR #509](https://github.com/matthummel-pa/matthummel-theme/pull/509) — chore(ci): keep growth/scripts out of the zip, queue deploys | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
-| | ✅ [Merged PR #508](https://github.com/matthummel-pa/matthummel-theme/pull/508) — Keep the payment recovery page out of search (3.58.5) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
-| | ✅ [Merged PR #10](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/10) — Make this the Cursor playbook (1.5.0) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 13h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/abdc2cf146596b297a47f2dc644c9a54d26bf9ac) — refactor(journal): move related posts query into mh_related_jou… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 13h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/3d356bc5e3b03ee45a27ce920572c3ebed9bb62b) — docs(readme): sync with the repo after the 1.7.0 cleanup (#16) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 13h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/d83445b25b1bd135551151f60b7022f5d9fca4b6) — feat!: remove Cursor support, back to Claude Code only (1.7.0) … | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 13h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/97aaf5f7cdf1e704707e00b7f8376a395f322fb8) — chore: playbook cleanup (1.6.3) (#14) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 14h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/516cf88c11ac31056a8fc5acd5cb10bba0ad7578) — docs(doc-references): add Freemius Help Center (1.4.1) (#9) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 14h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/abdc2cf146596b297a47f2dc644c9a54d26bf9ac) — refactor(journal): move related posts query into mh_related_jou… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 14h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9c81f2f88e08f57ff41c34145556189a68708907) — chore(ci): keep growth/scripts out of the zip, queue deploys (#… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 14h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/19d3f1a251fac8bfd81160cfdcdc7742914020c8) — Keep the payment recovery page out of search (3.58.5) (#508) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 14h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/3d356bc5e3b03ee45a27ce920572c3ebed9bb62b) — docs(readme): sync with the repo after the 1.7.0 cleanup (#16) | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 14h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/ai-dev-standards-playbook/commit/d83445b25b1bd135551151f60b7022f5d9fca4b6) — feat!: remove Cursor support, back to Claude Code only (1.7.0) … | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 14h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 7m |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 13h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 2m |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 14h |
 | **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★1 | 2d |
 | **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 2d |
 <!--END_SECTION:pushed-->
