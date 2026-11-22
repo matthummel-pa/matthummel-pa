@@ -223,15 +223,15 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
 | | 🔀 [Opened PR #512](https://github.com/matthummel-pa/matthummel-theme/pull/512) — chore: add Mailchimp rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | ✅ [Merged PR #517](https://github.com/matthummel-pa/matthummel-theme/pull/517) — feat(footer): signup panel with better type and padding, no foo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | 🔀 [Opened PR #516](https://github.com/matthummel-pa/matthummel-theme/pull/516) — feat(journal): Mailchimp newsletter box on the post editor (3.5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | ✅ [Merged PR #515](https://github.com/matthummel-pa/matthummel-theme/pull/515) — chore(ci): add the PHPStan job back | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | ✅ [Merged PR #514](https://github.com/matthummel-pa/matthummel-theme/pull/514) — chore(phpstan): regenerate the baseline | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #517](https://github.com/matthummel-pa/matthummel-theme/pull/517) — feat(footer): signup panel with better type and padding, no foo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🔀 [Opened PR #516](https://github.com/matthummel-pa/matthummel-theme/pull/516) — feat(journal): Mailchimp newsletter box on the post editor (3.5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #515](https://github.com/matthummel-pa/matthummel-theme/pull/515) — chore(ci): add the PHPStan job back | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #514](https://github.com/matthummel-pa/matthummel-theme/pull/514) — chore(phpstan): regenerate the baseline | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
 | | ✅ [Merged PR #513](https://github.com/matthummel-pa/matthummel-theme/pull/513) — fix(ui): service card buttons wrap instead of overflowing | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4c076646108554fa73fc3eee5c6cc1da15991d20) — feat(footer): signup panel with better type and padding, drop t… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2e639b8455aa2bcb55d968e4b45b6907a0364d69) — docs(install): page copy lives in the block editor (#511) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/abdc2cf146596b297a47f2dc644c9a54d26bf9ac) — refactor(journal): move related posts query into mh_related_jou… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9c81f2f88e08f57ff41c34145556189a68708907) — chore(ci): keep growth/scripts out of the zip, queue deploys (#… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 21h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4c076646108554fa73fc3eee5c6cc1da15991d20) — feat(footer): signup panel with better type and padding, drop t… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2e639b8455aa2bcb55d968e4b45b6907a0364d69) — docs(install): page copy lives in the block editor (#511) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/abdc2cf146596b297a47f2dc644c9a54d26bf9ac) — refactor(journal): move related posts query into mh_related_jou… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9c81f2f88e08f57ff41c34145556189a68708907) — chore(ci): keep growth/scripts out of the zip, queue deploys (#… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/19d3f1a251fac8bfd81160cfdcdc7742914020c8) — Keep the payment recovery page out of search (3.58.5) (#508) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 22h |
 <!--END_SECTION:activity-->
 
