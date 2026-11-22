@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1473 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1479 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,473 contributions in 90 days · 1,823 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,479 contributions in 90 days · 1,829 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #512](https://github.com/matthummel-pa/matthummel-theme/pull/512) — chore: add Mailchimp rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 27m |
-| | ✅ [Merged PR #517](https://github.com/matthummel-pa/matthummel-theme/pull/517) — feat(footer): signup panel with better type and padding, no foo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | 🔀 [Opened PR #516](https://github.com/matthummel-pa/matthummel-theme/pull/516) — feat(journal): Mailchimp newsletter box on the post editor (3.5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | ✅ [Merged PR #515](https://github.com/matthummel-pa/matthummel-theme/pull/515) — chore(ci): add the PHPStan job back | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | ✅ [Merged PR #514](https://github.com/matthummel-pa/matthummel-theme/pull/514) — chore(phpstan): regenerate the baseline | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
-| | ✅ [Merged PR #513](https://github.com/matthummel-pa/matthummel-theme/pull/513) — fix(ui): service card buttons wrap instead of overflowing | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4c076646108554fa73fc3eee5c6cc1da15991d20) — feat(footer): signup panel with better type and padding, drop t… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 10h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2e639b8455aa2bcb55d968e4b45b6907a0364d69) — docs(install): page copy lives in the block editor (#511) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 25h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/abdc2cf146596b297a47f2dc644c9a54d26bf9ac) — refactor(journal): move related posts query into mh_related_jou… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 25h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/9c81f2f88e08f57ff41c34145556189a68708907) — chore(ci): keep growth/scripts out of the zip, queue deploys (#… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 25h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/19d3f1a251fac8bfd81160cfdcdc7742914020c8) — Keep the payment recovery page out of search (3.58.5) (#508) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 25h |
+| | ✅ [Merged PR #520](https://github.com/matthummel-pa/matthummel-theme/pull/520) — fix(footer): roomier signup box, no feed link inside it (3.59.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2m |
+| | ✅ [Merged PR #519](https://github.com/matthummel-pa/matthummel-theme/pull/519) — feat: consent banner only in Europe (3.59.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8m |
+| | ✅ [Merged PR #518](https://github.com/matthummel-pa/matthummel-theme/pull/518) — feat: Google Tag Manager container and consent banner (3.59.0) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 14m |
+| | ✅ [Merged PR #512](https://github.com/matthummel-pa/matthummel-theme/pull/512) — chore: add Mailchimp rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | ✅ [Merged PR #517](https://github.com/matthummel-pa/matthummel-theme/pull/517) — feat(footer): signup panel with better type and padding, no foo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | 🔀 [Opened PR #516](https://github.com/matthummel-pa/matthummel-theme/pull/516) — feat(journal): Mailchimp newsletter box on the post editor (3.5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/4c076646108554fa73fc3eee5c6cc1da15991d20) — feat(footer): signup panel with better type and padding, drop t… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/35e7832bd05ffa5943a2ff290074de6600554a21) — chore(ci): add the PHPStan job back (#515) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 11h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/42b7e10b51fea480a3984bb3792a4293bc34da38) — chore(phpstan): regenerate the baseline (#514) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 12h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/be602223aab00389c499aa895748ab4bbd064a74) — fix(ui): let service card buttons wrap at every width (#513) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 12h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/2e639b8455aa2bcb55d968e4b45b6907a0364d69) — docs(install): page copy lives in the block editor (#511) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 26h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 27m |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 25h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 2m |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 26h |
 | **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★1 | 3d |
 | **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 3d |
 <!--END_SECTION:pushed-->
