@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1433 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1437 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,433 contributions in 90 days · 1,846 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,437 contributions in 90 days · 1,850 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #17](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/17) — chore(rules): align blog rules with the Journal direction (1.7.… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 15h |
-| | ✅ [Merged PR #526](https://github.com/matthummel-pa/matthummel-theme/pull/526) — chore(rules): Journal editorial rule and aligned blog rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 15h |
-| | ✅ [Merged PR #527](https://github.com/matthummel-pa/matthummel-theme/pull/527) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ee769f0a6cf0a289ec734168d670dd2c5c20e849) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
-| | ✅ [Merged PR #525](https://github.com/matthummel-pa/matthummel-theme/pull/525) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 25h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a4f516d76d8a7f64bc60884dd474faf34da4b0b6) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 25h |
-| | ✅ [Merged PR #524](https://github.com/matthummel-pa/matthummel-theme/pull/524) — fix(footer): shorter credit line (3.60.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
-| | ✅ [Merged PR #522](https://github.com/matthummel-pa/matthummel-theme/pull/522) — chore: live is the default host, not staging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/494468b5c496a6feff47a37c2812dedad419049b) — fix(footer): Cookie choices joins the footer legal menu (3.60.2… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6088f9be732592cd39dfc9453d2a91a583987ae8) — fix(footer): newsletter box holds its contents (3.60.1) (#521) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/1812e77ba8dcfa556026004fd96e6b7ec96bae03) — feat(journal): Mailchimp newsletter box on the post editor (3.6… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
+| | ✅ [Merged PR #529](https://github.com/matthummel-pa/matthummel-theme/pull/529) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 14m |
+| | ✅ [Merged PR #528](https://github.com/matthummel-pa/matthummel-theme/pull/528) — fix(gallery): screenshot thumbnails use their caption as alt te… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 48m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/236a1379a45c0176657b5709a54e977860038ac0) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 14m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/914e4389a2ff475ba0ce78852a3bd67dee5419f2) — fix(gallery): screenshot thumbnails use their caption as alt te… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 48m |
+| | ✅ [Merged PR #17](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/17) — chore(rules): align blog rules with the Journal direction (1.7.… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 16h |
+| | ✅ [Merged PR #526](https://github.com/matthummel-pa/matthummel-theme/pull/526) — chore(rules): Journal editorial rule and aligned blog rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 16h |
+| | ✅ [Merged PR #527](https://github.com/matthummel-pa/matthummel-theme/pull/527) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ee769f0a6cf0a289ec734168d670dd2c5c20e849) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
+| | ✅ [Merged PR #525](https://github.com/matthummel-pa/matthummel-theme/pull/525) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 26h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a4f516d76d8a7f64bc60884dd474faf34da4b0b6) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 26h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0ce462390754a99428ec0bfb266bea710bf154f2) — fix(footer): shorter credit line (3.60.3) (#524) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 15h |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 15h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 14m |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 16h |
 | **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★1 | 4d |
 | **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 5d |
 <!--END_SECTION:pushed-->
