@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1490 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1427 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,490 contributions in 90 days · 1,840 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,427 contributions in 90 days · 1,840 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #525](https://github.com/matthummel-pa/matthummel-theme/pull/525) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a4f516d76d8a7f64bc60884dd474faf34da4b0b6) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
-| | ✅ [Merged PR #524](https://github.com/matthummel-pa/matthummel-theme/pull/524) — fix(footer): shorter credit line (3.60.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
-| | ✅ [Merged PR #522](https://github.com/matthummel-pa/matthummel-theme/pull/522) — chore: live is the default host, not staging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
-| | ✅ [Merged PR #523](https://github.com/matthummel-pa/matthummel-theme/pull/523) — fix(footer): Cookie choices joins the footer legal menu (3.60.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
-| | ✅ [Merged PR #521](https://github.com/matthummel-pa/matthummel-theme/pull/521) — fix(footer): newsletter box holds its contents (3.60.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
-| | ✅ [Merged PR #516](https://github.com/matthummel-pa/matthummel-theme/pull/516) — feat(journal): Mailchimp newsletter box on the post editor (3.6… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/1812e77ba8dcfa556026004fd96e6b7ec96bae03) — feat(journal): Mailchimp newsletter box on the post editor (3.6… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 17h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ee657c5f7d9d40d2bfca66d667807e4e44b17c4a) — fix(footer): roomier signup box, no feed link inside it (3.59.2… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b5f4297ead7a5f59c5ab3fe2d404fc4c2138f57f) — feat: show the consent banner only in Europe (3.59.1) (#519) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/346a6e178b33cf63cbc858e5f9610d173c426bae) — feat: Google Tag Manager container and consent banner (3.59.0) … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18h |
+| | ✅ [Merged PR #525](https://github.com/matthummel-pa/matthummel-theme/pull/525) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a4f516d76d8a7f64bc60884dd474faf34da4b0b6) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5h |
+| | ✅ [Merged PR #524](https://github.com/matthummel-pa/matthummel-theme/pull/524) — fix(footer): shorter credit line (3.60.3) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18h |
+| | ✅ [Merged PR #522](https://github.com/matthummel-pa/matthummel-theme/pull/522) — chore: live is the default host, not staging | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18h |
+| | ✅ [Merged PR #523](https://github.com/matthummel-pa/matthummel-theme/pull/523) — fix(footer): Cookie choices joins the footer legal menu (3.60.2) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18h |
+| | ✅ [Merged PR #521](https://github.com/matthummel-pa/matthummel-theme/pull/521) — fix(footer): newsletter box holds its contents (3.60.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18h |
+| | ✅ [Merged PR #516](https://github.com/matthummel-pa/matthummel-theme/pull/516) — feat(journal): Mailchimp newsletter box on the post editor (3.6… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 19h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/1812e77ba8dcfa556026004fd96e6b7ec96bae03) — feat(journal): Mailchimp newsletter box on the post editor (3.6… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 19h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ee657c5f7d9d40d2bfca66d667807e4e44b17c4a) — fix(footer): roomier signup box, no feed link inside it (3.59.2… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 19h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/b5f4297ead7a5f59c5ab3fe2d404fc4c2138f57f) — feat: show the consent banner only in Europe (3.59.1) (#519) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 19h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/346a6e178b33cf63cbc858e5f9610d173c426bae) — feat: Google Tag Manager container and consent banner (3.59.0) … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 19h |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 4h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 5h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 1d |
 | **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★1 | 3d |
 | **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 4d |
