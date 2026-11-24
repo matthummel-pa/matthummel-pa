@@ -115,6 +115,15 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
 <!--START_SECTION:posts-->
 <table>
   <tr>
+    <td width="240" valign="top"><a href="https://matthummel.com/website-handoff-checklist/"><img src="https://matthummel.com/wp-content/uploads/2026/11/Website-handoff-checklist-768x403.webp" alt="Website handoff checklist, 12 checks before launch, with access, everyday edits, and backups checked off." width="220" /></a></td>
+    <td valign="top">
+      <strong><a href="https://matthummel.com/website-handoff-checklist/">Website Handoff Checklist: 12 Checks Before Launch</a></strong><br />
+      <sub>Nov 24, 2026</sub><br />
+      Before your website goes live, check that you can sign in, make a routine edit, and recover from a problem. Use these 12 checks during your handoff call.<br />
+      <a href="https://matthummel.com/website-handoff-checklist/">Read the post →</a>
+    </td>
+  </tr>
+  <tr>
     <td width="240" valign="top"><a href="https://matthummel.com/how-to-review-ai-generated-wordpress-code-before-it-goes-live/"><img src="https://matthummel.com/wp-content/uploads/2026/11/Review-AI-generated-WordPress-code-768x403.webp" alt="Review AI-generated WordPress code, 6 checks before it goes live, with permissions, data handling, and staging tests checked off." width="220" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/how-to-review-ai-generated-wordpress-code-before-it-goes-live/">How to Review AI-Generated WordPress Code Before It Goes Live</a></strong><br />
@@ -148,15 +157,6 @@ Five newest posts from [matthummel.com/blog](https://matthummel.com/blog/) — W
       <sub>Nov 17, 2026</sub><br />
       Before paying for restaurant ads, fix these ten website SEO basics: menus, locations, mobile usability, structured data and booking links.<br />
       <a href="https://matthummel.com/restaurant-website-seo-10-fixes-to-make-before-buying-ads/">Read the post →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="240" valign="top"><a href="https://matthummel.com/gutenberg-24-4-wordpress-editing/"><img src="https://matthummel.com/wp-content/uploads/2026/11/editorial-illustration-of-easier-wordpress-editing-in-gutenb-768x512.jpg" alt="Editorial illustration of easier WordPress editing in Gutenberg 24.4 with a simplified editor panel" width="220" /></a></td>
-    <td valign="top">
-      <strong><a href="https://matthummel.com/gutenberg-24-4-wordpress-editing/">Gutenberg 24.4: WordPress Is Making Everyday Editing a Little Easier</a></strong><br />
-      <sub>Nov 17, 2026</sub><br />
-      Gutenberg 24.4 improves Notes, editor performance and content-only editing. Here’s what WordPress developers should test before relying on the changes.<br />
-      <a href="https://matthummel.com/gutenberg-24-4-wordpress-editing/">Read the post →</a>
     </td>
   </tr>
 </table>
@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1437 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1421 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,437 contributions in 90 days · 1,850 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,421 contributions in 90 days · 1,850 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,16 +222,16 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #529](https://github.com/matthummel-pa/matthummel-theme/pull/529) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #528](https://github.com/matthummel-pa/matthummel-theme/pull/528) — fix(gallery): screenshot thumbnails use their caption as alt te… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/236a1379a45c0176657b5709a54e977860038ac0) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/914e4389a2ff475ba0ce78852a3bd67dee5419f2) — fix(gallery): screenshot thumbnails use their caption as alt te… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
-| | ✅ [Merged PR #17](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/17) — chore(rules): align blog rules with the Journal direction (1.7.… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 18h |
-| | ✅ [Merged PR #526](https://github.com/matthummel-pa/matthummel-theme/pull/526) — chore(rules): Journal editorial rule and aligned blog rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 18h |
-| | ✅ [Merged PR #527](https://github.com/matthummel-pa/matthummel-theme/pull/527) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 19h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ee769f0a6cf0a289ec734168d670dd2c5c20e849) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 19h |
-| | ✅ [Merged PR #525](https://github.com/matthummel-pa/matthummel-theme/pull/525) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a4f516d76d8a7f64bc60884dd474faf34da4b0b6) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 28h |
+| | ✅ [Merged PR #529](https://github.com/matthummel-pa/matthummel-theme/pull/529) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | ✅ [Merged PR #528](https://github.com/matthummel-pa/matthummel-theme/pull/528) — fix(gallery): screenshot thumbnails use their caption as alt te… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/236a1379a45c0176657b5709a54e977860038ac0) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/914e4389a2ff475ba0ce78852a3bd67dee5419f2) — fix(gallery): screenshot thumbnails use their caption as alt te… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4h |
+| | ✅ [Merged PR #17](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/17) — chore(rules): align blog rules with the Journal direction (1.7.… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 20h |
+| | ✅ [Merged PR #526](https://github.com/matthummel-pa/matthummel-theme/pull/526) — chore(rules): Journal editorial rule and aligned blog rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 20h |
+| | ✅ [Merged PR #527](https://github.com/matthummel-pa/matthummel-theme/pull/527) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 20h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ee769f0a6cf0a289ec734168d670dd2c5c20e849) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 20h |
+| | ✅ [Merged PR #525](https://github.com/matthummel-pa/matthummel-theme/pull/525) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 29h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a4f516d76d8a7f64bc60884dd474faf34da4b0b6) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 29h |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0ce462390754a99428ec0bfb266bea710bf154f2) — fix(footer): shorter credit line (3.60.3) (#524) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1d |
 <!--END_SECTION:activity-->
 
@@ -240,8 +240,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 2h |
-| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 18h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★3 | 3h |
+| **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 20h |
 | **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★1 | 4d |
 | **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 5d |
 <!--END_SECTION:pushed-->
