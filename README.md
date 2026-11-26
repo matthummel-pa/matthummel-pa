@@ -230,8 +230,8 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 | | ✅ [Merged PR #526](https://github.com/matthummel-pa/matthummel-theme/pull/526) — chore(rules): Journal editorial rule and aligned blog rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
 | | ✅ [Merged PR #527](https://github.com/matthummel-pa/matthummel-theme/pull/527) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ee769f0a6cf0a289ec734168d670dd2c5c20e849) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
-| | ✅ [Merged PR #525](https://github.com/matthummel-pa/matthummel-theme/pull/525) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a4f516d76d8a7f64bc60884dd474faf34da4b0b6) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
+| | ✅ [Merged PR #525](https://github.com/matthummel-pa/matthummel-theme/pull/525) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a4f516d76d8a7f64bc60884dd474faf34da4b0b6) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0ce462390754a99428ec0bfb266bea710bf154f2) — fix(footer): shorter credit line (3.60.3) (#524) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 <!--END_SECTION:activity-->
 
