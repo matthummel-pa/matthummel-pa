@@ -63,7 +63,7 @@ The four newest on [matthummel.com/projects](https://matthummel.com/projects/), 
 <!--START_SECTION:projects-->
 <table>
   <tr>
-    <td width="300" valign="top"><a href="https://matthummel.com/projects/cobbleandcandle/"><img src="https://matthummel.com/wp-content/themes/matthummel/resources/images/products/cobbleandcandle/01-homepage.webp" alt="Home page with live “Closed · opens 5:30pm” status, location switcher and lamplit hero" width="280" /></a></td>
+    <td width="300" valign="top"><a href="https://matthummel.com/projects/cobbleandcandle/"><img src="https://matthummel.com/wp-content/themes/matthummel/resources/images/products/cobbleandcandle/new/01-home-lampwright.webp" alt="Home page with a candlelit tavern hero, headline and tonight’s hours" width="280" /></a></td>
     <td valign="top">
       <strong><a href="https://matthummel.com/projects/cobbleandcandle/">Cobble &amp; Candle</a></strong><br />
       <sub>WordPress theme · Restaurant · tavern · inn · v1.6.0</sub><br />
@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1384 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1389 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,384 contributions in 90 days · 1,854 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,389 contributions in 90 days · 1,859 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #532](https://github.com/matthummel-pa/matthummel-theme/pull/532) — Cobble & Candle landing: core blocks, current copy, settings an… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3m |
-| | ✅ [Merged PR #531](https://github.com/matthummel-pa/matthummel-theme/pull/531) — Cobble & Candle landing: Google Ads consent switch (off) and fo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 52m |
-| | 🔀 [Opened PR #530](https://github.com/matthummel-pa/matthummel-theme/pull/530) — fix(legal): add Freemius Merchant of Record wording to privacy … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6cedf3e0d48648b9dbdc8d789b2e487d51592995) — Cobble & Candle landing: Google Ads consent switch (off) and fo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 52m |
+| | ✅ [Merged PR #534](https://github.com/matthummel-pa/matthummel-theme/pull/534) — Cobble & Candle landing: screenshot viewer popup (3.63.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6m |
+| | ✅ [Merged PR #533](https://github.com/matthummel-pa/matthummel-theme/pull/533) — Cobble & Candle landing: even spacing and a light/dark toggle | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 38m |
+| | ✅ [Merged PR #532](https://github.com/matthummel-pa/matthummel-theme/pull/532) — Cobble & Candle landing: core blocks, current copy, settings an… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 54m |
+| | ✅ [Merged PR #531](https://github.com/matthummel-pa/matthummel-theme/pull/531) — Cobble & Candle landing: Google Ads consent switch (off) and fo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🔀 [Opened PR #530](https://github.com/matthummel-pa/matthummel-theme/pull/530) — fix(legal): add Freemius Merchant of Record wording to privacy … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 2h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0d033bdebb759c648dad2464f3e0924faee603da) — feat: screenshot viewer popup on the Cobble & Candle landing pa… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/fb1ef179cfab4189084a355fa2d130239cb9ce4d) — feat: even spacing and light/dark toggle on the Cobble & Candle… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 38m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/953f8f4190a8f3aab19ce7b8c728619c9487d1d8) — feat: rebuild Cobble & Candle landing page from core blocks wit… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 54m |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6cedf3e0d48648b9dbdc8d789b2e487d51592995) — Cobble & Candle landing: Google Ads consent switch (off) and fo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
 | | ✅ [Merged PR #529](https://github.com/matthummel-pa/matthummel-theme/pull/529) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
-| | ✅ [Merged PR #528](https://github.com/matthummel-pa/matthummel-theme/pull/528) — fix(gallery): screenshot thumbnails use their caption as alt te… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/236a1379a45c0176657b5709a54e977860038ac0) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/914e4389a2ff475ba0ce78852a3bd67dee5419f2) — fix(gallery): screenshot thumbnails use their caption as alt te… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
-| | ✅ [Merged PR #17](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/17) — chore(rules): align blog rules with the Journal direction (1.7.… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ee769f0a6cf0a289ec734168d670dd2c5c20e849) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/e23bfafbef5401edef71610f5e233fcb35587e54) — chore(rules): Journal editorial rule and aligned blog rules (#5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 3m |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 6m |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 4d |
 | **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★0 | 8d |
 | **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 8d |
