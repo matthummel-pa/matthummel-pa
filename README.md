@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1380 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1381 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,380 contributions in 90 days · 1,850 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,381 contributions in 90 days · 1,851 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,6 +222,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
+| | 🔀 [Opened PR #530](https://github.com/matthummel-pa/matthummel-theme/pull/530) — fix(legal): add Freemius Merchant of Record wording to privacy … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 31m |
 | | ✅ [Merged PR #529](https://github.com/matthummel-pa/matthummel-theme/pull/529) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
 | | ✅ [Merged PR #528](https://github.com/matthummel-pa/matthummel-theme/pull/528) — fix(gallery): screenshot thumbnails use their caption as alt te… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/236a1379a45c0176657b5709a54e977860038ac0) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
@@ -230,7 +231,6 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 | | ✅ [Merged PR #526](https://github.com/matthummel-pa/matthummel-theme/pull/526) — chore(rules): Journal editorial rule and aligned blog rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | ✅ [Merged PR #527](https://github.com/matthummel-pa/matthummel-theme/pull/527) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ee769f0a6cf0a289ec734168d670dd2c5c20e849) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
-| | ✅ [Merged PR #525](https://github.com/matthummel-pa/matthummel-theme/pull/525) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a4f516d76d8a7f64bc60884dd474faf34da4b0b6) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0ce462390754a99428ec0bfb266bea710bf154f2) — fix(footer): shorter credit line (3.60.3) (#524) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5d |
 <!--END_SECTION:activity-->
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 3d |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 31m |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 4d |
 | **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★0 | 8d |
 | **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 8d |
