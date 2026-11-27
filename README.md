@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1381 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1384 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,381 contributions in 90 days · 1,851 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,384 contributions in 90 days · 1,854 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,17 +222,17 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | 🔀 [Opened PR #530](https://github.com/matthummel-pa/matthummel-theme/pull/530) — fix(legal): add Freemius Merchant of Record wording to privacy … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 31m |
+| | 🔀 [Opened PR #532](https://github.com/matthummel-pa/matthummel-theme/pull/532) — Cobble & Candle landing: core blocks, current copy, settings an… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3m |
+| | ✅ [Merged PR #531](https://github.com/matthummel-pa/matthummel-theme/pull/531) — Cobble & Candle landing: Google Ads consent switch (off) and fo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 52m |
+| | 🔀 [Opened PR #530](https://github.com/matthummel-pa/matthummel-theme/pull/530) — fix(legal): add Freemius Merchant of Record wording to privacy … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 1h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6cedf3e0d48648b9dbdc8d789b2e487d51592995) — Cobble & Candle landing: Google Ads consent switch (off) and fo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 52m |
 | | ✅ [Merged PR #529](https://github.com/matthummel-pa/matthummel-theme/pull/529) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
 | | ✅ [Merged PR #528](https://github.com/matthummel-pa/matthummel-theme/pull/528) — fix(gallery): screenshot thumbnails use their caption as alt te… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/236a1379a45c0176657b5709a54e977860038ac0) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/914e4389a2ff475ba0ce78852a3bd67dee5419f2) — fix(gallery): screenshot thumbnails use their caption as alt te… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 3d |
 | | ✅ [Merged PR #17](https://github.com/matthummel-pa/ai-dev-standards-playbook/pull/17) — chore(rules): align blog rules with the Journal direction (1.7.… | [`ai-dev-standards-playbook`](https://github.com/matthummel-pa/ai-dev-standards-playbook) | 4d |
-| | ✅ [Merged PR #526](https://github.com/matthummel-pa/matthummel-theme/pull/526) — chore(rules): Journal editorial rule and aligned blog rules | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
-| | ✅ [Merged PR #527](https://github.com/matthummel-pa/matthummel-theme/pull/527) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/ee769f0a6cf0a289ec734168d670dd2c5c20e849) — fix(privacy): drop HubSpot, Bing and Meta from the privacy temp… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/a4f516d76d8a7f64bc60884dd474faf34da4b0b6) — feat(products): Cobble & Candle copy leads with AI search (3.61… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0ce462390754a99428ec0bfb266bea710bf154f2) — fix(footer): shorter credit line (3.60.3) (#524) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 5d |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/e23bfafbef5401edef71610f5e233fcb35587e54) — chore(rules): Journal editorial rule and aligned blog rules (#5… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 <!--END_SECTION:activity-->
 
 ### Recently pushed
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 31m |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 3m |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 4d |
 | **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★0 | 8d |
 | **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 8d |
