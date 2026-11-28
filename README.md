@@ -210,11 +210,11 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:heatmap-->
 <p align="center">
   <a href="https://matthummel.com/code/#gh-contributions">
-    <img src="./assets/activity-heatmap.svg" width="680" alt="1389 public contributions in the last 90 days" />
+    <img src="./assets/activity-heatmap.svg" width="680" alt="1387 public contributions in the last 90 days" />
   </a>
 </p>
 
-<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,389 contributions in 90 days · 1,859 in the last year.</sub>
+<sub>Custom calendar (not the GitHub default card). Newest week on the left, navy scale from [matthummel.com/code](https://matthummel.com/code/). 1,387 contributions in 90 days · 1,859 in the last year.</sub>
 <!--END_SECTION:heatmap-->
 
 ### Feed
@@ -222,15 +222,15 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:activity-->
 | | Shipped | Repo | When |
 | --- | --- | --- | --- |
-| | ✅ [Merged PR #534](https://github.com/matthummel-pa/matthummel-theme/pull/534) — Cobble & Candle landing: screenshot viewer popup (3.63.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | ✅ [Merged PR #533](https://github.com/matthummel-pa/matthummel-theme/pull/533) — Cobble & Candle landing: even spacing and a light/dark toggle | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | ✅ [Merged PR #532](https://github.com/matthummel-pa/matthummel-theme/pull/532) — Cobble & Candle landing: core blocks, current copy, settings an… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | ✅ [Merged PR #531](https://github.com/matthummel-pa/matthummel-theme/pull/531) — Cobble & Candle landing: Google Ads consent switch (off) and fo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
-| | 🔀 [Opened PR #530](https://github.com/matthummel-pa/matthummel-theme/pull/530) — fix(legal): add Freemius Merchant of Record wording to privacy … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0d033bdebb759c648dad2464f3e0924faee603da) — feat: screenshot viewer popup on the Cobble & Candle landing pa… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/fb1ef179cfab4189084a355fa2d130239cb9ce4d) — feat: even spacing and light/dark toggle on the Cobble & Candle… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/953f8f4190a8f3aab19ce7b8c728619c9487d1d8) — feat: rebuild Cobble & Candle landing page from core blocks wit… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 6h |
-| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6cedf3e0d48648b9dbdc8d789b2e487d51592995) — Cobble & Candle landing: Google Ads consent switch (off) and fo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #534](https://github.com/matthummel-pa/matthummel-theme/pull/534) — Cobble & Candle landing: screenshot viewer popup (3.63.1) | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #533](https://github.com/matthummel-pa/matthummel-theme/pull/533) — Cobble & Candle landing: even spacing and a light/dark toggle | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | ✅ [Merged PR #532](https://github.com/matthummel-pa/matthummel-theme/pull/532) — Cobble & Candle landing: core blocks, current copy, settings an… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | ✅ [Merged PR #531](https://github.com/matthummel-pa/matthummel-theme/pull/531) — Cobble & Candle landing: Google Ads consent switch (off) and fo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🔀 [Opened PR #530](https://github.com/matthummel-pa/matthummel-theme/pull/530) — fix(legal): add Freemius Merchant of Record wording to privacy … | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/0d033bdebb759c648dad2464f3e0924faee603da) — feat: screenshot viewer popup on the Cobble & Candle landing pa… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/fb1ef179cfab4189084a355fa2d130239cb9ce4d) — feat: even spacing and light/dark toggle on the Cobble & Candle… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 7h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/953f8f4190a8f3aab19ce7b8c728619c9487d1d8) — feat: rebuild Cobble & Candle landing page from core blocks wit… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 8h |
+| | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/6cedf3e0d48648b9dbdc8d789b2e487d51592995) — Cobble & Candle landing: Google Ads consent switch (off) and fo… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 9h |
 | | ✅ [Merged PR #529](https://github.com/matthummel-pa/matthummel-theme/pull/529) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 | | 🚀 [Commit](https://github.com/matthummel-pa/matthummel-theme/commit/236a1379a45c0176657b5709a54e977860038ac0) — fix(escaping): product names with & no longer double-escaped (3… | [`matthummel-theme`](https://github.com/matthummel-pa/matthummel-theme) | 4d |
 <!--END_SECTION:activity-->
@@ -240,7 +240,7 @@ Same idea as the live board on [matthummel.com/code](https://matthummel.com/code
 <!--START_SECTION:pushed-->
 | Repo | Stack | Last push |
 | --- | --- | --- |
-| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 6h |
+| **[matthummel-theme](https://github.com/matthummel-pa/matthummel-theme)** — Sage 11 WordPress theme for matthummel.com — Blade, Tailwind v4, Vite. Portfolio and se… | PHP · ★2 | 7h |
 | **[ai-dev-standards-playbook](https://github.com/matthummel-pa/ai-dev-standards-playbook)** — Rules, skills, slash commands and a deploy kit that teach Claude Code how to build Word… | Shell · ★0 | 4d |
 | **[wp-theme-desk](https://github.com/matthummel-pa/wp-theme-desk)** — Support desk for WordPress themes. Tickets, a saved reference, a changelog, and a suppo… | CSS · ★0 | 8d |
 | **[wp-acreline-docs](https://github.com/matthummel-pa/wp-acreline-docs)** — Documentation and support guides for the Acreline WordPress theme | Code · ★0 | 9d |
